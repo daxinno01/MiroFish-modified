@@ -9,6 +9,14 @@ export const generateReport = (data) => {
 }
 
 /**
+ * 断点续行：继续报告生成
+ * @param {Object} data - { simulation_id }
+ */
+export const resumeReport = (data) => {
+  return requestWithRetry(() => service.post('/api/report/resume', data), 3, 1000)
+}
+
+/**
  * 获取报告生成状态
  * @param {string} reportId
  */

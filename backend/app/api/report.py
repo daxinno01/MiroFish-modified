@@ -196,6 +196,171 @@ def generate_report():
         }), 500
 
 
+@report_bp.route('/resume', methods=['POST'])
+def resume_report():
+    """
+    断点续行：从上次中断处继续生成报告。
+
+    适用场景：网络故障/模型异常导致报告生成中途失败，
+    已完成的章节无需重新生成，从第一个未完成章节继续。
+
+    请求（JSON）：
+        {
+            "simulation_id": "sim_xxxx"   // 必填，模拟ID
+        }
+
+    返回：
+        {
+            "success": true,
+            "data": {
+                "report_id": "report_xxxx",   // 复用原始 report_id
+                "task_id": "task_xxxx",
+                "status": "resuming",
+                "resumed_from_section": 2,    // 从第几章节继续
+                "total_sections": 5,
+                "message": "断点续行任务已启动"
+            }
+        }
+    """
+    try:
+        data = request.get_json() or {}
+        simulation_id = data.get('simulation_id')
+        if not simulation_id:
+            return jsonify({"success": False, "error": "请提供 simulation_id"}), 400
+
+        # 获取模拟信息
+        manager = SimulationManager()
+        state = manager.get_simulation(simulation_id)
+        if not state:
+            return jsonify({"success": False, "error": f"模拟不存在: {simulation_id}"}), 404
+
+        project = ProjectManager.get_project(state.project_id)
+        if not project:
+            return jsonify({"success": False, "error": f"项目不存在: {state.project_id}"}), 404
+
+        graph_id = state.graph_id or project.graph_id
+        if not graph_id:
+            return jsonify({"success": False, "error": "缺少图谱ID"}), 400
+
+        simulation_requirement = project.simulation_requirement or ""
+
+        # 查找该模拟最近一次失败/未完成的报告
+        existing_report = ReportManager.get_report_by_simulation(simulation_id)
+        if not existing_report:
+            return jsonify({
+                "success": False,
+                "error": "未找到可续行的报告（请先调用 /generate 开始生成）"
+            }), 404
+
+        if existing_report.status == ReportStatus.COMPLETED:
+            return jsonify({
+                "success": True,
+                "data": {
+                    "report_id": existing_report.report_id,
+                    "status": "completed",
+                    "message": "报告已完整生成，无需续行",
+                    "already_completed": True
+                }
+            })
+
+        report_id = existing_report.report_id
+
+        # 检查可续行状态
+        resume_state = ReportManager.get_resume_state(report_id)
+        if not resume_state.get("has_outline"):
+            return jsonify({
+                "success": False,
+                "error": "未找到已保存的大纲（outline.json），无法断点续行。请重新生成报告。"
+            }), 400
+
+        completed_count = resume_state.get("completed_count", 0)
+        completed_indices = resume_state.get("completed_section_indices", [])
+
+        # 创建异步任务
+        task_manager = TaskManager()
+        task_id = task_manager.create_task(
+            task_type="report_resume",
+            metadata={
+                "simulation_id": simulation_id,
+                "graph_id": graph_id,
+                "report_id": report_id,
+                "resumed_from_section": completed_count + 1,
+                "completed_sections": completed_indices,
+            }
+        )
+
+        def run_resume():
+            try:
+                task_manager.update_task(
+                    task_id,
+                    status=TaskStatus.PROCESSING,
+                    progress=0,
+                    message=f"断点续行初始化，已完成 {completed_count} 个章节，正在继续..."
+                )
+
+                agent = ReportAgent(
+                    graph_id=graph_id,
+                    simulation_id=simulation_id,
+                    simulation_requirement=simulation_requirement
+                )
+
+                def progress_callback(stage, progress, message):
+                    task_manager.update_task(
+                        task_id,
+                        progress=progress,
+                        message=f"[{stage}] {message}"
+                    )
+
+                # 关键：resume=True 跳过已完成章节
+                report = agent.generate_report(
+                    progress_callback=progress_callback,
+                    report_id=report_id,
+                    resume=True
+                )
+
+                ReportManager.save_report(report)
+
+                if report.status == ReportStatus.COMPLETED:
+                    task_manager.complete_task(
+                        task_id,
+                        result={
+                            "report_id": report.report_id,
+                            "simulation_id": simulation_id,
+                            "status": "completed",
+                            "resumed": True
+                        }
+                    )
+                else:
+                    task_manager.fail_task(task_id, report.error or "断点续行失败")
+
+            except Exception as e:
+                logger.error(f"断点续行失败: {str(e)}")
+                task_manager.fail_task(task_id, str(e))
+
+        thread = threading.Thread(target=run_resume, daemon=True)
+        thread.start()
+
+        return jsonify({
+            "success": True,
+            "data": {
+                "report_id": report_id,
+                "task_id": task_id,
+                "status": "resuming",
+                "resumed_from_section": completed_count + 1,
+                "completed_sections": completed_indices,
+                "message": f"断点续行任务已启动，跳过已完成的 {completed_count} 个章节，通过 /api/report/generate/status 查询进度"
+            }
+        })
+
+    except Exception as e:
+        logger.error(f"启动断点续行任务失败: {str(e)}")
+        return jsonify({
+            "success": False,
+            "error": str(e),
+            "traceback": traceback.format_exc()
+        }), 500
+
+
 @report_bp.route('/generate/status', methods=['POST'])
 def get_generate_status():
     """

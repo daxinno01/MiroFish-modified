@@ -1601,13 +1601,11 @@ class SimulationRunner:
                 "timestamp": response.timestamp
             }
         else:
-            error_msg = response.error or "未知IPC错误"
-            logger.error(f"采访Agent失败: simulation_id={simulation_id}, agent_id={agent_id}, error={error_msg}")
             return {
                 "success": False,
                 "agent_id": agent_id,
                 "prompt": prompt,
-                "error": error_msg,
+                "error": response.error,
                 "timestamp": response.timestamp
             }
     
@@ -1663,12 +1661,10 @@ class SimulationRunner:
                 "timestamp": response.timestamp
             }
         else:
-            error_msg = response.error or "未知IPC错误"
-            logger.error(f"批量采访失败: simulation_id={simulation_id}, error={error_msg}")
             return {
                 "success": False,
                 "interviews_count": len(interviews),
-                "error": error_msg,
+                "error": response.error,
                 "timestamp": response.timestamp
             }
     

@@ -144,15 +144,37 @@
           </button>
         </template>
 
-        <button 
-          class="action-btn primary"
-          :disabled="phase !== 2 || isGeneratingReport"
-          @click="handleNextStep"
-        >
-          <span v-if="isGeneratingReport" class="loading-spinner-small"></span>
-          {{ isGeneratingReport ? '启动中...' : '开始生成结果报告' }} 
-          <span v-if="!isGeneratingReport" class="arrow-icon">→</span>
-        </button>
+        <!-- 如果存在中断/失败的报告，显示续行按钮 -->
+        <template v-if="phase === 2 && existingReportStatus === 'failed'">
+          <button 
+            class="action-btn resume"
+            :disabled="isGeneratingReport"
+            @click="handleResumeReport"
+          >
+            <span v-if="isGeneratingReport" class="loading-spinner-small"></span>
+            继续生成断点报告 ->
+          </button>
+          <button 
+            class="action-btn danger"
+            :disabled="isGeneratingReport"
+            @click="handleNextStep"
+          >
+            重新开始生成报告
+          </button>
+        </template>
+
+        <!-- 如果不存在中断报告，或者已经完成，显示正常或查看按钮 -->
+        <template v-else-if="phase === 2">
+          <button 
+            class="action-btn primary"
+            :disabled="isGeneratingReport"
+            @click="handleNextStep"
+          >
+            <span v-if="isGeneratingReport" class="loading-spinner-small"></span>
+            {{ existingReportStatus === 'completed' ? '查看分析报告' : '开始生成结果报告' }} 
+            <span v-if="!isGeneratingReport" class="arrow-icon">→</span>
+          </button>
+        </template>
 
       </div>
     </div>
@@ -351,7 +373,7 @@ import {
   getRunStatus, 
   getRunStatusDetail
 } from '../api/simulation'
-import { generateReport } from '../api/report'
+import { generateReport, resumeReport, checkReportStatus } from '../api/report'
 
 const props = defineProps({
   simulationId: String,
@@ -372,6 +394,7 @@ const route = useRoute()
 
 // State
 const isGeneratingReport = ref(false)
+const existingReportStatus = ref(null) // null, 'failed', 'completed'
 const phase = ref(0) // 0: 未开始, 1: 运行中, 2: 已完成
 const isStarting = ref(false)
 const isStopping = ref(false)
@@ -659,6 +682,7 @@ const initSimulationStatus = async () => {
         addLog(`✓ 模拟已达成分段目标 (${currentRound}/${totalRounds})，如有需要可继续运行以增加轮数`)
         phase.value = 2
         await fetchRunStatusDetail()
+        await fetchReportAvailability()
         emit('update-status', 'completed')
       } else {
         addLog(`⚠ 检测到中断的模拟 (进度: ${currentRound}/${totalRounds})`)
@@ -744,6 +768,7 @@ const fetchRunStatus = async () => {
           stopPolling()
           emit('update-status', 'completed')
           addLog('✓ 模拟全部完成')
+          await fetchReportAvailability()
         }
       }
  else if (data.runner_status === 'failed') {
@@ -880,6 +905,12 @@ const handleNextStep = async () => {
     addLog('报告生成请求已发送，请稍候...')
     return
   }
+
+  // 如果已经完成，直接跳转不调接口
+  if (existingReportStatus.value === 'completed') {
+    goToReportView(props.simulationId)
+    return
+  }
   
   isGeneratingReport.value = true
   addLog('正在启动报告生成...')
@@ -893,16 +924,7 @@ const handleNextStep = async () => {
     if (res.success && res.data) {
       const reportId = res.data.report_id
       addLog(`✓ 报告生成任务已启动: ${reportId}`)
-      
-      // 跳转到报告页面，同时携带项目和模拟 ID，确保仪表盘在报告加载完成前也能显示
-      router.push({ 
-        name: 'Report', 
-        params: { reportId },
-        query: { 
-          projectId: props.projectData?.project_id,
-          simulationId: props.simulationId
-        }
-      })
+      goToReportView(reportId)
     } else {
       addLog(`✗ 启动报告生成失败: ${res.error || '未知错误'}`)
       isGeneratingReport.value = false
@@ -910,6 +932,49 @@ const handleNextStep = async () => {
   } catch (err) {
     addLog(`✗ 启动报告生成异常: ${err.message}`)
     isGeneratingReport.value = false
+  }
+}
+
+const handleResumeReport = async () => {
+  if (!props.simulationId || isGeneratingReport.value) return
+  isGeneratingReport.value = true
+  addLog('正在启动断点续行生成报告...')
+  try {
+    const res = await resumeReport({ simulation_id: props.simulationId })
+    if (res.success && res.data) {
+      addLog(`✓ 报告断点续行任务已启动: ${res.data.report_id}`)
+      goToReportView(res.data.report_id)
+    } else {
+      addLog(`✗ 启动断点续行失败: ${res.error || '未知错误'}`)
+      isGeneratingReport.value = false
+    }
+  } catch (err) {
+    addLog(`✗ 启动断点续行异常: ${err.message}`)
+    isGeneratingReport.value = false
+  }
+}
+
+const goToReportView = (reportId) => {
+    router.push({ 
+      name: 'Report', 
+      params: { reportId },
+      query: { 
+        projectId: props.projectData?.project_id,
+        simulationId: props.simulationId
+      }
+    })
+}
+
+// 获取关联报告情况
+const fetchReportAvailability = async () => {
+  if (!props.simulationId) return
+  try {
+    const res = await checkReportStatus(props.simulationId)
+    if (res.success && res.data && res.data.has_report) {
+      existingReportStatus.value = res.data.report_status
+    }
+  } catch (e) {
+    console.warn("无法获取报告状态", e)
   }
 }
 

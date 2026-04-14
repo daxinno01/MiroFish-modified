@@ -959,7 +959,103 @@ class ReportAgent:
             if params_desc:
                 desc_parts.append(f"  参数: {params_desc}")
         return "\n".join(desc_parts)
-    
+
+    # ──────────────────────────────────────────────────────────────────
+    # 智能压缩工具方法（不调用 LLM，零额外成本）
+    # ──────────────────────────────────────────────────────────────────
+
+    @staticmethod
+    def _extract_section_coverage(title: str, content: str) -> str:
+        """从已完成章节中提取结构化覆盖摘要，不按位置截断而是提炼全维度精华。
+
+        该摘要传给后续章节的唯一作用是“防重复”，模型只需要知道前面已覆盖哪些话题/实体/观点。
+        提取策略：
+          1. 加粗项（**...**）= 关键子话题（已覆盖的维度）
+          2. 每段首句 = 段落主旨（不丢任何话题维度）
+          3. 引用块前语 = 已使用证据的类型
+        """
+        lines = content.split('\n')
+
+        # 1. 提取所有加粗展开项（关键子话题）
+        bold_terms = re.findall(r'\*\*([^*]{2,40})\*\*', content)
+        bold_terms = list(dict.fromkeys(bold_terms))[:10]  # 去重 + 取前 10 个
+
+        # 2. 提取每段落的首句（山线界定段落: 空行分隔）
+        paragraphs = [p.strip() for p in re.split(r'\n{2,}', content) if p.strip()]
+        first_sentences = []
+        for para in paragraphs[:6]:  # 最多取前 6 段
+            # 取第一句（按句号/问号/叹号切），最多 80 字
+            raw = re.split(r'[。！？]', para)[0]
+            if len(raw) > 6 and not raw.startswith('>'):
+                first_sentences.append(raw[:80])
+
+        # 3. 提取引用块前面的修饰短语（已使用证据标识）
+        quote_contexts = []
+        for i, line in enumerate(lines):
+            if line.startswith('>'):
+                # 取该引用之前的一行不超过 40 字
+                if i > 0 and lines[i - 1].strip() and not lines[i - 1].startswith('>'):
+                    quote_contexts.append(lines[i - 1].strip()[:40])
+
+        # 中文和英文关键字提取（简单频率过滤）
+        cjk_terms = re.findall(r'[\u4e00-\u9fa5]{4,10}', content)
+        from collections import Counter
+        freq = Counter(cjk_terms)
+        top_terms = [t for t, _ in freq.most_common(8)
+                     if t not in {'\u548c\u4ee5\u4e0a\u6700\u591a', '\u8fd9\u4e2a\u957f\u671f', '\u5c06\u8fd9'}]
+
+        parts = [f"《{title}》 已覆盖内容摘要（共 {len(content)} 字）"]
+        if bold_terms:
+            parts.append("【子话题维度】" + "、".join(bold_terms))
+        if first_sentences:
+            parts.append("【要点概要】\n" + "\n".join(f"▪ {s}" for s in first_sentences))
+        if quote_contexts:
+            parts.append("【引用主题】" + "、".join(set(quote_contexts[:5])))
+        if top_terms:
+            parts.append("【高频实体】" + "、".join(top_terms[:6]))
+        return "\n".join(parts)
+
+    @staticmethod
+    def _compress_tool_result_for_history(tool_name: str, result: str) -> str:
+        """将工具结果压缩为历史记录版，智能提取而非按位置截断。
+
+        设计原则：模型在当前轮已完整处理了全量结果。历史中的备份
+        只需要“据点提醒”而非全文重读。提取策略：
+          1. 引用块（> "..."  格式）= 最精华的原始证据，必全部保留
+          2. 加粗关键词 = 结构化的概念标签
+          3. 内容头部（insight_forge 已按相关性排序）= 最重要的部分在最前面
+        """
+        if len(result) <= 3000:
+            return f"═══ 工具 {tool_name} 返回 ═══\n{result}"
+
+        lines = result.split('\n')
+        extracted_parts = []
+
+        # 1. 提取全部引用块（必须全部保留！这是可直接引用的原始证据）
+        quotes = [l for l in lines if re.match(r'^>\s*["“「]', l)]
+        if quotes:
+            extracted_parts.append("《关键引语（已全量保留）》")
+            extracted_parts.extend(quotes[:20])  # 最多 20 条引语
+
+        # 2. 提取加粗关键词（结构标签）
+        bold_terms = re.findall(r'\*\*([^*]{2,30})\*\*', result)
+        bold_terms = list(dict.fromkeys(bold_terms))[:12]
+        if bold_terms:
+            extracted_parts.append("《关键要素》" + "、".join(bold_terms))
+
+        # 3. 内容头部（insight_forge 按相关性排序，头部最重要）
+        head = result[:1800]
+        extracted_parts.append("《内容头部（相关性最高部分）》")
+        extracted_parts.append(head)
+
+        compressed = "\n".join(extracted_parts)
+        return (
+            f"═══ 工具 {tool_name} 返回 ═══"
+            f"[原始 {len(result)} 字 → 历史压缩版 {len(compressed)} 字，"
+            f"已提取引语/{len(quotes)}条 + 关键词/{len(bold_terms)}个 + 首郠1800字]\n"
+            f"{compressed}"
+        )
+
     def plan_outline(
         self, 
         progress_callback: Optional[Callable] = None
@@ -1288,11 +1384,14 @@ class ReportAgent:
         # 构建用户prompt - 每个已完成章节各传入最大4000字
         if previous_sections:
             previous_parts = []
-            for sec in previous_sections:
-                # 每个章节最多4000字
-                truncated = sec[:4000] + "..." if len(sec) > 4000 else sec
-                previous_parts.append(truncated)
-            previous_content = "\n\n---\n\n".join(previous_parts)
+            for i, sec in enumerate(previous_sections):
+                # 《架构升级》用结构化覆盖摘要替代按位置截断。
+                # - 提取所有子话题维度(加粗项)、段落首句、引用主题 -- 不丢任何话题
+                # - 输出维度对防重复偏大于全文，且体积远小于按字截断
+                sec_title = outline.sections[i].title if i < len(outline.sections) else f"章节{i+1}"
+                coverage = self._extract_section_coverage(sec_title, sec)
+                previous_parts.append(coverage)
+            previous_content = "\n\n".join(previous_parts)
         else:
             previous_content = "（这是第一个章节）"
         
@@ -1341,11 +1440,14 @@ class ReportAgent:
                     f"深度检索与撰写中 ({tool_calls_count}/{self.MAX_TOOL_CALLS_PER_SECTION})"
                 )
             
-            # 调用LLM
+            # 《优化》按阶段动态设置 max_tokens：
+            # - 工具调用轮（Thought + Action）：输出通常只有 100–400 token，给 1500 起保险作用
+            # - 有足够数据可写答案时：给满额的 4096 以确保内容完整
+            likely_final = (tool_calls_count >= min_tool_calls)
             response = self._chat_with_moderation_retry(
                 messages=messages,
                 temperature=0.5,
-                max_tokens=4096,
+                max_tokens=4096 if likely_final else 1500,
                 caller_hint=f"Report章节生成({section.title})"
             )
             
@@ -1478,12 +1580,21 @@ class ReportAgent:
                 tool_calls_count += 1
             
             # 将结果添加到消息
+            # 《架构升级》工具结果在存入历史前进行智能压缩，不是按位置截断而是提取精华。
+            # 模型已在当前轮完整处理了全量结果；历史备份保留引语+关键词+首郠，不丢任何话题维度。
+            compressed_observations = [
+                self._compress_tool_result_for_history(call["name"], obs_text)
+                for call, obs_text in zip(
+                    tool_calls[:tool_calls_count],
+                    [r for r in tool_results]
+                )
+            ]
             messages.append({"role": "assistant", "content": response})
             messages.append({
                 "role": "user",
                 "content": f"""Observation（检索结果）:
 
-{"".join(tool_results)}
+{"".join(compressed_observations)}
 
 ═══════════════════════════════════════════════════════════════
 【下一步行动】
@@ -1529,7 +1640,8 @@ class ReportAgent:
     def generate_report(
         self, 
         progress_callback: Optional[Callable[[str, int, str], None]] = None,
-        report_id: Optional[str] = None
+        report_id: Optional[str] = None,
+        resume: bool = False
     ) -> Report:
         """
         生成完整报告（分章节实时输出）
@@ -1591,49 +1703,99 @@ class ReportAgent:
                 completed_sections=[]
             )
             ReportManager.save_report(report)
-            
-            # 阶段1: 规划大纲
-            report.status = ReportStatus.PLANNING
-            ReportManager.update_progress(
-                report_id, "planning", 5, "开始规划报告大纲...",
-                completed_sections=[]
-            )
-            
-            # 记录规划开始日志
-            self.report_logger.log_planning_start()
-            
-            if progress_callback:
-                progress_callback("planning", 0, "开始规划报告大纲...")
-            
-            outline = self.plan_outline(
-                progress_callback=lambda stage, prog, msg: 
-                    progress_callback(stage, prog // 5, msg) if progress_callback else None
-            )
-            report.outline = outline
-            
-            # 记录规划完成日志
-            self.report_logger.log_planning_complete(outline.to_dict())
-            
-            # 保存大纲到文件
-            ReportManager.save_outline(report_id, outline)
-            ReportManager.update_progress(
-                report_id, "planning", 15, f"大纲规划完成，共{len(outline.sections)}个章节",
-                completed_sections=[]
-            )
-            ReportManager.save_report(report)
-            
-            logger.info(f"大纲已保存到文件: {report_id}/outline.json")
+
+            # ──────────────────────────────────────────────────
+            # 断点续行：检测已完成的章节
+            # ──────────────────────────────────────────────────
+            resume_state = ReportManager.get_resume_state(report_id) if resume else {}
+            completed_section_indices = set(resume_state.get("completed_section_indices", []))
+            is_resuming = resume and resume_state.get("has_outline") and completed_section_indices
+
+            if is_resuming:
+                logger.info(
+                    f"断点续行: {report_id}，"
+                    f"已完成 {len(completed_section_indices)}/? 个章节，"
+                    f"跳过大纲规划阶段"
+                )
+
+            # 随 resume 模式决定：加载已存大纲 or 重新规划
+            if is_resuming:
+                outline = ReportManager.load_outline(report_id)
+                report.outline = outline
+                report.status = ReportStatus.GENERATING
+                ReportManager.update_progress(
+                    report_id, "generating", 15,
+                    f"断点续行，已恢复大纲，共 {len(outline.sections)} 个章节，已完成 {len(completed_section_indices)} 个",
+                    completed_sections=[]
+                )
+                ReportManager.save_report(report)
+            else:
+                # 正常流程：重新规划大纲
+                report.status = ReportStatus.PLANNING
+                ReportManager.update_progress(
+                    report_id, "planning", 5, "开始规划报告大纲...",
+                    completed_sections=[]
+                )
+                
+                # 记录规划开始日志
+                self.report_logger.log_planning_start()
+                
+                if progress_callback:
+                    progress_callback("planning", 0, "开始规划报告大纲...")
+                
+                outline = self.plan_outline(
+                    progress_callback=lambda stage, prog, msg: 
+                        progress_callback(stage, prog // 5, msg) if progress_callback else None
+                )
+                report.outline = outline
+                
+                # 记录规划完成日志
+                self.report_logger.log_planning_complete(outline.to_dict())
+                
+                # 保存大纲到文件
+                ReportManager.save_outline(report_id, outline)
+                ReportManager.update_progress(
+                    report_id, "planning", 15, f"大纲规划完成，共{len(outline.sections)}个章节",
+                    completed_sections=[]
+                )
+                ReportManager.save_report(report)
+                
+                logger.info(f"大纲已保存到文件: {report_id}/outline.json")
             
             # 阶段2: 逐章节生成（分章节保存）
             report.status = ReportStatus.GENERATING
             
             total_sections = len(outline.sections)
             generated_sections = []  # 保存内容用于上下文
-            
+
+            # 断点续行：预操载已完成章节内容，用于后续章节的 previous_sections 上下文
+            if completed_section_indices:
+                for idx in sorted(completed_section_indices):
+                    sec_path = ReportManager._get_section_path(report_id, idx)
+                    if os.path.exists(sec_path):
+                        with open(sec_path, 'r', encoding='utf-8') as f:
+                            saved_content = f.read()
+                        generated_sections.append(saved_content)
+                        # 同步 completed_section_titles
+                        if idx <= len(outline.sections):
+                            completed_section_titles.append(outline.sections[idx - 1].title)
+                        logger.info(f"断点续行：预加载章节 {idx} 内容到上下文")
+
             for i, section in enumerate(outline.sections):
                 section_num = i + 1
                 base_progress = 20 + int((i / total_sections) * 70)
-                
+
+                # ── 断点续行：跳过已完成章节 ──
+                if section_num in completed_section_indices:
+                    logger.info(f"断点续行：跳过已完成章节 [{section_num}] {section.title}")
+                    if progress_callback:
+                        progress_callback(
+                            "generating",
+                            base_progress + int(70 / total_sections),
+                            f"章节 {section.title} 已完成（断点续行，跳过）"
+                        )
+                    continue
+
                 # 更新进度
                 ReportManager.update_progress(
                     report_id, "generating", base_progress,
@@ -2172,7 +2334,64 @@ class ReportManager:
             json.dump(outline.to_dict(), f, ensure_ascii=False, indent=2)
         
         logger.info(f"大纲已保存: {report_id}")
-    
+
+    @classmethod
+    def load_outline(cls, report_id: str) -> Optional['ReportOutline']:
+        """从磁盘加载已保存的大纲，用于断点续行。"""
+        path = cls._get_outline_path(report_id)
+        if not os.path.exists(path):
+            return None
+        try:
+            with open(path, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+
+            def _parse_section(d: dict) -> 'ReportSection':
+                subs = [_parse_section(s) for s in d.get('subsections', [])]
+                return ReportSection(
+                    title=d.get('title', ''),
+                    content=d.get('content', ''),
+                    subsections=subs
+                )
+
+            sections = [_parse_section(s) for s in data.get('sections', [])]
+            return ReportOutline(
+                title=data.get('title', ''),
+                summary=data.get('summary', ''),
+                sections=sections
+            )
+        except Exception as e:
+            logger.warning(f"加载大纲失败: {report_id} - {e}")
+            return None
+
+    @classmethod
+    def get_resume_state(cls, report_id: str) -> dict:
+        """检查断点续行状态：哪些章节已完成（文件已存在）。
+
+        返回:
+            {
+                "has_outline": bool,
+                "completed_section_indices": [1, 2, ...],
+                "completed_count": int,
+            }
+        """
+        folder = cls._get_report_folder(report_id)
+        has_outline = os.path.exists(cls._get_outline_path(report_id))
+
+        completed_indices = []
+        if os.path.exists(folder):
+            for fname in sorted(os.listdir(folder)):
+                # 只计主章节文件 section_01.md，不计子章节
+                import re as _re
+                m = _re.match(r'^section_(\d{2})\.md$', fname)
+                if m:
+                    completed_indices.append(int(m.group(1)))
+
+        return {
+            "has_outline": has_outline,
+            "completed_section_indices": completed_indices,
+            "completed_count": len(completed_indices),
+        }
+
     @classmethod
     def save_section(
         cls, 
