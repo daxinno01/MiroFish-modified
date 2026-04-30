@@ -11,11 +11,15 @@ services:
       - neo4j_data:/data
 
   qdrant:
-    image: qdrant/qdrant:v1.12.1
+    image: qdrant/qdrant:v1.16.2
     container_name: mirofish-qdrant
     ports:
       - "6333:6333"
       - "6334:6334"
+    ulimits:
+      nofile:
+        soft: 65535
+        hard: 65535
     volumes:
       - qdrant_data:/qdrant/storage
 

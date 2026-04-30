@@ -168,7 +168,7 @@ def generate_report():
                     task_manager.fail_task(task_id, report.error or "报告生成失败")
                 
             except Exception as e:
-                logger.error(f"报告生成失败: {str(e)}")
+                logger.exception(f"报告生成失败: {str(e)}")
                 task_manager.fail_task(task_id, str(e))
         
         # 启动后台线程
@@ -188,7 +188,7 @@ def generate_report():
         })
         
     except Exception as e:
-        logger.error(f"启动报告生成任务失败: {str(e)}")
+        logger.exception(f"报告生成失败: {str(e)}")
         return jsonify({
             "success": False,
             "error": str(e),

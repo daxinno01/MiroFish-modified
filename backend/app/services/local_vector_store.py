@@ -27,9 +27,9 @@ def _now_iso() -> str:
 class QdrantChunkStore:
     def __init__(self, llm: Optional[LLMClient] = None):
         self._client = QdrantClient(
-            url=Config.QDRANT_URL,
+            url=Config.QDRANT_URL.replace("localhost", "127.0.0.1"),
             api_key=Config.QDRANT_API_KEY,
-            timeout=30.0,
+            timeout=60.0,
         )
         self._collection = Config.QDRANT_COLLECTION_CHUNKS
         self._llm = llm or LLMClient(
@@ -37,7 +37,12 @@ class QdrantChunkStore:
             base_url=Config.EMBEDDING_BASE_URL,
             model=Config.LLM_MODEL_NAME,
         )
-        self._ensure_collection()
+        # 3. Use a try-except here so the service starts even if the network is shaky
+        try:
+            self._ensure_collection()
+        except Exception as e:
+            logger.error(f"Failed to ensure collection: {e}")
+            # Don't raise, let it fail gracefully so the agent can still run without RAG
 
     def _ensure_collection(self):
         try:
@@ -113,13 +118,13 @@ class QdrantChunkStore:
         if graph_id:
             must.append(qmodels.FieldCondition(key="graph_id", match=qmodels.MatchValue(value=graph_id)))
 
-        results = self._client.search(
+        results = self._client.query_points(
             collection_name=self._collection,
-            query_vector=query_vector,
+            query=query_vector,
             limit=limit,
             query_filter=qmodels.Filter(must=must) if must else None,
             with_payload=True,
-        )
+        ).points
 
         items: List[Dict[str, Any]] = []
         for r in results:

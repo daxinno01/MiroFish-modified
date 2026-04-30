@@ -2316,7 +2316,9 @@ def interview_agents_batch():
             optimized_interview = interview.copy()
             optimized_interview['prompt'] = optimize_interview_prompt(interview.get('prompt', ''))
             optimized_interviews.append(optimized_interview)
-
+        
+        logger.info(f"🚀 Launching batch interview for {simulation_id} with {len(optimized_interviews)} agents")
+        
         result = SimulationRunner.interview_agents_batch(
             simulation_id=simulation_id,
             interviews=optimized_interviews,

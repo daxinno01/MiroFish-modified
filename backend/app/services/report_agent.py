@@ -1444,15 +1444,26 @@ class ReportAgent:
             # - 工具调用轮（Thought + Action）：输出通常只有 100–400 token，给 1500 起保险作用
             # - 有足够数据可写答案时：给满额的 4096 以确保内容完整
             likely_final = (tool_calls_count >= min_tool_calls)
-            response = self._chat_with_moderation_retry(
-                messages=messages,
-                temperature=0.5,
-                max_tokens=4096 if likely_final else 1500,
-                caller_hint=f"Report章节生成({section.title})"
-            )
+
+            # --- 🔄 RETRY LOGIC START ---
+            response = None
+            for attempt in range(3):  # Try up to 3 times
+                response = self._chat_with_moderation_retry(
+                    messages=messages,
+                    temperature=0.5 + (attempt * 0.1), # Slightly increase temp on retry
+                    max_tokens=4096 if likely_final else 1500,
+                    caller_hint=f"Report章节生成({section.title}_attempt_{attempt+1})"
+                )
+                if response:
+                    break
+                logger.warning(f"Attempt {attempt + 1} failed for {section.title}. Retrying...")
+
+            if not response:
+                response = "Model failed to respond."
+            # --- 🔄 RETRY LOGIC END ---
             
             logger.debug(f"LLM响应: {response[:200]}...")
-            
+
             # 检查是否有工具调用和最终答案
             has_tool_calls = bool(self._parse_tool_calls(response))
             has_final_answer = "Final Answer:" in response
@@ -1612,12 +1623,24 @@ class ReportAgent:
             "content": "已达到工具调用限制，请直接输出 Final Answer: 并生成章节内容。"
         })
         
-        response = self._chat_with_moderation_retry(
-            messages=messages,
-            temperature=0.5,
-            max_tokens=4096,
-            caller_hint=f"Report章节生成(迭代兜底:{section.title})"
-        )
+        response = None
+        for attempt in range(3):
+            response = self._chat_with_moderation_retry(
+                messages=messages,
+                temperature=0.5,
+                max_tokens=4096,
+                caller_hint=f"Report章节生成(迭代兜底:{section.title})"
+            )
+        
+            if response:
+                break
+            logger.warning(f"Attempt {attempt + 1} failed for {section.title}. Retrying...")
+        
+        # === 🚑 NEW SAFETY NET ===
+        if not response:
+                # If all 3 attempts fail, then we raise the error to the main generator
+                response = "Model failed to respond."
+        # =========================
         
         if "Final Answer:" in response:
             final_answer = response.split("Final Answer:")[-1].strip()

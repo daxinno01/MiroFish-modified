@@ -6,6 +6,7 @@ import fcntl
 from typing import Optional, Dict, Any, List
 from datetime import datetime
 from openai import OpenAI
+from json_repair import repair_json
 
 from ..config import Config
 
@@ -224,30 +225,31 @@ class LLMClient:
 
     @staticmethod
     def _extract_json_object(text: str) -> Optional[str]:
-        """从模型回复中提取 JSON 字符串"""
+        """从模型回复中提取 JSON 字符串 - 增强版支持修复部分截断"""
         if not text:
             return None
         
-        # 移除 Markdown 标记
-        text = re.sub(r"```json\s*", "", text)
-        text = re.sub(r"```\s*", "", text)
-        s = text.strip()
+        # 1. 预清洗：移除 Markdown 栅栏
+        clean_text = re.sub(r"```json\s*", "", text)
+        clean_text = re.sub(r"```\s*", "", clean_text).strip()
         
-        start_brace = s.find("{")
-        end_brace = s.rfind("}")
-        start_bracket = s.find("[")
-        end_bracket = s.rfind("]")
+        # 2. 查找起始点 (支持对象 { 或 数组 [)
+        start_brace = clean_text.find("{")
+        start_bracket = clean_text.find("[")
         
-        json_str = None
-        if start_brace != -1 and end_brace != -1 and end_brace > start_brace:
-            if start_bracket != -1 and start_bracket < start_brace and end_bracket > end_brace:
-                json_str = s[start_bracket : end_bracket + 1]
-            else:
-                json_str = s[start_brace : end_brace + 1]
-        elif start_bracket != -1 and end_bracket != -1 and end_bracket > start_bracket:
-            json_str = s[start_bracket : end_bracket + 1]
-            
-        return json_str
+        # 确定真正的起始位置
+        if start_brace == -1 and start_bracket == -1:
+            return None
+        
+        if start_brace != -1 and (start_bracket == -1 or start_brace < start_bracket):
+            start_idx = start_brace
+        else:
+            start_idx = start_bracket
+
+        # 3. 关键改动：不再寻找 end_brace。
+        # 直接截取从 start 到结尾的所有内容。
+        # 这样 json_repair 才能接收到 {"entities": [{"name": 并将其修复为 {"entities": [{"name": ""}]}
+        return clean_text[start_idx:].strip()
 
     def chat(
         self,
@@ -279,14 +281,15 @@ class LLMClient:
     def chat_json(
         self,
         messages: List[Dict[str, str]],
-        temperature: float = 0.2,
-        max_tokens: int = 4096,
+        temperature: float = 0.1,
+        max_tokens: int = 32000,
         caller_hint: str = "chat_json",
         simulation_id: Optional[str] = None,
         project_id: Optional[str] = None
     ) -> Dict[str, Any]:
-        """发送聊天请求并返回 JSON 对象"""
-        # 第一阶段：强模式尝试 (response_format="json_object")
+        """发送聊天请求并返回 JSON 对象，包含自动修复逻辑"""
+        
+        # --- Stage 1: Standard JSON Mode Attempt ---
         try:
             response = self.chat(
                 messages=messages,
@@ -299,29 +302,76 @@ class LLMClient:
             )
             maybe = self._extract_json_object(response)
             if maybe:
-                parsed = json.loads(maybe)
-                if isinstance(parsed, (dict, list)):
+                try:
+                    from json_repair import repair_json
+                    repaired = repair_json(maybe)
+                    parsed = json.loads(repaired)
+                    
+                    # --- ADD THIS TYPE GUARD ---
+                    if isinstance(parsed, dict):
+                        for key in ['entities', 'relationships']:
+                            if key in parsed and isinstance(parsed[key], list):
+                                # Only keep items that are actually dictionaries
+                                # This removes the "strings" that cause the store to crash
+                                parsed[key] = [item for item in parsed[key] if isinstance(item, dict)]
+                            elif key in parsed and isinstance(parsed[key], dict):
+                                # If json_repair turned the list into a dict, convert it back
+                                parsed[key] = list(parsed[key].values())
+                    # ---------------------------
+                    
                     return parsed
-        except Exception:
+                except Exception as e:
+                    logger.error(f"Failed to process repaired JSON: {e}")
+                    raise
+        except Exception as e:
+            # Silently move to fallback if Stage 1 fails (common with some API versions)
+            print(f"Extractor failed for {caller_hint}: No JSON found in output: \n{response}")
             pass
 
-        # 第二阶段：ReACT 兜底模式
+        # --- Stage 2: Fallback Mode with Hardened System Prompt ---
         fallback_messages = [
-            {"role": "system", "content": "你是一个精准的 JSON 生成器。只输出合法的 JSON 结构，不要包含任何额外说明。"},
+            {
+                "role": "system", 
+                "content": "You are a specialized JSON generator. Output ONLY the JSON object. "
+                        "Ensure all strings are properly escaped. No markdown, no prose."
+            },
             *messages,
         ]
+        
         response2 = self.chat(
             messages=fallback_messages,
-            temperature=0.1,
+            temperature=0.0, # Zero temperature is better for strict extraction
             max_tokens=max_tokens,
             caller_hint=f"{caller_hint}_fallback",
             simulation_id=simulation_id,
             project_id=project_id
         )
+        
         maybe = self._extract_json_object(response2)
         if not maybe:
-            raise ValueError("模型未返回可解析的 JSON 结构")
-        return json.loads(maybe)
+            raise ValueError(f"Extractor failed for {caller_hint}: No JSON found in output: \n{response2}")
+
+        try:
+            from json_repair import repair_json
+            repaired = repair_json(maybe)
+            parsed = json.loads(repaired)
+            
+            # --- ADD THIS TYPE GUARD ---
+            if isinstance(parsed, dict):
+                for key in ['entities', 'relationships']:
+                    if key in parsed and isinstance(parsed[key], list):
+                        # Only keep items that are actually dictionaries
+                        # This removes the "strings" that cause the store to crash
+                        parsed[key] = [item for item in parsed[key] if isinstance(item, dict)]
+                    elif key in parsed and isinstance(parsed[key], dict):
+                        # If json_repair turned the list into a dict, convert it back
+                        parsed[key] = list(parsed[key].values())
+            # ---------------------------
+            
+            return parsed
+        except Exception as e:
+            logger.error(f"Failed to process repaired JSON: {e}")
+            raise
 
     def embed_texts(self, texts: List[str], model: Optional[str] = None) -> List[List[float]]:
         """生成 embeddings"""
