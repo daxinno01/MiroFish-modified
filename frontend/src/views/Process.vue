@@ -583,11 +583,21 @@ const handleNewProject = async () => {
     
     // 构建 FormData
     const formDataObj = new FormData()
-    pending.files.forEach(file => {
-      formDataObj.append('files', file)
+    const fileMetadata = []
+
+    pending.files.forEach(fileItem => {
+      formDataObj.append('files', fileItem.raw)
+
+      fileMetadata.push({
+        name: fileItem.name,
+        isImage: fileItem.isImage,
+        description: fileItem.description || '' // 确保空描述作为空字符串发送
+      })
     })
     formDataObj.append('simulation_requirement', pending.simulationRequirement)
     
+    formDataObj.append('file_metadata', JSON.stringify(fileMetadata))
+
     // 调用本体生成 API
     const response = await generateOntology(formDataObj)
     

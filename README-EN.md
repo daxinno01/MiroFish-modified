@@ -185,6 +185,9 @@ NEO4J_PASSWORD=mirofish
 
 # Qdrant
 QDRANT_URL=http://localhost:6333
+
+# GCP
+GCP_PROJECT_ID=your_gcp_project_id
 ```
 
 Optional (strongly recommended to review):
@@ -232,6 +235,16 @@ source .venv/bin/activate
 
 python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
+```
+
+# GCP Init (via CLI)
+gcloud auth application-default login
+gcloud auth application-default set-quota-project YOUR_PROJECT
+
+### 3.5) Install necessary fonts
+```linux
+sudo apt-get update
+udo apt-get install fonts-noto-cjk
 ```
 
 ### 4) Start Services

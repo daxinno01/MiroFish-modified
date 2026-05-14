@@ -628,15 +628,24 @@ class OasisProfileGenerator:
                         {"role": "system", "content": self._get_system_prompt(is_individual)},
                         {"role": "user", "content": prompt}
                     ],
-                    temperature=0.7 - (attempt * 0.1),
-                    caller_hint=f"人设生成:{entity_name}",
-                    simulation_id=simulation_id,
-                    project_id=project_id
+                    # ... 其他参数
                 )
                 
-                # 验证必需字段
+                # --- 新增防御性代码 START ---
+                # 情况1: LLM 返回了 [{...}] 格式
+                if isinstance(result, list) and len(result) > 0:
+                    result = result[0]
+                
+                # 情况2: LLM 返回的不是字典（可能是字符串或其他）
+                if not isinstance(result, dict):
+                    # 如果解析出来不是字典，抛出异常进入下一次重试
+                    raise ValueError(f"LLM returned {type(result)} instead of dict")
+                # --- 新增防御性代码 END ---
+                
+                # 现在这里是安全的，因为 result 确定是字典
                 if "bio" not in result or not result["bio"]:
                     result["bio"] = entity_summary[:200] if entity_summary else f"{entity_type}: {entity_name}"
+                
                 if "persona" not in result or not result["persona"]:
                     result["persona"] = entity_summary or f"{entity_name}是一个{entity_type}。"
                 

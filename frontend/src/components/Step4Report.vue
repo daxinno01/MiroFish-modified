@@ -136,6 +136,13 @@
               <line x1="12" y1="15" x2="12" y2="3"></line>
             </svg>
           </button>
+          <button v-if="isComplete" class="translate-export-btn" @click="translateExport">
+            <span>(NEW) Translate and Export as PDF</span>
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </button>
           <button v-if="isComplete" class="next-step-btn" @click="goToInteraction">
             <span>进入深度互动</span>
             <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
@@ -402,7 +409,7 @@
 <script setup>
 import { ref, computed, watch, onMounted, onUnmounted, nextTick, h, reactive } from 'vue'
 import { useRouter } from 'vue-router'
-import { getAgentLog, getConsoleLog, getReportDownloadUrl } from '../api/report'
+import { getAgentLog, getConsoleLog, getReportDownloadUrl, getTranslateExportUrl } from '../api/report'
 
 const router = useRouter()
 
@@ -426,6 +433,13 @@ const downloadReportMarkdown = () => {
   const url = getReportDownloadUrl(props.reportId)
   window.open(url, '_blank')
   emit('add-log', `导出报告: ${props.reportId}.md`)
+}
+
+const translateExport = () => {
+  if (!props.reportId) return
+  const url = getTranslateExportUrl(props.reportId)
+  window.open(url, '_blank')
+  emit('add-log', `Translate and Export as PDF: ${props.reportId}.md`)
 }
 
 // State
@@ -3391,6 +3405,41 @@ watch(() => props.reportId, (newId) => {
 .export-btn:hover {
   background: #F9FAFB;
   border-color: #9CA3AF;
+}
+
+.translate-export-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: calc(100% - 40px);
+  margin: 8px 20px 0 20px; /* Increased top margin slightly to separate groups */
+  padding: 12px 20px;
+  font-size: 13px;
+  font-weight: 600;
+  
+  /* The "Brand/Pro" Look */
+  color: #FF6B35;
+  background: #FFF7F5; /* Very soft orange tint */
+  border: 1.5px solid #FF6B35;
+  
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.translate-export-btn:hover {
+  background: #FF6B35;
+  color: #FFFFFF;
+  box-shadow: 0 4px 12px rgba(255, 107, 53, 0.2);
+}
+
+.translate-export-btn svg {
+  transition: transform 0.2s ease;
+}
+
+.translate-export-btn:hover svg {
+  transform: translateY(2px); /* Subtle downward "download" bounce */
 }
 
 .next-step-btn {

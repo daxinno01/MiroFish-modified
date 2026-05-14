@@ -257,13 +257,26 @@ class LocalNeo4jGraphStore:
             nodes: List[Dict[str, Any]] = []
             node_name_map: Dict[str, str] = {}
             for r in node_records:
+                raw_attrs = r.get("attributes_json")
                 attrs = {}
-                try:
-                    attrs = json.loads(r.get("attributes_json") or "{}")
-                except Exception:
-                    attrs = {}
-                if isinstance(r.get("source_entity_types"), list):
-                    attrs["source_entity_types"] = r.get("source_entity_types")
+                
+                if raw_attrs:
+                    try:
+                        parsed = json.loads(raw_attrs)
+                        # Ensure the parsed JSON is actually a dictionary
+                        if isinstance(parsed, dict):
+                            attrs = parsed
+                        else:
+                            # If it's a list or other type, wrap it so we don't lose data
+                            attrs = {"raw_attributes": parsed}
+                    except Exception:
+                        attrs = {}
+                
+                # Now it is safe to assign this key because attrs is guaranteed to be a dict
+                source_types = r.get("source_entity_types")
+                if isinstance(source_types, list):
+                    attrs["source_entity_types"] = source_types
+
                 uuid_ = r.get("uuid")
                 name = r.get("name") or ""
                 node_name_map[uuid_] = name

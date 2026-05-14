@@ -1,6 +1,13 @@
 /**
  * 临时存储待上传的文件和需求
- * 用于首页点击启动引擎后立即跳转，在Process页面再进行API调用
+ * 
+ * files 数组结构：
+ * Array<{
+ *   raw: File,           // 原始文件对象
+ *   name: string,        // 文件名
+ *   isImage: boolean,    // 是否为图片
+ *   description: string  // 用户输入的图片描述
+ * }>
  */
 import { reactive } from 'vue'
 
@@ -10,15 +17,17 @@ const state = reactive({
   isPending: false
 })
 
-export function setPendingUpload(files, requirement) {
-  state.files = files
+export function setPendingUpload(fileObjects, requirement) {
+  // 这里的 fileObjects 是我们在 Home.vue 中构建的包含 description 的对象数组
+  state.files = fileObjects
   state.simulationRequirement = requirement
   state.isPending = true
 }
 
 export function getPendingUpload() {
+  // 使用解构确保返回当前状态的快照
   return {
-    files: state.files,
+    files: [...state.files], 
     simulationRequirement: state.simulationRequirement,
     isPending: state.isPending
   }

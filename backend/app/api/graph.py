@@ -10,6 +10,7 @@ import os
 import traceback
 import threading
 from flask import request, jsonify
+import base64
 
 from . import graph_bp
 from ..config import Config
@@ -17,6 +18,7 @@ from ..services.ontology_generator import OntologyGenerator
 from ..services.graph_backend import get_graph_builder
 from ..services.text_processor import TextProcessor
 from ..utils.file_parser import FileParser
+from ..utils.multimodal_processor import MultimodalProcessor
 from ..utils.logger import get_logger
 from ..models.task import TaskManager, TaskStatus
 from ..models.project import ProjectManager, ProjectStatus
@@ -31,7 +33,6 @@ def allowed_file(filename: str) -> bool:
         return False
     ext = os.path.splitext(filename)[1].lower().lstrip('.')
     return ext in Config.ALLOWED_EXTENSIONS
-
 
 # ============== 项目管理接口 ==============
 
@@ -200,25 +201,57 @@ def generate_ontology():
             }
         }
     """
+    print("--- FORM DATA RECEIVED ---")
+    print(request.form) # This will show all non-file fields
     try:
         logger.info("=== 开始生成本体定义 ===")
-        
+
         # 获取参数
         simulation_requirement = request.form.get('simulation_requirement', '')
         project_name = request.form.get('project_name', 'Unnamed Project')
         additional_context = request.form.get('additional_context', '')
         
+        file_metadata_str = request.form.get('file_metadata', '[]')
+        metadata_map = {}
+        try:
+            file_metadata_list = json.loads(file_metadata_str)
+            # 转换为字典，以 filename 为 key，方便后续快速查找描述
+            for item in file_metadata_list:
+                metadata_map[item.get('name')] = item
+        except Exception as e:
+            logger.warning(f"解析 file_metadata 失败: {e}")
+
         logger.debug(f"项目名称: {project_name}")
         logger.debug(f"模拟需求: {simulation_requirement[:100]}...")
-        
+
         if not simulation_requirement:
             return jsonify({
                 "success": False,
                 "error": "请提供模拟需求描述 (simulation_requirement)"
             }), 400
         
+        # 1. DEBUG: Print everything coming from the frontend
+        print("--- DEBUG START ---")
+        print(f"Files keys: {request.files.keys()}")
+        print(f"Form keys: {request.form.keys()}")
+
         # 获取上传的文件
         uploaded_files = request.files.getlist('files')
+
+        if not uploaded_files or len(uploaded_files) == 0:
+            print("Error: No files found in request.files")
+            return jsonify({"success": False, "error": "请至少上传一个文档文件"}), 400
+
+        # 3. Parse the metadata string
+        metadata_raw = request.form.get('file_metadata', '[]')
+        try:
+            metadata_list = json.loads(metadata_raw)
+            # Create a map for easy lookup
+            metadata_map = {m['name']: m for m in metadata_list}
+        except Exception as e:
+            print(f"Metadata Parse Error: {e}")
+            metadata_map = {}
+
         if not uploaded_files or all(not f.filename for f in uploaded_files):
             return jsonify({
                 "success": False,
@@ -228,6 +261,7 @@ def generate_ontology():
         # 创建项目
         project = ProjectManager.create_project(name=project_name)
         project.simulation_requirement = simulation_requirement
+        image_parser = MultimodalProcessor(project_id=project.project_id)
         logger.info(f"创建项目: {project.project_id}")
         
         # 保存文件并提取文本
@@ -235,7 +269,36 @@ def generate_ontology():
         all_text = ""
         
         for file in uploaded_files:
-            if file and file.filename and allowed_file(file.filename):
+            if not file or not file.filename:
+                continue
+            
+            name, ext = os.path.splitext(file.filename)
+            ext = ext.lstrip('.')
+
+            # intercept logic to allow images
+            if ext in Config.IMAGE_EXTENSIONS:
+                file_metadata = metadata_map.get(file.filename, {})
+                txt_filename = f"{os.path.basename(name)}_desc.txt"
+
+                logger.info(f"Analyzing {file.filename}...")
+
+                file_bytes = file.read()
+                base64_image = base64.b64encode(file_bytes).decode('utf-8')
+
+                text = image_parser.describe_image(
+                    base64_img=base64_image,
+                    short_tag=file_metadata.get('description', '')
+                )
+
+                print(text)
+
+                file_info = ProjectManager.save_text_to_project(
+                    project.project_id, 
+                    text, 
+                    txt_filename
+                )
+            
+            elif ext in Config.ALLOWED_EXTENSIONS:
                 # 保存文件到项目目录
                 file_info = ProjectManager.save_file_to_project(
                     project.project_id, 
@@ -246,12 +309,16 @@ def generate_ontology():
                     "filename": file_info["original_filename"],
                     "size": file_info["size"]
                 })
-                
-                # 提取文本
+
                 text = FileParser.extract_text(file_info["path"])
-                text = TextProcessor.preprocess_text(text)
-                document_texts.append(text)
-                all_text += f"\n\n=== {file_info['original_filename']} ===\n{text}"
+
+            else:
+                continue
+                
+            # 提取文本
+            text = TextProcessor.preprocess_text(text)
+            document_texts.append(text)
+            all_text += f"\n\n=== {file_info['original_filename']} ===\n{text}"
         
         if not document_texts:
             ProjectManager.delete_project(project.project_id)

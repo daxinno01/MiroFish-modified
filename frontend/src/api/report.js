@@ -85,3 +85,13 @@ export const getReportDownloadUrl = (reportId) => {
   const base = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5001'
   return `${base}/api/report/${reportId}/download`
 }
+
+/**
+ * Get report translate and export link
+ * @param {string} reportId
+ */
+export const getTranslateExportUrl = (reportId) => {
+  const base = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5001'
+  return `${base}/api/report/${reportId}/translate-export`
+}
+

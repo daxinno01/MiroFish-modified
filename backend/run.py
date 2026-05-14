@@ -104,10 +104,25 @@ def start_mock_server():
     except Exception as e:
         logger.error(f"启动 Mock 服务器失败: {e}")
 
+def silence_noisy_loggers():
+    """彻底静默那些话痨第三方库"""
+    noisy_loggers = [
+        "fontTools",
+        "fontTools.subset",
+        "fontTools.ttLib.ttFont",
+        "weasyprint",
+        "pill", # Pillow 有时也会刷屏
+    ]
+    for logger_name in noisy_loggers:
+        l = logging.getLogger(logger_name)
+        l.setLevel(logging.WARNING)
+        l.propagate = False # 关键：不让它把消息传递给 Root Logger
 
 
 def main():
     """主函数"""
+    silence_noisy_loggers()
+    
     # 验证配置
     errors = Config.validate()
     if errors:

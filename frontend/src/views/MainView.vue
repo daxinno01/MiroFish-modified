@@ -76,7 +76,7 @@
 </template>
 
 <script setup>
-import { ref, computed, onMounted, onUnmounted, nextTick } from 'vue'
+import { ref, computed, onMounted, onUnmounted, nextTick, toRaw } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import GraphPanel from '../components/GraphPanel.vue'
 import Step1GraphBuild from '../components/Step1GraphBuild.vue'
@@ -203,10 +203,30 @@ const handleNewProject = async () => {
     addLog('Starting ontology generation: Uploading files...')
     
     const formData = new FormData()
-    pending.files.forEach(f => formData.append('files', f))
-    formData.append('simulation_requirement', pending.simulationRequirement)
+    const fileMetadata = []
+
+    // FIX 1: Unwrap the Vue Proxy with toRaw
+    pending.files.forEach(fileItem => {
+      // Assuming your store saves the raw file inside a 'raw' property like in your Process.vue code
+      formData.append('files', toRaw(fileItem.raw), fileItem.name)
+      
+      // If your backend also expects the metadata string from earlier:
+      fileMetadata.push({
+        name: fileItem.name,
+        isImage: fileItem.isImage,
+        description: fileItem.description || ''
+      })
+    })
+
+    // FIX 2: Ensure simulation requirement isn't undefined
+    const requirement = pending.simulationRequirement || " "
+    formData.append('simulation_requirement', requirement)
+    
+    // If your backend expects the metadata map:
+    formData.append('file_metadata', JSON.stringify(fileMetadata))
     
     const res = await generateOntology(formData)
+
     if (res.success) {
       clearPendingUpload()
       currentProjectId.value = res.data.project_id

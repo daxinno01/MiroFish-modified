@@ -143,7 +143,7 @@
                   ref="fileInput"
                   type="file"
                   multiple
-                  accept=".pdf,.md,.txt"
+                  accept=".pdf,.md,.txt,image/*"
                   @change="handleFileSelect"
                   style="display: none"
                   :disabled="loading"
@@ -156,10 +156,25 @@
                 </div>
                 
                 <div v-else class="file-list">
-                  <div v-for="(file, index) in files" :key="index" class="file-item">
-                    <span class="file-icon">📄</span>
-                    <span class="file-name">{{ file.name }}</span>
-                    <button @click.stop="removeFile(index)" class="remove-btn">×</button>
+                  <div v-for="(fileItem, index) in files" :key="index" class="file-item-wrapper">
+                    <!-- 原有的文件显示行 -->
+                    <div class="file-item">
+                      <!-- 动态显示图标 -->
+                      <span class="file-icon">{{ fileItem.isImage ? '🖼️' : '📄' }}</span>
+                      <span class="file-name">{{ fileItem.name }}</span>
+                      <button @click.stop="removeFile(index)" class="remove-btn">×</button>
+                    </div>
+                    
+                    <!-- 新增的图片描述输入框 -->
+                    <div v-if="fileItem.isImage" class="image-desc-container">
+                      <input 
+                        type="text" 
+                        v-model="fileItem.description" 
+                        placeholder="Please enter a brief image description..."
+                        class="image-desc-input"
+                        @click.stop
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -209,6 +224,7 @@
 <script setup>
 import { ref, computed } from 'vue'
 import { useRouter } from 'vue-router'
+import { setPendingUpload } from '../store/pendingUpload.js'
 
 const router = useRouter()
 
@@ -230,7 +246,16 @@ const fileInput = ref(null)
 
 // 计算属性:是否可以提交
 const canSubmit = computed(() => {
-  return formData.value.simulationRequirement.trim() !== '' && files.value.length > 0
+  const hasRequirement = formData.value.simulationRequirement.trim() !== ''
+  const hasFiles = files.value.length > 0
+  
+  // Validation: Every image must have a trimmed description
+  const allImagesDescribed = files.value.every(fileItem => {
+    if (!fileItem.isImage) return true // Skip non-image files
+    return fileItem.description && fileItem.description.trim() !== ''
+  })
+
+  return hasRequirement && hasFiles && allImagesDescribed
 })
 
 // 触发文件选择
@@ -269,7 +294,16 @@ const handleDrop = (e) => {
 const addFiles = (newFiles) => {
   const validFiles = newFiles.filter(file => {
     const ext = file.name.split('.').pop().toLowerCase()
-    return ['pdf', 'md', 'txt'].includes(ext)
+    // 1. 新增允许的图片格式
+    return ['pdf', 'md', 'txt', 'jpg', 'jpeg', 'png', 'gif', 'webp'].includes(ext) 
+  }).map(file => {
+    // 2. 将文件包装成对象，以便绑定描述
+    return {
+      raw: file,
+      name: file.name,
+      isImage: file.type.startsWith('image/'),
+      description: '' // 初始化为空字符串
+    }
   })
   files.value.push(...validFiles)
 }
@@ -291,15 +325,13 @@ const scrollToBottom = () => {
 const startSimulation = () => {
   if (!canSubmit.value || loading.value) return
   
-  // 存储待上传的数据
-  import('../store/pendingUpload.js').then(({ setPendingUpload }) => {
-    setPendingUpload(files.value, formData.value.simulationRequirement)
-    
-    // 立即跳转到Process页面（使用特殊标识表示新建项目）
-    router.push({
-      name: 'Process',
-      params: { projectId: 'new' }
-    })
+  // 2. Set the data synchronously 
+  setPendingUpload(files.value, formData.value.simulationRequirement)
+  
+  // 3. Navigate AFTER the data is set
+  router.push({
+    name: 'Process',
+    params: { projectId: 'new' }
   })
 }
 </script>
@@ -709,6 +741,7 @@ const startSimulation = () => {
   cursor: pointer;
   transition: all 0.3s;
   background: #FAFAFA;
+  overflow: hidden;
 }
 
 .upload-zone:hover {
@@ -744,21 +777,83 @@ const startSimulation = () => {
 }
 
 .file-list {
+  /* 1. Give it a maximum height so it doesn't push the "Start" button off-screen */
+  max-height: 200px; 
   width: 100%;
-  padding: 15px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  
+  /* 2. Enable vertical scrolling */
+  overflow-y: auto;
+  
+  /* 3. Aesthetic touch: add some padding so scrollbars don't hug the text */
+  padding-right: 8px;
+  padding-left: 8px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  
+  /* Custom scrollbar for a cleaner look */
+  scrollbar-width: thin;
+  scrollbar-color: #c1c1c1 transparent;
 }
 
+/* Optional: Style the scrollbar for Chrome/Safari/Edge */
+.file-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.file-list::-webkit-scrollbar-thumb {
+  background-color: #e0e0e0;
+  border-radius: 10px;
+}
+
+/* Container for each file entry */
+.file-item-wrapper {
+  display: flex;
+  flex-direction: column;
+  background: var(--white);
+  border: 1px solid #EEE;
+  margin-bottom: 8px;
+  transition: border-color 0.2s;
+}
+
+.file-item-wrapper:focus-within {
+  border-color: var(--orange);
+}
+
+/* Original file row (icon, name, remove btn) */
 .file-item {
   display: flex;
   align-items: center;
-  background: var(--white);
   padding: 8px 12px;
-  border: 1px solid #EEE;
   font-family: var(--font-mono);
   font-size: 0.85rem;
+  border-bottom: 1px solid transparent; /* Placeholder for image entries */
+}
+
+/* Container for the image description input */
+.image-desc-container {
+  padding: 0 12px 10px 12px;
+}
+
+.image-desc-input {
+  width: 100%;
+  box-sizing: border-box; /* Ensures padding doesn't push it off-screen */
+  border: 1px solid #DDD;
+  background: #FAFAFA;
+  padding: 6px 10px;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--black);
+  outline: none;
+}
+
+.image-desc-input::placeholder {
+  color: #AAA;
+  font-style: italic;
+}
+
+/* Visual cue for missing description */
+.image-desc-input:invalid {
+  border-color: #FFCCCC;
 }
 
 .file-name {

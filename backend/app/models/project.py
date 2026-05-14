@@ -242,6 +242,39 @@ class ProjectManager:
         return True
     
     @classmethod
+    def save_text_to_project(cls, project_id: str, text: str, original_filename: str) -> Dict[str, str]:
+        """
+        保存上传的文件到项目目录
+        
+        Args:
+            project_id: 项目ID
+            file_storage: Flask的FileStorage对象
+            original_filename: 原始文件名
+            
+        Returns:
+            文件信息字典 {filename, path, size}
+        """
+        files_dir = cls._get_project_files_dir(project_id)
+        os.makedirs(files_dir, exist_ok=True)
+        
+        # 生成安全的文件名
+        safe_filename = f"{uuid.uuid4().hex[:8]}.txt"
+        file_path = os.path.join(files_dir, safe_filename)
+        
+        with open(file_path, 'w', encoding='utf-8') as f:
+            f.write(text)
+        
+        # 获取文件大小
+        file_size = os.path.getsize(file_path)
+        
+        return {
+            "original_filename": original_filename,
+            "saved_filename": safe_filename,
+            "path": file_path,
+            "size": file_size
+        }
+
+    @classmethod
     def save_file_to_project(cls, project_id: str, file_storage, original_filename: str) -> Dict[str, str]:
         """
         保存上传的文件到项目目录
