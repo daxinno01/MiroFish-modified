@@ -10,7 +10,7 @@ from flask import request, jsonify, send_file
 
 from . import report_bp
 from ..config import Config
-from ..services.report_agent import ReportAgent, ReportManager, ReportStatus
+from ..services.report_agent import ReportLogger, ReportAgent, ReportManager, ReportStatus
 from ..services.report_transformer import ReportTransformer
 from ..services.simulation_manager import SimulationManager
 from ..models.project import ProjectManager
@@ -476,6 +476,30 @@ def get_report(report_id: str):
             "error": str(e),
             "traceback": traceback.format_exc()
         }), 500
+    
+@report_bp.route('/<report_id>/translate', methods=['GET'])
+def get_translated_report(report_id: str):
+    try:
+        html = ReportManager._get_translated_html_path(report_id)
+        
+        if not html:
+            return jsonify({
+                "success": False,
+                "error": f"Report has not been translated: {report_id}"
+            }), 404
+        
+        return jsonify({
+            "success": True,
+            "data": html
+        })
+        
+    except Exception as e:
+        logger.error(f"获取报告失败: {str(e)}")
+        return jsonify({
+            "success": False,
+            "error": str(e),
+            "traceback": traceback.format_exc()
+        }), 500
 
 
 @report_bp.route('/by-simulation/<simulation_id>', methods=['GET'])
@@ -585,13 +609,13 @@ def download_report(report_id: str):
             return send_file(
                 temp_path,
                 as_attachment=True,
-                download_name=f"{report_id}.md"
+                download_name=f"{report_id}-cn.md"
             )
         
         return send_file(
             md_path,
             as_attachment=True,
-            download_name=f"{report_id}.md"
+            download_name=f"{report_id}-cn.md"
         )
         
     except Exception as e:
@@ -602,21 +626,23 @@ def download_report(report_id: str):
             "traceback": traceback.format_exc()
         }), 500
 
-@report_bp.route('/<report_id>/translate-export', methods=['GET'])
-def translate_and_export_report(report_id: str):
-    try:
-        report = ReportManager.get_report(report_id)
-        if not report:
-            return jsonify({"success": False, "error": "Report not found"}), 404
 
-        content = report.markdown_content
+@report_bp.route('/<report_id>/translated-export', methods=['GET'])
+def export_translated_report(report_id: str):
+    try:
+        html_path = ReportManager._get_translated_html_path(report_id)
+        if not os.path.exists(html_path):
+            return jsonify({"success": False, "error": "Report has not been translated"}), 404
         
-        pdf_path = ReportTransformer.translate_and_export(content)
+        with open(html_path, "r") as file:
+            content = file.read()
+            
+        pdf_path = ReportTransformer.export(content)
 
         return send_file(
             pdf_path,
             as_attachment=True,
-            download_name=f"MiroFish_Report_{report_id}.pdf",
+            download_name=f"MiroFish_Report_{report_id}-en.pdf",
             mimetype='application/pdf'
         )
         
@@ -627,6 +653,44 @@ def translate_and_export_report(report_id: str):
             "error": str(e),
             "traceback": traceback.format_exc()
         }), 500
+    
+
+
+@report_bp.route('/<report_id>/translate', methods=['POST'])
+def translate_report(report_id: str):
+    try:
+        report = ReportManager.get_report(report_id)
+        if not report:
+            return jsonify({"success": False, "error": "Report not found"}), 404
+
+        content = report.markdown_content
+        translated_html = ReportTransformer.translate(content)
+
+        ReportManager.save_translated_report(report.report_id, translated_html)
+
+        ReportLogger(report_id).log(
+            action="report_translated", 
+            stage="completed", 
+            details={
+                "target_lang": "en",
+                "content": translated_html
+            }
+        )
+
+        return jsonify({
+            "success": True,
+            "data": translated_html
+        })
+        
+
+    except Exception as e:
+        logger.error(f"下载报告失败: {str(e)}")
+        return jsonify({
+            "success": False,
+            "error": str(e),
+            "traceback": traceback.format_exc()
+        }), 500
+    
 
 @report_bp.route('/<report_id>', methods=['DELETE'])
 def delete_report(report_id: str):
@@ -1207,3 +1271,31 @@ def get_graph_statistics_tool():
             "error": str(e),
             "traceback": traceback.format_exc()
         }), 500
+
+
+# @report_bp.route('/<report_id>/translate-export', methods=['GET'])
+# def translate_and_export_report(report_id: str):
+#     try:
+#         report = ReportManager.get_report(report_id)
+#         if not report:
+#             return jsonify({"success": False, "error": "Report not found"}), 404
+
+#         content = report.markdown_content
+        
+#         pdf_path = ReportTransformer.translate_and_export(content)
+
+#         return send_file(
+#             pdf_path,
+#             as_attachment=True,
+#             download_name=f"MiroFish_Report_{report_id}.pdf",
+#             mimetype='application/pdf'
+#         )
+        
+#     except Exception as e:
+#         logger.error(f"下载报告失败: {str(e)}")
+#         return jsonify({
+#             "success": False,
+#             "error": str(e),
+#             "traceback": traceback.format_exc()
+#         }), 500
+    

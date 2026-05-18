@@ -87,11 +87,36 @@ export const getReportDownloadUrl = (reportId) => {
 }
 
 /**
+ * Translate report
+ * @param {string} reportId
+ */
+export const translateReport = (reportId) => {
+  return requestWithRetry(() => service.post(`/api/report/${reportId}/translate`, reportId), 3, 1000)
+}
+
+/**
  * Get report translate and export link
  * @param {string} reportId
  */
-export const getTranslateExportUrl = (reportId) => {
+export const getTranslatedExportUrl = (reportId) => {
   const base = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5001'
-  return `${base}/api/report/${reportId}/translate-export`
+  return `${base}/api/report/${reportId}/translated-export`
 }
+
+// /**
+//  * Get translated report
+//  * @param {string} reportId
+//  */
+// export const getTranslatedReport = (reportId) => {
+//   return service.get(`/api/report/${reportId}/translate`, { params: { report_id: reportId } })
+// }
+
+// /**
+//  * Get report translate and export link
+//  * @param {string} reportId
+//  */
+// export const getTranslateExportUrl = (reportId) => {
+//   const base = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5001'
+//   return `${base}/api/report/${reportId}/translate-export`
+// }
 

@@ -14,33 +14,49 @@ logger = logging.getLogger("mirofish.services.report_transformer")
 
 class ReportTransformer:
     
+    # @classmethod
+    # def translate_and_export(cls, md_content: str):
+    #     logger.info("Converting report to HTML...")
+    #     html_content = cls._markdown_to_html(md_content)
+
+    #     logger.info("Chunking HTML content...")
+    #     html_chunks = cls._split_into_chunks(text=html_content)
+
+    #     logger.info("Translating chunks into English...")
+    #     translated_content = cls.translate(html_chunks)
+
+    #     logger.info("Exporting to PDF...")
+    #     # Basic CSS for a clean "Bank-style" report
+    #     styled_html = HTML_TO_PDF_TEMPLATE.format(translated_content=translated_content)
+        
+    #     with tempfile.NamedTemporaryFile(suffix='.pdf', delete=False) as output:
+    #         HTML(string=styled_html).write_pdf(output.name)
+    #         return output.name
+
     @classmethod
-    def translate_and_export(cls, md_content: str):
-        logger.info("Converting report to HTML...")
-        html_content = cls._markdown_to_html(md_content)
-
-        logger.info("Chunking HTML content...")
-        html_chunks = cls._split_into_chunks(text=html_content)
-
-        logger.info("Translating chunks into English...")
-        translated_content = cls._translate(html_chunks)
-
+    def export(cls, html_content: str):
         logger.info("Exporting to PDF...")
         # Basic CSS for a clean "Bank-style" report
-        styled_html = HTML_TO_PDF_TEMPLATE.format(translated_content=translated_content)
+        styled_html = HTML_TO_PDF_TEMPLATE.format(translated_content=html_content)
         
         with tempfile.NamedTemporaryFile(suffix='.pdf', delete=False) as output:
             HTML(string=styled_html).write_pdf(output.name)
             return output.name
 
     @classmethod
-    def _translate(cls, html_chunks: list[str]) -> str:
+    def translate(cls, md_content: str) -> str:
         client = translate_v3.TranslationServiceClient()
         project_id = os.getenv("GCP_PROJECT_ID")
         
         if not project_id:
             logger.error("GCP_PROJECT_ID env var not set!")
             raise ValueError("GCP_PROJECT_ID env var not set!")
+        
+        logger.info("Converting report to HTML...")
+        html_content = cls._markdown_to_html(md_content)
+
+        logger.info("Chunking HTML content...")
+        html_chunks = cls._split_into_chunks(text=html_content)
 
         # 修复了 f-string 中的引号冲突
         parent = f"projects/{project_id}/locations/global"

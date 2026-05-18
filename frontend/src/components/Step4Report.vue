@@ -4,64 +4,106 @@
     <div class="main-split-layout">
       <!-- LEFT PANEL: Report Style -->
       <div class="left-panel report-style" ref="leftPanel">
-        <div v-if="reportOutline" class="report-content-wrapper">
-          <!-- Report Header -->
-          <div class="report-header-block">
-            <div class="report-meta">
-              <span class="report-tag">Prediction Report</span>
-              <span class="report-id">ID: {{ reportId || 'REF-2024-X92' }}</span>
-            </div>
-            <h1 class="main-title">{{ reportOutline.title }}</h1>
-            <p class="sub-title">{{ reportOutline.summary }}</p>
-            <div class="header-divider"></div>
-          </div>
-
-          <!-- Sections List -->
-          <div class="sections-list">
-            <div 
-              v-for="(section, idx) in reportOutline.sections" 
-              :key="idx"
-              class="report-section-item"
-              :class="{ 
-                'is-active': currentSectionIndex === idx + 1,
-                'is-completed': isSectionCompleted(idx + 1),
-                'is-pending': !isSectionCompleted(idx + 1) && currentSectionIndex !== idx + 1
-              }"
-            >
-              <div class="section-header-row" @click="toggleSectionCollapse(idx)" :class="{ 'clickable': isSectionCompleted(idx + 1) }">
-                <span class="section-number">{{ String(idx + 1).padStart(2, '0') }}</span>
-                <h3 class="section-title">{{ section.title }}</h3>
-                <svg 
-                  v-if="isSectionCompleted(idx + 1)" 
-                  class="collapse-icon" 
-                  :class="{ 'is-collapsed': collapsedSections.has(idx) }"
-                  viewBox="0 0 24 24" 
-                  width="20" 
-                  height="20" 
-                  fill="none" 
-                  stroke="currentColor" 
-                  stroke-width="2"
-                >
-                  <polyline points="6 9 12 15 18 9"></polyline>
-                </svg>
+        <div v-if="reportOutline" class="report-content-wrapper flex flex-col h-full overflow-hidden">
+          
+          <div class="report-controls-bar">
+            <div class="flex items-center justify-between w-full">
+              <div class="flex flex-col">
+                <div class="flex items-center gap-2">
+                  <div class="status-pulse-small"></div>
+                  <span class="report-id-text">{{ reportId }}</span>
+                </div>
               </div>
-              
-              <div class="section-body" v-show="!collapsedSections.has(idx)">
-                <!-- Completed Content -->
-                <div v-if="generatedSections[idx + 1]" class="generated-content" v-html="renderMarkdown(generatedSections[idx + 1])"></div>
-                
-                <!-- Loading State -->
-                <div v-else-if="currentSectionIndex === idx + 1" class="loading-state">
-                  <div class="loading-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                      <circle cx="12" cy="12" r="10" stroke-width="4" stroke="#E5E7EB"></circle>
-                      <path d="M12 2a10 10 0 0 1 10 10" stroke-width="4" stroke="#4B5563" stroke-linecap="round"></path>
-                    </svg>
+
+              <div class="flex items-center gap-4">
+                <div class="control-group">                  
+                  <button 
+                    v-if="isComplete && !translatedHTML"
+                    @click="handleTranslate"
+                    :disabled="isTranslating"
+                    class="flashy-btn"
+                  >
+                    {{ isTranslating ? 'Translating...' : 'Translate' }}
+                  </button>
+
+                  <div v-if="translatedHTML" class="toggle-container">
+                    <button 
+                      @click="activeVersion = 'original'"
+                      :class="{ 'is-active': activeVersion === 'original' }"
+                      class="toggle-btn border-r border-black"
+                    >CN</button>
+                    <button 
+                      @click="activeVersion = 'translated'"
+                      :class="{ 'is-active': activeVersion === 'translated' }"
+                      class="toggle-btn"
+                    >EN</button>
                   </div>
-                  <span class="loading-text">正在生成{{ section.title }}...</span>
                 </div>
               </div>
             </div>
+          </div>
+
+          <!-- Report Header -->
+          <div class="report-scroll-area">
+            <div v-if="activeVersion === 'original'" class="report-document-container">
+              <div class="report-header-block">
+                <h1 class="main-title">{{ reportOutline.title }}</h1>
+                <p class="sub-title">{{ reportOutline.summary }}</p>
+                <div class="header-divider"></div>
+              </div>
+
+              <!-- Sections List -->
+              <div class="sections-list">
+                <div 
+                  v-for="(section, idx) in reportOutline.sections" 
+                  :key="idx"
+                  class="report-section-item"
+                  :class="{ 
+                    'is-active': currentSectionIndex === idx + 1,
+                    'is-completed': isSectionCompleted(idx + 1),
+                    'is-pending': !isSectionCompleted(idx + 1) && currentSectionIndex !== idx + 1
+                  }"
+                >
+                  <div class="section-header-row" @click="toggleSectionCollapse(idx)" :class="{ 'clickable': isSectionCompleted(idx + 1) }">
+                    <span class="section-number">{{ String(idx + 1).padStart(2, '0') }}</span>
+                    <h3 class="section-title">{{ section.title }}</h3>
+                    <svg 
+                      v-if="isSectionCompleted(idx + 1)" 
+                      class="collapse-icon" 
+                      :class="{ 'is-collapsed': collapsedSections.has(idx) }"
+                      viewBox="0 0 24 24" 
+                      width="20" 
+                      height="20" 
+                      fill="none" 
+                      stroke="currentColor" 
+                      stroke-width="2"
+                    >
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </div>
+                  
+                  <div class="section-body" v-show="!collapsedSections.has(idx)">
+                    <!-- Completed Content -->
+                    <div v-if="generatedSections[idx + 1]" class="generated-content" v-html="renderMarkdown(generatedSections[idx + 1])"></div>
+                    
+                    <!-- Loading State -->
+                    <div v-else-if="currentSectionIndex === idx + 1" class="loading-state">
+                      <div class="loading-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                          <circle cx="12" cy="12" r="10" stroke-width="4" stroke="#E5E7EB"></circle>
+                          <path d="M12 2a10 10 0 0 1 10 10" stroke-width="4" stroke="#4B5563" stroke-linecap="round"></path>
+                        </svg>
+                      </div>
+                      <span class="loading-text">正在生成{{ section.title }}...</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <template v-else-if="activeVersion === 'translated' && translatedHTML">
+              <div class="translated-report" v-html="translatedHTML"></div>
+            </template>
           </div>
         </div>
 
@@ -129,20 +171,23 @@
 
           <!-- Next Step Button - 在完成后显示 -->
           <button v-if="isComplete" class="export-btn" @click="downloadReportMarkdown">
-            <span>导出报告（MD）</span>
+
+            <span v-if="activeVersion === 'original'">Download Report (MD)</span>
+            <span v-else-if="activeVersion === 'translated' && translatedHTML">Export to PDF</span>
+
             <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
               <polyline points="7 10 12 15 17 10"></polyline>
               <line x1="12" y1="15" x2="12" y2="3"></line>
             </svg>
           </button>
-          <button v-if="isComplete" class="translate-export-btn" @click="translateExport">
+          <!-- <button v-if="isComplete" class="translate-export-btn" @click="translateExport">
             <span>(NEW) Translate and Export as PDF</span>
             <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
               <line x1="5" y1="12" x2="19" y2="12"></line>
               <polyline points="12 5 19 12 12 19"></polyline>
             </svg>
-          </button>
+          </button> -->
           <button v-if="isComplete" class="next-step-btn" @click="goToInteraction">
             <span>进入深度互动</span>
             <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
@@ -409,10 +454,18 @@
 <script setup>
 import { ref, computed, watch, onMounted, onUnmounted, nextTick, h, reactive } from 'vue'
 import { useRouter } from 'vue-router'
-import { getAgentLog, getConsoleLog, getReportDownloadUrl, getTranslateExportUrl } from '../api/report'
+import { 
+  getAgentLog,
+  getConsoleLog,
+  getReportDownloadUrl,
+  translateReport,
+  getTranslatedExportUrl
+} from '../api/report'
+import { mockReportData } from '../assets/mockData.js';
 
 const router = useRouter()
 
+const IS_DESIGN_MODE = false;
 const props = defineProps({
   reportId: String,
   simulationId: String,
@@ -428,19 +481,12 @@ const goToInteraction = () => {
   }
 }
 
-const downloadReportMarkdown = () => {
-  if (!props.reportId) return
-  const url = getReportDownloadUrl(props.reportId)
-  window.open(url, '_blank')
-  emit('add-log', `导出报告: ${props.reportId}.md`)
-}
-
-const translateExport = () => {
-  if (!props.reportId) return
-  const url = getTranslateExportUrl(props.reportId)
-  window.open(url, '_blank')
-  emit('add-log', `Translate and Export as PDF: ${props.reportId}.md`)
-}
+// const translateExport = () => {
+//   if (!props.reportId) return
+//   const url = getTranslateExportUrl(props.reportId)
+//   window.open(url, '_blank')
+//   emit('add-log', `Translate and Export as PDF: ${props.reportId}.md`)
+// }
 
 // State
 const agentLogs = ref([])
@@ -459,6 +505,29 @@ const leftPanel = ref(null)
 const rightPanel = ref(null)
 const logContent = ref(null)
 const showRawResult = reactive({})
+
+const translatedHTML = ref('')
+const activeVersion = ref('original');
+const isTranslating = ref(false);
+
+
+const downloadReportMarkdown = () => {
+  if (activeVersion.value === 'original') {
+    if (!props.reportId) return
+
+    const url = getReportDownloadUrl(props.reportId)
+    window.open(url, '_blank')
+
+    emit('add-log', `导出报告: ${props.reportId}-cn.md`)
+  }
+  else {
+    const url = getTranslatedExportUrl(props.reportId)
+    window.open(url, '_blank')
+
+    emit('add-log', `导出报告: ${props.reportId}-en.pdf`)
+  }
+}
+
 
 // Toggle functions
 const toggleRawResult = (timestamp, event) => {
@@ -482,6 +551,22 @@ const toggleRawResult = (timestamp, event) => {
     })
   }
 }
+
+const handleTranslate = async () => {
+  isTranslating.value = true;
+  try {
+    // 1. Add 'const' and 'await'
+    const response = await translateReport(props.reportId); 
+    
+    // Assuming response.data contains the HTML string
+    translatedHTML.value = response.data; 
+    activeVersion.value = 'translated';
+  } catch (error) {
+    console.error("Translation failed", error);
+  } finally {
+    isTranslating.value = false;
+  }
+};
 
 const toggleSectionContent = (idx) => {
   if (!generatedSections.value[idx + 1]) return
@@ -1996,7 +2081,7 @@ const fetchAgentLog = async () => {
             reportOutline.value = log.details.outline
           }
           
-          if (log.action === 'section_start') {
+          else if (log.action === 'section_start') {
             // 无论是主章节还是子章节开始，都映射到主章节索引
             // 后端编号：主章节 1,2,3... 子章节 101,102（第1章子章节1,2）
             const mainIndex = getMainSectionIndex(log.section_index)
@@ -2005,7 +2090,7 @@ const fetchAgentLog = async () => {
           
           // section_content / subsection_content - 表示内容生成完成（但整个章节可能还没完成）
           // 这里不更新 generatedSections，只记录进度
-          if (log.action === 'section_content' || log.action === 'subsection_content') {
+          else if (log.action === 'section_content' || log.action === 'subsection_content') {
             // 子章节内容生成时，保持主章节的 loading 状态
             // 因为完整内容会在 section_complete 时一次性提供
           }
@@ -2013,7 +2098,7 @@ const fetchAgentLog = async () => {
           // section_complete - 表示完整章节（含所有子章节）生成完成
           // details.content 包含合并后的完整内容
           // 注意：只有主章节 complete 时才更新内容，子章节 complete 不处理
-          if (log.action === 'section_complete') {
+          else if (log.action === 'section_complete') {
             const mainIndex = getMainSectionIndex(log.section_index)
             // 只有主章节完成时（section_index < 100）才更新内容和清除 loading
             if (!isSubsection(log.section_index) && log.details?.content) {
@@ -2025,7 +2110,7 @@ const fetchAgentLog = async () => {
             // 子章节完成时不清除 currentSectionIndex，继续显示 loading
           }
           
-          if (log.action === 'report_complete') {
+          else if (log.action === 'report_complete') {
             isComplete.value = true
             currentSectionIndex.value = null  // 确保清除 loading 状态
             emit('update-status', 'completed')
@@ -2033,8 +2118,13 @@ const fetchAgentLog = async () => {
             // 滚动逻辑统一在循环结束后的 nextTick 中处理
           }
           
-          if (log.action === 'report_start') {
+          else if (log.action === 'report_start') {
             startTime.value = new Date(log.timestamp)
+          }
+
+          else if (log.action === 'report_translated' && log.details?.content) {
+            translatedHTML.value = log.details.content;
+            activeVersion.value = 'translated';
           }
         })
         
@@ -2150,7 +2240,34 @@ const stopPolling = () => {
 
 // Lifecycle
 onMounted(() => {
-  if (props.reportId) {
+  if (IS_DESIGN_MODE) {
+    // FIX: Remove the ref() wrappers here
+    props.reportId = "SIM-2026-DBS-DEBUG"; 
+    currentSectionIndex.value = 1;
+
+    reportOutline.value = {
+      title: "2026 DBS Simulation: The 'Survival' Game",
+      summary: "Strategic analysis of public sentiment regarding cash rebates and GenAI integration.",
+      sections: [
+        { title: "Emotional Map Prediction", content: "### Emotional Trends\nPublic sentiment is at **6.2/10**." },
+        { title: "Defensive Gratitude", content: "Analysis shows immediate relief over long-term loyalty." },
+        { title: "Cai Fan Index", content: "Netizens are measuring value by economy rice prices." }
+      ]
+    };
+    
+    // Mark sections as finished so the text appears
+    reportOutline.value.sections.forEach((s, i) => {
+      generatedSections.value[i + 1] = s.content;
+    });
+    
+    agentLogs.value = [
+      { action: 'report_start', timestamp: Date.now() },
+      { action: 'section_complete', section_title: 'Emotional Map' }
+    ];
+  }
+
+  // Ensure this doesn't overwrite your mock data if props are empty
+  else if (props.reportId) {
     addLog(`Report Agent initialized: ${props.reportId}`)
     startPolling()
   }
@@ -2181,6 +2298,12 @@ watch(() => props.reportId, (newId) => {
 </script>
 
 <style scoped>
+.flex { display: flex; }
+.items-center { align-items: center; }
+.justify-between { justify-content: space-between; }
+.flex-row { flex-direction: row; }
+.whitespace-nowrap { white-space: nowrap; }
+
 .report-panel {
   height: 100%;
   display: flex;
@@ -2262,6 +2385,75 @@ watch(() => props.reportId, (newId) => {
   flex-shrink: 0;
 }
 
+.flashy-btn {
+  /* Colors & Typography */
+  background-color: #000;
+  color: #fff;
+  font-family: 'JetBrains Mono', 'Courier New', monospace; /* Matching your console/ID style */
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  
+  /* Layout & Spacing */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 16px; 
+  cursor: pointer;
+  
+  /* Borders & Structure */
+  border: 1px solid #000;
+  border-radius: 2px; /* Sharp corners for a professional look */
+  position: relative;
+  overflow: hidden;
+  
+  /* Professional Shadow/Depth */
+  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2); 
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.flashy-btn:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0px rgba(0, 0, 0, 1);
+  background-color: #111;
+}
+
+.flashy-btn:active {
+  transform: translate(1px, 1px);
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 1);
+}
+
+/* The "Glaring" Shimmer Effect */
+.flashy-btn::after {
+  content: '';
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  width: 300%;
+  height: 300%;
+  background: linear-gradient(
+    45deg, 
+    transparent 45%, 
+    rgba(255, 255, 255, 0.3) 50%, 
+    transparent 55%
+  );
+  animation: glare 3s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+@keyframes glare {
+  0% { transform: translate(-20%, -20%); }
+  20% { transform: translate(20%, 20%); } /* Quick flash */
+  100% { transform: translate(20%, 20%); } /* Long pause for professional feel */
+}
+
+.flashy-btn:disabled {
+  background-color: #666;
+  border-color: #666;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
 /* Panel header status variants */
 .panel-header--active {
   background: #FAFAFA;
@@ -2299,10 +2491,9 @@ watch(() => props.reportId, (newId) => {
   min-width: 450px;
   background: #FFFFFF;
   border-right: 1px solid #E5E7EB;
-  overflow-y: auto;
+  overflow: hidden; /* Ensure the panel itself doesn't scroll */
   display: flex;
   flex-direction: column;
-  padding: 30px 50px 60px 50px;
 }
 
 .left-panel::-webkit-scrollbar {
@@ -2329,8 +2520,21 @@ watch(() => props.reportId, (newId) => {
 
 /* Report Header */
 .report-content-wrapper {
-  max-width: 800px;
-  margin: 0 auto;
+  width: 100%;
+  height: 100%; 
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: #fcfcfc;
+}
+
+.report-controls-bar {
+  background: #fff;
+  padding: 12px 24px;
+  border-bottom: 1px solid #e5e5e5;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+  z-index: 10;
+  flex-shrink: 0; /* Keeps it fixed at the top */
   width: 100%;
 }
 
@@ -2360,6 +2564,169 @@ watch(() => props.reportId, (newId) => {
   color: #9CA3AF;
   font-weight: 500;
   letter-spacing: 0.02em;
+}
+
+.report-scroll-area {
+  flex: 1;
+  overflow-y: auto;
+  padding: 16px 4px;
+  background-color: #fcfcfc; /* Background for the scrollable area */
+  /* Smooth scrolling for a premium feel */
+  scroll-behavior: smooth;
+}
+
+.report-document-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 60px;
+  border: 1px solid #efefef;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.02);
+}
+
+/* Control Panel Details */
+.control-label {
+  display: block;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 8px;
+  color: #999;
+  letter-spacing: 0.1em;
+  margin-bottom: 2px;
+}
+
+.report-id-text {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  font-weight: 700;
+  color: #111;
+}
+
+
+/* Toggle Switch Styling */
+.toggle-container {
+  display: flex;
+  border: 1.5px solid #000;
+  border-radius: 2px;
+  overflow: hidden;
+  box-shadow: 2px 2px 0px rgba(0,0,0,0.1);
+}
+
+.toggle-btn {
+  padding: 4px 12px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  font-weight: 800;
+  background: #fff;
+  transition: all 0.2s;
+}
+
+.toggle-btn.is-active {
+  background: #000;
+  color: #fff;
+}
+
+/* Translated Report */
+.translated-report {
+  background-color: white;
+  padding: 1.5cm; /* Matches your PDF margin */
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  max-width: 21cm; /* Standard A4 width */
+  margin: 0 auto; /* Centers the paper in the panel */
+  
+  /* Body styles from template */
+  font-family: "Helvetica", "Arial", "Noto Sans SC", sans-serif;
+  font-size: 10pt;
+  line-height: 1.4;
+  text-align: justify;
+}
+
+/* 2. Force Black Text (as requested in your template) */
+.translated-report :deep(*) {
+  color: #000; 
+}
+
+/* 3. Paragraphs */
+.translated-report :deep(p) {
+  margin-top: 0;
+  margin-bottom: 8pt;
+}
+
+/* 4. Headers */
+.translated-report :deep(h1) {
+  font-size: 18pt;
+  font-weight: bold;
+  border-bottom: 2px solid #000;
+  padding-bottom: 5pt;
+  margin-bottom: 12pt;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.translated-report :deep(h2) {
+  font-size: 12pt;
+  font-weight: bold;
+  margin-top: 15pt;
+  margin-bottom: 5pt;
+  border-bottom: 0.5pt solid #eee;
+}
+
+.translated-report :deep(h3) {
+  font-size: 10.5pt;
+  font-weight: bold;
+  margin-top: 10pt;
+  margin-bottom: 4pt;
+  font-style: italic;
+}
+
+/* 5. Lists */
+.translated-report :deep(ul) {
+  margin-top: 0;
+  margin-bottom: 8pt;
+  padding-left: 15pt;
+}
+
+.translated-report :deep(li) {
+  margin-bottom: 3pt;
+}
+
+/* 6. Source Tags */
+.translated-report :deep(span.source-tag) {
+  font-size: 8pt;
+  color: #666; /* This overrides the all-black rule */
+  vertical-align: super;
+}
+
+/* 7. Tables */
+.translated-report :deep(table) {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 10pt 0;
+}
+
+.translated-report :deep(td), 
+.translated-report :deep(th) {
+  border: 0.5pt solid #000;
+  padding: 4pt;
+}
+
+.translated-report :deep(th) {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+/* Status Indicator */
+.status-pulse-small {
+  width: 6px;
+  height: 6px;
+  background-color: #10b981;
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(0.95); opacity: 0.5; }
+  50% { transform: scale(1); opacity: 1; }
+  100% { transform: scale(0.95); opacity: 0.5; }
 }
 
 .main-title {
@@ -3407,20 +3774,20 @@ watch(() => props.reportId, (newId) => {
   border-color: #9CA3AF;
 }
 
-.translate-export-btn {
+
+/* .translate-export-btn {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
   width: calc(100% - 40px);
-  margin: 8px 20px 0 20px; /* Increased top margin slightly to separate groups */
+  margin: 8px 20px 0 20px;
   padding: 12px 20px;
   font-size: 13px;
   font-weight: 600;
   
-  /* The "Brand/Pro" Look */
   color: #FF6B35;
-  background: #FFF7F5; /* Very soft orange tint */
+  background: #FFF7F5;
   border: 1.5px solid #FF6B35;
   
   border-radius: 8px;
@@ -3439,8 +3806,8 @@ watch(() => props.reportId, (newId) => {
 }
 
 .translate-export-btn:hover svg {
-  transform: translateY(2px); /* Subtle downward "download" bounce */
-}
+  transform: translateY(2px);
+} */
 
 .next-step-btn {
   display: flex;

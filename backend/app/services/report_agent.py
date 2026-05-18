@@ -2197,6 +2197,11 @@ class ReportManager:
         return os.path.join(cls._get_report_folder(report_id), "full_report.md")
     
     @classmethod
+    def _get_translated_html_path(cls, report_id: str) -> str:
+        """获取完整报告Markdown文件路径"""
+        return os.path.join(cls._get_report_folder(report_id), "full_report_en.html")
+    
+    @classmethod
     def _get_outline_path(cls, report_id: str) -> str:
         """获取大纲文件路径"""
         return os.path.join(cls._get_report_folder(report_id), "outline.json")
@@ -2830,6 +2835,18 @@ class ReportManager:
         
         logger.info(f"报告已保存: {report.report_id}")
     
+    @classmethod
+    def save_translated_report(cls, report_id: str, translated_html: str) -> None:
+        """保存报告元信息和完整报告"""
+        cls._ensure_report_folder(report_id)
+        path = cls._get_translated_html_path(report_id)
+        
+        # 保存元信息JSON
+        with open(path, 'w', encoding='utf-8') as f:
+            f.write(translated_html)
+        
+        logger.info(f"Successfully saved translated html for: {report_id}")
+
     @classmethod
     def get_report(cls, report_id: str) -> Optional[Report]:
         """获取报告"""

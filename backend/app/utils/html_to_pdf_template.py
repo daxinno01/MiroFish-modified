@@ -37,6 +37,7 @@ HTML_TO_PDF_TEMPLATE = """\
                 padding-bottom: 5pt;
                 margin-bottom: 12pt;
                 text-transform: uppercase;
+                text-align: left;
             }}
 
             /* Section Headers */
