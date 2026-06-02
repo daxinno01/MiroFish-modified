@@ -35,6 +35,8 @@
           <span class="dot"></span>
           {{ statusText }}
         </span>
+
+        <PromptSettings initialStage="4 - report_generation"/>
       </div>
     </header>
 
@@ -72,6 +74,7 @@ import { useRoute, useRouter } from 'vue-router'
 import GraphPanel from '../components/GraphPanel.vue'
 import Step4Report from '../components/Step4Report.vue'
 import TokenDashboard from '../components/TokenDashboard.vue'
+import PromptSettings from "../components/PromptSettings.vue"
 import { getProject, getGraphData } from '../api/graph'
 import { getSimulation, getSimulationUsage } from '../api/simulation'
 import { getReport } from '../api/report'
@@ -204,8 +207,13 @@ const loadReportData = async () => {
 }
 
 const loadGraph = async (graphId) => {
+  // 【核心拦截点】如果当前状态正在处理/生成中，绝不触碰数据库
+  if (currentStatus.value === 'processing' || currentStatus.value === 'generating') {
+    addLog('报告正在生成中，暂缓加载知识图谱以避免网络冲突。')
+    return
+  }
+
   graphLoading.value = true
-  
   try {
     const res = await getGraphData(graphId)
     if (res.success) {

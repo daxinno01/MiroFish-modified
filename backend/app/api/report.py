@@ -6,7 +6,8 @@ Report API路由
 import os
 import traceback
 import threading
-from flask import request, jsonify, send_file
+import time
+from flask import request, jsonify, send_file, current_app
 
 from . import report_bp
 from ..config import Config
@@ -27,26 +28,6 @@ logger = get_logger('mirofish.api.report')
 def generate_report():
     """
     生成模拟分析报告（异步任务）
-    
-    这是一个耗时操作，接口会立即返回task_id，
-    使用 GET /api/report/generate/status 查询进度
-    
-    请求（JSON）：
-        {
-            "simulation_id": "sim_xxxx",    // 必填，模拟ID
-            "force_regenerate": false        // 可选，强制重新生成
-        }
-    
-    返回：
-        {
-            "success": true,
-            "data": {
-                "simulation_id": "sim_xxxx",
-                "task_id": "task_xxxx",
-                "status": "generating",
-                "message": "报告生成任务已启动"
-            }
-        }
     """
     try:
         data = request.get_json() or {}
@@ -122,58 +103,80 @@ def generate_report():
             }
         )
         
+        # 【核心改动 1】显式捕获当前的全局 Flask 实例对象，用于穿透线程隔离
+        flask_app = current_app._get_current_object()
+        
         # 定义后台任务
-        def run_generate():
-            try:
-                task_manager.update_task(
-                    task_id,
-                    status=TaskStatus.PROCESSING,
-                    progress=0,
-                    message="初始化Report Agent..."
-                )
-                
-                # 创建Report Agent
-                agent = ReportAgent(
-                    graph_id=graph_id,
-                    simulation_id=simulation_id,
-                    simulation_requirement=simulation_requirement
-                )
-                
-                # 进度回调
-                def progress_callback(stage, progress, message):
+        def run_generate(app_context):
+            # 【核心改动 2】在子线程激活应用上下文，确保 Manager 和 Agent 正常获取系统配置/连接
+            with app_context.app_context():
+                try:
                     task_manager.update_task(
                         task_id,
-                        progress=progress,
-                        message=f"[{stage}] {message}"
+                        status=TaskStatus.PROCESSING,
+                        progress=0,
+                        message="正在清除旧报告并初始化 Report Agent..."
                     )
-                
-                # 生成报告（传入预先生成的 report_id）
-                report = agent.generate_report(
-                    progress_callback=progress_callback,
-                    report_id=report_id
-                )
-                
-                # 保存报告
-                ReportManager.save_report(report)
-                
-                if report.status == ReportStatus.COMPLETED:
-                    task_manager.complete_task(
-                        task_id,
-                        result={
-                            "report_id": report.report_id,
-                            "simulation_id": simulation_id,
-                            "status": "completed"
-                        }
+                    
+                    # 如果强制重新生成，显式 Knox 掉既有报告记录
+                    if force_regenerate:
+                        try:
+                            # 确保调用的是根据 simulation_id 删除的方法名
+                            ReportManager.delete_report(simulation_id)
+                            logger.info(f"已清理旧报告数据，准备重新生成: {simulation_id}")
+                        except Exception as ex:
+                            logger.warning(f"清理旧报告快照失败（可能本就不存在）: {str(ex)}")
+
+                    # 创建 Report Agent （带有繁忙冲突保护的重试链）
+                    agent = None
+                    for retry in range(3):
+                        try:
+                            agent = ReportAgent(
+                                graph_id=graph_id,
+                                simulation_id=simulation_id,
+                                simulation_requirement=simulation_requirement
+                            )
+                            break
+                        except Exception as conn_err:
+                            if retry == 2: raise conn_err
+                            logger.warning(f"数据库连接处于繁忙状态，1秒后进行第 {retry+1} 次重试...")
+                            time.sleep(1)
+                    
+                    # 进度回调
+                    def progress_callback(stage, progress, message):
+                        task_manager.update_task(
+                            task_id,
+                            progress=progress,
+                            message=f"[{stage}] {message}"
+                        )
+                    
+                    # 生成报告
+                    report = agent.generate_report(
+                        progress_callback=progress_callback,
+                        report_id=report_id
                     )
-                else:
-                    task_manager.fail_task(task_id, report.error or "报告生成失败")
-                
-            except Exception as e:
-                logger.exception(f"报告生成失败: {str(e)}")
-                task_manager.fail_task(task_id, str(e))
+                    
+                    # 保存新报告
+                    ReportManager.save_report(report)
+                    
+                    if report.status == ReportStatus.COMPLETED:
+                        task_manager.complete_task(
+                            task_id,
+                            result={
+                                "report_id": report.report_id,
+                                "simulation_id": simulation_id,
+                                "status": "completed"
+                            }
+                        )
+                    else:
+                        task_manager.fail_task(task_id, report.error or "报告生成失败")
+                    
+                except Exception as e:
+                    logger.exception(f"报告生成失败: {str(e)}")
+                    task_manager.fail_task(task_id, str(e))
         
-        # 启动后台线程
-        thread = threading.Thread(target=run_generate, daemon=True)
+        # 启动后台线程并传入应用上下文参数
+        thread = threading.Thread(target=run_generate, args=(flask_app,), daemon=True)
         thread.start()
         
         return jsonify({
@@ -195,7 +198,6 @@ def generate_report():
             "error": str(e),
             "traceback": traceback.format_exc()
         }), 500
-
 
 @report_bp.route('/resume', methods=['POST'])
 def resume_report():
@@ -654,7 +656,6 @@ def export_translated_report(report_id: str):
             "traceback": traceback.format_exc()
         }), 500
     
-
 
 @report_bp.route('/<report_id>/translate', methods=['POST'])
 def translate_report(report_id: str):

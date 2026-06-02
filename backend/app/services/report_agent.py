@@ -21,6 +21,7 @@ from enum import Enum
 from ..config import Config
 from ..utils.llm_client import LLMClient
 from ..utils.logger import get_logger
+from ..utils.file_parser import FileParser
 from .zep_tools import (
     SearchResult, 
     InsightForgeResult, 
@@ -500,6 +501,8 @@ class ReportAgent:
     
     # 对话中的最大工具调用次数
     MAX_TOOL_CALLS_PER_CHAT = 2
+
+    REPORT_PROMPTS_DIR = os.path.join(Config.PROMPTS_FOLDER, '4 - report_generation')
     
     def __init__(
         self, 
@@ -1084,69 +1087,24 @@ class ReportAgent:
         
         if progress_callback:
             progress_callback("planning", 30, "正在生成报告大纲...")
+
+        
         
         # 构建规划prompt
-        system_prompt = """你是一个「未来预测报告」的撰写专家，拥有对模拟世界的「上帝视角」——你可以洞察模拟中每一位Agent的行为、言论和互动。
+        system_prompt = FileParser._extract_from_txt(
+            os.path.join(self.REPORT_PROMPTS_DIR, "outline_planning_system_prompt.txt")
+        )
 
-【核心理念】
-我们构建了一个模拟世界，并向其中注入了特定的「模拟需求」作为变量。模拟世界的演化结果，就是对未来可能发生情况的预测。你正在观察的不是"实验数据"，而是"未来的预演"。
-
-【你的任务】
-撰写一份「未来预测报告」，回答：
-1. 在我们设定的条件下，未来发生了什么？
-2. 各类Agent（人群）是如何反应和行动？
-3. 这个模拟揭示了哪些值得关注的未来趋势和风险？
-
-【报告定位】
-- ✅ 这是一份基于模拟的未来预测报告，揭示"如果这样，未来会怎样"
-- ✅ 聚焦于预测结果：事件走向、群体反应、涌现现象、潜在风险
-- ✅ 模拟世界中的Agent言行就是对未来人群行为的预测
-- ❌ 不是对现实世界现状的分析
-- ❌ 不是泛泛而谈的舆情综述
-
-【章节数量限制】
-- 最少2个主章节，最多5个主章节
-- 每个章节可以有0-2个子章节
-- 内容要精炼，聚焦于核心预测发现
-- 章节结构由你根据预测结果自主设计
-
-请输出JSON格式的报告大纲，格式如下：
-{
-    "title": "报告标题",
-    "summary": "报告摘要（一句话概括核心预测发现）",
-    "sections": [
-        {
-            "title": "章节标题",
-            "description": "章节内容描述",
-            "subsections": [
-                {"title": "子章节标题", "description": "子章节描述"}
-            ]
-        }
-    ]
-}
-
-注意：sections数组最少2个，最多5个元素！"""
-
-        user_prompt = f"""【预测场景设定】
-我们向模拟世界注入的变量（模拟需求）：{self.simulation_requirement}
-
-【模拟世界规模】
-- 参与模拟的实体数量: {context.get('graph_statistics', {}).get('total_nodes', 0)}
-- 实体间产生的关系数量: {context.get('graph_statistics', {}).get('total_edges', 0)}
-- 实体类型分布: {list(context.get('graph_statistics', {}).get('entity_types', {}).keys())}
-- 活跃Agent数量: {context.get('total_entities', 0)}
-
-【模拟预测到的部分未来事实样本】
-{json.dumps(context.get('related_facts', [])[:10], ensure_ascii=False, indent=2)}
-
-请以「上帝视角」审视这个未来预演：
-1. 在我们设定的条件下，未来呈现出了什么样的状态？
-2. 各类人群（Agent）是如何反应和行动的？
-3. 这个模拟揭示了哪些值得关注的未来趋势？
-
-根据预测结果，设计最合适的报告章节结构。
-
-【再次提醒】报告章节数量：最少2个，最多5个，内容要精炼聚焦于核心预测发现。"""
+        user_prompt = FileParser._extract_from_txt(
+            os.path.join(self.REPORT_PROMPTS_DIR, "outline_planning_user_prompt.txt")
+        ).format(
+            simulation_requirement=self.simulation_requirement,
+            num_entities=context.get('graph_statistics', {}).get('total_nodes', 0),
+            num_relationships=context.get('graph_statistics', {}).get('total_edges', 0),
+            entity_type_distribution=list(context.get('graph_statistics', {}).get('entity_types', {}).keys()),
+            num_active_agents=context.get('total_entities', 0),
+            examples=json.dumps(context.get('related_facts', [])[:10], ensure_ascii=False, indent=2)
+        )
 
         try:
             response = self._chat_json_with_moderation_retry(
@@ -1243,143 +1201,15 @@ class ReportAgent:
         sub_heading_level = 3  # 子标题使用三级（###）
         sub_sub_heading_level = 4  # 更小的子标题使用四级（####）
         
-        system_prompt = f"""你是一个「未来预测报告」的撰写专家，正在撰写报告的一个章节。
-
-报告标题: {outline.title}
-报告摘要: {outline.summary}
-预测场景（模拟需求）: {self.simulation_requirement}
-
-当前要撰写的章节: {section.title}
-
-═══════════════════════════════════════════════════════════════
-【核心理念】
-═══════════════════════════════════════════════════════════════
-
-模拟世界是对未来的预演。我们向模拟世界注入了特定条件（模拟需求），
-模拟中Agent的行为和互动，就是对未来人群行为的预测。
-
-你的任务是：
-- 揭示在设定条件下，未来发生了什么
-- 预测各类人群（Agent）是如何反应和行动的
-- 发现值得关注的未来趋势、风险和机会
-
-❌ 不要写成对现实世界现状的分析
-✅ 要聚焦于"未来会怎样"——模拟结果就是预测的未来
-
-═══════════════════════════════════════════════════════════════
-【最重要的规则 - 必须遵守】
-═══════════════════════════════════════════════════════════════
-
-1. 【必须调用工具观察模拟世界】
-   - 你正在以「上帝视角」观察未来的预演
-   - 所有内容必须来自模拟世界中发生的事件和Agent言行
-   - 禁止使用你自己的知识来编写报告内容
-   - 每个章节至少调用2次工具（最多4次）来观察模拟的世界，它代表了未来
-
-2. 【必须引用Agent的原始言行】
-   - Agent的发言和行为是对未来人群行为的预测
-   - 在报告中使用引用格式展示这些预测，例如：
-     > "某类人群会表示：原文内容..."
-   - 这些引用是模拟预测的核心证据
-
-3. 【忠实呈现预测结果】
-   - 报告内容必须反映模拟世界中的代表未来的模拟结果
-   - 不要添加模拟中不存在的信息
-   - 如果某方面信息不足，如实说明
-
-═══════════════════════════════════════════════════════════════
-【⚠️ 格式规范 - 极其重要！】
-═══════════════════════════════════════════════════════════════
-
-【一个章节 = 最小内容单位】
-- 每个章节是报告的最小分块单位
-- ❌ 禁止在章节内使用任何 Markdown 标题（#、##、###、#### 等）
-- ❌ 禁止在内容开头添加章节主标题
-- ✅ 章节标题由系统自动添加，你只需撰写纯正文内容
-- ✅ 使用**粗体**、段落分隔、引用、列表来组织内容，但不要用标题
-
-【正确示例】
-```
-本章节分析了事件的舆论传播态势。通过对模拟数据的深入分析，我们发现...
-
-**首发引爆阶段**
-
-微博作为舆情的第一现场，承担了信息首发的核心功能：
-
-> "微博贡献了68%的首发声量..."
-
-**情绪放大阶段**
-
-抖音平台进一步放大了事件影响力：
-
-- 视觉冲击力强
-- 情绪共鸣度高
-```
-
-【错误示例】
-```
-## 执行摘要          ← 错误！不要添加任何标题
-### 一、首发阶段     ← 错误！不要用###分小节
-#### 1.1 详细分析   ← 错误！不要用####细分
-
-本章节分析了...
-```
-
-═══════════════════════════════════════════════════════════════
-【可用检索工具】（每章节调用2-4次）
-═══════════════════════════════════════════════════════════════
-
-{self._get_tools_description()}
-
-【工具使用建议】
-- insight_forge: 用于深度分析，会自动分解问题并多维度检索
-- panorama_search: 用于了解全貌和演变过程
-- quick_search: 用于快速验证某个具体信息
-- interview_agents: 用于采访模拟Agent，获取不同角色的真实观点和看法
-
-═══════════════════════════════════════════════════════════════
-【ReACT工作流程】
-═══════════════════════════════════════════════════════════════
-
-1. Thought: [分析需要什么信息，规划检索策略]
-2. Action: [调用工具获取信息]
-   <tool_call>
-   {{"name": "工具名称", "parameters": {{"参数名": "参数值"}}}}
-   </tool_call>
-3. Observation: [分析工具返回的结果]
-4. 重复步骤1-3，直到收集到足够信息（最多5轮）
-5. Final Answer: [基于检索结果撰写章节内容]
-
-═══════════════════════════════════════════════════════════════
-【章节内容要求】
-═══════════════════════════════════════════════════════════════
-
-1. 内容必须基于工具检索到的模拟数据
-2. 大量引用原文来展示模拟效果
-3. 使用Markdown格式（但禁止使用标题）：
-   - 使用 **粗体文字** 标记重点（代替子标题）
-   - 使用列表（-或1.2.3.）组织要点
-   - 使用空行分隔不同段落
-   - ❌ 禁止使用 #、##、###、#### 等任何标题语法
-4. 【引用格式规范 - 必须单独成段】
-   引用必须独立成段，前后各有一个空行，不能混在段落中：
-   
-   ✅ 正确格式：
-   ```
-   校方的回应被认为缺乏实质内容。
-   
-   > "校方的应对模式在瞬息万变的社交媒体环境中显得僵化和迟缓。"
-   
-   这一评价反映了公众的普遍不满。
-   ```
-   
-   ❌ 错误格式：
-   ```
-   校方的回应被认为缺乏实质内容。> "校方的应对模式..." 这一评价反映了...
-   ```
-5. 保持与其他章节的逻辑连贯性
-6. 【避免重复】仔细阅读下方已完成的章节内容，不要重复描述相同的信息
-7. 【再次强调】不要添加任何标题！用**粗体**代替小节标题"""
+        system_prompt = FileParser._extract_from_txt(
+            os.path.join(self.REPORT_PROMPTS_DIR, "section_generation_system_prompt.txt")
+        ).format(
+            outline_title=outline.title,
+            outline_summary=outline.summary,
+            simulation_requirement=self.simulation_requirement,
+            section_title=section.title,
+            tool_descriptions=self._get_tools_description()
+        )
 
         # 构建用户prompt - 每个已完成章节各传入最大4000字
         if previous_sections:
@@ -1395,29 +1225,13 @@ class ReportAgent:
         else:
             previous_content = "（这是第一个章节）"
         
-        user_prompt = f"""已完成的章节内容（请仔细阅读，避免重复）：
-{previous_content}
 
-═══════════════════════════════════════════════════════════════
-【当前任务】撰写章节: {section.title}
-═══════════════════════════════════════════════════════════════
-
-【重要提醒】
-1. 仔细阅读上方已完成的章节，避免重复相同的内容！
-2. 开始前必须先调用工具获取模拟数据
-3. 推荐先使用 insight_forge 进行深度检索
-4. 报告内容必须来自检索结果，不要使用自己的知识
-
-【⚠️ 格式警告 - 必须遵守】
-- ❌ 不要写任何标题（#、##、###、####都不行）
-- ❌ 不要写"{section.title}"作为开头
-- ✅ 章节标题由系统自动添加
-- ✅ 直接写正文，用**粗体**代替小节标题
-
-请开始：
-1. 首先思考（Thought）这个章节需要什么信息
-2. 然后调用工具（Action）获取模拟数据
-3. 收集足够信息后输出 Final Answer（纯正文，无任何标题）"""
+        user_prompt = FileParser._extract_from_txt(
+            os.path.join(self.REPORT_PROMPTS_DIR, "section_generation_user_prompt.txt")
+        ).format(
+            previous_content=previous_content,
+            section_title=section.title
+        )
 
         messages = [
             {"role": "system", "content": system_prompt},

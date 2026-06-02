@@ -34,6 +34,8 @@
           <span class="dot"></span>
           {{ statusText }}
         </span>
+
+        <PromptSettings initialStage="2 - environment_setup"/>
       </div>
     </header>
 
@@ -73,6 +75,7 @@ import { useRoute, useRouter } from 'vue-router'
 import GraphPanel from '../components/GraphPanel.vue'
 import Step2EnvSetup from '../components/Step2EnvSetup.vue'
 import TokenDashboard from '../components/TokenDashboard.vue'
+import PromptSettings from '../components/PromptSettings.vue'
 import { getProject, getGraphData } from '../api/graph'
 import { getSimulation, stopSimulation, getEnvStatus, closeSimulationEnv } from '../api/simulation'
 

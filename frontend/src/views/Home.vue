@@ -10,6 +10,8 @@
         <a href="https://github.com/666ghj/MiroFish" target="_blank" class="github-link">
           访问我们的Github主页 <span class="arrow">↗</span>
         </a>
+
+        <PromptSettings initialStage="1 - graph_construction"/>
       </div>
     </nav>
 
@@ -225,6 +227,7 @@
 import { ref, computed } from 'vue'
 import { useRouter } from 'vue-router'
 import { setPendingUpload } from '../store/pendingUpload.js'
+import PromptSettings from "../components/PromptSettings.vue"
 
 const router = useRouter()
 

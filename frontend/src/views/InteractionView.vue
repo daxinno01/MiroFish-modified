@@ -35,6 +35,8 @@
           <span class="dot"></span>
           {{ statusText }}
         </span>
+
+        <PromptSettings initialStage="5 - interaction"/>
       </div>
     </header>
 
@@ -73,6 +75,7 @@ import { useRoute, useRouter } from 'vue-router'
 import GraphPanel from '../components/GraphPanel.vue'
 import Step5Interaction from '../components/Step5Interaction.vue'
 import TokenDashboard from '../components/TokenDashboard.vue'
+import PromptSettings from "../components/PromptSettings.vue"
 import { getProject, getGraphData } from '../api/graph'
 import { getSimulation, prepareSimulation, startSimulation, getEnvStatus, getSimulationUsage } from '../api/simulation'
 import { getReport } from '../api/report'

@@ -1,0 +1,44 @@
+基于以下模拟需求，生成时间模拟配置。
+
+{context_truncated}
+
+## 任务
+请生成时间配置JSON。
+
+### 基本原则（仅供参考，需根据具体事件和参与群体灵活调整）：
+- 用户群体为中国人，需符合北京时间作息习惯
+- 凌晨0-5点几乎无人活动（活跃度系数0.05）
+- 早上6-8点逐渐活跃（活跃度系数0.4）
+- 工作时间9-18点中等活跃（活跃度系数0.7）
+- 晚间19-22点是高峰期（活跃度系数1.5）
+- 23点后活跃度下降（活跃度系数0.5）
+- 一般规律：凌晨低活跃、早间渐增、工作时段中等、晚间高峰
+- **重要**：以下示例值仅供参考，你需要根据事件性质、参与群体特点来调整具体时段
+  - 例如：学生群体高峰可能是21-23点；媒体全天活跃；官方机构只在工作时间
+  - 例如：突发热点可能导致深夜也有讨论，off_peak_hours 可适当缩短
+
+### 返回JSON格式（不要markdown）
+
+示例：
+{{
+    "total_simulation_hours": 72,
+    "minutes_per_round": 60,
+    "agents_per_hour_min": 5,
+    "agents_per_hour_max": 50,
+    "peak_hours": [19, 20, 21, 22],
+    "off_peak_hours": [0, 1, 2, 3, 4, 5],
+    "morning_hours": [6, 7, 8],
+    "work_hours": [9, 10, 11, 12, 13, 14, 15, 16, 17, 18],
+    "reasoning": "针对该事件的时间配置说明"
+}}
+
+字段说明：
+- total_simulation_hours (int): 模拟总时长，24-168小时，突发事件短、持续话题长
+- minutes_per_round (int): 每轮时长，30-120分钟，建议60分钟
+- agents_per_hour_min (int): 每小时最少激活Agent数（取值范围: 1-{max_agents_allowed}）
+- agents_per_hour_max (int): 每小时最多激活Agent数（取值范围: 1-{max_agents_allowed}）
+- peak_hours (int数组): 高峰时段，根据事件参与群体调整
+- off_peak_hours (int数组): 低谷时段，通常深夜凌晨
+- morning_hours (int数组): 早间时段
+- work_hours (int数组): 工作时段
+- reasoning (string): 简要说明为什么这样配置

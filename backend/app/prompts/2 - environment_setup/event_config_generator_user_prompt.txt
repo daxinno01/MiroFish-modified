@@ -1,0 +1,28 @@
+基于以下模拟需求，生成事件配置。
+
+模拟需求: {simulation_requirement}
+
+{context_truncated}
+
+## 可用实体类型及示例
+{type_info}
+
+## 任务
+请生成事件配置JSON：
+- 提取热点话题关键词
+- 描述舆论发展方向
+- 设计初始帖子内容，**每个帖子必须指定 poster_type（发布者类型）**
+
+**重要**: poster_type 必须从上面的"可用实体类型"中选择，这样初始帖子才能分配给合适的 Agent 发布。
+例如：官方声明应由 Official/University 类型发布，新闻由 MediaOutlet 发布，学生观点由 Student 发布。
+
+返回JSON格式（不要markdown）：
+{{
+    "hot_topics": ["关键词1", "关键词2", ...],
+    "narrative_direction": "<舆论发展方向描述>",
+    "initial_posts": [
+        {{"content": "帖子内容", "poster_type": "实体类型（必须从可用类型中选择）"}},
+        ...
+    ],
+    "reasoning": "<简要说明>"
+}}

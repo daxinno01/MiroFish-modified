@@ -16,6 +16,7 @@ class EntityDeduplicator:
 
     def __init__(self, simulation_id: Optional[str] = None, project_id: Optional[str] = None):
         self.llm = LLMClient(simulation_id=simulation_id, project_id=project_id)
+        print("ENTITY DEDUPLICATOR ACTIVATED!")
 
     def process(self, entities: List[EntityNode]) -> List[EntityNode]:
         """

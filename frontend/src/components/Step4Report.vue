@@ -16,8 +16,8 @@
               </div>
 
               <div class="flex items-center gap-4">
-                <div class="control-group">                  
-                  <button 
+                <div class="control-group">
+                  <button
                     v-if="isComplete && !translatedHTML"
                     @click="handleTranslate"
                     :disabled="isTranslating"
@@ -190,6 +190,14 @@
           </button> -->
           <button v-if="isComplete" class="next-step-btn" @click="goToInteraction">
             <span>进入深度互动</span>
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </button>
+
+          <button v-if="isComplete" class="regenerate-btn" @click="regenerateReport">
+            <span>Regenerate Report</span>
             <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
               <line x1="5" y1="12" x2="19" y2="12"></line>
               <polyline points="12 5 19 12 12 19"></polyline>
@@ -459,7 +467,8 @@ import {
   getConsoleLog,
   getReportDownloadUrl,
   translateReport,
-  getTranslatedExportUrl
+  getTranslatedExportUrl,
+  generateReport
 } from '../api/report'
 import { mockReportData } from '../assets/mockData.js';
 
@@ -499,6 +508,7 @@ const generatedSections = ref({})
 const expandedContent = ref(new Set())
 const expandedLogs = ref(new Set())
 const collapsedSections = ref(new Set())
+const isRegenerating = ref(false)
 const isComplete = ref(false)
 const startTime = ref(null)
 const leftPanel = ref(null)
@@ -510,6 +520,86 @@ const translatedHTML = ref('')
 const activeVersion = ref('original');
 const isTranslating = ref(false);
 
+
+const resetReportingState = () => {
+  // Clear logs and trackers
+  agentLogs.value = []
+  consoleLogs.value = []
+  agentLogLine.value = 0
+  consoleLogLine.value = 0
+  
+  // Wipe structurally driven document parameters
+  reportOutline.value = null
+  currentSectionIndex.value = null
+  generatedSections.value = {}
+  
+  // Collapse and clean interactive UI elements
+  expandedContent.value = new Set()
+  expandedLogs.value = new Set()
+  collapsedSections.value = new Set()
+  
+  // Wipe multi-language translation artifacts
+  translatedHTML.value = ''
+  activeVersion.value = 'original'
+  isTranslating.value = false
+  
+  // Re-initialize tracking metadata
+  startTime.value = Date.now() // Record a fresh timestamp for the clock counter
+  isComplete.value = false
+  
+  // Reset key-value map states cleanly
+  Object.keys(showRawResult).forEach(key => delete showRawResult[key])
+}
+
+const regenerateReport = async () => {
+  if (!props.simulationId) {
+    addLog("Missing simulationId")
+    return
+  }
+  
+  if (isTranslating.value || isRegenerating.value) {
+    addLog("Unable to regenerate at this time or request already executing.")
+    return
+  }
+  
+  addLog('Initializing system state flush...')
+  
+  // 1. Establish the click-lock state 
+  isRegenerating.value = true
+  
+  // 2. Shut off active UI component reads and pull down old layout snapshots
+  emit('update-status', { status: 'generating', reportId: null })
+  
+  // 3. Clear ALL reactive states to default!
+  resetReportingState()
+  
+  addLog('Regenerating report...')
+  
+  try {
+    const res = await generateReport({
+      simulation_id: props.simulationId,
+      force_regenerate: true
+    })
+    
+    if (res.success && res.data) {
+      addLog(`Backend worker worker verified task handle: ${res.data.task_id}`)
+      
+      // Cut off legacy pollers and hook up tracking targets
+      stopPolling()
+      startPolling(res.data.task_id)
+    }
+    else {
+      addLog(`Failed to kick off pipeline: ${res.error || '未知错误'}`)
+      isRegenerating.value = false
+      emit('update-status', { status: 'error' })
+    }
+  }
+  catch (err) {
+    addLog(`Network processing failure: ${err.message}`)
+    isRegenerating.value = false
+    emit('update-status', { status: 'error' })
+  }
+}
 
 const downloadReportMarkdown = () => {
   if (activeVersion.value === 'original') {
@@ -3774,6 +3864,69 @@ watch(() => props.reportId, (newId) => {
   border-color: #9CA3AF;
 }
 
+.regenerate-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: calc(100% - 40px);
+  margin: 12px 20px 0 20px;
+  padding: 12px 20px;
+  
+  /* Tactical typography */
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  font-size: 11px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  
+  /* Danger Scheme */
+  color: #ffffff;
+  background: linear-gradient(135deg, #bd1c1c 0%, #990f0f 100%);
+  border: 1px solid #ff3b3b;
+  box-shadow: 0 2px 8px rgba(189, 28, 28, 0.4), 
+              inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  
+  border-radius: 4px; /* Sharper corners look more volatile than rounded ones */
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Hazard Warning Hover State */
+.regenerate-btn:hover {
+  background: #dc2626;
+  border-color: #ef4444;
+  color: #ffffff;
+  
+  /* Overdriven Red Glow */
+  box-shadow: 0 0 20px rgba(220, 38, 38, 0.7), 
+              0 0 4px rgba(239, 68, 68, 0.5),
+              inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  
+  /* Slight push forward */
+  transform: translateY(-1px);
+}
+
+/* Active "Click" State: Simulated recoil impact */
+.regenerate-btn:active {
+  transform: translateY(1px);
+  background: #7f0d0d;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.6),
+              inset 0 2px 4px rgba(0, 0, 0, 0.4);
+  border-color: #990f0f;
+}
+
+/* Optional: Add a volatile warning stripe backdrop when disabled */
+.regenerate-btn:disabled {
+  background: #2a1212;
+  border-color: #4a1d1d;
+  color: #6b4747;
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
 
 /* .translate-export-btn {
   display: flex;

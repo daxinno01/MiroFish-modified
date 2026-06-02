@@ -125,6 +125,8 @@ class Config:
     REPORT_AGENT_MAX_REFLECTION_ROUNDS = int(os.environ.get('REPORT_AGENT_MAX_REFLECTION_ROUNDS', '2'))
     REPORT_AGENT_TEMPERATURE = float(os.environ.get('REPORT_AGENT_TEMPERATURE', '0.5'))
     
+    PROMPTS_FOLDER = os.path.join(os.path.dirname(__file__), 'prompts')
+
     @classmethod
     def validate(cls):
         """验证必要配置"""

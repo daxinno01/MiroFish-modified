@@ -8,6 +8,7 @@ OASIS Agent Profile生成器
 3. 区分个人实体和抽象群体实体
 """
 
+import os
 import json
 import random
 import time
@@ -20,6 +21,7 @@ from zep_cloud.client import Zep
 
 from ..config import Config
 from ..utils.logger import get_logger
+from ..utils.file_parser import FileParser
 from .zep_entity_reader import EntityNode, ZepEntityReader
 
 logger = get_logger('mirofish.oasis_profile')
@@ -176,6 +178,8 @@ class OasisProfileGenerator:
         "university", "governmentagency", "organization", "ngo", 
         "mediaoutlet", "company", "institution", "group", "community"
     ]
+
+    SIMULATION_PROMPTS_DIR = os.path.join(Config.PROMPTS_FOLDER, '3 - simulation')
     
     # 动态识别出的活跃类型
     _active_individual_types = []
@@ -236,30 +240,23 @@ class OasisProfileGenerator:
         # 排除内置的基础标签
         candidate_labels = [l for l in all_labels if l not in ["Entity", "Node"]]
         
-        prompt = f"""你是一个社会学仿真专家。给定一个舆情模拟目标和一组来自知识图谱的实体标签，
-你需挑选出那些在模拟中应该作为“活跃社交媒体账号（Agent）”的标签。
-
-模拟目标: {simulation_goal}
-
-图谱现有的所有标签清单:
-{', '.join(candidate_labels)}
-
-请根据模拟目标，分析哪些标签对应的实体在本次模拟中具有“行动力”和“社交属性”。
-请返回有效的JSON格式，包含以下两个数组：
-1. individual: 适合作为“个人账号”的标签（如: student, journalist, official）
-2. group: 适合作为“机构/组织账号”的标签（如: university, government_agency, news_media）
-
-注意：
-- 只从提供的标签清单中选择。
-- 如果某个标签与模拟目标完全无关（如在“医疗模拟”中的“汽车零件”标签），请直接忽略。
-- 返回的JSON必须是标准的、可解析的。
-"""
+        system_prompt = FileParser._extract_from_txt(
+            os.path.join(self.SIMULATION_PROMPTS_DIR, "agent_selector_system_prompt.txt")
+        )
+        print(system_prompt)
+        user_prompt = FileParser._extract_from_txt(
+            os.path.join(self.SIMULATION_PROMPTS_DIR, "agent_selector_user_prompt.txt")
+        ).format(
+            simulation_goal=simulation_goal,
+            candidate_labels=', '.join(candidate_labels)
+        )
+        print(user_prompt)
 
         try:
             result = self.llm.chat_json(
                 messages=[
-                    {"role": "system", "content": "你是一个严谨的 JSON 专家，直接输出 JSON 结果。"},
-                    {"role": "user", "content": prompt}
+                    {"role": "system", "content": system_prompt},
+                    {"role": "user", "content": user_prompt}
                 ],
                 caller_hint="动态标签识别",
                 simulation_id=simulation_id,
@@ -666,7 +663,9 @@ class OasisProfileGenerator:
     
     def _get_system_prompt(self, is_individual: bool) -> str:
         """获取系统提示词"""
-        base_prompt = "你是社交媒体用户画像生成专家。生成详细、真实的人设用于舆论模拟,最大程度还原已有现实情况。必须返回有效的JSON格式，所有字符串值不能包含未转义的换行符。使用中文。"
+        base_prompt = FileParser._extract_from_txt(
+            os.path.join(self.SIMULATION_PROMPTS_DIR, "persona_generator_system_prompt.txt")
+        )
         return base_prompt
     
     def _build_individual_persona_prompt(
@@ -691,40 +690,18 @@ class OasisProfileGenerator:
         elif degree > 5:
             status_suffix = "\n该用户在社交网络中比较活跃，有一定的关注度。"
             
-        return f"""为实体生成详细的社交媒体用户人设,最大程度还原已有现实情况。{goal_str}
-{status_suffix}
-
-实体名称: {entity_name}
-实体类型: {entity_type}
-实体摘要: {entity_summary}
-实体属性: {attrs_str}
-
-上下文信息:
-{context_str}
-
-请生成JSON，包含以下字段:
-
-1. bio: 社交媒体简介（100字），用于展示在个人主页。
-2. persona: 角色行为导引（500-800字精炼文本），用于直接驱动 Agent 在模拟中的社交决策。必须包含：
-   - 【社交面具】：基于其性格和背景，在网络上呈现的核心人设（如：杠精、理中客、沉默的大多数）。
-   - 【利益/情感锚点】：明确该角色在当前事件中的核心利益点或情感触发点（他为什么在意这件事？）。
-   - 【立场律令】：规定其在互动中“必做”和“绝不做”的行为准则（如：凡看到官方贴必阴阳怪气、绝不转发未证实消息）。
-   - 【语言指纹】：3个具体的表达习惯（如：特定口头禅、爱用括号补充内心戏、常用某类 Emoji）。
-   - 【个人记忆】：简述其与该事件最深刻的关联，作为其后续言论的逻辑起点。
-3. age: 年龄数字（必须是整数）
-4. gender: 性别，必须是英文: "male" 或 "female"
-5. mbti: MBTI类型（如INTJ、ENFP等）
-6. country: 国家（使用中文，如"中国"）
-7. profession: 职业
-8. interested_topics: 感兴趣话题数组
-
-重要:
-- 所有字段值必须是字符串或数字，不要使用换行符
-- persona必须是一段连贯的文字描述
-- 使用中文（除了gender字段必须用英文male/female）
-- 内容要与实体信息保持一致
-- age必须是有效的整数，gender必须是"male"或"female"
-"""
+        prompt = FileParser._extract_from_txt(
+            os.path.join(self.SIMULATION_PROMPTS_DIR, "persona_generator_individual_user_prompt.txt")
+        ).format(
+            goal_str=goal_str,
+            status_suffix=status_suffix,
+            entity_name=entity_name,
+            entity_type=entity_type,
+            entity_summary=entity_summary,
+            attrs_str=attrs_str,
+            context_str=context_str
+        )
+        return prompt
 
     def _build_group_persona_prompt(
         self,
@@ -748,39 +725,18 @@ class OasisProfileGenerator:
         elif degree > 5:
             status_suffix = "\n该机构是该领域的重要参与者，具有较高的关注度。"
             
-        return f"""为机构/群体实体生成详细的社交媒体账号设定,最大程度还原已有现实情况。{goal_str}
-{status_suffix}
-
-实体名称: {entity_name}
-实体类型: {entity_type}
-实体摘要: {entity_summary}
-实体属性: {attrs_str}
-
-上下文信息:
-{context_str}
-
-请生成JSON，包含以下字段:
-
-1. bio: 官方账号简介（100字），专业得体
-2. persona: 机构行为导引（500-800字精炼文本），用于直接驱动账号在模拟中的发布策略。必须包含：
-   - 【账号人设】：该机构在网络上的对外形象（如：权威发布者、亲民互动官、冷峻观察者）。
-   - 【运营底线】：规定账号在争议话题下的“必发表”和“禁区”（如：必须转发上级指令、严禁参与个人口水战）。
-   - 【发布偏好】：常用的内容类型（如：数据通报、政策解读）及发布节奏。
-   - 【话语体系】：3个具体的公文风格或专业词汇偏好（常见用词、语气倾向）。
-   - 【机构记忆】：该机构与当前事件的历史渊源及已对外界做出的承诺。
-3. age: 固定填30
-4. gender: 固定填"other"
-5. mbti: MBTI类型，用于描述账号风格，如ISTJ代表严谨保守
-6. country: 国家（使用中文，如"中国"）
-7. profession: 机构职能描述
-8. interested_topics: 关注领域数组
-
-重要:
-- 所有字段值必须是字符串或数字，不允许null值
-- persona必须是一段连贯的文字描述，不要使用换行符
-- 使用中文（除了gender字段必须用英文"other"）
-- age必须是整数30，gender必须是字符串"other"
-- 机构账号发言要符合其身份定位"""
+        prompt = FileParser._extract_from_txt(
+            os.path.join(self.SIMULATION_PROMPTS_DIR, "persona_generator_group_user_prompt.txt")
+        ).format(
+            goal_str=goal_str,
+            status_suffix=status_suffix,
+            entity_name=entity_name,
+            entity_type=entity_type,
+            entity_summary=entity_summary,
+            attrs_str=attrs_str,
+            context_str=context_str
+        )
+        return prompt
     
     def _generate_profile_rule_based(
         self,

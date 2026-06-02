@@ -66,7 +66,7 @@ class LocalNeo4jGraphStore:
     def __init__(self):
         self._driver: Driver = GraphDatabase.driver(
             Config.NEO4J_URI,
-            auth=(Config.NEO4J_USER, Config.NEO4J_PASSWORD),
+            auth=(Config.NEO4J_USER, Config.NEO4J_PASSWORD)
         )
         self._database = Config.NEO4J_DATABASE
         self._ensure_schema()

@@ -10,29 +10,32 @@ authors = [
 
 dependencies = [
     # 核心框架
+    "numpy<2",
+    "torch>=2.2.0",
+    "transformers>=4.40.0",
     "flask>=3.0.0",
     "flask-cors>=6.0.0",
-    
     # LLM 相关
     "openai>=1.0.0",
-    
     # Zep Cloud
     "zep-cloud==3.13.0",
-
     # Local graph/vector store
     "neo4j>=5.23.0",
     "qdrant-client>=1.9.0",
-    
     # OASIS 社交媒体模拟
     "camel-oasis==0.2.5",
     "camel-ai==0.2.78",
-    
     # 文件处理
-    "PyMuPDF>=1.24.0",
-    
+    "pymupdf>=1.24.0",
     # 工具库
     "python-dotenv>=1.0.0",
     "pydantic>=2.0.0",
+    "json-repair>=0.59.10",
+    "codecarbon>=2.7.1",
+    "google-cloud-translate>=3.26.0",
+    "markdown-it-py[plugins]>=4.2.0",
+    "linkify-it-py>=2.1.0",
+    "weasyprint>=68.1",
 ]
 
 [project.optional-dependencies]

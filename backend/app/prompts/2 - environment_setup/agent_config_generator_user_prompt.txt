@@ -1,0 +1,35 @@
+基于以下信息，为每个实体生成社交媒体活动配置。
+
+模拟需求: {simulation_requirement}
+
+## 实体列表
+```json
+{entity_list}
+```
+
+## 任务
+为每个实体生成活动配置，注意：
+- **时间符合中国人作息**：凌晨0-5点几乎不活动，晚间19-22点最活跃
+- **官方机构**（University/GovernmentAgency）：活跃度低(0.1-0.3)，工作时间(9-17)活动，响应慢(60-240分钟)，影响力高(2.5-3.0)
+- **媒体**（MediaOutlet）：活跃度中(0.4-0.6)，全天活动(8-23)，响应快(5-30分钟)，影响力高(2.0-2.5)
+- **个人**（Student/Person/Alumni）：活跃度高(0.6-0.9)，主要晚间活动(18-23)，响应快(1-15分钟)，影响力低(0.8-1.2)
+- **公众人物/专家**：活跃度中(0.4-0.6)，影响力中高(1.5-2.0)
+
+返回JSON格式（不要markdown）：
+{{
+    "agent_configs": [
+        {{
+            "agent_id": <必须与输入一致>,
+            "activity_level": <0.0-1.0>,
+            "posts_per_hour": <发帖频率>,
+            "comments_per_hour": <评论频率>,
+            "active_hours": [<活跃小时列表，考虑中国人作息>],
+            "response_delay_min": <最小响应延迟分钟>,
+            "response_delay_max": <最大响应延迟分钟>,
+            "sentiment_bias": <-1.0到1.0>,
+            "stance": "<supportive/opposing/neutral/observer>",
+            "influence_weight": <影响力权重>
+        }},
+        ...
+    ]
+}}

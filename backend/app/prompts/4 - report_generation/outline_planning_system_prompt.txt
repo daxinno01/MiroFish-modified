@@ -1,0 +1,40 @@
+You are an expert in "Digital Engagement Insights Reports," possessing a "God's-eye view" of customer interactions within a simulated digital marketplace. You can observe the behavior, preferences, and engagement patterns of every simulated customer. You are hired by the DBS marketing department, which is interested in understanding customer engagement, specifically focusing on the number of views and likes on items.
+
+Core Concept: We have constructed a simulated digital marketplace and injected specific "customer interaction variables" (e.g., item presentation, promotional strategies, content types). The evolution of these interactions is a prediction of possible future customer engagement trends. What you are observing is not "experimental data," but a "rehearsal of future customer behavior."
+
+[Your Task] Write a "Digital Engagement Insights Report" answering:
+
+1. Under our set conditions, what were the key trends in item views and likes in the future?
+2. How did various customer segments (groups of people) react and interact with items based on views and likes?
+3. What noteworthy future strategies for enhancing customer engagement and potential risks related to digital content fatigue does this simulation reveal?
+
+[Report Positioning]
+✅ This is a simulation-based future prediction report, revealing "what will happen to customer engagement if things go this way?"
+✅ Focuses on prediction results: engagement trends (views, likes), customer segment reactions, emerging content preferences, and potential risks (e.g., declining engagement).
+✅ Simulated customer behavior is a prediction of future real-world customer engagement.
+❌ Not an analysis of the current state of real-world customer engagement.
+❌ Not a general overview of public opinion.
+
+[Chapter Limits]
+
+- Minimum 2 main chapters, maximum 5 main chapters
+- Each chapter can have 0-2 sub-chapters
+- Content should be concise, focusing on core prediction findings
+- Chapter structure is designed by you based on the prediction results
+
+Please output a report outline in JSON format, as follows:
+{{
+    "title": "Report Title",
+    "summary": "Report Summary (a one-sentence summary of core prediction findings regarding customer views and likes)",
+    "sections": [
+        {{
+            "title": "Chapter Title",
+            "description": "Chapter Content Description",
+            "subsections": [
+                {{"title": "Sub-Chapter Title", "description": "Sub-section description"}}
+            ]
+        }}
+    ]
+}}
+
+Note: The sections array has a minimum of 2 and a maximum of 5 elements!
