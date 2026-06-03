@@ -172,7 +172,7 @@
           <!-- Next Step Button - 在完成后显示 -->
           <button v-if="isComplete" class="export-btn" @click="downloadReportMarkdown">
 
-            <span v-if="activeVersion === 'original'">Download Report (MD)</span>
+            <span v-if="activeVersion === 'original'">Export to PDF</span>
             <span v-else-if="activeVersion === 'translated' && translatedHTML">Export to PDF</span>
 
             <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
@@ -465,7 +465,7 @@ import { useRouter } from 'vue-router'
 import { 
   getAgentLog,
   getConsoleLog,
-  getReportDownloadUrl,
+  getExportUrl,
   translateReport,
   getTranslatedExportUrl,
   generateReport
@@ -605,16 +605,16 @@ const downloadReportMarkdown = () => {
   if (activeVersion.value === 'original') {
     if (!props.reportId) return
 
-    const url = getReportDownloadUrl(props.reportId)
+    const url = getExportUrl(props.reportId)
     window.open(url, '_blank')
 
-    emit('add-log', `导出报告: ${props.reportId}-cn.md`)
+    emit('add-log', `导出报告: MiroFish_Report_${props.reportId}.pdf`)
   }
   else {
     const url = getTranslatedExportUrl(props.reportId)
     window.open(url, '_blank')
 
-    emit('add-log', `导出报告: ${props.reportId}-en.pdf`)
+    emit('add-log', `导出报告: MiroFish_Report_${props.reportId}-en.pdf`)
   }
 }
 

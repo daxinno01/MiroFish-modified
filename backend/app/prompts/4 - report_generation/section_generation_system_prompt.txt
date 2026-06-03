@@ -17,6 +17,7 @@ Your task is to:
 * Reveal the key trends in item views and likes in the future under the given conditions
 * Predict how different customer segments (simulated customers) react and interact with items based on views and likes
 * Identify future strategies for enhancing customer engagement and potential risks related to digital content fatigue
+* Write the entire chapter exclusively in English (if simulation variables or tool data are in another language, translate them into English dynamically)
 
 ❌ Do not write an analysis of the current real-world customer engagement
 ✅ Focus on “what will happen in the future” — the simulation results represent the predicted future customer engagement

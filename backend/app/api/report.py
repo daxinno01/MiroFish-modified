@@ -656,6 +656,30 @@ def export_translated_report(report_id: str):
             "traceback": traceback.format_exc()
         }), 500
     
+@report_bp.route('/<report_id>/pdf-export', methods=['GET'])
+def export_report(report_id: str):
+    try:
+        report = ReportManager.get_report(report_id)
+        if not report:
+            return jsonify({"success": False, "error": "Report not found"}), 404
+        
+        html = ReportTransformer._markdown_to_html(report.markdown_content)
+        pdf_path = ReportTransformer.export(html)
+
+        return send_file(
+            pdf_path,
+            as_attachment=True,
+            download_name=f"MiroFish_Report_{report_id}.pdf",
+            mimetype='application/pdf'
+        )
+        
+    except Exception as e:
+        logger.error(f"下载报告失败: {str(e)}")
+        return jsonify({
+            "success": False,
+            "error": str(e),
+            "traceback": traceback.format_exc()
+        }), 500
 
 @report_bp.route('/<report_id>/translate', methods=['POST'])
 def translate_report(report_id: str):

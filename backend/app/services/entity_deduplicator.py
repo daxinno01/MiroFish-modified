@@ -3,10 +3,13 @@
 识别并合并本地图谱中指代同一现实对象的冗余实体
 """
 
+import os
 import json
 from typing import List, Dict, Any, Set, Tuple, Optional
 from app.utils import LLMClient
 from .zep_entity_reader import EntityNode
+from ..config import Config
+from ..utils.file_parser import FileParser
 from ..utils.logger import get_logger
 
 logger = get_logger('mirofish.entity_deduplicator')
@@ -14,9 +17,10 @@ logger = get_logger('mirofish.entity_deduplicator')
 class EntityDeduplicator:
     """实体去重器"""
 
+    SIMULATION_PROMPTS_DIR = os.path.join(Config.PROMPTS_FOLDER, '3 - simulation')
+
     def __init__(self, simulation_id: Optional[str] = None, project_id: Optional[str] = None):
         self.llm = LLMClient(simulation_id=simulation_id, project_id=project_id)
-        print("ENTITY DEDUPLICATOR ACTIVATED!")
 
     def process(self, entities: List[EntityNode]) -> List[EntityNode]:
         """
@@ -91,31 +95,22 @@ class EntityDeduplicator:
                 "summary": e.summary[:100] if e.summary else ""
             })
 
-        prompt = f"""
-你是一个实体对齐（Entity Resolution）专家。请分析以下社交媒体模拟中的实体列表，识别出哪些名称实际上是指代同一个现实世界中的人、机构或对象。
+        system_prompt = FileParser._extract_from_txt(
+            os.path.join(self.SIMULATION_PROMPTS_DIR, "entity_deduplicator_system_prompt.txt")
+        )
+        user_prompt = FileParser._extract_from_txt(
+            os.path.join(self.SIMULATION_PROMPTS_DIR, "entity_deduplicator_user_prompt.txt")
+        ).format(
+            entity_list=json.dumps(entity_info, ensure_ascii=False, indent=2)
+        )
 
-## 待处理实体列表
-{json.dumps(entity_info, ensure_ascii=False, indent=2)}
-
-## 任务
-1. 找出重复的实体（例如：“特朗普”和“Donald Trump”；“北大”和“北京大学”）。
-2. 将它们分组成聚类。
-3. 为每个聚类选定一个最规范的名称（Canonical Name）作为 Key。
-
-## 输出格式 (必须是纯 JSON)
-{{
-    "Canonical Name 1": ["名称A", "名称B"],
-    "Canonical Name 2": ["名称C", "名称D"]
-}}
-如果没有任何重复，请返回空对象 {{}}。
-"""
         try:
             result = self.llm.chat_json(
                 messages=[
-                    {"role": "system", "content": "你是一个精确的实体对齐专家。只返回 JSON 格式。"},
-                    {"role": "user", "content": prompt}
+                    {"role": "system", "content": system_prompt},
+                    {"role": "user", "content": user_prompt}
                 ],
-                caller_hint="实体聚类识别"
+                caller_hint="Entity Cluster Recognition"
             )
             return result
         except Exception as e:

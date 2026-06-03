@@ -22,4 +22,8 @@
 
 6. **Visual Data Translation:** If the image contains a chart, graph, or table, describe the trends, axes, and specific data points (e.g., "The bar chart shows Q1 2026 revenue at S$4.2B, a 10% increase YoY").
 
-**Constraint:** Do not be conversational. Use clear, declarative statements. If an element is ambiguous, describe its visual properties rather than guessing.
+7. **Omission of Non-applicable Fields:** If any of the previous points are not present in the image, you should omit them from the output.z
+
+**Constraints:**
+*   Do not be conversational. Use clear, declarative statements. If an element is ambiguous, describe its visual properties rather than guessing.
+*   Please provide a descriptioin of this image based purely on its visual content, using only what is visible within the image frame. Do not incorporate any external context, personal identifiers or organizational affiliations.

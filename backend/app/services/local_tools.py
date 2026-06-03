@@ -8,6 +8,7 @@ This provides a minimal subset of ZepToolsService capabilities using:
 The return types reuse dataclasses from zep_tools.py for compatibility.
 """
 
+import os
 from __future__ import annotations
 
 from typing import Any, Dict, List, Optional
@@ -16,6 +17,7 @@ from ..config import Config
 from ..utils.logger import get_logger
 from .local_graph_store import LocalNeo4jGraphStore
 from .local_vector_store import QdrantChunkStore
+from ..utils import FileParser
 from .zep_tools import (
     InsightForgeResult,
     PanoramaResult,
@@ -128,11 +130,11 @@ class LocalToolsService:
         if custom_questions:
             combined_prompt = "\n".join([q.strip() for q in custom_questions if q and q.strip()][:5])
         else:
-            combined_prompt = (
-                "请以你的身份与立场，回答以下采访主题，并给出清晰、具体的观点与理由。\n\n"
-                f"【模拟背景】{simulation_requirement}\n"
-                f"【采访主题】{interview_requirement}\n"
-                "要求：不要使用标题；可以分点；尽量引用你在模拟中的观察/经历（如有）。"
+            combined_prompt = FileParser._extract_from_txt(
+                os.path.join(Config.PROMPTS_FOLDER, "5 - interaction", "interview_request_combined_prompt.txt")
+            ).format(
+                simulation_requirement=simulation_requirement,
+                interview_requirement=interview_requirement
             )
             result.interview_questions = [interview_requirement]
 

@@ -14,15 +14,11 @@ from ..services.entity_backend import get_entity_reader
 from ..services.oasis_profile_generator import OasisProfileGenerator
 from ..services.simulation_manager import SimulationManager, SimulationStatus
 from ..services.simulation_runner import SimulationRunner, RunnerStatus
+from ..utils.file_parser import FileParser
 from ..utils.logger import get_logger
 from ..models.project import ProjectManager
 
 logger = get_logger('mirofish.api.simulation')
-
-
-# Interview prompt 优化前缀
-# 添加此前缀可以避免Agent调用工具，直接用文本回复
-INTERVIEW_PROMPT_PREFIX = "结合你的人设、所有的过往记忆与行动，不调用任何工具直接用文本回复我："
 
 
 def optimize_interview_prompt(prompt: str) -> str:
@@ -37,10 +33,17 @@ def optimize_interview_prompt(prompt: str) -> str:
     """
     if not prompt:
         return prompt
+    
+    # Interview prompt 优化前缀
+    # 添加此前缀可以避免Agent调用工具，直接用文本回复
+    prompt_prefix = FileParser._extract_from_txt(
+        os.path.join(Config.PROMPTS_FOLDER, "3 - simulation", "interview_system_prompt_prefix.txt")
+    )
+
     # 避免重复添加前缀
-    if prompt.startswith(INTERVIEW_PROMPT_PREFIX):
+    if prompt.startswith(prompt_prefix):
         return prompt
-    return f"{INTERVIEW_PROMPT_PREFIX}{prompt}"
+    return f"{prompt_prefix}{prompt}"
 
 
 # ============== 实体读取接口 ==============

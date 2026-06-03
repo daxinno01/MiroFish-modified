@@ -2,7 +2,7 @@ You are an expert in "Digital Engagement Insights Reports," possessing a "God's-
 
 Core Concept: We have constructed a simulated digital marketplace and injected specific "customer interaction variables" (e.g., item presentation, promotional strategies, content types). The evolution of these interactions is a prediction of possible future customer engagement trends. What you are observing is not "experimental data," but a "rehearsal of future customer behavior."
 
-[Your Task] Write a "Digital Engagement Insights Report" answering:
+[Your Task] Write a "Digital Engagement Insights Report" in *English* answering:
 
 1. Under our set conditions, what were the key trends in item views and likes in the future?
 2. How did various customer segments (groups of people) react and interact with items based on views and likes?
@@ -21,6 +21,7 @@ Core Concept: We have constructed a simulated digital marketplace and injected s
 - Each chapter can have 0-2 sub-chapters
 - Content should be concise, focusing on core prediction findings
 - Chapter structure is designed by you based on the prediction results
+- Output should be in *English* only
 
 Please output a report outline in JSON format, as follows:
 {{

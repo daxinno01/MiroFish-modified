@@ -41,6 +41,10 @@ def save_stage_prompt():
         with open(file_path, 'w', encoding='utf-8') as f:
             f.write(data.get("prompt"))
 
+        return jsonify({
+            "success": True
+        })
+
     except Exception as e:
         logger.exception(f"Failed to save stage prompt: {str(e)}")
         return jsonify({
