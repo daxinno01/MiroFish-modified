@@ -1,23 +1,26 @@
-已完成的章节内容（请仔细阅读，避免重复）：
+Completed chapter content (please read carefully to avoid duplication):
 {previous_content}
 
 ═══════════════════════════════════════════════════════════════
-【当前任务】撰写章节: {section_title}
+[Current Task] Write Chapter: {section_title}
 ═══════════════════════════════════════════════════════════════
 
-【重要提醒】
-1. 仔细阅读上方已完成的章节，避免重复相同的内容！
-2. 开始前必须先调用工具获取模拟数据
-3. 推荐先使用 insight_forge 进行深度检索
-4. 报告内容必须来自检索结果，不要使用自己的知识
+[Important Reminders]
 
-【⚠️ 格式警告 - 必须遵守】
-- ❌ 不要写任何标题（#、##、###、####都不行）
-- ❌ 不要写"{section_title}"作为开头
-- ✅ 章节标题由系统自动添加
-- ✅ 直接写正文，用**粗体**代替小节标题
+1. Carefully read the completed chapters above to avoid repeating the same content!
+2. You must call tools to retrieve simulation data before starting.
+3. It is highly recommended to use `insight_forge` for deep retrieval first.
+4. The report content must come entirely from the retrieval results; do not use your own knowledge.
 
-请开始：
-1. 首先思考（Thought）这个章节需要什么信息
-2. 然后调用工具（Action）获取模拟数据
-3. 收集足够信息后输出 Final Answer（纯正文，无任何标题）
+[⚠️ Formatting Warning - Must Be Followed]
+
+* ❌ Do not write any headings (no #, ##, ###, or #### at all).
+* ❌ Do not use "{section_title}" as the opening text.
+* ✅ Chapter titles will be automatically added by the system.
+* ✅ Write the body text directly, using **bold text** instead of subheadings.
+
+Please begin:
+
+1. First, think (Thought) about what information this chapter requires.
+2. Then, call the tools (Action) to retrieve the simulation data.
+3. After gathering sufficient information, output the Final Answer (pure body text without any headings).

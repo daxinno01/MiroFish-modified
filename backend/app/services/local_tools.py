@@ -8,8 +8,8 @@ This provides a minimal subset of ZepToolsService capabilities using:
 The return types reuse dataclasses from zep_tools.py for compatibility.
 """
 
-import os
 from __future__ import annotations
+import os
 
 from typing import Any, Dict, List, Optional
 

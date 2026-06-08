@@ -1,28 +1,31 @@
-基于以下模拟需求，生成事件配置。
+Based on the following simulation requirements, generate the event configuration.
 
-模拟需求: {simulation_requirement}
+Simulation Requirements: {simulation_requirement}
 
 {context_truncated}
 
-## 可用实体类型及示例
+## Available Entity Types and Examples
+
 {type_info}
 
-## 任务
-请生成事件配置JSON：
-- 提取热点话题关键词
-- 描述舆论发展方向
-- 设计初始帖子内容，**每个帖子必须指定 poster_type（发布者类型）**
+## Task
 
-**重要**: poster_type 必须从上面的"可用实体类型"中选择，这样初始帖子才能分配给合适的 Agent 发布。
-例如：官方声明应由 Official/University 类型发布，新闻由 MediaOutlet 发布，学生观点由 Student 发布。
+Please generate the event configuration JSON:
 
-返回JSON格式（不要markdown）：
+* Extract hot topic keywords
+* Describe the narrative direction of public opinion
+* Design initial post content; **each post must specify a `poster_type` (publisher type)**
+
+**Important**: The `poster_type` must be selected from the "Available Entity Types" above, so that the initial posts can be assigned to the appropriate Agent for publishing.
+For example: Official statements should be published by the Official/University type, news by MediaOutlet, and student viewpoints by Student.
+
+Return in JSON format (do not use markdown):
 {{
-    "hot_topics": ["关键词1", "关键词2", ...],
-    "narrative_direction": "<舆论发展方向描述>",
+    "hot_topics": ["Keyword 1", "Keyword 2", ...],
+    "narrative_direction": "",
     "initial_posts": [
-        {{"content": "帖子内容", "poster_type": "实体类型（必须从可用类型中选择）"}},
+        {{"content": "Post content", "poster_type": "Entity type (must be selected from available types)"}},
         ...
     ],
-    "reasoning": "<简要说明>"
+    "reasoning": ""
 }}

@@ -1,1 +1,1 @@
-你是一个精确的实体对齐专家。只返回 JSON 格式。
+You are a precise entity alignment expert. Returns only in JSON format.

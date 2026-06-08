@@ -1,33 +1,35 @@
-为机构/群体实体生成详细的社交媒体账号设定,最大程度还原已有现实情况。{goal_str}
+Generate detailed social media account settings for the organization/group entity, reproducing the existing real-world situation to the maximum extent. {goal_str}
 {status_suffix}
 
-实体名称: {entity_name}
-实体类型: {entity_type}
-实体摘要: {entity_summary}
-实体属性: {attrs_str}
+Entity Name: {entity_name}
+Entity Type: {entity_type}
+Entity Summary: {entity_summary}
+Entity Attributes: {attrs_str}
 
-上下文信息:
+Context Information:
 {context_str}
 
-请生成JSON，包含以下字段:
+Please generate a JSON containing the following fields:
 
-1. bio: 官方账号简介（100字），专业得体
-2. persona: 机构行为导引（500-800字精炼文本），用于直接驱动账号在模拟中的发布策略。必须包含：
-   - 【账号人设】：该机构在网络上的对外形象（如：权威发布者、亲民互动官、冷峻观察者）。
-   - 【运营底线】：规定账号在争议话题下的“必发表”和“禁区”（如：必须转发上级指令、严禁参与个人口水战）。
-   - 【发布偏好】：常用的内容类型（如：数据通报、政策解读）及发布节奏。
-   - 【话语体系】：3个具体的公文风格或专业词汇偏好（常见用词、语气倾向）。
-   - 【机构记忆】：该机构与当前事件的历史渊源及已对外界做出的承诺。
-3. age: 固定填30
-4. gender: 固定填"other"
-5. mbti: MBTI类型，用于描述账号风格，如ISTJ代表严谨保守
-6. country: 国家（使用中文，如"中国"）
-7. profession: 机构职能描述
-8. interested_topics: 关注领域数组
+1. **bio**: Official account bio (within 100 words), professional and appropriate.
+2. **persona**: Institutional behavior guidelines (concise text of 500-800 words), used to directly drive the account's posting strategy in the simulation. It must include:
+* **[Account Persona]**: The institution's external online image (e.g., authoritative publisher, approachable interactive official, detached observer).
+* **[Operational Bottom Line]**: Outlines the "must-publish" requirements and "no-go zones" for the account under controversial topics (e.g., must forward directives from higher authorities, strictly prohibited from engaging in personal flame wars).
+* **[Posting Preferences]**: Commonly used content types (e.g., data briefings, policy interpretations) and posting rhythm.
+* **[Discourse System]**: 3 specific preferences for official document styles or professional vocabulary (common wording, tone inclination).
+* **[Institutional Memory]**: The historical connection between the institution and the current event, as well as commitments already made to the public.
 
-重要:
-- 所有字段值必须是字符串或数字，不允许null值
-- persona必须是一段连贯的文字描述，不要使用换行符
-- 使用中文（除了gender字段必须用英文"other"）
-- age必须是整数30，gender必须是字符串"other"
-- 机构账号发言要符合其身份定位
+3. **age**: Fixed to 30.
+4. **gender**: Fixed to "other".
+5. **mbti**: MBTI type, used to describe the account style (e.g., ISTJ represents rigorous and conservative).
+6. **country**: Country (use Chinese, e.g., "中国").
+7. **profession**: Description of the institution's functions.
+8. **interested_topics**: Array of areas of interest.
+
+**IMPORTANT**:
+
+* All field values must be strings or numbers; null values are not allowed.
+* The `persona` must be a coherent text description without any newline characters.
+* Use Chinese for the content (except for the `gender` field, which must be the English string "other").
+* `age` must be the integer 30, and `gender` must be the string "other".
+* The institutional account's statements must strictly conform to its identity and positioning.

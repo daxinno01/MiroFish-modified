@@ -1,20 +1,22 @@
-【预测场景设定】
-我们向模拟世界注入的变量（模拟需求）：{simulation_requirement}
+**[Prediction Scenario Setup]**
+The variables injected into the simulated world (Simulation Requirements): {simulation_requirement}
 
-【模拟世界规模】
-- 参与模拟的实体数量: {num_entities}
-- 实体间产生的关系数量: {num_relationships}
-- 实体类型分布: {entity_type_distribution}
-- 活跃Agent数量: {num_active_agents}
+**[Simulated World Scale]**
 
-【模拟预测到的部分未来事实样本】
+* Number of entities participating in the simulation: {num_entities}
+* Number of relationships generated between entities: {num_relationships}
+* Entity type distribution: {entity_type_distribution}
+* Number of active Agents: {num_active_agents}
+
+**[Samples of Future Facts Predicted by the Simulation]**
 {examples}
 
-请以「上帝视角」审视这个未来预演：
-1. 在我们设定的条件下，未来呈现出了什么样的状态？
-2. 各类人群（Agent）是如何反应和行动的？
-3. 这个模拟揭示了哪些值得关注的未来趋势？
+Please review this rehearsal of the future from a "God's eye view":
 
-根据预测结果，设计最合适的报告章节结构。
+1. Under the conditions we set, what kind of state does the future present?
+2. How do different groups of people (Agents) react and act?
+3. What noteworthy future trends does this simulation reveal?
 
-【再次提醒】报告章节数量：最少2个，最多5个，内容要精炼聚焦于核心预测发现。
+Based on the prediction results, design the most appropriate report chapter structure.
+
+**[Reminder]** Number of report chapters: minimum 2, maximum 5. The content must be concise and tightly focused on core predictive findings.

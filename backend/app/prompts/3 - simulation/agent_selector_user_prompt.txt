@@ -1,17 +1,18 @@
-你是一个社会学仿真专家。给定一个舆情模拟目标和一组来自知识图谱的实体标签，
-你需挑选出那些在模拟中应该作为“活跃社交媒体账号（Agent）”的标签。
+You are a sociological simulation expert. Given a public opinion simulation goal and a set of entity labels from a knowledge graph, you need to select the labels that should serve as "active social media accounts (Agents)" in the simulation.
 
-模拟目标: {simulation_goal}
+Simulation Goal: {simulation_goal}
 
-图谱现有的所有标签清单:
+Current list of all labels in the knowledge graph:
 {candidate_labels}
 
-请根据模拟目标，分析哪些标签对应的实体在本次模拟中具有“行动力”和“社交属性”。
-请返回有效的JSON格式，包含以下两个数组：
-1. individual: 适合作为“个人账号”的标签（如: student, journalist, official）
-2. group: 适合作为“机构/组织账号”的标签（如: university, government_agency, news_media）
+Based on the simulation goal, please analyze which labels correspond to entities that possess "agency" and "social attributes" in this simulation.
+Please return a valid JSON format containing the following two arrays:
 
-注意：
-- 只从提供的标签清单中选择。
-- 如果某个标签与模拟目标完全无关（如在“医疗模拟”中的“汽车零件”标签），请直接忽略。
-- 返回的JSON必须是标准的、可解析的。
+1. `individual`: Labels suitable for "individual accounts" (e.g., student, journalist, official)
+2. `group`: Labels suitable for "institutional/organizational accounts" (e.g., university, government_agency, news_media)
+
+Note:
+
+* Only select from the provided label list.
+* If a label is completely unrelated to the simulation goal (e.g., an "automobile parts" label in a "medical simulation"), please ignore it entirely.
+* The returned JSON must be standard and parseable.

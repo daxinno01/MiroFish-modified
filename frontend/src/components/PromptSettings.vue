@@ -40,22 +40,46 @@
 
                   <div v-if="expandedPrompt === fileName" class="accordion-body">
                     <textarea 
-                      v-model="prompts[fileName]"
+                      v-model="prompts[fileName].text"
                       :data-filename="fileName" 
                       @keydown.tab.prevent="handleTab"
                       @keydown.delete="handleBackspace"
+                      class="prompt-textarea"
+                      :class="{ 'input-error': getMissingVars(fileName).length > 0 }"
                       rows="8"
+                      @input="handleInput(fileName)"
                     ></textarea>
-                    
+
+                    <div class="validation-errors-container">
+                      <div 
+                        v-for="missingVar in getMissingVars(fileName)" 
+                        :key="missingVar" 
+                        class="validation-error-msg"
+                      >
+                        <span class="error-icon">⚠️</span> Missing: <strong>{{ '{' + missingVar + '}' }}</strong>
+                      </div>
+                      
+                      <div v-if="getMissingVars(fileName).length === 0 && prompts[fileName].required_vars?.length" class="validation-success-msg">
+                        <span class="success-icon">✓</span> All required variables are present.
+                      </div>
+                    </div>
+
                     <div class="prompt-actions">
                       <button 
-                        v-if="prompts[fileName] !== originalPrompts[fileName]" 
+                        v-if="prompts[fileName]?.text !== originalPrompts[fileName]" 
                         class="btn-text-only" 
                         @click="handleDiscard(fileName)"
                       >
                         Discard
                       </button>
-                      <button class="btn-primary" @click="handleApply(fileName)">Save Prompt</button>
+                      
+                      <button 
+                        @click="savePrompt(fileName)" 
+                        class="btn-primary"
+                        :disabled="getMissingVars(fileName).length > 0"
+                      >
+                        Save
+                      </button>
                     </div>
                   </div>
 
@@ -89,6 +113,43 @@ const originalPrompts = reactive({}); // Snapshot cache of server state
 const expandedPrompt = ref(null);    // Tracks open section
 const accordionRefs = reactive({});   // Map dictionary to locate DOM components
 
+/**
+ * Computes and returns an array of missing variables for a given prompt file.
+ * Acts like a reactive validator tracking the input's current text state.
+ */
+const getMissingVars = (fileName) => {
+  // 1. SAFEGUARD: Ensure prompts exists, and that the specific file entry exists
+  if (!prompts || !prompts[fileName]) {
+    return [];
+  }
+
+  const promptData = prompts[fileName];
+  
+  // 2. SAFEGUARD: If the backend data has no required_vars array, nothing is missing
+  if (!promptData || !promptData.required_vars || !Array.isArray(promptData.required_vars)) {
+    return [];
+  }
+  
+  // 3. SAFEGUARD: Ensure text field exists before checking includes string match
+  if (typeof promptData.text !== 'string') {
+    return [];
+  }
+  
+  // Run the validation check safely
+  return promptData.required_vars.filter(varName => {
+    return !promptData.text.includes(`{${varName}}`);
+  });
+};
+
+/**
+ * Optional: Can be used to trigger side-effects on input 
+ * (like dirty flags or clear custom state)
+ */
+const handleInput = (fileName) => {
+  // Real-time tracking is handled natively by v-model, 
+  // but you can add custom form-state logic here if needed.
+};
+
 // Toggle & Flush to Top
 const togglePrompt = async (fileName) => {
   if (expandedPrompt.value === fileName) {
@@ -116,24 +177,56 @@ const togglePrompt = async (fileName) => {
   }
 };
 
-const handleApply = async (fileName) => {
-  console.log(`Saving changes for ${fileName}:`, prompts[fileName]);
-  
-  await saveStagePrompt({
-    stage: selectedStage.value,
-    filename: fileName,
-    prompt: prompts[fileName]
-  });
-  
-  // Set current content as baseline truth
-  originalPrompts[fileName] = prompts[fileName];
+const savePrompt = async (fileName) => {
+  if (!prompts || !prompts[fileName]) {
+    alert("Error: Prompt data could not be localized.");
+    return;
+  }
 
-  console.log("Done!");
+  // Defensive check right before sending payload
+  const missing = getMissingVars(fileName);
+  if (missing.length > 0) {
+    alert(`Cannot save! The following variables are missing from your text template: ${missing.map(v => `{${v}}`).join(', ')}`);
+    return;
+  }
+
+  const promptData = prompts[fileName];
+  console.log(`Saving configuration changes for ${fileName}:`, promptData.text);
+  
+  try {
+    // 1. Fire off your custom requestWithRetry wrapper
+    const response = await saveStagePrompt({
+      stage: selectedStage.value,
+      filename: fileName,
+      prompt: promptData.text // Fixed: Passing the explicit inner text string
+    });
+    
+    // 2. Extract payload wrapper based on your standard API service architecture
+    // If your service returns raw Axios response objects, use response.data.success
+    const isSuccess = response?.success || response?.data?.success;
+    
+    if (isSuccess) {
+      alert(`${fileName} updated successfully!`);
+      
+      // 3. Update the tracking point so the "Discard" button hides cleanly
+      originalPrompts[fileName] = promptData.text;
+      
+      console.log("Done!");
+    } else {
+      const errMsg = response?.error || response?.data?.error || "Unknown validation error";
+      alert(`Backend Error while saving configuration: ${errMsg}`);
+    }
+  } catch (err) {
+    console.error("Failed to commit prompt update chain:", err);
+    alert("Network threshold or retry exhaustion reached while saving prompt configurations.");
+  }
 };
 
 const handleDiscard = (fileName) => {
   // Pull unchanged textual state directly out of the cache 
-  prompts[fileName] = originalPrompts[fileName];
+  if (prompts[fileName] && originalPrompts[fileName] !== undefined) {
+    prompts[fileName].text = originalPrompts[fileName];
+  }
 };
 
 const handleTab = (event) => {
@@ -153,7 +246,11 @@ const handleBackspace = (event) => {
     if (textBeforeCursor === "  ") {
       event.preventDefault();
       textarea.value = textarea.value.substring(0, start - 2) + textarea.value.substring(start);
-      prompts[fileName] = textarea.value;
+      // FIXED: Update the inner .text property instead of breaking the object schema with a string
+      if (prompts[fileName]) {
+        prompts[fileName].text = textarea.value;
+      }
+      
       textarea.selectionStart = textarea.selectionEnd = start - 2;
     }
   }
@@ -180,13 +277,24 @@ const loadPrompts = async (stage) => {
   try {
     const response = await getStagePrompts(stage);
     
+    // Clear out existing properties cleanly while preserving reactive bindings
     Object.keys(prompts).forEach(key => delete prompts[key]);
     Object.keys(originalPrompts).forEach(key => delete originalPrompts[key]);
     
+    // 1. Assign the new rich composite structure (text & required_vars) to prompts
     Object.assign(prompts, response.data);
-    Object.assign(originalPrompts, JSON.parse(JSON.stringify(response.data))); // sever reference tree
+    
+    // 2. Map ONLY the baseline text strings directly to originalPrompts
+    // This allows exact string-to-string comparisons for the Discard buttons
+    const baselineMap = {};
+    Object.keys(response.data).forEach(fileName => {
+      baselineMap[fileName] = response.data[fileName].text;
+    });
+    
+    Object.assign(originalPrompts, baselineMap);
+    
   } catch (e) {
-    console.error(e);
+    console.error("Failed to parse and map prompt configurations:", e);
   } finally {
     isLoading.value = false;
   }
@@ -446,5 +554,61 @@ const toggleSettings = () => {
 .fade-slide-enter-from, .fade-slide-leave-to {
   opacity: 0;
   transform: translateY(-20px);
+}
+
+/* Textarea Error Border state */
+.prompt-textarea.input-error {
+  border-color: #ef4444 !important;
+  box-shadow: 0 0 0 1px #fca5a5;
+}
+
+/* Validation Containers */
+.validation-errors-container {
+  margin-top: 6px;
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* Login-style error messages */
+.validation-error-msg {
+  color: #b91c1c;
+  font-size: 0.85rem;
+  background-color: #fef2f2;
+  padding: 6px 12px;
+  border-radius: 4px;
+  border-left: 3px solid #ef4444;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.validation-error-msg strong {
+  font-family: monospace;
+  background: #fee2e2;
+  padding: 1px 4px;
+  border-radius: 3px;
+}
+
+/* Success State Label */
+.validation-success-msg {
+  color: #15803d;
+  font-size: 0.85rem;
+  background-color: #f0fdf4;
+  padding: 6px 12px;
+  border-radius: 4px;
+  border-left: 3px solid #22c55e;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Primary Button disabled styling overrides */
+.btn-primary:disabled {
+  background-color: #cbd5e1 !important;
+  color: #94a3b8 !important;
+  cursor: not-allowed !important;
+  border: none;
 }
 </style>

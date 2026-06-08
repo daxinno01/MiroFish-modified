@@ -1,6 +1,7 @@
 import os
 import json
 import traceback
+import string
 from flask import request, jsonify, send_file
 
 from . import settings_bp
@@ -9,6 +10,13 @@ from ..utils.logger import get_logger
 
 logger = get_logger('mirofish.api.settings')
 
+
+def extract_variables(template_string):
+    """Extracts unique variable names enclosed in curly braces from a python string template."""
+    try:
+        return [field_name for _, field_name, _, _ in string.Formatter().parse(template_string) if field_name is not None]
+    except Exception:
+        return []
 
 @settings_bp.route('/prompts/<stage>', methods=['GET'])
 def get_stage_prompts(stage):
@@ -23,7 +31,11 @@ def get_stage_prompts(stage):
     for filename in os.listdir(stage_path):
         if filename.endswith('.txt'):
             with open(os.path.join(stage_path, filename), 'r', encoding='utf-8') as f:
-                prompts[filename] = f.read()
+                content = f.read()
+                prompts[filename] = {
+                    "text": content,
+                    "required_vars": extract_variables(content)
+                }
 
     return jsonify({
         "success": True,

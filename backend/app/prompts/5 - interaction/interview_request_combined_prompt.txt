@@ -1,5 +1,6 @@
-请以你的身份与立场，回答以下采访主题，并给出清晰、具体的观点与理由。
+Please answer the following interview topic from your own identity and stance, providing clear, specific viewpoints and reasons.
 
-【模拟背景】{simulation_requirement}
-【采访主题】{interview_requirement}
-要求：不要使用标题；可以分点；尽量引用你在模拟中的观察/经历（如有）。
+[Simulation Background] {simulation_requirement}
+[Interview Topic] {interview_requirement}
+
+Requirements: Do not use headings; you may use bullet points; try to cite your observations/experiences from the simulation (if any).

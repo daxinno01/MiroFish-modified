@@ -1,33 +1,41 @@
-为实体生成详细的社交媒体用户人设,最大程度还原已有现实情况。{goal_str}
+Generate detailed social media user personas for the entity, reproducing the existing real-world situation to the maximum extent. {goal_str}
 {status_suffix}
 
-实体名称: {entity_name}
-实体类型: {entity_type}
-实体摘要: {entity_summary}
-实体属性: {attrs_str}
+Entity Name: {entity_name}
+Entity Type: {entity_type}
+Entity Summary: {entity_summary}
+Entity Attributes: {attrs_str}
 
-上下文信息:
+Context Information:
 {context_str}
 
-请生成JSON，包含以下字段:
+Please generate a JSON containing the following fields:
 
-1. bio: 社交媒体简介（100字），用于展示在个人主页。
-2. persona: 角色行为导引（500-800字精炼文本），用于直接驱动 Agent 在模拟中的社交决策。必须包含：
-   - 【社交面具】：基于其性格和背景，在网络上呈现的核心人设（如：杠精、理中客、沉默的大多数）。
-   - 【利益/情感锚点】：明确该角色在当前事件中的核心利益点或情感触发点（他为什么在意这件事？）。
-   - 【立场律令】：规定其在互动中“必做”和“绝不做”的行为准则（如：凡看到官方贴必阴阳怪气、绝不转发未证实消息）。
-   - 【语言指纹】：3个具体的表达习惯（如：特定口头禅、爱用括号补充内心戏、常用某类 Emoji）。
-   - 【个人记忆】：简述其与该事件最深刻的关联，作为其后续言论的逻辑起点。
-3. age: 年龄数字（必须是整数）
-4. gender: 性别，必须是英文: "male" 或 "female"
-5. mbti: MBTI类型（如INTJ、ENFP等）
-6. country: 国家（使用中文，如"中国"）
-7. profession: 职业
-8. interested_topics: 感兴趣话题数组
+1. **bio**: Social media bio (within 100 words), used to be displayed on the profile page.
 
-重要:
-- 所有字段值必须是字符串或数字，不要使用换行符
-- persona必须是一段连贯的文字描述
-- 使用中文（除了gender字段必须用英文male/female）
-- 内容要与实体信息保持一致
-- age必须是有效的整数，gender必须是"male"或"female"
+2. **persona**: Character behavior guidelines (concise text of 500-800 words), used to directly drive the Agent's social decisions in the simulation. It must include:
+* **[Social Mask]**: The core persona presented online based on their personality and background (e.g., contrarian/internet troll, objective rationalist, silent majority).
+* **[Interest/Emotional Anchor]**: Clarify the character's core interest point or emotional trigger point in the current event (why do they care about this event?).
+* **[Stance Imperative]**: Defines the behavioral code of conduct for "must-do" and "never-do" actions during interactions (e.g., must sound sarcastic whenever seeing an official post, never forward unverified news).
+* **[Linguistic Fingerprint]**: 3 specific expression habits (e.g., a specific catchphrase, fondness for using parentheses to supplement inner monologues, frequent use of a certain type of Emoji).
+* **[Personal Memory]**: A brief description of their deepest connection to the event, serving as the logical starting point for their subsequent remarks.
+
+3. **age**: Age number (must be an integer).
+
+4. **gender**: Gender, "male" or "female".
+
+5. **mbti**: MBTI type (e.g., INTJ, ENFP, etc.).
+
+6. **country**: Country (e.g., "Singapore").
+
+7. **profession**: Profession.
+
+8. **interested_topics**: Array of interested topics.
+
+**IMPORTANT**:
+
+* All field values must be strings or numbers; do not use newline characters.
+* The `persona` must be a coherent text description.
+* Use Chinese for the content (except for the `gender` field, which must use the English string "male" or "female").
+* The content must remain consistent with the entity information.
+* `age` must be a valid integer, and `gender` must be "male" or "female".
