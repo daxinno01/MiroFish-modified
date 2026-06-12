@@ -36,6 +36,6 @@ Please generate a JSON containing the following fields:
 
 * All field values must be strings or numbers; do not use newline characters.
 * The `persona` must be a coherent text description.
-* Use Chinese for the content (except for the `gender` field, which must use the English string "male" or "female").
+* Use English for the content.
 * The content must remain consistent with the entity information.
 * `age` must be a valid integer, and `gender` must be "male" or "female".

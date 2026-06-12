@@ -701,99 +701,99 @@ class ReportAgent:
         return {
             "insight_forge": {
                 "name": "insight_forge",
-                "description": """【深度洞察检索 - 最强大的检索工具】
-这是我们最强大的检索函数，专为深度分析设计。它会：
-1. 自动将你的问题分解为多个子问题
-2. 从多个维度检索模拟图谱中的信息
-3. 整合语义搜索、实体分析、关系链追踪的结果
-4. 返回最全面、最深度的检索内容
+                "description": """Deep Insight Search:
+This is our most powerful retrieval function, specifically designed for deep analysis. It will:
+1. Automatically break down your query into multiple sub-questions
+2. Retrieve information from the simulation graph across multiple dimensions
+3. Integrate results from semantic search, entity analysis, and relationship chain tracing
+4. Return the most comprehensive and in-depth retrieval content
 
-【使用场景】
-- 需要深入分析某个话题
-- 需要了解事件的多个方面
-- 需要获取支撑报告章节的丰富素材
+Usage Scenarios:
+- Need to deeply analyze a specific topic
+- Need to understand multiple aspects of an event
+- Need to obtain rich material to support report sections
 
-【返回内容】
-- 相关事实原文（可直接引用）
-- 核心实体洞察
-- 关系链分析""",
+Returns:
+- Relevant factual raw text (can be cited directly)
+- Core entity insights
+- Relationship chain analysis""",
                 "parameters": {
-                    "query": "你想深入分析的问题或话题",
-                    "report_context": "当前报告章节的上下文（可选，有助于生成更精准的子问题）"
+                    "query": "The question or topic you want to deeply analyze",
+                    "report_context": "Context of the current report section (optional, helps generate more precise sub-questions)"
                 },
                 "priority": "high"
             },
             "panorama_search": {
                 "name": "panorama_search",
-                "description": """【广度搜索 - 获取全貌视图】
-这个工具用于获取模拟结果的完整全貌，特别适合了解事件演变过程。它会：
-1. 获取所有相关节点和关系
-2. 区分当前有效的事实和历史/过期的事实
-3. 帮助你了解舆情是如何演变的
+                "description": """Panorama Search - Get a Full View:
+This tool is used to obtain the complete panorama of simulation results, especially suitable for understanding the process of event evolution. It will:
+1. Obtain all relevant nodes and relationships
+2. Distinguish between currently valid facts and historical/expired facts
+3. Help you understand how public opinion has evolved
 
-【使用场景】
-- 需要了解事件的完整发展脉络
-- 需要对比不同阶段的舆情变化
-- 需要获取全面的实体和关系信息
+Usage Scenarios:
+- Need to understand the complete development thread of an event
+- Need to compare public opinion changes across different stages
+- Need to obtain comprehensive entity and relationship information
 
-【返回内容】
-- 当前有效事实（模拟最新结果）
-- 历史/过期事实（演变记录）
-- 所有涉及的实体""",
+Returns:
+- Currently valid facts (latest simulation results)
+- Historical/expired facts (evolution records)
+- All involved entities""",
                 "parameters": {
-                    "query": "搜索查询，用于相关性排序",
-                    "include_expired": "是否包含过期/历史内容（默认True）"
+                    "query": "Search query for relevance ranking",
+                    "include_expired": "Whether to include expired/historical content (default True)"
                 },
                 "priority": "medium"
             },
             "quick_search": {
                 "name": "quick_search",
-                "description": """【简单搜索 - 快速检索】
-轻量级的快速检索工具，适合简单、直接的信息查询。
+                "description": """Simple Search - Quick Retrieval:
+Lightweight quick retrieval tool, suitable for simple, direct information queries.
 
-【使用场景】
-- 需要快速查找某个具体信息
-- 需要验证某个事实
-- 简单的信息检索
+Usage Scenarios:
+- Need to quickly find specific information
+- Need to verify a fact
+- Simple information retrieval
 
-【返回内容】
-- 与查询最相关的事实列表""",
+Returns:
+- List of facts most relevant to the query""",
                 "parameters": {
-                    "query": "搜索查询字符串",
-                    "limit": "返回结果数量（可选，默认10）"
+                    "query": "Search query string",
+                    "limit": "Number of results to return (optional, default 10)"
                 },
                 "priority": "low"
             },
             "interview_agents": {
                 "name": "interview_agents",
-                "description": """【深度采访 - 真实Agent采访（双平台）】
-调用OASIS模拟环境的采访API，对正在运行的模拟Agent进行真实采访！
-这不是LLM模拟，而是调用真实的采访接口获取模拟Agent的原始回答。
-默认在Twitter和Reddit两个平台同时采访，获取更全面的观点。
+                "description": """Deep Interview - Real Agent Interview (Dual Platforms):
+Call the interview API of the OASIS simulation environment to conduct real interviews with running simulation Agents!
+This is not an LLM simulation, but rather calling real interview interfaces to get the original responses of the simulation Agents.
+By default, it interviews on both Twitter and Reddit platforms simultaneously to obtain more comprehensive viewpoints.
 
-功能流程：
-1. 自动读取人设文件，了解所有模拟Agent
-2. 智能选择与采访主题最相关的Agent（如学生、媒体、官方等）
-3. 自动生成采访问题
-4. 调用 /api/simulation/interview/batch 接口在双平台进行真实采访
-5. 整合所有采访结果，提供多视角分析
+Functional Flow:
+1. Automatically read persona files to understand all simulation Agents
+2. Intelligently select Agents most relevant to the interview topic (e.g., students, media, officials, etc.)
+3. Automatically generate interview questions
+4. Call the /api/simulation/interview/batch interface to conduct real interviews on both platforms
+5. Consolidate all interview results and provide multi-perspective analysis
 
-【使用场景】
-- 需要从不同角色视角了解事件看法（学生怎么看？媒体怎么看？官方怎么说？）
-- 需要收集多方意见和立场
-- 需要获取模拟Agent的真实回答（来自OASIS模拟环境）
-- 想让报告更生动，包含"采访实录"
+Usage Scenarios:
+- Need to understand perspectives on an event from different roles (What do students think? What does the media think? What do officials say?)
+- Need to collect opinions and stances from multiple parties
+- Need to obtain authentic responses from simulation Agents (from the OASIS simulation environment)
+- Want to make the report more vivid, including "Interview Transcripts"
 
-【返回内容】
-- 被采访Agent的身份信息
-- 各Agent在Twitter和Reddit两个平台的采访回答
-- 关键引言（可直接引用）
-- 采访摘要和观点对比
+Returns:
+- Identity information of interviewed Agents
+- Interview responses of each Agent on both Twitter and Reddit platforms
+- Key quotes (can be cited directly)
+- Interview summary and viewpoint comparison
 
-【重要】需要OASIS模拟环境正在运行才能使用此功能！""",
+[Important] The OASIS simulation environment must be running to use this feature!""",
                 "parameters": {
-                    "interview_topic": "采访主题或需求描述（如：'了解学生对宿舍甲醛事件的看法'）",
-                    "max_agents": "最多采访的Agent数量（可选，默认5）"
+                    "interview_topic": "Interview topic or requirement description (e.g., 'Understand student views on the dormitory formaldehyde incident')",
+                    "max_agents": "Maximum number of Agents to interview (optional, default 5)"
                 },
                 "priority": "high"
             }
@@ -1223,7 +1223,7 @@ class ReportAgent:
                 previous_parts.append(coverage)
             previous_content = "\n\n".join(previous_parts)
         else:
-            previous_content = "（这是第一个章节）"
+            previous_content = "（This is the first chapter）"
         
 
         user_prompt = FileParser._extract_from_txt(
@@ -1266,7 +1266,7 @@ class ReportAgent:
                     messages=messages,
                     temperature=0.5 + (attempt * 0.1), # Slightly increase temp on retry
                     max_tokens=4096 if likely_final else 1500,
-                    caller_hint=f"Report章节生成({section.title}_attempt_{attempt+1})"
+                    caller_hint=f"Report Chapter Generation ({section.title}_attempt_{attempt+1})"
                 )
                 if response:
                     break
@@ -1300,14 +1300,13 @@ class ReportAgent:
                     messages.append({"role": "assistant", "content": response})
                     messages.append({
                         "role": "user", 
-                        "content": f"""【注意】你只调用了{tool_calls_count}次工具，信息可能不够充分。
+                        "content": f"""**[Attention]** You have only called tools `{tool_calls_count}` times; the information may be insufficient.
+Please call tools 1–2 more times to retrieve more simulation data before outputting the **Final Answer**.
+Suggestions:
+* Use `insight_forge` for deep retrieval of more details.
+* Use `panorama_search` to understand the full picture of the event.
 
-请再调用1-2次工具来获取更多模拟数据，然后再输出 Final Answer。
-建议：
-- 使用 insight_forge 深度检索更多细节
-- 使用 panorama_search 了解事件全貌
-
-记住：报告内容必须来自模拟结果，而不是你的知识！"""
+**[Remember]** Report content must come from the simulation results, not your own knowledge!"""
                     })
                     continue
                 
@@ -1338,7 +1337,7 @@ class ReportAgent:
                     messages.append({"role": "assistant", "content": response})
                     messages.append({
                         "role": "user",
-                        "content": "【限制】禁止调用 interview_agents。请使用图谱/向量检索工具回答。"
+                        "content": "[Restriction] Calling interview_agents is prohibited. Please use graph/vector retrieval tools to answer."
                     })
                     continue
             
@@ -1350,22 +1349,22 @@ class ReportAgent:
                     # 还没有足够的工具调用，强烈提示需要调用工具
                     messages.append({
                         "role": "user", 
-                        "content": f"""【重要】你还没有调用足够的工具来获取模拟数据！
+                        "content": f"""[IMPORTANT] You have not called enough tools to retrieve the simulation data!
 
-当前只调用了 {tool_calls_count} 次工具，至少需要 {min_tool_calls} 次。
+Currently, you have only made {tool_calls_count} tool calls, but at least {min_tool_calls} are required.
 
-请立即调用工具获取信息：
+Please call the tool immediately to retrieve the information:
 <tool_call>
-{{"name": "insight_forge", "parameters": {{"query": "{section.title}相关的模拟结果和分析"}}}}
+{{"name": "insight_forge", "parameters": {{"query": "{section.title}-related simulation results and analysis"}}}}
 </tool_call>
 
-【记住】报告内容必须100%来自模拟结果，不能使用你自己的知识！"""
+[REMEMBER] The report content must come 100% from the simulation results. You must not use your own knowledge!"""
                     })
                 else:
                     # 已有足够调用，可以生成最终答案
                     messages.append({
                         "role": "user", 
-                        "content": "你已经获取了足够的模拟数据。请基于检索到的信息，输出 Final Answer: 并撰写章节内容。\n\n【重要】内容必须大量引用检索到的原文，使用 > 格式引用。"
+                        "content": "You have successfully retrieved enough simulation data. Based on the retrieved information, please output Final Answer: and write the section content.\n\n[IMPORTANT] The content must heavily quote the retrieved original text, using the > format for blockquotes."
                     })
                 continue
             
@@ -1422,11 +1421,11 @@ class ReportAgent:
 {"".join(compressed_observations)}
 
 ═══════════════════════════════════════════════════════════════
-【下一步行动】
-- 如果信息充分：输出 Final Answer 并撰写章节内容（必须引用上述原文）
-- 如果需要更多信息：继续调用工具检索
+[Next Steps]
+- If the information is sufficient: Output Final Answer and write the section content (must quote the original text above).
+- If more information is needed: Continue calling tools to retrieve data.
 
-已调用工具 {tool_calls_count}/{self.MAX_TOOL_CALLS_PER_SECTION} 次
+Tools called: {tool_calls_count}/{self.MAX_TOOL_CALLS_PER_SECTION} times
 ═══════════════════════════════════════════════════════════════"""
             })
         
@@ -1434,7 +1433,7 @@ class ReportAgent:
         logger.warning(f"章节 {section.title} 达到最大迭代次数，强制生成")
         messages.append({
             "role": "user",
-            "content": "已达到工具调用限制，请直接输出 Final Answer: 并生成章节内容。"
+            "content": "The tool call limit has been reached. Please directly output Final Answer: and generate the section content."
         })
         
         response = None
@@ -1443,7 +1442,7 @@ class ReportAgent:
                 messages=messages,
                 temperature=0.5,
                 max_tokens=4096,
-                caller_hint=f"Report章节生成(迭代兜底:{section.title})"
+                caller_hint=f"Section Generation (Iterative Fallback: {section.title})"
             )
         
             if response:
@@ -1856,35 +1855,17 @@ class ReportAgent:
         )
         interview_note = ""
         if disable_interview:
-            interview_note = "\n【限制】本次对话禁止调用 interview_agents，只能使用图谱/向量检索工具。\n"
+            interview_note = "\n[Restriction] Calling interview_agents is prohibited for this conversation; you may only use graph/vector retrieval tools.\n"
 
         # 构建系统提示
-        system_prompt = f"""你是一个简洁高效的模拟预测助手。
-
-【背景】
-预测条件: {self.simulation_requirement}
-
-【已生成的分析报告】
-{report_content if report_content else "（暂无报告）"}
-
-【规则】
-1. 优先基于上述报告内容回答问题
-2. 直接回答问题，避免冗长的思考论述
-3. 仅在报告内容不足以回答时，才调用工具检索更多数据
-4. 回答要简洁、清晰、有条理
-{interview_note}
-【可用工具】（仅在需要时使用，最多调用1-2次）
-{tools_desc}
-
-【工具调用格式】
-<tool_call>
-{{"name": "工具名称", "parameters": {{"参数名": "参数值"}}}}
-</tool_call>
-
-【回答风格】
-- 简洁直接，不要长篇大论
-- 使用 > 格式引用关键内容
-- 优先给出结论，再解释原因"""
+        system_prompt = FileParser._extract_from_txt(
+            os.path.join(self.REPORT_PROMPTS_DIR, "chat_system_prompt.txt")
+        ).format(
+            simulation_requirement=self.simulation_requirement,
+            report_content=report_content if report_content else "(No report available)",
+            interview_note=interview_note,
+            tools_desc=tools_desc
+        )
 
         # 构建消息
         messages = [{"role": "system", "content": system_prompt}]
@@ -1907,7 +1888,7 @@ class ReportAgent:
             response = self._chat_with_moderation_retry(
                 messages=messages,
                 temperature=0.5,
-                caller_hint="Report助手对话(ReACT循环)"
+                caller_hint="Report Assistant Dialogue (ReACT Loop)"
             )
             
             # 解析工具调用
@@ -1938,17 +1919,17 @@ class ReportAgent:
             
             # 将结果添加到消息
             messages.append({"role": "assistant", "content": response})
-            observation = "\n".join([f"[{r['tool']}结果]\n{r['result']}" for r in tool_results])
+            observation = "\n".join([f"[{r['tool']} result]\n{r['result']}" for r in tool_results])
             messages.append({
                 "role": "user", 
-                "content": observation + "\n\n请简洁回答问题。"
+                "content": observation + "\n\nPlease answer the question concisely."
             })
         
         # 达到最大迭代，获取最终响应
         final_response = self._chat_with_moderation_retry(
             messages=messages,
             temperature=0.5,
-            caller_hint="Report助手对话(最终回答)"
+            caller_hint="Report Assistant Dialogue (Final Answer)"
         )
         
         # 清理响应

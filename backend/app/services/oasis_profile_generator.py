@@ -243,14 +243,12 @@ class OasisProfileGenerator:
         system_prompt = FileParser._extract_from_txt(
             os.path.join(self.SIMULATION_PROMPTS_DIR, "agent_selector_system_prompt.txt")
         )
-        print(system_prompt)
         user_prompt = FileParser._extract_from_txt(
             os.path.join(self.SIMULATION_PROMPTS_DIR, "agent_selector_user_prompt.txt")
         ).format(
             simulation_goal=simulation_goal,
             candidate_labels=', '.join(candidate_labels)
         )
-        print(user_prompt)
 
         try:
             result = self.llm.chat_json(
@@ -258,7 +256,7 @@ class OasisProfileGenerator:
                     {"role": "system", "content": system_prompt},
                     {"role": "user", "content": user_prompt}
                 ],
-                caller_hint="动态标签识别",
+                caller_hint="Dynamic Tag Identification",
                 simulation_id=simulation_id,
                 project_id=project_id
             )
@@ -399,7 +397,7 @@ class OasisProfileGenerator:
             logger.debug(f"跳过Zep检索：未设置graph_id")
             return results
         
-        comprehensive_query = f"关于{entity_name}的所有信息、活动、事件、关系和背景"
+        comprehensive_query = f"All information, activities, events, relationships and background about {entity_name}"
         
         def search_edges():
             """搜索边（事实/关系）- 带重试机制"""
@@ -476,15 +474,15 @@ class OasisProfileGenerator:
                     if hasattr(node, 'summary') and node.summary:
                         all_summaries.add(node.summary)
                     if hasattr(node, 'name') and node.name and node.name != entity_name:
-                        all_summaries.add(f"相关实体: {node.name}")
+                        all_summaries.add(f"Related Entity: {node.name}")
             results["node_summaries"] = list(all_summaries)
-            
+
             # 构建综合上下文
             context_parts = []
             if results["facts"]:
-                context_parts.append("事实信息:\n" + "\n".join(f"- {f}" for f in results["facts"][:20]))
+                context_parts.append("Fact Information:\n" + "\n".join(f"- {f}" for f in results["facts"][:20]))
             if results["node_summaries"]:
-                context_parts.append("相关实体:\n" + "\n".join(f"- {s}" for s in results["node_summaries"][:10]))
+                context_parts.append("Related Entities:\n" + "\n".join(f"- {s}" for s in results["node_summaries"][:10]))
             results["context"] = "\n\n".join(context_parts)
             
             logger.info(f"Zep混合检索完成: {entity_name}, 获取 {len(results['facts'])} 条事实, {len(results['node_summaries'])} 个相关节点")
@@ -514,7 +512,7 @@ class OasisProfileGenerator:
                 if value and str(value).strip():
                     attrs.append(f"- {key}: {value}")
             if attrs:
-                context_parts.append("### 实体属性\n" + "\n".join(attrs))
+                context_parts.append("### Entity Attributes\n" + "\n".join(attrs))
         
         # 2. 添加相关边信息（事实/关系）
         existing_facts = set()
@@ -530,12 +528,12 @@ class OasisProfileGenerator:
                     existing_facts.add(fact)
                 elif edge_name:
                     if direction == "outgoing":
-                        relationships.append(f"- {entity.name} --[{edge_name}]--> (相关实体)")
+                        relationships.append(f"- {entity.name} --[{edge_name}]--> (Related Entity)")
                     else:
-                        relationships.append(f"- (相关实体) --[{edge_name}]--> {entity.name}")
+                        relationships.append(f"- (Related Entity) --[{edge_name}]--> {entity.name}")
             
             if relationships:
-                context_parts.append("### 相关事实和关系\n" + "\n".join(relationships))
+                context_parts.append("### Related Facts and Relations\n" + "\n".join(relationships))
         
         # 3. 添加关联节点的详细信息
         if entity.related_nodes:
@@ -555,7 +553,7 @@ class OasisProfileGenerator:
                     related_info.append(f"- **{node_name}**{label_str}")
             
             if related_info:
-                context_parts.append("### 关联实体信息\n" + "\n".join(related_info))
+                context_parts.append("### Related Entity Information\n" + "\n".join(related_info))
         
         # 4. 使用Zep混合检索获取更丰富的信息
         zep_results = self._search_zep_for_entity(entity)
@@ -678,17 +676,17 @@ class OasisProfileGenerator:
     ) -> str:
         """构建个人实体的详细人设提示词"""
         
-        attrs_str = json.dumps(entity_attributes, ensure_ascii=False) if entity_attributes else "无"
-        context_str = context[:3000] if context else "无额外上下文"
-        goal_str = f"\n当前模拟任务目标: {self.simulation_goal}\n" if self.simulation_goal else ""
+        attrs_str = json.dumps(entity_attributes, ensure_ascii=False) if entity_attributes else "None"
+        context_str = context[:3000] if context else "No additional context"
+        goal_str = f"\nCurrent simulation mission goal: {self.simulation_goal}\n" if self.simulation_goal else ""
         
         # 社交地位描述
         degree = len(entity_attributes.get("related_edges", [])) # 或者从实体对象获取
         status_suffix = ""
         if degree > 10:
-            status_suffix = "\n该用户在社交网络中处于核心地位，具有极高的影响力。"
+            status_suffix = "\nThis user occupies a central position in the social network and is highly influential."
         elif degree > 5:
-            status_suffix = "\n该用户在社交网络中比较活跃，有一定的关注度。"
+            status_suffix = "\nThis user is quite active on social media and has a decent following."
             
         prompt = FileParser._extract_from_txt(
             os.path.join(self.SIMULATION_PROMPTS_DIR, "persona_generator_individual_user_prompt.txt")
@@ -713,17 +711,17 @@ class OasisProfileGenerator:
     ) -> str:
         """构建群体/机构实体的详细人设提示词"""
         
-        attrs_str = json.dumps(entity_attributes, ensure_ascii=False) if entity_attributes else "无"
-        context_str = context[:3000] if context else "无额外上下文"
-        goal_str = f"\n当前模拟任务目标: {self.simulation_goal}\n" if self.simulation_goal else ""
+        attrs_str = json.dumps(entity_attributes, ensure_ascii=False) if entity_attributes else "None"
+        context_str = context[:3000] if context else "No additional context"
+        goal_str = f"\nCurrent simulation mission goal: {self.simulation_goal}\n" if self.simulation_goal else ""
         
         # 社交地位描述
         degree = len(entity_attributes.get("related_edges", []))
         status_suffix = ""
         if degree > 10:
-            status_suffix = "\n该机构在社交网络中处于权威/核心节点，言论具有极强的公信力或传播力。"
+            status_suffix = "\nThis organization serves as an authoritative and core node within the social network, and its statements possess immense credibility or reach."
         elif degree > 5:
-            status_suffix = "\n该机构是该领域的重要参与者，具有较高的关注度。"
+            status_suffix = "\nThis organization is a key player in the field and commands a high level of attention."
             
         prompt = FileParser._extract_from_txt(
             os.path.join(self.SIMULATION_PROMPTS_DIR, "persona_generator_group_user_prompt.txt")
@@ -781,7 +779,7 @@ class OasisProfileGenerator:
                 "age": 30,  # 机构虚拟年龄
                 "gender": "other",  # 机构使用other
                 "mbti": "ISTJ",  # 机构风格：严谨保守
-                "country": "中国",
+                "country": "Singapore",
                 "profession": "Media",
                 "interested_topics": ["General News", "Current Events", "Public Affairs"],
             }
@@ -793,7 +791,7 @@ class OasisProfileGenerator:
                 "age": 30,  # 机构虚拟年龄
                 "gender": "other",  # 机构使用other
                 "mbti": "ISTJ",  # 机构风格：严谨保守
-                "country": "中国",
+                "country": "Singapore",
                 "profession": entity_type,
                 "interested_topics": ["Public Policy", "Community", "Official Announcements"],
             }
@@ -1131,7 +1129,7 @@ class OasisProfileGenerator:
                 "age": profile.age if profile.age else 30,
                 "gender": self._normalize_gender(profile.gender),
                 "mbti": profile.mbti if profile.mbti else "ISTJ",
-                "country": profile.country if profile.country else "中国",
+                "country": profile.country if profile.country else "Singapore",
             }
             
             # 可选字段
@@ -1157,4 +1155,3 @@ class OasisProfileGenerator:
         """[已废弃] 请使用 save_profiles() 方法"""
         logger.warning("save_profiles_to_json已废弃，请使用save_profiles方法")
         self.save_profiles(profiles, file_path, platform)
-

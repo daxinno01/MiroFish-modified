@@ -1,9 +1,9 @@
 Completed chapter content (please read carefully to avoid duplication):
 {previous_content}
 
-═══════════════════════════════════════════════════════════════
+=====================================================================
 [Current Task] Write Chapter: {section_title}
-═══════════════════════════════════════════════════════════════
+=====================================================================
 
 [Important Reminders]
 
@@ -12,12 +12,12 @@ Completed chapter content (please read carefully to avoid duplication):
 3. It is highly recommended to use `insight_forge` for deep retrieval first.
 4. The report content must come entirely from the retrieval results; do not use your own knowledge.
 
-[⚠️ Formatting Warning - Must Be Followed]
+[IMPORTANT: Formatting Warning - Must Be Followed]
 
-* ❌ Do not write any headings (no #, ##, ###, or #### at all).
-* ❌ Do not use "{section_title}" as the opening text.
-* ✅ Chapter titles will be automatically added by the system.
-* ✅ Write the body text directly, using **bold text** instead of subheadings.
+* [NO] Do not write any headings (no #, ##, ###, or #### at all).
+* [NO] Do not use "{section_title}" as the opening text.
+* [OK] Chapter titles will be automatically added by the system.
+* [OK] Write the body text directly, using **bold text** instead of subheadings.
 
 Please begin:
 

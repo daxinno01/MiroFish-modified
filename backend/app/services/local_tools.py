@@ -77,7 +77,7 @@ class LocalToolsService:
                                 "username": row.get("username", ""),
                                 "bio": row.get("description", ""),
                                 "persona": row.get("user_char", ""),
-                                "profession": "未知",
+                                "profession": "Unknown",
                             }
                         )
                 return profiles
@@ -109,7 +109,7 @@ class LocalToolsService:
 
         profiles = self._load_agent_profiles(simulation_id)
         if not profiles:
-            result.summary = "未找到可采访的 Agent 人设文件（请先完成 Step2 环境准备）"
+            result.summary = "No interviewable agent profile files found (please complete Step 2 environment setup first)"
             return result
 
         result.total_agents = len(profiles)
@@ -117,7 +117,7 @@ class LocalToolsService:
         # Select a deterministic subset (evenly spaced) to avoid biasing toward the first few.
         n = max(0, min(int(max_agents or 0), len(profiles)))
         if n == 0:
-            result.summary = "max_agents=0，未执行采访"
+            result.summary = "max_agents=0, no interviews executed"
             return result
 
         if n >= len(profiles):
@@ -142,7 +142,7 @@ class LocalToolsService:
 
         # Environment must be alive (OASIS not closed)
         if not SimulationRunner.check_env_alive(simulation_id):
-            result.summary = "采访失败：模拟环境未运行或已关闭（请保持模拟环境处于运行状态）"
+            result.summary = "Interview failed: Simulation environment is not running or has been closed (please keep the simulation environment running)"
             return result
 
         api_result = SimulationRunner.interview_agents_batch(
@@ -152,7 +152,7 @@ class LocalToolsService:
             timeout=180.0,
         )
         if not api_result.get("success", False):
-            result.summary = f"采访API调用失败：{api_result.get('error', '未知错误')}"
+            result.summary = f"Interview API call failed: {api_result.get('error', 'Unknown error')}"
             return result
 
         api_data = api_result.get("result", {})
@@ -161,7 +161,7 @@ class LocalToolsService:
         for agent_idx in selected_indices:
             agent = profiles[agent_idx] if agent_idx < len(profiles) else {}
             agent_name = agent.get("realname", agent.get("username", f"Agent_{agent_idx}"))
-            agent_role = agent.get("profession", "未知")
+            agent_role = agent.get("profession", "Unknown")
             agent_bio = agent.get("bio", "")
 
             twitter_result = results_dict.get(f"twitter_{agent_idx}", {}) or {}
@@ -171,10 +171,10 @@ class LocalToolsService:
 
             parts = []
             if twitter_response:
-                parts.append(f"【Twitter平台回答】\n{twitter_response}")
+                parts.append(f"[Twitter Platform Response]\n{twitter_response}")
             if reddit_response:
-                parts.append(f"【Reddit平台回答】\n{reddit_response}")
-            response_text = "\n\n".join(parts) if parts else "[无回复]"
+                parts.append(f"[Reddit Platform Response]\n{reddit_response}")
+            response_text = "\n\n".join(parts) if parts else "[No response]"
 
             result.interviews.append(
                 AgentInterview(
@@ -189,9 +189,9 @@ class LocalToolsService:
 
         result.interviewed_count = len(result.interviews)
         if result.interviews:
-            result.summary = f"已采访 {result.interviewed_count} 位Agent（本地模式）"
+            result.summary = f"Interviewed {result.interviewed_count} agents (local mode)"
         else:
-            result.summary = "未获得有效采访回复"
+            result.summary = "No valid interview responses received"
         return result
 
     def quick_search(self, graph_id: str, query: str, limit: int = 10) -> SearchResult:
@@ -365,7 +365,7 @@ class LocalToolsService:
         g = self.graph_store.get_graph_data(graph_id)
         for n in g.get("nodes") or []:
             if (n.get("name") or "").strip() == (entity_name or "").strip():
-                etype = next((l for l in (n.get("labels") or []) if l not in ["Entity", "Node"]), "实体")
+                etype = next((l for l in (n.get("labels") or []) if l not in ["Entity", "Node"]), "Entity")
                 return {
                     "name": n.get("name", ""),
                     "type": etype,

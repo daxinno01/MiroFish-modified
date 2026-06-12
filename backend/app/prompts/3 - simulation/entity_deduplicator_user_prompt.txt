@@ -6,7 +6,7 @@ You are an Entity Resolution (Entity Alignment) expert. Please analyze the follo
 
 ## Task
 
-1. Identify duplicate entities (e.g., "特朗普" and "Donald Trump"; "北大" and "北京大学").
+1. Identify duplicate entities (e.g., "Donald Trump" and "Trump"; "Peking University" and "Beijing University").
 2. Group them into clusters.
 3. Select the most standardized name (Canonical Name) for each cluster to serve as the Key.
 

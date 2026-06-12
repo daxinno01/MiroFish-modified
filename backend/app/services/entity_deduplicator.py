@@ -127,7 +127,7 @@ class EntityDeduplicator:
         # 合并摘要
         summaries = [e.summary for e in cluster if e.summary and e.summary != primary.summary]
         if summaries:
-            new_summary = f"{primary.summary}\n其他信息: " + " ".join(summaries)
+            new_summary = f"{primary.summary}\nOther Information: " + " ".join(summaries)
         else:
             new_summary = primary.summary
             

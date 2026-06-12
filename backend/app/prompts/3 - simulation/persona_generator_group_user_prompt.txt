@@ -22,7 +22,7 @@ Please generate a JSON containing the following fields:
 3. **age**: Fixed to 30.
 4. **gender**: Fixed to "other".
 5. **mbti**: MBTI type, used to describe the account style (e.g., ISTJ represents rigorous and conservative).
-6. **country**: Country (use Chinese, e.g., "中国").
+6. **country**: Country (e.g., "Singapore").
 7. **profession**: Description of the institution's functions.
 8. **interested_topics**: Array of areas of interest.
 
@@ -30,6 +30,6 @@ Please generate a JSON containing the following fields:
 
 * All field values must be strings or numbers; null values are not allowed.
 * The `persona` must be a coherent text description without any newline characters.
-* Use Chinese for the content (except for the `gender` field, which must be the English string "other").
+* Use Enslish for the content.
 * `age` must be the integer 30, and `gender` must be the string "other".
 * The institutional account's statements must strictly conform to its identity and positioning.
