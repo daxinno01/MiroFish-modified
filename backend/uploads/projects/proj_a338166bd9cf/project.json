@@ -1,0 +1,363 @@
+{
+  "project_id": "proj_a338166bd9cf",
+  "name": "Unnamed Project",
+  "status": "failed",
+  "created_at": "2026-04-28T16:32:49.996353",
+  "updated_at": "2026-04-28T16:44:58.913287",
+  "files": [
+    {
+      "filename": "DBS Earnings Prediction Research Plan.pdf",
+      "size": 422064
+    }
+  ],
+  "total_text_length": 30358,
+  "ontology": {
+    "entity_types": [
+      {
+        "name": "BankExecutive",
+        "description": "High-level leaders within banking institutions who issue official statements and guidance.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The complete name of the executive."
+          },
+          {
+            "name": "job_title",
+            "type": "text",
+            "description": "The specific leadership role held by the individual."
+          },
+          {
+            "name": "professional_background",
+            "type": "text",
+            "description": "Brief history of expertise such as wealth management or digital strategy."
+          }
+        ],
+        "examples": [
+          "Tan Su Shan",
+          "Piyush Gupta"
+        ]
+      },
+      {
+        "name": "FinancialAnalyst",
+        "description": "Professionals from brokerage firms or research houses who provide market estimates and ratings.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The name of the analyst."
+          },
+          {
+            "name": "firm_affiliation",
+            "type": "text",
+            "description": "The financial institution or research firm they work for."
+          },
+          {
+            "name": "coverage_focus",
+            "type": "text",
+            "description": "The specific sector they analyze, e.g., Singapore Banking."
+          }
+        ],
+        "examples": [
+          "UOB Kay Hian Analyst",
+          "S&P Global Ratings Lead"
+        ]
+      },
+      {
+        "name": "RegulatoryBody",
+        "description": "Government or statutory agencies that oversee financial stability and compliance.",
+        "attributes": [
+          {
+            "name": "org_name",
+            "type": "text",
+            "description": "The official name of the regulatory agency."
+          },
+          {
+            "name": "regulatory_scope",
+            "type": "text",
+            "description": "The domain of oversight, such as monetary policy or IT resilience."
+          }
+        ],
+        "examples": [
+          "Monetary Authority of Singapore (MAS)",
+          "Ministry of Trade and Industry (MTI)"
+        ]
+      },
+      {
+        "name": "CommercialBank",
+        "description": "Banking institutions that provide financial services and release quarterly earnings.",
+        "attributes": [
+          {
+            "name": "org_name",
+            "type": "text",
+            "description": "The registered name of the bank."
+          },
+          {
+            "name": "market_tier",
+            "type": "text",
+            "description": "The scale of the bank, e.g., Largest in Southeast Asia."
+          },
+          {
+            "name": "digital_maturity",
+            "type": "text",
+            "description": "Description of the bank's AI and digital service status."
+          }
+        ],
+        "examples": [
+          "DBS Group Holdings",
+          "UOB",
+          "OCBC"
+        ]
+      },
+      {
+        "name": "InstitutionalInvestor",
+        "description": "Large organizations that trade securities in quantities that qualify for preferential treatment.",
+        "attributes": [
+          {
+            "name": "org_name",
+            "type": "text",
+            "description": "The name of the investment firm."
+          },
+          {
+            "name": "investment_strategy",
+            "type": "text",
+            "description": "The approach to the market, e.g., Long-term capital return."
+          }
+        ],
+        "examples": [
+          "Temasek Holdings",
+          "BlackRock"
+        ]
+      },
+      {
+        "name": "MediaOutlet",
+        "description": "Organizations that report news, financial data, and consensus forecasts to the public.",
+        "attributes": [
+          {
+            "name": "org_name",
+            "type": "text",
+            "description": "The name of the news or data agency."
+          },
+          {
+            "name": "audience_reach",
+            "type": "text",
+            "description": "The scale of the media influence, e.g., Global Financial, Local Daily."
+          }
+        ],
+        "examples": [
+          "Bloomberg",
+          "The Business Times",
+          "The Straits Times"
+        ]
+      },
+      {
+        "name": "BusinessClient",
+        "description": "Corporate entities or SMEs that utilize banking services and are affected by bank policies.",
+        "attributes": [
+          {
+            "name": "org_name",
+            "type": "text",
+            "description": "The name of the business entity."
+          },
+          {
+            "name": "industry_sector",
+            "type": "text",
+            "description": "The industry the client operates in, e.g., Manufacturing, Real Estate."
+          }
+        ],
+        "examples": [
+          "Singapore Refining Co.",
+          "SME AI Adopter"
+        ]
+      },
+      {
+        "name": "RetailInvestor",
+        "description": "Individual investors who trade on social media and react to earnings and outages.",
+        "attributes": [
+          {
+            "name": "account_handle",
+            "type": "text",
+            "description": "The social media username or identifier."
+          },
+          {
+            "name": "investment_style",
+            "type": "text",
+            "description": "The type of investor, e.g., Dividend Seeker, Day Trader."
+          }
+        ],
+        "examples": [
+          "SGX_Dividend_Hunter",
+          "Retail_Trader_99"
+        ]
+      },
+      {
+        "name": "Person",
+        "description": "Any individual actor not covered by specific professional roles, such as general customers.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The name of the person."
+          },
+          {
+            "name": "biography",
+            "type": "text",
+            "description": "A short description of the individual's background."
+          }
+        ],
+        "examples": [
+          "John Doe (DBS Customer)",
+          "Social Media Commenter"
+        ]
+      },
+      {
+        "name": "Organization",
+        "description": "A general category for any group, NGO, or entity not classified as a bank or regulator.",
+        "attributes": [
+          {
+            "name": "org_name",
+            "type": "text",
+            "description": "The name of the organization."
+          },
+          {
+            "name": "primary_function",
+            "type": "text",
+            "description": "The main activity or mission of the entity."
+          }
+        ],
+        "examples": [
+          "Enterprise Singapore",
+          "IMDA"
+        ]
+      }
+    ],
+    "edge_types": [
+      {
+        "name": "WORKS_FOR",
+        "description": "Indicates an individual's employment or leadership role within an organization.",
+        "source_targets": [
+          {
+            "source": "BankExecutive",
+            "target": "CommercialBank"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "REGULATES",
+        "description": "A regulatory relationship where an agency oversees a financial institution.",
+        "source_targets": [
+          {
+            "source": "RegulatoryBody",
+            "target": "CommercialBank"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "INVESTS_IN",
+        "description": "A financial relationship where an entity holds shares in a bank.",
+        "source_targets": [
+          {
+            "source": "InstitutionalInvestor",
+            "target": "CommercialBank"
+          },
+          {
+            "source": "RetailInvestor",
+            "target": "CommercialBank"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "REPORTS_ON",
+        "description": "The act of a media outlet or analyst covering news or performance of a bank.",
+        "source_targets": [
+          {
+            "source": "MediaOutlet",
+            "target": "CommercialBank"
+          },
+          {
+            "source": "FinancialAnalyst",
+            "target": "CommercialBank"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "ISSUES_ESTIMATE",
+        "description": "Providing a quantitative forecast for a bank's financial metrics.",
+        "source_targets": [
+          {
+            "source": "FinancialAnalyst",
+            "target": "CommercialBank"
+          },
+          {
+            "source": "MediaOutlet",
+            "target": "CommercialBank"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "CRITICIZES",
+        "description": "Expressing negative feedback on social media regarding service outages or performance.",
+        "source_targets": [
+          {
+            "source": "RetailInvestor",
+            "target": "CommercialBank"
+          },
+          {
+            "source": "Person",
+            "target": "CommercialBank"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "PARTNERS_WITH",
+        "description": "A collaborative relationship for digital transformation or business growth.",
+        "source_targets": [
+          {
+            "source": "CommercialBank",
+            "target": "Organization"
+          },
+          {
+            "source": "CommercialBank",
+            "target": "BusinessClient"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "FOLLOWS",
+        "description": "A social media connection where an actor monitors the updates of another.",
+        "source_targets": [
+          {
+            "source": "RetailInvestor",
+            "target": "BankExecutive"
+          },
+          {
+            "source": "Person",
+            "target": "MediaOutlet"
+          }
+        ],
+        "attributes": []
+      }
+    ]
+  },
+  "analysis_summary": "该本体设计围绕星展银行（DBS）2026年Q1财报预测及社媒舆论模拟展开。核心实体涵盖了发布财报的银行、决策的高管、进行监管的机构（MAS）、提供预测的分析师以及在社媒上活跃的散户和受影响的客户。关系类型重点体现了金融报道、监管压力、投资行为以及针对系统故障（Outage）的社媒负面反馈，旨在模拟财报发布前后24小时内的多方互动与股价波动逻辑。",
+  "graph_id": null,
+  "graph_build_task_id": "425edef1-ce68-4406-9c0f-7c984a44edf3",
+  "simulation_requirement": "Predict whether DBS's 2026 Q1 will beat analyst estimates and simulate the stock price movement 24 hours post-release.",
+  "chunk_size": 500,
+  "chunk_overlap": 50,
+  "error": "list indices must be integers or slices, not str",
+  "token_usage": {
+    "prompt_tokens": 54520,
+    "completion_tokens": 18730,
+    "total_tokens": 73250,
+    "call_count": 83,
+    "last_updated": "2026-04-28T16:44:59.505417"
+  }
+}

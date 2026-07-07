@@ -1,0 +1,48 @@
+### 1. Executive Summary
+This image is a digital infographic titled "DBS Scam Defence," serving as an educational asset for DBS Bank customers. It outlines a four-step security framework (SET, CHECK, PROTECT, LOCK) designed to mitigate the risk of financial scams. The visual utilizes a fist metaphor to represent defensive action and provides specific product/feature recommendations such as "Payment Controls" and "digiVault."
+
+### 2. OCR / Text Extraction
+*   **Primary Heading:** DBS Scam Defence
+*   **Sub-Heading:** ACT to get the upper hand over scammers.
+*   **Infographic Action Verbs (within red graphic):**
+    *   SET
+    *   CHECK
+    *   PROTECT
+    *   LOCK
+*   **Action Descriptions:**
+    *   transaction limits and alerts
+    *   for unexpected activities and alerts
+    *   your cards with Payment Controls
+    *   your money with digiVault
+*   **Call to Action (CTA) Text:** Follow us for the latest anti-scam tips, and learn more about DBS Scam Defence here:
+*   **Uniform Resource Locator (URL):** go.dbs.com/scamdefence
+
+### 3. Entity Identification
+*   **Organization:** DBS (Development Bank of Singapore).
+*   **Program/Initiative:** DBS Scam Defence.
+*   **Digital Products/Features:**
+    *   Payment Controls (Security feature for cards).
+    *   digiVault (Security feature for funds).
+*   **Functional Metrics/Parameters:**
+    *   Transaction limits.
+    *   Alerts (Notification systems).
+*   **Target Actors:** Scammers (Adversarial entity), Customers (Implied user).
+
+### 4. Structural Relationships
+*   **Hierarchical Ownership:** "DBS Scam Defence" is the umbrella initiative owned by "DBS."
+*   **Operational Framework:** The "ACT" acronym is broken down into four distinct security protocols:
+    *   **SET** is linked to the management of **transaction limits and alerts**.
+    *   **CHECK** is linked to the monitoring of **unexpected activities and alerts**.
+    *   **PROTECT** is linked to the security of **cards** via the **Payment Controls** feature.
+    *   **LOCK** is linked to the security of **money** via the **digiVault** feature.
+*   **External Reference:** The URL **go.dbs.com/scamdefence** serves as the authoritative digital repository for the **DBS Scam Defence** program.
+*   **Visual Hierarchy:** The red fist graphic acts as a central anchor, with the four action verbs serving as primary nodes and their respective descriptions as secondary attributes.
+
+### 5. Visual Data Translation
+*   **Graphic Type:** Conceptual Infographic.
+*   **Iconography:** A stylized red fist with four horizontal bars extending to the right, functioning as a bulleted list.
+*   **Color Profile:** 
+    *   **Red:** Used for the primary heading, the central fist icon, and the CTA arrow to denote urgency and defense.
+    *   **Black:** Used for sub-headings and descriptive text for high legibility.
+    *   **Grey/White:** A textured, neutral background to provide contrast for the foreground elements.
+*   **Layout:** Centrally aligned text and graphics. The action verbs are presented in white, bold, uppercase sans-serif font within the red bars for maximum emphasis.

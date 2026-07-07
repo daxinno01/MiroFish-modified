@@ -1,0 +1,11 @@
+[10:47:34] INFO: 报告已保存: report_6f17bea19953
+[10:47:34] INFO: 开始规划报告大纲...
+[10:47:46] INFO: 大纲规划完成: 3 个章节
+[10:47:46] INFO: 大纲已保存: report_6f17bea19953
+[10:47:46] INFO: 大纲已保存: report_6f17bea19953
+[10:47:46] INFO: 报告已保存: report_6f17bea19953
+[10:47:46] INFO: 大纲已保存到文件: report_6f17bea19953/outline.json
+[10:47:46] INFO: ReACT生成章节: Engagement Bifurcation: Immediate Relief vs. Future Transformation
+[10:47:46] ERROR: 报告生成失败: 'tool_descriptions'
+[10:47:46] INFO: 大纲已保存: report_6f17bea19953
+[10:47:46] INFO: 报告已保存: report_6f17bea19953

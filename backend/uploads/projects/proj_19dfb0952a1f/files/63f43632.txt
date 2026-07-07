@@ -1,0 +1,40 @@
+### 1. Executive Summary
+This image is a promotional and educational infographic from DBS Bank titled "DBS Scam Defence." It serves as a call to action for customers to adopt specific security behaviors and utilize digital banking features to mitigate the risk of financial scams. The visual utilizes a fist icon to symbolize defense and provides four actionable steps linked to specific bank tools and protocols.
+
+### 2. OCR / Text Extraction
+*   **Primary Heading:** DBS Scam Defence
+*   **Sub-heading:** ACT to get the upper hand over scammers.
+*   **Graphic Text (Action Items):**
+    *   **SET** transaction limits and alerts
+    *   **CHECK** for unexpected activities and alerts
+    *   **PROTECT** your cards with Payment Controls
+    *   **LOCK** your money with digiVault
+*   **Call to Action Body:** Follow us for the latest anti-scam tips, and learn more about DBS Scam Defence here:
+*   **URL / Destination:** go.dbs.com/scamdefence
+
+### 3. Entity Identification
+*   **Organizations:** DBS (DBS Bank Ltd).
+*   **Products / Features:** 
+    *   Payment Controls (Security feature for bank cards).
+    *   digiVault (Security feature for locking funds).
+*   **Campaign / Program:** DBS Scam Defence.
+*   **Financial Metrics:** Transaction limits (User-defined threshold).
+*   **Subject Matter:** Anti-scam security protocols.
+
+### 4. Structural Relationships
+*   **Parent Campaign:** "DBS Scam Defence" is the overarching program under which all other entities and actions are categorized.
+*   **Action-to-Object Mapping:**
+    *   The action **"SET"** is logically applied to **"transaction limits and alerts."**
+    *   The action **"CHECK"** is logically applied to **"unexpected activities and alerts."**
+    *   The action **"PROTECT"** is facilitated by the product **"Payment Controls."**
+    *   The action **"LOCK"** is facilitated by the product **"digiVault."**
+*   **Spatial Hierarchy:** 
+    *   The primary heading (Red) establishes the subject.
+    *   The sub-heading provides the motivational context ("ACT").
+    *   The central graphic (Fist) contains four horizontal "fingers" that serve as containers for the four primary security directives.
+    *   The footer provides a digital pathway (URL) to a centralized information hub for the campaign.
+
+### 5. Visual Data Translation
+*   **Graphic Representation:** The central element is a stylized red fist icon facing right. Four horizontal red bars extend from the right side of the fist, functioning as bullet points or labels.
+*   **Color Palette:** High-contrast red and black text on a light grey, textured background. Red is used for emphasis on the bank's name, the "fist" icon, and the primary action verbs (SET, CHECK, PROTECT, LOCK).
+*   **Layout Logic:** The information is structured vertically from general (Campaign Name) to specific (Actionable Features) to navigational (URL). The use of the "fist" icon reinforces the concept of "Defence" and "taking the upper hand."

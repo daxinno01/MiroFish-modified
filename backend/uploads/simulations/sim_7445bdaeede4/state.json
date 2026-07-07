@@ -1,0 +1,26 @@
+{
+  "simulation_id": "sim_7445bdaeede4",
+  "project_id": "proj_19dfb0952a1f",
+  "graph_id": "mirofish_local_911c0bf069664ecb",
+  "enable_twitter": true,
+  "enable_reddit": true,
+  "status": "failed",
+  "entities_count": 68,
+  "profiles_count": 68,
+  "entity_types": [
+    "Executive",
+    "Person",
+    "Scammer",
+    "Organization",
+    "Bank",
+    "BankCustomer"
+  ],
+  "config_generated": false,
+  "config_reasoning": "",
+  "current_round": 0,
+  "twitter_status": "not_started",
+  "reddit_status": "not_started",
+  "created_at": "2026-05-25T08:51:10.082548",
+  "updated_at": "2026-05-25T08:53:44.667663",
+  "error": "'max_agents_allowed'"
+}

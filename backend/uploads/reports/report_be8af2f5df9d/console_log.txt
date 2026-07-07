@@ -1,0 +1,11 @@
+[17:59:44] INFO: 报告已保存: report_be8af2f5df9d
+[17:59:44] INFO: 开始规划报告大纲...
+[17:59:48] ERROR: 大纲规划失败: cannot access local variable 'response' where it is not associated with a value
+[17:59:49] INFO: 大纲已保存: report_be8af2f5df9d
+[17:59:49] INFO: 大纲已保存: report_be8af2f5df9d
+[17:59:49] INFO: 报告已保存: report_be8af2f5df9d
+[17:59:49] INFO: 大纲已保存到文件: report_be8af2f5df9d/outline.json
+[17:59:49] INFO: ReACT生成章节: 预测场景与核心发现
+[17:59:49] ERROR: 报告生成失败: 'tool_descriptions'
+[17:59:49] INFO: 大纲已保存: report_be8af2f5df9d
+[17:59:49] INFO: 报告已保存: report_be8af2f5df9d

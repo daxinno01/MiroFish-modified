@@ -1,0 +1,1582 @@
+
+
+=== reference_reddit_comments.md ===
+This document highlights a few comments from Reddit on the 2022 budget Singapore. It should serve as some reference to how people online react.
+
+### **On Housing & Rental Market**
+
+*
+**87 Upvotes**: "affordable by who" — *deangsana*
+
+* **56 Upvotes**: "Full cash showhand." — *jackology*
+
+* **28 Upvotes**: "Him. He can buy 5 BTO every year." — *chumsalmon98*
+
+* **27 Upvotes**: "'affordable' housing lol. And I say that as a homeowner. I couldn't have afforded my first property today." — *ham_rain*
+
+*
+**26 Upvotes**: "I want to buy a home in the next 3 years and am dreading it frankly" — *laciepound*
+
+* **25 Upvotes**: "Just checked earlier. 2bedroom flat listed 3 days ago for 2.3k, owner not responding liao." — *u/Pvt_Twinkietoes*
+
+* **14 Upvotes**: "Not a good liar, but he has to." — *gobblertekken* (regarding affordable housing claims)
+
+* **12 Upvotes**: "even the rental market is crazy rn." — *laverania*
+
+* **12 Upvotes**: "Rental is bad. We should aim for everyone to be homeowners like LKY envision a long time ago." — *RedSttrawbery*
+
+### **On Taxes & The "Rich"**
+
+* **76 Upvotes**: "Given that the top 10% of Singapore pays 80% of all income tax collected, not really surprising." — *BilboHandBaggins*
+
+*
+**67 Upvotes**: "Unlikely will ever reach those bracket either 😂" — *Goenitz33*
+
+* **58 Upvotes**: "The increase from 22% to 23-24% for the top 1.2% generates an additional 173m a year." — *gagawithoutLady*
+
+* **47 Upvotes**: "Yes, extracting the most amount of feathers from the goose with the least amount of hissing." — *[deleted]*
+
+* **46 Upvotes**: "I agree, especially if you fall within the small group that is barely hit the income bracket... seems a little unfair to that sandwiched group." — *BilboHandBaggins*
+
+* **42 Upvotes**: "eh i like the tax changes. seems like they made an effort to listen to the general public." — *fateoftheg0dz*
+
+*
+**27 Upvotes**: "gotta love the pareto distribution" — *u/Pvt_Twinkietoes*
+
+* **21 Upvotes**: "The rise of property tax seem quite significant or am i wrong?" — *MAMBAMENTALITY8-24*
+
+*
+**20 Upvotes**: "In other words, first 30k AV no change. If you living in 100k AV home then I have nothing to say" — *Cool-Moose-8129*
+
+### **On Transport & COE**
+
+*
+**122 Upvotes**: "I am professional. My wife professional. I need a car. She need a car. No car for you" — *[deleted]*
+
+*
+**86 Upvotes**: "Son of Amk or Son of Punggol" — *chumsalmon98*
+
+* **25 Upvotes**: "Son of Punggol, Grandson of Hougang, Nephew of AMK." — *jackology*
+
+* **20 Upvotes**: "Exactly. Not having to worry about maintenance and parking is a bonus." — *u/Pvt_Twinkietoes* (on not having a car)
+
+* **18 Upvotes**: "Inb4 no car no diginity." — *Zoisen*
+
+### **On The GST Hike & Cost of Living**
+
+*
+**60 Upvotes**: "Inb4 some koufu manager pockets the money and simps for livestreamers" — *xkanske*
+
+*
+**21 Upvotes**: "“Adversity has not weakened us” No my man, Adversity has made our life really expensive" — *u/gfmr90*
+
+*
+**18 Upvotes**: "Sian I want cash not cdc voucher" — *u/finnickhm*
+
+*
+**18 Upvotes**: "So.......... GST increase. Sigh" — *laciepound*
+
+*
+**17 Upvotes**: "Don’t need a drinking game to start drinking for this budget" — *Intentionallyabadger*
+
+* **17 Upvotes**: "Make more money now, so when the GST actually increase, they are able to run price freeze promotional campaigns." — *u/Twrd4321*
+
+*
+**14 Upvotes**: "I feel poorer just from listening to the budget speech…" — *kopisiutaidaily*
+
+### **On Leadership & General Sentiment**
+
+* **49 Upvotes**: "I have a feeling the increased in healthcare spending is partly self inflicted. Nobody ask them to give discount to the entire pioneer and medarka generation." — *raymmm*
+
+*
+**17 Upvotes**: "More like sugarcoating the poison" — *u/tryingmydarnest*
+
+*
+**15 Upvotes**: "All part of the plan" — *HistorianSoviet* (referring to Lawrence Wong's speech style)
+
+*
+**12 Upvotes**: "Tbf at least now I'm finding that he has more and more 'seh'" — *bluewarri0r*
+
+* **11 Upvotes**: "Still surprised that Singapore Budget 2022 covered such promising updates to Green Initiatives." — *art_dragon*
+
+=== Singapore Household Income Trends 2022.pdf ===
+Socio-Economic Stratification and
+Income Dynamics in Singapore: A
+Comprehensive Analysis of 2022
+Household Financial Trends
+The fiscal year 2022 serves as a pivotal case study in the resilience and structural complexity of
+Singapore’s economy. As the city-state emerged from the profound disruptions of the global
+pandemic, it was immediately confronted with a dual-pressure environment: a robust recovery
+in domestic labor demand and a sharp, exogenous inflationary surge that reached levels not
+seen in decades.1 The Singapore Department of Statistics (SingStat), in its annual "Key
+Household Income Trends" report, unveiled a landscape where nominal wage growth was
+significant, yet the lived experience of many residents was tempered by the eroding effects of
+rising consumer prices.1 To understand the socio-economic reality of 2022, one must look
+beyond headline figures to the granular shifts in income deciles, the progressive nature of
+state-led interventions, and the underlying demographic transitions that continue to reshape
+the definition of the Singaporean household.1
+Macroeconomic Context: The Tension Between
+Growth and Inflation
+The economic narrative of 2022 was dominated by the recovery of the labor market.
+Employment reached 4.13 million by the middle of the following years, but the seeds of that
+growth were sown in the 2022 post-lockdown reopening.5 For resident employed
+households—those with at least one working person and a Singapore citizen or permanent
+resident as the reference person—this translated into a 6.1 per cent nominal increase in median
+monthly household income from work.1 In absolute terms, this figure rose from $9,520 in 2021
+to $10,099 in 2022.1
+However, this nominal gain occurred alongside a 6.1 per cent increase in the Consumer Price
+Index (CPI) for all items, the highest inflationary peak in recent history.1 When adjusted for this
+inflation, the real growth in median household income was a marginal 0.2 per cent.1 This
+suggests that for the middle-income Singaporean family, 2022 was effectively a year of
+financial stasis; the increased dollar amounts in their paychecks were almost entirely absorbed
+by the rising costs of utilities, food, and transport.1 This stagnation in real household-level
+income is a critical metric, as it highlights the challenge of maintaining purchasing power in an
+open economy sensitive to global supply chain shocks.1
+The longitudinal view provides even more sobering context. From 2017 to 2022, the real median
+
+monthly household income from work grew by a cumulative 2.9 per cent, which averages to a
+modest 0.6 per cent per annum.1 This represents a significant deceleration from the 2012–2017
+period, where real growth was 15.5 per cent cumulatively, or 2.9 per cent per annum.2 This shift
+reflects a maturing economy where rapid productivity gains are harder to achieve and
+suggests that the 2022 "flatness" was not merely a one-off event but part of a broader slowing
+trend in real income appreciation.2
+Demographic Levers: The Impact of Shrinking
+Household Sizes
+While household-level income remained flat in real terms, the per-member statistics tell a
+different story. In Singapore’s statistical reporting, "household income per household member"
+is derived by dividing the total household income from work by the number of members in the
+household.1 This metric is often considered a more accurate reflection of individual well-being
+as it accounts for the resources available to each person within the domestic unit.2
+In 2022, the median monthly household income from work per member rose from $3,027 in
+2021 to $3,287, a nominal increase of 8.6 per cent.1 Even after adjusting for inflation, the real
+growth per member was 2.6 per cent—significantly higher than the 0.2 per cent growth at the
+household level.1 The primary driver for this discrepancy was the continued contraction of the
+average household size. Among resident employed households, the average size fell from 3.32
+persons in 2021 to 3.27 in 2022.2
+This demographic shift functions as a statistical lever. As families become smaller—due to
+declining fertility rates and a trend toward nuclear family units—the same amount of total
+income is distributed among fewer people, thereby increasing the per-capita resource pool.2
+However, critics argue that this "improvement" can be misleading. A smaller household size
+may reduce per-member resource strain, but it also reduces the "economies of scale" inherent
+in larger families, such as shared utility bills and bulk food purchasing.3 Furthermore, the
+reduction in household size is partly attributed to adult children moving out later or couples
+choosing not to have children, which has long-term implications for the dependency ratio and
+the sustainability of the social security system.4
+Key Median
+Income Metrics
+2021
+2022
+Nominal
+Change (%)
+Real Change (%)
+Monthly
+Household
+Income from
+$9,520
+$10,099
+6.1%
+0.2%
+
+Work
+Monthly
+Household
+Income per
+Member
+$3,027
+$3,287
+8.6%
+2.6%
+Average
+Household Size
+(Persons)
+3.32
+3.27
+-1.5%
+N/A
+1
+Distributional Analysis: Decile-Specific Outcomes
+The aggregate median often masks the divergent experiences of different socio-economic
+tiers. SingStat divides the population into ten equal deciles based on household income per
+member.1 In 2022, the distribution of income growth was notably progressive, meaning that
+those at the lower end of the spectrum generally saw higher percentage increases in their real
+income compared to those at the top.1
+The Bottom of the Distribution: Low-Wage Recovery
+The first decile (the bottom 10%) recorded a remarkable real income growth per member of
+10.1 per cent in 2022.1 This was the highest growth rate among all groups and can be attributed
+to several structural factors. First, the 2022 labor market reopening created high demand in
+sectors like food services, retail, and cleaning, which are traditionally staffed by lower-wage
+workers.1 This "tight" labor market gave workers in these sectors more leverage to command
+higher wages.1
+Second, the Singapore government’s labor interventions, particularly the Progressive Wage
+Model (PWM), began to yield significant dividends. The PWM, which mandates a minimum
+wage ladder and career progression for specific industries, was expanded in 2022 to cover
+more workers in sectors like retail and waste management.9 This mandated wage floor
+effectively pulled up the earnings of the bottom decile at a rate that far exceeded inflation.9
+The Middle-Class Experience
+Households in the 2nd to 9th deciles saw real income growth ranging from 1.1 per cent to 5.3
+
+per cent.1 While these gains were positive, they were less dramatic than those at the very
+bottom. For middle-income households, the primary income driver was the 6.5 per cent
+nominal increase in total wages reported for the private sector in 2022.12 However, because this
+group does not always benefit as directly from low-wage interventions like the PWM, their real
+wage growth (after 6.1% CPI) was closer to the 0.4 per cent mark reported by the Ministry of
+Manpower (MOM) for general wage changes.12
+The Top Decile and the Wealth Effect
+In a rare reversal of historical trends, the top 10 per cent of households recorded a decline in
+real household income per member of 1.3 per cent in 2022.1 This does not necessarily imply
+that the wealthy became "poorer," but rather that specific statistical and inflationary factors
+converged on this group. One primary reason was the change in household size for this decile;
+while other groups saw shrinking families, the top decile's household size actually increased
+from 2.26 persons in 2021 to 2.34 in 2022.1 This increase in the denominator of the per-member
+calculation naturally pulled the average down.1
+Additionally, the top earners were more exposed to the specific inflationary drivers of 2022.
+The price of Certificate of Entitlement (COE) for private vehicles and the cost of discretionary
+services rose significantly faster than the general CPI.1 Since higher-income households spend
+a larger proportion of their income on these luxury or high-end items, their "effective" inflation
+was higher than that of lower-income groups during certain periods of the year.1
+Income Decile
+Average Monthly HH
+Income per Member (2022
+Nominal)
+Real Change from 2021 (%)
+1st (Lowest 10%)
+$689
+10.1%
+2nd
+$1,347
+5.3%
+3rd
+$1,864
+4.3%
+4th
+$2,400
+2.7%
+
+5th
+$2,976
+2.2%
+6th
+$3,634
+2.5%
+7th
+$4,447
+2.0%
+8th
+$5,578
+1.8%
+9th
+$7,493
+1.1%
+10th (Highest 10%)
+$14,354
+-1.3%
+1
+The Mandated Savings Component: Analyzing the CPF
+Impact
+A crucial nuance in Singapore's income data is the inclusion of employer Central Provident
+Fund (CPF) contributions. The CPF is a compulsory social security system where both
+employers and employees contribute a portion of the monthly salary.1 For workers aged 55 and
+below, the standard employer contribution is 17 per cent, and the employee contribution is 20
+per cent.7
+When SingStat reports a median household income of $10,099, it includes the 17 per cent
+contributed by the employer.1 While this is technically "income from work," it is not liquid
+disposable income available for immediate spending. Critics of this methodology, such as
+independent financial analysts, point out that this "pads" the numbers to look more impressive
+than the actual take-home pay might suggest.7
+For example, if a median individual salary is quoted at $5,000 including employer CPF, the
+breakdown is as follows:
+●​ Total Salary Package: $5,000 (117% of basic wage).
+●​ Basic Wage: ~$4,274.
+
+●​ Employee CPF Contribution (20% of basic): ~$855.
+●​ Employer CPF Contribution (17% of basic): ~$726.
+●​ Take-Home Pay: ~$3,419.
+In this scenario, while the statistical "income" is $5,000, the household only sees approximately
+$3,400 in their bank account for discretionary spending.7 This distinction is vital for
+understanding why many Singaporeans feel "asset rich but cash poor." The majority of the
+$10,099 median household income is locked in CPF accounts, primarily intended for housing
+mortgage payments, healthcare (MediSave), and long-term retirement.7
+Inequality and the Redistributive Effect of the State
+The Gini coefficient is the standard international metric for measuring income inequality, where
+0 represents perfect equality and 1 represents total inequality.1 Singapore’s 2022 data shows a
+dual-track reduction in inequality.
+Market Gini vs. Adjusted Gini
+The Gini coefficient based on household income from work per member—before any
+government intervention—fell from 0.444 in 2021 to 0.437 in 2022.1 This "market-based" decline
+reflects the aforementioned strong wage growth at the bottom (10.1% real) compared to the
+decline at the top (-1.3% real).1
+However, the most significant impact on inequality comes from the state’s fiscal policy. After
+adjusting for government transfers and taxes, the Gini coefficient dropped further to 0.378.1
+This was the second-lowest adjusted Gini coefficient on record for Singapore, superseded only
+by the 2020 record of 0.375.1 The reduction of 0.059 points (from 0.437 to 0.378) illustrates the
+extent to which the Singapore government uses a "transfer and tax" model to moderate the
+disparities generated by its high-performance market economy.1
+The Scale of Government Support in 2022
+To cushion the impact of the 2022 GST hike and high inflation, the government rolled out an
+enhanced suite of support measures, including the Assurance Package and the Cost-of-Living
+Special Payment.1 Resident households received an average of $5,765 per household member
+in government transfers during 2022, a 9.7 per cent increase from the $5,257 received in 2021.1
+These transfers are highly progressive and tied to the annual value of the household’s dwelling.
+Those living in smaller, 1- and 2-room HDB flats received an average of $12,189 per member,
+more than double the national average.1 In contrast, those in 3-room HDB flats received
+roughly half that amount (approx. $6,094), and those in private property received even less.1
+This "dwelling-type" proxy for wealth allows the government to target fiscal aid with a high
+degree of precision without requiring a complex means-testing of every individual resident.14
+
+Dwelling Type
+Average Transfers per
+Member (2022)
+Relative to National Average
+HDB 1- & 2-Room
+$12,346
+215%
+HDB 3-Room
+$6,477
+112%
+HDB 4-Room
+$5,645
+98%
+HDB 5-Room / Exec
+$5,518
+96%
+Condominiums
+$3,536
+61%
+Landed Properties
+$3,719
+65%
+2
+The Housing Hierarchy: Income and Residence
+The correlation between dwelling type and household income remained robust in 2022.
+Housing in Singapore is broadly categorized into public (HDB) and private
+(Condominiums/Landed).16 Census 2020 data, which provides the most recent granular
+geographic and structural breakdown, shows that 4-room HDB flats are the most common
+dwelling type, and their income levels often mirror the national median.16
+In 2022, the average household income from work for a 4-room HDB household was
+approximately $11,097, which aligns closely with the gross median monthly household income.16
+In contrast, households in private properties (condominiums or landed estates) typically earned
+well above $20,000 per month.16 For example, 44.5 per cent of condominium residents have a
+household income exceeding $20,000, and only a negligible 0.17 per cent of 1- and 2-room
+HDB dwellers reach that level.18
+
+Geographic Income Disparities
+The planning areas of residence also reflect these income stratifications. According to
+Census-derived data, areas with high concentrations of private housing and 5-room flats, such
+as Bukit Timah and Bishan, show a significantly higher proportion of households in the top
+income brackets.17
+In Bukit Timah, a significant number of households—over 11,000 out of a total 24,612—earn
+more than $20,000 a month.17 In contrast, Ang Mo Kio, a more traditional HDB heartland with a
+total of 60,220 households, only has about 6,466 households in the $20,000+ bracket.17 The
+middle-income "bulge" (those earning $5,000 to $10,000) is much more pronounced in areas
+like Bedok and Choa Chu Kang, highlighting where the "broad middle" of the 2022 income
+trends resides.17
+Labor Market Dynamics: Sector and Occupation
+The 2022 recovery was not uniform across industries. As the economy reopened, sectors like
+Financial and Insurance services and Information and Communications saw strong growth, with
+median salaries in these fields reaching $8,190 and $7,000 respectively.8 In contrast,
+Accommodation and Food Services, while recovering, remained at the bottom of the wage
+scale with a median of $2,640.8
+The PMET vs. Non-PMET Gap
+The distinction between PMETs (Professionals, Managers, Executives, and Technicians) and
+non-PMETs is a central feature of the Singaporean workforce. PMETs consistently earn more
+than double the wages of non-PMET roles.8 In 2024 (projecting from 2022 trends), the median
+income for a PMET was $7,308, while non-PMET roles like cleaners, laborers, and sales workers
+saw medians around $2,000 to $3,000.8
+Occupational medians in 2022 were roughly:
+●​ Managers & Administrators: $10,820.8
+●​ Professionals: $8,363.8
+●​ Associate Professionals: $4,735.8
+●​ Cleaners & Laborers: $2,070.8
+This occupational gap is where much of the income inequality measured by the Gini coefficient
+originates. Even with the Progressive Wage Model boosting the bottom end, the "ceiling" for
+manual and service labor remains significantly lower than the "floor" for administrative and
+professional roles.9
+Age-Income Trajectory
+In Singapore, income typically peaks during the 40–49 age bracket, reaching a median of
+
+approximately $7,498.8 This reflects the "seniority premium" where workers achieve high-value
+roles and senior positions after roughly 15 to 20 years in the workforce.19 After age 50, median
+wages begin to decline, dropping to $4,731 for those in their late 50s and $3,052 for those 60
+and above.8 This "U-shaped" curve of earnings presents a challenge for the aging population, as
+many residents find their earning power diminishing just as their healthcare needs and
+dependency burdens (elderly parents or adult children) may be increasing.6
+Living Standards and the Adequacy of $10,000
+While a median household income of $10,099 sounds robust by international standards, the
+high cost of living in Singapore necessitates a closer look at "Minimum Income Standards"
+(MIS).9 The MIS research, led by Dr. Ng Kok Hoe and other academics, seeks to determine what
+a household actually needs to afford more than just survival—to participate in society and have
+a "sense of belonging".11
+The MIS Benchmarks for 2022
+The 2022 MIS budgets indicated that a couple with two children (aged 7–12 and 13–18) required
+$6,693 per month to meet basic needs.11 For a single parent with one young child, the budget
+was $3,369.11
+When comparing these needs to actual 2022 incomes, a gap appears at the bottom. Even
+though the national median individual wage of $5,070 was 1.7 times the required per-parent
+"living wage" of $2,990, approximately 30 per cent of working households still earned less than
+the amount required to meet the MIS standard.9 This group, often referred to as the "working
+poor," consists largely of those in the 1st to 3rd deciles.9 For these families, the "average"
+success of the 2022 economy feels distant; they remain in a state of financial precariousness
+where inflation is a daily threat to their basic security.9
+Conclusion: Synthesis of the 2022 Household
+Landscape
+The research into Singapore’s 2022 monthly household income reveals a city-state navigating a
+transition between high-growth history and a high-cost future. The year was defined by a
+statistical "stagnation" at the median household level (0.2% real growth), which was masked by
+a "demographic improvement" at the per-member level (2.6% real growth).1 The government’s
+targeted interventions succeeded in narrowing the income gap, as evidenced by the falling Gini
+coefficient and the double-digit real growth for the lowest-earning decile.1
+However, the structural reliance on non-employment income (CPF interest) for the poor and
+the heavy "padding" of income figures with employer CPF contributions suggest that the
+financial resilience of the average household is more fragile than the $10,099 headline figure
+suggests.7 Furthermore, the clear stratification by dwelling type and the persistent "MIS gap"
+
+for 30 per cent of the population indicate that social mobility remains a challenge.9 As the
+population ages and household sizes continue to shrink, the mechanisms of 2022—progressive
+transfers and mandated labor wage floors—will remain the primary tools for maintaining social
+cohesion in an increasingly expensive global hub.1
+Works cited
+1.​ Household incomes in S'pore rise in 2022 but inflation chips away at ..., accessed
+May 11, 2026,
+https://www.straitstimes.com/singapore/household-incomes-rose-in-2022-inco
+me-inequality-fell
+2.​ Median household income in Singapore rose slightly in 2022 to S ..., accessed May
+11, 2026,
+https://www.channelnewsasia.com/singapore/real-household-income-inflation-gi
+ni-coefficient-3265036
+3.​ Our Data Explained - Household Income - Singapore Department of Statistics,
+accessed May 11, 2026,
+https://www.singstat.gov.sg/find-data/explore-data-themes/households/househo
+ld-income/our-data-explained
+4.​ Real median household income in Singapore rose slightly in 2022 to S$10099 -
+Reddit, accessed May 11, 2026,
+https://www.reddit.com/r/singapore/comments/10xjh4c/real_median_household_i
+ncome_in_singapore_rose/
+5.​ Singapore Department of Statistics, accessed May 11, 2026,
+https://www.singstat.gov.sg/
+6.​ As filed with the US Securities and Exchange Commission on December 3, 2024. -
+SEC.gov, accessed May 11, 2026,
+https://www.sec.gov/Archives/edgar/data/2004489/000149315224048457/formf-1
+a.htm
+7.​ Everybody's earning 10k. Ah, income data season, my favourite… | by The Broke
+Celeryman, accessed May 11, 2026,
+https://brokeceleryman.medium.com/everybodys-earning-10k-be8f756b2f0d
+8.​ A Guide to The Average and Median Salary in Singapore (2025) - SingSaver,
+accessed May 11, 2026,
+https://www.singsaver.com.sg/investment/blog/average-income-median-salary-si
+ngapore
+9.​ The Paradox of Plenty: A Critical Examination of Poverty in Singapore - Medium,
+accessed May 11, 2026,
+https://medium.com/sgdecoded/the-paradox-of-plenty-a-critical-examination-of
+-poverty-in-singapore-1e4bd963cef2
+10.​Income Growth, Inequality, and Social Mobility Trends in Singapore, accessed
+May 11, 2026,
+https://isomer-user-content.by.gov.sg/153/d5ff0cb3-61ca-4a14-bb46-0060041c
+5f12/1a%20Occasional%20Paper%20on%20Income%20Growth%20Inequality%2
+0and%20Social%20Mobility%20Trends%20in%20Singapore%20(MOF).pdf
+
+11.​Household Budgets in a Time of Rising Costs - Minimum Income Standard 2023,
+accessed May 11, 2026,
+https://whatsenough.sg/wp-content/uploads/2023/09/2023-Housing-budgets-in-
+a-time-of-rising-costs-final-report.pdf
+12.​Summary Table: Income - Labour Market Statistics and Publications, accessed
+May 11, 2026, https://stats.mom.gov.sg/pages/income-summary-table.aspx
+13.​Median monthly household income exceeds S$11,000 in 2024, a 1.4% rise after
+adjusting for inflation - CNA, accessed May 11, 2026,
+https://www.channelnewsasia.com/singapore/median-monthly-household-incom
+e-real-after-inflation-household-singstat-4934851
+14.​Average (Median) Household Income in Singapore [2026], accessed May 11, 2026,
+https://smartwealth.sg/average-household-income-singapore/
+15.​analysing poverty in singapore - SUTD, accessed May 11, 2026,
+https://www.sutd.edu.sg/repo/wp-content/uploads/sites/2/2025/01/Poverty-In-Sin
+gapore-Final-resized.pdf
+16.​What Is The Household Income For Singapore Families? (Based On ..., accessed
+May 11, 2026,
+https://dollarsandsense.sg/much-money-singapore-households-really-earn-base
+d-flat-types-household-members/
+17.​Resident Households by Planning Area of Residence and Monthly Household
+Income from Work (Census Of Population 2020) | SINGSTAT | data.gov.sg,
+accessed May 11, 2026,
+https://data.gov.sg/datasets/d_2d6793de474551149c438ba349a108fd/view
+18.​Monthly Household Income vs Housing Type in Singapore: Where ..., accessed
+May 11, 2026,
+https://blog.seedly.sg/average-monthly-household-income-housing-type-singap
+ore/
+19.​Average Salary and Median Income in Singapore 2026 - StashAway, accessed
+May 11, 2026,
+https://www.stashaway.sg/r/average-salary-median-income-singapore
+20.​Singapore's median monthly household income crosses S$12,000, up 6.8% after
+adjusting for inflation - CNA, accessed May 11, 2026,
+https://www.channelnewsasia.com/singapore/singapore-median-monthly-househ
+old-income-inflation-gini-coefficient-5917096
+
+=== dbs_annual_report_excerpt.pdf ===
+8
+A Di΍ erent Kind of Bank  DBS Annual Report 2022
+DBS’ decade-long structural
+transformation continues
+to pay o΍ . In a challenging
+year for the global economy,
+the bank turned in a solid
+performance.
+The global economy faced multiple threats
+in 2022 – escalating geopolitical tensions,
+stubbornly high inȵ ation, stalling growth and
+roiling ȴ nancial markets.
+Supply chain disruptions – an issue amid the
+Covid pandemic of the last two years – were
+further exacerbated by the Ukraine war. This
+contributed to rising food, commodities and
+energy prices.
+To ȴ ght decades-high inȵ ation, the US Federal
+Reserve embarked on its most aggressive
+monetary tightening since the early 1980s.
+Altogether, it hiked rates seven times in 2022,
+raising short-term borrowing costs by 425
+basis points to 4.25-4.50%, the highest level in
+15 years. Many major central banks around the
+world similarly followed suit. These moves had
+a chilling e΍ ect on equity and bond markets.
+DBS’ key markets Singapore and Hong Kong –
+being small, open economies – were impacted
+by slowing external demand. Singapore’s
+economy grew 3.6% in 2022, from 8.9% the
+year before. Hong Kong’s economy shrank
+by 3.5%. With its strict zero-Covid policy and
+property market slump, China remained in
+the doldrums.
+Against this backdrop, we had yet another
+excellent year, with solid ȴ nancial performance
+and continued delivery against key scorecard
+goals.
+DBS also continued to cement its global
+standing, being named by Global Finance as
+"World's Best Bank". This made it the ȴ fth
+consecutive year we had been lauded as the
+best in the world.
+A banner year
+For the year, DBS delivered record total income
+of SGD 16.5 billion. Net proȴ t rose 20% to an
+all-time high of SGD 8.19 billion. Return on
+equity (ROE), at 15%, was not just a record,
+but also signiȴ cantly higher when compared to
+previous highs around the 12-13% range.
+Earnings were propelled by tailwinds from
+a rising interest rate environment, with net
+interest margin increasing after three years of
+decline. Notwithstanding the rise in borrowing
+costs for corporates and individuals, loans
+grew 4% in constant-currency terms to SGD
+415 billion. Overall, net interest income rose
+30% to SGD 10.9 billion.
+Non-interest income, however, was a drag,
+declining 3% to SGD 5.56 billion. While card
+fees increased 20% with travel spending
+gradually returning to pre-pandemic levels,
+this was more than o΍ set by lower wealth
+management and investment banking fees
+amid the uncertain market environment.
+DBS’ solid ȴ nancial performance reȵ ects
+structural shifts made to our franchise in the
+last decade, whether the buildout of higher-
+return business lines or the pervasive digital
+transformation we embarked on starting 2014,
+and which carry through till today.
+Consumer Banking/ Wealth Management had
+a solid year, with total income up 25% to a
+record SGD 6.65 billion. Wealth Management
+Total income
+Total income crossed SGD 16
+billion for the ȴ rst time.
+SGD 16.5
+BILLION
+Letter from
+the Chairman & CEO
+9
+Letter from the Chairman & CEO
+“2022 was a breakout year for DBS, with ROE signiȴ cantly
+surpassing previous records. This was the result of structural
+changes made over the years to transform the franchise.
+We have demonstrated over the past decade a track record
+of solid performance. In an increasingly fractured and
+unpredictable world, DBS will continue to be a di΍ erent kind
+of bank – one that is trusted, purpose-driven and innovation-
+led so our customers can Live more, Bank less.”
+customer segment income rose 20% as higher
+interest rates beneȴ tted deposit income,
+more than o΍ setting a decline in investment
+product sales. Assets under management
+increased by 3% in constant currency terms to
+SGD 297 billion, boosted by a doubling of net
+new monies to SGD 24 billion. Our consumer
+banking franchise also did well.
+Institutional Banking, which saw income rise
+28% to a record SGD 7.69 billion, was buoyed
+by corporate lending, cash management and
+treasury customer sales. Growth in non-trade
+loans was broad-based across industries and
+geographies. Our early investment in digital
+transactional capabilities continued to pay
+o΍ , as we won over 800 cash management
+mandates in 2022. Corporate operating
+balances also rose signiȴ cantly. Income
+from Treasury Markets normalised from the
+previous year's exceptional levels to SGD
+1.17 billion.
+Across the franchise, asset quality remained
+resilient, with the non-performing loan ratio
+at 1.1%, from 1.3% previously. During the
+year, we did a range of stress tests under
+conservative assumptions. These included
+stress-testing oil at USD 200 a barrel, interest
+rates at 6-7% for our SME portfolio and a
+deep recession impacting the cashȵ ow of
+our customers by 30%. Across most of these
+situations, we are conȴ dent that asset quality
+is robust.
+In a turbulent time for the global economy,
+DBS continued to be recognised for our safety,
+and liquidity was healthy. Underlining the
+solidity of our franchise, DBS was named by
+Global Finance as "Safest Bank in Asia" for the
+14th consecutive year.
+Cementing our Asia franchise
+As an Asia-centric bank, in the long term, DBS
+needs to be more deeply embedded in one or
+more of our four markets outside of Singapore
+and Hong Kong, which include China, India,
+Indonesia and Taiwan.
+In 2022, notwithstanding the China-US trade
+tensions and China’s zero-Covid policy, DBS
+continued to make headway in growing its
+Greater Bay Area (GBA) franchise. Since
+launching our GBA strategy in 2018, our
+large-corporate business targeting companies
+in China’s strategic industries including
+high-end manufacturing, technology and the
+new economy, has seen robust growth. Our
+SME business in the GBA region has also
+performed well. In the wealth space, DBS
+Bank (Hong Kong) now provides investment
+products and solutions to customers from
+DBS China, Postal Savings Bank of China and
+Shenzhen Rural Commercial Bank. This makes
+DBS the only bank with three Southbound
+Wealth Management Connect partners.
+Following the amalgamation of Lakshmi Vilas
+Bank (LVB) with DBS India in late 2020, all
+e΍ orts have been focused on integrating both
+franchises smoothly. In 2022, this involved
+optimising the combined DBS/ LVB branch
+network, rebranding the LVB branches, and
+migrating all former LVB customers to DBS
+technology systems and operating platforms.
+With our enlarged presence of over 520
+branches across 350 locations, 2.5 million
+retail customers and 15,000 corporate
+customers, we now have a strong platform
+from which to accelerate growth. Strategic
+partnerships including those with Bajaj Finserv
+to launch our ȴ rst-ever credit card in India and
+with ODeX to provide straight-through credit
+solutions to freight forwarders, continued
+to scale well. These initiatives helped deliver
+stronger consumer and SME assets growth,
+as well as higher income and proȴ tability.
+In Taiwan, where DBS agreed to acquire Citi's
+consumer banking business, we are on track
+to complete and integrate the acquisition by
+August 2023. The acquisition will accelerate
+DBS Taiwan’s growth by at least 10 years,
+making it Taiwan’s largest foreign bank by
+assets. Material synergies will be realised from
+the combined entity’s enlarged scale.
+Net proȴ t
+Net proȴ t rose 20% to a record
+SGD 8.19 billion, as we beneȴ tted
+from higher interest rates and
+reaped the rewards of structural
+changes made over the years.
+Dividend
+The Board proposed a ȴ nal
+dividend of 42 cents per share,
+and a special dividend of 50 cents
+per share, bringing the full-year
+dividend to SGD 2.00 per share.
+Return on equity
+Return on equity climbed from
+12.5% to a new high of 15.0%.
+SGD 8.19
+BILLION
+SGD 2.00
+15.0%
+
+10
+A Di΍ erent Kind of Bank  DBS Annual Report 2022
+In November, DBS opened a representative
+oɝ  ce in Bangladesh, bringing the bank’s
+international presence to 19 markets globally.
+Bangladesh is an attractive investment
+destination for companies in various sectors,
+such as power, energy, and transport and
+logistics. The establishment of DBS Dhaka will
+provide further impetus to the bank’s activities
+and enable greater market connectivity to DBS’
+customers globally.
+A new way of working
+While DBS was ahead of the curve in
+transforming digitally, we recognise that
+digitalisation has become table stakes at most
+banks. However, there are three areas in
+which we have invested that continue to
+be di΍ erentiating.
+The ȴ rst is the industrialisation of artiȴ cial
+intelligence (AI)/ machine learning (ML)
+and data analytics usage across the bank.
+Our 260 use cases span customer-facing
+businesses such as consumer and SME
+banking, and support functions including
+Legal and Compliance, and Human Resources.
+For example, DBS sends 45 million hyper-
+personalised nudges each month to
+customers across the region with suggestions
+on how to make their money work harder.
+In the SME space, AI/ ML is used to provide
+businesses with early warning signals of
+potential credit stress. In 2022, the revenue
+uplift from our AI/ ML initiatives was about
+SGD 150 million, more than double that from
+the previous year.
+The second is our ecosystem strategy, which
+has allowed us to scale up our business in the
+large Asian markets without high customer
+acquisition costs. DBS nearly doubled our
+ecosystem-led consumer ȴ nance lending
+in 2022. This was made possible through
+our partnerships with companies such as
+ByteDance, Ctrip, Home Credit and Kredivo
+in markets like China and Indonesia. In
+institutional banking, we also had good
+traction in onboarding large platform
+companies, and through our API suite,
+ȴ nancing their extensive supply chains digitally.
+The third is in the way we manage. While
+technology is an enabler, companies need to
+focus on the customer and speed to market
+to win. This requires a workforce that is agile,
+nimble, experimental, learning and willing to
+take risks. A big focus at DBS has been on
+enabling this internally.
+Previously, we had programmed change within
+the organisation such that our employees are
+trained to put the customer at the heart of all
+we do. In the past two years, we took this up a
+notch with the introduction of a new operating
+model “Managing through Journeys” (MtJs).
+With MtJ, we re-architected our most important
+customer processes – such as those around
+credit cards, wealth management, consumer
+ȴ nance, transactional foreign exchange and
+SMEs – horizontally. Through the formation of
+cross-functional squads which are guided by
+data-driven control towers, we have become
+more agile in delivering new products, and
+responding to customer pain points and needs.
+This has translated to improved customer
+satisfaction, faster turnaround times and
+positive revenue impact.
+Our sustainability
+commitments
+Our conviction has always been that our net-
+zero commitment, made in October 2021,
+must be supported by a clear and detailed
+roadmap and plan.
+In September 2022, DBS unveiled this plan,
+which is one of the most comprehensive
+in scope in the global banking industry.
+Speciȴ cally, we set 2030 interim
+decarbonisation targets – that are aligned with
+science-informed decarbonisation glidepaths
+– for seven sectors. These are power, oil and
+gas, automotive, aviation, shipping, steel and
+real estate. Data coverage targets were also
+set for two sectors, food and agribusiness,
+and chemicals. The nine sectors represent the
+most carbon-intensive institutional banking
+segments ȴ nanced by DBS and constitute
+the vast majority of the Institutional Banking
+Group's (IBG's) ȴ nanced emissions.
+As part of the implementation roadmap, DBS
+will proactively partner our customers with
+advisory and ȴ nancial solutions to accelerate
+their transition to a lower-carbon future. We
+are conȴ dent that many will be willing to come
+along with us on the journey. This conȴ dence
+is borne out by our fast-growing sustainable
+ȴ nance book. We had originally set a target
+to do SGD 50 billion in sustainable ȴ nance
+loans by 2024. As at end-2022, our sustainable
+ȴ nance portfolio was SGD 61 billion, exceeding
+our target well ahead of 2024.
+In line with e΍ orts to embed sustainability
+in our business practices and operations,
+we refurbished an old oɝ  ce in Newton into
+Singapore’s ȴ rst net-zero building by a bank.
+We also launched an in-house café at our
+headquarters that minimises the bank’s
+carbon footprint and gives new life to food
+waste. These e΍ orts contributed towards DBS
+achieving carbon neutrality in our operations
+as at end-2022.
+On the social agenda, the new Community
+Impact chapter of DBS Foundation aims to
+foster a more equitable and inclusive society.
+A total of SGD 5.6 million was committed
+towards 10 inaugural programmes across our
+core markets of Singapore, China, Hong Kong,
+India, Indonesia and Taiwan.
+One such programme is in partnership
+with Haqdarshak Empowerment Solutions,
+which will provide digital and ȴ nancial literacy
+courses, and access to social welfare schemes,
+to 200,000 marginalised individuals in India.
+For DBS’ commitment to sustainability, the
+bank was recognised by Global Finance as
+the global winner for “Financial Leadership in
+Sustaining Communities”. DBS was also named
+to the Bloomberg Gender Equality Index and
+the FTSE4Good Developed Index for the sixth
+consecutive year.
+Board and
+management changes
+We would like to express our gratitude to Ho
+Tian Yee, who is stepping down as a board
+member in March 2023, for his invaluable
+contributions. Since joining the DBS Board in
+2011, Tian Yee has served in several capacities
+including as Lead Independent Director and
+DBS is the only bank with three Southbound Wealth Management Connect partners.
+11
+Letter from the Chairman & CEO
+Chairman of the Nominating Committee.
+We have beneȴ tted greatly from his wisdom
+and insights through the years.
+Underscoring our deep bench strength,
+we are pleased that we were able to ȴ ll two
+Country Head roles from our slate of internal
+candidates when the incumbents retired.
+Veteran banker Ginger Cheng succeeded Neil
+Ge when he retired as Country CEO of DBS
+China. A Chinese citizen, Ginger has had a
+distinguished 20-year career in DBS spanning
+Hong Kong and China. Under her leadership,
+DBS’ IBG business in China had grown
+exponentially, with increased connectivity
+across the region.
+Lim Chu Chong, a career DBS banker, took
+over as President Director of PT Bank DBS
+Indonesia, succeeding Paulus Sutisna. A
+seasoned corporate banker, Chu Chong had
+held various roles in DBS including Regional
+Head of SME Banking, Head of IBG in China
+and Chief Operating Oɝ  cer of IBG. Between
+2011 and 2016, he was also non-Independent
+Commissioner of DBS Indonesia.
+Dividends
+Given the record proȴ t and strong capital base,
+the Board has proposed a ȴ nal dividend of 42
+cents per share and a special dividend of 50
+cents a share, bringing the full-year dividend
+to SGD 2.00 per share. Barring unforeseen
+DBS CEO Piyush Gupta (second from left) announcing the bank’s decarbonisation targets.
+circumstances, the annualised dividend going
+forward will be SGD 1.68 per share.
+Going forward
+While uncertainties remain, macroeconomic
+conditions are improving. Global inȵ ation
+is expected to decline this year. China's
+reopening paves the way for a rebound in
+economic activity. The IMF recently upgraded
+its growth forecast for 2023 from 2.7% to
+2.9%, though this is still below 3.4% in 2022.
+Although we remain watchful, we take heart
+that our loan pipeline looks healthy. If animal
+spirits return to markets, we should also
+see some upside to fee income. Barring any
+unexpected shocks to the global economy,
+DBS’ ROE will comfortably be above 15%.
+Despite the collapse in market and ȴ ntech
+valuations, our ambition to become more like
+a technology company also remains intact.
+This reȵ ects a belief that the future of ȴ nance
+will be underpinned by technology. As we
+look ahead, we will continue to cement our
+digital banking leadership, while strategically
+placing our bets in emerging technologies.
+It is also imperative that we remain focused
+on advancing the sustainability agenda and
+executing on our net-zero commitments.
+2022 was a breakout year for DBS, with ROE
+signiȴ cantly surpassing previous records.
+This was the result of structural changes made
+over the years to transform the franchise.
+We have demonstrated over the past decade
+a track record of solid performance. In an
+increasingly fractured and unpredictable
+world, DBS will continue to be a di΍ erent kind
+of bank – one that is trusted, purpose-driven
+and innovation-led so our customers can
+Live more, Bank less.
+Peter Seah
+Chairman
+DBS Group Holdings
+Piyush Gupta
+Chief Executive Oɝ  cer
+DBS Group Holdings
+
+=== mothership_article.md ===
+# DBS CEO pay rises to S$15.38 million after bank makes record S$8.19 billion net profit
+
+> *Remuneration includes salary, cash bonus, and non-cash components.*
+
+*Winnie Li | March 09, 2023, 01:31 PM*
+
+Piyush Gupta, the chief executive officer (CEO) of DBS Group, received a remuneration of S$15.38 million in 2022, which comprises salary, cash bonus, and non-cash components, according to the bank's 2022 annual report released on Mar. 9.
+
+Breakdown of renumeration for performance year 2022 (1 January - 31 December):
+
+| Salary renumeration SGD | Cash Bonus^(1) SGD | Deferred renumeration^(2) SGD | Others^(3) SGD | Total^($) SGD |
+| --- | --- | --- | --- | --- |
+| Mr Piyush Gupta | 1,500,000 | 5,765,000 | 8,035,000 | 80,529 | 15,380,529 |
+
+<small>*Screenshot via DBS*</small>
+
+This translates to a 13.3 per cent increase from his remuneration in 2021, which amounted to S$13.57 million, according to the group's 2021 annual report.
+
+The increase in Gupta's remuneration was made public together with the bank's announcement that it achieved a record S$8.19 billion of net profit in 2022, marking a 20 per cent increase from 2021.
+
+Gupta has been the CEO and director of DBS Group since 2009.
+
+## Remuneration a recognition of Gupta's performance: DBS
+
+According to the 2022 annual report, Gupta's remuneration was a recognition of his contribution to the bank's stellar performance in 2022, despite it being "a challenging year marked by high inflation, glow growth, and bearish markets".
+
+In addition to scoring a record net profit and cementing its franchise throughout Asia, DBS was named by Global Finance as the "World's Best Bank" and ranked 29th globally in the "Top 100 Best Workplaces for Innovators" list.
+
+It is the only Singapore-headquartered company to be featured on the list.
+
+The bank has also continued making progress on the sustainability front, according to its 2022 sustainability report.
+
+In 2022, DBS established a new chapter under the DBS Foundation, which committed S$5.6 million to enhance financial and digital literacy, as well as reduce food waste, in Asia.
+
+By the end of the year, the bank also reportedly achieves carbon neutrality in its own operations.
+
+=== DBS Dossier_ Context and Benchmarking.pdf ===
+Comprehensive Technical Dossier:
+Institutional and Socio-economic
+Context of DBS Group Holdings (March
+2023)
+Financial Performance Analysis: Fiscal Year 2022
+The financial year ending December 31, 2022, represents what the Board of Directors and
+executive leadership characterized as a "breakout year" for DBS Group Holdings.1 This period
+was marked by the successful navigation of a complex global macroeconomic environment,
+characterized by the most aggressive monetary tightening by the US Federal Reserve since the
+early 1980s and significant geopolitical instability.1 Despite these headwinds, the institution
+leveraged rising interest rates and a decade-long structural transformation to deliver
+record-breaking financial results.1
+Income and Profitability Metrics
+DBS reported a record total income of
+for FY2022, an increase of
+
+compared to the previous year.1 This milestone was the first time the lender’s total income
+surpassed the
+threshold.4 The primary driver of this growth was net
+interest income, which surged by
+to
+.1 This increase was
+underpinned by a significant expansion in the net interest margin, which rebounded after three
+years of decline as central banks globally raised rates to combat decades-high inflation.1
+The group’s net profit reached an all-time high of
+, representing a
+
+year-on-year increase from the
+reported in FY2021.1 Return on equity
+(ROE) reached a record high of
+, substantially exceeding the previous historical range
+of
+to
+.1 This elevated ROE reflected the enhanced profitability of the bank's core
+franchises and improved operational efficiency, with the cost-income ratio improving from
+in 2021 to
+in 2022.1
+Key Financial Indicator
+(FY2022)
+Value
+Year-on-Year Change (%)
+
+Total Income
+SGD 16.50 Billion
++16%
+Net Interest Income
+SGD 10.90 Billion
++30%
+Non-Interest Income
+SGD 5.56 Billion
+-3%
+Net Profit
+SGD 8.19 Billion
++20%
+Return on Equity (ROE)
+15.0%
++2.5 percentage points
+Cost-Income Ratio
+43%
+-3 percentage points
+Non-Performing Loan (NPL)
+Ratio
+1.1%
+-0.2 percentage points
+Source: 1
+Segmented Business Performance
+The institutional banking segment recorded a
+increase in income, reaching a record
+.1 This growth was broad-based across various geographies and
+industries, supported by strong performance in corporate lending, treasury customer sales,
+and cash management.1 The bank’s early and sustained investment in digital transactional
+capabilities resulted in the acquisition of over 800 new cash management mandates during the
+year.1
+In the consumer banking and wealth management segment, total income grew by
+to
+.1 While net interest income in this segment benefited from higher deposit
+margins, non-interest income faced downward pressure due to a decline in wealth
+management fee income.1 This was largely attributable to "risk-off" investment sentiments
+
+among customers amidst market volatility.1 Nevertheless, assets under management (AUM) in
+the wealth management division rose by
+to
+, bolstered by net new
+money inflows of
+, which helped offset the negative impact of market
+valuation.1
+Dividend Payouts and Capital Management
+DBS maintained a robust capital position throughout 2022, ending the year with a Common
+Equity Tier 1 (CET1) ratio that supported a substantial increase in shareholder distributions.1 The
+board proposed a final dividend of
+per share and a special dividend of
+
+per share.4 When combined with the interim dividends paid during the year, the total
+distribution for FY2022 reached
+per share.4
+Dividend Period
+(FY2022)
+Type
+Amount (Cents) Announced
+Date
+Payment Date
+1st Quarter
+Interim
+33
+29-Apr-2022
+25-May-2022
+2nd Quarter
+Interim
+33
+04-Aug-2022
+26-Aug-2022
+3rd Quarter
+Interim
+33
+03-Nov-2022
+24-Nov-2022
+4th Quarter
+Final
+42
+13-Feb-2023
+21-Apr-2023
+4th Quarter
+Special
+50
+13-Feb-2023
+21-Apr-2023
+Total Full Year
+-
+200 (SGD 2.00)
+-
+-
+Source: 4
+
+The board stated that the "substantial increase" in dividends reflected the bank’s robust
+earnings profile and the strength of its capital position.4 The total dividend payout for 2022
+represented a significant increase from the previous years, aligning with the bank’s goal to
+provide sustainable and growing returns to its shareholders.4
+Executive Compensation: Piyush Gupta’s
+Remuneration and Historical Trends
+The remuneration for CEO Piyush Gupta in 2022 was determined in accordance with the
+group's "pay-for-performance" framework, which links executive compensation to the bank’s
+achievement of key performance indicators (KPIs) and long-term shareholder value.2 For the
+financial year 2022, Mr. Gupta’s total remuneration package was reported at
+.2
+2022 Remuneration Components
+The total package of
+represented a
+increase from the
+received in 2021.2 The compensation was structured into fixed and
+variable components, with a high proportion of the variable pay being deferred to align with the
+long-term risk and performance horizons of the institution.2
+●​ Base Salary:
+.2
+●​ Cash Bonus:
+.2
+●​ Deferred Remuneration:
+, comprising both cash and share
+awards.2
+●​ Non-Cash Benefits:
+, which included benefits such as club
+memberships, a car, and driver services.2
+The deferred portion of the award is typically subject to a staggered vesting schedule over a
+period of three to four years, ensuring that the final realized value of the compensation is tied
+to the bank’s continued performance and share price.9
+Three-Year Historical Trend (2020–2022)
+A review of the three-year trend in the CEO’s compensation illustrates the direct correlation
+between the bank’s financial health and executive pay. During the 2020 financial year, which
+was significantly impacted by the global COVID-19 pandemic, the CEO’s total remuneration
+was reduced to reflect the challenging operating environment and the bank's decision to
+exercise restraint.2
+
+Year
+Base Salary
+(SGD M)
+Bonus &
+Deferred (SGD
+M)
+Total
+Remuneration
+(SGD M)
+YoY Change (%)
+2020
+1.2
+8.0
+9.2
+-24%
+2021
+1.2
+12.4
+13.6
++48%
+2022
+1.5
+13.81 (incl.
+benefits)
+15.4
++13.2%
+Source: 2
+The
+reduction in 2020 was followed by a
+increase in 2021 as the bank’s profits
+rebounded, and a subsequent
+increase in 2022 following the record-breaking ROE and
+profit achieved during that year.2 This trend highlights the sensitivity of the remuneration
+architecture to the underlying financial results of the group.2
+Competitive Benchmarking: Industry Context in
+Singapore
+To provide a comprehensive view of the institutional landscape in March 2023, DBS’s
+performance and executive pay must be benchmarked against its primary domestic peers,
+United Overseas Bank (UOB) and Oversea-Chinese Banking Corporation (OCBC).
+Comparative Financial Performance (FY2022)
+The three local banks all reported record or near-record earnings in 2022, primarily driven by
+the same tailwinds of rising interest rates and robust regional economic activity.3 However, the
+magnitude of profit and the resulting ROE varied across the institutions.
+Institution
+Net Profit (SGD
+Billion)
+ROE (%)
+Total Dividends
+(Cents/Share)
+
+DBS Group
+8.19
+15.0%
+200 (incl. special)
+OCBC Bank
+5.75
+11.1%
+68
+UOB
+4.60 (4.80 Core)
+11.9%
+135
+Source: 1
+DBS significantly outperformed its peers in terms of absolute net profit and ROE. OCBC’s net
+profit of
+was an
+increase from the previous year, with an ROE of
+.6 UOB reported a record core net profit of
+, an
+increase
+(excluding one-off expenses related to the Citigroup acquisition), with an ROE of
+.15
+Benchmarking CEO Remuneration (FY2022)
+Executive compensation across the three banks reflected their respective financial outcomes,
+with all three CEOs seeing significant pay increases in 2022.2
+CEO
+Institution
+Total Remuneration
+(SGD M)
+YoY Change (%)
+Piyush Gupta
+DBS Group
+15.4
++13.2%
+Wee Ee Cheong
+UOB
+14.2
++30.2%
+Helen Wong
+OCBC
+11.2
++47%
+Source: 2
+While Mr. Gupta remained the highest-paid CEO in the local banking sector, the percentage
+
+increase in his pay (
+) was the most conservative among the three leaders.2 UOB’s Wee
+Ee Cheong saw his pay rise by
+to
+, following record core profits
+and the successful initiation of the Citigroup consumer business integration.19 OCBC’s Helen
+Wong received a
+increase to
+, reflecting her first full year as CEO
+and the bank's record earnings.6
+Economic Landscape of Singapore: Q1 2023
+The institutional performance of DBS in March 2023 cannot be decoupled from the broader
+economic conditions in Singapore during the first quarter of the year. This period was
+characterized by persistent inflation and a significant shift in fiscal policy.24
+Inflationary Pressures and CPI Data
+Singapore’s inflation rates remained elevated throughout Q1 2023. The Monetary Authority of
+Singapore (MAS) and the Ministry of Trade and Industry (MTI) emphasized that core
+inflation—which excludes accommodation and private transport—was particularly sticky due to
+the passthrough of accumulated business costs and the impact of the GST hike.24
+Month (2023)
+MAS Core Inflation (YoY %)
+CPI-All Items Inflation (YoY
+%)
+January
+5.5
+6.6
+February
+5.5
+6.3
+March
+5.0
+5.5
+Source: 24
+In January 2023, core inflation stepped up to
+, primarily driven by higher prices for
+services, food, and retail goods.24 Food inflation was especially high, recorded at
+in both
+January and February.24 Services inflation reached
+in January, moderated slightly to
+in February, and fell further to
+in March as airfares and point-to-point transport
+
+fares slowed.24
+The CPI-All Items (headline) inflation eased from
+in January to
+by March 2023.24
+This moderation was largely attributed to a decline in private transport inflation, which slowed
+as car prices and petrol costs increased at a more modest pace compared to the spikes seen in
+2022.27
+GST Rate Increase and Transition Rules
+A pivotal change in the economic landscape occurred on January 1, 2023, when the Goods and
+Services Tax (GST) rate was increased from
+to
+.25 This was the first stage of a
+two-step plan, with the second increase to
+scheduled for January 2024.25
+The implementation of the
+GST rate involved complex transitional rules for businesses and
+consumers.31 For example, for services spanning across the end of 2022 and the beginning of
+2023, such as hotel stays, the
+rate applied to the portion of the stay in 2022, while
+
+applied to the portion in 2023.32 Crucially, the GST was also extended to include "low-value
+goods" (items valued up to
+) imported via air or post, which were previously exempt
+from the tax.29 This change was intended to ensure a "level playing field" for local businesses
+against overseas suppliers.29
+Specific Cost-of-Living Data: Utilities and Housing
+In the first quarter of 2023, the cost of utilities provided a nuanced picture. SP Group
+announced a
+decrease in the electricity tariff (before GST) for the period from January
+1 to March 31, 2023, due to lower energy costs.33 However, the net effect on consumers was
+partially offset by the GST hike.34
+Utility Type (Q1
+2023)
+Rate (Before 8%
+GST)
+Rate (Incl. 8% GST)
+Change vs Q4 2022
+(Incl. GST)
+Electricity
+(Cents/kWh)
+28.95
+31.27
+-1.7%
+Town Gas
+(Cents/kWh)
+21.84
+23.59
+-3.0%
+
+Source: 24
+Despite the slight dip in utility prices, housing costs continued to rise. The residential rental
+market experienced extreme tightness, with HDB and private residential rents having increased
+by
+and
+respectively over the cumulative 2021-2022 period.35 PropertyGuru
+reported that median asking rental prices reached five-year highs in early 2023.36 These costs
+were a significant driver of the cost-of-living concerns voiced by residents.36
+Stakeholder Perspectives and Socio-Economic
+Discourse
+The institutional context in March 2023 was shaped not only by financial data but by the
+strategic philosophy of the bank’s board and the broader public sentiment regarding income
+disparity in Singapore.
+DBS Board of Directors: Pay-for-Performance Philosophy
+The DBS Board, led by Chairman Peter Seah, remained committed to a "pay-for-performance"
+culture, which they believe is essential for driving long-term shareholder value and sustainable
+business growth.9 This philosophy is operationalized through a "balanced scorecard" that
+assesses the bank's performance across four key areas:
+1.​ Shareholder Performance: Evaluated through metrics such as ROE, net profit, and total
+shareholder return.10
+2.​ Customer Indicators: Measuring the quality of service, digital engagement, and
+franchise strength.10
+3.​ Employee Indicators: Focusing on engagement levels, diversity, and talent
+development.10
+4.​ Strategic Focus Areas: Including progress in digital transformation, risk management,
+and the sustainability agenda.9
+In the 2022 Annual Report, the board stated that the CEO's remuneration was a direct
+reflection of the bank’s "banner year" and its delivery against these scorecard goals.1 The board
+also emphasized the importance of benchmarking total compensation against peer
+organizations of similar size and standing to attract and retain global talent.9
+Public Discourse on Income Inequality and Cost of Living
+The release of the record-breaking banking profits and CEO remuneration packages in March
+2023 coincided with a period of heightened public discourse regarding income inequality in
+Singapore.38 Major local news outlets, including The Straits Times, CNA, and Mothership,
+reported extensively on the intersection of these topics.
+
+National Discourse on Inequality
+In February and March 2023, media reports frequently cited a Ministry of Finance (MOF)
+occasional paper on income and social mobility.38 The paper revealed that Singapore’s Gini
+coefficient—a measure of income inequality—fell to a record low of
+in 2022 (after taxes
+and transfers).37 Prime Minister Lawrence Wong (then DPM and Finance Minister) noted that
+real wages had risen across all income levels over the past decade, with the strongest growth
+observed in the bottom
+of households.40
+However, the discourse was tempered by findings that wealth inequality (Gini of
+)
+remained higher than income inequality and was comparable to other advanced economies
+like the UK and Germany.38 Observers in The Straits Times noted that while income gaps were
+narrowing, wealth was becoming more "entrenched" across generations, raising concerns
+about future social mobility.38
+Media Portrayal and Public Perception
+Outlets like Mothership and CNA often juxtaposed the news of multi-million dollar CEO salaries
+with the daily realities of the
+GST hike and rising hawker food prices.39 Public sentiment, as
+reflected in online forums and comments sections, was characterized by anxiety over the
+"sandwich class"—middle-income earners who might not qualify for the full suite of
+government subsidies but were heavily impacted by rising rental and healthcare costs.36
+DBS’s own internal response to these socio-economic pressures was a notable part of the
+discourse. In February 2023, the bank announced a special one-time bonus of
+
+for its junior-ranked employees to help them cope with the higher cost of living.39 This measure,
+which cost the bank
+in 2023, was seen as a corporate acknowledgment of
+the inflationary environment and was widely reported in local media.39
+Summary of Institutional Stability and External Friction
+As of March 2023, DBS Group Holdings presented a profile of exceptional institutional strength,
+underpinned by record profits, a resilient capital base, and a clear leadership strategy.1 The
+institution’s "pay-for-performance" model was functioning as intended, providing significant
+rewards for record-breaking ROE and profit.1
+Simultaneously, the bank operated within a socio-economic context where the broader
+Singaporean population was grappling with
+core inflation, a major tax transition, and
+rising concerns about the equitable distribution of wealth.24 The technical dossier of March
+2023 thus reflects a dual reality: an institution at its financial peak and a domestic environment
+characterized by significant cost-of-living adjustments and evolving public expectations
+
+regarding the social compact.1
+The data contained within this dossier serves as a factual foundation for analyzing the
+performance and position of DBS Group Holdings within the Singaporean economy as of
+March 2023. All financial figures, compensation details, and economic indicators are based on
+official reports and verifiable media accounts from the period..1
+Works cited
+1.​ DBS Annual Report 2022, accessed May 11, 2026,
+https://www.dbs.com/iwov-resources/images/investors/annual-report/dbs-annual
+-report-2022.pdf?pid=sg-group-pweb-investors-pdf-2022-a-different-kind-of-b
+ank
+2.​ DBS CEO Piyush Gupta's 2022 pay rises 13.2% to $15.4 million ..., accessed May 11,
+2026,
+https://www.straitstimes.com/business/dbs-ceo-piyush-gupta-s-2022-pay-rises-
+13-to-154-million
+3.​ DBS Annual Report 2022 - Register of AIs & LROs, accessed May 11, 2026,
+https://vpr.hkma.gov.hk/statics/assets/doc/100199/ar_22/ar_22_pt01_eng.pdf
+4.​ DBS Profit Grows From Record Income in 2022 - finews.asia, accessed May 11,
+2026,
+https://www.finews.asia/finance/38599-dbs-profit-grows-from-record-income
+5.​ DBS CEO Piyush Gupta's annual pay rises 13.2% in 2022 - The Indian Express,
+accessed May 11, 2026,
+https://indianexpress.com/article/business/companies/dbs-group-ceo-piyush-gu
+pta-annual-pay-8487348/
+6.​ OCBC reports record net profit of S$5.75b in 2022 | Asian Banking & Finance,
+accessed May 11, 2026,
+https://asianbankingandfinance.net/news/ocbc-reports-record-net-profit-s575b-
+in-2022
+7.​ Dividend Information | Investor Relations | DBS Bank, accessed May 11, 2026,
+https://www.dbs.com/investors/financials/dividend-information
+8.​ DBS Annual Report 2025.pdf - Singapore Exchange, accessed May 11, 2026,
+https://links.sgx.com/1.0.0/corporate-announcements/U6RBLH1JFNDV1QZT/8777
+53_DBS%20Annual%20Report%202025.pdf
+9.​ Remuneration report - Singapore - DBS Bank, accessed May 11, 2026,
+https://www.dbs.com/annualreports/2022/files/media/dbs-annual-report-2022-re
+muneration-report.pdf
+10.​Remuneration report - DBS Bank, accessed May 11, 2026,
+https://www.dbs.com/annualreports/2024/i/pdf/dbs-annual-report-2024-remuner
+ation-report.pdf
+11.​DBS CEO Piyush Gupta gets a S$17.6 million pay package for 2024 - The Business
+Times, accessed May 11, 2026,
+https://www.businesstimes.com.sg/companies-markets/dbs-ceo-piyush-gupta-g
+
+ets-s17-6-million-pay-package-2024-jump-56-5-2023-and-14-3-2022
+12.​DBS BANK (HONG KONG) LIMITED Annual Report 2022, accessed May 11, 2026,
+https://vpr.hkma.gov.hk/statics/assets/doc/100034/ar_22/ar_22_eng.pdf
+13.​DBS CEO dismisses work-life balance as 'baloney', while netizens ridicule 'work is
+life' if people could earn like him - The Online Citizen, accessed May 11, 2026,
+https://www.theonlinecitizen.com/2023/07/31/dbs-ceo-dismisses-work-life-balan
+ce-as-baloney-while-netizens-ridicule-work-is-life-if-people-could-earn-like-hi
+m/
+14.​DBS CEO Piyush Gupta's pay cut by S$4.2 million to S$11.2 million for 2023 -
+Mothership.SG, accessed May 11, 2026,
+https://mothership.sg/2024/03/piyush-gupta-2023-pay-cut/
+15.​Financial Highlights - UOB Group, accessed May 11, 2026,
+https://www.uobgroup.com/AR2022/financial-highlights.html
+16.​Audited Financial Results for the Financial Year Ended 31 December 2022 - UOB
+Group, accessed May 11, 2026,
+https://www.uobgroup.com/investor-relations/assets/pdfs/investor/financial/2022/
+condensed-financial-statement-4q-2022.pdf
+17.​Annual Report 2022 | Financial Highlights - OCBC, accessed May 11, 2026,
+https://www.ocbc.com/group/investors/annual-reports/2022-annual-report/finan
+cial-highlights.page
+18.​Annual Report 2022 | Message from Our Chairman and CEO - OCBC, accessed
+May 11, 2026,
+https://www.ocbc.com/group/investors/annual-reports/2022-annual-report/mess
+age-from-chairman-and-ceo.page
+19.​UOB CEO Receives 2022 Pay Hike - finews.asia, accessed May 11, 2026,
+https://www.finews.asia/people/38916-uob-ceo-raised-s-14-2-million-in-2022
+20.​OCBC CEO Helen Wong's salary rises to $11.2 million in 2022, up 47% from
+previous year, accessed May 11, 2026,
+https://www.asiaone.com/money/ocbc-ceo-helen-wongs-salary-rises-112-million
+-2022-47-previous-year
+21.​UOB CEO Wee Ee Cheong's 2022 pay rises 30.2% to $14.2 million | The Straits
+Times, accessed May 11, 2026,
+https://www.straitstimes.com/business/uob-ceo-wee-ee-cheong-s-2022-pay-ris
+es-302-to-142-million
+22.​OCBC CEO Helen Wong's 2022 pay reaches $11.2 million, behind other local bank
+chiefs, accessed May 11, 2026,
+https://www.straitstimes.com/business/ocbc-ceo-helen-wong-s-2022-pay-reach
+es-112-million-behind-other-local-bank-chiefs
+23.​UOB reports record net profit of S$4.6 billion in FY2022 - YouTube, accessed May
+11, 2026, https://www.youtube.com/watch?v=1Sv3xKf0cDw
+24.​Consumer Price Development in Jan 2023 - Monetary Authority of Singapore,
+accessed May 11, 2026,
+https://www.mas.gov.sg/-/media/mas/epg/cpd/2023/inflation202301.pdf
+25.​What consumers need to know with the new GST rate from 1 Jan 2024 - IRAS,
+accessed May 11, 2026,
+
+https://www.iras.gov.sg/who-we-are/what-we-do/annual-reports-and-publicatio
+ns/taxbytes-iras/gst/what-consumers-need-to-know-with-the-new-gst-rate-fro
+m-1-jan-2024
+26.​4 Macroeconomic Policy - Monetary Authority of Singapore, accessed May 11,
+2026,
+https://www.mas.gov.sg/-/media/mas-media-library/publications/macroeconomic
+-review/2023/oct/mroct23_chpt_4.pdf
+27.​Consumer Price Development in Feb 2023 - Monetary Authority of Singapore,
+accessed May 11, 2026,
+https://www.mas.gov.sg/-/media/mas/epg/cpd/2023/inflation202302.pdf
+28.​Consumer Price Development in Mar 2023 - Monetary Authority of Singapore,
+accessed May 11, 2026,
+https://www.mas.gov.sg/-/media/mas-media-library/news/consumer-price-devel
+opments/2023/inflation202303.pdf
+29.​GST in S'pore is now 8% from Jan. 1, 2023 - Mothership.SG, accessed May 11,
+2026, https://mothership.sg/2023/01/gst-8-2023/
+30.​Goods and Services Tax - Singapore - Ministry of Finance, accessed May 11, 2026,
+https://www.mof.gov.sg/policies/taxes/goods-and-services-tax/
+31.​GST Rate Change for Consumers - Singapore - IRAS, accessed May 11, 2026,
+https://www.iras.gov.sg/taxes/goods-services-tax-(gst)/gst-rate-change/gst-rate
+-change-for-consumers1
+32.​CNA Explains: What happens when GST goes up in 2023? Here's what you need
+to know, accessed May 11, 2026,
+https://www.channelnewsasia.com/singapore/gst-hike-cna-explains-tax-increase
+-8-9-percent-2023-3133236
+33.​Electricity Tariff Revision for Q1 2023 - Singapore - SP Group, accessed May 11,
+2026,
+https://www.spgroup.com.sg/dam/spgroup/wcm/connect/spgrp/3e05a14c-b346-
+410e-815c-2447f1267484/%5B20221230%5D+Media+Release+-+Electricity+Tariff
++Revision+for+Q1+2023.pdf?MOD=AJPERES&CVID=
+34.​Lower household electricity bills in Q1 2023 as tariff falls by 2.7% - The Straits
+Times, accessed May 11, 2026,
+https://www.straitstimes.com/singapore/lower-household-electricity-bills-in-q1-2
+023-as-tariff-falls-by-27
+35.​Box B: Residential Rental Markets1 - Monetary Authority of Singapore, accessed
+May 11, 2026,
+https://www.mas.gov.sg/-/media/mas-media-library/publications/macroeconomic
+-review/2023/apr/mrapr23_box_b.pdf
+36.​Singapore Property Market Report Q1 2023 - PropertyGuru, accessed May 11,
+2026,
+https://www.propertyguru.com.sg/property-guides/singapore-property-market-r
+eport-q1-2023-77295
+37.​Singapore's Income Inequality Reaches Record Low Amid Cost-of-Living
+Concerns, accessed May 11, 2026,
+https://www.binance.com/en/square/post/02-09-2026-singapore-s-income-ineq
+
+uality-reaches-record-low-amid-cost-of-living-concerns-289729663106961
+38.​New stats on wealth, income and social mobility should spark national debate on
+inequality: Observers | The Straits Times, accessed May 11, 2026,
+https://www.straitstimes.com/singapore/politics/new-stats-on-wealth-income-an
+d-social-mobility-should-spark-national-debate-on-inequality-observers
+39.​DBS CEO Piyush Gupta to get paid S$4.14 million less for 2023 due to digital
+disruptions - Mothership.SG, accessed May 11, 2026,
+https://mothership.sg/2024/02/dbs-ceo-pay-cut/
+40.​Singapore's inequality at record low, but fresh approaches needed to sustain
+progress: PM Wong | The Straits Times, accessed May 11, 2026,
+https://www.straitstimes.com/singapore/spores-inequality-at-record-low-but-fre
+sh-approaches-needed-to-sustain-progress-pm-wong
+41.​Wealth inequality higher than income inequality in S'pore, says Finance Ministry
+paper, accessed May 11, 2026,
+https://www.straitstimes.com/singapore/wealth-inequality-higher-than-income-i
+nequality-says-finance-ministry-paper
+42.​Dissecting Price Increases in Singapore (2023–2024): Evaluating the Impact of
+GST Hikes Amidst Broader Inflationary Pressures | by Joel Wong - Medium,
+accessed May 11, 2026,
+https://medium.com/sgdecoded/dissecting-price-increases-in-singapore-2023-2
+024-evaluating-the-impact-of-gst-hikes-amidst-f41c6931b521
+43.​DBS CEO Piyush Gupta thinks work-life balance is 'baloney' & that work is part of
+life : r/singapore - Reddit, accessed May 11, 2026,
+https://www.reddit.com/r/singapore/comments/15cplk9/dbs_ceo_piyush_gupta_th
+inks_worklife_balance_is/
+44.​DBS rewards over 23,000 junior employees with S$1,000 bonus despite profit
+dip, accessed May 11, 2026,
+https://www.peoplematters.in/news/payroll-benefits-administration/dbs-rewards-
+over-23000-junior-employees-with-sdollar1000-bonus-despite-profit-dip-4836
+7
+45.​DBS to give junior staff $1,000 special bonus | The Straits Times, accessed May 11,
+2026,
+https://www.straitstimes.com/business/dbs-to-give-junior-staff-1000-special-bo
+nus-nearly-6800-in-spore-to-benefit
+46.​Annual Report 2022 - Singapore - OCBC, accessed May 11, 2026,
+https://www.ocbc.com/iwov-resources/sg/ocbc/gbc/pdf/annual-report/2022/2022
+-annual-report-en.pdf
+47.​GST increase to proceed as planned to fund rising spending on seniors,
+healthcare: Lawrence Wong | The Straits Times, accessed May 11, 2026,
+https://www.straitstimes.com/singapore/gst-increase-to-proceed-as-planned-no
+-delay-lawrence-wong

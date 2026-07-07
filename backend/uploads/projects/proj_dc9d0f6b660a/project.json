@@ -1,0 +1,402 @@
+{
+  "project_id": "proj_dc9d0f6b660a",
+  "name": "Unnamed Project",
+  "status": "graph_completed",
+  "created_at": "2026-06-09T10:43:36.635851",
+  "updated_at": "2026-06-09T11:07:03.316544",
+  "files": [
+    {
+      "filename": "DBS Background & Context.pdf",
+      "size": 278790
+    },
+    {
+      "filename": "LinkedIn Post.txt",
+      "size": 1130
+    },
+    {
+      "filename": "personas.md",
+      "size": 22310
+    }
+  ],
+  "total_text_length": 48302,
+  "ontology": {
+    "entity_types": [
+      {
+        "name": "ExecutiveLeadership",
+        "description": "High-level decision makers and C-suite officers who represent the organization's public face.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The full name of the executive"
+          },
+          {
+            "name": "job_title",
+            "type": "text",
+            "description": "Official corporate title (e.g., CEO, CIO)"
+          },
+          {
+            "name": "public_influence_score",
+            "type": "text",
+            "description": "Estimated level of influence on public sentiment"
+          }
+        ],
+        "examples": [
+          "Tan Su Shan",
+          "Piyush Gupta",
+          "Eugene Huang"
+        ]
+      },
+      {
+        "name": "BankingProfessional",
+        "description": "Internal employees of the bank ranging from technical engineers to customer service leads.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The full name of the employee"
+          },
+          {
+            "name": "department_unit",
+            "type": "text",
+            "description": "The specific division they work in (e.g., SRE, PR, Operations)"
+          },
+          {
+            "name": "operational_role",
+            "type": "text",
+            "description": "Their specific function within the bank"
+          }
+        ],
+        "examples": [
+          "Core Banking Site Reliability Engineer",
+          "Customer Contact Center Operations Lead"
+        ]
+      },
+      {
+        "name": "CorporateClient",
+        "description": "Business entities and SME owners who utilize banking services for commercial operations.",
+        "attributes": [
+          {
+            "name": "representative_name",
+            "type": "text",
+            "description": "The name of the individual representing the business"
+          },
+          {
+            "name": "business_sector",
+            "type": "text",
+            "description": "The industry the business operates in (e.g., F&B, Logistics)"
+          },
+          {
+            "name": "transaction_volume",
+            "type": "text",
+            "description": "The scale of their business banking needs"
+          }
+        ],
+        "examples": [
+          "Hyper-Local F&B Owner",
+          "Mid-Market Manufacturing CFO"
+        ]
+      },
+      {
+        "name": "WealthInvestor",
+        "description": "High-net-worth individuals and asset managers focused on wealth preservation and investment.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The name of the investor or manager"
+          },
+          {
+            "name": "wealth_tier",
+            "type": "text",
+            "description": "Category of wealth (e.g., HNW, Ultra-HNW)"
+          },
+          {
+            "name": "risk_sensitivity",
+            "type": "text",
+            "description": "Level of sensitivity to institutional instability"
+          }
+        ],
+        "examples": [
+          "Treasures Private Client",
+          "Family Office Asset Manager"
+        ]
+      },
+      {
+        "name": "TechSpecialist",
+        "description": "Individuals with high digital literacy who evaluate banking services based on technical performance.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The name of the specialist"
+          },
+          {
+            "name": "technical_expertise",
+            "type": "text",
+            "description": "Specific tech domain (e.g., Cybersecurity, AI, UI/UX)"
+          },
+          {
+            "name": "digital_platform_usage",
+            "type": "text",
+            "description": "Primary digital tools or platforms used"
+          }
+        ],
+        "examples": [
+          "Neelkamal Semwal",
+          "FinTech Product Manager",
+          "Cybersecurity Analyst"
+        ]
+      },
+      {
+        "name": "MediaProfessional",
+        "description": "Journalists, influencers, and content creators who amplify and frame public narratives.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The name of the media actor"
+          },
+          {
+            "name": "media_outlet_type",
+            "type": "text",
+            "description": "Type of platform (e.g., Business Press, Viral Meme Page)"
+          },
+          {
+            "name": "editorial_stance",
+            "type": "text",
+            "description": "The typical tone of their coverage"
+          }
+        ],
+        "examples": [
+          "Financial Journalist",
+          "Viral Meme Page Administrator"
+        ]
+      },
+      {
+        "name": "RegulatoryBody",
+        "description": "Government or statutory organizations that oversee banking operations and compliance.",
+        "attributes": [
+          {
+            "name": "org_name",
+            "type": "text",
+            "description": "The name of the regulatory agency"
+          },
+          {
+            "name": "regulatory_scope",
+            "type": "text",
+            "description": "The area of oversight (e.g., Monetary Policy, Operational Risk)"
+          },
+          {
+            "name": "enforcement_power",
+            "type": "text",
+            "description": "The level of authority to impose penalties"
+          }
+        ],
+        "examples": [
+          "Monetary Authority of Singapore (MAS)",
+          "SG Enable"
+        ]
+      },
+      {
+        "name": "RetailCustomer",
+        "description": "General public users who rely on basic banking services for daily life.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The name of the customer"
+          },
+          {
+            "name": "demographic_group",
+            "type": "text",
+            "description": "The segment they belong to (e.g., Pioneer Generation, Gen Z)"
+          },
+          {
+            "name": "primary_banking_need",
+            "type": "text",
+            "description": "Main service used (e.g., PayLah!, Savings, Mortgage)"
+          }
+        ],
+        "examples": [
+          "Ride-Hailing Driver",
+          "Pioneer Generation Retiree",
+          "Primary School Teacher"
+        ]
+      },
+      {
+        "name": "Person",
+        "description": "A fallback type for any natural person not covered by specific categories.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The individual's name"
+          },
+          {
+            "name": "personal_bio",
+            "type": "text",
+            "description": "Brief background or occupation"
+          }
+        ],
+        "examples": [
+          "Passerby A",
+          "General Netizen"
+        ]
+      },
+      {
+        "name": "Organization",
+        "description": "A fallback type for any company, institution, or group not covered by specific categories.",
+        "attributes": [
+          {
+            "name": "org_name",
+            "type": "text",
+            "description": "The name of the organization"
+          },
+          {
+            "name": "industry_type",
+            "type": "text",
+            "description": "The sector the organization belongs to"
+          }
+        ],
+        "examples": [
+          "AMD Singapore",
+          "National University of Singapore"
+        ]
+      }
+    ],
+    "edge_types": [
+      {
+        "name": "REPLIES_TO",
+        "description": "A direct response to a post or comment on a social media platform.",
+        "source_targets": [
+          {
+            "source": "ExecutiveLeadership",
+            "target": "TechSpecialist"
+          },
+          {
+            "source": "BankingProfessional",
+            "target": "RetailCustomer"
+          },
+          {
+            "source": "Person",
+            "target": "Person"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "COMPLAINS_TO",
+        "description": "Expressing dissatisfaction regarding a service or technical issue.",
+        "source_targets": [
+          {
+            "source": "TechSpecialist",
+            "target": "ExecutiveLeadership"
+          },
+          {
+            "source": "RetailCustomer",
+            "target": "Organization"
+          },
+          {
+            "source": "CorporateClient",
+            "target": "BankingProfessional"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "WORKS_FOR",
+        "description": "An employment relationship between an individual and an organization.",
+        "source_targets": [
+          {
+            "source": "ExecutiveLeadership",
+            "target": "Organization"
+          },
+          {
+            "source": "BankingProfessional",
+            "target": "Organization"
+          },
+          {
+            "source": "TechSpecialist",
+            "target": "Organization"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "REGULATES",
+        "description": "Oversight and monitoring of an organization's conduct and stability.",
+        "source_targets": [
+          {
+            "source": "RegulatoryBody",
+            "target": "Organization"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "REPORTS_ON",
+        "description": "Media coverage or public commentary regarding an entity or event.",
+        "source_targets": [
+          {
+            "source": "MediaProfessional",
+            "target": "Organization"
+          },
+          {
+            "source": "MediaProfessional",
+            "target": "ExecutiveLeadership"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "SUPPORTS",
+        "description": "Expressing agreement or positive sentiment toward an entity's actions.",
+        "source_targets": [
+          {
+            "source": "RetailCustomer",
+            "target": "ExecutiveLeadership"
+          },
+          {
+            "source": "Person",
+            "target": "Organization"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "CRITICIZES",
+        "description": "Expressing negative sentiment or highlighting failures of an entity.",
+        "source_targets": [
+          {
+            "source": "TechSpecialist",
+            "target": "Organization"
+          },
+          {
+            "source": "MediaProfessional",
+            "target": "Organization"
+          },
+          {
+            "source": "RetailCustomer",
+            "target": "BankingProfessional"
+          }
+        ],
+        "attributes": []
+      }
+    ]
+  },
+  "analysis_summary": "该本体设计旨在模拟DBS银行在LinkedIn上的高管互动事件。它涵盖了从核心高管（ExecutiveLeadership）到不同层级的客户（Corporate, Wealth, Retail），以及技术专家（TechSpecialist）和监管机构（RegulatoryBody）。这种结构能够捕捉到技术故障如何演变为公关危机，以及高管的直接介入如何影响不同利益相关者的感知。通过定义‘Person’和‘Organization’作为兜底类型，确保了文本中出现的任何次要主体都能被纳入模拟系统。",
+  "graph_id": "mirofish_local_f4adeb1046ec484e",
+  "graph_build_task_id": "47fc6055-fddc-4998-81d0-1d461b2f620d",
+  "simulation_requirement": "Predict the public sentiment and perception trajectory resulting from the high-stakes LinkedIn interaction detailed in the attached files. \r\n\r\n### Input Context Files:\r\n1. **DBS Background & Context.pdf**: Provides critical background information on DBS Bank, including its institutional footprint, regional market position, and operational baseline.\r\n2. **LinkedIn Post.txt**: Contains the raw text and thread data of the core event—detailing the unresolved customer complaint and CEO Tan Su Shan’s direct response.\r\n3. **personas.md**: A baseline initialization file containing a diversified list of personas. Use these profiles for structural inspiration, but do NOT limit the simulation to this set. Dynamically generate and scale out additional relevant personas (e.g., macro-regulators, regional fintech competitors, secondary network nodes) as the interaction evolves to ensure a highly organic, non-monoculture swarm.\r\n\r\n### Simulation Requirements:\r\n* \"personas.md\" should serve only as a guide and the personas generated should not be limited to this list. Try to create multiple indidividuals within each group representing different ways of thinking and looking at things.\r\n\r\n### Simulation Report Output Schema:\r\nThe final report generated from this prediction must be structured exactly as follows:\r\n\r\n1. **EXECUTIVE SUMMARY OF THE PREDICTION** (Place this at the absolute beginning for instant visibility):\r\n   - **Majority Perception**: The overarching, dominant consensus that crystallizes among the public swarm.\r\n   - **Major Events & Inflection Points**: Highlight the critical remarks, viral spin-offs, or specific agent interactions that shifted sentiment momentum during the simulation.\r\n   - **Simulation Conclusion**: A definitive binary/ternary verdict stating whether the final net outcome is structurally Positive, Neutral, or Negative for the bank's brand equity and leadership perception.\r\n\r\n2. **TEMPORAL SENTIMENT TRENDS**\r\n   - A chronological breakdown tracking how waves of opinions shift from the initial post deployment to peak virality and eventual cooling-off periods.\r\n\r\n3. **GRANULAR CLUSTER ANALYSIS**\r\n   - Detailed observations on how specific segments (e.g., SME Owners vs. Wealth Clients vs. Netizen Critics vs. Internal Employees) diverged or formed coalitions.\r\n\r\n4. **STRATEGIC NEXT STEPS & ACTION ITEMS**\r\n   - A definitive list of data-driven recommendations, risk-mitigation tactics, and communication adjustments for executive leadership based on the specific operational and PR pain points exposed during the simulation run.",
+  "chunk_size": 500,
+  "chunk_overlap": 50,
+  "error": null,
+  "token_usage": {
+    "prompt_tokens": 78948,
+    "completion_tokens": 32248,
+    "total_tokens": 111196,
+    "call_count": 132,
+    "last_updated": "2026-06-09T11:07:00.963341"
+  }
+}

@@ -1,0 +1,396 @@
+{
+  "project_id": "proj_e89ec42efe38",
+  "name": "Unnamed Project",
+  "status": "graph_completed",
+  "created_at": "2026-04-23T10:21:52.233398",
+  "updated_at": "2026-04-23T10:34:31.887522",
+  "files": [
+    {
+      "filename": "01_scenario_brief.md",
+      "size": 1594
+    },
+    {
+      "filename": "05_distribution_and_triples.md",
+      "size": 1552
+    },
+    {
+      "filename": "04_video_content_and_risks.md",
+      "size": 1136
+    },
+    {
+      "filename": "08_media_ecosystem_and_framing.md",
+      "size": 3060
+    },
+    {
+      "filename": "07_prediction_requirement.txt",
+      "size": 1152
+    },
+    {
+      "filename": "06_evidence_snippets.md",
+      "size": 971
+    },
+    {
+      "filename": "03_prior_sentiment_and_analogues.md",
+      "size": 1176
+    },
+    {
+      "filename": "02_stakeholder_map.md",
+      "size": 1345
+    }
+  ],
+  "total_text_length": 12180,
+  "ontology": {
+    "entity_types": [
+      {
+        "name": "FinancialInstitution",
+        "description": "Banking and financial service providers that launch campaigns and manage public trust.",
+        "attributes": [
+          {
+            "name": "org_name",
+            "type": "text",
+            "description": "The official name of the bank or institution."
+          },
+          {
+            "name": "tech_reputation",
+            "type": "text",
+            "description": "Public perception of the institution's digital innovation and stability."
+          }
+        ],
+        "examples": [
+          "DBS Bank",
+          "OCBC",
+          "UOB"
+        ]
+      },
+      {
+        "name": "NewsAgency",
+        "description": "Mainstream and social-first media outlets that report on and frame public events.",
+        "attributes": [
+          {
+            "name": "agency_name",
+            "type": "text",
+            "description": "The name of the media organization."
+          },
+          {
+            "name": "editorial_tone",
+            "type": "text",
+            "description": "The typical framing style (e.g., objective, snarky, sensationalist)."
+          },
+          {
+            "name": "target_audience",
+            "type": "text",
+            "description": "The primary demographic that consumes this outlet's news."
+          }
+        ],
+        "examples": [
+          "The Straits Times",
+          "Mothership.sg",
+          "CNA",
+          "Rice Media"
+        ]
+      },
+      {
+        "name": "CreativeProfessional",
+        "description": "Individuals in the creative industry such as actors, directors, and designers.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The name of the creative professional."
+          },
+          {
+            "name": "specialization",
+            "type": "text",
+            "description": "Field of expertise (e.g., Filmmaking, Voice Acting)."
+          }
+        ],
+        "examples": [
+          "Local Filmmaker",
+          "Ad Agency Director",
+          "Voiceover Artist"
+        ]
+      },
+      {
+        "name": "DigitalNative",
+        "description": "Tech-savvy younger individuals who frequent forums and social media platforms.",
+        "attributes": [
+          {
+            "name": "online_handle",
+            "type": "text",
+            "description": "The username or pseudonym used on digital platforms."
+          },
+          {
+            "name": "primary_platform",
+            "type": "text",
+            "description": "The main platform where they engage (e.g., Reddit, TikTok)."
+          }
+        ],
+        "examples": [
+          "Reddit r/singapore User",
+          "HardwareZone Member",
+          "TikTok Creator"
+        ]
+      },
+      {
+        "name": "SeniorCitizen",
+        "description": "Older individuals who are often the target of anti-scam education and vulnerable to fraud.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The name of the individual."
+          },
+          {
+            "name": "trust_source",
+            "type": "text",
+            "description": "The primary source of information they trust (e.g., TV news, Facebook)."
+          }
+        ],
+        "examples": [
+          "Elderly Resident",
+          "Retiree",
+          "Ah Ma"
+        ]
+      },
+      {
+        "name": "RegulatoryBody",
+        "description": "Government or statutory agencies that oversee banking, security, and public welfare.",
+        "attributes": [
+          {
+            "name": "agency_name",
+            "type": "text",
+            "description": "The name of the government or regulatory entity."
+          },
+          {
+            "name": "policy_focus",
+            "type": "text",
+            "description": "The primary area of regulation (e.g., Cybersecurity, Financial Stability)."
+          }
+        ],
+        "examples": [
+          "Monetary Authority of Singapore (MAS)",
+          "Singapore Police Force (SPF)"
+        ]
+      },
+      {
+        "name": "TechAnalyst",
+        "description": "Experts who provide professional commentary on technology, AI, and cybersecurity.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The name of the analyst or expert."
+          },
+          {
+            "name": "expertise_area",
+            "type": "text",
+            "description": "Specific field of knowledge (e.g., Generative AI, Malware)."
+          }
+        ],
+        "examples": [
+          "Cybersecurity Researcher",
+          "AI Ethicist",
+          "Tech Blogger"
+        ]
+      },
+      {
+        "name": "ContentCreator",
+        "description": "Social media influencers and meme-makers who amplify or parody content.",
+        "attributes": [
+          {
+            "name": "social_handle",
+            "type": "text",
+            "description": "The public handle or brand name."
+          },
+          {
+            "name": "follower_base",
+            "type": "text",
+            "description": "The size and type of audience reached."
+          }
+        ],
+        "examples": [
+          "Instagram Influencer",
+          "Meme Page Admin"
+        ]
+      },
+      {
+        "name": "Person",
+        "description": "A general individual or netizen who does not fit into specific professional or demographic catego...",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The name or display name of the person."
+          },
+          {
+            "name": "role_description",
+            "type": "text",
+            "description": "A brief description of their role in the discourse."
+          }
+        ],
+        "examples": [
+          "Average Netizen",
+          "Concerned Citizen",
+          "Facebook Commenter"
+        ]
+      },
+      {
+        "name": "Organization",
+        "description": "A general group, association, or company not covered by specific institutional types.",
+        "attributes": [
+          {
+            "name": "org_name",
+            "type": "text",
+            "description": "The name of the organization."
+          },
+          {
+            "name": "org_type",
+            "type": "text",
+            "description": "The nature of the organization (e.g., NGO, Local Business)."
+          }
+        ],
+        "examples": [
+          "Local Production House",
+          "Consumer Rights Group",
+          "Alumni Association"
+        ]
+      }
+    ],
+    "edge_types": [
+      {
+        "name": "REPORTS_ON",
+        "description": "A media outlet covers news or events related to an entity.",
+        "source_targets": [
+          {
+            "source": "NewsAgency",
+            "target": "FinancialInstitution"
+          },
+          {
+            "source": "NewsAgency",
+            "target": "RegulatoryBody"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "CRITICIZES",
+        "description": "Expressing negative feedback or opposition towards an entity's actions.",
+        "source_targets": [
+          {
+            "source": "CreativeProfessional",
+            "target": "FinancialInstitution"
+          },
+          {
+            "source": "DigitalNative",
+            "target": "FinancialInstitution"
+          },
+          {
+            "source": "ContentCreator",
+            "target": "FinancialInstitution"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "ANALYZES",
+        "description": "Providing technical or professional evaluation of a campaign or technology.",
+        "source_targets": [
+          {
+            "source": "TechAnalyst",
+            "target": "FinancialInstitution"
+          },
+          {
+            "source": "TechAnalyst",
+            "target": "RegulatoryBody"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "CONSUMES_NEWS_FROM",
+        "description": "An individual relies on a specific media outlet for information.",
+        "source_targets": [
+          {
+            "source": "SeniorCitizen",
+            "target": "NewsAgency"
+          },
+          {
+            "source": "DigitalNative",
+            "target": "NewsAgency"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "AMPLIFIES",
+        "description": "Spreading or highlighting the opinions or content of another entity.",
+        "source_targets": [
+          {
+            "source": "NewsAgency",
+            "target": "DigitalNative"
+          },
+          {
+            "source": "ContentCreator",
+            "target": "DigitalNative"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "REGULATES",
+        "description": "Exercising legal or policy oversight over an institution.",
+        "source_targets": [
+          {
+            "source": "RegulatoryBody",
+            "target": "FinancialInstitution"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "MOCKS",
+        "description": "Creating satirical content or memes about an entity's output.",
+        "source_targets": [
+          {
+            "source": "DigitalNative",
+            "target": "FinancialInstitution"
+          },
+          {
+            "source": "ContentCreator",
+            "target": "FinancialInstitution"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "TRUSTS",
+        "description": "A relationship of confidence in the information or services provided.",
+        "source_targets": [
+          {
+            "source": "SeniorCitizen",
+            "target": "FinancialInstitution"
+          },
+          {
+            "source": "SeniorCitizen",
+            "target": "NewsAgency"
+          }
+        ],
+        "attributes": []
+      }
+    ]
+  },
+  "analysis_summary": "该本体设计紧扣DBS银行GenAI反诈视频事件。实体类型涵盖了发起方（金融机构）、监管方（政府机构）、传播方（各类媒体与KOL）以及受影响的各利益相关方（创意专业人士、技术青年、老年人）。关系类型重点模拟了社媒环境下的互动模式，如媒体报道、技术分析、舆论嘲讽和负面批评，旨在捕捉“技术创新”与“讽刺争议”之间的舆论张力。",
+  "graph_id": "mirofish_local_936592c0682640a1",
+  "graph_build_task_id": "98250af7-aa13-4838-82c0-1392af366885",
+  "simulation_requirement": "Based on the provided 8-file seed dossier, initialize a 7-day multi-agent swarm simulation to predict the public and media reception of DBS Bank’s fully GenAI-generated anti-scam video campaign.\r\n\r\nRun the simulation across three distinct digital environments simultaneously:\r\n1. Rapid-Reaction / Viral (TikTok/Instagram-like)\r\n2. Long-form Threaded Debate (Reddit r/singapore / HardwareZone-like)\r\n3. Mainstream & Social Local Media (Mothership, Straits Times, Rice Media)\r\n\r\nAs the swarm interacts, please observe the tensions between the \"Vulnerable Elderly,\" \"Tech-Savvy Youth,\" and \"Local Creatives.\" \r\n\r\nOutput a comprehensive Prediction and Action Report containing the following 5 sections:\r\n\r\n1. THE SENTIMENT TRAJECTORY (Day 1 to Day 7)\r\nProvide a chronological breakdown of the public mood. How does sentiment shift from the initial organic release (social media and opt-in app viewing on Day 1) to the broader discourse by Day 3, and where does it settle by Day 7? Provide a projected Positive / Negative / Confused sentiment split.\r\n\r\n2. THE \"EASTER EGG\" HUNT & NARRATIVE CASCADES\r\nTrace exactly how the narratives jump across platforms. When eagle-eyed Tech-Savvy Youth inevitably spot the subtle background morphing artifact at the 1:14 mark, does it become a viral meme amplified by Mothership? Or, because the foreground is flawless, does the public largely ignore it and focus instead on the ethics of the AI durian auntie? How do the Elderly react when they encounter these Reddit/Mothership debates on Facebook?\r\n\r\n3. THE CORE DEBATES: IRONY vs. INNOVATION\r\nAnalyze the debate vectors. Does the explicit AI disclosure successfully frame DBS as \"innovative and transparent\"? Or does the swarm fixate on the \"irony\" of using GenAI to fight GenAI scams and complain about \"record profits but cheaping out on local actors\"? \r\n\r\n4. EFFICACY OF THE SCAM WARNING\r\nUltimately, does the medium ruin the message? Determine if the target audience (vulnerable demographics) actually learns the anti-scam lesson, or if the lack of human empathy and the meta-discourse around AI production distract entirely from the educational goal.\r\n\r\n5. ACTIONABLE PR CRISIS MITIGATION\r\nBased on how the simulation resolves, what should the DBS PR team do? Provide 3 specific, actionable recommendations on how to respond to the simulated reactions, handle media queries from tech/culture sites, or adjust the campaign's ongoing rollout.",
+  "chunk_size": 500,
+  "chunk_overlap": 50,
+  "error": null,
+  "token_usage": {
+    "prompt_tokens": 47760,
+    "completion_tokens": 16339,
+    "total_tokens": 64099,
+    "call_count": 68,
+    "last_updated": "2026-04-23T10:34:31.431833"
+  }
+}

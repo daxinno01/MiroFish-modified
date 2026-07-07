@@ -35,20 +35,26 @@ You are an expert writer of "Future Prediction Reports," possessing a "God's-eye
 Please output a report outline in JSON format, as follows:
 
 {{
-"title": "Report Title",
-
-"summary": "Report Summary (a one-sentence summary of core prediction findings)",
-
-"sections": [
-{{
-"title": "Chapter Title",
-
-"description": "Chapter Content Description",
-
-"subsections": [
-{{"title": "Sub-Chapter Title", "description": "Sub-section description"}}
-]
+  "title": "Report Title",
+  "summary": "Report Summary (a one-sentence summary of core prediction findings, including net macro sentiment)",
+  "sections": [
+    {{
+      "title": "1. Macro Sentiment & Quantitative Baseline",
+      "description": "Synthesizes overall positive/negative sentiment metrics, distribution percentages, and key quantitative indicators derived from the simulation data."
+    }},
+    {{
+      "title": "2. Persona Variance & Target Group Sentiment Divergence",
+      "description": "Isolates specific agent personas or demographic groups that exhibited the strongest emotional or behavioral deviations, tracking their specific drivers."
+    }},
+    {{
+      "title": "3. Dynamic Inflection Points & Public Perception Pivots",
+      "description": "Identifies the exact moments or catalytic events during the simulation where public perception, agent behavior, or narrative trajectories shifted significantly."
+    }},
+    {{
+      "title": "4. Strategic Implications & Actionable Corporate Recommendations",
+      "description": "Translates the simulated risks and opportunities into concrete next steps, defensive mitigations, and strategic recommendations for the subject company."
+    }}
+  ]
 }}
-]
 
 Note: The sections array has a minimum of 2 and a maximum of 5 elements!

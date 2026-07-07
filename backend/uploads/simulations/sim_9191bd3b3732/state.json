@@ -1,0 +1,26 @@
+{
+  "simulation_id": "sim_9191bd3b3732",
+  "project_id": "proj_19dfb0952a1f",
+  "graph_id": "mirofish_local_911c0bf069664ecb",
+  "enable_twitter": true,
+  "enable_reddit": true,
+  "status": "failed",
+  "entities_count": 79,
+  "profiles_count": 79,
+  "entity_types": [
+    "Scammer",
+    "BankCustomer",
+    "Bank",
+    "Person",
+    "Executive",
+    "Organization"
+  ],
+  "config_generated": false,
+  "config_reasoning": "",
+  "current_round": 0,
+  "twitter_status": "not_started",
+  "reddit_status": "not_started",
+  "created_at": "2026-05-25T09:13:23.043146",
+  "updated_at": "2026-05-25T09:18:20.118271",
+  "error": "SimulationConfigGenerator._generate_agent_configs_batch() got an unexpected keyword argument 'simulation_requirement'"
+}

@@ -1,0 +1,44 @@
+### 1. Executive Summary
+This image serves as a transitional slide in an informational series (the 3rd image of a Facebook post) focused on financial security and scam prevention. It functions as a "rebuttal" or "counter-point" to a previously established timeframe (presumably a 12-hour cooling-off period or transaction delay), emphasizing that scam operations often extend over days or weeks through psychological manipulation and coaching.
+
+### 2. OCR / Text Extraction
+*   **[Header - Large, Bold, Red]**: BUT
+*   **[Sub-header - Bold, Black]**: scammers don’t stop at 12 hours.
+*   **[Body Text - Regular, Black]**: Many scams, like:
+    *   **[Bullet Point - Red]**: love scams
+    *   **[Bullet Point - Red]**: fake government or bank officials
+    *   **[Bullet Point - Red]**: investment scams
+*   **[Body Text - Regular, Black]**: happen over days or weeks, with scammers coaching victims step by step.
+*   **[Closing Statement - Black with Red Emphasis]**: That’s why **awareness and multiple protections** still matter.
+
+### 3. Entity Identification
+*   **Actors/Roles**:
+    *   Scammers (Perpetrators)
+    *   Victims (Targets)
+    *   Government officials (Impersonated entities)
+    *   Bank officials (Impersonated entities)
+*   **Fraud Categories (Products of Deception)**:
+    *   Love scams
+    *   Investment scams
+    *   Impersonation scams (Government/Bank)
+*   **Temporal Metrics**:
+    *   12 hours
+    *   Days
+    *   Weeks
+*   **Concepts/Solutions**:
+    *   Awareness
+    *   Multiple protections
+
+### 4. Structural Relationships
+*   **Temporal Contrast**: The text "12 hours" is positioned as an insufficient timeframe compared to the actual duration of "days or weeks" required for complex scams.
+*   **Taxonomy**: "Love scams," "fake government or bank officials," and "investment scams" are presented as specific subsets of the broader category "Many scams."
+*   **Action/Process**: "Scammers" (Entity) perform the action of "coaching" directed at "victims" (Entity) through a "step by step" methodology.
+*   **Causal Link**: The persistence and duration of scams (Problem) lead to the stated necessity for "awareness and multiple protections" (Solution).
+*   **Visual Hierarchy**: The large red "BUT" establishes a logical pivot from the content of the preceding image in the sequence.
+
+### 5. Visual Data Translation
+*   **Layout**: Centered text on a light gray, textured background.
+*   **Color Logic**:
+    *   **Red**: Used for the primary conjunction ("BUT"), bullet points, and the core solution ("awareness and multiple protections") to draw focus to critical warnings and actions.
+    *   **Black**: Used for standard informational text and the refutation of the 12-hour timeframe.
+*   **Typography**: Sans-serif font. The word "BUT" is approximately triple the size of the body text, indicating a high-priority logical shift.

@@ -1,0 +1,28 @@
+{
+  "simulation_id": "sim_4517204c5fb8",
+  "project_id": "proj_cb8bb8a5cb16",
+  "graph_id": "mirofish_local_46bef0273a2548b7",
+  "enable_twitter": true,
+  "enable_reddit": true,
+  "status": "running",
+  "entities_count": 103,
+  "profiles_count": 103,
+  "entity_types": [
+    "Organization",
+    "Executive",
+    "GovernmentOfficial",
+    "RetailCustomer",
+    "Bank",
+    "Person",
+    "Shareholder",
+    "FinancialAnalyst"
+  ],
+  "config_generated": true,
+  "config_reasoning": "时间配置: Simulation covers a 7-day period to capture the full cycle of public reaction to DBS's executive pay news. Peak hours include lunch breaks (12-13) and evening leisure time (19-22) when social media activity in Singapore/China typically surges. Agents are limited to the 10 specified personas. Reputational risk is predicted at 8/10 due to the stark contrast between record bank profits and the rising cost of living for low-income workers. The primary point of anger is identified as structural income inequality and the 'tone-deaf' nature of high executive bonuses during a period of high inflation and GST hikes. | 事件配置: 该配置模拟了社会各阶层对DBS业绩及CEO调薪的典型反应。通过对比高管的高额薪酬与普通消费者的贷款压力（RetailCustomer）、生活成本压力（Low-income worker）以及专业分析（FinancialAnalyst），揭示了潜在的声誉危机。poster_type 严格遵循了提供的实体类型清单。 | Agent配置: 成功生成 103 个 | 初始帖子分配: 10 个帖子已分配发布者",
+  "current_round": 0,
+  "twitter_status": "not_started",
+  "reddit_status": "not_started",
+  "created_at": "2026-05-12T02:20:48.965287",
+  "updated_at": "2026-05-12T02:40:13.141238",
+  "error": null
+}

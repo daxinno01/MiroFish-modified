@@ -1,0 +1,26 @@
+{
+  "simulation_id": "sim_b1add7741d73",
+  "project_id": "proj_626316ab2775",
+  "graph_id": "mirofish_local_1f214f05e9b941de",
+  "enable_twitter": true,
+  "enable_reddit": true,
+  "status": "running",
+  "entities_count": 29,
+  "profiles_count": 29,
+  "entity_types": [
+    "Person",
+    "CreativeProfessional",
+    "Bank",
+    "Organization",
+    "SeniorCitizen",
+    "TechEnthusiast"
+  ],
+  "config_generated": true,
+  "config_reasoning": "时间配置: 模拟时长设定为168小时以覆盖完整的7天生命周期。由于新加坡与中国同属UTC+8时区，作息习惯高度一致。高峰时段（19-23点）针对Tech-Savvy Youth在Reddit和TikTok上的高活跃度，此时是‘彩蛋’挖掘和模因传播的高发期；工作时段（10-18点）主要模拟主流媒体（Straits Times, CNA）的发布和本地创意人士在LinkedIn/专业论坛的讨论；早间时段（6-9点）符合老年群体（Vulnerable Elderly）通过主流媒体和Facebook获取信息的习惯；凌晨（1-5点）设为低谷以符合人类生理作息。 | 事件配置: The configuration captures the multi-layered tension requested. It assigns the official launch to the Bank, viral commentary to Organizations (Mothership-style), technical critiques to Tech-Savvy Youth, and emotional/ethical pushback to Creative Professionals and Senior Citizens, ensuring the simulation reflects the specific 'Irony vs. Innovation' and 'Artifact Hunt' dynamics. | Agent配置: 成功生成 29 个 | 初始帖子分配: 8 个帖子已分配发布者",
+  "current_round": 0,
+  "twitter_status": "not_started",
+  "reddit_status": "not_started",
+  "created_at": "2026-04-24T09:56:18.311247",
+  "updated_at": "2026-04-24T10:26:57.649630",
+  "error": null
+}

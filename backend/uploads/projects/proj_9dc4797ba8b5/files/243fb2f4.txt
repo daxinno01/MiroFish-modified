@@ -1,0 +1,45 @@
+“No, cannot. You must get a degree first.”  
+
+That was what my parents said when I told them I wanted to be a pilot. 
+ 
+They weren’t against the dream – they just didn’t want me to start working without a degree to fall back on. 
+
+So I made them a promise: I’d get my degree first, then apply to the airlines. 
+
+For as long as I can remember, I had built my life around flying. I graduated from polytechnic with a near‑perfect GPA in Aviation and Business, convinced I was finally ready to head for the cockpit. 
+
+But first, National Service. 
+
+I jumped at the chance to apply for the Air Force, hoping it might lead to a career in aviation. Instead, I failed the medical assessment due to a minor condition – the criteria were much stricter for the military, as compared to commercial flying. 
+
+I completed my two years of service and went on to pursue a degree in Business and Marketing at the National University of Singapore. Determined to keep my promise to dad, I took classes every semester with no breaks, finishing my honours degree in three years instead of four. 
+
+I thought I was speeding towards my dream – but the timing could not have been worse. 
+
+By the time I graduated in June 2020, the world had changed. Covid-19 hit, the aviation industry froze, and that path was no longer realistic. Peers who had joined airlines ahead of me were laid off one by one. 
+
+Clearly, I was not going to be a pilot. I also couldn’t find a job related to what I studied in university. 
+
+So, I started over. 
+
+Software engineering felt like a good next step. I had no coding background, and honestly, it felt like starting from zero. I spent weeks learning on my own, studying university textbook that I had borrowed from friends. 
+
+I applied what I learnt to build my first portfolio website, and it helped me secure an SGUnited traineeship with DBS later that same year.  
+
+From there, I joined the DBS Skill Enhancement Education & Development (SEED) programme, which led me to a full‑time job at DBS as a software engineer in 2021. 
+
+The learning curve was steep. There were times I wondered if I – a self-trained engineer – really belonged. Over time, I realised that no one really has everything figured out – you just keep learning, keep trying, and slowly get better. 
+
+Today, I work on cross-border payments systems, building backend services that support real transactions across countries. It’s a space where things have to work – not just in theory, but in real life. 
+
+As the systems grew, I started using AI tools to help with testing, debugging, and validation – the repetitive parts of the work – so I could spend more time thinking through design and solving more complex problems. 
+
+I think of AI as a useful co-pilot – it can reduce toil and execute my commands, but it doesn’t replace judgement. At the end of the day, it’s not just about the code. I ‘m still responsible for where things go. I’m still the one flying the plane. 
+
+Expanding into new markets means thinking about people, regulations, and how everything comes together in one, balanced ecosystem. 
+
+It’s been a long journey, and I’m currently pursuing a Master’s in Analytics at Georgia Tech to deepen my understanding of data and decision-making. 
+
+Looking back, things didn’t turn out the way I expected, but they turned out in a way I’m grateful for. I’m excited for what’s ahead, and for where this flight path continues to lead. 
+
+– Derek Ang, Application Developer (Remittance), DBS #HumansofDBS 

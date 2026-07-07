@@ -1,0 +1,26 @@
+{
+  "simulation_id": "sim_9ec66c4527cb",
+  "project_id": "proj_d1ae04af3777",
+  "graph_id": "mirofish_local_9884cc530d804a94",
+  "enable_twitter": true,
+  "enable_reddit": true,
+  "status": "failed",
+  "entities_count": 9,
+  "profiles_count": 0,
+  "entity_types": [
+    "TalkingAnimal",
+    "Person",
+    "Organization",
+    "Corporation",
+    "Activist",
+    "Scientist"
+  ],
+  "config_generated": false,
+  "config_reasoning": "",
+  "current_round": 0,
+  "twitter_status": "not_started",
+  "reddit_status": "not_started",
+  "created_at": "2026-05-21T13:50:39.812770",
+  "updated_at": "2026-05-21T13:51:04.219031",
+  "error": "动态过滤后没有剩余的活跃实体，请考虑放宽模拟目标或检查图谱内容"
+}

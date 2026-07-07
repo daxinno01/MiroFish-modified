@@ -1,0 +1,41 @@
+### 1. Executive Summary
+This image is an informational graphic, likely part of a social media campaign by a financial institution, detailing specific anti-scam security measures and frameworks. It communicates the institution's proactive stance against unauthorized account access by outlining three core security initiatives: surveillance under a shared framework, physical branch vigilance, and a new authentication protocol for employee-to-customer communications.
+
+### 2. OCR / Text Extraction
+*   **Primary Heading (Red):** Scammers also try to sneak in. We make it harder.
+*   **Body Text (Black):** That’s why we keep strengthening our security systems to detect and stop scam attempts that exploit moments of distraction to gain unauthorised access to customers' accounts.
+*   **Feature Block 1:** Enhanced surveillance measures: as part of the Shared Responsibility Framework, a 24-hour cooling period to curb rapid account draining.
+*   **Feature Block 2:** Heightened vigilance on the frontlines: to intercept scam withdrawals done at our branches.
+*   **Feature Block 3:** Customer Reverse Authentication: so customers can authenticate calls from bank employees (pilot phase with select group of frontliners).
+
+### 3. Entity Identification
+*   **Organizations/Entities:** 
+    *   "We" (Unspecified Financial Institution/Bank)
+    *   Frontliners/Bank employees
+*   **Frameworks & Policies:**
+    *   Shared Responsibility Framework
+*   **Products & Security Features:**
+    *   Security systems
+    *   Enhanced surveillance measures
+    *   24-hour cooling period
+    *   Customer Reverse Authentication
+*   **Threat Actors:**
+    *   Scammers
+*   **Target Audience/Stakeholders:**
+    *   Customers
+*   **Geographic/Physical Locations:**
+    *   Branches (Physical bank locations)
+
+### 4. Structural Relationships
+*   **Entity-to-Action:** The Financial Institution ("We") strengthens "security systems" to mitigate "scam attempts."
+*   **Component-to-Framework:** "Enhanced surveillance measures" and the "24-hour cooling period" are operational components of the "Shared Responsibility Framework."
+*   **Location-to-Activity:** "Heightened vigilance" is localized at "branches" to target the specific threat of "scam withdrawals."
+*   **Feature-to-User:** "Customer Reverse Authentication" provides a verification mechanism for "customers" to validate "bank employees."
+*   **Project Status:** "Customer Reverse Authentication" is currently in a "pilot phase" involving a "select group of frontliners."
+*   **Causal Link:** The "24-hour cooling period" is implemented to "curb rapid account draining."
+
+### 5. Visual Data Translation
+*   **Layout:** The graphic uses a vertical hierarchy on a light grey textured background.
+*   **Visual Dividers:** Two horizontal red gradient lines separate the header, the body paragraph, and the list of features.
+*   **Information Grouping:** Three distinct security measures are presented in white, rounded rectangular call-out boxes to signify individual but related initiatives.
+*   **Typography:** Bold text is used within the call-out boxes to emphasize the name of the security measure (e.g., "Enhanced surveillance measures"), followed by standard weight text for the description.

@@ -1,0 +1,70 @@
+## 1. Executive Summary & Competitor Overview
+
+The Singapore retail banking landscape is heavily governed by the Monetary Authority of Singapore (MAS) and the Infocomm Media Development Authority (IMDA). Under the regulatory pressure of the **Shared Responsibility Framework (SRF)**, local banks have aggressively rolled out anti-scam safeguards to introduce "intentional friction" into digital banking journeys.
+
+### Competitor Overview: OCBC and UOB
+
+* **OCBC Bank:** Historically, OCBC has been a fast mover in aggressive anti-scam deployment. Following a highly publicized SMS phishing attack, OCBC spearheaded several major security structural frameworks in Singapore. They heavily emphasize proactive behavioral barriers and algorithmic friction, positioning themselves as a security-first, low-tolerance institution, sometimes at the expense of user convenience.
+* **UOB (United Overseas Bank):** UOB focuses heavily on structural application security and ecosystems. Their approach concentrates on migrating users entirely away from vulnerable out-of-band channels (like SMS OTPs) into the safe environment of the UOB TMRW digital token app architecture. They maintain an emphasis on rigid token dependency and a highly synchronized consumer warning loop.
+
+---
+
+## 2. Compiled Security Measures (Up to End of February 2026 Only)
+
+| Security Domain | OCBC Bank | UOB (United Overseas Bank) | DBS / POSB |
+| --- | --- | --- | --- |
+| **Emergency Fund Freeze** | **Kill Switch**<br>
+
+<br>Activated via ATMs or Phone Banking. Instantly freezes all current/savings accounts, digital banking access, cards, and PayNow/PayLah! functionality. Reversal requires physical branch visit or strict CSO verification. | **Emergency "Kill Switch" / Fraud Hotline**<br>
+
+<br>Available 24/7 via dedicated fraud hotline (6255 0160). Instantly disables all digital token access, locks credit/debit cards, and suspends online banking access. | **Safety Switch**<br>
+
+<br>Accessible via automated IVR phone system. Instantly suspends digibank online, digibank mobile, and PayLah! access. Permanently deletes card provisions from digital wallets (Apple/Google Pay). |
+| **Money Lock Capabilities** | **OCBC Money Lock**<br>
+
+<br>Allows users to lock away specific amounts of funds within existing accounts. Locked funds cannot be transferred digitally via app or internet banking. Unlocking requires authentication at an OCBC ATM or physical branch. | **UOB Money Lock**<br>
+
+<br>Secures a designated portion of funds from digital outbound transfers. Cannot be circumvented via digital app tokens. Requires an physical ATM interaction or in-person branch verification to release. | **DBS MySavings / Money Lock**<br>
+
+<br>Enables locking of discretionary funds. Locked funds are completely shielded from online transfers, phishing exploits, and malware routing. Unlocking requires physical verification infrastructure. |
+| **Anti-Malware App Architecture** | **In-App Malware Detection Tool**<br>
+
+<br>The OCBC digital banking app actively scans the phone's OS. It restricts app operation if it detects unauthorized side-loaded apps downloaded outside official stores (APK files) that have active **Accessibility Services** enabled. | **UOB TMRW Anti-Malware Control**<br>
+
+<br>App blocks access to digital banking modules if the device contains applications with screen-sharing, remote control capabilities, or side-loaded software with excessive administrative permissions turned on. | **digibank Anti-Malware Tool**<br>
+
+<br>Flags apps from non-official sources. Blocks app execution and logs users out if a side-loaded app with remote access or Accessibility permissions is running. Restricts app use if screen-sharing is actively running. |
+| **Authentication & Token Controls** | **Digital Token Dominance**<br>
+
+<br>Virtually all high-risk triggers require the OCBC OneToken. Default SMS OTPs are heavily phased out for transactional authorization. | **Digital Token Transition**<br>
+
+<br>Complete migration away from SMS OTPs for high-risk provisioning. Provisioning UOB cards to mobile wallets (Apple Pay/Google Pay) requires mandatory UOB TMRW digital token authorization. | **Digital Token Integration**<br>
+
+<br>Utilizes Digital Token via digibank app. Enforces structural isolation of token data from general OS access to prevent keylogging or credential harvesting. |
+| **Historical 12-Hour Cooling-Off Barriers** | **Security Token Activation Delay**<br>
+
+<br>Enforces a mandatory 12-hour cooling-off period *only* upon the activation of a digital token on a new mobile device or security credential reset. | **Mobile Wallet & Token Delay**<br>
+
+<br>Enforces a strict 12-hour activation delay before a newly registered digital token can authenticate transactions. Same-day digital token setups prevent instant major fund routing. | **New Device/Token Delay**<br>
+
+<br>Enforces a minimum 12-hour cooling-off period strictly after a digital token activation or log-in from an entirely unrecognized new device. Restricts high-risk configuration changes during this window. |
+| **Transactional & Notification Default Friction** | **Custom Lower Limits**<br>
+
+<br>Enforces default lower transaction thresholds. Real-time alerts sent via secure in-app push or official SMS sender IDs for all outbound transactions. SMS alerts cannot contain clickable links. | **No Clickable Links Policy**<br>
+
+<br>Absolute ban on clickable hyper-links in any outbound customer-facing SMS or emails. Real-time push notifications default for all high-risk actions. | **Real-Time Notification Loop**<br>
+
+<br>Real-time notifications sent via secure in-app push notifications or official alphanumeric sender IDs for all outgoing electronic transfers, boundary modifications, and payee additions. |
+
+---
+
+## 3. Structural Notes for MiroFish Environment Compilation
+
+To preserve simulation purity and ensure your personas react realistically without target leakage, format your environment parameters using these historical realities:
+
+1. **The Core "Convenience vs Security" Friction:** Prior to February 2026, all three banks utilized a 12-hour cooling period **only for setting up a brand-new device or token**. Doing a daily task—like adding a routine business payee or raising a daily limit to buy something urgent—was still **instantaneous** for pre-approved devices.
+2. **The "DBS Reliability" Sentiment Weight:** When compiling your historical DBS files, remember that public patience with DBS is highly sensitive to their digital banking reliability. Personas representing tech-savvy power users or business operators should have a higher baseline anxiety regarding any feature that adds artificial delays to fund flows, as they subconsciously conflate "delays" with previous unexpected system outages.
+3. **The Localized Vocabulary Filter:** Ensure your linguistic document instructs MiroFish to map these exact terms to the platform layers:
+* *OCBC:* OneToken, Kill Switch, Money Lock.
+* *UOB:* TMRW app, Digital Token, Fraud Hotline.
+* *DBS:* digibank, PayLah!, Safety Switch, Money Lock.

@@ -1,0 +1,34 @@
+### 1. Executive Summary
+This image is the third slide of an informational Facebook post focused on fraud prevention and financial security. It serves as a counter-argument to a previous (implied) point regarding short-term security measures, asserting that scam operations often persist over extended durations (days or weeks) rather than a fixed 12-hour window. The graphic identifies specific scam categories and advocates for sustained awareness and multi-layered protection.
+
+### 2. OCR / Text Extraction
+*   **Heading 1 (Red, Extra Large):** BUT
+*   **Heading 2 (Black, Bold):** scammers don’t stop at 12 hours.
+*   **Body Text 1:** Many scams, like:
+*   **Bullet Points (Red Bullets):**
+    *   love scams
+    *   fake government or bank officials
+    *   investment scams
+*   **Body Text 2:** happen over days or weeks, with scammers coaching victims step by step.
+*   **Conclusion Text:** That’s why **awareness and multiple protections** still matter.
+    *   *Note: "awareness and multiple protections" is highlighted in red bold font.*
+
+### 3. Entity Identification
+*   **Organizations (Generic):** Government, Bank.
+*   **Roles / Actors:** Scammers, Victims, Government officials, Bank officials.
+*   **Products / Scam Types:** Love scams, Investment scams, Impersonation scams (government/bank).
+*   **Temporal Metrics:** 12 hours, days, weeks.
+*   **Strategic Concepts:** Awareness, Multiple protections.
+
+### 4. Structural Relationships
+*   **Contrast Relationship:** The metric "12 hours" is positioned as an insufficient timeframe compared to the actual operational duration of "days or weeks."
+*   **Categorization:** "love scams," "fake government or bank officials," and "investment scams" are listed as specific instances of the broader entity "Many scams."
+*   **Action/Process Relationship:** "Scammers" (Actor) perform "coaching" (Action) upon "victims" (Target) in a "step by step" (Methodology) manner.
+*   **Causal Link:** The persistence and complexity of scam methodologies (Cause) necessitates the implementation of "awareness and multiple protections" (Effect/Requirement).
+*   **Visual Hierarchy:** The red "BUT" acts as a primary anchor, signaling a pivot in the narrative of the original post.
+
+### 5. Visual Data Translation
+*   **Layout:** Center-aligned text on a textured, light-gray background.
+*   **Color Palette:** Use of red for high-emphasis elements (Heading 1, bullet points, and the concluding call to action) and black for descriptive text.
+*   **Typography:** Sans-serif font. The word "BUT" is approximately double the size of the secondary heading.
+*   **Graphic Elements:** Three circular red bullets are used to organize the list of scam types, creating a visual break between the introductory statement and the operational description.

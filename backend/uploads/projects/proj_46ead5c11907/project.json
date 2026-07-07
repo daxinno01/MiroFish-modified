@@ -1,0 +1,342 @@
+{
+  "project_id": "proj_46ead5c11907",
+  "name": "Unnamed Project",
+  "status": "graph_completed",
+  "created_at": "2026-04-27T17:06:16.682313",
+  "updated_at": "2026-04-27T17:07:09.397972",
+  "files": [
+    {
+      "filename": "scenario.txt",
+      "size": 297
+    }
+  ],
+  "total_text_length": 319,
+  "ontology": {
+    "entity_types": [
+      {
+        "name": "Bank",
+        "description": "Financial institutions like DBS that deploy AI for telemarketing and customer service.",
+        "attributes": [
+          {
+            "name": "bank_name",
+            "type": "text",
+            "description": "The official name of the banking institution."
+          },
+          {
+            "name": "digital_strategy",
+            "type": "text",
+            "description": "The bank's approach to AI and automation."
+          }
+        ],
+        "examples": [
+          "DBS Bank",
+          "OCBC Bank"
+        ]
+      },
+      {
+        "name": "BankCustomer",
+        "description": "Individuals who hold accounts or are targeted by bank marketing campaigns.",
+        "attributes": [
+          {
+            "name": "customer_segment",
+            "type": "text",
+            "description": "The demographic or wealth tier of the customer."
+          },
+          {
+            "name": "tech_adoption_level",
+            "type": "text",
+            "description": "How comfortable the customer is with AI interactions."
+          }
+        ],
+        "examples": [
+          "Retail Customer",
+          "Wealth Management Client"
+        ]
+      },
+      {
+        "name": "TechProvider",
+        "description": "Companies providing the underlying AI models and voice synthesis technology.",
+        "attributes": [
+          {
+            "name": "company_name",
+            "type": "text",
+            "description": "The name of the technology firm."
+          },
+          {
+            "name": "ai_specialization",
+            "type": "text",
+            "description": "The specific AI field, e.g., Voice Synthesis, LLM."
+          }
+        ],
+        "examples": [
+          "ElevenLabs",
+          "OpenAI"
+        ]
+      },
+      {
+        "name": "FinancialRegulator",
+        "description": "Government bodies that oversee banking practices and consumer protection.",
+        "attributes": [
+          {
+            "name": "agency_name",
+            "type": "text",
+            "description": "The name of the regulatory body."
+          },
+          {
+            "name": "regulatory_focus",
+            "type": "text",
+            "description": "Primary area of oversight, e.g., Data Privacy, AI Ethics."
+          }
+        ],
+        "examples": [
+          "Monetary Authority of Singapore (MAS)",
+          "PDPC"
+        ]
+      },
+      {
+        "name": "TechJournalist",
+        "description": "Media professionals who report on and critique new technology deployments.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The journalist's name."
+          },
+          {
+            "name": "media_outlet",
+            "type": "text",
+            "description": "The publication they write for."
+          }
+        ],
+        "examples": [
+          "TechCrunch Reporter",
+          "Straits Times Tech Editor"
+        ]
+      },
+      {
+        "name": "SalesRepresentative",
+        "description": "Human employees who take over the sales process after the AI interaction.",
+        "attributes": [
+          {
+            "name": "employee_role",
+            "type": "text",
+            "description": "The specific job title within the sales department."
+          },
+          {
+            "name": "department_unit",
+            "type": "text",
+            "description": "The business unit they belong to."
+          }
+        ],
+        "examples": [
+          "Telemarketing Agent",
+          "Relationship Manager"
+        ]
+      },
+      {
+        "name": "ConsumerAdvocate",
+        "description": "Groups or individuals who voice concerns regarding consumer rights and AI transparency.",
+        "attributes": [
+          {
+            "name": "advocacy_group",
+            "type": "text",
+            "description": "The name of the organization or movement."
+          },
+          {
+            "name": "primary_concern",
+            "type": "text",
+            "description": "The main issue they advocate for, e.g., Anti-Scam, Transparency."
+          }
+        ],
+        "examples": [
+          "CASE Singapore",
+          "Privacy Watchdog"
+        ]
+      },
+      {
+        "name": "AIResearcher",
+        "description": "Academic or industry experts who analyze the social impact of GenAI.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The researcher's name."
+          },
+          {
+            "name": "expertise_area",
+            "type": "text",
+            "description": "Field of study, e.g., Human-AI Interaction."
+          }
+        ],
+        "examples": [
+          "University Professor",
+          "AI Ethics Consultant"
+        ]
+      },
+      {
+        "name": "Person",
+        "description": "General individual fallback for any person not covered by specific roles.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The person's full name."
+          },
+          {
+            "name": "social_media_handle",
+            "type": "text",
+            "description": "Their online identity."
+          }
+        ],
+        "examples": [
+          "Social Media User",
+          "Bystander"
+        ]
+      },
+      {
+        "name": "Organization",
+        "description": "General organizational fallback for entities not covered by specific types.",
+        "attributes": [
+          {
+            "name": "org_name",
+            "type": "text",
+            "description": "The name of the organization."
+          },
+          {
+            "name": "industry_type",
+            "type": "text",
+            "description": "The sector the organization operates in."
+          }
+        ],
+        "examples": [
+          "Local SME",
+          "Community Club"
+        ]
+      }
+    ],
+    "edge_types": [
+      {
+        "name": "CALLS_TO",
+        "description": "The act of initiating a telemarketing call to a customer.",
+        "source_targets": [
+          {
+            "source": "Bank",
+            "target": "BankCustomer"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "PROVIDES_TECH_TO",
+        "description": "Supplying AI models or voice synthesis tools to a bank.",
+        "source_targets": [
+          {
+            "source": "TechProvider",
+            "target": "Bank"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "REGULATES",
+        "description": "Overseeing the operations and compliance of an entity.",
+        "source_targets": [
+          {
+            "source": "FinancialRegulator",
+            "target": "Bank"
+          },
+          {
+            "source": "FinancialRegulator",
+            "target": "TechProvider"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "REPORTS_ON",
+        "description": "Journalistic coverage of an event or entity.",
+        "source_targets": [
+          {
+            "source": "TechJournalist",
+            "target": "Bank"
+          },
+          {
+            "source": "TechJournalist",
+            "target": "TechProvider"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "TRANSFERS_TO",
+        "description": "Handing over a customer from an AI interaction to a human staff member.",
+        "source_targets": [
+          {
+            "source": "Bank",
+            "target": "SalesRepresentative"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "CRITICIZES",
+        "description": "Expressing negative feedback or concern regarding AI practices.",
+        "source_targets": [
+          {
+            "source": "ConsumerAdvocate",
+            "target": "Bank"
+          },
+          {
+            "source": "BankCustomer",
+            "target": "Bank"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "WORKS_FOR",
+        "description": "Employment relationship between an individual and an organization.",
+        "source_targets": [
+          {
+            "source": "SalesRepresentative",
+            "target": "Bank"
+          },
+          {
+            "source": "AIResearcher",
+            "target": "Organization"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "ADVISES",
+        "description": "Providing expert opinion or guidance on AI deployment.",
+        "source_targets": [
+          {
+            "source": "AIResearcher",
+            "target": "Bank"
+          },
+          {
+            "source": "AIResearcher",
+            "target": "FinancialRegulator"
+          }
+        ],
+        "attributes": []
+      }
+    ]
+  },
+  "analysis_summary": "本设计围绕星展银行（DBS）使用ElevenLabs生成的GenAI进行自动营销这一事件，构建了涵盖银行、客户、技术提供商、监管机构及社会评论者的本体。重点在于模拟AI与人类互动的转接过程（TRANSFERS_TO），以及社会各界（记者、倡导者、研究员）对这种高度拟人化AI可能引发的隐私、信任和伦理问题的反应。通过区分具体角色（如SalesRepresentative）与兜底角色（Person），确保了模拟系统既能精确捕捉业务流程，也能容纳广泛的社会舆论参与者。",
+  "graph_id": "mirofish_local_b9706d8b733c4350",
+  "graph_build_task_id": "d327752a-505d-4eed-8edc-540ba4b1bc7a",
+  "simulation_requirement": "Predict the outcome as more people in the country experience receiving this call from a non-human.",
+  "chunk_size": 500,
+  "chunk_overlap": 50,
+  "error": null,
+  "token_usage": {
+    "prompt_tokens": 2515,
+    "completion_tokens": 2726,
+    "total_tokens": 5241,
+    "call_count": 3,
+    "last_updated": "2026-04-27T17:07:07.780456"
+  }
+}

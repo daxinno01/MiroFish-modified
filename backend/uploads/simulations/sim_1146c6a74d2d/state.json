@@ -1,0 +1,25 @@
+{
+  "simulation_id": "sim_1146c6a74d2d",
+  "project_id": "proj_690827143c44",
+  "graph_id": "mirofish_local_7fad49e75ec444d6",
+  "enable_twitter": true,
+  "enable_reddit": true,
+  "status": "stopped",
+  "entities_count": 11,
+  "profiles_count": 11,
+  "entity_types": [
+    "Corporation",
+    "Person",
+    "Scientist",
+    "TalkingAnimal",
+    "Organization"
+  ],
+  "config_generated": true,
+  "config_reasoning": "时间配置: 会说话的动物发现属于世界级重大突发事件，设置96小时（4天）以覆盖从最初曝光、官方介入到全球舆论极化完整周期。时间分配符合中国社交媒体用户习惯：早晨为资讯爆发期，工作时间是政府、科研机构与企业博弈的主战场，晚间21点左右达到公众讨论与网红营销的最高峰。考虑到事件的全球影响力和媒体24小时轮班制，深夜活跃度虽低但仍保留最低激活数以模拟国际资讯倒灌。 | 事件配置: The event configuration captures the friction between five sectors: scientific curiosity, state control, corporate greed, ethical advocacy, and spiritual questioning. Poster types were strictly mapped to the provided entity categories to ensure simulation compatibility. | Agent配置: 成功生成 11 个 | 初始帖子分配: 7 个帖子已分配发布者",
+  "current_round": 0,
+  "twitter_status": "not_started",
+  "reddit_status": "not_started",
+  "created_at": "2026-05-21T14:21:20.706952",
+  "updated_at": "2026-05-21T16:41:25.051083",
+  "error": null
+}

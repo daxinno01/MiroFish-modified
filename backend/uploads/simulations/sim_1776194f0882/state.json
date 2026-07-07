@@ -1,0 +1,27 @@
+{
+  "simulation_id": "sim_1776194f0882",
+  "project_id": "proj_11abcab9631a",
+  "graph_id": "mirofish_local_957b9d59addf4800",
+  "enable_twitter": true,
+  "enable_reddit": true,
+  "status": "stopped",
+  "entities_count": 50,
+  "profiles_count": 50,
+  "entity_types": [
+    "RegulatoryAuthority",
+    "InvestmentFirm",
+    "Organization",
+    "CommercialBank",
+    "FinancialAnalyst",
+    "BankExecutive",
+    "BankCustomer"
+  ],
+  "config_generated": true,
+  "config_reasoning": "时间配置: 模拟总时长设定为48小时，以覆盖DBS财报发布前的市场博弈预测及发布后24小时的股价实际波动。考虑到金融类话题特点，将上午9-11点（开盘及首波财报分析）与晚间19-22点（复盘及深度研报讨论）设为活跃高峰。新加坡与中国同属UTC+8时区，作息高度一致，凌晨时段设为低谷以符合散户与分析师的生理作息。 | 事件配置: The configuration captures the intersection of financial forecasting and institutional leadership transition. By utilizing the specified poster types, the simulation covers the perspectives of media/news (Organization), institutional investors (InvestmentFirm), executive leadership (BankExecutive), the corporation itself (CommercialBank), technical market experts (FinancialAnalyst), regulators (RegulatoryAuthority), and retail clients (BankCustomer), ensuring a multi-dimensional view of the earnings event. | Agent配置: 成功生成 50 个 | 初始帖子分配: 7 个帖子已分配发布者",
+  "current_round": 0,
+  "twitter_status": "not_started",
+  "reddit_status": "not_started",
+  "created_at": "2026-04-28T11:57:50.905044",
+  "updated_at": "2026-04-28T14:47:40.531122",
+  "error": null
+}

@@ -1,0 +1,359 @@
+{
+  "project_id": "proj_d75a2babd587",
+  "name": "Unnamed Project",
+  "status": "graph_building",
+  "created_at": "2026-04-28T17:12:27.553154",
+  "updated_at": "2026-04-28T17:12:53.722226",
+  "files": [
+    {
+      "filename": "DBS Earnings Prediction Research Plan.pdf",
+      "size": 422064
+    }
+  ],
+  "total_text_length": 30358,
+  "ontology": {
+    "entity_types": [
+      {
+        "name": "CommercialBank",
+        "description": "Major banking institutions providing financial services and issuing market reports.",
+        "attributes": [
+          {
+            "name": "bank_brand",
+            "type": "text",
+            "description": "The official brand name of the bank."
+          },
+          {
+            "name": "market_valuation",
+            "type": "text",
+            "description": "The current market capitalization or valuation status."
+          }
+        ],
+        "examples": [
+          "DBS Group Holdings",
+          "UOB",
+          "OCBC"
+        ]
+      },
+      {
+        "name": "Executive",
+        "description": "High-level leaders within financial or corporate organizations who influence strategy.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The full name of the executive."
+          },
+          {
+            "name": "professional_title",
+            "type": "text",
+            "description": "The current job title or role."
+          }
+        ],
+        "examples": [
+          "Tan Su Shan",
+          "Piyush Gupta"
+        ]
+      },
+      {
+        "name": "RegulatoryBody",
+        "description": "Government or international agencies that oversee financial markets and policies.",
+        "attributes": [
+          {
+            "name": "agency_title",
+            "type": "text",
+            "description": "The name of the regulatory agency."
+          },
+          {
+            "name": "regulatory_scope",
+            "type": "text",
+            "description": "The primary area of oversight (e.g., Monetary Policy)."
+          }
+        ],
+        "examples": [
+          "Monetary Authority of Singapore",
+          "US Federal Reserve"
+        ]
+      },
+      {
+        "name": "FinancialAnalyst",
+        "description": "Firms or professional individuals who provide market analysis and stock ratings.",
+        "attributes": [
+          {
+            "name": "firm_title",
+            "type": "text",
+            "description": "The name of the analytical firm."
+          },
+          {
+            "name": "analysis_focus",
+            "type": "text",
+            "description": "The specific sector or market they analyze."
+          }
+        ],
+        "examples": [
+          "UOB Kay Hian",
+          "S&P Global Ratings",
+          "Bloomberg Intelligence"
+        ]
+      },
+      {
+        "name": "MediaOutlet",
+        "description": "News organizations and financial media platforms that report on market events.",
+        "attributes": [
+          {
+            "name": "media_brand",
+            "type": "text",
+            "description": "The name of the news or media organization."
+          },
+          {
+            "name": "coverage_type",
+            "type": "text",
+            "description": "The primary focus of their reporting (e.g., Business, Tech)."
+          }
+        ],
+        "examples": [
+          "The Business Times",
+          "CNBC",
+          "The Straits Times"
+        ]
+      },
+      {
+        "name": "InstitutionalInvestor",
+        "description": "Large organizations that invest significant capital in financial markets.",
+        "attributes": [
+          {
+            "name": "entity_title",
+            "type": "text",
+            "description": "The name of the investment entity."
+          },
+          {
+            "name": "investment_strategy",
+            "type": "text",
+            "description": "The general approach to their portfolio."
+          }
+        ],
+        "examples": [
+          "Temasek Holdings",
+          "BlackRock"
+        ]
+      },
+      {
+        "name": "GovernmentDepartment",
+        "description": "State departments responsible for economic data and national policy.",
+        "attributes": [
+          {
+            "name": "department_title",
+            "type": "text",
+            "description": "The name of the government ministry or department."
+          },
+          {
+            "name": "economic_role",
+            "type": "text",
+            "description": "The department's role in the economy (e.g., Trade, Statistics)."
+          }
+        ],
+        "examples": [
+          "Ministry of Trade and Industry",
+          "Department of Statistics Singapore"
+        ]
+      },
+      {
+        "name": "CorporateClient",
+        "description": "Businesses that utilize banking services and participate in bank-led programs.",
+        "attributes": [
+          {
+            "name": "client_sector",
+            "type": "text",
+            "description": "The industry sector the business belongs to."
+          },
+          {
+            "name": "digital_maturity",
+            "type": "text",
+            "description": "Level of AI or digital adoption."
+          }
+        ],
+        "examples": [
+          "Singapore Refining Co.",
+          "SME Partners"
+        ]
+      },
+      {
+        "name": "Person",
+        "description": "General individuals, retail investors, or customers not fitting specific roles.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The name of the individual."
+          },
+          {
+            "name": "public_identity",
+            "type": "text",
+            "description": "Their identity in the social media context (e.g., Retail Investor)."
+          }
+        ],
+        "examples": [
+          "Retail Investor A",
+          "DBS Customer",
+          "Market Commentator"
+        ]
+      },
+      {
+        "name": "Organization",
+        "description": "General groups, associations, or entities not fitting specific categories.",
+        "attributes": [
+          {
+            "name": "org_title",
+            "type": "text",
+            "description": "The name of the organization."
+          },
+          {
+            "name": "sector_type",
+            "type": "text",
+            "description": "The general sector the organization operates in."
+          }
+        ],
+        "examples": [
+          "Enterprise Singapore",
+          "IMDA",
+          "Alumni Associations"
+        ]
+      }
+    ],
+    "edge_types": [
+      {
+        "name": "WORKS_FOR",
+        "description": "Indicates an individual's employment or leadership role in an organization.",
+        "source_targets": [
+          {
+            "source": "Executive",
+            "target": "CommercialBank"
+          },
+          {
+            "source": "Person",
+            "target": "Organization"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "REGULATES",
+        "description": "Indicates oversight or policy enforcement by a regulatory body.",
+        "source_targets": [
+          {
+            "source": "RegulatoryBody",
+            "target": "CommercialBank"
+          },
+          {
+            "source": "RegulatoryBody",
+            "target": "Organization"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "REPORTS_ON",
+        "description": "Indicates media coverage or news reporting on an entity.",
+        "source_targets": [
+          {
+            "source": "MediaOutlet",
+            "target": "CommercialBank"
+          },
+          {
+            "source": "MediaOutlet",
+            "target": "Executive"
+          },
+          {
+            "source": "MediaOutlet",
+            "target": "GovernmentDepartment"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "ANALYZES",
+        "description": "Indicates financial evaluation or rating of an entity.",
+        "source_targets": [
+          {
+            "source": "FinancialAnalyst",
+            "target": "CommercialBank"
+          },
+          {
+            "source": "FinancialAnalyst",
+            "target": "GovernmentDepartment"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "INVESTS_IN",
+        "description": "Indicates capital investment or shareholding.",
+        "source_targets": [
+          {
+            "source": "InstitutionalInvestor",
+            "target": "CommercialBank"
+          },
+          {
+            "source": "Person",
+            "target": "CommercialBank"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "PARTNERS_WITH",
+        "description": "Indicates a collaborative business relationship or program participation.",
+        "source_targets": [
+          {
+            "source": "CommercialBank",
+            "target": "CorporateClient"
+          },
+          {
+            "source": "CommercialBank",
+            "target": "Organization"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "COMPETES_WITH",
+        "description": "Indicates a competitive relationship in the same market.",
+        "source_targets": [
+          {
+            "source": "CommercialBank",
+            "target": "CommercialBank"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "ISSUES_GUIDANCE",
+        "description": "Indicates official economic forecasts or policy statements.",
+        "source_targets": [
+          {
+            "source": "GovernmentDepartment",
+            "target": "CommercialBank"
+          },
+          {
+            "source": "RegulatoryBody",
+            "target": "MediaOutlet"
+          }
+        ],
+        "attributes": []
+      }
+    ]
+  },
+  "analysis_summary": "本设计围绕星展银行（DBS）2026年Q1财报预测及社媒舆论环境，识别了银行、高管、监管机构、分析师、媒体及投资者等核心发声主体。通过定义这些具体实体类型及其互动关系（如监管、分析、投资、报道），旨在模拟财报发布前后各方在社交媒体上的立场表达、信息传播及对股价波动的连锁反应。",
+  "graph_id": null,
+  "graph_build_task_id": "a11e7c08-91d5-45e8-a91a-adf5ce1350c6",
+  "simulation_requirement": "Predict whether DBS's Q1 2026 will beat analyst estimates and simulate the stock price movement 24 hours post-release.",
+  "chunk_size": 500,
+  "chunk_overlap": 50,
+  "error": null,
+  "token_usage": {
+    "prompt_tokens": 10321,
+    "completion_tokens": 2153,
+    "total_tokens": 12474,
+    "call_count": 1,
+    "last_updated": "2026-04-28T17:12:52.940893"
+  }
+}

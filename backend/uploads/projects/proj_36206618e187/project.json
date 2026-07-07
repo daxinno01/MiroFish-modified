@@ -1,0 +1,370 @@
+{
+  "project_id": "proj_36206618e187",
+  "name": "Unnamed Project",
+  "status": "graph_completed",
+  "created_at": "2026-05-21T11:54:51.384426",
+  "updated_at": "2026-05-21T11:55:27.500527",
+  "files": [
+    {
+      "filename": "New Text Document.txt",
+      "size": 37
+    }
+  ],
+  "total_text_length": 69,
+  "ontology": {
+    "entity_types": [
+      {
+        "name": "TalkingAnimal",
+        "description": "The discovered non-human entity capable of verbal communication and social interaction.",
+        "attributes": [
+          {
+            "name": "species_type",
+            "type": "text",
+            "description": "The biological species of the animal."
+          },
+          {
+            "name": "vocal_range",
+            "type": "text",
+            "description": "The complexity and style of the animal's speech."
+          }
+        ],
+        "examples": [
+          "Leo the Talking Lion",
+          "Koko the Speaking Gorilla"
+        ]
+      },
+      {
+        "name": "Scientist",
+        "description": "Researchers and academics studying the biological and linguistic aspects of the discovery.",
+        "attributes": [
+          {
+            "name": "field_of_expertise",
+            "type": "text",
+            "description": "The specific scientific domain like Biology or Linguistics."
+          },
+          {
+            "name": "academic_rank",
+            "type": "text",
+            "description": "The professional standing of the researcher."
+          }
+        ],
+        "examples": [
+          "Dr. Jane Smith",
+          "Professor Alan Turing"
+        ]
+      },
+      {
+        "name": "Journalist",
+        "description": "Media professionals reporting on the discovery and its societal implications.",
+        "attributes": [
+          {
+            "name": "media_beat",
+            "type": "text",
+            "description": "The specific area of reporting, e.g., Science, Ethics."
+          },
+          {
+            "name": "press_credentials",
+            "type": "text",
+            "description": "The official status or agency affiliation."
+          }
+        ],
+        "examples": [
+          "Clark Kent",
+          "Christiane Amanpour"
+        ]
+      },
+      {
+        "name": "Activist",
+        "description": "Individuals advocating for the rights, protection, or liberation of the talking animal.",
+        "attributes": [
+          {
+            "name": "cause_focus",
+            "type": "text",
+            "description": "The specific goal, e.g., Legal Personhood, Habitat Protection."
+          },
+          {
+            "name": "influence_score",
+            "type": "text",
+            "description": "The reach of their advocacy on social media."
+          }
+        ],
+        "examples": [
+          "Greta Thunberg",
+          "Peter Singer"
+        ]
+      },
+      {
+        "name": "ReligiousLeader",
+        "description": "Spiritual figures interpreting the discovery through theological or moral lenses.",
+        "attributes": [
+          {
+            "name": "faith_tradition",
+            "type": "text",
+            "description": "The religion or spiritual path they represent."
+          },
+          {
+            "name": "clerical_title",
+            "type": "text",
+            "description": "The formal title within their hierarchy."
+          }
+        ],
+        "examples": [
+          "Pope Francis",
+          "Dalai Lama"
+        ]
+      },
+      {
+        "name": "GovernmentOfficial",
+        "description": "Politicians and regulators deciding the legal status and safety protocols for the animal.",
+        "attributes": [
+          {
+            "name": "jurisdiction_area",
+            "type": "text",
+            "description": "The region or department they govern."
+          },
+          {
+            "name": "political_party",
+            "type": "text",
+            "description": "The political affiliation of the official."
+          }
+        ],
+        "examples": [
+          "Secretary of State",
+          "Minister of Environment"
+        ]
+      },
+      {
+        "name": "TechExecutive",
+        "description": "Leaders of technology firms looking to monetize or utilize the animal's capabilities.",
+        "attributes": [
+          {
+            "name": "company_sector",
+            "type": "text",
+            "description": "The industry focus, e.g., AI, Entertainment."
+          },
+          {
+            "name": "strategic_intent",
+            "type": "text",
+            "description": "The primary goal for engaging with the discovery."
+          }
+        ],
+        "examples": [
+          "Elon Musk",
+          "Sam Altman"
+        ]
+      },
+      {
+        "name": "MediaOutlet",
+        "description": "Organizations that broadcast news and host public debates about the event.",
+        "attributes": [
+          {
+            "name": "editorial_stance",
+            "type": "text",
+            "description": "The general bias or perspective of the outlet."
+          },
+          {
+            "name": "broadcast_reach",
+            "type": "text",
+            "description": "The scale of the audience (Global, National, Local)."
+          }
+        ],
+        "examples": [
+          "BBC News",
+          "The New York Times"
+        ]
+      },
+      {
+        "name": "Person",
+        "description": "Any individual human actor not covered by specific professional categories.",
+        "attributes": [
+          {
+            "name": "personal_bio",
+            "type": "text",
+            "description": "A short description of the individual's background."
+          },
+          {
+            "name": "social_role",
+            "type": "text",
+            "description": "The role they play in the simulation, e.g., Netizen, Witness."
+          }
+        ],
+        "examples": [
+          "John Doe",
+          "Jane Smith"
+        ]
+      },
+      {
+        "name": "Organization",
+        "description": "Any collective entity or institution not covered by specific organizational categories.",
+        "attributes": [
+          {
+            "name": "org_mission",
+            "type": "text",
+            "description": "The primary purpose of the organization."
+          },
+          {
+            "name": "legal_status",
+            "type": "text",
+            "description": "The legal form, e.g., NGO, Corporation, Club."
+          }
+        ],
+        "examples": [
+          "The Global Ethics Committee",
+          "Local Pet Owners Association"
+        ]
+      }
+    ],
+    "edge_types": [
+      {
+        "name": "STUDIES",
+        "description": "A scientist or organization conducts research on the talking animal.",
+        "source_targets": [
+          {
+            "source": "Scientist",
+            "target": "TalkingAnimal"
+          },
+          {
+            "source": "Organization",
+            "target": "TalkingAnimal"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "REPORTS_ON",
+        "description": "A journalist or media outlet provides coverage of an entity or event.",
+        "source_targets": [
+          {
+            "source": "Journalist",
+            "target": "TalkingAnimal"
+          },
+          {
+            "source": "MediaOutlet",
+            "target": "TalkingAnimal"
+          },
+          {
+            "source": "Journalist",
+            "target": "GovernmentOfficial"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "ADVOCATES_FOR",
+        "description": "An activist or person supports the rights or interests of the animal.",
+        "source_targets": [
+          {
+            "source": "Activist",
+            "target": "TalkingAnimal"
+          },
+          {
+            "source": "Person",
+            "target": "TalkingAnimal"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "REGULATES",
+        "description": "A government official or agency sets rules concerning an entity.",
+        "source_targets": [
+          {
+            "source": "GovernmentOfficial",
+            "target": "TalkingAnimal"
+          },
+          {
+            "source": "GovernmentOfficial",
+            "target": "Organization"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "INTERVIEWS",
+        "description": "A journalist or media outlet conducts a formal conversation with an entity.",
+        "source_targets": [
+          {
+            "source": "Journalist",
+            "target": "TalkingAnimal"
+          },
+          {
+            "source": "Journalist",
+            "target": "Scientist"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "DEBATES_WITH",
+        "description": "Two entities engage in a public discussion or disagreement.",
+        "source_targets": [
+          {
+            "source": "Person",
+            "target": "Person"
+          },
+          {
+            "source": "ReligiousLeader",
+            "target": "Scientist"
+          },
+          {
+            "source": "Activist",
+            "target": "TechExecutive"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "WORKS_FOR",
+        "description": "An individual is employed by or affiliated with an organization.",
+        "source_targets": [
+          {
+            "source": "Scientist",
+            "target": "Organization"
+          },
+          {
+            "source": "Journalist",
+            "target": "MediaOutlet"
+          },
+          {
+            "source": "GovernmentOfficial",
+            "target": "Organization"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "RESPONDS_TO",
+        "description": "An entity reacts to the statements or actions of another.",
+        "source_targets": [
+          {
+            "source": "TalkingAnimal",
+            "target": "Person"
+          },
+          {
+            "source": "GovernmentOfficial",
+            "target": "MediaOutlet"
+          },
+          {
+            "source": "TechExecutive",
+            "target": "Activist"
+          }
+        ],
+        "attributes": []
+      }
+    ]
+  },
+  "analysis_summary": "本设计围绕“发现会说话的动物”这一虚构事件，构建了一个多方参与的社会舆论模型。实体类型涵盖了科研、媒体、法律、宗教、商业及民间等关键发声主体，确保了模拟过程中能够产生科学争论、伦理探讨、法律监管及商业博弈等多种维度的互动。通过设置具体的专业角色（如科学家、活动家）与兜底类型（Person, Organization），系统能够灵活处理从专家意见到普通网民情绪的各种信息流转。",
+  "graph_id": "mirofish_local_9472cee80186454d",
+  "graph_build_task_id": "d1262cf3-449b-4979-b7f0-af685b7e3f0b",
+  "simulation_requirement": "Predict what happens to the world if a talking animal is discovered.",
+  "chunk_size": 500,
+  "chunk_overlap": 50,
+  "error": null,
+  "token_usage": {
+    "prompt_tokens": 1914,
+    "completion_tokens": 2265,
+    "total_tokens": 4179,
+    "call_count": 2,
+    "last_updated": "2026-05-21T11:55:26.724391"
+  }
+}

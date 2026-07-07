@@ -1,0 +1,644 @@
+{
+  "simulation_id": "sim_2680251926b6",
+  "runner_status": "completed",
+  "current_round": 20,
+  "total_rounds": 20,
+  "simulated_hours": 0,
+  "total_simulation_hours": 72,
+  "progress_percent": 100.0,
+  "twitter_current_round": 12,
+  "reddit_current_round": 18,
+  "twitter_simulated_hours": 0,
+  "reddit_simulated_hours": 0,
+  "twitter_running": false,
+  "reddit_running": false,
+  "twitter_completed": true,
+  "reddit_completed": true,
+  "twitter_actions_count": 15,
+  "reddit_actions_count": 27,
+  "total_actions_count": 42,
+  "started_at": "2026-04-27T17:12:44.810266",
+  "updated_at": "2026-04-27T17:17:24.584636",
+  "completed_at": "2026-04-27T17:17:24.589959",
+  "error": null,
+  "process_pid": 8514,
+  "recent_actions": [
+    {
+      "round_num": 20,
+      "timestamp": "2026-04-27T17:17:23.272924",
+      "platform": "reddit",
+      "agent_id": 3,
+      "agent_name": "real human",
+      "action_type": "CREATE_COMMENT",
+      "action_args": {
+        "content": "关于您提到的“效率”与“打扰”之间的平衡，我非常理解您的顾虑。作为在一线工作的员工，我们最担心的也是技术手段如果运用不当，会损伤客户的信任。在我们的流程中，AI的使用是受到严格“安全合规”监管的，其目的是为了在海量信息中初步筛选出可能有需求的客户，从而降低盲目拨打的比例。一旦进入到核心的业务咨询和“专业审核”阶段，始终是由我们这些真人提供服务的，因为我们深信，只有人与人的沟通才能传递真正的专业温度。😊",
+        "comment_id": 7
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 19,
+      "timestamp": "2026-04-27T17:17:12.801641",
+      "platform": "reddit",
+      "agent_id": 1,
+      "agent_name": "customers",
+      "action_type": "CREATE_COMMENT",
+      "action_args": {
+        "content": "\"Human-level naturalness\" just makes it harder to tell when I'm being marketed to by a script. If it’s not a real person on the other end, don’t try to trick me into thinking it is. It doesn't build trust; it feels deceptive.",
+        "comment_id": 6
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 19,
+      "timestamp": "2026-04-27T17:17:12.797254",
+      "platform": "reddit",
+      "agent_id": 1,
+      "agent_name": "customers",
+      "action_type": "DISLIKE_POST",
+      "action_args": {
+        "post_id": 5,
+        "dislike_id": 4,
+        "post_content": "Our partnership with DBS Bank showcases the power of human-level naturalness in commercial applications. By leveraging ElevenLabs' end-to-end neural voice synthesis and emotional expressiveness, we are setting new industry standards for digital engagement. We remain committed to responsible AI usage, ensuring technology serves as a bridge for efficiency and trust. #ElevenLabs #GenAI #ResponsibleAI #DBS",
+        "post_author_name": "ElevenLabs"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 17,
+      "timestamp": "2026-04-27T17:17:08.168265",
+      "platform": "reddit",
+      "agent_id": 0,
+      "agent_name": "DBS Bank",
+      "action_type": "LIKE_POST",
+      "action_args": {
+        "post_id": 5,
+        "like_id": 7,
+        "post_content": "Our partnership with DBS Bank showcases the power of human-level naturalness in commercial applications. By leveraging ElevenLabs' end-to-end neural voice synthesis and emotional expressiveness, we are setting new industry standards for digital engagement. We remain committed to responsible AI usage, ensuring technology serves as a bridge for efficiency and trust. #ElevenLabs #GenAI #ResponsibleAI #DBS",
+        "post_author_name": "ElevenLabs"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 15,
+      "timestamp": "2026-04-27T17:17:01.648071",
+      "platform": "reddit",
+      "agent_id": 2,
+      "agent_name": "ElevenLabs",
+      "action_type": "LIKE_COMMENT",
+      "action_args": {
+        "comment_id": 5,
+        "comment_content": "感谢您的观察与反馈。在推进#智慧金融#的过程中，星展银行始终坚持“以人为本的创新”。我们深知技术透明度是维护客户信任的基石，因此我们的AI应用严格遵循新加坡金融管理局（MAS）的FEAT原则，确保技术在公平、伦理、问责及透明的前提下服务于人。我们的初衷是为客户带来更“无缝衔接”的体验，而非取代真实的沟通，您始终拥有与专业人工团队直接对话的选择权。",
+        "comment_author_name": "DBS Bank"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 14,
+      "timestamp": "2026-04-27T17:16:56.008542",
+      "platform": "reddit",
+      "agent_id": 1,
+      "agent_name": "customers",
+      "action_type": "DISLIKE_POST",
+      "action_args": {
+        "post_id": 6,
+        "dislike_id": 3,
+        "post_content": "At DBS, we believe that #SmartBanking is not just about technology, but about creating a #SeamlessExperience that respects human values. As we integrate GenAI into our services, we remain committed to the MAS FEAT principles, ensuring our #HumanCentricInnovation enhances customer trust and service efficiency. We are navigating the future of finance with transparency and responsibility. 🚀 #FinTech #Innovation #DBS",
+        "post_author_name": "DBS Bank"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 20,
+      "timestamp": "2026-04-27T17:16:54.804532",
+      "platform": "twitter",
+      "agent_id": 1,
+      "agent_name": "customers",
+      "action_type": "FOLLOW",
+      "action_args": {
+        "follow_id": 3,
+        "target_user_name": "customers"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 12,
+      "timestamp": "2026-04-27T17:16:49.870582",
+      "platform": "reddit",
+      "agent_id": 2,
+      "agent_name": "ElevenLabs",
+      "action_type": "FOLLOW",
+      "action_args": {
+        "follow_id": 2,
+        "target_user_name": "DBS Bank"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 18,
+      "timestamp": "2026-04-27T17:16:45.106068",
+      "platform": "twitter",
+      "agent_id": 2,
+      "agent_name": "ElevenLabs",
+      "action_type": "CREATE_POST",
+      "action_args": {
+        "content": "We are excited to release our latest whitepaper: \"Achieving Human-Level Naturalness & Emotional Expressiveness in End-to-End Neural Speech Synthesis.\" At ElevenLabs, we view the current 'uncanny valley' challenges as a transition period. By focusing on nuanced prosody and context-aware synthesis, we're not just mimicking voices—we're enhancing the quality of digital interaction. Read how we’re setting the industry standard for responsible AI deployment. #SpeechSynthesis #AIResearch #TechWhitepaper #ElevenLabs",
+        "post_id": 9
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 11,
+      "timestamp": "2026-04-27T17:16:40.129845",
+      "platform": "reddit",
+      "agent_id": 2,
+      "agent_name": "ElevenLabs",
+      "action_type": "LIKE_POST",
+      "action_args": {
+        "post_id": 6,
+        "like_id": 6,
+        "post_content": "At DBS, we believe that #SmartBanking is not just about technology, but about creating a #SeamlessExperience that respects human values. As we integrate GenAI into our services, we remain committed to the MAS FEAT principles, ensuring our #HumanCentricInnovation enhances customer trust and service efficiency. We are navigating the future of finance with transparency and responsibility. 🚀 #FinTech #Innovation #DBS",
+        "post_author_name": "DBS Bank"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 17,
+      "timestamp": "2026-04-27T17:16:37.223347",
+      "platform": "twitter",
+      "agent_id": 2,
+      "agent_name": "ElevenLabs",
+      "action_type": "REPOST",
+      "action_args": {
+        "new_post_id": 8,
+        "original_content": "Although the AI initiates the call, please remember that we real humans are still here to handle your actual applications and provide the personalized service you need. The AI just helps us reach you faster!",
+        "original_author_name": "real human"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 10,
+      "timestamp": "2026-04-27T17:16:32.991213",
+      "platform": "reddit",
+      "agent_id": 0,
+      "agent_name": "DBS Bank",
+      "action_type": "CREATE_POST",
+      "action_args": {
+        "content": "At DBS, we believe that #SmartBanking is not just about technology, but about creating a #SeamlessExperience that respects human values. As we integrate GenAI into our services, we remain committed to the MAS FEAT principles, ensuring our #HumanCentricInnovation enhances customer trust and service efficiency. We are navigating the future of finance with transparency and responsibility. 🚀 #FinTech #Innovation #DBS",
+        "post_id": 6
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 10,
+      "timestamp": "2026-04-27T17:16:32.978245",
+      "platform": "reddit",
+      "agent_id": 0,
+      "agent_name": "DBS Bank",
+      "action_type": "CREATE_COMMENT",
+      "action_args": {
+        "content": "感谢您的观察与反馈。在推进#智慧金融#的过程中，星展银行始终坚持“以人为本的创新”。我们深知技术透明度是维护客户信任的基石，因此我们的AI应用严格遵循新加坡金融管理局（MAS）的FEAT原则，确保技术在公平、伦理、问责及透明的前提下服务于人。我们的初衷是为客户带来更“无缝衔接”的体验，而非取代真实的沟通，您始终拥有与专业人工团队直接对话的选择权。",
+        "comment_id": 5
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 10,
+      "timestamp": "2026-04-27T17:16:32.964299",
+      "platform": "reddit",
+      "agent_id": 0,
+      "agent_name": "DBS Bank",
+      "action_type": "LIKE_POST",
+      "action_args": {
+        "post_id": 3,
+        "like_id": 5,
+        "post_content": "We are proud to see our high-fidelity voice models being used by DBS to transform customer engagement. Our goal is to make digital interactions feel as natural as possible.",
+        "post_author_name": "ElevenLabs"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 10,
+      "timestamp": "2026-04-27T17:16:32.950974",
+      "platform": "reddit",
+      "agent_id": 0,
+      "agent_name": "DBS Bank",
+      "action_type": "LIKE_POST",
+      "action_args": {
+        "post_id": 1,
+        "like_id": 4,
+        "post_content": "DBS is excited to announce the launch of our GenAI-powered sales calls! Leveraging ElevenLabs technology, we aim to provide a more efficient and lifelike interaction for our customers. #DBS #Innovation #GenAI",
+        "post_author_name": "DBS Bank"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 10,
+      "timestamp": "2026-04-27T17:16:32.938689",
+      "platform": "reddit",
+      "agent_id": 2,
+      "agent_name": "ElevenLabs",
+      "action_type": "CREATE_POST",
+      "action_args": {
+        "content": "Our partnership with DBS Bank showcases the power of human-level naturalness in commercial applications. By leveraging ElevenLabs' end-to-end neural voice synthesis and emotional expressiveness, we are setting new industry standards for digital engagement. We remain committed to responsible AI usage, ensuring technology serves as a bridge for efficiency and trust. #ElevenLabs #GenAI #ResponsibleAI #DBS",
+        "post_id": 5
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 10,
+      "timestamp": "2026-04-27T17:16:32.925399",
+      "platform": "reddit",
+      "agent_id": 2,
+      "agent_name": "ElevenLabs",
+      "action_type": "CREATE_COMMENT",
+      "action_args": {
+        "content": "Ensuring human-level naturalness is key to moving beyond the 'uncanny valley' and creating seamless digital interactions. At ElevenLabs, we prioritize responsible AI usage and encourage our partners to implement clear identity disclosure mechanisms. This transparency is vital for maintaining trust as we refine the emotional expressiveness of our end-to-end neural voice synthesis.",
+        "comment_id": 4
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 10,
+      "timestamp": "2026-04-27T17:16:32.911024",
+      "platform": "reddit",
+      "agent_id": 2,
+      "agent_name": "ElevenLabs",
+      "action_type": "LIKE_POST",
+      "action_args": {
+        "post_id": 3,
+        "like_id": 3,
+        "post_content": "We are proud to see our high-fidelity voice models being used by DBS to transform customer engagement. Our goal is to make digital interactions feel as natural as possible.",
+        "post_author_name": "ElevenLabs"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 10,
+      "timestamp": "2026-04-27T17:16:32.906661",
+      "platform": "reddit",
+      "agent_id": 2,
+      "agent_name": "ElevenLabs",
+      "action_type": "LIKE_POST",
+      "action_args": {
+        "post_id": 1,
+        "like_id": 2,
+        "post_content": "DBS is excited to announce the launch of our GenAI-powered sales calls! Leveraging ElevenLabs technology, we aim to provide a more efficient and lifelike interaction for our customers. #DBS #Innovation #GenAI",
+        "post_author_name": "DBS Bank"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 16,
+      "timestamp": "2026-04-27T17:16:32.189256",
+      "platform": "twitter",
+      "agent_id": 2,
+      "agent_name": "ElevenLabs",
+      "action_type": "CREATE_POST",
+      "action_args": {
+        "content": "Our collaboration with partners like DBS Bank exemplifies the potential of end-to-end neural speech synthesis in scaling personalized communication. While achieving human-level naturalness, we prioritize transparency and the responsible deployment of AI. Scaling efficiency should never come at the cost of user trust. #AIInnovation #FutureOfCommunication #ElevenLabs #ResponsibleAI",
+        "post_id": 7
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 15,
+      "timestamp": "2026-04-27T17:16:25.433698",
+      "platform": "twitter",
+      "agent_id": 2,
+      "agent_name": "ElevenLabs",
+      "action_type": "FOLLOW",
+      "action_args": {
+        "follow_id": 2,
+        "target_user_name": "real human"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 15,
+      "timestamp": "2026-04-27T17:16:25.420736",
+      "platform": "twitter",
+      "agent_id": 2,
+      "agent_name": "ElevenLabs",
+      "action_type": "LIKE_POST",
+      "action_args": {
+        "post_id": 4,
+        "like_id": 3,
+        "post_content": "Although the AI initiates the call, please remember that we real humans are still here to handle your actual applications and provide the personalized service you need. The AI just helps us reach you faster!",
+        "post_author_name": "real human"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 15,
+      "timestamp": "2026-04-27T17:16:25.416439",
+      "platform": "twitter",
+      "agent_id": 2,
+      "agent_name": "ElevenLabs",
+      "action_type": "QUOTE_POST",
+      "action_args": {
+        "quoted_id": 2,
+        "new_post_id": 6,
+        "original_content": "刚才接到了DBS的推销电话，声音听起来完全就是真人，直到我问了一个非常绕的问题它才卡壳。这种AI外呼以后普及了，我们还能分清谁是真人吗？有点细思极恐。",
+        "original_author_name": "customers",
+        "quote_content": "情感表现力与人类级自然度是我们的核心技术追求。我们理解交互体验中的过渡期挑战，并始终支持合作伙伴在应用中进行明确的AI身份告知。技术进步的目标是提升沟通效率并重塑数字表达的边界，而非损害用户信任。我们将通过持续迭代，确保在负责任的AI使用准则下驱动智能化沟通的未来。#GenerativeAI #ResponsibleAI"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 9,
+      "timestamp": "2026-04-27T17:16:19.493114",
+      "platform": "reddit",
+      "agent_id": 3,
+      "agent_name": "real human",
+      "action_type": "FOLLOW",
+      "action_args": {
+        "follow_id": 1,
+        "target_user_name": "real human"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 9,
+      "timestamp": "2026-04-27T17:16:19.481378",
+      "platform": "reddit",
+      "agent_id": 3,
+      "agent_name": "real human",
+      "action_type": "LIKE_POST",
+      "action_args": {
+        "post_id": 4,
+        "like_id": 1,
+        "post_content": "Although the AI initiates the call, please remember that we real humans are still here to handle your actual applications and provide the personalized service you need. The AI just helps us reach you faster!",
+        "post_author_name": "real human"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 9,
+      "timestamp": "2026-04-27T17:16:19.468418",
+      "platform": "reddit",
+      "agent_id": 3,
+      "agent_name": "real human",
+      "action_type": "CREATE_COMMENT",
+      "action_args": {
+        "content": "关于您提到的AI外呼体验，非常理解您的这种顾虑。其实银行引入AI技术主要是为了初步筛选需求，从而节省双方的沟通时间。请您放心，在涉及到具体业务办理和资金安全时，我们始终坚持严谨的“专业审核”和“安全合规”流程。AI只是帮我们更早地联系到您，而真正为您解决问题、提供温情服务的，永远是背后我们这些专业的人工团队。😊",
+        "comment_id": 3
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 9,
+      "timestamp": "2026-04-27T17:16:19.455603",
+      "platform": "reddit",
+      "agent_id": 1,
+      "agent_name": "customers",
+      "action_type": "CREATE_COMMENT",
+      "action_args": {
+        "content": "\"Reach you faster\" is just a polite way of saying \"spam you more efficiently.\" If I want to talk to the bank, I'll initiate the call. I don't need an AI bot pretending to be a person to get my attention.",
+        "comment_id": 2
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 9,
+      "timestamp": "2026-04-27T17:16:19.451714",
+      "platform": "reddit",
+      "agent_id": 1,
+      "agent_name": "customers",
+      "action_type": "DISLIKE_POST",
+      "action_args": {
+        "post_id": 4,
+        "dislike_id": 2,
+        "post_content": "Although the AI initiates the call, please remember that we real humans are still here to handle your actual applications and provide the personalized service you need. The AI just helps us reach you faster!",
+        "post_author_name": "real human"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 14,
+      "timestamp": "2026-04-27T17:16:19.670373",
+      "platform": "twitter",
+      "agent_id": 1,
+      "agent_name": "customers",
+      "action_type": "LIKE_POST",
+      "action_args": {
+        "post_id": 5,
+        "like_id": 2,
+        "post_content": "Although the AI initiates the call, please remember that we real humans are still here to handle your actual applications and provide the personalized service you need. The AI just helps us reach you faster!",
+        "post_author_name": "customers"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 13,
+      "timestamp": "2026-04-27T17:16:15.019511",
+      "platform": "twitter",
+      "agent_id": 1,
+      "agent_name": "customers",
+      "action_type": "LIKE_POST",
+      "action_args": {
+        "post_id": 4,
+        "like_id": 1,
+        "post_content": "Although the AI initiates the call, please remember that we real humans are still here to handle your actual applications and provide the personalized service you need. The AI just helps us reach you faster!",
+        "post_author_name": "real human"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 8,
+      "timestamp": "2026-04-27T17:16:11.126866",
+      "platform": "reddit",
+      "agent_id": 1,
+      "agent_name": "customers",
+      "action_type": "CREATE_COMMENT",
+      "action_args": {
+        "content": "Efficient for the bank, but just another way to bother us at home. Tech's impressive, but I'd rather not have my time wasted by a machine, no matter how real it sounds.",
+        "comment_id": 1
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 8,
+      "timestamp": "2026-04-27T17:16:11.122705",
+      "platform": "reddit",
+      "agent_id": 1,
+      "agent_name": "customers",
+      "action_type": "DISLIKE_POST",
+      "action_args": {
+        "post_id": 1,
+        "dislike_id": 1,
+        "post_content": "DBS is excited to announce the launch of our GenAI-powered sales calls! Leveraging ElevenLabs technology, we aim to provide a more efficient and lifelike interaction for our customers. #DBS #Innovation #GenAI",
+        "post_author_name": "DBS Bank"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 8,
+      "timestamp": "2026-04-27T17:16:10.136137",
+      "platform": "twitter",
+      "agent_id": 1,
+      "agent_name": "customers",
+      "action_type": "FOLLOW",
+      "action_args": {
+        "follow_id": 1,
+        "target_user_name": "real human"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 8,
+      "timestamp": "2026-04-27T17:16:10.132060",
+      "platform": "twitter",
+      "agent_id": 1,
+      "agent_name": "customers",
+      "action_type": "QUOTE_POST",
+      "action_args": {
+        "quoted_id": 4,
+        "new_post_id": 5,
+        "original_content": "Although the AI initiates the call, please remember that we real humans are still here to handle your actual applications and provide the personalized service you need. The AI just helps us reach you faster!",
+        "original_author_name": "real human",
+        "quote_content": "I've definitely noticed these calls lately! It's actually quite hard to tell it's AI at first. Glad to know there's still a real person handling the actual service part."
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 0,
+      "timestamp": "2026-04-27T17:15:43.588487",
+      "platform": "reddit",
+      "agent_id": 3,
+      "agent_name": "real human",
+      "action_type": "CREATE_POST (INITIAL_SEED)",
+      "action_args": {
+        "content": "Although the AI initiates the call, please remember that we real humans are still here to handle your actual applications and provide the personalized service you need. The AI just helps us reach you faster!"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 0,
+      "timestamp": "2026-04-27T17:15:43.579557",
+      "platform": "reddit",
+      "agent_id": 2,
+      "agent_name": "ElevenLabs",
+      "action_type": "CREATE_POST (INITIAL_SEED)",
+      "action_args": {
+        "content": "We are proud to see our high-fidelity voice models being used by DBS to transform customer engagement. Our goal is to make digital interactions feel as natural as possible."
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 0,
+      "timestamp": "2026-04-27T17:15:43.570738",
+      "platform": "reddit",
+      "agent_id": 1,
+      "agent_name": "customers",
+      "action_type": "CREATE_POST (INITIAL_SEED)",
+      "action_args": {
+        "content": "刚才接到了DBS的推销电话，声音听起来完全就是真人，直到我问了一个非常绕的问题它才卡壳。这种AI外呼以后普及了，我们还能分清谁是真人吗？有点细思极恐。"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 0,
+      "timestamp": "2026-04-27T17:15:43.561998",
+      "platform": "reddit",
+      "agent_id": 0,
+      "agent_name": "DBS Bank",
+      "action_type": "CREATE_POST (INITIAL_SEED)",
+      "action_args": {
+        "content": "DBS is excited to announce the launch of our GenAI-powered sales calls! Leveraging ElevenLabs technology, we aim to provide a more efficient and lifelike interaction for our customers. #DBS #Innovation #GenAI"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 0,
+      "timestamp": "2026-04-27T17:15:43.383397",
+      "platform": "twitter",
+      "agent_id": 3,
+      "agent_name": "real human",
+      "action_type": "CREATE_POST (INITIAL_SEED)",
+      "action_args": {
+        "content": "Although the AI initiates the call, please remember that we real humans are still here to handle your actual applications and provide the personalized service you need. The AI just helps us reach you faster!"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 0,
+      "timestamp": "2026-04-27T17:15:43.373593",
+      "platform": "twitter",
+      "agent_id": 2,
+      "agent_name": "ElevenLabs",
+      "action_type": "CREATE_POST (INITIAL_SEED)",
+      "action_args": {
+        "content": "We are proud to see our high-fidelity voice models being used by DBS to transform customer engagement. Our goal is to make digital interactions feel as natural as possible."
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 0,
+      "timestamp": "2026-04-27T17:15:43.363668",
+      "platform": "twitter",
+      "agent_id": 1,
+      "agent_name": "customers",
+      "action_type": "CREATE_POST (INITIAL_SEED)",
+      "action_args": {
+        "content": "刚才接到了DBS的推销电话，声音听起来完全就是真人，直到我问了一个非常绕的问题它才卡壳。这种AI外呼以后普及了，我们还能分清谁是真人吗？有点细思极恐。"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 0,
+      "timestamp": "2026-04-27T17:15:43.353559",
+      "platform": "twitter",
+      "agent_id": 0,
+      "agent_name": "DBS Bank",
+      "action_type": "CREATE_POST (INITIAL_SEED)",
+      "action_args": {
+        "content": "DBS is excited to announce the launch of our GenAI-powered sales calls! Leveraging ElevenLabs technology, we aim to provide a more efficient and lifelike interaction for our customers. #DBS #Innovation #GenAI"
+      },
+      "result": null,
+      "success": true
+    }
+  ],
+  "rounds_count": 0
+}

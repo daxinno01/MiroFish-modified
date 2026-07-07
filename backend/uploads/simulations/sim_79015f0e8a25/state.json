@@ -1,0 +1,27 @@
+{
+  "simulation_id": "sim_79015f0e8a25",
+  "project_id": "proj_be74b485f9a8",
+  "graph_id": "mirofish_local_fc32779e96724d57",
+  "enable_twitter": true,
+  "enable_reddit": true,
+  "status": "running",
+  "entities_count": 54,
+  "profiles_count": 54,
+  "entity_types": [
+    "Bank",
+    "GovernmentMinistry",
+    "InvestmentFirm",
+    "Organization",
+    "CorporateClient",
+    "FinancialAnalyst",
+    "BankExecutive"
+  ],
+  "config_generated": true,
+  "config_reasoning": "时间配置: 模拟总时长设定为48小时，以涵盖DBS财报发布前24小时的预测热议及发布后24小时的市场实时反应。考虑到金融事件属性，高峰期除常规的晚间社交媒体活跃时段（19-22点）外，特意增加了上午9-10点，以模拟新加坡及香港股市开盘、财报初次解读带来的资讯高峰。工作时间段设定为中高活跃度，模拟分析师与机构的持续跟进。深夜时段设为低谷，符合中国用户作息习惯。 | 事件配置: The configuration captures the intersection of macroeconomic variables (Fed policy, GDP), institutional strategy (AI squads, leadership transition), and market sentiment. By using the specified poster types, the simulation will reflect the diverse perspectives of regulators, analysts, corporate clients, and the bank itself. | Agent配置: 成功生成 54 个 | 初始帖子分配: 7 个帖子已分配发布者",
+  "current_round": 0,
+  "twitter_status": "not_started",
+  "reddit_status": "not_started",
+  "created_at": "2026-04-29T16:41:46.554606",
+  "updated_at": "2026-04-29T16:48:08.842255",
+  "error": null
+}

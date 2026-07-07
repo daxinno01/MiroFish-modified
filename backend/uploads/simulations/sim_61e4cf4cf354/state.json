@@ -1,0 +1,26 @@
+{
+  "simulation_id": "sim_61e4cf4cf354",
+  "project_id": "proj_4119292215b4",
+  "graph_id": "mirofish_local_47cc684fbf284c50",
+  "enable_twitter": true,
+  "enable_reddit": true,
+  "status": "running",
+  "entities_count": 10,
+  "profiles_count": 10,
+  "entity_types": [
+    "Corporation",
+    "TalkingAnimal",
+    "Person",
+    "Scientist",
+    "Activist",
+    "Organization"
+  ],
+  "config_generated": true,
+  "config_reasoning": "时间配置: 该事件属于改变人类认知的重大全球性发现，涉及政府监管、科学研究、商业开发及宗教伦理讨论。模拟时长设为96小时以完整覆盖从突发发现到机构介入再到公众舆论极化的全过程。时间配置严格遵循中国作息：晚间19-23点是社交媒体巨头和普通大众（Everyday people）参与辩论的高峰期；9-18点是政府机构、科学家和企业进行决策、研究与正式发声的工作时段；凌晨0-5点为低活跃期，模拟社会整体进入休息状态。 | 事件配置: The event configuration captures the friction between the five sectors identified in the ontology. It maps the 'TalkingAnimal' as the central actor, 'Scientist' as the academic observer, 'Organization' as the regulatory and advocacy bodies, 'Corporation' as the commercial interest, and 'Person' as the voice of media, religion, and the general public. The posts are designed to trigger the 'Exploitation vs. Liberation' and 'Information Control' dynamics described in the simulation requirements. | Agent配置: 成功生成 10 个 | 初始帖子分配: 10 个帖子已分配发布者",
+  "current_round": 0,
+  "twitter_status": "not_started",
+  "reddit_status": "not_started",
+  "created_at": "2026-05-21T15:53:56.890266",
+  "updated_at": "2026-05-21T15:59:31.371983",
+  "error": null
+}

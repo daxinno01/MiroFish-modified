@@ -1,0 +1,349 @@
+{
+  "project_id": "proj_4cafa8c49ba9",
+  "name": "Unnamed Project",
+  "status": "failed",
+  "created_at": "2026-05-21T10:38:37.905760",
+  "updated_at": "2026-05-21T10:38:56.813331",
+  "files": [
+    {
+      "filename": "New Text Document.txt",
+      "size": 0
+    }
+  ],
+  "total_text_length": 32,
+  "ontology": {
+    "entity_types": [
+      {
+        "name": "TalkingAnimal",
+        "description": "The central non-human entity capable of speech and social media interaction.",
+        "attributes": [
+          {
+            "name": "species_type",
+            "type": "text",
+            "description": "The biological species of the animal."
+          },
+          {
+            "name": "vocal_range",
+            "type": "text",
+            "description": "The complexity and nature of its speech capabilities."
+          }
+        ],
+        "examples": [
+          "Leo the Talking Lion",
+          "Koko the Speaking Gorilla"
+        ]
+      },
+      {
+        "name": "Scientist",
+        "description": "Experts in biology, linguistics, or psychology analyzing the phenomenon.",
+        "attributes": [
+          {
+            "name": "field_of_expertise",
+            "type": "text",
+            "description": "Specific area of study such as Zoology or Linguistics."
+          },
+          {
+            "name": "academic_rank",
+            "type": "text",
+            "description": "The professional standing of the scientist."
+          }
+        ],
+        "examples": [
+          "Dr. Jane Smith",
+          "Professor Alan Turing"
+        ]
+      },
+      {
+        "name": "ReligiousLeader",
+        "description": "Figures providing spiritual or theological interpretations of the discovery.",
+        "attributes": [
+          {
+            "name": "faith_tradition",
+            "type": "text",
+            "description": "The religion or belief system represented."
+          },
+          {
+            "name": "clerical_title",
+            "type": "text",
+            "description": "The official title within the religious hierarchy."
+          }
+        ],
+        "examples": [
+          "Pope Francis",
+          "Local Imam"
+        ]
+      },
+      {
+        "name": "AnimalRightsActivist",
+        "description": "Individuals advocating for the legal rights and protection of the animal.",
+        "attributes": [
+          {
+            "name": "advocacy_focus",
+            "type": "text",
+            "description": "Specific focus such as legal personhood or habitat protection."
+          }
+        ],
+        "examples": [
+          "Ingrid Newkirk",
+          "Local Shelter Volunteer"
+        ]
+      },
+      {
+        "name": "GovernmentOfficial",
+        "description": "Policy makers and regulators determining the legal status of the animal.",
+        "attributes": [
+          {
+            "name": "department_name",
+            "type": "text",
+            "description": "The government branch they represent."
+          },
+          {
+            "name": "jurisdiction",
+            "type": "text",
+            "description": "The geographic or legal area of authority."
+          }
+        ],
+        "examples": [
+          "Secretary of the Interior",
+          "UN Representative"
+        ]
+      },
+      {
+        "name": "Journalist",
+        "description": "Media professionals reporting on the discovery and its implications.",
+        "attributes": [
+          {
+            "name": "beat_coverage",
+            "type": "text",
+            "description": "The specific topic area they cover, e.g., Science, Politics."
+          },
+          {
+            "name": "press_affiliation",
+            "type": "text",
+            "description": "The media outlet they work for."
+          }
+        ],
+        "examples": [
+          "Christiane Amanpour",
+          "Tech Blogger"
+        ]
+      },
+      {
+        "name": "MediaOutlet",
+        "description": "Organizations that broadcast news and shape public opinion.",
+        "attributes": [
+          {
+            "name": "media_platform",
+            "type": "text",
+            "description": "Type of media such as TV, Digital, or Print."
+          },
+          {
+            "name": "audience_reach",
+            "type": "text",
+            "description": "The scale of the outlet's influence."
+          }
+        ],
+        "examples": [
+          "BBC News",
+          "The New York Times"
+        ]
+      },
+      {
+        "name": "ResearchInstitute",
+        "description": "Academic or private organizations conducting studies on the animal.",
+        "attributes": [
+          {
+            "name": "research_focus",
+            "type": "text",
+            "description": "The primary goal of the institution's study."
+          },
+          {
+            "name": "funding_type",
+            "type": "text",
+            "description": "Source of funding, e.g., Public, Private."
+          }
+        ],
+        "examples": [
+          "MIT Media Lab",
+          "National Geographic Society"
+        ]
+      },
+      {
+        "name": "Person",
+        "description": "Any individual human being not covered by specific professional roles.",
+        "attributes": [
+          {
+            "name": "social_role",
+            "type": "text",
+            "description": "General role such as 'Concerned Citizen' or 'Social Media User'."
+          },
+          {
+            "name": "location_region",
+            "type": "text",
+            "description": "Geographic location of the person."
+          }
+        ],
+        "examples": [
+          "John Doe",
+          "Twitter User @naturelover"
+        ]
+      },
+      {
+        "name": "Organization",
+        "description": "Any group or entity not covered by specific organizational roles.",
+        "attributes": [
+          {
+            "name": "org_purpose",
+            "type": "text",
+            "description": "The primary mission or business of the group."
+          },
+          {
+            "name": "member_count",
+            "type": "text",
+            "description": "Approximate size of the organization."
+          }
+        ],
+        "examples": [
+          "Local Pet Club",
+          "Global Tech Corp"
+        ]
+      }
+    ],
+    "edge_types": [
+      {
+        "name": "REPORTS_ON",
+        "description": "A journalist or media outlet covering news about the animal.",
+        "source_targets": [
+          {
+            "source": "Journalist",
+            "target": "TalkingAnimal"
+          },
+          {
+            "source": "MediaOutlet",
+            "target": "TalkingAnimal"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "STUDIES",
+        "description": "A scientist or institute conducting research on the animal.",
+        "source_targets": [
+          {
+            "source": "Scientist",
+            "target": "TalkingAnimal"
+          },
+          {
+            "source": "ResearchInstitute",
+            "target": "TalkingAnimal"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "ADVOCATES_FOR",
+        "description": "Expressing support or demanding rights for the animal.",
+        "source_targets": [
+          {
+            "source": "AnimalRightsActivist",
+            "target": "TalkingAnimal"
+          },
+          {
+            "source": "Person",
+            "target": "TalkingAnimal"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "REGULATES",
+        "description": "Exercising legal or administrative control over the animal's status.",
+        "source_targets": [
+          {
+            "source": "GovernmentOfficial",
+            "target": "TalkingAnimal"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "INTERPRETS_FOR",
+        "description": "Providing moral or spiritual guidance to a community regarding the animal.",
+        "source_targets": [
+          {
+            "source": "ReligiousLeader",
+            "target": "Person"
+          },
+          {
+            "source": "ReligiousLeader",
+            "target": "Organization"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "DEBATES_WITH",
+        "description": "Engaging in public or private discourse regarding the implications.",
+        "source_targets": [
+          {
+            "source": "Person",
+            "target": "Person"
+          },
+          {
+            "source": "Scientist",
+            "target": "ReligiousLeader"
+          },
+          {
+            "source": "AnimalRightsActivist",
+            "target": "GovernmentOfficial"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "WORKS_FOR",
+        "description": "An individual employed by an organization.",
+        "source_targets": [
+          {
+            "source": "Scientist",
+            "target": "ResearchInstitute"
+          },
+          {
+            "source": "Journalist",
+            "target": "MediaOutlet"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "INTERVIEWS",
+        "description": "Directly questioning the animal for information or entertainment.",
+        "source_targets": [
+          {
+            "source": "Journalist",
+            "target": "TalkingAnimal"
+          },
+          {
+            "source": "Scientist",
+            "target": "TalkingAnimal"
+          }
+        ],
+        "attributes": []
+      }
+    ]
+  },
+  "analysis_summary": "该本体设计围绕“会说话的动物”这一核心事件，构建了科学、宗教、法律、媒体和公众五个维度的舆论参与主体。TalkingAnimal作为核心实体被赋予了发声能力。Scientist和ResearchInstitute代表理性分析方；ReligiousLeader代表伦理与信仰解释方；AnimalRightsActivist和GovernmentOfficial代表权利与监管的冲突方；Journalist和MediaOutlet负责信息传播。最后通过Person和Organization实现对所有非特定角色的全覆盖，能够模拟从专业辩论到大众情绪传播的完整社媒舆论路径。",
+  "graph_id": null,
+  "graph_build_task_id": "6d924772-d4e1-4f1e-b0e0-a5515ddc67f2",
+  "simulation_requirement": "Predict what happens to the world if a talking animal has been discovered.",
+  "chunk_size": 500,
+  "chunk_overlap": 50,
+  "error": "Couldn't connect to localhost:7687 (resolved to ()):\nFailed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [Errno 111] Connection refused)",
+  "token_usage": {
+    "prompt_tokens": 1481,
+    "completion_tokens": 2128,
+    "total_tokens": 3609,
+    "call_count": 1,
+    "last_updated": "2026-05-21T10:38:55.355914"
+  }
+}

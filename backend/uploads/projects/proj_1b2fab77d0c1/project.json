@@ -1,0 +1,362 @@
+{
+  "project_id": "proj_1b2fab77d0c1",
+  "name": "Unnamed Project",
+  "status": "graph_building",
+  "created_at": "2026-04-28T17:18:31.525145",
+  "updated_at": "2026-04-28T17:19:12.273877",
+  "files": [
+    {
+      "filename": "01_scenario_brief.md",
+      "size": 1594
+    },
+    {
+      "filename": "02_stakeholder_map.md",
+      "size": 1345
+    }
+  ],
+  "total_text_length": 2972,
+  "ontology": {
+    "entity_types": [
+      {
+        "name": "Bank",
+        "description": "Financial institutions providing banking services and launching the AI campaign.",
+        "attributes": [
+          {
+            "name": "org_name",
+            "type": "text",
+            "description": "The official name of the bank."
+          },
+          {
+            "name": "tech_strategy",
+            "type": "text",
+            "description": "The bank's public stance on technology and innovation."
+          }
+        ],
+        "examples": [
+          "DBS Bank",
+          "OCBC Bank"
+        ]
+      },
+      {
+        "name": "SeniorCitizen",
+        "description": "Elderly individuals who are primary targets for scam education but have low tech literacy.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "Name of the individual."
+          },
+          {
+            "name": "tech_literacy",
+            "type": "text",
+            "description": "Level of understanding of digital tools and AI."
+          }
+        ],
+        "examples": [
+          "Uncle Tan",
+          "Ah Ma Lee"
+        ]
+      },
+      {
+        "name": "TechYouth",
+        "description": "Gen Z or tech-savvy young people active on platforms like Reddit and TikTok.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "Name or handle of the individual."
+          },
+          {
+            "name": "digital_community",
+            "type": "text",
+            "description": "Primary online platform where they are active."
+          }
+        ],
+        "examples": [
+          "Reddit User u/sg_techie",
+          "Gen Z TikToker"
+        ]
+      },
+      {
+        "name": "CreativeProfessional",
+        "description": "Individuals in the creative industry concerned about AI replacing human labor.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "Name of the professional."
+          },
+          {
+            "name": "profession_type",
+            "type": "text",
+            "description": "Specific role like Actor, Filmmaker, or Designer."
+          }
+        ],
+        "examples": [
+          "Local Filmmaker",
+          "Singaporean Voice Actor"
+        ]
+      },
+      {
+        "name": "CybersecurityExpert",
+        "description": "Professionals who analyze scam tactics and the technical validity of the campaign.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "Name of the expert."
+          },
+          {
+            "name": "expertise_area",
+            "type": "text",
+            "description": "Specific field like Deepfake Detection or Malware Analysis."
+          }
+        ],
+        "examples": [
+          "Chief Information Security Officer",
+          "Tech Analyst"
+        ]
+      },
+      {
+        "name": "RegulatoryBody",
+        "description": "Government or statutory agencies overseeing financial and communication standards.",
+        "attributes": [
+          {
+            "name": "org_name",
+            "type": "text",
+            "description": "Name of the agency."
+          },
+          {
+            "name": "regulatory_focus",
+            "type": "text",
+            "description": "The primary concern, e.g., Public Trust or Consumer Protection."
+          }
+        ],
+        "examples": [
+          "Monetary Authority of Singapore (MAS)",
+          "IMDA"
+        ]
+      },
+      {
+        "name": "MediaOutlet",
+        "description": "News organizations and digital publishers reporting on the campaign.",
+        "attributes": [
+          {
+            "name": "org_name",
+            "type": "text",
+            "description": "Name of the media company."
+          },
+          {
+            "name": "media_reach",
+            "type": "text",
+            "description": "Scale of audience, e.g., National, Niche, or International."
+          }
+        ],
+        "examples": [
+          "The Straits Times",
+          "Mothership"
+        ]
+      },
+      {
+        "name": "Influencer",
+        "description": "High-reach individuals on social media who shape public opinion.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "Name or public persona."
+          },
+          {
+            "name": "niche_topic",
+            "type": "text",
+            "description": "The main topic they cover, e.g., Finance, Lifestyle, or Tech."
+          }
+        ],
+        "examples": [
+          "LinkedIn Thought Leader",
+          "Instagram Lifestyle Influencer"
+        ]
+      },
+      {
+        "name": "Person",
+        "description": "A general individual actor not fitting into specific categories.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "Name of the person."
+          },
+          {
+            "name": "role_description",
+            "type": "text",
+            "description": "General role or occupation."
+          }
+        ],
+        "examples": [
+          "General Public Member",
+          "Concerned Citizen"
+        ]
+      },
+      {
+        "name": "Organization",
+        "description": "A general group or entity not fitting into specific categories.",
+        "attributes": [
+          {
+            "name": "org_name",
+            "type": "text",
+            "description": "Name of the organization."
+          },
+          {
+            "name": "sector_type",
+            "type": "text",
+            "description": "The industry or social sector they belong to."
+          }
+        ],
+        "examples": [
+          "Local Community Club",
+          "Small Business Association"
+        ]
+      }
+    ],
+    "edge_types": [
+      {
+        "name": "CRITICIZES",
+        "description": "Expresses negative feedback or concern regarding an action or entity.",
+        "source_targets": [
+          {
+            "source": "CreativeProfessional",
+            "target": "Bank"
+          },
+          {
+            "source": "TechYouth",
+            "target": "Bank"
+          },
+          {
+            "source": "Person",
+            "target": "Bank"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "PRAISES",
+        "description": "Expresses positive feedback or support for an action or entity.",
+        "source_targets": [
+          {
+            "source": "CybersecurityExpert",
+            "target": "Bank"
+          },
+          {
+            "source": "TechYouth",
+            "target": "Bank"
+          },
+          {
+            "source": "RegulatoryBody",
+            "target": "Bank"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "REGULATES",
+        "description": "Exercises oversight or authority over another entity.",
+        "source_targets": [
+          {
+            "source": "RegulatoryBody",
+            "target": "Bank"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "REPORTS_ON",
+        "description": "Provides news coverage or editorial content about an entity or event.",
+        "source_targets": [
+          {
+            "source": "MediaOutlet",
+            "target": "Bank"
+          },
+          {
+            "source": "MediaOutlet",
+            "target": "RegulatoryBody"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "INFLUENCES",
+        "description": "Shapes the opinion or behavior of another entity.",
+        "source_targets": [
+          {
+            "source": "Influencer",
+            "target": "TechYouth"
+          },
+          {
+            "source": "Influencer",
+            "target": "SeniorCitizen"
+          },
+          {
+            "source": "MediaOutlet",
+            "target": "Person"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "WARNS",
+        "description": "Provides cautionary information to another entity.",
+        "source_targets": [
+          {
+            "source": "Bank",
+            "target": "SeniorCitizen"
+          },
+          {
+            "source": "CybersecurityExpert",
+            "target": "Person"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "MOCKS",
+        "description": "Creates satirical content or memes about an entity.",
+        "source_targets": [
+          {
+            "source": "TechYouth",
+            "target": "Bank"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "ADVISES",
+        "description": "Provides professional recommendations or guidance.",
+        "source_targets": [
+          {
+            "source": "CybersecurityExpert",
+            "target": "RegulatoryBody"
+          },
+          {
+            "source": "CreativeProfessional",
+            "target": "MediaOutlet"
+          }
+        ],
+        "attributes": []
+      }
+    ]
+  },
+  "analysis_summary": "该本体设计紧扣DBS银行GenAI反诈视频事件。实体类型涵盖了发起方（Bank）、监管方（RegulatoryBody）、受众（SeniorCitizen, TechYouth）、受影响的专业群体（CreativeProfessional, CybersecurityExpert）以及传播媒介（MediaOutlet, Influencer）。关系类型设计反映了社媒舆论中的典型互动，如批评、赞扬、嘲讽（Mocks）和报道。通过区分‘技术青年’和‘弱势老人’，系统可以模拟不同人群对AI生成内容的差异化反应（如老人的困惑与青年的梗文化）。最后包含Person和Organization作为兜底类型，确保了模型的完整性。",
+  "graph_id": null,
+  "graph_build_task_id": "8fe96aca-b12d-422b-a561-6406c3858e0f",
+  "simulation_requirement": "Predict the general reception of DBS' GenAI Video",
+  "chunk_size": 500,
+  "chunk_overlap": 50,
+  "error": null,
+  "token_usage": {
+    "prompt_tokens": 4276,
+    "completion_tokens": 3001,
+    "total_tokens": 7277,
+    "call_count": 2,
+    "last_updated": "2026-04-28T17:19:11.493698"
+  }
+}

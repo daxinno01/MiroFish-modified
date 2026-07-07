@@ -1,0 +1,466 @@
+{
+  "simulation_id": "sim_026eb7436c12",
+  "runner_status": "completed",
+  "current_round": 10,
+  "total_rounds": 10,
+  "simulated_hours": 0,
+  "total_simulation_hours": 168,
+  "progress_percent": 100.0,
+  "twitter_current_round": 7,
+  "reddit_current_round": 7,
+  "twitter_simulated_hours": 0,
+  "reddit_simulated_hours": 0,
+  "twitter_running": false,
+  "reddit_running": false,
+  "twitter_completed": true,
+  "reddit_completed": true,
+  "twitter_actions_count": 14,
+  "reddit_actions_count": 16,
+  "total_actions_count": 30,
+  "started_at": "2026-04-29T15:48:53.034930",
+  "updated_at": "2026-04-29T15:56:04.195087",
+  "completed_at": "2026-04-29T15:56:04.204731",
+  "error": null,
+  "process_pid": 4149,
+  "recent_actions": [
+    {
+      "round_num": 10,
+      "timestamp": "2026-04-29T15:56:02.181842",
+      "platform": "reddit",
+      "agent_id": 4,
+      "agent_name": "Singaporean family",
+      "action_type": "CREATE_COMMENT",
+      "action_args": {
+        "content": "Aiyoh, exactly! My mother also the same, she easily believe what she see on phone. 👵 This GenAI is very dangerous for our elderly folks. We must really watch over them properly and check their phones. Better be safe than sorry lah. Take note ah! 🙏⚠️",
+        "comment_id": 3
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 10,
+      "timestamp": "2026-04-29T15:56:02.172943",
+      "platform": "reddit",
+      "agent_id": 4,
+      "agent_name": "Singaporean family",
+      "action_type": "LIKE_COMMENT",
+      "action_args": {
+        "comment_id": 2,
+        "comment_content": "Scam is everywhere. 🧐 I watched the video, the GenAI is getting very realistic but the mouth movements still look a bit unnatural if you look closely lah. Last month I also nearly kena a fake DBS SMS link, luckily I didn't click lor. We really need to be careful now, AI can make everything look so real. Don't simply click any links, better check the app directly! #AntiScam",
+        "comment_author_name": "Public"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 10,
+      "timestamp": "2026-04-29T15:56:02.082651",
+      "platform": "twitter",
+      "agent_id": 0,
+      "agent_name": "DBS Bank",
+      "action_type": "QUOTE_POST",
+      "action_args": {
+        "quoted_id": 4,
+        "new_post_id": 10,
+        "original_content": "Scams are evolving. Whether it's a real person or a deepfake on your screen, the danger is the same. We support all efforts to educate the public on malware tactics. Stay vigilant, Singapore. #SPF #AntiScam",
+        "original_author_name": "Singapore Police Force (SPF)",
+        "quote_content": "我们深知，在数字化时代，守护您的财产安全至关重要。诈骗手段层出不穷，星展银行将持续通过多维安全矩阵与常态化的防诈教育，为您赋能安全的数字生活。让我们保持警惕，共同抵御风险。 #AntiScam #数字安全 #星展银行"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 10,
+      "timestamp": "2026-04-29T15:56:02.076488",
+      "platform": "twitter",
+      "agent_id": 0,
+      "agent_name": "DBS Bank",
+      "action_type": "LIKE_POST",
+      "action_args": {
+        "post_id": 4,
+        "like_id": 3,
+        "post_content": "Scams are evolving. Whether it's a real person or a deepfake on your screen, the danger is the same. We support all efforts to educate the public on malware tactics. Stay vigilant, Singapore. #SPF #AntiScam",
+        "post_author_name": "Singapore Police Force (SPF)"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 9,
+      "timestamp": "2026-04-29T15:55:53.763666",
+      "platform": "reddit",
+      "agent_id": 3,
+      "agent_name": "Public",
+      "action_type": "LIKE_COMMENT",
+      "action_args": {
+        "comment_id": 1,
+        "comment_content": "Aiyoh, so scary sia! 🙏⚠️ These scams are getting too real. Last year my neighbor lose all her CPF money from one fake app, I cannot sleep for one week thinking about it. DBS, can share exactly what are the steps to prevent this? Better be safe than sorry lah. Take note ah everyone! 🛑",
+        "comment_author_name": "Singaporean family"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 9,
+      "timestamp": "2026-04-29T15:55:53.740120",
+      "platform": "reddit",
+      "agent_id": 3,
+      "agent_name": "Public",
+      "action_type": "LIKE_POST",
+      "action_args": {
+        "post_id": 4,
+        "like_id": 5,
+        "post_content": "Scams are evolving. Whether it's a real person or a deepfake on your screen, the danger is the same. We support all efforts to educate the public on malware tactics. Stay vigilant, Singapore. #SPF #AntiScam",
+        "post_author_name": "Singapore Police Force (SPF)"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 9,
+      "timestamp": "2026-04-29T15:55:53.714714",
+      "platform": "reddit",
+      "agent_id": 3,
+      "agent_name": "Public",
+      "action_type": "CREATE_COMMENT",
+      "action_args": {
+        "content": "Scam is everywhere. 🧐 I watched the video, the GenAI is getting very realistic but the mouth movements still look a bit unnatural if you look closely lah. Last month I also nearly kena a fake DBS SMS link, luckily I didn't click lor. We really need to be careful now, AI can make everything look so real. Don't simply click any links, better check the app directly! #AntiScam",
+        "comment_id": 2
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 9,
+      "timestamp": "2026-04-29T15:55:53.693784",
+      "platform": "reddit",
+      "agent_id": 3,
+      "agent_name": "Public",
+      "action_type": "LIKE_POST",
+      "action_args": {
+        "post_id": 1,
+        "like_id": 4,
+        "post_content": "Transparency matters. We’ve launched a 100% GenAI-created video to show you exactly how sophisticated malware scams have become. See how AI is changing the scam landscape. #DBS #GenAI #AntiScam",
+        "post_author_name": "DBS Bank"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 9,
+      "timestamp": "2026-04-29T15:55:53.687833",
+      "platform": "reddit",
+      "agent_id": 4,
+      "agent_name": "Singaporean family",
+      "action_type": "LIKE_POST",
+      "action_args": {
+        "post_id": 5,
+        "like_id": 3,
+        "post_content": "I showed this to my grandmother and she couldn't tell it wasn't a real family until I pointed out the AI disclaimer. It’s actually quite terrifying how realistic these 'characters' look. Is this the future?",
+        "post_author_name": "Singaporean family"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 9,
+      "timestamp": "2026-04-29T15:55:52.965351",
+      "platform": "twitter",
+      "agent_id": 3,
+      "agent_name": "Public",
+      "action_type": "FOLLOW",
+      "action_args": {
+        "follow_id": 1,
+        "target_user_name": "Singapore Police Force (SPF)"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 9,
+      "timestamp": "2026-04-29T15:55:52.946234",
+      "platform": "twitter",
+      "agent_id": 3,
+      "agent_name": "Public",
+      "action_type": "QUOTE_POST",
+      "action_args": {
+        "quoted_id": 4,
+        "new_post_id": 9,
+        "original_content": "Scams are evolving. Whether it's a real person or a deepfake on your screen, the danger is the same. We support all efforts to educate the public on malware tactics. Stay vigilant, Singapore. #SPF #AntiScam",
+        "original_author_name": "Singapore Police Force (SPF)",
+        "quote_content": "Scam is everywhere lor. 🧐 Last month I almost kena a fake DBS link via SMS, very scary. Now even got deepfakes... we really need to be careful. Always double check and never click any link simply lah! #AntiScam #StayVigilant"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 9,
+      "timestamp": "2026-04-29T15:55:52.929398",
+      "platform": "twitter",
+      "agent_id": 3,
+      "agent_name": "Public",
+      "action_type": "LIKE_POST",
+      "action_args": {
+        "post_id": 4,
+        "like_id": 2,
+        "post_content": "Scams are evolving. Whether it's a real person or a deepfake on your screen, the danger is the same. We support all efforts to educate the public on malware tactics. Stay vigilant, Singapore. #SPF #AntiScam",
+        "post_author_name": "Singapore Police Force (SPF)"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 9,
+      "timestamp": "2026-04-29T15:55:52.908963",
+      "platform": "twitter",
+      "agent_id": 4,
+      "agent_name": "Singaporean family",
+      "action_type": "QUOTE_POST",
+      "action_args": {
+        "quoted_id": 4,
+        "new_post_id": 8,
+        "original_content": "Scams are evolving. Whether it's a real person or a deepfake on your screen, the danger is the same. We support all efforts to educate the public on malware tactics. Stay vigilant, Singapore. #SPF #AntiScam",
+        "original_author_name": "Singapore Police Force (SPF)",
+        "quote_content": "This is very important! Aiyoh, the scams now so high-tech. Reminds me of my neighbor who lost everything to a fake app, so scary sia! 😱 We must always be careful. Take note ah! Better be safe than sorry lah. 🙏⚠️ Can the authorities share more steps on how to check if an app is 100% safe before we download? Must protect our hard-earned money! #AntiScam #Singapore #SafeBanking"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 9,
+      "timestamp": "2026-04-29T15:55:52.903080",
+      "platform": "twitter",
+      "agent_id": 4,
+      "agent_name": "Singaporean family",
+      "action_type": "LIKE_POST",
+      "action_args": {
+        "post_id": 4,
+        "like_id": 1,
+        "post_content": "Scams are evolving. Whether it's a real person or a deepfake on your screen, the danger is the same. We support all efforts to educate the public on malware tactics. Stay vigilant, Singapore. #SPF #AntiScam",
+        "post_author_name": "Singapore Police Force (SPF)"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 8,
+      "timestamp": "2026-04-29T15:55:44.040023",
+      "platform": "reddit",
+      "agent_id": 4,
+      "agent_name": "Singaporean family",
+      "action_type": "LIKE_POST",
+      "action_args": {
+        "post_id": 4,
+        "like_id": 2,
+        "post_content": "Scams are evolving. Whether it's a real person or a deepfake on your screen, the danger is the same. We support all efforts to educate the public on malware tactics. Stay vigilant, Singapore. #SPF #AntiScam",
+        "post_author_name": "Singapore Police Force (SPF)"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 8,
+      "timestamp": "2026-04-29T15:55:44.019992",
+      "platform": "reddit",
+      "agent_id": 4,
+      "agent_name": "Singaporean family",
+      "action_type": "CREATE_COMMENT",
+      "action_args": {
+        "content": "Aiyoh, so scary sia! 🙏⚠️ These scams are getting too real. Last year my neighbor lose all her CPF money from one fake app, I cannot sleep for one week thinking about it. DBS, can share exactly what are the steps to prevent this? Better be safe than sorry lah. Take note ah everyone! 🛑",
+        "comment_id": 1
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 8,
+      "timestamp": "2026-04-29T15:55:44.011541",
+      "platform": "reddit",
+      "agent_id": 4,
+      "agent_name": "Singaporean family",
+      "action_type": "LIKE_POST",
+      "action_args": {
+        "post_id": 1,
+        "like_id": 1,
+        "post_content": "Transparency matters. We’ve launched a 100% GenAI-created video to show you exactly how sophisticated malware scams have become. See how AI is changing the scam landscape. #DBS #GenAI #AntiScam",
+        "post_author_name": "DBS Bank"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 8,
+      "timestamp": "2026-04-29T15:55:42.348403",
+      "platform": "twitter",
+      "agent_id": 4,
+      "agent_name": "Singaporean family",
+      "action_type": "QUOTE_POST",
+      "action_args": {
+        "quoted_id": 3,
+        "new_post_id": 7,
+        "original_content": "The irony of using GenAI to warn us about GenAI scams is peak 2026. Also, can we ensure the digibank app doesn't go down again before we start making AI movies? Priorities, please. 🙄",
+        "original_author_name": "Public",
+        "quote_content": "Aiyoh, so scary sia! 😱 Now even the warning videos use AI... how to know what is real or fake anymore? Whether they use AI for video or not, the most important is DBS must keep our money safe! Better be safe than sorry lah. 🙏⚠️ Take note ah!"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 0,
+      "timestamp": "2026-04-29T15:54:48.643732",
+      "platform": "reddit",
+      "agent_id": 5,
+      "agent_name": "Sora",
+      "action_type": "CREATE_POST (INITIAL_SEED)",
+      "action_args": {
+        "content": "Pushing the boundaries of cinematic storytelling with our latest model. Proud to see DBS utilizing these tools for critical public education on digital safety. #Sora #GenAI #Innovation"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 0,
+      "timestamp": "2026-04-29T15:54:48.626065",
+      "platform": "reddit",
+      "agent_id": 4,
+      "agent_name": "Singaporean family",
+      "action_type": "CREATE_POST (INITIAL_SEED)",
+      "action_args": {
+        "content": "I showed this to my grandmother and she couldn't tell it wasn't a real family until I pointed out the AI disclaimer. It’s actually quite terrifying how realistic these 'characters' look. Is this the future?"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 0,
+      "timestamp": "2026-04-29T15:54:48.607891",
+      "platform": "reddit",
+      "agent_id": 1,
+      "agent_name": "Singapore Police Force (SPF)",
+      "action_type": "CREATE_POST (INITIAL_SEED)",
+      "action_args": {
+        "content": "Scams are evolving. Whether it's a real person or a deepfake on your screen, the danger is the same. We support all efforts to educate the public on malware tactics. Stay vigilant, Singapore. #SPF #AntiScam"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 0,
+      "timestamp": "2026-04-29T15:54:48.589785",
+      "platform": "reddit",
+      "agent_id": 3,
+      "agent_name": "Public",
+      "action_type": "CREATE_POST (INITIAL_SEED)",
+      "action_args": {
+        "content": "The irony of using GenAI to warn us about GenAI scams is peak 2026. Also, can we ensure the digibank app doesn't go down again before we start making AI movies? Priorities, please. 🙄"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 0,
+      "timestamp": "2026-04-29T15:54:48.572526",
+      "platform": "reddit",
+      "agent_id": 2,
+      "agent_name": "creatives",
+      "action_type": "CREATE_POST (INITIAL_SEED)",
+      "action_args": {
+        "content": "Disappointing to see a major Singaporean brand bypass local actors, set designers, and voice artists for a 'prompt-engineered' video. AI can simulate a family, but it can't simulate the soul of human storytelling. #SupportLocalCreatives #NoToAIAds"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 0,
+      "timestamp": "2026-04-29T15:54:48.556980",
+      "platform": "reddit",
+      "agent_id": 0,
+      "agent_name": "DBS Bank",
+      "action_type": "CREATE_POST (INITIAL_SEED)",
+      "action_args": {
+        "content": "Transparency matters. We’ve launched a 100% GenAI-created video to show you exactly how sophisticated malware scams have become. See how AI is changing the scam landscape. #DBS #GenAI #AntiScam"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 0,
+      "timestamp": "2026-04-29T15:54:48.079846",
+      "platform": "twitter",
+      "agent_id": 5,
+      "agent_name": "Sora",
+      "action_type": "CREATE_POST (INITIAL_SEED)",
+      "action_args": {
+        "content": "Pushing the boundaries of cinematic storytelling with our latest model. Proud to see DBS utilizing these tools for critical public education on digital safety. #Sora #GenAI #Innovation"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 0,
+      "timestamp": "2026-04-29T15:54:48.062103",
+      "platform": "twitter",
+      "agent_id": 4,
+      "agent_name": "Singaporean family",
+      "action_type": "CREATE_POST (INITIAL_SEED)",
+      "action_args": {
+        "content": "I showed this to my grandmother and she couldn't tell it wasn't a real family until I pointed out the AI disclaimer. It’s actually quite terrifying how realistic these 'characters' look. Is this the future?"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 0,
+      "timestamp": "2026-04-29T15:54:48.044108",
+      "platform": "twitter",
+      "agent_id": 1,
+      "agent_name": "Singapore Police Force (SPF)",
+      "action_type": "CREATE_POST (INITIAL_SEED)",
+      "action_args": {
+        "content": "Scams are evolving. Whether it's a real person or a deepfake on your screen, the danger is the same. We support all efforts to educate the public on malware tactics. Stay vigilant, Singapore. #SPF #AntiScam"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 0,
+      "timestamp": "2026-04-29T15:54:48.026206",
+      "platform": "twitter",
+      "agent_id": 3,
+      "agent_name": "Public",
+      "action_type": "CREATE_POST (INITIAL_SEED)",
+      "action_args": {
+        "content": "The irony of using GenAI to warn us about GenAI scams is peak 2026. Also, can we ensure the digibank app doesn't go down again before we start making AI movies? Priorities, please. 🙄"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 0,
+      "timestamp": "2026-04-29T15:54:48.007238",
+      "platform": "twitter",
+      "agent_id": 2,
+      "agent_name": "creatives",
+      "action_type": "CREATE_POST (INITIAL_SEED)",
+      "action_args": {
+        "content": "Disappointing to see a major Singaporean brand bypass local actors, set designers, and voice artists for a 'prompt-engineered' video. AI can simulate a family, but it can't simulate the soul of human storytelling. #SupportLocalCreatives #NoToAIAds"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 0,
+      "timestamp": "2026-04-29T15:54:47.989600",
+      "platform": "twitter",
+      "agent_id": 0,
+      "agent_name": "DBS Bank",
+      "action_type": "CREATE_POST (INITIAL_SEED)",
+      "action_args": {
+        "content": "Transparency matters. We’ve launched a 100% GenAI-created video to show you exactly how sophisticated malware scams have become. See how AI is changing the scam landscape. #DBS #GenAI #AntiScam"
+      },
+      "result": null,
+      "success": true
+    }
+  ],
+  "rounds_count": 0
+}

@@ -1,0 +1,29 @@
+### 1. Executive Summary
+This image serves as a concluding informational graphic for a social media post, likely from a financial institution. It outlines the organization's dual approach to fraud prevention: implementing backend security measures ("safeguards") and empowering consumers through education. The central theme is the mitigation of "scams" while maintaining a seamless user experience ("without unnecessary disruption").
+
+### 2. OCR / Text Extraction
+*   **Heading (Red, Bold):** Customer protection without unnecessary disruption.
+*   **Body Paragraph 1 (Black):** We study how scams actually happen and where customers are most at risk.
+*   **Body Paragraph 2 (Black):** Alongside these safeguards, we’re committed to helping customers stay informed and vigilant.
+*   **Body Paragraph 3 (Black):** When you know the latest scam tactics, you’re better equipped to spot red flags early.
+
+### 3. Entity Identification
+*   **Organizations:** "We" (Implicit: The financial entity authoring the post).
+*   **Stakeholders:** Customers.
+*   **Threat Actors/Actions:** Scams, Scam tactics.
+*   **Concepts/Metrics:** Customer protection, Risk, Safeguards, Red flags.
+
+### 4. Structural Relationships
+*   **Agent-Action:** "We" (Organization) performs the action of "studying" how "scams" occur.
+*   **Provider-Recipient:** "We" (Organization) provides "safeguards" and "protection" to "customers."
+*   **Cause-Effect:** Knowledge of "scam tactics" (Cause) results in the ability to "spot red flags early" (Effect).
+*   **Spatial Hierarchy:**
+    *   The primary value proposition ("Customer protection") is positioned at the top in red.
+    *   A central **Shield Icon** (Visual Entity) acts as a symbolic bridge between the corporate promise (heading) and the operational details (body text).
+    *   Supporting details regarding research and education are listed in descending order of importance.
+
+### 5. Visual Data Translation
+*   **Graphic Elements:** The image utilizes a centered, vertical layout on a light gray, textured background resembling stone or parchment.
+*   **Iconography:** A red shield icon with a white interior and a double-border design is placed in the center of the frame.
+*   **Color Logic:** Red is used for the primary heading and the central icon to signify security, urgency, and branding. Black is used for secondary explanatory text to ensure readability.
+*   **Separators:** A thin, faded red horizontal line is positioned between the heading and the shield icon.

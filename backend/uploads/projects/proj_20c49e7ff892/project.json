@@ -1,0 +1,370 @@
+{
+  "project_id": "proj_20c49e7ff892",
+  "name": "Unnamed Project",
+  "status": "graph_completed",
+  "created_at": "2026-06-11T11:08:48.249214",
+  "updated_at": "2026-06-11T11:29:54.850136",
+  "files": [
+    {
+      "filename": "DBS Anti-Scam Initiatives for Work Permit Holders.pdf",
+      "size": 249723
+    },
+    {
+      "filename": "DBS Background & Context.pdf",
+      "size": 278790
+    }
+  ],
+  "total_text_length": 48497,
+  "ontology": {
+    "entity_types": [
+      {
+        "name": "CommercialBank",
+        "description": "Financial institutions like DBS or POSB that provide retail and corporate banking services.",
+        "attributes": [
+          {
+            "name": "bank_brand",
+            "type": "text",
+            "description": "The specific brand name of the bank (e.g., POSB, DBS)."
+          },
+          {
+            "name": "market_segment",
+            "type": "text",
+            "description": "The primary customer base served by this entity."
+          }
+        ],
+        "examples": [
+          "DBS Bank",
+          "POSB"
+        ]
+      },
+      {
+        "name": "RegulatoryBody",
+        "description": "Government agencies that oversee financial stability and law enforcement.",
+        "attributes": [
+          {
+            "name": "agency_name",
+            "type": "text",
+            "description": "The full name of the regulatory or enforcement agency."
+          },
+          {
+            "name": "authority_scope",
+            "type": "text",
+            "description": "The specific area of regulation (e.g., Monetary, Manpower, Police)."
+          }
+        ],
+        "examples": [
+          "Monetary Authority of Singapore (MAS)",
+          "Singapore Police Force (SPF)"
+        ]
+      },
+      {
+        "name": "MigrantWorker",
+        "description": "Individuals holding work permits, including construction and domestic workers.",
+        "attributes": [
+          {
+            "name": "permit_type",
+            "type": "text",
+            "description": "The category of work permit held (e.g., WPH, MDW)."
+          },
+          {
+            "name": "employment_sector",
+            "type": "text",
+            "description": "The industry the worker is employed in."
+          }
+        ],
+        "examples": [
+          "Migrant Construction Worker",
+          "Migrant Domestic Worker"
+        ]
+      },
+      {
+        "name": "BankExecutive",
+        "description": "High-level leadership individuals within financial institutions.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The legal name of the executive."
+          },
+          {
+            "name": "job_title",
+            "type": "text",
+            "description": "The official corporate position held."
+          }
+        ],
+        "examples": [
+          "Tan Su Shan",
+          "Piyush Gupta"
+        ]
+      },
+      {
+        "name": "MediaOutlet",
+        "description": "News organizations and digital platforms that report on public events.",
+        "attributes": [
+          {
+            "name": "outlet_name",
+            "type": "text",
+            "description": "The name of the news or media organization."
+          },
+          {
+            "name": "media_reach",
+            "type": "text",
+            "description": "The scale of the audience (e.g., National, International)."
+          }
+        ],
+        "examples": [
+          "Channel NewsAsia (CNA)",
+          "The Straits Times"
+        ]
+      },
+      {
+        "name": "AdvocacyGroup",
+        "description": "Non-governmental organizations that represent the interests of specific demographics.",
+        "attributes": [
+          {
+            "name": "group_name",
+            "type": "text",
+            "description": "The name of the NGO or social service agency."
+          },
+          {
+            "name": "focus_area",
+            "type": "text",
+            "description": "The primary social cause or demographic supported."
+          }
+        ],
+        "examples": [
+          "SG Enable",
+          "Migrant Worker Recreation Club"
+        ]
+      },
+      {
+        "name": "DigitalInfluencer",
+        "description": "Individuals with significant social media following who comment on public policy.",
+        "attributes": [
+          {
+            "name": "handle_name",
+            "type": "text",
+            "description": "The social media username or public persona."
+          },
+          {
+            "name": "primary_platform",
+            "type": "text",
+            "description": "The main social media platform used (e.g., TikTok, Facebook)."
+          }
+        ],
+        "examples": [
+          "Financial Blogger",
+          "Tech Commentator"
+        ]
+      },
+      {
+        "name": "GovernmentOfficial",
+        "description": "Public servants and ministers representing government ministries.",
+        "attributes": [
+          {
+            "name": "official_name",
+            "type": "text",
+            "description": "The name of the government representative."
+          },
+          {
+            "name": "ministry_affiliation",
+            "type": "text",
+            "description": "The government department they represent."
+          }
+        ],
+        "examples": [
+          "Minister of Manpower",
+          "MAS Spokesperson"
+        ]
+      },
+      {
+        "name": "Person",
+        "description": "Fallback type for any individual not covered by specific categories.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The name of the individual."
+          },
+          {
+            "name": "social_role",
+            "type": "text",
+            "description": "The role they play in the simulation (e.g., Netizen, Customer)."
+          }
+        ],
+        "examples": [
+          "Local Customer",
+          "Social Media User"
+        ]
+      },
+      {
+        "name": "Organization",
+        "description": "Fallback type for any entity or group not covered by specific categories.",
+        "attributes": [
+          {
+            "name": "org_name",
+            "type": "text",
+            "description": "The name of the organization."
+          },
+          {
+            "name": "org_type",
+            "type": "text",
+            "description": "The nature of the organization (e.g., SME, Employment Agency)."
+          }
+        ],
+        "examples": [
+          "Employment Agency",
+          "Retail Shop"
+        ]
+      }
+    ],
+    "edge_types": [
+      {
+        "name": "REGULATES",
+        "description": "A regulatory body overseeing a bank or organization.",
+        "source_targets": [
+          {
+            "source": "RegulatoryBody",
+            "target": "CommercialBank"
+          },
+          {
+            "source": "RegulatoryBody",
+            "target": "Organization"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "REPORTS_ON",
+        "description": "A media outlet or influencer reporting on an entity or event.",
+        "source_targets": [
+          {
+            "source": "MediaOutlet",
+            "target": "CommercialBank"
+          },
+          {
+            "source": "DigitalInfluencer",
+            "target": "CommercialBank"
+          },
+          {
+            "source": "MediaOutlet",
+            "target": "BankExecutive"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "ADVOCATES_FOR",
+        "description": "An advocacy group or individual supporting a specific demographic.",
+        "source_targets": [
+          {
+            "source": "AdvocacyGroup",
+            "target": "MigrantWorker"
+          },
+          {
+            "source": "Person",
+            "target": "MigrantWorker"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "CRITICIZES",
+        "description": "Expressing negative sentiment or opposition towards an entity.",
+        "source_targets": [
+          {
+            "source": "Person",
+            "target": "CommercialBank"
+          },
+          {
+            "source": "DigitalInfluencer",
+            "target": "CommercialBank"
+          },
+          {
+            "source": "MigrantWorker",
+            "target": "CommercialBank"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "SUPPORTS",
+        "description": "Expressing positive sentiment or agreement with an entity's policy.",
+        "source_targets": [
+          {
+            "source": "GovernmentOfficial",
+            "target": "CommercialBank"
+          },
+          {
+            "source": "RegulatoryBody",
+            "target": "CommercialBank"
+          },
+          {
+            "source": "Person",
+            "target": "CommercialBank"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "EMPLOYS",
+        "description": "An organization or person providing employment to a worker.",
+        "source_targets": [
+          {
+            "source": "Organization",
+            "target": "MigrantWorker"
+          },
+          {
+            "source": "Person",
+            "target": "MigrantWorker"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "REPRESENTS",
+        "description": "An executive or official acting on behalf of their institution.",
+        "source_targets": [
+          {
+            "source": "BankExecutive",
+            "target": "CommercialBank"
+          },
+          {
+            "source": "GovernmentOfficial",
+            "target": "RegulatoryBody"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "PROVIDES_SERVICES_TO",
+        "description": "A bank or organization offering services to a customer segment.",
+        "source_targets": [
+          {
+            "source": "CommercialBank",
+            "target": "MigrantWorker"
+          },
+          {
+            "source": "CommercialBank",
+            "target": "Person"
+          }
+        ],
+        "attributes": []
+      }
+    ]
+  },
+  "analysis_summary": "本次本体设计围绕星展银行（DBS/POSB）针对外籍劳工（WPH）设置取款限额这一核心事件。实体类型涵盖了决策方（银行及其高管）、监管方（MAS/SPF/MOM）、受影响群体（外籍劳工）、以及舆论传播方（媒体、KOL、社会组织）。通过设计‘批评’、‘支持’、‘倡导’等关系类型，系统可以模拟不同利益相关者在安全保障与歧视争议之间的博弈，以及舆论从特定群体向大众广场扩散的路径。",
+  "graph_id": "mirofish_local_984d8a714a584639",
+  "graph_build_task_id": "e0ed3835-58fa-4d45-ac21-86e2b8f27538",
+  "simulation_requirement": "Predict the public sentiment, social media reaction, and institutional reputation impact following the rollout of DBS Bank's targeted initiative to cap daily withdrawal limits at $7,000 for Work Permit Holder (WPH) accounts.\r\n\r\nContext & Inputs:\r\nDBS Background & Context.pdf: Use this to establish the institutional baseline, existing anti-scam frameworks, and regulatory standing.\r\n\r\nDBS Anti-Scam Initiatives for Work Permit Holders.pdf: Contains the existing initiatives/measures against scams for work permit holders.\r\n\r\nSimulation Objectives:\r\nEvaluate whether the public perceives this as a proactive security measure (protecting the vulnerable) or institutional discrimination (unfairly targeting a specific demographic).\r\n\r\nSimulate how the narrative evolves from the affected user base to the broader digital public square.\r\n\r\nDetermine the tipping point where this operational friction becomes a viral reputational issue.\r\n\r\nOutput Requirements:\r\nPlease provide the final report in the following format:\r\n\r\nEXECUTIVE SUMMARY: Majority perception, binary verdict: Positive/Negative/Neutral, and key inflection points.\r\n\r\nTEMPORAL SENTIMENT TRENDS: The lifecycle of the reaction from initial notice to widespread discourse.\r\n\r\nGRANULAR CLUSTER ANALYSIS: How the sentiment diverges between different groups.\r\n\r\nSTRATEGIC ACTION ITEMS: Risk mitigation steps for the bank to address the friction without compromising the anti-scam objective.\"",
+  "chunk_size": 500,
+  "chunk_overlap": 50,
+  "error": null,
+  "token_usage": {
+    "prompt_tokens": 82162,
+    "completion_tokens": 28210,
+    "total_tokens": 110372,
+    "call_count": 128,
+    "last_updated": "2026-06-11T11:29:53.194992"
+  }
+}

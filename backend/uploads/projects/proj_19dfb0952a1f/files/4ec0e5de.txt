@@ -1,0 +1,35 @@
+### 1. Executive Summary
+This image is an informational infographic from a financial institution (identified by the product names "digiVault" and "digibank") detailing proactive security measures against fraudulent activities. The central theme is the implementation of "intentional pauses" to disrupt the psychological tactics of urgency and fear used by scammers. It highlights three specific security features: a digital vault for locking savings, a time-constrained mobile wallet setup process, and a 12-hour cooling period for high-risk actions.
+
+### 2. OCR / Text Extraction
+*   **Headline 1:** Scammers rush people.
+*   **Headline 2:** We take a pause, on purpose.
+*   **Primary Body Text:** Scams often rely on fear, urgency and authority to push victims into acting fast. That’s why we build in intentional pauses at higher risk moments — giving customers time to stop, think and verify.
+*   **Feature 1 Heading:** digiVault:
+*   **Feature 1 Description:** lock your savings so they can only be unlocked in person at ATMs, VTMs or branches.
+*   **Feature 2 Heading:** Mobile wallet setup:
+*   **Feature 2 Description:** adding a new card requires permission in digibank and must be completed within 10 minutes — helping prevent misuse.
+*   **Feature 3 Heading:** Cooling periods:
+*   **Feature 3 Description:** the 12-hour waiting period helps deter impulsive decisions, giving customers time to assess the situation calmly and carefully.
+
+### 3. Entity Identification
+*   **Organizations:** Unnamed Bank (Service Provider), digibank (Digital Banking Platform).
+*   **Products/Features:** digiVault (Security Feature), Mobile wallet (Payment Service), ATMs (Automated Teller Machines), VTMs (Video Teller Machines), Branches (Physical Banking Locations).
+*   **Roles:** Scammers (Threat Actors), Victims (Targeted Individuals), Customers (Service Users).
+*   **Temporal Metrics:** 10 minutes (Process Completion Limit), 12 hours (Waiting Period Duration).
+*   **Psychological/Behavioral Factors:** Fear, Urgency, Authority, Impulsive decisions.
+
+### 4. Structural Relationships
+*   **Adversarial Relationship:** **Scammers** (Entity) utilize **fear, urgency, and authority** (Tactics) to influence **victims** (Entity).
+*   **Mitigation Strategy:** The **Bank** (Entity) implements **intentional pauses** (System Process) to protect **customers** (Entity).
+*   **Access Control:** **digiVault** (Product) restricts the unlocking of **savings** (Asset) to physical entities: **ATMs**, **VTMs**, or **branches**.
+*   **Process Dependency:** **Mobile wallet setup** (Process) is dependent on **permission** granted via the **digibank** (Entity) application.
+*   **Temporal Constraint (Setup):** **Mobile wallet setup** (Process) is subject to a **10-minute** (Entity) expiration limit.
+*   **Temporal Constraint (Security):** **Cooling periods** (Feature) impose a mandatory **12-hour** (Entity) delay on specific actions.
+
+### 5. Visual Data Translation
+*   **Layout:** The graphic follows a top-down hierarchical structure. A red-text headline is followed by a black-text explanatory paragraph, separated by a horizontal red divider from a three-column feature list.
+*   **Iconography (Column 1):** A line-art icon of a square safe with a circular red gear/sunburst logo in the center, representing **digiVault**.
+*   **Iconography (Column 2):** A line-art icon of a smartphone with a red square "plus" (+) symbol on the top right of the screen, representing **Mobile wallet setup**.
+*   **Iconography (Column 3):** A line-art icon of a clock face with a red arrow pointing clockwise and "12 hours" text in the center, representing **Cooling periods**.
+*   **Color Palette:** Primarily grayscale background with high-contrast red accents used for headlines, icons, and the divider line to emphasize key security information.

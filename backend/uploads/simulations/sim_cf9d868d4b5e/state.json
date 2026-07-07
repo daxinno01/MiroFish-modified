@@ -1,0 +1,28 @@
+{
+  "simulation_id": "sim_cf9d868d4b5e",
+  "project_id": "proj_dc9d0f6b660a",
+  "graph_id": "mirofish_local_f4adeb1046ec484e",
+  "enable_twitter": true,
+  "enable_reddit": true,
+  "status": "running",
+  "entities_count": 146,
+  "profiles_count": 146,
+  "entity_types": [
+    "Person",
+    "Organization",
+    "CorporateClient",
+    "BankingProfessional",
+    "WealthInvestor",
+    "TechSpecialist",
+    "RetailCustomer",
+    "RegulatoryBody"
+  ],
+  "config_generated": true,
+  "config_reasoning": "时间配置: The simulation is set for 96 hours to capture the full lifecycle of a high-stakes corporate interaction, from the initial viral response to the secondary analytical wave by thought leaders and competitors. Given the professional nature of LinkedIn and the Singapore-centric context (SGT/CST), activity is weighted heavily toward business hours for corporate entities and SME owners, with a primary peak in the evening (19:00-22:00) when the broader 'netizen' swarm and professional networkers are most active. The agent count is scaled to allow for a significant portion of the 146 entities to interact during high-intensity periods while maintaining a realistic lull during early morning hours. | 事件配置: The selected posts represent the multi-faceted nature of the event. By including the original complainant (RetailCustomer), the CEO's response (Person), and the institutional stance (Organization), we establish the core conflict. Adding the TechSpecialist and RegulatoryBody perspectives allows the simulation to explore the technical and legal ramifications, while the CorporateClient and WealthInvestor types capture the high-stakes economic impact of service disruptions. | Agent配置: 成功生成 146 个 | 初始帖子分配: 8 个帖子已分配发布者",
+  "current_round": 0,
+  "twitter_status": "not_started",
+  "reddit_status": "not_started",
+  "created_at": "2026-06-09T11:11:44.324686",
+  "updated_at": "2026-06-11T17:15:36.638607",
+  "error": null
+}

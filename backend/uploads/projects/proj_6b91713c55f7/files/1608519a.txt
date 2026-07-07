@@ -1,0 +1,46 @@
+Singapore banks to implement new scam safeguards on all digital transactions from Oct 15
+
+Customers may experience delays in digital payments and transfers, including for legitimate transactions,
+
+Published Oct 03, 2025, 02:42 PM
+Updated Oct 03, 2025, 05:56 PM
+
+SINGAPORE - Major retail banks in Singapore will put in place new safeguards on all digital transactions from Oct 15 to further protect customers from scams.
+
+Customers of DBS Bank, OCBC Bank, UOB, Citibank, HSBC, Maybank and Standard Chartered should expect more of their transactions to be held for 24 hours, or rejected immediately, The Association of Banks in Singapore (ABS) said on Oct 3.
+
+Current and savings accounts, including joint accounts, with balances of a minimum of $50,000, will be protected by this safeguard, which kicks in when banks detect that an account is being quickly emptied of its funds due to a potential scam.
+
+The safeguard will apply to all digital banking transactions via bank apps and internet banking. Non-digital banking transactions, including cash withdrawals at bank branches and ATMs, will not be affected.
+
+When a transaction, together with withdrawals over the past 24 hours, results in more than 50 per cent of an account’s balance to be transferred out, the safeguard will kick in.
+
+The transaction that breaches the more than 50 per cent threshold, along with all subsequent transactions out of the account, will be placed on hold for 24 hours or rejected.
+
+Customers may experience delays in digital payments and transfers, including for legitimate transactions, and are advised to plan ahead for time-sensitive banking transactions to avoid incurring fees and charges due to the delay.
+
+Apart from such situations where an account is quickly emptied due to a potential scam, banks have other fraud detection parameters and may hold or reject transactions based on other risk factors, said ABS.
+
+ABS director Ong-Ang Ai Boon said banks have been consistently investing in and implementing various anti-scam measures, such as fraud surveillance, cognitive breaks and Money Lock – a feature which allows one to “lock up” a portion of the money in one’s bank account.
+
+She said: “However, scams remain a scourge on society and the methods adopted by scammers continue to grow in sophistication. The measures announced today will help to protect phishing scam victims and stop fraudulent withdrawals before it is too late.
+
+“This societal safeguard may result in some friction, and we seek customers’ patience and understanding.”
+
+She added that customers should be wary of suspicious links in SMSes and e-mails, verify their banks’ contact details before getting in touch with their bank and not share personal or account credentials.
+
+Should a transaction be held or declined, customers will be informed instantly via their mobile banking app or internet banking platform, along with instructions on the next steps.
+
+The 24-hours cooling period provides time for victims to cancel the transaction if they realise that they have been scammed.
+
+For customers who need transactions to be processed during the 24-hour cooling period, they will need to verify their transactions with the bank.
+
+Recurring standing instructions, recurring Giro or eGiro payments as well as bill payments to entities classified as billing organisations by the bank are exempted from the safeguards.
+
+The major banks here will also push out more safeguards in the coming months.
+
+One of these measures will involve sending in-app push notifications for acknowledgement to customers who are digital token users when making outbound calls to them.
+
+This provides assurance to customers that bank calls that they receive are indeed from their banks, ABS said.
+
+Singapore saw $456.4 million lost to scams in the first half of 2025, with almost 20,000 cases reported, although the amount lost was lower than the in same period in 2024.

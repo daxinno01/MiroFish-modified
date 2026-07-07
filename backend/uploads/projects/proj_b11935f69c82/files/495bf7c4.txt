@@ -1,0 +1,37 @@
+**1. Executive Summary**
+This image is an educational infographic from DBS Bank titled "DBS Scam Defence." It serves as a public service announcement outlining four proactive security measures—Set, Check, Protect, and Lock—that customers should implement to mitigate the risk of financial scams. The graphic includes specific product features like "Payment Controls" and "digiVault."
+
+**2. OCR / Text Extraction**
+*   **Main Heading:** DBS Scam Defence
+*   **Sub-heading:** ACT to get the upper hand over scammers.
+*   **Action List (Embedded in Graphic):**
+    *   **SET** transaction limits and alerts
+    *   **CHECK** for unexpected activities and alerts
+    *   **PROTECT** your cards with Payment Controls
+    *   **LOCK** your money with digiVault
+*   **Instructional Text:** Follow us for the latest anti-scam tips, and learn more about DBS Scam Defence here:
+*   **Call to Action / URL:** go.dbs.com/scamdefence
+
+**3. Entity Identification**
+*   **Organization:** DBS (Bank)
+*   **Program/Initiative:** DBS Scam Defence
+*   **Product Features:**
+    *   Payment Controls
+    *   digiVault
+*   **Financial Metrics/Concepts:** Transaction limits, alerts, unexpected activities.
+*   **Digital Asset:** go.dbs.com/scamdefence (URL)
+
+**4. Structural Relationships**
+*   **Program Ownership:** "DBS Scam Defence" (Program) is owned and operated by "DBS" (Organization).
+*   **Action Hierarchy:** The verbs "SET," "CHECK," "PROTECT," and "LOCK" are defined as the core components of the "ACT" (Sub-heading) framework.
+*   **Feature Integration:**
+    *   "Payment Controls" (Product Feature) is the mechanism used to "PROTECT" (Action) cards.
+    *   "digiVault" (Product Feature) is the mechanism used to "LOCK" (Action) money.
+*   **Information Flow:** The footer text directs the user to the "go.dbs.com/scamdefence" (URL) for comprehensive data regarding the "DBS Scam Defence" (Program).
+
+**5. Visual Data Translation**
+*   **Central Iconography:** A red, stylized fist/hand icon is positioned on the left. Four fingers extend to the right, serving as horizontal containers for the primary action verbs.
+*   **Layout:** The graphic uses a top-down hierarchical structure. The brand/program title is at the top, followed by a call to action, a central mnemonic graphic, and a terminal URL box.
+*   **Color Palette:** Utilizes a high-contrast red, black, and white scheme, consistent with DBS corporate branding.
+*   **Delimiters:** Thin horizontal black lines separate the four descriptive text strings associated with the hand icon's fingers.
+*   **Directional Cues:** A white right-pointing arrow is located within a red box at the bottom right, signifying a navigational link to the provided URL.

@@ -1,0 +1,309 @@
+{
+  "project_id": "proj_8e68bc925ffd",
+  "name": "Unnamed Project",
+  "status": "failed",
+  "created_at": "2026-05-11T23:20:58.916337",
+  "updated_at": "2026-05-11T23:53:31.288099",
+  "files": [
+    {
+      "filename": "Singapore Household Income Trends 2022.pdf",
+      "size": 209882
+    },
+    {
+      "filename": "dbs_annual_report_excerpt.pdf",
+      "size": 361013
+    },
+    {
+      "filename": "mothership_article.md",
+      "size": 2229
+    },
+    {
+      "filename": "DBS Dossier_ Context and Benchmarking.pdf",
+      "size": 372029
+    },
+    {
+      "filename": "reference_reddit_comments.md",
+      "size": 4403
+    }
+  ],
+  "total_text_length": 71710,
+  "ontology": {
+    "entity_types": [
+      {
+        "name": "BankExecutive",
+        "description": "High-level leadership responsible for corporate strategy and performance.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The full name of the executive."
+          },
+          {
+            "name": "current_title",
+            "type": "text",
+            "description": "The specific leadership role held."
+          },
+          {
+            "name": "annual_compensation",
+            "type": "text",
+            "description": "The total remuneration package including bonuses."
+          }
+        ],
+        "examples": [
+          "Piyush Gupta",
+          "Peter Seah",
+          "Helen Wong"
+        ]
+      },
+      {
+        "name": "RetailCustomer",
+        "description": "Individual banking clients from various socio-economic backgrounds.",
+        "attributes": [
+          {
+            "name": "income_level",
+            "type": "text",
+            "description": "The household income decile or bracket."
+          },
+          {
+            "name": "housing_type",
+            "type": "text",
+            "description": "The type of dwelling, such as HDB or private property."
+          }
+        ],
+        "examples": [
+          "HDB 3-room dweller",
+          "Sandwich Class parent",
+          "Low-income worker"
+        ]
+      },
+      {
+        "name": "FinancialAnalyst",
+        "description": "Experts who analyze market trends and corporate financial health.",
+        "attributes": [
+          {
+            "name": "firm_affiliation",
+            "type": "text",
+            "description": "The financial institution or firm they represent."
+          },
+          {
+            "name": "specialty_area",
+            "type": "text",
+            "description": "Specific focus like banking sector or macroeconomics."
+          }
+        ],
+        "examples": [
+          "Equity Researcher",
+          "Market Strategist",
+          "The Broke Celeryman"
+        ]
+      },
+      {
+        "name": "SocialAdvocate",
+        "description": "Individuals or groups campaigning for social equity and welfare.",
+        "attributes": [
+          {
+            "name": "advocacy_focus",
+            "type": "text",
+            "description": "The primary social cause, e.g., minimum wage or poverty."
+          },
+          {
+            "name": "influence_score",
+            "type": "text",
+            "description": "Relative reach on social media platforms."
+          }
+        ],
+        "examples": [
+          "Dr. Ng Kok Hoe",
+          "Wealth inequality activist",
+          "Community organizer"
+        ]
+      },
+      {
+        "name": "Shareholder",
+        "description": "Investors holding equity in the bank, focused on returns.",
+        "attributes": [
+          {
+            "name": "investment_strategy",
+            "type": "text",
+            "description": "Focus on dividends, growth, or long-term value."
+          },
+          {
+            "name": "investor_class",
+            "type": "text",
+            "description": "Whether institutional or individual retail investor."
+          }
+        ],
+        "examples": [
+          "Yield-seeker",
+          "Institutional fund manager",
+          "DBS retail investor"
+        ]
+      },
+      {
+        "name": "MediaOutlet",
+        "description": "Organizations that report news and shape public discourse.",
+        "attributes": [
+          {
+            "name": "org_name",
+            "type": "text",
+            "description": "The name of the media organization."
+          },
+          {
+            "name": "editorial_stance",
+            "type": "text",
+            "description": "The general tone or bias of their reporting."
+          }
+        ],
+        "examples": [
+          "Mothership",
+          "CNA",
+          "The Straits Times"
+        ]
+      },
+      {
+        "name": "GovernmentOfficial",
+        "description": "Representatives of state agencies and regulatory bodies.",
+        "attributes": [
+          {
+            "name": "agency_name",
+            "type": "text",
+            "description": "The department or ministry, e.g., MAS or MOM."
+          },
+          {
+            "name": "policy_portfolio",
+            "type": "text",
+            "description": "The specific area of governance they oversee."
+          }
+        ],
+        "examples": [
+          "MAS Regulator",
+          "SingStat Statistician",
+          "MOM Spokesperson"
+        ]
+      },
+      {
+        "name": "UnionRepresentative",
+        "description": "Individuals representing the interests of the workforce.",
+        "attributes": [
+          {
+            "name": "union_name",
+            "type": "text",
+            "description": "The specific trade union or labor association."
+          },
+          {
+            "name": "worker_sector",
+            "type": "text",
+            "description": "The industry sector they represent."
+          }
+        ],
+        "examples": [
+          "NTUC leader",
+          "Banking union rep",
+          "Labor advocate"
+        ]
+      },
+      {
+        "name": "Person",
+        "description": "General individual fallback for any person not fitting specific types.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The name or handle of the individual."
+          },
+          {
+            "name": "public_sentiment",
+            "type": "text",
+            "description": "General attitude toward the current event."
+          }
+        ],
+        "examples": [
+          "Reddit user",
+          "Netizen",
+          "Passerby"
+        ]
+      },
+      {
+        "name": "Organization",
+        "description": "General organizational fallback for groups not fitting specific types.",
+        "attributes": [
+          {
+            "name": "org_name",
+            "type": "text",
+            "description": "The name of the organization."
+          },
+          {
+            "name": "mission_statement",
+            "type": "text",
+            "description": "The primary goal or purpose of the entity."
+          }
+        ],
+        "examples": [
+          "DBS Bank",
+          "UOB",
+          "NGO"
+        ]
+      }
+    ],
+    "edge_types": [
+      {
+        "name": "CRITICIZES",
+        "description": "Expressing disapproval or negative feedback regarding actions.",
+        "source_targets": [
+          {
+            "source": "RetailCustomer",
+            "target": "BankExecutive"
+          },
+          {
+            "source": "SocialAdvocate",
+            "target": "Organization"
+          },
+          {
+            "source": "Person",
+            "target": "BankExecutive"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "REPORTS_ON",
+        "description": "Providing news coverage or analysis of an entity.",
+        "source_targets": [
+          {
+            "source": "MediaOutlet",
+            "target": "Organization"
+          },
+          {
+            "source": "MediaOutlet",
+            "target": "BankExecutive"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "INVESTS_IN",
+        "description": "Holding a financial stake in an organization.",
+        "source_targets": [
+          {
+            "source": ""
+          }
+        ],
+        "attributes": []
+      }
+    ]
+  },
+  "analysis_summary": "",
+  "graph_id": null,
+  "graph_build_task_id": "72d4ca95-13fe-44fd-b52f-8d99ef359996",
+  "simulation_requirement": "Based on an article on DBS's record profits and the subsequent 13% pay increase for CEO Piyush Gupta (mothership_article.md), and other supporting documents, simulate a swarm of diverse personas (examples but not limited to: a retail banking customer, a trade union representative, a shareholder, a financial analyst, a low-income worker, Institutionalist, Sandwich Class, Social Advocate, Yield-Seeker, Critical Tech-User, others as you see fit). Predict the dominant public sentiment on Singapore social media over the next 7 days. Specifically, forecast whether the reaction will result in a measurable 'reputational risk' score (1-10) and identify the primary 'point of anger' the public will fixate on.",
+  "chunk_size": 500,
+  "chunk_overlap": 50,
+  "error": "list indices must be integers or slices, not str",
+  "token_usage": {
+    "prompt_tokens": 113838,
+    "completion_tokens": 24030,
+    "total_tokens": 137868,
+    "call_count": 198,
+    "last_updated": "2026-05-11T23:53:30.849233"
+  }
+}

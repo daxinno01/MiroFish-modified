@@ -1,0 +1,32 @@
+### 1. Executive Summary
+This image is a digital informational graphic, identified as the second image of a Facebook post, announcing the implementation of a security feature for a financial institution. The graphic details the rollout of a "12-hour cooling period" designed to safeguard customer accounts during specific high-risk digital banking activities.
+
+### 2. OCR / Text Extraction
+*   **Headline:** We've progressively rolled out an added safeguard: **a 12-hour cooling period.**
+*   **Icon Text:** 12 hours
+*   **Instructional Text:** It applies when you:
+    *   » add a new payee
+    *   » increase transfer limits
+    *   » change your mobile number or email
+*   **Explanatory Paragraph 1:** By introducing this **carefully and in phases,** it protects customers **without disrupting everyday banking.**
+*   **Explanatory Paragraph 2:** Transfers to existing recipients and within current limits continue as usual.
+
+### 3. Entity Identification
+*   **Organizations:** Unspecified financial institution (the "We" in the text).
+*   **People:** Customers (Target demographic).
+*   **Products/Services:** Digital banking services; "12-hour cooling period" (Security Feature/Safeguard).
+*   **Financial Metrics / Data Points:** 12-hour (Time-based security duration).
+*   **Geographic Locations:** None specified.
+
+### 4. Structural Relationships
+*   **Trigger Relationship:** The "12-hour cooling period" (Security Feature) is activated by three specific user actions: "add a new payee," "increase transfer limits," or "change your mobile number or email."
+*   **Application Relationship:** The "12-hour cooling period" (Security Feature) is applied to "customers" (Entity).
+*   **Exclusion Relationship:** The "12-hour cooling period" (Security Feature) does not apply to "Transfers to existing recipients" or transactions conducted "within current limits."
+*   **Visual Hierarchy:** The primary headline at the top establishes the subject. The central icon provides a visual anchor for the time duration. The bulleted list specifies conditions for the safeguard, and the bottom text clarifies the operational impact.
+
+### 5. Visual Data Translation
+*   **Graphic Type:** Informational Infographic.
+*   **Visual Emphasis:** Red text is used to highlight the core subject ("a 12-hour cooling period") and the strategic intent ("carefully and in phases" and "without disrupting everyday banking").
+*   **Iconography:** A central red icon depicts a clock face with a circular arrow denoting elapsed time, containing the text "12 hours."
+*   **Bulleting:** Double red chevrons (») are used as bullet points to list the specific triggers for the cooling period.
+*   **Background:** The background is a light gray with a mottled, parchment-like texture. A solid red horizontal bar appears at the top, terminating in a black square on the far right.

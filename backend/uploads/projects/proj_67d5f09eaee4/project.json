@@ -1,0 +1,345 @@
+{
+  "project_id": "proj_67d5f09eaee4",
+  "name": "Unnamed Project",
+  "status": "graph_completed",
+  "created_at": "2026-05-21T13:58:50.042240",
+  "updated_at": "2026-05-21T14:02:04.747632",
+  "files": [
+    {
+      "filename": "background.txt",
+      "size": 3686
+    }
+  ],
+  "total_text_length": 3571,
+  "ontology": {
+    "entity_types": [
+      {
+        "name": "TalkingAnimal",
+        "description": "A non-human biological entity capable of human-like speech and social interaction.",
+        "attributes": [
+          {
+            "name": "species_type",
+            "type": "text",
+            "description": "The biological species of the animal."
+          },
+          {
+            "name": "cognitive_level",
+            "type": "text",
+            "description": "Assessment of the animal's reasoning and intelligence."
+          }
+        ],
+        "examples": [
+          "The First Talking Chimpanzee",
+          "Sentient Lab Parrot"
+        ]
+      },
+      {
+        "name": "Scientist",
+        "description": "Researchers and academics studying the biological and cognitive aspects of the discovery.",
+        "attributes": [
+          {
+            "name": "field_of_expertise",
+            "type": "text",
+            "description": "Specific area such as Evolutionary Biology or Linguistics."
+          },
+          {
+            "name": "academic_affiliation",
+            "type": "text",
+            "description": "The university or research institute they belong to."
+          }
+        ],
+        "examples": [
+          "Dr. Aris Thorne",
+          "Professor of Cognitive Science"
+        ]
+      },
+      {
+        "name": "GovernmentOfficial",
+        "description": "Representatives of state agencies tasked with regulation, security, and legal categorization.",
+        "attributes": [
+          {
+            "name": "department_name",
+            "type": "text",
+            "description": "The government body they represent."
+          },
+          {
+            "name": "jurisdiction_level",
+            "type": "text",
+            "description": "National, regional, or international authority."
+          }
+        ],
+        "examples": [
+          "Director of National Security",
+          "Wildlife Regulation Officer"
+        ]
+      },
+      {
+        "name": "CorporateExecutive",
+        "description": "Leaders of companies seeking to commercialize or profit from the discovery.",
+        "attributes": [
+          {
+            "name": "company_name",
+            "type": "text",
+            "description": "The corporation they represent."
+          },
+          {
+            "name": "business_sector",
+            "type": "text",
+            "description": "Industry such as Biotech, Entertainment, or Media."
+          }
+        ],
+        "examples": [
+          "CEO of BioGen Corp",
+          "Marketing VP of Global Media"
+        ]
+      },
+      {
+        "name": "Journalist",
+        "description": "Professional media workers reporting on the event through traditional news outlets.",
+        "attributes": [
+          {
+            "name": "media_outlet_name",
+            "type": "text",
+            "description": "The news organization they work for."
+          },
+          {
+            "name": "reporting_beat",
+            "type": "text",
+            "description": "The specific focus of their reporting."
+          }
+        ],
+        "examples": [
+          "BBC Science Reporter",
+          "NYT Investigative Journalist"
+        ]
+      },
+      {
+        "name": "SocialMediaInfluencer",
+        "description": "Individuals with large online followings who drive viral trends and public attention.",
+        "attributes": [
+          {
+            "name": "primary_platform",
+            "type": "text",
+            "description": "The main social media platform used."
+          },
+          {
+            "name": "follower_count_range",
+            "type": "text",
+            "description": "Approximate scale of their audience."
+          }
+        ],
+        "examples": [
+          "Viral Tech Vlogger",
+          "TikTok Trendsetter"
+        ]
+      },
+      {
+        "name": "Activist",
+        "description": "Individuals advocating for the rights, protection, or liberation of the animal.",
+        "attributes": [
+          {
+            "name": "advocacy_focus",
+            "type": "text",
+            "description": "The specific cause, e.g., Animal Rights or Legal Personhood."
+          },
+          {
+            "name": "protest_style",
+            "type": "text",
+            "description": "Method of activism, e.g., Legal Action or Grassroots Protest."
+          }
+        ],
+        "examples": [
+          "Animal Rights Defender",
+          "Legal Personhood Advocate"
+        ]
+      },
+      {
+        "name": "ReligiousLeader",
+        "description": "Authorities from faith traditions providing theological and existential interpretations.",
+        "attributes": [
+          {
+            "name": "faith_tradition",
+            "type": "text",
+            "description": "The religion or spiritual group represented."
+          },
+          {
+            "name": "clerical_title",
+            "type": "text",
+            "description": "The formal title within their organization."
+          }
+        ],
+        "examples": [
+          "Archbishop of Canterbury",
+          "Spiritual Philosopher"
+        ]
+      },
+      {
+        "name": "Person",
+        "description": "A general individual or member of the public not covered by specific roles.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The individual's name."
+          },
+          {
+            "name": "personal_location",
+            "type": "text",
+            "description": "Geographic location of the individual."
+          }
+        ],
+        "examples": [
+          "John Doe",
+          "Concerned Citizen"
+        ]
+      },
+      {
+        "name": "Organization",
+        "description": "A general group, NGO, or association not covered by specific institutional types.",
+        "attributes": [
+          {
+            "name": "org_name",
+            "type": "text",
+            "description": "The name of the organization."
+          },
+          {
+            "name": "mission_statement",
+            "type": "text",
+            "description": "The primary goal or purpose of the group."
+          }
+        ],
+        "examples": [
+          "Local Community Club",
+          "International Ethics Committee"
+        ]
+      }
+    ],
+    "edge_types": [
+      {
+        "name": "STUDIES",
+        "description": "Scientific observation and research conducted on the animal.",
+        "source_targets": [
+          {
+            "source": "Scientist",
+            "target": "TalkingAnimal"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "REGULATES",
+        "description": "Legal or administrative control exercised over the animal.",
+        "source_targets": [
+          {
+            "source": "GovernmentOfficial",
+            "target": "TalkingAnimal"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "MONETIZES",
+        "description": "Attempts to derive commercial profit or media value from the animal.",
+        "source_targets": [
+          {
+            "source": "CorporateExecutive",
+            "target": "TalkingAnimal"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "ADVOCATES_FOR",
+        "description": "Support for the rights and well-being of the animal.",
+        "source_targets": [
+          {
+            "source": "Activist",
+            "target": "TalkingAnimal"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "REPORTS_ON",
+        "description": "Providing news coverage and information about the animal or related events.",
+        "source_targets": [
+          {
+            "source": "Journalist",
+            "target": "TalkingAnimal"
+          },
+          {
+            "source": "Journalist",
+            "target": "GovernmentOfficial"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "DEBATES_WITH",
+        "description": "Public or private disagreement and discussion regarding the discovery.",
+        "source_targets": [
+          {
+            "source": "Person",
+            "target": "Person"
+          },
+          {
+            "source": "Scientist",
+            "target": "ReligiousLeader"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "PROTESTS_AGAINST",
+        "description": "Active opposition to the actions of an institution or individual.",
+        "source_targets": [
+          {
+            "source": "Activist",
+            "target": "CorporateExecutive"
+          },
+          {
+            "source": "Activist",
+            "target": "GovernmentOfficial"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "INFLUENCES",
+        "description": "Shaping the opinions and behaviors of the general public.",
+        "source_targets": [
+          {
+            "source": "SocialMediaInfluencer",
+            "target": "Person"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "PROVIDES_GUIDANCE",
+        "description": "Offering moral or spiritual direction to followers.",
+        "source_targets": [
+          {
+            "source": "ReligiousLeader",
+            "target": "Person"
+          }
+        ],
+        "attributes": []
+      }
+    ]
+  },
+  "analysis_summary": "本本体设计围绕‘会说话的动物’这一核心变量，构建了科学、政治、商业、媒体、伦理及宗教六大维度的社会反应模型。实体类型涵盖了从直接研究者（科学家）到监管者（政府官员）、获利者（企业高管）以及舆论引导者（记者、网红、宗教领袖）的完整链条。关系类型重点捕捉了社媒环境下的互动，如‘辩论’、‘抗议’、‘影响’和‘报道’，旨在模拟当传统‘人’的定义受到生物学挑战时，社会各界如何通过互动重塑舆论格局。",
+  "graph_id": "mirofish_local_13fd78e8a0d04c78",
+  "graph_build_task_id": "718ffdb8-4f6b-441a-ade7-b2e4930e816c",
+  "simulation_requirement": "Predict what happens to the world if a talking animal is discovered.",
+  "chunk_size": 500,
+  "chunk_overlap": 50,
+  "error": null,
+  "token_usage": {
+    "prompt_tokens": 8033,
+    "completion_tokens": 3916,
+    "total_tokens": 11949,
+    "call_count": 13,
+    "last_updated": "2026-05-21T14:02:02.859873"
+  }
+}

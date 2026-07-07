@@ -1,0 +1,368 @@
+{
+  "project_id": "proj_19dfb0952a1f",
+  "name": "Unnamed Project",
+  "status": "graph_completed",
+  "created_at": "2026-05-25T08:23:25.722927",
+  "updated_at": "2026-05-25T08:51:02.117839",
+  "files": [
+    {
+      "filename": "Local Banks Anti-scam Measures.txt",
+      "size": 7146
+    },
+    {
+      "filename": "New Scam Safeguards.txt",
+      "size": 3977
+    },
+    {
+      "filename": "DBS Background & Context.pdf",
+      "size": 349722
+    },
+    {
+      "filename": "Facebook Post.txt",
+      "size": 948
+    }
+  ],
+  "total_text_length": 64015,
+  "ontology": {
+    "entity_types": [
+      {
+        "name": "Bank",
+        "description": "Financial institutions providing retail and corporate banking services in Singapore.",
+        "attributes": [
+          {
+            "name": "bank_brand",
+            "type": "text",
+            "description": "The commercial brand name of the bank."
+          },
+          {
+            "name": "security_features",
+            "type": "text",
+            "description": "Specific anti-scam measures implemented by the bank."
+          }
+        ],
+        "examples": [
+          "DBS Bank",
+          "OCBC Bank",
+          "UOB"
+        ]
+      },
+      {
+        "name": "GovernmentAgency",
+        "description": "Regulatory or law enforcement bodies governing the financial and digital sectors.",
+        "attributes": [
+          {
+            "name": "agency_acronym",
+            "type": "text",
+            "description": "The commonly used abbreviation for the agency."
+          },
+          {
+            "name": "regulatory_scope",
+            "type": "text",
+            "description": "The specific sector or domain the agency oversees."
+          }
+        ],
+        "examples": [
+          "Monetary Authority of Singapore",
+          "Singapore Police Force",
+          "IMDA"
+        ]
+      },
+      {
+        "name": "BankCustomer",
+        "description": "Individual retail users who hold accounts and perform digital transactions.",
+        "attributes": [
+          {
+            "name": "user_persona",
+            "type": "text",
+            "description": "The behavioral profile of the customer (e.g., tech-savvy, elderly)."
+          },
+          {
+            "name": "digital_literacy",
+            "type": "text",
+            "description": "The level of proficiency in using digital banking tools."
+          }
+        ],
+        "examples": [
+          "Retail Saver",
+          "Digital Banking User",
+          "Elderly Account Holder"
+        ]
+      },
+      {
+        "name": "Executive",
+        "description": "High-ranking leadership figures within banks or financial organizations.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The complete name of the executive."
+          },
+          {
+            "name": "job_title",
+            "type": "text",
+            "description": "The official designation of the individual."
+          }
+        ],
+        "examples": [
+          "Tan Su Shan",
+          "Piyush Gupta",
+          "Ong-Ang Ai Boon"
+        ]
+      },
+      {
+        "name": "NewsMedia",
+        "description": "Media outlets and platforms that report on financial news and public safety.",
+        "attributes": [
+          {
+            "name": "media_outlet_name",
+            "type": "text",
+            "description": "The name of the news organization."
+          },
+          {
+            "name": "editorial_focus",
+            "type": "text",
+            "description": "The primary subject matter the outlet covers."
+          }
+        ],
+        "examples": [
+          "The Straits Times",
+          "CNA",
+          "Business Times"
+        ]
+      },
+      {
+        "name": "Scammer",
+        "description": "Threat actors or entities attempting to perform fraudulent activities.",
+        "attributes": [
+          {
+            "name": "scam_methodology",
+            "type": "text",
+            "description": "The primary tactic used (e.g., social engineering, phishing)."
+          },
+          {
+            "name": "threat_level",
+            "type": "text",
+            "description": "The perceived sophistication of the threat actor."
+          }
+        ],
+        "examples": [
+          "Phishing Operator",
+          "Investment Scammer",
+          "Impersonation Actor"
+        ]
+      },
+      {
+        "name": "OpinionLeader",
+        "description": "Influential individuals on social media who shape public perception of bank policies.",
+        "attributes": [
+          {
+            "name": "expertise_area",
+            "type": "text",
+            "description": "The field of knowledge the leader is known for."
+          },
+          {
+            "name": "follower_base",
+            "type": "text",
+            "description": "The scale or type of audience they influence."
+          }
+        ],
+        "examples": [
+          "Financial Blogger",
+          "Tech Influencer",
+          "Consumer Rights Advocate"
+        ]
+      },
+      {
+        "name": "BusinessOwner",
+        "description": "Corporate or SME entities affected by transaction limits and cooling periods.",
+        "attributes": [
+          {
+            "name": "business_scale",
+            "type": "text",
+            "description": "The size of the business (e.g., SME, MNC)."
+          },
+          {
+            "name": "transaction_urgency",
+            "type": "text",
+            "description": "The typical need for immediate fund transfers."
+          }
+        ],
+        "examples": [
+          "SME Director",
+          "E-commerce Merchant",
+          "Corporate Treasurer"
+        ]
+      },
+      {
+        "name": "Person",
+        "description": "A general individual actor not falling into specific professional or role categories.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The name of the individual."
+          },
+          {
+            "name": "social_handle",
+            "type": "text",
+            "description": "The username on social media platforms."
+          }
+        ],
+        "examples": [
+          "General Netizen",
+          "Concerned Citizen",
+          "Social Media Commenter"
+        ]
+      },
+      {
+        "name": "Organization",
+        "description": "A general entity or group not classified as a bank or government agency.",
+        "attributes": [
+          {
+            "name": "org_name",
+            "type": "text",
+            "description": "The name of the organization."
+          },
+          {
+            "name": "entity_type",
+            "type": "text",
+            "description": "The nature of the organization (e.g., NGO, Association)."
+          }
+        ],
+        "examples": [
+          "Association of Banks in Singapore",
+          "Consumers Association of Singapore",
+          "Community Group"
+        ]
+      }
+    ],
+    "edge_types": [
+      {
+        "name": "REGULATES",
+        "description": "The act of oversight and rule-setting by a government body over a bank.",
+        "source_targets": [
+          {
+            "source": "GovernmentAgency",
+            "target": "Bank"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "REPORTS_ON",
+        "description": "Media coverage of events, policies, or entities.",
+        "source_targets": [
+          {
+            "source": "NewsMedia",
+            "target": "Bank"
+          },
+          {
+            "source": "NewsMedia",
+            "target": "GovernmentAgency"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "CRITICIZES",
+        "description": "Expressing negative feedback or dissatisfaction regarding policies or services.",
+        "source_targets": [
+          {
+            "source": "BankCustomer",
+            "target": "Bank"
+          },
+          {
+            "source": "OpinionLeader",
+            "target": "Bank"
+          },
+          {
+            "source": "BusinessOwner",
+            "target": "Bank"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "SUPPORTS",
+        "description": "Expressing agreement or advocacy for security measures and policies.",
+        "source_targets": [
+          {
+            "source": "BankCustomer",
+            "target": "Bank"
+          },
+          {
+            "source": "Organization",
+            "target": "Bank"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "TARGETS",
+        "description": "Attempting to exploit or defraud a specific group or individual.",
+        "source_targets": [
+          {
+            "source": "Scammer",
+            "target": "BankCustomer"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "WORKS_FOR",
+        "description": "Employment or leadership relationship between an individual and an organization.",
+        "source_targets": [
+          {
+            "source": "Executive",
+            "target": "Bank"
+          },
+          {
+            "source": "Executive",
+            "target": "Organization"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "COMPETES_WITH",
+        "description": "Market rivalry between different financial institutions.",
+        "source_targets": [
+          {
+            "source": "Bank",
+            "target": "Bank"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "ADVISES",
+        "description": "Providing guidance or warnings to the public or customers.",
+        "source_targets": [
+          {
+            "source": "GovernmentAgency",
+            "target": "BankCustomer"
+          },
+          {
+            "source": "Bank",
+            "target": "BankCustomer"
+          }
+        ],
+        "attributes": []
+      }
+    ]
+  },
+  "analysis_summary": "本设计聚焦于星展银行（DBS）反诈措施引发的社媒舆论模拟。实体类型涵盖了政策制定者（政府机构）、执行者（银行及其高管）、受影响群体（个人客户与企业主）、威胁来源（诈骗者）以及舆论放大器（新闻媒体与意见领袖）。关系类型设计旨在捕捉监管、报道、批评、支持及诈骗攻击等真实社媒互动路径，特别强调了‘安全与便利’之间的矛盾冲突点。",
+  "graph_id": "mirofish_local_911c0bf069664ecb",
+  "graph_build_task_id": "7c03a031-4f5b-4f2a-93b4-5921be410420",
+  "simulation_requirement": "Context Baseline: \r\nInitialize the simulated environment using the uploaded files regarding DBS Bank's background, summary of Singapore's local banks' anti-scam measures and an article on new scam safeguards.\r\n\r\nTrigger Event:\r\nOn 21 Feb 2026, DBS Bank publishes the uploaded 'Facebook Post.txt', along with images 'facebook_image_X.jpg' on social media, detailing a mandatory 12-hour cooling-off period for new payees and transfer limit increases.\r\n\r\nTask:\r\nSimulate the public response, debate, and social contagion across parallel short-form and long-form community channels over the week after the post. In the output report, clearly state the majority sentiment and break down the numbers if possible.",
+  "chunk_size": 500,
+  "chunk_overlap": 50,
+  "error": null,
+  "token_usage": {
+    "prompt_tokens": 113848,
+    "completion_tokens": 39211,
+    "total_tokens": 153059,
+    "call_count": 186,
+    "last_updated": "2026-05-25T08:51:00.840579"
+  }
+}

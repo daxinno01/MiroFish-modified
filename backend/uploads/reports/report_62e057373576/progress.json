@@ -1,0 +1,18 @@
+{
+  "status": "completed",
+  "progress": 100,
+  "message": "报告生成完成",
+  "current_section": null,
+  "completed_sections": [
+    "  └─ Granular Funnel Breakdown",
+    "  └─ Engagement Velocity",
+    "Conversion Funnel & CPE Performance Forecast",
+    "  └─ The Tech-Aspirant Segment",
+    "  └─ The Passive Observer Segment",
+    "Archetype Response Variance",
+    "  └─ The 'Inspirational Pivot' Fatigue",
+    "  └─ Optimization for AI Storytelling",
+    "Strategic Implications & Fatigue Risks"
+  ],
+  "updated_at": "2026-06-04T14:10:10.191939"
+}

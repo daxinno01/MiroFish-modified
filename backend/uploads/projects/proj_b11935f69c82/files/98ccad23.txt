@@ -1,0 +1,41 @@
+### 1. Executive Summary
+This image is a digital infographic produced by DBS Bank as part of its "DBS SCAM DEFENCE" awareness campaign. The graphic presents a specific statistic regarding the prevalence of social engineering in financial scams, citing a 2025 Singapore Police Force (SPF) report. Its primary objective is to communicate that the majority of scam victims are manipulated into authorizing transfers themselves, thereby necessitating multi-layered security controls beyond simple technical hacking prevention.
+
+### 2. OCR / Text Extraction
+*   **Header (Left):** [Stylized four-point star logo]
+*   **Header (Center):** DBS SCAM DEFENCE
+*   **Main Heading:** #DidYouKnow:
+*   **Primary Statistic:** Nearly 8 in 10 scam
+*   **Primary Body Text:** cases involved people being tricked into transferring their own money* — through fear, trust or urgency.
+*   **Secondary Body Text:** Many scams today don’t start with hacking — they start with manipulation.
+*   **Conclusion Text:** That’s why scam protection **can’t rely on just one control.**
+*   **Footer Source:** * SPF Mid-Year Scam and Cybercrime Brief 2025
+
+### 3. Entity Identification
+*   **Organizations:**
+    *   DBS (Development Bank of Singapore)
+    *   SPF (Singapore Police Force)
+*   **Campaigns/Programs:**
+    *   DBS SCAM DEFENCE
+*   **Financial Metrics / Statistics:**
+    *   8 in 10 (80% frequency rate of specific scam methodology)
+*   **Geographic Locations:**
+    *   Singapore (Inferred via "SPF" entity)
+*   **Documents/Reports:**
+    *   SPF Mid-Year Scam and Cybercrime Brief 2025
+
+### 4. Structural Relationships
+*   **Organizational Authority:** The "DBS SCAM DEFENCE" header establishes DBS as the authoritative source/publisher of the communication.
+*   **Thematic Anchor:** The hashtag "#DidYouKnow:" serves as the logical header for the educational content.
+*   **Visual Emphasis:** The statistic "8 in 10" is contained within a red rectangular box, establishing it as the primary visual and informational focal point.
+*   **Logical Qualification:** The word "Nearly" precedes and qualifies the "8 in 10" statistic.
+*   **Source Attribution:** The asterisk (*) following the word "money" creates a direct logical link to the citation in the footer ("SPF Mid-Year Scam and Cybercrime Brief 2025").
+*   **Visual Warning:** A speech bubble icon containing a red exclamation mark is positioned to the right of the heading, signaling a warning or critical information.
+*   **Emphasis of Conclusion:** The final phrase "can’t rely on just one control" is rendered in red text to denote its status as the key actionable takeaway.
+
+### 5. Visual Data Translation
+*   **Data Point:** Frequency of scams involving victim-authorized transfers.
+*   **Value:** Approximately 80% ("8 in 10").
+*   **Causal Factors Identified:** Fear, trust, and urgency.
+*   **Methodological Contrast:** The data contrasts "manipulation" (social engineering) against "hacking" (technical breach), asserting that manipulation is the more frequent starting point for contemporary scams.
+*   **Temporal Reference:** Mid-year 2025.

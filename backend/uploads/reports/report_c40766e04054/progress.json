@@ -1,0 +1,18 @@
+{
+  "status": "completed",
+  "progress": 100,
+  "message": "报告生成完成",
+  "current_section": null,
+  "completed_sections": [
+    "  └─ CPE Tier Classification",
+    "  └─ Action Distribution Breakdown",
+    "Predicted Engagement Funnel and CPE Tiering",
+    "  └─ The Tech-Aspirant and Professional Segment",
+    "  └─ The Passive Observer Segment",
+    "Archetype Interaction and Segment Variance",
+    "  └─ Mitigating Narrative Fatigue",
+    "  └─ Optimization for High-Value Conversions",
+    "Future Engagement Strategies and Fatigue Risks"
+  ],
+  "updated_at": "2026-06-03T14:08:26.761623"
+}

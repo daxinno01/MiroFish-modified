@@ -1,0 +1,12 @@
+{
+  "status": "failed",
+  "progress": -1,
+  "message": "报告生成失败: [Errno 2] No such file or directory: '/mnt/c/Users/Innovation Team/Documents/GitHub/MiroFish-modified/backend/app/prompts/report_generation/section_generation_system_prompt.txt'",
+  "current_section": null,
+  "completed_sections": [
+    "  └─ Viral Velocity and Viewership Peaks",
+    "  └─ The 'Like' as a Political Statement",
+    "The Engagement Surge: Metrics of the Unprecedented"
+  ],
+  "updated_at": "2026-05-21T17:19:00.520311"
+}

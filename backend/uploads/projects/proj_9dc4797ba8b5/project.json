@@ -1,0 +1,381 @@
+{
+  "project_id": "proj_9dc4797ba8b5",
+  "name": "Unnamed Project",
+  "status": "graph_completed",
+  "created_at": "2026-06-03T12:06:33.147142",
+  "updated_at": "2026-06-03T12:27:32.976351",
+  "files": [
+    {
+      "filename": "Humans of DBS Context.md",
+      "size": 2434
+    },
+    {
+      "filename": "post_caption.txt",
+      "size": 3592
+    },
+    {
+      "filename": "CPE Metric Weighting.txt",
+      "size": 335
+    },
+    {
+      "filename": "DBS Background & Context.pdf",
+      "size": 349722
+    },
+    {
+      "filename": "image_1.md",
+      "size": 3544
+    },
+    {
+      "filename": "image_2.md",
+      "size": 2743
+    },
+    {
+      "filename": "image_3.md",
+      "size": 2958
+    },
+    {
+      "filename": "image_4.md",
+      "size": 2839
+    },
+    {
+      "filename": "image_5.md",
+      "size": 2472
+    }
+  ],
+  "total_text_length": 51309,
+  "ontology": {
+    "entity_types": [
+      {
+        "name": "BankEmployee",
+        "description": "Individuals employed by a bank, including developers, tellers, and managers.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The full name of the employee."
+          },
+          {
+            "name": "job_title",
+            "type": "text",
+            "description": "The specific professional role or designation."
+          },
+          {
+            "name": "technical_expertise",
+            "type": "text",
+            "description": "Primary skills such as software engineering or AI."
+          }
+        ],
+        "examples": [
+          "Derek Ang",
+          "Branch Service Manager"
+        ]
+      },
+      {
+        "name": "CorporateExecutive",
+        "description": "High-level leadership figures who set strategic direction and represent the brand.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The full name of the executive."
+          },
+          {
+            "name": "current_role",
+            "type": "text",
+            "description": "The executive position held (e.g., CEO, Deputy CEO)."
+          },
+          {
+            "name": "leadership_legacy",
+            "type": "text",
+            "description": "Key strategic focus or achievements."
+          }
+        ],
+        "examples": [
+          "Tan Su Shan",
+          "Piyush Gupta"
+        ]
+      },
+      {
+        "name": "BankingCustomer",
+        "description": "Individuals or entities that use the bank's services and interact with its brand.",
+        "attributes": [
+          {
+            "name": "customer_segment",
+            "type": "text",
+            "description": "Type of customer such as retail, wealth, or elderly."
+          },
+          {
+            "name": "primary_need",
+            "type": "text",
+            "description": "Main reason for banking (e.g., savings, loans, protection)."
+          }
+        ],
+        "examples": [
+          "Elderly Customer",
+          "Wealth Management Client"
+        ]
+      },
+      {
+        "name": "FinancialInstitution",
+        "description": "Banks and financial service providers mentioned in the corporate context.",
+        "attributes": [
+          {
+            "name": "org_name",
+            "type": "text",
+            "description": "The official name of the bank."
+          },
+          {
+            "name": "market_position",
+            "type": "text",
+            "description": "The status of the bank in the market (e.g., World's Best Bank)."
+          }
+        ],
+        "examples": [
+          "DBS Bank",
+          "POSB"
+        ]
+      },
+      {
+        "name": "RegulatoryAuthority",
+        "description": "Government or official bodies that oversee and penalize financial operations.",
+        "attributes": [
+          {
+            "name": "agency_name",
+            "type": "text",
+            "description": "The name of the regulatory body."
+          },
+          {
+            "name": "regulatory_focus",
+            "type": "text",
+            "description": "The area of oversight (e.g., digital resilience, capital)."
+          }
+        ],
+        "examples": [
+          "Monetary Authority of Singapore (MAS)"
+        ]
+      },
+      {
+        "name": "AcademicInstitution",
+        "description": "Universities or schools where employees receive training or degrees.",
+        "attributes": [
+          {
+            "name": "school_name",
+            "type": "text",
+            "description": "The name of the educational institution."
+          },
+          {
+            "name": "degree_program",
+            "type": "text",
+            "description": "The field of study mentioned."
+          }
+        ],
+        "examples": [
+          "National University of Singapore",
+          "Georgia Tech"
+        ]
+      },
+      {
+        "name": "MediaOrganization",
+        "description": "Outlets that report on corporate performance, leadership, and awards.",
+        "attributes": [
+          {
+            "name": "outlet_name",
+            "type": "text",
+            "description": "The name of the news or financial publication."
+          },
+          {
+            "name": "influence_level",
+            "type": "text",
+            "description": "The reach or prestige of the media outlet."
+          }
+        ],
+        "examples": [
+          "Fortune",
+          "Euromoney",
+          "CNA"
+        ]
+      },
+      {
+        "name": "SocialImpactPartner",
+        "description": "NGOs or organizations collaborating with the bank on ESG initiatives.",
+        "attributes": [
+          {
+            "name": "partner_name",
+            "type": "text",
+            "description": "The name of the partner organization."
+          },
+          {
+            "name": "social_mission",
+            "type": "text",
+            "description": "The primary social goal (e.g., disability inclusion)."
+          }
+        ],
+        "examples": [
+          "SG Enable",
+          "DBS Foundation"
+        ]
+      },
+      {
+        "name": "Person",
+        "description": "General individuals such as family members, netizens, or unaffiliated observers.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The name or handle of the person."
+          },
+          {
+            "name": "social_role",
+            "type": "text",
+            "description": "The relationship to the story (e.g., Parent, Online Commenter)."
+          }
+        ],
+        "examples": [
+          "Derek's Parents",
+          "Social Media User"
+        ]
+      },
+      {
+        "name": "Organization",
+        "description": "General companies, startups, or groups not falling into specific categories.",
+        "attributes": [
+          {
+            "name": "org_name",
+            "type": "text",
+            "description": "The name of the organization."
+          },
+          {
+            "name": "industry_sector",
+            "type": "text",
+            "description": "The industry the organization belongs to."
+          }
+        ],
+        "examples": [
+          "HP",
+          "Airlines",
+          "Jurong Shipyard"
+        ]
+      }
+    ],
+    "edge_types": [
+      {
+        "name": "WORKS_FOR",
+        "description": "An individual is employed by an organization.",
+        "source_targets": [
+          {
+            "source": "BankEmployee",
+            "target": "FinancialInstitution"
+          },
+          {
+            "source": "CorporateExecutive",
+            "target": "FinancialInstitution"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "REGULATES",
+        "description": "A regulatory body oversees a financial institution.",
+        "source_targets": [
+          {
+            "source": "RegulatoryAuthority",
+            "target": "FinancialInstitution"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "ALUMNI_OF",
+        "description": "A person graduated from an academic institution.",
+        "source_targets": [
+          {
+            "source": "BankEmployee",
+            "target": "AcademicInstitution"
+          },
+          {
+            "source": "Person",
+            "target": "AcademicInstitution"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "REPORTS_ON",
+        "description": "A media outlet publishes content about an entity.",
+        "source_targets": [
+          {
+            "source": "MediaOrganization",
+            "target": "FinancialInstitution"
+          },
+          {
+            "source": "MediaOrganization",
+            "target": "CorporateExecutive"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "PARTNERS_WITH",
+        "description": "Collaboration between the bank and an impact partner.",
+        "source_targets": [
+          {
+            "source": "FinancialInstitution",
+            "target": "SocialImpactPartner"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "COMMENTS_ON",
+        "description": "A social media interaction where a person reacts to a post or entity.",
+        "source_targets": [
+          {
+            "source": "Person",
+            "target": "BankEmployee"
+          },
+          {
+            "source": "BankingCustomer",
+            "target": "FinancialInstitution"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "MENTORS_OR_LEADS",
+        "description": "A leadership or guidance relationship.",
+        "source_targets": [
+          {
+            "source": "CorporateExecutive",
+            "target": "BankEmployee"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "USES_SERVICE",
+        "description": "A customer utilizes the bank's products or digital apps.",
+        "source_targets": [
+          {
+            "source": "BankingCustomer",
+            "target": "FinancialInstitution"
+          }
+        ],
+        "attributes": []
+      }
+    ]
+  },
+  "analysis_summary": "该本体设计紧扣'Humans of DBS'系列社交媒体内容。实体类型涵盖了从具体的银行员工（如Derek Ang）、高管（如Tan Su Shan）到监管机构（MAS）和学术背景（NUS等）的完整链条。关系类型重点模拟了社媒互动（COMMENTS_ON）、职业关联（WORKS_FOR）和监管反馈（REGULATES），旨在还原一个典型的企业公关事件在社交媒体上的传播与反馈路径。",
+  "graph_id": "mirofish_local_3ead28ad856c4c1e",
+  "graph_build_task_id": "702383c5-2822-469f-a7c2-65b5737146dc",
+  "simulation_requirement": "Using the uploaded files 'DBS Background & Context.pdf' (brand history baseline), 'Humans of DBS Context.md' (post context), and 'CPE Metric Weighting.txt' (algorithmic conversion logic) as context:\r\n\r\nThe file 'post_caption.txt' contains the text copy of the Facebook post, and 'image_1.md' to 'image_5.md' are the attached visual creative asset.\r\n\r\nPredict how this specific Facebook post will perform after being published. The output report must provide the predicted Cost Per Engagement (CPE) tier alongside a granular conversion funnel breakdown (Scroll-pasts, Likes, Caption Clicks, Comments, and Shares) and an analysis of archetype response variance.",
+  "chunk_size": 500,
+  "chunk_overlap": 50,
+  "error": null,
+  "token_usage": {
+    "prompt_tokens": 85304,
+    "completion_tokens": 30656,
+    "total_tokens": 115960,
+    "call_count": 138,
+    "last_updated": "2026-06-03T12:27:31.956050"
+  }
+}

@@ -1,0 +1,353 @@
+{
+  "project_id": "proj_bd958a0630d6",
+  "name": "Unnamed Project",
+  "status": "graph_building",
+  "created_at": "2026-04-28T17:14:06.535992",
+  "updated_at": "2026-04-28T17:14:45.970832",
+  "files": [
+    {
+      "filename": "01_scenario_brief.md",
+      "size": 1594
+    },
+    {
+      "filename": "03_prior_sentiment_and_analogues.md",
+      "size": 1176
+    }
+  ],
+  "total_text_length": 2836,
+  "ontology": {
+    "entity_types": [
+      {
+        "name": "Bank",
+        "description": "Financial institutions providing banking services and launching public campaigns.",
+        "attributes": [
+          {
+            "name": "bank_name",
+            "type": "text",
+            "description": "The official name of the bank."
+          },
+          {
+            "name": "digital_reputation",
+            "type": "text",
+            "description": "Public perception of the bank's digital stability and innovation."
+          }
+        ],
+        "examples": [
+          "DBS Bank",
+          "OCBC Bank",
+          "UOB"
+        ]
+      },
+      {
+        "name": "LawEnforcementAgency",
+        "description": "Government bodies responsible for public safety and anti-scam enforcement.",
+        "attributes": [
+          {
+            "name": "agency_name",
+            "type": "text",
+            "description": "The name of the law enforcement body."
+          },
+          {
+            "name": "campaign_style",
+            "type": "text",
+            "description": "The typical tone of their public service announcements."
+          }
+        ],
+        "examples": [
+          "Singapore Police Force",
+          "National Crime Prevention Council"
+        ]
+      },
+      {
+        "name": "MediaOutlet",
+        "description": "News organizations and digital publishers that report on corporate events and public sentiment.",
+        "attributes": [
+          {
+            "name": "outlet_name",
+            "type": "text",
+            "description": "The name of the media organization."
+          },
+          {
+            "name": "audience_reach",
+            "type": "text",
+            "description": "The scale of the outlet's readership or viewership."
+          }
+        ],
+        "examples": [
+          "The Straits Times",
+          "Mothership",
+          "CNA"
+        ]
+      },
+      {
+        "name": "TechCompany",
+        "description": "Companies providing the Generative AI tools and models used in content creation.",
+        "attributes": [
+          {
+            "name": "company_name",
+            "type": "text",
+            "description": "The name of the technology provider."
+          },
+          {
+            "name": "ai_model_specialty",
+            "type": "text",
+            "description": "The type of AI technology they specialize in (e.g., text-to-video)."
+          }
+        ],
+        "examples": [
+          "OpenAI",
+          "Google DeepMind",
+          "Runway"
+        ]
+      },
+      {
+        "name": "CreativeProfessional",
+        "description": "Individuals working in arts, design, and film who are sensitive to AI's impact on human labor.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The name of the creative individual."
+          },
+          {
+            "name": "professional_focus",
+            "type": "text",
+            "description": "The specific creative field, such as animation or directing."
+          }
+        ],
+        "examples": [
+          "Local Filmmaker",
+          "Graphic Designer",
+          "Voiceover Artist"
+        ]
+      },
+      {
+        "name": "TechEnthusiast",
+        "description": "Young, tech-savvy individuals who follow AI trends and evaluate technical execution.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The name of the individual."
+          },
+          {
+            "name": "tech_interest",
+            "type": "text",
+            "description": "Specific area of interest like GenAI or Cybersecurity."
+          }
+        ],
+        "examples": [
+          "Computer Science Student",
+          "Tech Blogger",
+          "Early Adopter"
+        ]
+      },
+      {
+        "name": "ElderlyCitizen",
+        "description": "Older demographic targeted by scams, potentially confused or wary of AI technology.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The name of the individual."
+          },
+          {
+            "name": "digital_literacy",
+            "type": "text",
+            "description": "The level of comfort with digital banking and AI."
+          }
+        ],
+        "examples": [
+          "Retiree",
+          "Senior Citizen Group Leader"
+        ]
+      },
+      {
+        "name": "RegulatoryBody",
+        "description": "Government authorities that oversee banking standards and AI ethics.",
+        "attributes": [
+          {
+            "name": "body_name",
+            "type": "text",
+            "description": "The name of the regulatory authority."
+          },
+          {
+            "name": "oversight_area",
+            "type": "text",
+            "description": "The specific sector they regulate (e.g., Finance, AI Ethics)."
+          }
+        ],
+        "examples": [
+          "Monetary Authority of Singapore",
+          "IMDA"
+        ]
+      },
+      {
+        "name": "Person",
+        "description": "Any individual participant in social media discourse not covered by specific categories.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The name or handle of the individual."
+          },
+          {
+            "name": "social_role",
+            "type": "text",
+            "description": "The general role or background of the person."
+          }
+        ],
+        "examples": [
+          "General Public User",
+          "Social Media Commenter"
+        ]
+      },
+      {
+        "name": "Organization",
+        "description": "Any group, association, or company not covered by specific organizational categories.",
+        "attributes": [
+          {
+            "name": "org_name",
+            "type": "text",
+            "description": "The name of the organization."
+          },
+          {
+            "name": "org_type",
+            "type": "text",
+            "description": "The nature of the organization's activities."
+          }
+        ],
+        "examples": [
+          "Consumer Association",
+          "Alumni Group",
+          "Local SME"
+        ]
+      }
+    ],
+    "edge_types": [
+      {
+        "name": "CRITICIZES",
+        "description": "Expresses negative feedback or disapproval regarding a campaign or technology.",
+        "source_targets": [
+          {
+            "source": "CreativeProfessional",
+            "target": "Bank"
+          },
+          {
+            "source": "TechEnthusiast",
+            "target": "Bank"
+          },
+          {
+            "source": "Person",
+            "target": "Bank"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "SUPPORTS",
+        "description": "Expresses approval or endorsement of the initiative.",
+        "source_targets": [
+          {
+            "source": "TechEnthusiast",
+            "target": "Bank"
+          },
+          {
+            "source": "RegulatoryBody",
+            "target": "Bank"
+          },
+          {
+            "source": "Organization",
+            "target": "Bank"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "REPORTS_ON",
+        "description": "Provides news coverage or analysis of the event.",
+        "source_targets": [
+          {
+            "source": "MediaOutlet",
+            "target": "Bank"
+          },
+          {
+            "source": "MediaOutlet",
+            "target": "TechCompany"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "COMPARES_TO",
+        "description": "Draws parallels between the current campaign and previous examples.",
+        "source_targets": [
+          {
+            "source": "Person",
+            "target": "LawEnforcementAgency"
+          },
+          {
+            "source": "CreativeProfessional",
+            "target": "TechCompany"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "WARNS_ABOUT",
+        "description": "Issues alerts or educational content regarding scams.",
+        "source_targets": [
+          {
+            "source": "Bank",
+            "target": "ElderlyCitizen"
+          },
+          {
+            "source": "LawEnforcementAgency",
+            "target": "Person"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "REGULATES",
+        "description": "Exercises legal or ethical oversight over an entity.",
+        "source_targets": [
+          {
+            "source": "RegulatoryBody",
+            "target": "Bank"
+          },
+          {
+            "source": "RegulatoryBody",
+            "target": "TechCompany"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "USES_TECHNOLOGY_FROM",
+        "description": "Utilizes tools or models provided by a tech vendor.",
+        "source_targets": [
+          {
+            "source": "Bank",
+            "target": "TechCompany"
+          }
+        ],
+        "attributes": []
+      }
+    ]
+  },
+  "analysis_summary": "该本体设计围绕星展银行（DBS）的GenAI反诈宣传片事件，识别了核心利益相关方：发起方（银行）、技术提供方（科技公司）、监管方（监管机构）以及受众群体（创意人士、科技青年、老年人）。重点捕捉了创意界对AI取代人力的敏感性、科技青年对技术执行的评价，以及老年人作为反诈主要目标的反应。关系设计侧重于舆论互动（批评、支持、比较）和行业联系（监管、使用技术），旨在模拟社媒环境下各方对“用AI打击AI诈骗”这一讽刺性议题的复杂反应。",
+  "graph_id": null,
+  "graph_build_task_id": "f5d2037c-8cd0-4809-950d-6e72e6b14618",
+  "simulation_requirement": "Predict the general reception.",
+  "chunk_size": 500,
+  "chunk_overlap": 50,
+  "error": null,
+  "token_usage": {
+    "prompt_tokens": 4232,
+    "completion_tokens": 3801,
+    "total_tokens": 8033,
+    "call_count": 2,
+    "last_updated": "2026-04-28T17:14:46.100879"
+  }
+}

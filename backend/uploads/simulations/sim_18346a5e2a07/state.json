@@ -1,0 +1,26 @@
+{
+  "simulation_id": "sim_18346a5e2a07",
+  "project_id": "proj_98a856264c56",
+  "graph_id": "mirofish_local_7ac7f9b1ec0f4814",
+  "enable_twitter": true,
+  "enable_reddit": true,
+  "status": "running",
+  "entities_count": 32,
+  "profiles_count": 32,
+  "entity_types": [
+    "SeniorCitizen",
+    "Organization",
+    "Person",
+    "CreativeProfessional",
+    "DigitalNative",
+    "Bank"
+  ],
+  "config_generated": true,
+  "config_reasoning": "时间配置: 该配置模拟为期7天的完整舆论演化周期。总时长168小时覆盖了从视频发布、技术细节被挖掘（Day 3）、到多方对峙（Day 5）及最终舆论定型的全过程。设定19-22点为高峰期，以模拟‘数字原住民’和‘创意专业人士’在社交媒体（TikTok/Reddit）上的活跃讨论；9-18点工作时间则对应主流媒体（Straits Times/CNA）的官方报道与DBS公关团队的响应节奏；最低激活数设为8，以确保银行、媒体及核心意见领袖在全天候维持基础的话语权输出。 | 事件配置: The selected topics and posts reflect the tension between DBS's innovative intent and the public's diverse reception. By including 'Bank' and 'Organization' for official/media perspectives, 'DigitalNative' for technical critique, 'CreativeProfessional' for ethical/labor concerns, and 'SeniorCitizen' for the efficacy of the message, the simulation covers all critical segments defined in the brief. The narrative arc moves from the 'What' (the tech) to the 'Why' (the irony and efficacy). | Agent配置: 成功生成 32 个 | 初始帖子分配: 8 个帖子已分配发布者",
+  "current_round": 0,
+  "twitter_status": "not_started",
+  "reddit_status": "not_started",
+  "created_at": "2026-04-23T10:48:00.463620",
+  "updated_at": "2026-04-23T10:50:54.146801",
+  "error": null
+}

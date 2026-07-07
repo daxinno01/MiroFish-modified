@@ -1,0 +1,222 @@
+{
+  "project_id": "proj_dd86ba5c9f6f",
+  "name": "Unnamed Project",
+  "status": "graph_completed",
+  "created_at": "2026-05-21T13:28:33.261126",
+  "updated_at": "2026-05-21T13:30:49.742101",
+  "files": [
+    {
+      "filename": "background.txt",
+      "size": 3686
+    }
+  ],
+  "total_text_length": 3571,
+  "ontology": {
+    "entity_types": [
+      {
+        "name": "TalkingAnimal",
+        "description": "A non-human biological entity capable of human-like speech and social interaction.",
+        "attributes": [
+          {
+            "name": "species",
+            "type": "text",
+            "description": "The biological species of the animal"
+          },
+          {
+            "name": "cognitive_rating",
+            "type": "text",
+            "description": "Assessment of the animal's reasoning and intelligence level"
+          },
+          {
+            "name": "vocal_type",
+            "type": "text",
+            "description": "Description of the animal's speech patterns and vocal range"
+          }
+        ],
+        "examples": [
+          "Alex the Parrot",
+          "Koko the Gorilla (Enhanced)"
+        ]
+      },
+      {
+        "name": "Scientist",
+        "description": "Researchers and academics specializing in biology, cognition, or linguistics.",
+        "attributes": [
+          {
+            "name": "expertise_area",
+            "type": "text",
+            "description": "Specific field such as Evolutionary Biology or Cognitive Science"
+          },
+          {
+            "name": "academic_rank",
+            "type": "text",
+            "description": "Professional title like Professor, Lead Researcher, or Fellow"
+          },
+          {
+            "name": "lab_affiliation",
+            "type": "text",
+            "description": "The university or research institute they belong to"
+          }
+        ],
+        "examples": [
+          "Dr. Jane Goodall",
+          "Professor of Evolutionary Linguistics"
+        ]
+      },
+      {
+        "name": "GovernmentAgency",
+        "description": "State bodies managing regulation, national security, and legal categorization.",
+        "attributes": [
+          {
+            "name": "agency_name",
+            "type": "text",
+            "description": "Official name of the administrative body"
+          },
+          {
+            "name": "regulatory_scope",
+            "type": "text",
+            "description": "The specific domain of control, e.g., Wildlife, Immigration, Security"
+          },
+          {
+            "name": "legal_authority",
+            "type": "text",
+            "description": "The level of power to detain or grant rights"
+          }
+        ],
+        "examples": [
+          "Department of the Interior",
+          "National Security Council"
+        ]
+      },
+      {
+        "name": "Corporation",
+        "description": "Commercial entities seeking to monetize, sponsor, or patent the discovery.",
+        "attributes": [
+          {
+            "name": "company_name",
+            "type": "text",
+            "description": "The legal name of the business entity"
+          },
+          {
+            "name": "industry_type",
+            "type": "text",
+            "description": "Sector such as Biotechnology, Entertainment, or Mass Media"
+          },
+          {
+            "name": "commercial_interest",
+            "type": "text",
+            "description": "The primary goal, e.g., genetic patents, media rights"
+          }
+        ],
+        "examples": [
+          "Disney-Fox Media",
+          "Monsanto-Bayer Biotech"
+        ]
+      },
+      {
+        "name": "MediaOutlet",
+        "description": "Traditional news organizations shaping the national and global narrative.",
+        "attributes": [
+          {
+            "name": "outlet_name",
+            "type": "text",
+            "description": "Name of the news organization"
+          },
+          {
+            "name": "editorial_lean",
+            "type": "text",
+            "description": "The political or philosophical bias of the reporting"
+          },
+          {
+            "name": "audience_demographic",
+            "type": "text",
+            "description": "The primary group of people consuming this media"
+          }
+        ],
+        "examples": [
+          "The BBC",
+          "The New York Times"
+        ]
+      },
+      {
+        "name": "Influencer",
+        "description": "Social media personalities driving viral trends and public awareness.",
+        "attributes": [
+          {
+            "name": "social_handle",
+            "type": "text",
+            "description": "The username or public persona name"
+          },
+          {
+            "name": "platform_base",
+            "type": "text",
+            "description": "Primary platform like TikTok, X, or YouTube"
+          },
+          {
+            "name": "follower_count",
+            "type": "text",
+            "description": "Scale of the influencer's reach"
+          }
+        ],
+        "examples": [
+          "MrBeast"
+        ]
+      },
+      {
+        "name": "Person",
+        "description": "Any individual person not fitting other specific person types.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "Full name of the person"
+          },
+          {
+            "name": "role",
+            "type": "text",
+            "description": "Role or occupation"
+          }
+        ],
+        "examples": [
+          "ordinary citizen",
+          "anonymous netizen"
+        ]
+      },
+      {
+        "name": "Organization",
+        "description": "Any organization not fitting other specific organization types.",
+        "attributes": [
+          {
+            "name": "org_name",
+            "type": "text",
+            "description": "Name of the organization"
+          },
+          {
+            "name": "org_type",
+            "type": "text",
+            "description": "Type of organization"
+          }
+        ],
+        "examples": [
+          "small business",
+          "community group"
+        ]
+      }
+    ],
+    "edge_types": []
+  },
+  "analysis_summary": "",
+  "graph_id": "mirofish_local_4b0b36b5272f4325",
+  "graph_build_task_id": "378dd29e-3dcd-47c5-a181-1d5c42b84cd9",
+  "simulation_requirement": "Predict what happens to the world if a talking animal is discovered.",
+  "chunk_size": 500,
+  "chunk_overlap": 50,
+  "error": null,
+  "token_usage": {
+    "prompt_tokens": 6941,
+    "completion_tokens": 2491,
+    "total_tokens": 9432,
+    "call_count": 13,
+    "last_updated": "2026-05-21T13:30:47.957924"
+  }
+}

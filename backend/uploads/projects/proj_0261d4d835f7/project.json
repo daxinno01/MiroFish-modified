@@ -1,0 +1,215 @@
+{
+  "project_id": "proj_0261d4d835f7",
+  "name": "Unnamed Project",
+  "status": "graph_completed",
+  "created_at": "2026-05-21T11:05:14.112226",
+  "updated_at": "2026-05-21T11:05:51.470414",
+  "files": [
+    {
+      "filename": "New Text Document.txt",
+      "size": 37
+    }
+  ],
+  "total_text_length": 69,
+  "ontology": {
+    "entity_types": [
+      {
+        "name": "TalkingAnimal",
+        "description": "The non-human biological entity discovered with the ability to communicate using human language.",
+        "attributes": [
+          {
+            "name": "species_type",
+            "type": "text",
+            "description": "The biological species of the animal."
+          },
+          {
+            "name": "vocal_ability",
+            "type": "text",
+            "description": "Description of the animal's linguistic proficiency and tone."
+          },
+          {
+            "name": "discovery_context",
+            "type": "text",
+            "description": "The circumstances and location where the animal was first found."
+          }
+        ],
+        "examples": [
+          "Koko the Gorilla (Hypothetical)",
+          "The Talking Lab-Retriever"
+        ]
+      },
+      {
+        "name": "Scientist",
+        "description": "Researchers and academics specializing in biology, linguistics, or cognitive sciences.",
+        "attributes": [
+          {
+            "name": "scientific_field",
+            "type": "text",
+            "description": "The specific branch of science the individual practices."
+          },
+          {
+            "name": "academic_rank",
+            "type": "text",
+            "description": "The professional standing of the scientist."
+          },
+          {
+            "name": "lab_affiliation",
+            "type": "text",
+            "description": "The research institution or laboratory where they work."
+          }
+        ],
+        "examples": [
+          "Dr. Jane Goodall",
+          "Professor of Evolutionary Biology"
+        ]
+      },
+      {
+        "name": "Journalist",
+        "description": "Professional news reporters covering the discovery for various media platforms.",
+        "attributes": [
+          {
+            "name": "press_outlet",
+            "type": "text",
+            "description": "The news organization the journalist represents."
+          },
+          {
+            "name": "reporting_beat",
+            "type": "text",
+            "description": "The specific topic area the journalist covers, e.g., Science, Weird News."
+          },
+          {
+            "name": "professional_status",
+            "type": "text",
+            "description": "Whether they are staff, freelance, or an investigative lead."
+          }
+        ],
+        "examples": [
+          "Science Correspondent",
+          "Investigative Reporter"
+        ]
+      },
+      {
+        "name": "Activist",
+        "description": "Individuals advocating for animal rights, ethical treatment, or legal personhood.",
+        "attributes": [
+          {
+            "name": "advocacy_goal",
+            "type": "text",
+            "description": "The primary objective of their activism regarding the animal."
+          },
+          {
+            "name": "organization_link",
+            "type": "text",
+            "description": "The specific NGO or movement they are associated with."
+          },
+          {
+            "name": "influence_level",
+            "type": "text",
+            "description": "The scale of their social mobilization capability."
+          }
+        ],
+        "examples": [
+          "PETA Representative",
+          "Animal Rights Lawyer"
+        ]
+      },
+      {
+        "name": "ReligiousLeader",
+        "description": "Spiritual figures providing theological interpretations of the talking animal's existence.",
+        "attributes": [
+          {
+            "name": "faith_affiliation",
+            "type": "text",
+            "description": "The religion or belief system they represent."
+          },
+          {
+            "name": "spiritual_title",
+            "type": "text",
+            "description": "The formal title within their religious hierarchy."
+          },
+          {
+            "name": "doctrine_stance",
+            "type": "text",
+            "description": "Their official interpretation of the phenomenon relative to scripture."
+          }
+        ],
+        "examples": [
+          "Local Bishop",
+          "Theological Scholar"
+        ]
+      },
+      {
+        "name": "GovernmentOfficial",
+        "description": "Representatives of state agencies managing the legal and security aspects of the discovery.",
+        "attributes": [
+          {
+            "name": "office_title",
+            "type": "text",
+            "description": "The formal position held within the government."
+          },
+          {
+            "name": "jurisdiction_scope",
+            "type": "text",
+            "description": "The geographical or legal area they control."
+          }
+        ],
+        "examples": []
+      },
+      {
+        "name": "Person",
+        "description": "Any individual person not fitting other specific person types.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "Full name of the person"
+          },
+          {
+            "name": "role",
+            "type": "text",
+            "description": "Role or occupation"
+          }
+        ],
+        "examples": [
+          "ordinary citizen",
+          "anonymous netizen"
+        ]
+      },
+      {
+        "name": "Organization",
+        "description": "Any organization not fitting other specific organization types.",
+        "attributes": [
+          {
+            "name": "org_name",
+            "type": "text",
+            "description": "Name of the organization"
+          },
+          {
+            "name": "org_type",
+            "type": "text",
+            "description": "Type of organization"
+          }
+        ],
+        "examples": [
+          "small business",
+          "community group"
+        ]
+      }
+    ],
+    "edge_types": []
+  },
+  "analysis_summary": "",
+  "graph_id": "mirofish_local_9477dd176db945aa",
+  "graph_build_task_id": "87a92480-c95c-4968-aea6-81913d915d8b",
+  "simulation_requirement": "Predict what happens to the world if a talking animal is discovered.",
+  "chunk_size": 500,
+  "chunk_overlap": 50,
+  "error": null,
+  "token_usage": {
+    "prompt_tokens": 1838,
+    "completion_tokens": 1041,
+    "total_tokens": 2879,
+    "call_count": 2,
+    "last_updated": "2026-05-21T11:05:50.749584"
+  }
+}

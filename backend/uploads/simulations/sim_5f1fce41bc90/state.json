@@ -1,0 +1,26 @@
+{
+  "simulation_id": "sim_5f1fce41bc90",
+  "project_id": "proj_2b01d2e898bc",
+  "graph_id": "mirofish_local_949bed0c3c794717",
+  "enable_twitter": true,
+  "enable_reddit": true,
+  "status": "running",
+  "entities_count": 16,
+  "profiles_count": 16,
+  "entity_types": [
+    "RegulatoryBody",
+    "CreativeProfessional",
+    "Person",
+    "Organization",
+    "SeniorCitizen",
+    "Bank"
+  ],
+  "config_generated": true,
+  "config_reasoning": "时间配置: 模拟涵盖7天完整周期。由于涉及DBS银行（官方机构）及主流媒体（ST, CNA），工作时间（9-18点）设定为中等活跃，主要由机构Agent发布通稿和深度报道。晚间（19-22点）设定为高峰期，模拟年轻群体在社交媒体（TikTok, Reddit）对视频细节（如1:14秒的瑕疵）进行病毒式讨论和Memes创作。凌晨（0-5点）设为低谷期，符合一般用户作息。7天时长足以观察从初期发布到第三天舆论反转（瑕疵发现）再到第七天情绪沉淀的全过程。 | 事件配置: The simulation captures the tension between corporate efficiency and social responsibility. By using diverse poster types, we reflect the multi-layered response from Singapore's digital society, from the tech-critical youth on Reddit to the confused elderly on Facebook. | Agent配置: 成功生成 16 个 | 初始帖子分配: 7 个帖子已分配发布者",
+  "current_round": 0,
+  "twitter_status": "not_started",
+  "reddit_status": "not_started",
+  "created_at": "2026-04-22T16:29:28.681616",
+  "updated_at": "2026-04-22T16:35:51.803904",
+  "error": null
+}

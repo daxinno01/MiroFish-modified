@@ -1,0 +1,354 @@
+{
+  "project_id": "proj_f2f28b5c12a5",
+  "name": "Unnamed Project",
+  "status": "graph_completed",
+  "created_at": "2026-05-13T09:18:20.783826",
+  "updated_at": "2026-05-13T09:48:00.269225",
+  "files": [
+    {
+      "filename": "Budget 2026 - Fiscal Position.pdf",
+      "size": 169510
+    },
+    {
+      "filename": "Budget 2026 - Give Families More Support and Greater Assurance.pdf",
+      "size": 213159
+    },
+    {
+      "filename": "Budget 2026 - Harness AI as a Strategic Advantage.pdf",
+      "size": 187073
+    },
+    {
+      "filename": "Budget 2026 - Protect Our Security And Sustainability.pdf",
+      "size": 180321
+    },
+    {
+      "filename": "ig_caption.txt",
+      "size": 1704
+    },
+    {
+      "filename": "Past Hawker Cashback Initiatives.txt",
+      "size": 1043
+    },
+    {
+      "filename": "Spark GenAI Programme.txt",
+      "size": 1490
+    }
+  ],
+  "total_text_length": 53073,
+  "ontology": {
+    "entity_types": [
+      {
+        "name": "Bank",
+        "description": "Financial institutions like DBS or POSB that launch support packages and digital initiatives.",
+        "attributes": [
+          {
+            "name": "bank_brand",
+            "type": "text",
+            "description": "The brand name of the bank."
+          },
+          {
+            "name": "service_focus",
+            "type": "text",
+            "description": "Primary service area such as retail banking or SME support."
+          }
+        ],
+        "examples": [
+          "DBS Singapore",
+          "POSB"
+        ]
+      },
+      {
+        "name": "GovernmentOfficial",
+        "description": "Individuals holding public office who announce policies or join community events.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The full name of the official."
+          },
+          {
+            "name": "office_title",
+            "type": "text",
+            "description": "The official's rank or position."
+          },
+          {
+            "name": "constituency",
+            "type": "text",
+            "description": "The electoral division they represent."
+          }
+        ],
+        "examples": [
+          "Jeffrey Siow",
+          "Dr. Choo Pei Ling"
+        ]
+      },
+      {
+        "name": "SmallBusinessOwner",
+        "description": "Individuals running SMEs, heartland shops, or hawker stalls affected by costs and AI mandates.",
+        "attributes": [
+          {
+            "name": "business_sector",
+            "type": "text",
+            "description": "The industry the business operates in."
+          },
+          {
+            "name": "digital_readiness",
+            "type": "text",
+            "description": "Level of AI or digital tool adoption."
+          }
+        ],
+        "examples": [
+          "Heartland Hawker",
+          "SME Owner"
+        ]
+      },
+      {
+        "name": "Parent",
+        "description": "Individuals representing middle-class families concerned with household expenses and child support.",
+        "attributes": [
+          {
+            "name": "household_type",
+            "type": "text",
+            "description": "Description of family structure."
+          },
+          {
+            "name": "primary_concern",
+            "type": "text",
+            "description": "Main economic anxiety like inflation or education costs."
+          }
+        ],
+        "examples": [
+          "Middle-Class Parent",
+          "Mdm Hurul"
+        ]
+      },
+      {
+        "name": "TechProfessional",
+        "description": "Youth or professionals focused on AI, digital transformation, and future job security.",
+        "attributes": [
+          {
+            "name": "expertise_field",
+            "type": "text",
+            "description": "Specific area of tech expertise."
+          },
+          {
+            "name": "employment_status",
+            "type": "text",
+            "description": "Current job role or student status."
+          }
+        ],
+        "examples": [
+          "Tech-Forward Youth",
+          "AI Practitioner"
+        ]
+      },
+      {
+        "name": "MediaOutlet",
+        "description": "News organizations or social media platforms that report on and amplify public sentiment.",
+        "attributes": [
+          {
+            "name": "media_platform",
+            "type": "text",
+            "description": "The channel used for broadcasting."
+          },
+          {
+            "name": "editorial_stance",
+            "type": "text",
+            "description": "General tone of reporting."
+          }
+        ],
+        "examples": [
+          "Straits Times",
+          "Mothership"
+        ]
+      },
+      {
+        "name": "GovernmentAgency",
+        "description": "State departments responsible for budget execution, AI strategy, and social support.",
+        "attributes": [
+          {
+            "name": "agency_acronym",
+            "type": "text",
+            "description": "Short form name of the agency."
+          },
+          {
+            "name": "policy_domain",
+            "type": "text",
+            "description": "The specific area of governance."
+          }
+        ],
+        "examples": [
+          "MTI",
+          "MSF",
+          "CPF Board"
+        ]
+      },
+      {
+        "name": "CommunityOrganization",
+        "description": "Local groups or centers that facilitate grassroots engagement and aid distribution.",
+        "attributes": [
+          {
+            "name": "org_location",
+            "type": "text",
+            "description": "The physical area served."
+          },
+          {
+            "name": "service_type",
+            "type": "text",
+            "description": "Type of community support provided."
+          }
+        ],
+        "examples": [
+          "Tengah Community Centre",
+          "NTUC"
+        ]
+      },
+      {
+        "name": "Person",
+        "description": "A general individual or social media user not fitting specific professional or social roles.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The individual's name or handle."
+          },
+          {
+            "name": "social_role",
+            "type": "text",
+            "description": "General description of the person's background."
+          }
+        ],
+        "examples": [
+          "General Netizen",
+          "Retail Customer"
+        ]
+      },
+      {
+        "name": "Organization",
+        "description": "A general corporate or non-profit entity not covered by specific bank or agency types.",
+        "attributes": [
+          {
+            "name": "org_name",
+            "type": "text",
+            "description": "The name of the organization."
+          },
+          {
+            "name": "org_type",
+            "type": "text",
+            "description": "The nature of the organization's work."
+          }
+        ],
+        "examples": [
+          "Grab",
+          "HarriAnns"
+        ]
+      }
+    ],
+    "edge_types": [
+      {
+        "name": "ANNOUNCES_INITIATIVE",
+        "description": "A bank or official reveals a new support package or policy.",
+        "source_targets": [
+          {
+            "source": "Bank",
+            "target": "SmallBusinessOwner"
+          },
+          {
+            "source": "GovernmentOfficial",
+            "target": "Parent"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "CRITICIZES_POLICY",
+        "description": "An entity expresses negative sentiment regarding costs or bank profits.",
+        "source_targets": [
+          {
+            "source": "Person",
+            "target": "Bank"
+          },
+          {
+            "source": "SmallBusinessOwner",
+            "target": "GovernmentAgency"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "SUPPORTS_COMMUNITY",
+        "description": "An entity provides financial or technological aid to another.",
+        "source_targets": [
+          {
+            "source": "Bank",
+            "target": "CommunityOrganization"
+          },
+          {
+            "source": "GovernmentAgency",
+            "target": "SmallBusinessOwner"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "REPORTS_ON",
+        "description": "A media outlet covers the actions or statements of another entity.",
+        "source_targets": [
+          {
+            "source": "MediaOutlet",
+            "target": "Bank"
+          },
+          {
+            "source": "MediaOutlet",
+            "target": "GovernmentOfficial"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "ADOPTS_TECHNOLOGY",
+        "description": "An entity implements AI or digital solutions provided by another.",
+        "source_targets": [
+          {
+            "source": "SmallBusinessOwner",
+            "target": "Bank"
+          },
+          {
+            "source": "TechProfessional",
+            "target": "Organization"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "COLLABORATES_WITH",
+        "description": "Two entities work together on a community event or program.",
+        "source_targets": [
+          {
+            "source": "Bank",
+            "target": "GovernmentOfficial"
+          },
+          {
+            "source": "CommunityOrganization",
+            "target": "GovernmentAgency"
+          }
+        ],
+        "attributes": []
+      }
+    ]
+  },
+  "analysis_summary": "该本体设计紧扣DBS新加坡2026年预算案背景下的社媒舆论模拟。实体类型涵盖了文本中提到的关键利益相关者：银行（DBS/POSB）、政府官员、受通胀影响的家长、中小企业主、以及关注AI转型的技术青年。关系类型反映了典型的社媒互动（批评、支持、报道）以及政策落地过程（发布倡议、采用技术）。通过设置Person和Organization作为兜底类型，确保了所有在社媒上发声的非特定主体都能被准确归类。",
+  "graph_id": "mirofish_local_1ed16f9a720e46cb",
+  "graph_build_task_id": "cfef31af-4500-4408-96de-28d11b889545",
+  "simulation_requirement": "**Goal:** Simulate the public response and multi-stakeholder sentiment for DBS Singapore’s upcoming announcement regarding the **Support Package/Initiative**. Predict the specific \"vibe\" of comments, potential PR risks, and the perceived value of the AI initiative versus the immediate cashback relief.\r\n\r\n### 1. Contextual Reference Framework\r\n\r\nAnalyze the following uploaded documents to establish the \"ground truth\" of the 2026 economic environment:\r\n* **The \"Pressure\" (Current Reality):** Refer to `Budget 2026 - Protect Our Security And Sustainability.pdf` and `Singapore_Rising_Costs_Context_2026.md`. Focus on the **$45/tonne Carbon Tax** and **$100+ oil prices** as the primary drivers of public anxiety.\r\n* **The \"Relief\" (Government Baseline):** Use `Budget 2026 - Give Families More Support and Greater Assurance.pdf` to establish what the government has already provided, so you can determine if the DBS package feels \"generous\" or \"redundant\".\r\n* **The \"Transformation\" (Long-term Strategy):** Use `Budget 2026 - Harness AI as a Strategic Advantage.pdf` and `Spark GenAI Programme.txt` to understand the 400% tax deductions and productivity mandates.\r\n\r\n### 2. Swarm Personas (Agents)\r\n\r\nSimulate a \"Singaporean Swarm\" consisting of (but not limited to):\r\n* The Middle-Class Parent\r\n* The SME Owner\r\n* The Tech-Forward Youth\r\n* The Heartland Hawker/Merchant\r\n\r\n### 3. Task Instructions\r\n\r\nEvaluate the `ig_caption.txt` and images (`ig_img_1-3.jpg`) against the swarm:\r\n1. **Sentiment Mapping:** Predict the ratio of Positive (Gratitude/Excitement) vs. Neutral (Information seeking) vs. Negative (Cynicism/Inflation complaints).\r\n2. **Keyword Prediction:** Which terms will trend in the comments? (e.g., \"Helping hand,\" \"Marketing stunt,\" \"Finally,\" \"Cai Fan prices\").\r\n3. **Efficiency Check:** Does the public \"connect the dots\" between **Budget 2026 AI mandates** and the **Spark GenAI** offering? Or is the AI portion ignored in favor of the cashback?\r\n4. **Risk Identification:** Identify if any phrase in the caption (e.g., references to \"rising pressures\") triggers a backlash regarding bank profits vs. community support.\r\n\r\n### 4. Points to Include in Output\r\n* **Headline Prediction:** One-sentence summary of the overall reception.\r\n* **Sentiment Score:** 1–10 (1 = PR Disaster, 10 = Viral Success).\r\n* **Top 3 \"Swarm Voices\":** Sample simulated comments from the personas above.\r\n* **Strategic Recommendation:** Should DBS emphasize the \"Cashback\" (Relief) or the \"GenAI\" (Future) more in their follow-up posts?",
+  "chunk_size": 500,
+  "chunk_overlap": 50,
+  "error": null,
+  "token_usage": {
+    "prompt_tokens": 96484,
+    "completion_tokens": 20632,
+    "total_tokens": 117116,
+    "call_count": 160,
+    "last_updated": "2026-05-13T09:47:59.177837"
+  }
+}

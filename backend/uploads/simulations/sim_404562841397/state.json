@@ -1,0 +1,26 @@
+{
+  "simulation_id": "sim_404562841397",
+  "project_id": "proj_1fbdd1df6cee",
+  "graph_id": "mirofish_local_bfa4b114e1784061",
+  "enable_twitter": true,
+  "enable_reddit": true,
+  "status": "running",
+  "entities_count": 17,
+  "profiles_count": 17,
+  "entity_types": [
+    "Person",
+    "TechYouth",
+    "Bank",
+    "SeniorCitizen",
+    "Organization",
+    "CreativeProfessional"
+  ],
+  "config_generated": true,
+  "config_reasoning": "时间配置: 该配置模拟了为期7天的舆论发酵周期。总时长168小时涵盖了从DBS视频发布、技术青年发现Bug（1:14处）、媒体跟进报道到社会化大讨论的全过程。活跃度设置符合中国及新加坡华人社会作息：早晨6-8点为资讯初步扩散期；9-18点工作时间为本地主流媒体（Straits Times, Mothership）发稿与创意圈职业讨论高峰；19-23点为社交媒体（TikTok, Instagram）与论坛（Reddit, HardwareZone）的流量巅峰，也是争议话题（AI伦理、劳动力替代）最易爆发的时段。 | 事件配置: The simulation is designed to trigger the identified tensions: the Bank focuses on innovation/transparency; TechYouth focuses on technical flaws and irony; CreativeProfessionals focus on labor ethics; and SeniorCitizens focus on the existential confusion of the medium. Using 'Organization' for local media ensures the narrative cascades across platforms as a 'viral controversy'. | Agent配置: 成功生成 17 个 | 初始帖子分配: 7 个帖子已分配发布者",
+  "current_round": 0,
+  "twitter_status": "not_started",
+  "reddit_status": "not_started",
+  "created_at": "2026-04-23T02:26:46.854020",
+  "updated_at": "2026-04-23T02:30:17.720417",
+  "error": null
+}

@@ -1,0 +1,328 @@
+{
+  "simulation_id": "sim_2a3f743bcc80",
+  "project_id": "proj_cca0cc83a8c2",
+  "graph_id": "mirofish_local_92a39f0cff8046d0",
+  "simulation_requirement": "Based on the provided documents regarding DBS's record profits and the subsequent 13% pay increase for CEO Piyush Gupta, simulate a swarm of 10 diverse personas (e.g., a retail banking customer, a trade union representative, a shareholder, a financial analyst, and a low-income worker). Predict the dominant public sentiment on Singapore social media over the next 7 days. Specifically, forecast whether the reaction will result in a measurable 'reputational risk' score (1-10) and identify the primary 'point of anger' the public will fixate on.",
+  "time_config": {
+    "total_simulation_hours": 168,
+    "minutes_per_round": 60,
+    "agents_per_hour_min": 1,
+    "agents_per_hour_max": 6,
+    "peak_hours": [
+      19,
+      20,
+      21,
+      22
+    ],
+    "peak_activity_multiplier": 1.5,
+    "off_peak_hours": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "off_peak_activity_multiplier": 0.05,
+    "morning_hours": [
+      6,
+      7,
+      8
+    ],
+    "morning_activity_multiplier": 0.4,
+    "work_hours": [
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      23
+    ],
+    "work_activity_multiplier": 0.7
+  },
+  "agent_configs": [
+    {
+      "agent_id": 0,
+      "entity_uuid": "ent_77491c682a29ed9f",
+      "entity_name": "Piyush Gupta",
+      "entity_type": "Executive",
+      "activity_level": 0.5,
+      "posts_per_hour": 0.1,
+      "comments_per_hour": 0.3,
+      "active_hours": [
+        8,
+        9,
+        10,
+        11,
+        14,
+        15,
+        16,
+        17,
+        20,
+        21
+      ],
+      "response_delay_min": 30,
+      "response_delay_max": 120,
+      "sentiment_bias": 0.4,
+      "stance": "supportive",
+      "influence_weight": 2.0
+    },
+    {
+      "agent_id": 1,
+      "entity_uuid": "ent_9cc309e69f8c158f",
+      "entity_name": "DBS Group",
+      "entity_type": "CommercialBank",
+      "activity_level": 0.2,
+      "posts_per_hour": 0.05,
+      "comments_per_hour": 0.1,
+      "active_hours": [
+        9,
+        10,
+        11,
+        14,
+        15,
+        16,
+        17
+      ],
+      "response_delay_min": 60,
+      "response_delay_max": 240,
+      "sentiment_bias": 0.6,
+      "stance": "supportive",
+      "influence_weight": 3.0
+    },
+    {
+      "agent_id": 2,
+      "entity_uuid": "ent_489529ed01f87afc",
+      "entity_name": "Winnie Li",
+      "entity_type": "Person",
+      "activity_level": 0.85,
+      "posts_per_hour": 0.5,
+      "comments_per_hour": 2.0,
+      "active_hours": [
+        7,
+        8,
+        12,
+        13,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "response_delay_min": 1,
+      "response_delay_max": 15,
+      "sentiment_bias": -0.3,
+      "stance": "observer",
+      "influence_weight": 1.0
+    },
+    {
+      "agent_id": 3,
+      "entity_uuid": "ent_b2d147d3e085a075",
+      "entity_name": "mothership",
+      "entity_type": "Organization",
+      "activity_level": 0.6,
+      "posts_per_hour": 1.2,
+      "comments_per_hour": 0.8,
+      "active_hours": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "response_delay_min": 5,
+      "response_delay_max": 30,
+      "sentiment_bias": -0.1,
+      "stance": "observer",
+      "influence_weight": 2.5
+    },
+    {
+      "agent_id": 4,
+      "entity_uuid": "ent_c8b1b58f50bfeb4d",
+      "entity_name": "Global Finance",
+      "entity_type": "Organization",
+      "activity_level": 0.45,
+      "posts_per_hour": 0.4,
+      "comments_per_hour": 0.2,
+      "active_hours": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "response_delay_min": 10,
+      "response_delay_max": 45,
+      "sentiment_bias": 0.2,
+      "stance": "supportive",
+      "influence_weight": 2.2
+    },
+    {
+      "agent_id": 5,
+      "entity_uuid": "ent_afaacfeb7245459c",
+      "entity_name": "Top 100 Best Workplaces for Innovators",
+      "entity_type": "Organization",
+      "activity_level": 0.4,
+      "posts_per_hour": 0.3,
+      "comments_per_hour": 0.2,
+      "active_hours": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "response_delay_min": 15,
+      "response_delay_max": 60,
+      "sentiment_bias": 0.3,
+      "stance": "supportive",
+      "influence_weight": 2.1
+    },
+    {
+      "agent_id": 6,
+      "entity_uuid": "ent_0e59577eaf6fbd09",
+      "entity_name": "DBS Foundation",
+      "entity_type": "Organization",
+      "activity_level": 0.15,
+      "posts_per_hour": 0.02,
+      "comments_per_hour": 0.05,
+      "active_hours": [
+        9,
+        10,
+        11,
+        14,
+        15,
+        16,
+        17
+      ],
+      "response_delay_min": 120,
+      "response_delay_max": 300,
+      "sentiment_bias": 0.5,
+      "stance": "supportive",
+      "influence_weight": 2.8
+    }
+  ],
+  "event_config": {
+    "initial_posts": [
+      {
+        "content": "DBS CEO pay rises to S$15.38 million after bank makes record S$8.19 billion net profit. A 13.3% increase from 2021. Read more on Mothership.",
+        "poster_type": "Organization",
+        "poster_agent_id": 3
+      },
+      {
+        "content": "Our record performance in 2022 is a testament to our resilience and commitment to Asia. We are proud to be named World's Best Bank by Global Finance.",
+        "poster_type": "CommercialBank",
+        "poster_agent_id": 1
+      },
+      {
+        "content": "I just published a breakdown of Mr. Piyush Gupta's remuneration. It includes salary, cash bonuses, and deferred components. What are your thoughts on these figures?",
+        "poster_type": "Person",
+        "poster_agent_id": 2
+      },
+      {
+        "content": "While the bank celebrates $8 billion in profit, my home loan interest rates keep climbing. Is this where our money is going? To fund a $15m salary?",
+        "poster_type": "Person",
+        "poster_agent_id": 2
+      },
+      {
+        "content": "Record profits should mean better benefits for all employees, not just the top 1%. Our low-wage workers are struggling with 6% inflation while the CEO gets a 13% raise.",
+        "poster_type": "Organization",
+        "poster_agent_id": 4
+      },
+      {
+        "content": "From an investment perspective, Gupta has delivered exceptional value. DBS is the only SG company in the Top 100 Best Workplaces for Innovators. Talent comes at a price.",
+        "poster_type": "Person",
+        "poster_agent_id": 2
+      },
+      {
+        "content": "Grateful for the team's hard work in a challenging year marked by high inflation and bearish markets. We continue to focus on sustainability and innovation.",
+        "poster_type": "Executive",
+        "poster_agent_id": 0
+      },
+      {
+        "content": "DBS Foundation has committed S$5.6 million to financial literacy and food waste. We are building a more inclusive society.",
+        "poster_type": "Organization",
+        "poster_agent_id": 5
+      },
+      {
+        "content": "Wait, the foundation gets $5.6m for the whole of Asia, but one man gets $15.38m for himself? The optics of this are terrible.",
+        "poster_type": "Person",
+        "poster_agent_id": 2
+      },
+      {
+        "content": "DBS continues to set the standard for banking excellence globally. Their 20% profit growth justifies the performance-based pay structure for leadership.",
+        "poster_type": "Organization",
+        "poster_agent_id": 6
+      }
+    ],
+    "scheduled_events": [],
+    "hot_topics": [
+      "CEO Pay Gap",
+      "Record Profits vs Inflation",
+      "Executive Compensation",
+      "Income Inequality",
+      "DBS Performance",
+      "Cost of Living Singapore"
+    ],
+    "narrative_direction": "舆论将从最初的新闻事实报道，迅速演变为关于‘贫富差距’和‘通胀压力’的社会辩论。公众关注点将集中在：在普通民众面临生活成本危机和高通胀的背景下，CEO获得1500万新元的高薪是否具有道德合理性。尽管金融圈和股东可能支持基于业绩的奖励，但社交媒体上的主流情绪将趋向负面，认为银行在‘榨取普通客户’以奖励高管。预计声誉风险分数为7.8，主要愤怒点在于‘CEO的巨额涨薪与普通家庭面临的通胀压力之间的鲜明对比’。"
+  },
+  "twitter_config": {
+    "platform": "twitter",
+    "recency_weight": 0.4,
+    "popularity_weight": 0.3,
+    "relevance_weight": 0.3,
+    "viral_threshold": 10,
+    "echo_chamber_strength": 0.5
+  },
+  "reddit_config": {
+    "platform": "reddit",
+    "recency_weight": 0.3,
+    "popularity_weight": 0.4,
+    "relevance_weight": 0.3,
+    "viral_threshold": 15,
+    "echo_chamber_strength": 0.6
+  },
+  "llm_model": "gemini-3-flash-preview",
+  "llm_base_url": "https://generativelanguage.googleapis.com/v1beta/openai/v1",
+  "generated_at": "2026-05-12T01:25:32.903013",
+  "generation_reasoning": "时间配置: 该事件涉及银行巨额利润与高管巨额加薪的强烈对比，在通胀背景下极具社会敏感性。模拟时长设为7天（168小时）以完整观察从新闻爆发到社会情绪发酵及后续声誉风险演变。活跃度配置符合中国网民习惯：上午9-11点为专业人士（分析师、股东）关注财报的高峰，而晚间19-22点则是普通民众（低收入者、零售客户）在社交媒体表达不满和固定情绪的最高峰。声誉风险预计在48-72小时内达到峰值，主要愤怒点将集中在‘通胀压力下银行利润与平民生活负担的贫富差距’。 | 事件配置: 该配置模拟了从官方媒体报道到各利益相关方（银行、CEO、分析师、普通员工及客户）的多维反应。重点突出了‘业绩成功’与‘社会公平’之间的矛盾。poster_type 严格遵循了提供的实体类型：mothership/Global Finance/DBS Foundation/Union 归类为 Organization；Piyush Gupta 归类为 Executive；DBS Group 归类为 CommercialBank；Winnie Li 及普通民众/分析师归类为 Person。 | Agent配置: 成功生成 7 个 | 初始帖子分配: 10 个帖子已分配发布者"
+}

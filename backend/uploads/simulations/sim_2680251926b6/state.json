@@ -1,0 +1,24 @@
+{
+  "simulation_id": "sim_2680251926b6",
+  "project_id": "proj_46ead5c11907",
+  "graph_id": "mirofish_local_b9706d8b733c4350",
+  "enable_twitter": true,
+  "enable_reddit": true,
+  "status": "running",
+  "entities_count": 4,
+  "profiles_count": 4,
+  "entity_types": [
+    "BankCustomer",
+    "TechProvider",
+    "SalesRepresentative",
+    "Bank"
+  ],
+  "config_generated": true,
+  "config_reasoning": "时间配置: 针对DBS银行GenAI电销事件，模拟时长设为72小时以观察舆论对AI替代人工服务的长尾反应。时间配置严格遵循中国网民作息：晚间19-22点是社交媒体讨论高峰，用户最易分享接到AI电话的体验；9-18点工作时间则对应银行实际拨打电话及后续人工跟进的业务时段，活跃度保持中等；凌晨时段设定为低活跃以符合生理作息。 | 事件配置: 该配置涵盖了技术推动方（Bank, TechProvider）的正面宣传与受众（BankCustomer）及从业者（SalesRepresentative）的多维反馈。重点模拟了AI语音拟真度带来的社会冲击感，符合预测‘更多人收到电话后’的舆论发酵逻辑。 | Agent配置: 成功生成 4 个 | 初始帖子分配: 4 个帖子已分配发布者",
+  "current_round": 0,
+  "twitter_status": "not_started",
+  "reddit_status": "not_started",
+  "created_at": "2026-04-27T17:07:57.323855",
+  "updated_at": "2026-04-27T17:12:44.865019",
+  "error": null
+}

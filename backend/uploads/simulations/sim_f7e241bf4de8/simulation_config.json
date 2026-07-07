@@ -1,0 +1,235 @@
+{
+  "simulation_id": "sim_f7e241bf4de8",
+  "project_id": "proj_b5988456f923",
+  "graph_id": "mirofish_local_5bb978ca4ac9436c",
+  "simulation_requirement": "Predict the general reception to the GenAI video from DBS",
+  "time_config": {
+    "total_simulation_hours": 168,
+    "minutes_per_round": 60,
+    "agents_per_hour_min": 1,
+    "agents_per_hour_max": 2,
+    "peak_hours": [
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "peak_activity_multiplier": 1.5,
+    "off_peak_hours": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "off_peak_activity_multiplier": 0.05,
+    "morning_hours": [
+      7,
+      8,
+      9
+    ],
+    "morning_activity_multiplier": 0.4,
+    "work_hours": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+    ],
+    "work_activity_multiplier": 0.7
+  },
+  "agent_configs": [
+    {
+      "agent_id": 0,
+      "entity_uuid": "ent_7ac8e3b761d3bb23",
+      "entity_name": "DBS Bank",
+      "entity_type": "Bank",
+      "activity_level": 0.2,
+      "posts_per_hour": 0.1,
+      "comments_per_hour": 0.2,
+      "active_hours": [
+        9,
+        10,
+        11,
+        14,
+        15,
+        16,
+        17
+      ],
+      "response_delay_min": 60,
+      "response_delay_max": 240,
+      "sentiment_bias": 0.5,
+      "stance": "supportive",
+      "influence_weight": 2.8
+    },
+    {
+      "agent_id": 1,
+      "entity_uuid": "ent_273207b09d448164",
+      "entity_name": "Singaporean family",
+      "entity_type": "Person",
+      "activity_level": 0.8,
+      "posts_per_hour": 0.3,
+      "comments_per_hour": 2.5,
+      "active_hours": [
+        7,
+        8,
+        12,
+        13,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "response_delay_min": 2,
+      "response_delay_max": 15,
+      "sentiment_bias": -0.4,
+      "stance": "neutral",
+      "influence_weight": 1.0
+    },
+    {
+      "agent_id": 2,
+      "entity_uuid": "ent_b2ffa2fb0bc9ec28",
+      "entity_name": "Singapore Police Force (SPF)",
+      "entity_type": "Organization",
+      "activity_level": 0.15,
+      "posts_per_hour": 0.05,
+      "comments_per_hour": 0.1,
+      "active_hours": [
+        9,
+        10,
+        11,
+        14,
+        15,
+        16,
+        17
+      ],
+      "response_delay_min": 120,
+      "response_delay_max": 300,
+      "sentiment_bias": 0.1,
+      "stance": "supportive",
+      "influence_weight": 3.0
+    },
+    {
+      "agent_id": 3,
+      "entity_uuid": "ent_02c8c9f35227bd4d",
+      "entity_name": "creatives",
+      "entity_type": "CreativeProfessional",
+      "activity_level": 0.55,
+      "posts_per_hour": 0.4,
+      "comments_per_hour": 1.2,
+      "active_hours": [
+        10,
+        11,
+        14,
+        15,
+        16,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "response_delay_min": 15,
+      "response_delay_max": 45,
+      "sentiment_bias": -0.6,
+      "stance": "opposing",
+      "influence_weight": 1.8
+    },
+    {
+      "agent_id": 4,
+      "entity_uuid": "ent_14b1b3d3b1820978",
+      "entity_name": "Sora",
+      "entity_type": "Organization",
+      "activity_level": 0.3,
+      "posts_per_hour": 0.2,
+      "comments_per_hour": 0.4,
+      "active_hours": [
+        8,
+        9,
+        10,
+        11,
+        14,
+        15,
+        16,
+        17,
+        20,
+        21,
+        22
+      ],
+      "response_delay_min": 30,
+      "response_delay_max": 120,
+      "sentiment_bias": 0.3,
+      "stance": "observer",
+      "influence_weight": 2.2
+    }
+  ],
+  "event_config": {
+    "initial_posts": [
+      {
+        "content": "Transparency matters. We are proud to launch Singapore's first fully GenAI-created public educational video to help you spot sophisticated scams. Witness the future of anti-scam awareness. #DBS #GenAI #StaySafe",
+        "poster_type": "Bank",
+        "poster_agent_id": 0
+      },
+      {
+        "content": "While innovation is great, seeing a major bank bypass local actors, directors, and voice artists for a 'prompt' feels soulless. Is this the future we want for Singapore's creative scene?",
+        "poster_type": "CreativeProfessional",
+        "poster_agent_id": 3
+      },
+      {
+        "content": "It is fascinating to see how GenAI models like Sora can now simulate complex scam scenarios with such realism. This marks a new era in educational content production.",
+        "poster_type": "Organization",
+        "poster_agent_id": 2
+      },
+      {
+        "content": "We welcome all efforts to educate the public on malware scams. Whether through human-led drama or AI, the message remains: stay vigilant and never click on suspicious links.",
+        "poster_type": "Organization",
+        "poster_agent_id": 4
+      },
+      {
+        "content": "Just watched the new DBS video. It looks so real it's actually terrifying. Is this really how fast scammers can trick us now? It makes me worried for my parents.",
+        "poster_type": "Person",
+        "poster_agent_id": 1
+      }
+    ],
+    "scheduled_events": [],
+    "hot_topics": [
+      "GenAI",
+      "Anti-scam",
+      "Deepfake",
+      "Job Security",
+      "Digital Outages",
+      "Sora",
+      "Singapore Police Force",
+      "Creative Industry"
+    ],
+    "narrative_direction": "舆论初期将聚焦于视频的视觉震撼力与Sora级生成的逼真感，但随后迅速转向对创意行业就业影响的担忧。由于DBS此前存在系统故障记录，部分网民会产生‘比起AI广告更应修好服务器’的负面情绪。同时，公众将对‘用AI对抗AI诈骗’这一讽刺点展开辩论，并将该视频与新加坡警察局传统的真人温情广告进行对比。"
+  },
+  "twitter_config": {
+    "platform": "twitter",
+    "recency_weight": 0.4,
+    "popularity_weight": 0.3,
+    "relevance_weight": 0.3,
+    "viral_threshold": 10,
+    "echo_chamber_strength": 0.5
+  },
+  "reddit_config": {
+    "platform": "reddit",
+    "recency_weight": 0.3,
+    "popularity_weight": 0.4,
+    "relevance_weight": 0.3,
+    "viral_threshold": 15,
+    "echo_chamber_strength": 0.6
+  },
+  "llm_model": "gemini-3-flash-preview",
+  "llm_base_url": "https://generativelanguage.googleapis.com/v1beta/openai/v1",
+  "generated_at": "2026-04-28T17:35:15.418665",
+  "generation_reasoning": "时间配置: 模拟时长设定为168小时（7天）以观察从视频发布、创意圈反弹到公众舆论发酵的全周期。新加坡与中国同属东八区，作息高度一致。高峰期设定在晚间19-23点，此时职场人士和创意工作者活跃度最高，易产生针对AI替代人类及DBS技术决策的深度讨论。工作时间设定为10-18点，覆盖金融圈和媒体的专业分析。考虑到DBS的国民级地位及GenAI争议性，激活Agent数量设定较高以模拟热点效应。 | 事件配置: 该配置涵盖了银行官方的创新诉求、创意专业人士对就业的担忧、技术视角对Sora能力的认可、执法部门的协同发声以及普通家庭受众的恐惧心理。通过这些不同维度的初始帖子，可以模拟出从技术赞叹到社会责任讨论的舆论演变。 | Agent配置: 成功生成 5 个 | 初始帖子分配: 5 个帖子已分配发布者"
+}

@@ -1,0 +1,332 @@
+{
+  "project_id": "proj_72804b833b6b",
+  "name": "Unnamed Project",
+  "status": "graph_completed",
+  "created_at": "2026-05-21T11:01:02.632447",
+  "updated_at": "2026-05-21T11:01:39.804700",
+  "files": [
+    {
+      "filename": "New Text Document.txt",
+      "size": 37
+    }
+  ],
+  "total_text_length": 69,
+  "ontology": {
+    "entity_types": [
+      {
+        "name": "TalkingAnimal",
+        "description": "The discovered non-human animal capable of human-like speech and communication.",
+        "attributes": [
+          {
+            "name": "species_type",
+            "type": "text",
+            "description": "The biological species of the animal."
+          },
+          {
+            "name": "vocal_capability",
+            "type": "text",
+            "description": "The complexity and fluency of the animal's speech."
+          },
+          {
+            "name": "current_location",
+            "type": "text",
+            "description": "The physical or institutional location where the animal is held."
+          }
+        ],
+        "examples": [
+          "Leo the Talking Lion",
+          "Echo the Parrot-Chimp Hybrid"
+        ]
+      },
+      {
+        "name": "Biologist",
+        "description": "Scientific researchers specializing in genetics, linguistics, or zoology studying the animal.",
+        "attributes": [
+          {
+            "name": "research_field",
+            "type": "text",
+            "description": "Specific area of expertise such as xenobiology or linguistics."
+          },
+          {
+            "name": "academic_rank",
+            "type": "text",
+            "description": "The professional standing of the scientist."
+          }
+        ],
+        "examples": [
+          "Dr. Jane Smith",
+          "Professor Alan Turing Jr."
+        ]
+      },
+      {
+        "name": "AnimalActivist",
+        "description": "Individuals advocating for the legal rights and ethical treatment of the talking animal.",
+        "attributes": [
+          {
+            "name": "advocacy_focus",
+            "type": "text",
+            "description": "The specific goal, such as liberation or legal personhood."
+          },
+          {
+            "name": "activism_history",
+            "type": "text",
+            "description": "Previous involvement in animal rights movements."
+          }
+        ],
+        "examples": [
+          "Sarah Green",
+          "Mark PETA-Leader"
+        ]
+      },
+      {
+        "name": "ReligiousLeader",
+        "description": "Clergy or theologians interpreting the discovery through spiritual or moral lenses.",
+        "attributes": [
+          {
+            "name": "faith_tradition",
+            "type": "text",
+            "description": "The religious or philosophical system they represent."
+          },
+          {
+            "name": "clerical_title",
+            "type": "text",
+            "description": "The official title within their organization."
+          }
+        ],
+        "examples": [
+          "Bishop Thomas",
+          "Imam Hassan"
+        ]
+      },
+      {
+        "name": "NewsReporter",
+        "description": "Professional journalists covering the discovery and its societal impact.",
+        "attributes": [
+          {
+            "name": "media_outlet",
+            "type": "text",
+            "description": "The news organization they work for."
+          },
+          {
+            "name": "reporting_style",
+            "type": "text",
+            "description": "Whether their coverage is investigative, sensationalist, or neutral."
+          }
+        ],
+        "examples": [
+          "Clark Kent",
+          "Reporter Linda"
+        ]
+      },
+      {
+        "name": "PolicyMaker",
+        "description": "Government officials or legislators drafting laws regarding the animal's status.",
+        "attributes": [
+          {
+            "name": "government_branch",
+            "type": "text",
+            "description": "The department or legislative body they belong to."
+          },
+          {
+            "name": "political_stance",
+            "type": "text",
+            "description": "Their general attitude toward non-human intelligence regulation."
+          }
+        ],
+        "examples": [
+          "Senator Palpatine",
+          "Minister of Science"
+        ]
+      },
+      {
+        "name": "ContentCreator",
+        "description": "Social media influencers and bloggers generating public discourse and hype.",
+        "attributes": [
+          {
+            "name": "platform_handle",
+            "type": "text",
+            "description": "The primary social media username."
+          },
+          {
+            "name": "audience_demographic",
+            "type": "text",
+            "description": "The main group of people following this creator."
+          }
+        ],
+        "examples": [
+          "TechVlogger2024",
+          "NatureLover_Official"
+        ]
+      },
+      {
+        "name": "BusinessLeader",
+        "description": "Corporate executives looking to commercialize or utilize the discovery.",
+        "attributes": [
+          {
+            "name": "industry_sector",
+            "type": "text",
+            "description": "The type of business, such as entertainment or biotech."
+          },
+          {
+            "name": "corporate_vision",
+            "type": "text",
+            "description": "The intended use for the discovery in a commercial context."
+          }
+        ],
+        "examples": [
+          "CEO of BioGen",
+          "Marketing Director of Disney"
+        ]
+      },
+      {
+        "name": "Person",
+        "description": "A general individual or social media user not fitting into specific categories.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The individual's name or pseudonym."
+          },
+          {
+            "name": "personal_location",
+            "type": "text",
+            "description": "The geographic location of the individual."
+          }
+        ],
+        "examples": [
+          "John Doe",
+          "Alice Wonderland"
+        ]
+      },
+      {
+        "name": "Organization",
+        "description": "A general entity, group, or institution not fitting into specific categories.",
+        "attributes": [
+          {
+            "name": "org_name",
+            "type": "text",
+            "description": "The official name of the organization."
+          },
+          {
+            "name": "operational_scope",
+            "type": "text",
+            "description": "Whether the organization is local, national, or international."
+          }
+        ],
+        "examples": [
+          "Global Ethics Board",
+          "Local Zoo Association"
+        ]
+      }
+    ],
+    "edge_types": [
+      {
+        "name": "STUDIES_SPECIES",
+        "description": "A scientist conducts research on the talking animal.",
+        "source_targets": [
+          {
+            "source": "Biologist",
+            "target": "TalkingAnimal"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "ADVOCATES_FOR",
+        "description": "An activist or group campaigns for the animal's rights.",
+        "source_targets": [
+          {
+            "source": "AnimalActivist",
+            "target": "TalkingAnimal"
+          },
+          {
+            "source": "Organization",
+            "target": "TalkingAnimal"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "REPORTS_ON",
+        "description": "A reporter or creator provides information about an entity to the public.",
+        "source_targets": [
+          {
+            "source": "NewsReporter",
+            "target": "TalkingAnimal"
+          },
+          {
+            "source": "ContentCreator",
+            "target": "PolicyMaker"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "REGULATES_STATUS",
+        "description": "A government official or body sets rules for an entity.",
+        "source_targets": [
+          {
+            "source": "PolicyMaker",
+            "target": "TalkingAnimal"
+          },
+          {
+            "source": "PolicyMaker",
+            "target": "BusinessLeader"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "INTERPRETS_ETHICS",
+        "description": "A religious or moral leader provides a framework for understanding the event.",
+        "source_targets": [
+          {
+            "source": "ReligiousLeader",
+            "target": "TalkingAnimal"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "SEEKS_PROFIT_FROM",
+        "description": "A business entity attempts to monetize the discovery.",
+        "source_targets": [
+          {
+            "source": "BusinessLeader",
+            "target": "TalkingAnimal"
+          },
+          {
+            "source": "Organization",
+            "target": "TalkingAnimal"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "DEBATES_WITH",
+        "description": "Two entities engage in public discussion or argument.",
+        "source_targets": [
+          {
+            "source": "Person",
+            "target": "Person"
+          }
+        ],
+        "attributes": []
+      }
+    ]
+  },
+  "analysis_summary": "",
+  "graph_id": "mirofish_local_eca2bee1f4dd4b3e",
+  "graph_build_task_id": "299be5d8-a0a7-4e06-bea3-5841d3e4a34a",
+  "simulation_requirement": "Predict what happens to the world if a talking animal is discovered.",
+  "chunk_size": 500,
+  "chunk_overlap": 50,
+  "error": null,
+  "token_usage": {
+    "prompt_tokens": 1919,
+    "completion_tokens": 1977,
+    "total_tokens": 3896,
+    "call_count": 2,
+    "last_updated": "2026-05-21T11:01:39.103432"
+  }
+}

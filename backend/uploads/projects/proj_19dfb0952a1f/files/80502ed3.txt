@@ -1,0 +1,36 @@
+### 1. Executive Summary
+This image is an informational graphic detailing a new security protocol implemented by a financial institution. It announces the rollout of a "12-hour cooling period" designed as a safeguard against unauthorized account changes. The graphic specifies the specific user actions that trigger this delay and clarifies which standard banking operations remain unaffected.
+
+### 2. OCR / Text Extraction
+*   **Main Heading:** We've progressively rolled out an added safeguard: **a 12-hour cooling period.**
+*   **Central Graphic Text:** 12 hours
+*   **Sub-heading:** It applies when you:
+*   **Bullet Points:**
+    *   add a new payee
+    *   increase transfer limits
+    *   change your mobile number or email
+*   **Footer Paragraph 1:** By introducing this **carefully and in phases**, it protects customers **without disrupting everyday banking.**
+*   **Footer Paragraph 2:** Transfers to existing recipients and within current limits continue as usual.
+
+### 3. Entity Identification
+*   **Organizations:** Unspecified financial institution (implied by terminology).
+*   **Security Feature:** 12-hour cooling period; safeguard.
+*   **Account Actions (Triggers):** Adding a new payee; increasing transfer limits; changing mobile number; changing email address.
+*   **Financial Metrics/Parameters:** Transfer limits.
+*   **Operational Entities:** Existing recipients; everyday banking.
+*   **Temporal Metric:** 12 hours.
+
+### 4. Structural Relationships
+*   **Feature-to-Category:** The "12-hour cooling period" is categorized as an "added safeguard."
+*   **Trigger-to-Effect:** The actions "add a new payee," "increase transfer limits," and "change mobile number or email" logically precede and activate the "12-hour cooling period."
+*   **Exclusion Logic:** "Transfers to existing recipients" and "transfers within current limits" are explicitly excluded from the cooling period protocol.
+*   **Implementation Strategy:** The deployment of the safeguard is described as "progressive" and "in phases."
+*   **Value Proposition:** The relationship between the safeguard and the customer is defined as "protection" without "disruption."
+
+### 5. Visual Data Translation
+*   **Layout:** Centered vertical stack on a light grey textured background with a red and black header bar.
+*   **Visual Emphasis:**
+    *   **Color Coding:** Red text is used for the primary subject ("a 12-hour cooling period") and key qualifiers ("carefully and in phases," "without disrupting everyday banking").
+    *   **Iconography:** A central red clock/timer icon containing the text "12 hours" provides a visual anchor for the temporal constraint.
+    *   **List Format:** A bulleted list using red double-chevron (») symbols identifies the three primary triggers for the security feature.
+*   **Typography:** Bold sans-serif typeface is utilized for the main heading and footer highlights to establish information hierarchy.

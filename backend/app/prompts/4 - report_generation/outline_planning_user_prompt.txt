@@ -13,9 +13,10 @@ The variables injected into the simulated world (Simulation Requirements): {simu
 
 Please review this rehearsal of the future from a "God's eye view":
 
-1. Under the conditions we set, what kind of state does the future present?
-2. How do different groups of people (Agents) react and act?
-3. What noteworthy future trends does this simulation reveal?
+1. What is the overarching macro sentiment (Net Positive/Negative/Neutral Ratio) across the simulation, and what are the baseline statistics?
+2. Which specific stakeholder personas or agent groups felt most strongly, what drove their polarization, and did public perception pivot or shift to a secondary issue mid-way through the timeline?
+3. Based on these observed risks and behavioral trends, what are the direct strategic implications and tactical recommendations for the subject company?
+4. Based on these prediction results, map out a report structure matching the mandated JSON schema, focusing heavily on corporate actionability.
 
 Based on the prediction results, design the most appropriate report chapter structure.
 

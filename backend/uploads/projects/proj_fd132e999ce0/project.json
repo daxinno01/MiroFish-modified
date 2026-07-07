@@ -1,0 +1,359 @@
+{
+  "project_id": "proj_fd132e999ce0",
+  "name": "Unnamed Project",
+  "status": "graph_completed",
+  "created_at": "2026-05-21T10:41:20.361772",
+  "updated_at": "2026-05-21T10:41:58.677899",
+  "files": [
+    {
+      "filename": "New Text Document.txt",
+      "size": 0
+    }
+  ],
+  "total_text_length": 32,
+  "ontology": {
+    "entity_types": [
+      {
+        "name": "TalkingAnimal",
+        "description": "The discovered non-human entity capable of verbal communication and social media interaction.",
+        "attributes": [
+          {
+            "name": "species_type",
+            "type": "text",
+            "description": "The biological species of the animal."
+          },
+          {
+            "name": "vocal_characteristics",
+            "type": "text",
+            "description": "Description of the animal's voice and language ability."
+          },
+          {
+            "name": "discovery_site",
+            "type": "text",
+            "description": "The location where the animal was first found."
+          }
+        ],
+        "examples": [
+          "Echo the Talking Chimpanzee",
+          "Barnaby the Linguistic Labrador"
+        ]
+      },
+      {
+        "name": "Scientist",
+        "description": "Researchers and experts in biology, linguistics, or ethics studying the talking animal.",
+        "attributes": [
+          {
+            "name": "field_of_expertise",
+            "type": "text",
+            "description": "The specific scientific domain of the individual."
+          },
+          {
+            "name": "academic_credentials",
+            "type": "text",
+            "description": "Degrees or titles held by the scientist."
+          }
+        ],
+        "examples": [
+          "Dr. Jane Aris",
+          "Professor Marcus Thorne"
+        ]
+      },
+      {
+        "name": "AnimalRightsAdvocate",
+        "description": "Individuals or activists focused on the legal and moral treatment of the talking animal.",
+        "attributes": [
+          {
+            "name": "advocacy_focus",
+            "type": "text",
+            "description": "The specific rights or protections being campaigned for."
+          },
+          {
+            "name": "activism_style",
+            "type": "text",
+            "description": "Methods used, such as legal action or public protest."
+          }
+        ],
+        "examples": [
+          "Sarah Miller (PETA Representative)",
+          "Leo Vance (Wildlife Lawyer)"
+        ]
+      },
+      {
+        "name": "GovernmentOfficial",
+        "description": "Regulators and policy makers determining the legal status and safety of the talking animal.",
+        "attributes": [
+          {
+            "name": "government_department",
+            "type": "text",
+            "description": "The agency or branch the official belongs to."
+          },
+          {
+            "name": "jurisdiction_area",
+            "type": "text",
+            "description": "The geographical or legal area of authority."
+          }
+        ],
+        "examples": [
+          "Secretary of the Interior",
+          "Director of National Security"
+        ]
+      },
+      {
+        "name": "Journalist",
+        "description": "Media professionals reporting on the discovery and subsequent events.",
+        "attributes": [
+          {
+            "name": "media_affiliation",
+            "type": "text",
+            "description": "The news organization the journalist works for."
+          },
+          {
+            "name": "reporting_beat",
+            "type": "text",
+            "description": "The specific topic area covered by the journalist."
+          }
+        ],
+        "examples": [
+          "Clara Kent (Science Reporter)",
+          "Tom Brokaw (News Anchor)"
+        ]
+      },
+      {
+        "name": "ReligiousLeader",
+        "description": "Figures providing spiritual or theological interpretations of the talking animal's existence.",
+        "attributes": [
+          {
+            "name": "faith_tradition",
+            "type": "text",
+            "description": "The religion or belief system represented."
+          },
+          {
+            "name": "congregation_reach",
+            "type": "text",
+            "description": "The scale of the leader's influence."
+          }
+        ],
+        "examples": [
+          "Bishop Elias",
+          "Imam Hassan"
+        ]
+      },
+      {
+        "name": "BiotechExecutive",
+        "description": "Corporate leaders interested in the genetic or commercial potential of the animal.",
+        "attributes": [
+          {
+            "name": "corporate_mission",
+            "type": "text",
+            "description": "The primary goal of the executive's company."
+          },
+          {
+            "name": "market_valuation",
+            "type": "text",
+            "description": "The economic scale of the executive's influence."
+          }
+        ],
+        "examples": [
+          "CEO of GeneCorp",
+          "Founder of BioFuture"
+        ]
+      },
+      {
+        "name": "SocialMediaInfluencer",
+        "description": "Digital creators who drive public opinion and viral trends regarding the animal.",
+        "attributes": [
+          {
+            "name": "primary_platform",
+            "type": "text",
+            "description": "The main social media site used."
+          },
+          {
+            "name": "content_niche",
+            "type": "text",
+            "description": "The type of content usually produced."
+          }
+        ],
+        "examples": [
+          "ViralVlogger2024",
+          "TechReviewer_Max"
+        ]
+      },
+      {
+        "name": "Person",
+        "description": "A general individual or member of the public not fitting specific categories.",
+        "attributes": [
+          {
+            "name": "personal_bio",
+            "type": "text",
+            "description": "General description of the individual."
+          },
+          {
+            "name": "geographic_location",
+            "type": "text",
+            "description": "Where the person is located."
+          }
+        ],
+        "examples": [
+          "John Doe",
+          "Jane Smith"
+        ]
+      },
+      {
+        "name": "Organization",
+        "description": "A general entity, group, or institution not fitting specific categories.",
+        "attributes": [
+          {
+            "name": "org_purpose",
+            "type": "text",
+            "description": "The reason for the organization's existence."
+          },
+          {
+            "name": "headquarters_city",
+            "type": "text",
+            "description": "The city where the organization is based."
+          }
+        ],
+        "examples": [
+          "Local Community Center",
+          "Global Ethics Forum"
+        ]
+      }
+    ],
+    "edge_types": [
+      {
+        "name": "STUDIES",
+        "description": "A scientist or organization conducts research on the talking animal.",
+        "source_targets": [
+          {
+            "source": "Scientist",
+            "target": "TalkingAnimal"
+          },
+          {
+            "source": "Organization",
+            "target": "TalkingAnimal"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "ADVOCATES_FOR",
+        "description": "An entity campaigns for the rights or protection of the talking animal.",
+        "source_targets": [
+          {
+            "source": "AnimalRightsAdvocate",
+            "target": "TalkingAnimal"
+          },
+          {
+            "source": "Person",
+            "target": "TalkingAnimal"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "REPORTS_ON",
+        "description": "A journalist or media outlet covers news about an entity.",
+        "source_targets": [
+          {
+            "source": "Journalist",
+            "target": "TalkingAnimal"
+          },
+          {
+            "source": "Journalist",
+            "target": "GovernmentOfficial"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "REGULATES",
+        "description": "A government official or agency exercises legal authority over an entity.",
+        "source_targets": [
+          {
+            "source": "GovernmentOfficial",
+            "target": "TalkingAnimal"
+          },
+          {
+            "source": "GovernmentOfficial",
+            "target": "BiotechExecutive"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "INTERVIEWS",
+        "description": "A media figure or influencer conducts a formal conversation with an entity.",
+        "source_targets": [
+          {
+            "source": "Journalist",
+            "target": "TalkingAnimal"
+          },
+          {
+            "source": "SocialMediaInfluencer",
+            "target": "Scientist"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "DEBATES_WITH",
+        "description": "Two entities engage in public discourse or disagreement.",
+        "source_targets": [
+          {
+            "source": "ReligiousLeader",
+            "target": "Scientist"
+          },
+          {
+            "source": "AnimalRightsAdvocate",
+            "target": "BiotechExecutive"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "FOLLOWS",
+        "description": "An entity subscribes to the social media updates of another.",
+        "source_targets": [
+          {
+            "source": "Person",
+            "target": "TalkingAnimal"
+          },
+          {
+            "source": "SocialMediaInfluencer",
+            "target": "TalkingAnimal"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "WORKS_FOR",
+        "description": "An individual is employed by an organization.",
+        "source_targets": [
+          {
+            "source": "Scientist",
+            "target": "Organization"
+          },
+          {
+            "source": "Journalist",
+            "target": "Organization"
+          }
+        ],
+        "attributes": []
+      }
+    ]
+  },
+  "analysis_summary": "本设计围绕“发现会说话的动物”这一假设性事件，构建了一个多元化的社交媒体舆论生态。实体类型涵盖了核心主体（会说话的动物）、专业解读方（科学家、宗教领袖）、利益相关方（生物技术高管、动物权利倡导者）、信息传播方（记者、网红）以及监管方（政府官员），并设置了Person和Organization作为兜底。关系类型设计侧重于社媒互动、科学研究、法律监管和公共辩论，旨在模拟从科学发现到伦理冲突、再到法律定性及大众娱乐化的全过程舆论演变。",
+  "graph_id": "mirofish_local_294c42349fb84f0c",
+  "graph_build_task_id": "910ab044-770b-4f34-9c88-a91ecb07af59",
+  "simulation_requirement": "Predict what happens to the world if a talking animal is discovered.",
+  "chunk_size": 500,
+  "chunk_overlap": 50,
+  "error": null,
+  "token_usage": {
+    "prompt_tokens": 1904,
+    "completion_tokens": 2485,
+    "total_tokens": 4389,
+    "call_count": 2,
+    "last_updated": "2026-05-21T10:41:57.489247"
+  }
+}

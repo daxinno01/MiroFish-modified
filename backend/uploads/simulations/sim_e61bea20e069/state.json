@@ -1,0 +1,29 @@
+{
+  "simulation_id": "sim_e61bea20e069",
+  "project_id": "proj_9dc4797ba8b5",
+  "graph_id": "mirofish_local_3ead28ad856c4c1e",
+  "enable_twitter": true,
+  "enable_reddit": true,
+  "status": "running",
+  "entities_count": 80,
+  "profiles_count": 80,
+  "entity_types": [
+    "RegulatoryAuthority",
+    "SocialImpactPartner",
+    "BankEmployee",
+    "AcademicInstitution",
+    "BankingCustomer",
+    "FinancialInstitution",
+    "Organization",
+    "CorporateExecutive",
+    "Person"
+  ],
+  "config_generated": true,
+  "config_reasoning": "时间配置: 针对'Humans of DBS'这类职业故事和职场感悟内容，主要受众为职场人士、金融从业者及高校毕业生。模拟设置在72小时以覆盖长尾传播。高峰时段设定在午休（12-13点）及晚间休闲时间（19-22点），此时用户更有可能深度阅读长图文并产生点赞和分享行为。工作时间内保持中等活跃度，反映职场社交媒体的碎片化使用习惯。凌晨时段设为低谷以符合中国用户作息。 | 事件配置: The event configuration focuses on the 'Humans of DBS' campaign which leverages emotional storytelling to humanize a large financial institution. By using diverse poster types, we simulate a realistic multi-stakeholder response: official brand messaging, executive endorsement, peer validation, and external aspirant interest. This allows for a granular prediction of the CPE funnel, balancing high-intent engagement (comments/shares) against passive consumption (scroll-pasts). | Agent配置: 成功生成 80 个 | 初始帖子分配: 5 个帖子已分配发布者",
+  "current_round": 0,
+  "twitter_status": "not_started",
+  "reddit_status": "not_started",
+  "created_at": "2026-06-03T12:27:41.460370",
+  "updated_at": "2026-06-11T17:05:25.857526",
+  "error": null
+}

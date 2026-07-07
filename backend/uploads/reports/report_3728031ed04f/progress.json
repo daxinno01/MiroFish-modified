@@ -1,0 +1,8 @@
+{
+  "status": "failed",
+  "progress": -1,
+  "message": "报告生成失败: Couldn't connect to localhost:7687 (resolved to ()):\nFailed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [Errno 111] Connection refused)",
+  "current_section": null,
+  "completed_sections": [],
+  "updated_at": "2026-05-21T10:32:19.111518"
+}

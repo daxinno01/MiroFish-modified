@@ -1,0 +1,19 @@
+{
+  "simulation_id": "sim_8babe6c1144e",
+  "project_id": "proj_b4374d21e0d0",
+  "graph_id": "mirofish_local_b086c5568e604286",
+  "enable_twitter": true,
+  "enable_reddit": true,
+  "status": "running",
+  "entities_count": 0,
+  "profiles_count": 82,
+  "entity_types": [],
+  "config_generated": true,
+  "config_reasoning": "时间配置: The 72-hour window covers the announcement, the immediate reaction to the $3 cashback, and the subsequent critical analysis of the Spark GenAI programme. Peak hours are set at lunch (12-13h) for initial mobile browsing and evening (19-22h) for deep community discussion. Since Singapore and China share the same timezone (UTC+8), the habits align perfectly, with low activity in the early morning and steady engagement from SME owners and workers during office hours. | 事件配置: 根据2026年经济背景，碳税和高油价是公众焦虑的核心。DBS的方案试图通过‘返现’解决短期痛点，通过‘AI’对接政府长期战略。预测显示，公众对现金类补贴更敏感，而对AI方案存在认知鸿沟。风险点在于银行巨额利润与微薄补贴之间的对比可能引发负面评论。建议DBS在后续宣传中强化AI如何具体降低SME经营成本，而非仅停留在技术概念上。 | Agent配置: 成功生成 82 个 | 初始帖子分配: 5 个帖子已分配发布者",
+  "current_round": 0,
+  "twitter_status": "not_started",
+  "reddit_status": "not_started",
+  "created_at": "2026-05-13T01:25:41.492523",
+  "updated_at": "2026-05-22T09:14:23.278662",
+  "error": "没有找到符合条件的实体，请检查图谱是否正确构建"
+}

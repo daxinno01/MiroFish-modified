@@ -1,0 +1,10 @@
+Predict the public reception to DBS Bank releasing this fully GenAI-generated anti-scam video campaign. 
+
+Run a 7-day simulation across two main environments: a short-form rapid-reaction platform (Twitter/TikTok style) and a long-form threaded debate platform (Reddit/HardwareZone style).
+
+Please focus on and output the following in your final report:
+1. Overall Sentiment Trajectory: Provide a day-by-day breakdown (Day 1, Day 3, Day 7) of Positive vs. Negative vs. Neutral/Confused sentiment.
+2. The Irony Vector vs. The Innovation Vector: Does the explicit AI disclosure successfully frame DBS as transparent and innovative, or does the irony of "using AI to fight AI" dominate the negative discourse?
+3. Stakeholder Divergence: Contrast the simulated reactions of the "Vulnerable Elderly" agents against the "Local Creative Professional" agents. 
+4. Emergent Narratives: What are the top 3 viral narratives or complaints that emerge? (e.g., job losses, uncanny valley memes, confusion).
+5. Actionable PR Advice: Based on the swarm's reaction, should DBS Bank issue a clarifying statement, lean into the tech-innovation angle, or pull the campaign?

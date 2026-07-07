@@ -1,0 +1,33 @@
+### 1. Executive Summary
+This image is an informational graphic from a social media post (identified as the 3rd image in a series) focused on anti-fraud education. It functions as a logical counter-argument to a previous point (implied by the prominent "BUT"), clarifying that financial scams are often prolonged operations lasting days or weeks rather than hours. It specifically categorizes common long-term fraud types and emphasizes the necessity of sustained awareness and multi-layered security measures.
+
+### 2. OCR / Text Extraction
+*   **Heading 1 (Large, Red, Bold):** BUT
+*   **Heading 2 (Black, Bold):** scammers don’t stop at 12 hours.
+*   **Body Text 1 (Black):** Many scams, like:
+*   **List Items (Bulleted with red dots):**
+    *   love scams
+    *   fake government or bank officials
+    *   investment scams
+*   **Body Text 2 (Black):** happen over days or weeks, with scammers coaching victims step by step.
+*   **Concluding Statement (Black with Red emphasis):** That’s why **awareness and multiple protections** still matter.
+
+### 3. Entity Identification
+*   **Organizations:** Government (generic), Bank (generic).
+*   **People/Roles:** Scammers (Actors), Victims (Targets), Officials (Impersonated entities).
+*   **Products/Fraud Types:** Love scams, Investment scams, Impersonation scams (Government/Bank).
+*   **Temporal Data:** 12 hours, days, weeks.
+*   **Concepts/Mitigants:** Awareness, Multiple protections.
+
+### 4. Structural Relationships
+*   **Logical Pivot:** The word "BUT" (Red, Heading 1) establishes a contrast between a prior context (likely regarding short-term interventions) and the reality of scam duration.
+*   **Categorization:** "Many scams" is the parent category for the sub-entities "love scams," "fake government or bank officials," and "investment scams."
+*   **Actor-Action-Target:** "Scammers" (Entity) perform the action of "coaching" (Process) directed at "victims" (Entity).
+*   **Temporal Correlation:** The "scams" (Entity/Event) are logically linked to the durations of "12 hours," "days," and "weeks" (Temporal Data).
+*   **Causal Link:** The prolonged nature of the scams ("happen over days or weeks") is cited as the direct justification ("That's why") for the necessity of "awareness and multiple protections" (Mitigants).
+*   **Visual Hierarchy:** Red text and red bullet points are used to highlight the primary contradiction, specific scam types, and the recommended solution.
+
+### 5. Visual Data Translation
+*   **Chart/Table Analysis:** Not applicable. The image is a text-based graphic.
+*   **Visual Design:** The layout uses a centered alignment on a textured light-grey background. High contrast is maintained through the use of black and red text. 
+*   **Quantitative Indicators:** The text provides specific temporal markers: "12 hours" (as a threshold) and "days or weeks" (as a standard operational duration).

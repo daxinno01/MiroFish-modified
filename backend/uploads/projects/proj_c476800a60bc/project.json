@@ -1,0 +1,395 @@
+{
+  "project_id": "proj_c476800a60bc",
+  "name": "Unnamed Project",
+  "status": "graph_completed",
+  "created_at": "2026-06-03T09:42:49.090099",
+  "updated_at": "2026-06-03T10:08:01.722483",
+  "files": [
+    {
+      "filename": "image_1.md",
+      "size": 1282
+    },
+    {
+      "filename": "image_2.md",
+      "size": 2684
+    },
+    {
+      "filename": "image_3.md",
+      "size": 2466
+    },
+    {
+      "filename": "image_4.md",
+      "size": 3816
+    },
+    {
+      "filename": "image_5.md",
+      "size": 2021
+    },
+    {
+      "filename": "DBS Background & Context.pdf",
+      "size": 349722
+    },
+    {
+      "filename": "Humans of DBS Context.md",
+      "size": 2434
+    },
+    {
+      "filename": "post_caption.txt",
+      "size": 3592
+    },
+    {
+      "filename": "CPE Metric Weighting.txt",
+      "size": 335
+    }
+  ],
+  "total_text_length": 49026,
+  "ontology": {
+    "entity_types": [
+      {
+        "name": "BankEmployee",
+        "description": "Individual staff members of DBS who share personal stories and represent the human side of banking.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The full name of the employee."
+          },
+          {
+            "name": "job_title",
+            "type": "text",
+            "description": "The specific role within the bank, e.g., Software Engineer."
+          },
+          {
+            "name": "career_path",
+            "type": "text",
+            "description": "Brief description of their career transition or background."
+          }
+        ],
+        "examples": [
+          "Derek Ang",
+          "Branch Service Manager"
+        ]
+      },
+      {
+        "name": "CorporateExecutive",
+        "description": "High-level leadership figures responsible for strategic decisions and public representation.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The full name of the executive."
+          },
+          {
+            "name": "leadership_role",
+            "type": "text",
+            "description": "The executive position held, such as CEO or Deputy CEO."
+          },
+          {
+            "name": "strategic_focus",
+            "type": "text",
+            "description": "The primary strategic pillar they champion, e.g., AI-enabled banking."
+          }
+        ],
+        "examples": [
+          "Tan Su Shan",
+          "Piyush Gupta"
+        ]
+      },
+      {
+        "name": "FinancialRegulator",
+        "description": "Government or statutory bodies that oversee banking operations and impose penalties.",
+        "attributes": [
+          {
+            "name": "agency_name",
+            "type": "text",
+            "description": "The name of the regulatory body."
+          },
+          {
+            "name": "regulatory_focus",
+            "type": "text",
+            "description": "The area of oversight, such as digital resilience or capital requirements."
+          }
+        ],
+        "examples": [
+          "Monetary Authority of Singapore (MAS)"
+        ]
+      },
+      {
+        "name": "MediaOutlet",
+        "description": "News organizations and digital publishers that report on corporate performance and events.",
+        "attributes": [
+          {
+            "name": "outlet_name",
+            "type": "text",
+            "description": "The name of the news or media organization."
+          },
+          {
+            "name": "media_reach",
+            "type": "text",
+            "description": "The scale of the audience, e.g., International, Regional."
+          }
+        ],
+        "examples": [
+          "Fortune",
+          "Channel News Asia (CNA)",
+          "McKinsey Insights"
+        ]
+      },
+      {
+        "name": "AcademicInstitution",
+        "description": "Universities and schools where employees receive training or degrees.",
+        "attributes": [
+          {
+            "name": "institution_name",
+            "type": "text",
+            "description": "The name of the university or college."
+          },
+          {
+            "name": "location_city",
+            "type": "text",
+            "description": "The city where the institution is located."
+          }
+        ],
+        "examples": [
+          "National University of Singapore",
+          "Georgia Tech"
+        ]
+      },
+      {
+        "name": "TechPartner",
+        "description": "External technology companies providing hardware, software, or cloud infrastructure.",
+        "attributes": [
+          {
+            "name": "company_name",
+            "type": "text",
+            "description": "The name of the technology firm."
+          },
+          {
+            "name": "service_provided",
+            "type": "text",
+            "description": "The type of technology or service provided to the bank."
+          }
+        ],
+        "examples": [
+          "Hewlett-Packard (HP)",
+          "Amazon",
+          "Google"
+        ]
+      },
+      {
+        "name": "RetailCustomer",
+        "description": "Individual users of banking services who interact with social media posts.",
+        "attributes": [
+          {
+            "name": "persona_archetype",
+            "type": "text",
+            "description": "The category of customer, e.g., Tech Enthusiast, Skeptic, Loyalist."
+          },
+          {
+            "name": "engagement_style",
+            "type": "text",
+            "description": "How they typically interact, e.g., Frequent Commenter."
+          }
+        ],
+        "examples": [
+          "Elderly POSB User",
+          "Young Tech Professional"
+        ]
+      },
+      {
+        "name": "SocialInfluencer",
+        "description": "Opinion leaders on social media who amplify or critique brand stories.",
+        "attributes": [
+          {
+            "name": "handle_name",
+            "type": "text",
+            "description": "The social media username or public name."
+          },
+          {
+            "name": "niche_topic",
+            "type": "text",
+            "description": "The primary area of influence, e.g., Career Advice, Fintech."
+          }
+        ],
+        "examples": [
+          "Fintech Blogger",
+          "Career Coach Influencer"
+        ]
+      },
+      {
+        "name": "Person",
+        "description": "Generic fallback type for any individual not covered by specific roles.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The name of the individual."
+          },
+          {
+            "name": "bio_note",
+            "type": "text",
+            "description": "General description of the person."
+          }
+        ],
+        "examples": [
+          "General Citizen",
+          "Job Applicant"
+        ]
+      },
+      {
+        "name": "Organization",
+        "description": "Generic fallback type for any entity, group, or company not covered by specific types.",
+        "attributes": [
+          {
+            "name": "org_name",
+            "type": "text",
+            "description": "The name of the organization."
+          },
+          {
+            "name": "industry_sector",
+            "type": "text",
+            "description": "The industry the organization belongs to."
+          }
+        ],
+        "examples": [
+          "SG Enable",
+          "National Iron and Steel Mills"
+        ]
+      }
+    ],
+    "edge_types": [
+      {
+        "name": "WORKS_FOR",
+        "description": "Indicates employment relationship between an individual and an organization.",
+        "source_targets": [
+          {
+            "source": "BankEmployee",
+            "target": "Organization"
+          },
+          {
+            "source": "CorporateExecutive",
+            "target": "Organization"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "REGULATES",
+        "description": "Indicates oversight and legal authority over an organization.",
+        "source_targets": [
+          {
+            "source": "FinancialRegulator",
+            "target": "Organization"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "REPORTS_ON",
+        "description": "Indicates a media outlet covering news about an entity.",
+        "source_targets": [
+          {
+            "source": "MediaOutlet",
+            "target": "Organization"
+          },
+          {
+            "source": "MediaOutlet",
+            "target": "CorporateExecutive"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "ALUMNUS_OF",
+        "description": "Indicates where a person received their education.",
+        "source_targets": [
+          {
+            "source": "BankEmployee",
+            "target": "AcademicInstitution"
+          },
+          {
+            "source": "Person",
+            "target": "AcademicInstitution"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "ENGAGES_WITH",
+        "description": "Indicates social media interaction such as liking, commenting, or sharing.",
+        "source_targets": [
+          {
+            "source": "RetailCustomer",
+            "target": "BankEmployee"
+          },
+          {
+            "source": "SocialInfluencer",
+            "target": "BankEmployee"
+          }
+        ],
+        "attributes": [
+          {
+            "name": "interaction_type",
+            "type": "text",
+            "description": "Like, Comment, Share, or Click."
+          }
+        ]
+      },
+      {
+        "name": "PARTNERS_WITH",
+        "description": "Indicates a formal business or strategic partnership.",
+        "source_targets": [
+          {
+            "source": "Organization",
+            "target": "TechPartner"
+          },
+          {
+            "source": "Organization",
+            "target": "Organization"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "CRITICIZES",
+        "description": "Indicates negative public sentiment or formal admonishment.",
+        "source_targets": [
+          {
+            "source": "RetailCustomer",
+            "target": "Organization"
+          },
+          {
+            "source": "FinancialRegulator",
+            "target": "Organization"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "MENTORS",
+        "description": "Indicates a professional guidance relationship.",
+        "source_targets": [
+          {
+            "source": "CorporateExecutive",
+            "target": "BankEmployee"
+          }
+        ],
+        "attributes": []
+      }
+    ]
+  },
+  "analysis_summary": "该本体设计紧扣'Humans of DBS'系列叙事，将实体划分为内部员工、高管、监管机构、媒体和不同类型的社媒互动者（零售客户、影响力者）。这种设计能够模拟从个人职业转型故事到企业战略转型，再到监管压力和公众舆论反馈的完整传播链条。通过区分具体角色（如BankEmployee）与兜底类型，确保了图谱既能捕捉核心叙事主体，也能容纳广泛的社媒参与者。",
+  "graph_id": "mirofish_local_0536974dd64c4a0b",
+  "graph_build_task_id": "cee55a1b-941a-48a6-a0f0-20dc1695a701",
+  "simulation_requirement": "Using the uploaded files 'DBS Background & Context.pdf' (brand history baseline), 'Humans of DBS Context.md' (post context), and 'CPE Metric Weighting.txt' (algorithmic conversion logic) as context:\r\n\r\nThe file 'post_caption.txt' contains the text copy of the Facebook post, and 'image_1.md' to 'image_5.md' are the attached visual creative asset.\r\n\r\nPredict how this specific Facebook post will perform after being published. The output report must provide the predicted Cost Per Engagement (CPE) tier alongside a granular conversion funnel breakdown (Scroll-pasts, Likes, Caption Clicks, Comments, and Shares) and an analysis of archetype response variance.",
+  "chunk_size": 500,
+  "chunk_overlap": 50,
+  "error": null,
+  "token_usage": {
+    "prompt_tokens": 82763,
+    "completion_tokens": 28805,
+    "total_tokens": 111568,
+    "call_count": 134,
+    "last_updated": "2026-06-03T10:08:00.393447"
+  }
+}

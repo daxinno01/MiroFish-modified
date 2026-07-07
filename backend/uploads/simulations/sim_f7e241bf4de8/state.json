@@ -1,0 +1,24 @@
+{
+  "simulation_id": "sim_f7e241bf4de8",
+  "project_id": "proj_b5988456f923",
+  "graph_id": "mirofish_local_5bb978ca4ac9436c",
+  "enable_twitter": true,
+  "enable_reddit": true,
+  "status": "stopped",
+  "entities_count": 5,
+  "profiles_count": 5,
+  "entity_types": [
+    "Organization",
+    "Bank",
+    "CreativeProfessional",
+    "Person"
+  ],
+  "config_generated": true,
+  "config_reasoning": "时间配置: 模拟时长设定为168小时（7天）以观察从视频发布、创意圈反弹到公众舆论发酵的全周期。新加坡与中国同属东八区，作息高度一致。高峰期设定在晚间19-23点，此时职场人士和创意工作者活跃度最高，易产生针对AI替代人类及DBS技术决策的深度讨论。工作时间设定为10-18点，覆盖金融圈和媒体的专业分析。考虑到DBS的国民级地位及GenAI争议性，激活Agent数量设定较高以模拟热点效应。 | 事件配置: 该配置涵盖了银行官方的创新诉求、创意专业人士对就业的担忧、技术视角对Sora能力的认可、执法部门的协同发声以及普通家庭受众的恐惧心理。通过这些不同维度的初始帖子，可以模拟出从技术赞叹到社会责任讨论的舆论演变。 | Agent配置: 成功生成 5 个 | 初始帖子分配: 5 个帖子已分配发布者",
+  "current_round": 0,
+  "twitter_status": "not_started",
+  "reddit_status": "not_started",
+  "created_at": "2026-04-28T17:34:25.870616",
+  "updated_at": "2026-04-28T18:13:10.620915",
+  "error": null
+}

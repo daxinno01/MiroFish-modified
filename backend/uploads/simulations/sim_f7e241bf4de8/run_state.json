@@ -1,0 +1,358 @@
+{
+  "simulation_id": "sim_f7e241bf4de8",
+  "runner_status": "stopped",
+  "current_round": 10,
+  "total_rounds": 10,
+  "simulated_hours": 0,
+  "total_simulation_hours": 168,
+  "progress_percent": 100.0,
+  "twitter_current_round": 7,
+  "reddit_current_round": 7,
+  "twitter_simulated_hours": 0,
+  "reddit_simulated_hours": 0,
+  "twitter_running": false,
+  "reddit_running": false,
+  "twitter_completed": true,
+  "reddit_completed": true,
+  "twitter_actions_count": 10,
+  "reddit_actions_count": 13,
+  "total_actions_count": 23,
+  "started_at": "2026-04-28T17:41:07.816754",
+  "updated_at": "2026-04-28T17:44:56.339639",
+  "completed_at": "2026-04-28T18:13:10.601106",
+  "error": "服务器关闭，模拟被终止",
+  "process_pid": 33982,
+  "recent_actions": [
+    {
+      "round_num": 10,
+      "timestamp": "2026-04-28T17:44:55.688805",
+      "platform": "twitter",
+      "agent_id": 4,
+      "agent_name": "Sora",
+      "action_type": "QUOTE_POST",
+      "action_args": {
+        "quoted_id": 7,
+        "new_post_id": 8,
+        "original_content": "While innovation is great, seeing a major bank bypass local actors, directors, and voice artists for a 'prompt' feels soulless. Is this the future we want for Singapore's creative scene?",
+        "original_author_name": "Singaporean family",
+        "quote_content": "高度的物理一致性（Physical consistency）与时空建模（Spatiotemporal modeling）不仅是视觉技术的突破，更是赋能社会安全的关键。利用GenAI构建逼真的教育场景，体现了技术在专业服务领域的正面价值。我们将继续通过红队测试与水印技术，确保此类应用在合规与安全的框架下，推动内容生产范式的转型。"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 10,
+      "timestamp": "2026-04-28T17:44:50.948365",
+      "platform": "reddit",
+      "agent_id": 0,
+      "agent_name": "DBS Bank",
+      "action_type": "LIKE_COMMENT",
+      "action_args": {
+        "comment_id": 2,
+        "comment_content": "As a long-term DBS user, I think this is a good move. Technology must be used to protect our savings. The realism of GenAI helps my elderly parents visualize the danger better than just reading a pamphlet. Safety first, stay alert lah! 🙏🛡️",
+        "comment_author_name": "Singaporean family"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 10,
+      "timestamp": "2026-04-28T17:44:50.936506",
+      "platform": "reddit",
+      "agent_id": 0,
+      "agent_name": "DBS Bank",
+      "action_type": "LIKE_POST",
+      "action_args": {
+        "post_id": 1,
+        "like_id": 3,
+        "post_content": "Transparency matters. We are proud to launch Singapore's first fully GenAI-created public educational video to help you spot sophisticated scams. Witness the future of anti-scam awareness. #DBS #GenAI #StaySafe",
+        "post_author_name": "DBS Bank"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 10,
+      "timestamp": "2026-04-28T17:44:50.924728",
+      "platform": "reddit",
+      "agent_id": 0,
+      "agent_name": "DBS Bank",
+      "action_type": "LIKE_POST",
+      "action_args": {
+        "post_id": 3,
+        "like_id": 2,
+        "post_content": "It is fascinating to see how GenAI models like Sora can now simulate complex scam scenarios with such realism. This marks a new era in educational content production.",
+        "post_author_name": "Singapore Police Force (SPF)"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 10,
+      "timestamp": "2026-04-28T17:44:50.913567",
+      "platform": "reddit",
+      "agent_id": 0,
+      "agent_name": "DBS Bank",
+      "action_type": "CREATE_COMMENT",
+      "action_args": {
+        "content": "We understand the concern. The realism of GenAI helps us visualize and prepare for real-world threats more effectively. At DBS, we are committed to building your #DigitalResilience. Please encourage your loved ones to use the 'Security Checkup' on our digibank app for an added layer of protection. #StaySafe #EmpoweringTheFuture",
+        "comment_id": 3
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 10,
+      "timestamp": "2026-04-28T17:44:50.909026",
+      "platform": "reddit",
+      "agent_id": 0,
+      "agent_name": "DBS Bank",
+      "action_type": "CREATE_POST",
+      "action_args": {
+        "content": "At DBS, we believe that true innovation serves a higher purpose. By leveraging GenAI for anti-scam awareness, we are not just adopting tech; we are building #DigitalResilience and #EmpoweringTheFuture of a safer Singapore. Safety and innovation must go hand-in-hand to ensure a #Seamless banking journey for all. 🛡️💻 #DBS #FinTech #StaySafe",
+        "post_id": 6
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 9,
+      "timestamp": "2026-04-28T17:44:46.428001",
+      "platform": "twitter",
+      "agent_id": 1,
+      "agent_name": "Singaporean family",
+      "action_type": "QUOTE_POST",
+      "action_args": {
+        "quoted_id": 2,
+        "new_post_id": 7,
+        "original_content": "While innovation is great, seeing a major bank bypass local actors, directors, and voice artists for a 'prompt' feels soulless. Is this the future we want for Singapore's creative scene?",
+        "original_author_name": "creatives",
+        "quote_content": "I understand the concern for the arts scene, but we must be pragmatic lah. If GenAI makes the scam scenarios look 100% real, it helps our seniors stay vigilant. After seeing my neighbor lose their savings to a 'Malicious App', I think effectiveness in education is the top priority. Financial security first hor! 🙏🛡️ #SafeSingapore #CyberAwareness"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 9,
+      "timestamp": "2026-04-28T17:44:46.424441",
+      "platform": "twitter",
+      "agent_id": 1,
+      "agent_name": "Singaporean family",
+      "action_type": "FOLLOW",
+      "action_args": {
+        "follow_id": 1,
+        "target_user_name": "Singaporean family"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 9,
+      "timestamp": "2026-04-28T17:44:39.292777",
+      "platform": "reddit",
+      "agent_id": 1,
+      "agent_name": "Singaporean family",
+      "action_type": "CREATE_COMMENT",
+      "action_args": {
+        "content": "As a long-term DBS user, I think this is a good move. Technology must be used to protect our savings. The realism of GenAI helps my elderly parents visualize the danger better than just reading a pamphlet. Safety first, stay alert lah! 🙏🛡️",
+        "comment_id": 2
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 8,
+      "timestamp": "2026-04-28T17:44:33.073336",
+      "platform": "reddit",
+      "agent_id": 1,
+      "agent_name": "Singaporean family",
+      "action_type": "CREATE_COMMENT",
+      "action_args": {
+        "content": "So scary hor. My neighbor also lost so much CPF money last year because of one Malicious App. This kind of video is good to show our parents so they know what to look out for. Must always remind them about Two-Factor Authentication and not to simply download things. Stay alert lah! 🙏🛡️",
+        "comment_id": 1
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 8,
+      "timestamp": "2026-04-28T17:44:33.069111",
+      "platform": "reddit",
+      "agent_id": 1,
+      "agent_name": "Singaporean family",
+      "action_type": "LIKE_POST",
+      "action_args": {
+        "post_id": 1,
+        "like_id": 1,
+        "post_content": "Transparency matters. We are proud to launch Singapore's first fully GenAI-created public educational video to help you spot sophisticated scams. Witness the future of anti-scam awareness. #DBS #GenAI #StaySafe",
+        "post_author_name": "DBS Bank"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 8,
+      "timestamp": "2026-04-28T17:44:33.209037",
+      "platform": "twitter",
+      "agent_id": 1,
+      "agent_name": "Singaporean family",
+      "action_type": "QUOTE_POST",
+      "action_args": {
+        "quoted_id": 5,
+        "new_post_id": 6,
+        "original_content": "Just watched the new DBS video. It looks so real it's actually terrifying. Is this really how fast scammers can trick us now? It makes me worried for my parents.",
+        "original_author_name": "Singaporean family",
+        "quote_content": "So scary hor. Seeing how real these deepfakes can be makes me really worried for my parents too. My neighbor lost so much last year just by downloading one 'Malicious App'. We must always use Two-Factor Authentication and never click unknown links! 🙏🛡️ Education is key. #SafeSingapore #CyberAwareness #DBS"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 8,
+      "timestamp": "2026-04-28T17:44:33.205666",
+      "platform": "twitter",
+      "agent_id": 1,
+      "agent_name": "Singaporean family",
+      "action_type": "LIKE_POST",
+      "action_args": {
+        "post_id": 5,
+        "like_id": 1,
+        "post_content": "Just watched the new DBS video. It looks so real it's actually terrifying. Is this really how fast scammers can trick us now? It makes me worried for my parents.",
+        "post_author_name": "Singaporean family"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 0,
+      "timestamp": "2026-04-28T17:44:04.923161",
+      "platform": "reddit",
+      "agent_id": 1,
+      "agent_name": "Singaporean family",
+      "action_type": "CREATE_POST (INITIAL_SEED)",
+      "action_args": {
+        "content": "Just watched the new DBS video. It looks so real it's actually terrifying. Is this really how fast scammers can trick us now? It makes me worried for my parents."
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 0,
+      "timestamp": "2026-04-28T17:44:04.912790",
+      "platform": "reddit",
+      "agent_id": 4,
+      "agent_name": "Sora",
+      "action_type": "CREATE_POST (INITIAL_SEED)",
+      "action_args": {
+        "content": "We welcome all efforts to educate the public on malware scams. Whether through human-led drama or AI, the message remains: stay vigilant and never click on suspicious links."
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 0,
+      "timestamp": "2026-04-28T17:44:04.901452",
+      "platform": "reddit",
+      "agent_id": 2,
+      "agent_name": "Singapore Police Force (SPF)",
+      "action_type": "CREATE_POST (INITIAL_SEED)",
+      "action_args": {
+        "content": "It is fascinating to see how GenAI models like Sora can now simulate complex scam scenarios with such realism. This marks a new era in educational content production."
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 0,
+      "timestamp": "2026-04-28T17:44:04.890821",
+      "platform": "reddit",
+      "agent_id": 3,
+      "agent_name": "creatives",
+      "action_type": "CREATE_POST (INITIAL_SEED)",
+      "action_args": {
+        "content": "While innovation is great, seeing a major bank bypass local actors, directors, and voice artists for a 'prompt' feels soulless. Is this the future we want for Singapore's creative scene?"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 0,
+      "timestamp": "2026-04-28T17:44:04.879551",
+      "platform": "reddit",
+      "agent_id": 0,
+      "agent_name": "DBS Bank",
+      "action_type": "CREATE_POST (INITIAL_SEED)",
+      "action_args": {
+        "content": "Transparency matters. We are proud to launch Singapore's first fully GenAI-created public educational video to help you spot sophisticated scams. Witness the future of anti-scam awareness. #DBS #GenAI #StaySafe"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 0,
+      "timestamp": "2026-04-28T17:44:04.664520",
+      "platform": "twitter",
+      "agent_id": 1,
+      "agent_name": "Singaporean family",
+      "action_type": "CREATE_POST (INITIAL_SEED)",
+      "action_args": {
+        "content": "Just watched the new DBS video. It looks so real it's actually terrifying. Is this really how fast scammers can trick us now? It makes me worried for my parents."
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 0,
+      "timestamp": "2026-04-28T17:44:04.653544",
+      "platform": "twitter",
+      "agent_id": 4,
+      "agent_name": "Sora",
+      "action_type": "CREATE_POST (INITIAL_SEED)",
+      "action_args": {
+        "content": "We welcome all efforts to educate the public on malware scams. Whether through human-led drama or AI, the message remains: stay vigilant and never click on suspicious links."
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 0,
+      "timestamp": "2026-04-28T17:44:04.642971",
+      "platform": "twitter",
+      "agent_id": 2,
+      "agent_name": "Singapore Police Force (SPF)",
+      "action_type": "CREATE_POST (INITIAL_SEED)",
+      "action_args": {
+        "content": "It is fascinating to see how GenAI models like Sora can now simulate complex scam scenarios with such realism. This marks a new era in educational content production."
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 0,
+      "timestamp": "2026-04-28T17:44:04.632981",
+      "platform": "twitter",
+      "agent_id": 3,
+      "agent_name": "creatives",
+      "action_type": "CREATE_POST (INITIAL_SEED)",
+      "action_args": {
+        "content": "While innovation is great, seeing a major bank bypass local actors, directors, and voice artists for a 'prompt' feels soulless. Is this the future we want for Singapore's creative scene?"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 0,
+      "timestamp": "2026-04-28T17:44:04.622665",
+      "platform": "twitter",
+      "agent_id": 0,
+      "agent_name": "DBS Bank",
+      "action_type": "CREATE_POST (INITIAL_SEED)",
+      "action_args": {
+        "content": "Transparency matters. We are proud to launch Singapore's first fully GenAI-created public educational video to help you spot sophisticated scams. Witness the future of anti-scam awareness. #DBS #GenAI #StaySafe"
+      },
+      "result": null,
+      "success": true
+    }
+  ],
+  "rounds_count": 0
+}

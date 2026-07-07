@@ -1,0 +1,81 @@
+{
+  "report_id": "report_94782d2cf486",
+  "simulation_id": "sim_b1add7741d73",
+  "graph_id": "mirofish_local_1f214f05e9b941de",
+  "simulation_requirement": "Based on the provided 8-file seed dossier, initialize a 7-day multi-agent swarm simulation to predict the public and media reception of DBS Bank’s fully GenAI-generated anti-scam video campaign.\r\n\r\nRun the simulation across three distinct digital environments simultaneously:\r\n1. Rapid-Reaction / Viral (TikTok/Instagram-like)\r\n2. Long-form Threaded Debate (Reddit r/singapore / HardwareZone-like)\r\n3. Mainstream & Social Local Media (Mothership, Straits Times, Rice Media)\r\n\r\nAs the swarm interacts, please observe the tensions between the \"Vulnerable Elderly,\" \"Tech-Savvy Youth,\" and \"Local Creatives.\" \r\n\r\nOutput a comprehensive Prediction and Action Report containing the following 5 sections:\r\n\r\n1. THE SENTIMENT TRAJECTORY (Day 1 to Day 7)\r\nProvide a chronological breakdown of the public mood. How does sentiment shift from the initial organic release (social media and opt-in app viewing on Day 1) to the broader discourse by Day 3, and where does it settle by Day 7? Provide a projected Positive / Negative / Confused sentiment split.\r\n\r\n2. THE \"EASTER EGG\" HUNT & NARRATIVE CASCADES\r\nTrace exactly how the narratives jump across platforms. When eagle-eyed Tech-Savvy Youth inevitably spot the subtle background morphing artifact at the 1:14 mark, does it become a viral meme amplified by Mothership? Or, because the foreground is flawless, does the public largely ignore it and focus instead on the ethics of the AI durian auntie? How do the Elderly react when they encounter these Reddit/Mothership debates on Facebook?\r\n\r\n3. THE CORE DEBATES: IRONY vs. INNOVATION\r\nAnalyze the debate vectors. Does the explicit AI disclosure successfully frame DBS as \"innovative and transparent\"? Or does the swarm fixate on the \"irony\" of using GenAI to fight GenAI scams and complain about \"record profits but cheaping out on local actors\"? \r\n\r\n4. EFFICACY OF THE SCAM WARNING\r\nUltimately, does the medium ruin the message? Determine if the target audience (vulnerable demographics) actually learns the anti-scam lesson, or if the lack of human empathy and the meta-discourse around AI production distract entirely from the educational goal.\r\n\r\n5. ACTIONABLE PR CRISIS MITIGATION\r\nBased on how the simulation resolves, what should the DBS PR team do? Provide 3 specific, actionable recommendations on how to respond to the simulated reactions, handle media queries from tech/culture sites, or adjust the campaign's ongoing rollout.",
+  "status": "failed",
+  "outline": {
+    "title": "星展银行(DBS)全生成式AI防诈宣传片的未来演化预测报告",
+    "summary": "模拟显示，技术创新的标签迅速被“企业犬儒主义”和“共情缺失”的负面舆论掩盖，导致防诈核心信息在技术争议与成本削减的质疑中被边缘化。",
+    "sections": [
+      {
+        "title": "情感轨迹演变：从技术好奇到企业犬儒主义的坠落",
+        "content": "",
+        "subsections": [
+          {
+            "title": "七日情感曲线：技术红利期的迅速消亡",
+            "content": "",
+            "subsections": []
+          },
+          {
+            "title": "核心矛盾：创纪录利润与“廉价”AI制作的对立",
+            "content": "",
+            "subsections": []
+          }
+        ]
+      },
+      {
+        "title": "叙事级联效应：视觉瑕疵引发的媒体狂欢与信任危机",
+        "content": "",
+        "subsections": [
+          {
+            "title": "1:14秒的“彩蛋”：从Reddit漏洞发现到Mothership的病毒式传播",
+            "content": "",
+            "subsections": []
+          },
+          {
+            "title": "媒体分化：主流媒体的理性审视与社交媒体的煽动性叙事",
+            "content": "",
+            "subsections": []
+          }
+        ]
+      },
+      {
+        "title": "效能评估：被“技术元叙事”绑架的防诈教育",
+        "content": "",
+        "subsections": [
+          {
+            "title": "弱势老年群体的认知迷失",
+            "content": "",
+            "subsections": []
+          },
+          {
+            "title": "共情缺失：AI生成的“无魂”叙事",
+            "content": "",
+            "subsections": []
+          }
+        ]
+      },
+      {
+        "title": "风险预警与公关对冲策略",
+        "content": "",
+        "subsections": [
+          {
+            "title": "关联风险：AI投入与系统稳定性的负面联想",
+            "content": "",
+            "subsections": []
+          },
+          {
+            "title": "危机修复：从技术展示回归人文关怀",
+            "content": "",
+            "subsections": []
+          }
+        ]
+      }
+    ]
+  },
+  "markdown_content": "",
+  "created_at": "2026-04-24T10:52:21.939248",
+  "completed_at": "",
+  "error": "'name'"
+}

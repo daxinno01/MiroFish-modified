@@ -1,0 +1,1 @@
+DBS Bank in Singapore releases a fully autonomous GenAI telemarketing sales call to interact with customers and sell a plan. Upon indicating interest, they will be directed to a form for the rest of the application with a real human. The AI sounds like a real human, using models from ElevenLabs. 

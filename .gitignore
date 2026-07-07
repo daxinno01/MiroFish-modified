@@ -53,7 +53,7 @@ backend/logs/
 *.log
 
 # 上传文件
-backend/uploads/
+#backend/uploads/
 
 # Docker 数据
 data/

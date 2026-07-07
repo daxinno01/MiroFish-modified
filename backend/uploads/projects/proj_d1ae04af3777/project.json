@@ -1,0 +1,343 @@
+{
+  "project_id": "proj_d1ae04af3777",
+  "name": "Unnamed Project",
+  "status": "graph_completed",
+  "created_at": "2026-05-21T13:47:32.580781",
+  "updated_at": "2026-05-21T13:50:18.503161",
+  "files": [
+    {
+      "filename": "background.txt",
+      "size": 3686
+    }
+  ],
+  "total_text_length": 3571,
+  "ontology": {
+    "entity_types": [
+      {
+        "name": "TalkingAnimal",
+        "description": "A non-human biological entity capable of human-like speech and advanced cognitive reasoning.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The name assigned to or chosen by the animal."
+          },
+          {
+            "name": "biological_species",
+            "type": "text",
+            "description": "The original species of the animal."
+          },
+          {
+            "name": "speech_fluency",
+            "type": "text",
+            "description": "The level of linguistic and cognitive complexity demonstrated."
+          }
+        ],
+        "examples": [
+          "Koko the Talking Gorilla",
+          "Subject 7-B"
+        ]
+      },
+      {
+        "name": "Scientist",
+        "description": "Individual researcher specializing in evolutionary biology, linguistics, or cognitive science.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The legal name of the researcher."
+          },
+          {
+            "name": "research_field",
+            "type": "text",
+            "description": "Primary area of scientific expertise."
+          },
+          {
+            "name": "institution_affiliation",
+            "type": "text",
+            "description": "The university or lab the scientist works for."
+          }
+        ],
+        "examples": [
+          "Dr. Jane Smith",
+          "Professor Alan Turing"
+        ]
+      },
+      {
+        "name": "GovernmentAgency",
+        "description": "National security or administrative body tasked with regulation and public order.",
+        "attributes": [
+          {
+            "name": "org_name",
+            "type": "text",
+            "description": "The official name of the agency."
+          },
+          {
+            "name": "jurisdiction_area",
+            "type": "text",
+            "description": "The geographic or legal scope of authority."
+          },
+          {
+            "name": "regulatory_power",
+            "type": "text",
+            "description": "The specific laws they enforce regarding the discovery."
+          }
+        ],
+        "examples": [
+          "Department of Wildlife",
+          "National Security Council"
+        ]
+      },
+      {
+        "name": "Corporation",
+        "description": "Commercial entity seeking to monetize the discovery through media or biotechnology.",
+        "attributes": [
+          {
+            "name": "org_name",
+            "type": "text",
+            "description": "The registered company name."
+          },
+          {
+            "name": "business_model",
+            "type": "text",
+            "description": "How the company intends to profit from the animal."
+          },
+          {
+            "name": "market_cap",
+            "type": "text",
+            "description": "The financial scale of the corporation."
+          }
+        ],
+        "examples": [
+          "Global Media Corp",
+          "BioGenetics Inc"
+        ]
+      },
+      {
+        "name": "MediaOutlet",
+        "description": "Traditional journalism network shaping the structured national narrative.",
+        "attributes": [
+          {
+            "name": "org_name",
+            "type": "text",
+            "description": "The name of the news organization."
+          },
+          {
+            "name": "audience_reach",
+            "type": "text",
+            "description": "The scale of the outlet's viewership or readership."
+          },
+          {
+            "name": "political_leaning",
+            "type": "text",
+            "description": "The editorial stance of the outlet."
+          }
+        ],
+        "examples": [
+          "The BBC",
+          "New York Times"
+        ]
+      },
+      {
+        "name": "Influencer",
+        "description": "Social media personality driving viral trends and hyper-accelerating awareness.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The public name or handle of the influencer."
+          },
+          {
+            "name": "primary_platform",
+            "type": "text",
+            "description": "The main social media platform used."
+          },
+          {
+            "name": "follower_base",
+            "type": "text",
+            "description": "The size and demographic of the audience."
+          }
+        ],
+        "examples": [
+          "TechReviewer2024",
+          "ViralVlogger"
+        ]
+      },
+      {
+        "name": "Activist",
+        "description": "Individual fighting for animal rights, personhood, and legal protection.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The name of the activist."
+          },
+          {
+            "name": "advocacy_goal",
+            "type": "text",
+            "description": "The specific legal or moral outcome desired."
+          },
+          {
+            "name": "protest_history",
+            "type": "text",
+            "description": "Previous involvement in social movements."
+          }
+        ],
+        "examples": [
+          "Sarah Green",
+          "Animal Rights Representative"
+        ]
+      },
+      {
+        "name": "ReligiousLeader",
+        "description": "Clerical authority providing theological interpretations of the discovery.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The name of the religious figure."
+          },
+          {
+            "name": "religious_denomination",
+            "type": "text",
+            "description": "The faith tradition they represent."
+          },
+          {
+            "name": "spiritual_rank",
+            "type": "text",
+            "description": "The position held within the religious hierarchy."
+          }
+        ],
+        "examples": [
+          "Bishop Thomas",
+          "Imam Hassan"
+        ]
+      },
+      {
+        "name": "Person",
+        "description": "Any natural person not categorized into specific professional or social roles.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The name of the individual."
+          },
+          {
+            "name": "personal_location",
+            "type": "text",
+            "description": "General geographic location."
+          },
+          {
+            "name": "social_media_bio",
+            "type": "text",
+            "description": "Self-description on social platforms."
+          }
+        ],
+        "examples": [
+          "John Doe",
+          "Concerned Citizen"
+        ]
+      },
+      {
+        "name": "Organization",
+        "description": "Any collective entity or group not categorized into specific institutional roles.",
+        "attributes": [
+          {
+            "name": "org_name",
+            "type": "text",
+            "description": "The name of the organization."
+          },
+          {
+            "name": "entity_purpose",
+            "type": "text",
+            "description": "The general mission or reason for existence."
+          },
+          {
+            "name": "operational_scale",
+            "type": "text",
+            "description": "Whether the group is local, national, or international."
+          }
+        ],
+        "examples": [
+          "Local Community Board",
+          "Global Ethics Committee"
+        ]
+      }
+    ],
+    "edge_types": [
+      {
+        "name": "STUDIES",
+        "description": "Scientific observation and analysis of the subject.",
+        "source_targets": [
+          {
+            "source": "Scientist",
+            "target": "TalkingAnimal"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "REGULATES",
+        "description": "Legal containment and administrative control.",
+        "source_targets": [
+          {
+            "source": "GovernmentAgency",
+            "target": "TalkingAnimal"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "SEEKS_PROFIT_FROM",
+        "description": "Attempting to commercialize or patent the entity.",
+        "source_targets": [
+          {
+            "source": "Corporation",
+            "target": "TalkingAnimal"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "REPORTS_ON",
+        "description": "Covering the event in the news or media.",
+        "source_targets": [
+          {
+            "source": "MediaOutlet",
+            "target": "TalkingAnimal"
+          },
+          {
+            "source": "Influencer",
+            "target": "TalkingAnimal"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "ADVOCATES_FOR",
+        "description": "Fighting for the rights and liberation of the subject.",
+        "source_targets": [
+          {
+            "source": "Activist",
+            "target": "TalkingAnimal"
+          }
+        ],
+        "attributes": []
+      }
+    ]
+  },
+  "analysis_summary": "",
+  "graph_id": "mirofish_local_9884cc530d804a94",
+  "graph_build_task_id": "3b7d3d85-4964-49f1-9cb0-6eca8ed8d42f",
+  "simulation_requirement": "Predict what happens to the world if a talking animal is discovered.",
+  "chunk_size": 500,
+  "chunk_overlap": 50,
+  "error": null,
+  "token_usage": {
+    "prompt_tokens": 7613,
+    "completion_tokens": 3931,
+    "total_tokens": 11544,
+    "call_count": 13,
+    "last_updated": "2026-05-21T13:50:17.645102"
+  }
+}

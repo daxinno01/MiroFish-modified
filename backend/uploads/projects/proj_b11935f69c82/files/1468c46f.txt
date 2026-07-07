@@ -1,0 +1,35 @@
+### 1. Executive Summary
+This image is an informational graphic from a financial institution's anti-scam awareness campaign. It outlines a defensive strategy centered on "intentional pauses" designed to counteract the psychological tactics of scammers (urgency and fear). The graphic details three specific security features: digiVault, controlled mobile wallet setup, and mandatory cooling periods.
+
+### 2. OCR / Text Extraction
+*   **Primary Heading (Red):** Scammers rush people. We take a pause, on purpose.
+*   **Contextual Body Text:** Scams often rely on fear, urgency and authority to push victims into acting fast. That’s why we build in intentional pauses at higher risk moments — giving customers time to stop, think and verify.
+*   **Feature 1 Heading:** digiVault:
+*   **Feature 1 Description:** lock your savings so they can only be unlocked in person at ATMs, VTMs or branches.
+*   **Feature 2 Heading:** Mobile wallet setup:
+*   **Feature 2 Description:** adding a new card requires permission in digibank and must be completed within 10 minutes — helping prevent misuse.
+*   **Feature 3 Heading:** Cooling periods:
+*   **Feature 3 Description:** the 12-hour waiting period helps deter impulsive decisions, giving customers time to assess the situation calmly and carefully.
+
+### 3. Entity Identification
+*   **Organizations:** Unspecified financial institution (referred to as "We"), digibank (digital banking platform).
+*   **Products & Features:** digiVault, Mobile wallet setup, Cooling periods.
+*   **Physical Infrastructure:** ATMs (Automated Teller Machines), VTMs (Video Teller Machines), physical branches.
+*   **Actors:** Scammers, victims, customers.
+*   **Temporal Metrics:** 10 minutes (setup window), 12-hour (waiting period).
+*   **Psychological/Behavioral Factors:** Fear, urgency, authority, impulsive decisions.
+
+### 4. Structural Relationships
+*   **Adversarial Relationship:** "Scammers" apply "fear, urgency and authority" to "victims."
+*   **Mitigation Strategy:** "Intentional pauses" are implemented by the organization to protect "customers."
+*   **Product-to-Action Linkage:** "digiVault" (Entity) restricts "savings" (Asset) access to "in-person" (Verification Method) locations.
+*   **Product-to-Platform Linkage:** "Mobile wallet setup" (Process) is dependent on "permission in digibank" (Entity/Platform).
+*   **Process-to-Constraint Linkage:** "Mobile wallet setup" (Process) is governed by a "10 minutes" (Temporal Metric) expiration limit.
+*   **Feature-to-Constraint Linkage:** "Cooling periods" (Feature) enforces a "12-hour" (Temporal Metric) delay on transactions/decisions.
+
+### 5. Visual Data Translation
+The image utilizes a tripartite horizontal layout to present security features, each accompanied by a symbolic icon:
+*   **Left Column:** Represented by a safe icon with a red gear/lock symbol. Corresponds to **digiVault**, emphasizing physical security and the locking of assets.
+*   **Center Column:** Represented by a black smartphone icon with a red "plus" (+) badge. Corresponds to **Mobile wallet setup**, signifying the addition of digital payment methods.
+*   **Right Column:** Represented by a red circular clock icon containing the text "12 hours." Corresponds to **Cooling periods**, visually reinforcing the concept of a timed delay.
+*   **Dividers:** Two red horizontal lines separate the main header/contextual text from the three feature columns.

@@ -1,0 +1,6 @@
+Cost Per Engagement (CPE) METRIC WEIGHTING:
+Calculate CPE based on the following persona action values:
+- Scroll Past = 0 points (Increases CPE)
+- Like / Reaction = 1 point (Standard engagement)
+- Click "See More" = 3 points (Deep interest, lowers CPE)
+- Write Comment / Share = 5 points (High virality, drastically optimizes CPE)

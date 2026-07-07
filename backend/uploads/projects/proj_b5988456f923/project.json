@@ -1,0 +1,354 @@
+{
+  "project_id": "proj_b5988456f923",
+  "name": "Unnamed Project",
+  "status": "graph_completed",
+  "created_at": "2026-04-28T17:29:04.860559",
+  "updated_at": "2026-04-28T17:31:17.538690",
+  "files": [
+    {
+      "filename": "01_scenario_brief.md",
+      "size": 1594
+    },
+    {
+      "filename": "03_prior_sentiment_and_analogues.md",
+      "size": 1176
+    }
+  ],
+  "total_text_length": 2836,
+  "ontology": {
+    "entity_types": [
+      {
+        "name": "Bank",
+        "description": "Financial institutions like DBS that launch campaigns and provide digital banking services.",
+        "attributes": [
+          {
+            "name": "org_name",
+            "type": "text",
+            "description": "The official name of the bank."
+          },
+          {
+            "name": "tech_reputation",
+            "type": "text",
+            "description": "Public perception of the bank's technological reliability."
+          },
+          {
+            "name": "market_share",
+            "type": "text",
+            "description": "The bank's dominance in the local market."
+          }
+        ],
+        "examples": [
+          "DBS Bank",
+          "OCBC Bank"
+        ]
+      },
+      {
+        "name": "CreativeProfessional",
+        "description": "Individuals in the creative industry such as artists, directors, and voice actors.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The name of the creative professional."
+          },
+          {
+            "name": "creative_field",
+            "type": "text",
+            "description": "The specific industry like animation, film, or design."
+          },
+          {
+            "name": "ai_sentiment",
+            "type": "text",
+            "description": "The individual's stance on the use of GenAI in creative works."
+          }
+        ],
+        "examples": [
+          "Film Director",
+          "Voiceover Artist",
+          "Graphic Designer"
+        ]
+      },
+      {
+        "name": "TechEnthusiast",
+        "description": "Individuals who follow technology trends, specifically AI and digital innovation.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The name of the tech enthusiast."
+          },
+          {
+            "name": "expertise_area",
+            "type": "text",
+            "description": "Specific area of interest like GenAI or Cybersecurity."
+          }
+        ],
+        "examples": [
+          "AI Researcher",
+          "Tech Blogger",
+          "Early Adopter"
+        ]
+      },
+      {
+        "name": "Citizen",
+        "description": "General members of the public, including vulnerable demographics like the elderly.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The name of the individual."
+          },
+          {
+            "name": "age_group",
+            "type": "text",
+            "description": "The age demographic of the citizen."
+          },
+          {
+            "name": "digital_literacy",
+            "type": "text",
+            "description": "The level of comfort with digital tools and scam awareness."
+          }
+        ],
+        "examples": [
+          "Elderly Resident",
+          "Local Parent",
+          "University Student"
+        ]
+      },
+      {
+        "name": "LawEnforcementAgency",
+        "description": "Government bodies responsible for public safety and anti-scam enforcement.",
+        "attributes": [
+          {
+            "name": "org_name",
+            "type": "text",
+            "description": "The name of the agency."
+          },
+          {
+            "name": "campaign_style",
+            "type": "text",
+            "description": "The typical tone and method of their public service announcements."
+          }
+        ],
+        "examples": [
+          "Singapore Police Force",
+          "National Crime Prevention Council"
+        ]
+      },
+      {
+        "name": "MediaOutlet",
+        "description": "Organizations that report news and shape public opinion through various channels.",
+        "attributes": [
+          {
+            "name": "org_name",
+            "type": "text",
+            "description": "The name of the media organization."
+          },
+          {
+            "name": "editorial_lean",
+            "type": "text",
+            "description": "The general perspective or focus of the outlet."
+          }
+        ],
+        "examples": [
+          "The Straits Times",
+          "CNA",
+          "Mothership"
+        ]
+      },
+      {
+        "name": "TechCompany",
+        "description": "Companies providing the GenAI tools and platforms used in the campaign.",
+        "attributes": [
+          {
+            "name": "org_name",
+            "type": "text",
+            "description": "The name of the technology provider."
+          },
+          {
+            "name": "ai_model_name",
+            "type": "text",
+            "description": "The specific AI model provided (e.g., Sora, Veo)."
+          }
+        ],
+        "examples": [
+          "OpenAI",
+          "Google DeepMind"
+        ]
+      },
+      {
+        "name": "RegulatoryBody",
+        "description": "Government authorities that oversee banking and digital standards.",
+        "attributes": [
+          {
+            "name": "org_name",
+            "type": "text",
+            "description": "The name of the regulator."
+          },
+          {
+            "name": "policy_focus",
+            "type": "text",
+            "description": "The primary area of regulation, such as AI ethics or financial stability."
+          }
+        ],
+        "examples": [
+          "Monetary Authority of Singapore",
+          "IMDA"
+        ]
+      },
+      {
+        "name": "Person",
+        "description": "A generic individual actor not covered by specific categories.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The name of the person."
+          },
+          {
+            "name": "role_description",
+            "type": "text",
+            "description": "A brief description of the person's role in the simulation."
+          }
+        ],
+        "examples": [
+          "Social Media Commenter",
+          "Anonymous Whistleblower"
+        ]
+      },
+      {
+        "name": "Organization",
+        "description": "A generic entity or group not covered by specific categories.",
+        "attributes": [
+          {
+            "name": "org_name",
+            "type": "text",
+            "description": "The name of the organization."
+          },
+          {
+            "name": "industry",
+            "type": "text",
+            "description": "The sector the organization operates in."
+          }
+        ],
+        "examples": [
+          "Local Community Club",
+          "SME Association"
+        ]
+      }
+    ],
+    "edge_types": [
+      {
+        "name": "CRITICIZES",
+        "description": "Expressing negative feedback or concern regarding a campaign or action.",
+        "source_targets": [
+          {
+            "source": "CreativeProfessional",
+            "target": "Bank"
+          },
+          {
+            "source": "TechEnthusiast",
+            "target": "Bank"
+          },
+          {
+            "source": "Citizen",
+            "target": "Bank"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "REPORTS_ON",
+        "description": "Covering the events or reactions related to the campaign in the news.",
+        "source_targets": [
+          {
+            "source": "MediaOutlet",
+            "target": "Bank"
+          },
+          {
+            "source": "MediaOutlet",
+            "target": "Citizen"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "WARNS_AGAINST",
+        "description": "Providing educational content to prevent scams.",
+        "source_targets": [
+          {
+            "source": "Bank",
+            "target": "Citizen"
+          },
+          {
+            "source": "LawEnforcementAgency",
+            "target": "Citizen"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "COMPARES_TO",
+        "description": "Drawing parallels between the current campaign and previous ones.",
+        "source_targets": [
+          {
+            "source": "Citizen",
+            "target": "LawEnforcementAgency"
+          },
+          {
+            "source": "MediaOutlet",
+            "target": "LawEnforcementAgency"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "REGULATES",
+        "description": "Overseeing the actions and technological deployments of the bank.",
+        "source_targets": [
+          {
+            "source": "RegulatoryBody",
+            "target": "Bank"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "PROVIDES_TECH_TO",
+        "description": "Supplying the AI models or tools used in the campaign.",
+        "source_targets": [
+          {
+            "source": "TechCompany",
+            "target": "Bank"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "TRUSTS",
+        "description": "The level of confidence an entity has in the bank's services.",
+        "source_targets": [
+          {
+            "source": "Citizen",
+            "target": "Bank"
+          }
+        ],
+        "attributes": []
+      }
+    ]
+  },
+  "analysis_summary": "该本体设计旨在模拟DBS银行使用GenAI制作反诈视频后的社会舆论反应。实体类型涵盖了核心发起方（Bank）、技术提供方（TechCompany）、监管方（RegulatoryBody）以及受影响最深的各类社媒发声主体（创意专业人士、科技爱好者、普通市民）。关系类型重点刻画了舆论中的批评、报道、对比和监管互动，特别考虑了文中提到的创意界抵制、技术质疑以及与警方传统广告的对比。",
+  "graph_id": "mirofish_local_5bb978ca4ac9436c",
+  "graph_build_task_id": "f7d5579c-ba66-47ee-be85-805b92728bd6",
+  "simulation_requirement": "Predict the general reception to the GenAI video from DBS",
+  "chunk_size": 500,
+  "chunk_overlap": 50,
+  "error": null,
+  "token_usage": {
+    "prompt_tokens": 6596,
+    "completion_tokens": 2993,
+    "total_tokens": 9589,
+    "call_count": 10,
+    "last_updated": "2026-04-28T17:31:16.993051"
+  }
+}

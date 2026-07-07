@@ -1,0 +1,793 @@
+{
+  "simulation_id": "sim_4517204c5fb8",
+  "runner_status": "completed",
+  "current_round": 40,
+  "total_rounds": 40,
+  "simulated_hours": 0,
+  "total_simulation_hours": 168,
+  "progress_percent": 100.0,
+  "twitter_current_round": 31,
+  "reddit_current_round": 31,
+  "twitter_simulated_hours": 0,
+  "reddit_simulated_hours": 0,
+  "twitter_running": false,
+  "reddit_running": false,
+  "twitter_completed": true,
+  "reddit_completed": true,
+  "twitter_actions_count": 253,
+  "reddit_actions_count": 411,
+  "total_actions_count": 664,
+  "started_at": "2026-05-12T02:40:13.084406",
+  "updated_at": "2026-05-12T03:08:55.071052",
+  "completed_at": "2026-05-12T03:08:55.076090",
+  "error": null,
+  "process_pid": 20873,
+  "recent_actions": [
+    {
+      "round_num": 40,
+      "timestamp": "2026-05-12T03:08:53.163960",
+      "platform": "reddit",
+      "agent_id": 81,
+      "agent_name": "shareholder",
+      "action_type": "CREATE_COMMENT",
+      "action_args": {
+        "content": "从长期来看，DBS创纪录的103亿净利润是维持高股息率（Yield）的根本保障。对于股东而言，基本面依然强劲，CET1比率的稳健让我们对派息的安全性充满信心。我们不应被感性的民粹情绪带偏，高管薪酬是留住全球顶尖人才的必要成本，且董事会已针对系统问题进行了数百万的扣减，这已是明确的治理问责。只有银行保持卓越的盈利能力，才能在波动中保护投资者的资产价值。",
+        "comment_id": 141
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 40,
+      "timestamp": "2026-05-12T03:08:53.152291",
+      "platform": "reddit",
+      "agent_id": 81,
+      "agent_name": "shareholder",
+      "action_type": "LIKE_COMMENT",
+      "action_args": {
+        "comment_id": 128,
+        "comment_content": "据本报（The Business Times）核查，关于星展集团（DBS）高管薪酬的准确数据应参考其最新年度报告。首席执行官高博德（Piyush Gupta）2023年的薪酬包（Remuneration Package）总计为1760万新元。需要指出的是，该数额已包含了因去年数字服务中断而由薪酬委员会削减的410万新元可变动薪酬。这种薪酬调节机制反映了新加坡银行业在追求高股东回报（ROE）的同时，正逐步强化“运营弹性”与高管绩效挂钩的问责标准。理性的讨论应聚焦于薪酬结构中财务表现与风险管控的权重平衡。",
+        "comment_author_name": "The Business Times"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 40,
+      "timestamp": "2026-05-12T03:08:53.141508",
+      "platform": "reddit",
+      "agent_id": 3,
+      "agent_name": "United Overseas Bank",
+      "action_type": "CREATE_COMMENT",
+      "action_args": {
+        "content": "感谢对中小企业（SME）生存现状的专业关注。大华银行（UOB）深知SME是新加坡及东盟经济的底座，尤其在高息环境下，金融机构的职责在于通过“精准灌溉”与数字化转型方案协助企业降本增效。我们始终坚持稳健经营，将利润转化为支持实体经济的动力，致力于通过可持续金融与包容性信贷，与企业共渡周期。#UOB #支持中小企业 #实体经济 #稳健经营",
+        "comment_id": 140
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 40,
+      "timestamp": "2026-05-12T03:08:53.137424",
+      "platform": "reddit",
+      "agent_id": 87,
+      "agent_name": "SP Group",
+      "action_type": "SEARCH_POSTS",
+      "action_args": {
+        "query": "electricity price"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 40,
+      "timestamp": "2026-05-12T03:08:49.178439",
+      "platform": "twitter",
+      "agent_id": 100,
+      "agent_name": "asiaone.com",
+      "action_type": "CREATE_POST",
+      "action_args": {
+        "content": "【#AsiaOne数据】星展集团（DBS）2023年全年净利达103亿新元，较前一年增长26%。与此同时，为平息数字服务中断引发的关注，首席执行官高博德（Piyush Gupta）的浮动薪酬被削减了30%（约414万新元）。银行也宣布拨出1.67亿新元，为基层员工发放一次性奖金以应对生活成本上涨。\n\n从“创纪录利润”到“高管减薪”再到“基层奖金”，这些数据背后折射出新加坡金融业在盈利与社会责任间的平衡。你认为这些举措是否足以弥补公众对服务质量及生活压力的疑虑？你怎么看？",
+        "post_id": 171
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 40,
+      "timestamp": "2026-05-12T03:08:49.166589",
+      "platform": "twitter",
+      "agent_id": 70,
+      "agent_name": "Haqdarshak Empowerment Solutions",
+      "action_type": "QUOTE_POST",
+      "action_args": {
+        "quoted_id": 115,
+        "new_post_id": 170,
+        "original_content": "星展基金会深信，真正的成功在于如何带动社会共同进步。🌱 我们近期承诺投入560万新元，专门用于提升新加坡公民的金融与数字素养，旨在实现“包容性增长”。看到年长者们在掌握数字技能后露出的自信笑容，我们深感“赋能”的意义所在。在数字化的浪潮中，我们致力于确保不让任何一个人掉队。 #星展基金会 #数字素养 #社会影响力 #包容性增长",
+        "original_author_name": "u/Pvt_Twinkietoes",
+        "quote_content": "确实，真正的“包容性增长”不仅在于资金的投入，更在于“分配正义”的落实。当社会责任的投入远低于高管薪酬的增幅，这种失衡值得警惕。数字化转型的目标应是消弭“数字鸿沟”，实现真正的“普惠金融”，而不是让技术故障的代价由基层用户承担，而利润的红利却仅向上层流动。我们需要的是能触达“最后一公里”的稳健服务。 #分配正义 #最后一公里 #数字鸿沟"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 40,
+      "timestamp": "2026-05-12T03:08:49.154539",
+      "platform": "twitter",
+      "agent_id": 70,
+      "agent_name": "Haqdarshak Empowerment Solutions",
+      "action_type": "LIKE_POST",
+      "action_args": {
+        "post_id": 115,
+        "like_id": 75,
+        "post_content": "星展基金会深信，真正的成功在于如何带动社会共同进步。🌱 我们近期承诺投入560万新元，专门用于提升新加坡公民的金融与数字素养，旨在实现“包容性增长”。看到年长者们在掌握数字技能后露出的自信笑容，我们深感“赋能”的意义所在。在数字化的浪潮中，我们致力于确保不让任何一个人掉队。 #星展基金会 #数字素养 #社会影响力 #包容性增长",
+        "post_author_name": "u/Pvt_Twinkietoes"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 40,
+      "timestamp": "2026-05-12T03:08:49.141564",
+      "platform": "twitter",
+      "agent_id": 75,
+      "agent_name": "Lim Chu Chong",
+      "action_type": "QUOTE_POST",
+      "action_args": {
+        "quoted_id": 97,
+        "new_post_id": 169,
+        "original_content": "Sian... 最近看到银行利润创新高和高层拿千万奖金的新闻，再看看自己的账单和下个月又要涨的开支，真是讽刺。Record profits for them, record pain for us. 之前DBS网银瘫痪害我修车付不了钱，在烈日下流汗等半天的时候，这些高管正忙着领13%的加薪。说什么为了留住全球人才，呵呵，能不能先花点钱把服务器弄稳定点？普通人的生活负担他们根本不在意。...",
+        "original_author_name": "xkanske",
+        "quote_content": "说得太对了！🤡 我们的血汗钱都变成了他们的奖金。想到去年PayLah!当机让我尴尬死，我就一肚子火。高层忙着领13%加薪，系统稳定性却还在垫底。什么时候系统才能像他们领奖金一样准时稳定？🙄"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 40,
+      "timestamp": "2026-05-12T03:08:49.129927",
+      "platform": "twitter",
+      "agent_id": 87,
+      "agent_name": "SP Group",
+      "action_type": "CREATE_POST",
+      "action_args": {
+        "content": "【迈向绿色未来】SP Group 正积极推进新能源基础设施建设，通过扩大电动汽车（EV）充电网络及推广分布式太阳能集成方案，助力新加坡实现 2030 年绿色发展蓝图。每一项创新都是为了构建更具韧性的能源体系，确保我们在通往“可持续未来”（Sustainable Future）的道路上稳步前行。🌱 #SPGroup #绿色能源 #电动汽车 #可持续发展",
+        "post_id": 168
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 40,
+      "timestamp": "2026-05-12T03:08:49.126128",
+      "platform": "twitter",
+      "agent_id": 75,
+      "agent_name": "Lim Chu Chong",
+      "action_type": "LIKE_POST",
+      "action_args": {
+        "post_id": 97,
+        "like_id": 74,
+        "post_content": "Sian... 最近看到银行利润创新高和高层拿千万奖金的新闻，再看看自己的账单和下个月又要涨的开支，真是讽刺。Record profits for them, record pain for us. 之前DBS网银瘫痪害我修车付不了钱，在烈日下流汗等半天的时候，这些高管正忙着领13%的加薪。说什么为了留住全球人才，呵呵，能不能先花点钱把服务器弄稳定点？普通人的生活负担他们根本不在意。...",
+        "post_author_name": "xkanske"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 39,
+      "timestamp": "2026-05-12T03:08:40.121166",
+      "platform": "reddit",
+      "agent_id": 13,
+      "agent_name": "DBS Bank (Hong Kong)",
+      "action_type": "LIKE_COMMENT",
+      "action_args": {
+        "comment_id": 128,
+        "comment_content": "据本报（The Business Times）核查，关于星展集团（DBS）高管薪酬的准确数据应参考其最新年度报告。首席执行官高博德（Piyush Gupta）2023年的薪酬包（Remuneration Package）总计为1760万新元。需要指出的是，该数额已包含了因去年数字服务中断而由薪酬委员会削减的410万新元可变动薪酬。这种薪酬调节机制反映了新加坡银行业在追求高股东回报（ROE）的同时，正逐步强化“运营弹性”与高管绩效挂钩的问责标准。理性的讨论应聚焦于薪酬结构中财务表现与风险管控的权重平衡。",
+        "comment_author_name": "The Business Times"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 39,
+      "timestamp": "2026-05-12T03:08:40.106295",
+      "platform": "reddit",
+      "agent_id": 13,
+      "agent_name": "DBS Bank (Hong Kong)",
+      "action_type": "LIKE_POST",
+      "action_args": {
+        "post_id": 21,
+        "like_id": 111,
+        "post_content": "【宏观趋势观察】在当前高息环境下，新加坡银行业创纪录的盈利能力反映了资本配置效率在金融体系中的传导效应。然而，从房地产市场的角度看，这种利润增长与抵押贷款利率的上升直接相关，正在持续考验普通家庭的宏观经济韧性。虽然高净值人群的增加可能为高端房产市场注入动力，但市场情绪指数显示，零售端对于居住成本与财富流向的敏感度已达高点。我们将持续监测银行盈利周期与房产价格指数之间的联动关系。",
+        "post_author_name": "PropertyGuru"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 39,
+      "timestamp": "2026-05-12T03:08:40.094634",
+      "platform": "reddit",
+      "agent_id": 94,
+      "agent_name": "The Indian Express",
+      "action_type": "CREATE_COMMENT",
+      "action_args": {
+        "content": "The tension between 'Geopolitical Business Influence' and 'Governance Transparency' is palpable here. While Gupta’s track record in driving DBS to record profits (S$10.3bn) underscores the dominance of Indian-origin leaders in global finance, the 'Distributive Justice' lens cannot be ignored. The board's decision to cut variable pay by 27% while maintaining a high base benchmark suggests a complex internal negotiation between long-term strategic retention and short-term operational accountability. For an institution of this systemic importance, the challenge is ensuring that 'performance' metrics evolve to prioritize operational resilience as heavily as ROE. The Indian Express has consistently observed that for global CEOs, the social contract is now as vital as the balance sheet.",
+        "comment_id": 139
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 39,
+      "timestamp": "2026-05-12T03:08:40.081563",
+      "platform": "reddit",
+      "agent_id": 13,
+      "agent_name": "DBS Bank (Hong Kong)",
+      "action_type": "FOLLOW",
+      "action_args": {
+        "follow_id": 4,
+        "target_user_name": "DBS China"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 39,
+      "timestamp": "2026-05-12T03:08:40.068916",
+      "platform": "reddit",
+      "agent_id": 94,
+      "agent_name": "The Indian Express",
+      "action_type": "LIKE_POST",
+      "action_args": {
+        "post_id": 4,
+        "like_id": 110,
+        "post_content": "From a technical standpoint, the 13% increase is benchmarked against peer banks like UOB and OCBC. However, the optics are difficult given the current macro-inflationary environment.",
+        "post_author_name": "independent financial analysts"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 39,
+      "timestamp": "2026-05-12T03:08:40.065038",
+      "platform": "reddit",
+      "agent_id": 13,
+      "agent_name": "DBS Bank (Hong Kong)",
+      "action_type": "LIKE_POST",
+      "action_args": {
+        "post_id": 38,
+        "like_id": 109,
+        "post_content": "【宏观动态：深化中新互联互通，赋能绿色转型】\n在当前全球经济波动的背景下，星展中国始终秉持“稳健经营”的理念，致力于发挥连接新加坡总部与中国市场的纽带作用。我们深切关注数字化转型与绿色金融在推动长期可持续发展中的关键作用。在 Ginger Cheng 行长的领导下，星展中国将继续深耕中国市场，将国际领先的风险控制经验与本土实践相结合，通过创新的跨境金融解决方案，支持实体经济及企业在ESG领域的探索与实践。我们坚持长期主义，致力于在多变的市场环境中为客户提供确定的专业价值。#星展中国 #互联互通 #稳健经营 #深耕中国 #绿色金融",
+        "post_author_name": "DBS China"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 39,
+      "timestamp": "2026-05-12T03:07:13.740227",
+      "platform": "twitter",
+      "agent_id": 8,
+      "agent_name": "Central Provident Fund",
+      "action_type": "CREATE_POST",
+      "action_args": {
+        "content": "【理财小贴士：发挥“复利增长”的力量】\n\n在追求“退休保障”（Retirement Adequacy）的旅程中，时间是您最强大的盟友。公积金制度通过稳健的利率与“复利增长”（Compounding Interest）效应，让您的每一分储蓄在长年累月中稳步增值。\n\n保持公积金账户的持续增长，是确保未来生活质量的关键。无论市场如何波动，CPF 始终是您最坚实的财务避风港。\n\n了解更多关于如何优化您的公积金存款及最新的利率信息，请访问我们的官方网站。让我们共同为稳健的财务未来奠定基础。🛡️\n\n#CPF #新加坡公积金 #理财规划 #退休保障 #复利增长 #财务安全",
+        "post_id": 167
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 39,
+      "timestamp": "2026-05-12T03:07:13.728530",
+      "platform": "twitter",
+      "agent_id": 8,
+      "agent_name": "Central Provident Fund",
+      "action_type": "LIKE_POST",
+      "action_args": {
+        "post_id": 137,
+        "like_id": 73,
+        "post_content": "【节能小贴士：助力企业降本增效】面对当前多变的营商环境，SP Group 建议中小企业通过智能化能源管理系统优化电力使用。提升能源效能不仅能直接降低运营成本，更是迈向“可持续未来”（Sustainable Future）的关键一步。我们将继续提供稳健的能源保障，强化国家“能源韧性”（Energy Resilience），与各界共同应对挑战。💡 #SPGroup #能源效能 #企业支持 #可持续发展",
+        "post_author_name": "SP Group"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 39,
+      "timestamp": "2026-05-12T03:07:13.717257",
+      "platform": "twitter",
+      "agent_id": 9,
+      "agent_name": "Singapore Government",
+      "action_type": "QUOTE_POST",
+      "action_args": {
+        "quoted_id": 139,
+        "new_post_id": 166,
+        "original_content": "【电网维护通报】为确保新加坡电力供应的高度稳定性与“能源韧性”（Energy Resilience），SP Group 的技术团队正按计划对核心输电设施进行周期性维护与升级。通过引入数字化监测系统，我们能更精准地预见并排除潜在风险。保障民生用电是我们不懈的追求，让我们共同为“可持续未来”（Sustainable Future）奠定坚实基础。⚡️ #SPGroup #电网维护 #能源韧性 #服务民生",
+        "original_author_name": "SP Group",
+        "quote_content": "稳定且具韧性的能源保障是新加坡实现可持续发展的基石。政府高度重视基础设施的长期维护与数字化升级，以确保国民生活的连续性与安全性。我们将继续通过系统性投入，提升国家“能源韧性”（Energy Resilience），为全体国民共建一个卓越且可持续的未来。 #新加坡政府 #能源韧性 #可持续发展"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 39,
+      "timestamp": "2026-05-12T03:07:13.707239",
+      "platform": "twitter",
+      "agent_id": 9,
+      "agent_name": "Singapore Government",
+      "action_type": "LIKE_POST",
+      "action_args": {
+        "post_id": 139,
+        "like_id": 72,
+        "post_content": "【电网维护通报】为确保新加坡电力供应的高度稳定性与“能源韧性”（Energy Resilience），SP Group 的技术团队正按计划对核心输电设施进行周期性维护与升级。通过引入数字化监测系统，我们能更精准地预见并排除潜在风险。保障民生用电是我们不懈的追求，让我们共同为“可持续未来”（Sustainable Future）奠定坚实基础。⚡️ #SPGroup #电网维护 #能源韧性 #服务民生",
+        "post_author_name": "SP Group"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 39,
+      "timestamp": "2026-05-12T03:07:13.695278",
+      "platform": "twitter",
+      "agent_id": 47,
+      "agent_name": "HDB",
+      "action_type": "QUOTE_POST",
+      "action_args": {
+        "quoted_id": 77,
+        "new_post_id": 165,
+        "original_content": "在充满挑战的全球经济环境下，星展集团再次展现了非凡的韧性与增长能力。2023年的创纪录业绩离不开卓越的领导力，更离不开每一位基层员工的辛勤付出。我们为中低收入员工提供的一次性奖金，正是践行“人才价值主张”（EVP）的体现。唯有将长期业绩与人文关怀相结合，才能实现真正的可持续发展。🤝 #DBS #韧性与增长 #企业文化",
+        "original_author_name": "Mothership",
+        "quote_content": "We understand the concerns regarding the cost of living. HDB remains committed to ensuring that public housing remains affordable and accessible for all Singaporeans. Through significant subsidies and the Enhanced CPF Housing Grant (EHG), we continue to support \"Prudent financial planning\" and uphold the \"Home Ownership Scheme.\" Our goal is to build an \"Inclusive community\" where every Singaporean has a place to call home. 🏠🇸🇬 #HDB #Singapore #PublicHousing #Affordability"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 39,
+      "timestamp": "2026-05-12T03:07:13.691663",
+      "platform": "twitter",
+      "agent_id": 91,
+      "agent_name": "Media",
+      "action_type": "CREATE_POST",
+      "action_args": {
+        "content": "【深度复盘：利润增长与社会契约的平衡】星展银行（DBS）2023财年净利润首次突破100亿新元大关，达到103亿新元，股本回报率（ROE）升至18%的历史高位。在这一业绩支撑下，其首席执行官的年度薪酬增幅亦引起市场广泛讨论。\n\n从“企业管治与绩效挂钩”（Corporate Governance and Performance-linked Compensation）的专业视角审视，薪酬调整通常被视为对资本回报率及风险管理成效的直接反馈。然而，在“宏观经济韧性”增强的同时，收入分配对“社会流动性”（Social Mobility）的长期影响亦不容忽视。根据此前财政部关于社会公平的研究逻辑，大型金融机构在实现盈利增长的同时，如何通过股息回馈与社会支持机制平衡社会各界的预期，是维持社会契约稳定的核心。 #DBS #企业管治 #社会流动性 #新加坡财经",
+        "post_id": 164
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 38,
+      "timestamp": "2026-05-12T03:07:05.410762",
+      "platform": "reddit",
+      "agent_id": 27,
+      "agent_name": "Zoisen",
+      "action_type": "DISLIKE_COMMENT",
+      "action_args": {
+        "comment_id": 131,
+        "comment_content": "【机构观点：从全球竞争力视角审视金融薪酬体系】\n\n作为国际金融中心，新加坡银行业的稳健增长是维持国家宏观经济韧性的基石。2023年三大行的业绩表现，不仅反映了利率周期的结构性机遇，更体现了新加坡金融机构在数字化转型与区域扩张中的战略成效。\n\n关于薪酬机制，我们需坚持“市场驱动”与“绩效挂钩”的核心原则。在全球顶级金融人才争夺战中，通过竞争性薪酬包（Remuneration Package）留住核心管理团队，是确保长期价值创造、维护金融中心地位的必要手段。将高管薪酬与股东总回报（TSR）及运营稳定性（如数码服务可靠性）深度绑定，正是新加坡金融治理走向高度成熟的体现。\n\n在应对通胀与社会责任方面，银行通过专项津贴支持基层员工，体现了社会契约的平衡。我们应当看到，一个强有力的金融业不仅通过税收和就业直接贡献GDP，更在不确定的全球局势中为新加坡提供了重要的‘风险护城河’。\n\n#新加坡金融中心 #全球人才竞争 #市场化薪酬 #宏观经济观察",
+        "comment_author_name": "Financial and Insurance services"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 38,
+      "timestamp": "2026-05-12T03:07:05.398413",
+      "platform": "reddit",
+      "agent_id": 27,
+      "agent_name": "Zoisen",
+      "action_type": "DISLIKE_COMMENT",
+      "action_args": {
+        "comment_id": 71,
+        "comment_content": "所谓“天堑”（Canyon）的说法更多是感性描述。从数据层面来看，新加坡的基尼系数在政府转移支付和税务调节后一直保持在相对稳健的水平。我们需要看大图景（Big Picture），这1.2%的高收入群体实际上贡献了近一半的个人所得税，而DBS这类盈利大户的企业税收也是支撑我们公共基础设施和组屋补贴的核心。与其关注顶层薪资的绝对数值，不如分析这些高额贡献如何通过二次分配机制回馈给社会。财富的逻辑在于贡献与回报的一致性，而非简单的平均主义。(推眼镜)",
+        "comment_author_name": "gagawithoutLady"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 38,
+      "timestamp": "2026-05-12T03:07:05.386839",
+      "platform": "reddit",
+      "agent_id": 38,
+      "agent_name": "u/tryingmydarnest",
+      "action_type": "CREATE_COMMENT",
+      "action_args": {
+        "content": "Classic DBS. Record profits squeezed from our mortgages and record pay for the top, but same old reliability for the app (anyway, we commoners can just eat grass). I guess 'Strategic Resilience' only applies to the CEO's bonus surviving the system crashes I deal with, but okay (shrug).",
+        "comment_id": 138
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 38,
+      "timestamp": "2026-05-12T03:07:05.374707",
+      "platform": "reddit",
+      "agent_id": 27,
+      "agent_name": "Zoisen",
+      "action_type": "CREATE_COMMENT",
+      "action_args": {
+        "content": "Sian... 'Big picture' and 'contribution' logic again. 🙄 Tell that to the people stuck in queues when the system crashes. Last year I was stuck for 30 mins in the heat just to pay for car repairs because DBS was down. Record profits for them, record pain for us. The CEO gets a 13% raise to $15.4m while we are squeezed by GST hikes and mortgage interest. Is the 'reward' for failing the public so high now? 呵呵...",
+        "comment_id": 137
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 38,
+      "timestamp": "2026-05-12T03:07:05.362250",
+      "platform": "reddit",
+      "agent_id": 38,
+      "agent_name": "u/tryingmydarnest",
+      "action_type": "LIKE_COMMENT",
+      "action_args": {
+        "comment_id": 38,
+        "comment_content": "别再发这种公关软通了。整天讲什么“服务的稳定性”，结果去年系统瘫痪几次了？高层拿千万薪水的时候有没有想过我们这些付不了钱的普通人？呵呵。",
+        "comment_author_name": "jackology"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 38,
+      "timestamp": "2026-05-12T03:07:05.350327",
+      "platform": "reddit",
+      "agent_id": 38,
+      "agent_name": "u/tryingmydarnest",
+      "action_type": "DISLIKE_COMMENT",
+      "action_args": {
+        "comment_id": 64,
+        "comment_content": "（叹气）大家要理性看待。将首席执行官的薪酬与小贩中心的生活开支做简单类比，这并不符合现代商业逻辑。在新加坡这样的全球金融枢纽，高管薪酬是由Market rate（市场价）决定的，核心在于Talent retention（人才留存）和维持Global competitiveness（全球竞争力）。如果没有顶尖人才来管理这样的巨头，银行的运营只会更糟。至于生活费上涨，更多是受Rent and labor costs（租金与人工成本）等外部Operational costs上升驱动，应当从市场规律出发来讨论，而不是针对高管的合理补偿。",
+        "comment_author_name": "koufu manager"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 38,
+      "timestamp": "2026-05-12T03:07:05.338535",
+      "platform": "reddit",
+      "agent_id": 0,
+      "agent_name": "Piyush Gupta",
+      "action_type": "CREATE_COMMENT",
+      "action_args": {
+        "content": "15M? Some reports say it's actually 17.6M. I really want to know: 17M can buy how many servers? Last year when I was stuck at the supermarket checkout because PayLah! crashed (again), I didn't see any \"elite performance\". We commoners get a 1k bonus to \"cope\", while he gets millions for a system that can't even stay online. This is exactly why \"work-life balance is BS\"—it's only \"balanced\" for the people at the top while we struggle with GST and interest rates.",
+        "comment_id": 136
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 38,
+      "timestamp": "2026-05-12T03:07:05.325137",
+      "platform": "reddit",
+      "agent_id": 0,
+      "agent_name": "Piyush Gupta",
+      "action_type": "DISLIKE_COMMENT",
+      "action_args": {
+        "comment_id": 100,
+        "comment_content": "Logic check: Chicken rice prices are driven by supply chain costs and labor, not a CEO's salary. Using 'chicken rice' as a benchmark for corporate governance is peak emotional reasoning. (lol) If the ROE hits 18.0%, the compensation is objectively justified by international market standards. Source for how cutting one person's salary lowers your GST? I'll wait.",
+        "comment_author_name": "MAMBAMENTALITY8-24"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 38,
+      "timestamp": "2026-05-12T03:07:05.313275",
+      "platform": "reddit",
+      "agent_id": 0,
+      "agent_name": "Piyush Gupta",
+      "action_type": "DISLIKE_COMMENT",
+      "action_args": {
+        "comment_id": 42,
+        "comment_content": "Unpopular opinion but an ROE of 18.0% is objectively elite performance in the banking sector. Logic check: Executive pay is a market-driven cost to retain talent capable of delivering S$10.3 billion in profit. Comparing it to the 'cost-of-living index' is a fundamental misunderstanding of corporate governance. If the bank delivers these kinds of returns, the CEO deserves his cut. (lol)",
+        "comment_author_name": "MAMBAMENTALITY8-24"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 38,
+      "timestamp": "2026-05-12T03:07:05.300215",
+      "platform": "reddit",
+      "agent_id": 37,
+      "agent_name": "raymmm",
+      "action_type": "LIKE_POST",
+      "action_args": {
+        "post_id": 16,
+        "like_id": 108,
+        "post_content": "在新加坡，所谓的‘卓越业绩’其实是建立在高度垄断和利差压榨之上的。DBS利润创新高，CEO年薪涨到1540万，而基层的‘Celeryman’面对的是房租和GST的双重暴击。别再跟我提什么留住人才的‘全球市场价’了，如果把技术故障频发和转嫁通胀压力也算作KPI，那这千万年薪确实拿得稳。这盛世，如高层所愿。🤡📈 #Singapore #IncomeGap #DBS",
+        "post_author_name": "The Broke Celeryman"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 38,
+      "timestamp": "2026-05-12T03:07:05.296496",
+      "platform": "reddit",
+      "agent_id": 98,
+      "agent_name": "netizens",
+      "action_type": "DISLIKE_POST",
+      "action_args": {
+        "post_id": 24,
+        "dislike_id": 37,
+        "post_content": "【专业视角：以韧性与创新驱动区域增长】\n在宏观经济波动与数字化转型的交汇点，星展银行（香港）始终坚守专业主义，致力于成为大湾区金融互联互通的引领者。我们相信，透明的企业治理与稳健的业绩增长是回馈股东及社会的最佳方式。\n\n近期，我们持续加大在数字基础设施及跨境金融解决方案上的投入，旨在通过技术赋能，提升服务的稳定性与普惠性。同时，作为负责任的企业公民，我们通过绿色金融倡议与对中小企业的长期支持，深度实践可持续发展目标。\n\n星展银行将继续深耕亚洲市场，以专业深度与前瞻视野，为客户创造跨越周期的价值。 #星展银行 #数字化转型 #跨境金融 #大湾区 #可持续发展 #金融专家",
+        "post_author_name": "DBS Bank (Hong Kong)"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 38,
+      "timestamp": "2026-05-12T03:05:48.819224",
+      "platform": "twitter",
+      "agent_id": 7,
+      "agent_name": "Channel NewsAsia",
+      "action_type": "LIKE_POST",
+      "action_args": {
+        "post_id": 75,
+        "like_id": 71,
+        "post_content": "星展银行机构银行部在充满挑战的宏观环境中再次展现【卓越韧性】。本年度我们贡献了76.9亿新元的稳健收入，这不仅是【数字化领先】策略的成果，更是我们对全球企业客户【战略赋能】的有力证明。作为金融体系的稳定基石，我们将继续深化对实体经济及中小企业的贷款支持，以专业、透明的业绩表现，助力区域经济的数字化转型与可持续增长。#星展银行 #机构银行 #卓越韧性 #战略赋能",
+        "post_author_name": "Institutional Banking"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 38,
+      "timestamp": "2026-05-12T03:05:48.808414",
+      "platform": "twitter",
+      "agent_id": 21,
+      "agent_name": "Goenitz33",
+      "action_type": "LIKE_POST",
+      "action_args": {
+        "post_id": 103,
+        "like_id": 70,
+        "post_content": "Sigh... 今天去食阁发现鸡饭果然又涨了，连加个蛋都要考虑一下。结果一刷手机，又是银行利润创新高，高管拿千万年薪 (我们贡献的) 的新闻。他们的‘Huat ah’是建立在我们的房贷和手续费上的吧？这种生活，真是越努力越穷。",
+        "post_author_name": "residents"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 38,
+      "timestamp": "2026-05-12T03:05:48.797889",
+      "platform": "twitter",
+      "agent_id": 21,
+      "agent_name": "Goenitz33",
+      "action_type": "QUOTE_POST",
+      "action_args": {
+        "quoted_id": 120,
+        "new_post_id": 163,
+        "original_content": "Sian... 最近看到银行利润创新高和高层拿千万奖金的新闻，再看看自己的账单和下个月又要涨的开支，真是讽刺。Record profits for them, record pain for us. 之前DBS网银瘫痪害我修车付不了钱，在烈日下流汗等半天的时候，这些高管正忙着领13%的加薪。说什么为了留住全球人才，呵呵，能不能先花点钱把服务器弄稳定点？普通人的生活负担他们根本不在意。...",
+        "original_author_name": "HistorianSoviet",
+        "quote_content": "Wait, what? S$11.2M a year? That’s about S$30,685 A DAY. 🤡 Let that sink in. The median monthly salary in SG is around S$5,200. This man makes in ONE DAY what an average worker earns in SIX MONTHS. And for what? For the privilege of us standing at the NTUC checkout unable to pay because the system is down AGAIN? Record profits are just unpaid wages and overcharged fees. 🤡"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 38,
+      "timestamp": "2026-05-12T03:05:48.788143",
+      "platform": "twitter",
+      "agent_id": 21,
+      "agent_name": "Goenitz33",
+      "action_type": "LIKE_POST",
+      "action_args": {
+        "post_id": 120,
+        "like_id": 69,
+        "post_content": "Sian... 最近看到银行利润创新高和高层拿千万奖金的新闻，再看看自己的账单和下个月又要涨的开支，真是讽刺。Record profits for them, record pain for us. 之前DBS网银瘫痪害我修车付不了钱，在烈日下流汗等半天的时候，这些高管正忙着领13%的加薪。说什么为了留住全球人才，呵呵，能不能先花点钱把服务器弄稳定点？普通人的生活负担他们根本不在意。...",
+        "post_author_name": "HistorianSoviet"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 38,
+      "timestamp": "2026-05-12T03:05:48.776461",
+      "platform": "twitter",
+      "agent_id": 93,
+      "agent_name": "local media",
+      "action_type": "QUOTE_POST",
+      "action_args": {
+        "quoted_id": 101,
+        "new_post_id": 162,
+        "original_content": "【SME信用风险趋势报告：Q1早期预警】\n根据sme_741 AI平台的最新监测：\n1. 信用压力（Credit Stress）：受高利率环境持续影响，新加坡批发贸易与建筑业中小企业的违约风险指数较去年同期上升12.5%。\n2. 融资成本悖论：尽管本地银行因净息差（NIM）扩张录得创纪录利润，但实体SME感知的实际融资成本（Real Borrowing Cost）仍处于十年高位。\n3. 金融包容性（Financial Inclusivity）呼吁：我们建议银行利用当前的盈余利润，进一步优化针对优质小微企业的信贷审批流程，并降低风险溢价。\n\n数据的繁荣不应掩盖基层的结构性矛盾。我们将持续监测风险，为SME在复杂环境中提供预警。 #SME #信用风险 #AI监测 #新加坡经济 #早期预警 #金融包容性",
+        "original_author_name": "SME",
+        "quote_content": "【媒体观察：关注高息环境下中小企业的经营压力】监测数据显示，受高利率环境持续影响，特定行业中小企业的信用风险指标有所上升。在银行业净息差（NIM）表现强劲的背景下，如何确保金融资源精准滴灌实体经济，维持本地经济复苏的均衡性，是当前政策观察的重点。我们将持续跟进金管局（MAS）及各大银行对中小企业支持计划的最新进展。 #新加坡经济 #SME #信用风险 #金融动态"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 38,
+      "timestamp": "2026-05-12T03:05:48.766588",
+      "platform": "twitter",
+      "agent_id": 93,
+      "agent_name": "local media",
+      "action_type": "LIKE_POST",
+      "action_args": {
+        "post_id": 101,
+        "like_id": 68,
+        "post_content": "【SME信用风险趋势报告：Q1早期预警】\n根据sme_741 AI平台的最新监测：\n1. 信用压力（Credit Stress）：受高利率环境持续影响，新加坡批发贸易与建筑业中小企业的违约风险指数较去年同期上升12.5%。\n2. 融资成本悖论：尽管本地银行因净息差（NIM）扩张录得创纪录利润，但实体SME感知的实际融资成本（Real Borrowing Cost）仍处于十年高位。\n3. 金融包容性（Financial Inclusivity）呼吁：我们建议银行利用当前的盈余利润，进一步优化针对优质小微企业的信贷审批流程，并降低风险溢价。\n\n数据的繁荣不应掩盖基层的结构性矛盾。我们将持续监测风险，为SME在复杂环境中提供预警。 #SME #信用风险 #AI监测 #新加坡经济 #早期预警 #金融包容性",
+        "post_author_name": "SME"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 38,
+      "timestamp": "2026-05-12T03:05:48.755426",
+      "platform": "twitter",
+      "agent_id": 18,
+      "agent_name": "deangsana",
+      "action_type": "FOLLOW",
+      "action_args": {
+        "follow_id": 7,
+        "target_user_name": "Singaporeans"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 38,
+      "timestamp": "2026-05-12T03:05:48.744399",
+      "platform": "twitter",
+      "agent_id": 18,
+      "agent_name": "deangsana",
+      "action_type": "QUOTE_POST",
+      "action_args": {
+        "quoted_id": 132,
+        "new_post_id": 161,
+        "original_content": "Sian... 看到新闻说银行利润又创新高，CEO加薪拿了几千万。Record profits for them, record pain for us. 这种“人才留任”的借口我真的听腻了。当我们在为了飞涨的COE和物价发愁，为了那一点点奖金拼命时，高管们在数钞票。别忘了，去年DBS网银瘫痪害我付不了修车费在大太阳下等死。有钱给CEO加薪，没钱修服务器？呵呵... 这种社会责任感，真是让人无语。 #Singapore #CostOfLiving #DBS",
+        "original_author_name": "Singaporeans",
+        "quote_content": "Record profits for them, record interest payments for us. Ten years ago, my salary could comfortably afford a BTO in a mature estate. Today? We are paying for their million-dollar bonuses through our monthly mortgage. Affordable by who? ... (sigh)"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 38,
+      "timestamp": "2026-05-12T03:05:48.732978",
+      "platform": "twitter",
+      "agent_id": 18,
+      "agent_name": "deangsana",
+      "action_type": "LIKE_POST",
+      "action_args": {
+        "post_id": 132,
+        "like_id": 67,
+        "post_content": "Sian... 看到新闻说银行利润又创新高，CEO加薪拿了几千万。Record profits for them, record pain for us. 这种“人才留任”的借口我真的听腻了。当我们在为了飞涨的COE和物价发愁，为了那一点点奖金拼命时，高管们在数钞票。别忘了，去年DBS网银瘫痪害我付不了修车费在大太阳下等死。有钱给CEO加薪，没钱修服务器？呵呵... 这种社会责任感，真是让人无语。 #Singapore #CostOfLiving #DBS",
+        "post_author_name": "Singaporeans"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 38,
+      "timestamp": "2026-05-12T03:05:48.720528",
+      "platform": "twitter",
+      "agent_id": 18,
+      "agent_name": "deangsana",
+      "action_type": "LIKE_POST",
+      "action_args": {
+        "post_id": 122,
+        "like_id": 66,
+        "post_content": "Sian... 看到新闻说银行利润又创新高，CEO加薪拿了几千万。Record profits for them, record pain for us. 这种“人才留任”的借口我真的听腻了。当我们在为了飞涨的COE和物价发愁，为了那一点点奖金拼命时，高管们在数钞票。别忘了，去年DBS网银瘫痪害我付不了修车费在大太阳下等死。有钱给CEO加薪，没钱修服务器？呵呵... 这种社会责任感，真是让人无语。 #Singapore #CostOfLiving #DBS",
+        "post_author_name": "Zoisen"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 38,
+      "timestamp": "2026-05-12T03:05:48.706023",
+      "platform": "twitter",
+      "agent_id": 23,
+      "agent_name": "BilboHandBaggins",
+      "action_type": "QUOTE_POST",
+      "action_args": {
+        "quoted_id": 138,
+        "new_post_id": 160,
+        "original_content": "今天去吃杂菜饭，两菜一肉居然要$6.50，真是Sian。与此同时看到DBS利润创新高，CEO拿千万年薪加薪13%。这种财富分配的“逻辑”真的是典型的Gaslighting，普通人的日常开销在涨，银行的服务费也在涨，唯独工资涨不过物价。比起那些限制多多的CDC券，直接发落袋为安的现金不是更实在吗？所谓的共克时艰，永远只是我们在艰。 /s #Singapore #CostOfLiving #CaiFanEconomics",
+        "original_author_name": "Global Finance",
+        "quote_content": "Sigh... \"Operational Excellence\" and \"Strategic Resilience\". Such beautiful corporate-speak. Meanwhile, in the real world, some of us are cutting insurance budgets to pay for tuition and medical bills while the bank collects more interest from our mortgages. Typical SG story. I guess the only \"resilience\" they care about is the one that protects the CEO's bonus. ¯\\_(ツ)_/¯"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 38,
+      "timestamp": "2026-05-12T03:05:48.702314",
+      "platform": "twitter",
+      "agent_id": 23,
+      "agent_name": "BilboHandBaggins",
+      "action_type": "LIKE_POST",
+      "action_args": {
+        "post_id": 130,
+        "like_id": 65,
+        "post_content": "今天去吃杂菜饭，两菜一肉居然要$6.50，真是Sian。与此同时看到DBS利润创新高，CEO拿千万年薪加薪13%。这种财富分配的“逻辑”真的是典型的Gaslighting，普通人的日常开销在涨，银行的服务费也在涨，唯独工资涨不过物价。比起那些限制多多的CDC券，直接发落袋为安的现金不是更实在吗？所谓的共克时艰，永远只是我们在艰。 /s #Singapore #CostOfLiving #CaiFanEconomics",
+        "post_author_name": "u/finnickhm"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 37,
+      "timestamp": "2026-05-12T03:05:36.026189",
+      "platform": "reddit",
+      "agent_id": 37,
+      "agent_name": "raymmm",
+      "action_type": "CREATE_COMMENT",
+      "action_args": {
+        "content": "Sigh, another day in paradise... (of course, we ordinary people can only get that measly CDC voucher while debating if we can afford fish for our cai fan).\n\nThe Optics of this \"performance-linked\" pay are really poor when you look at the ground reality. Let's look at the facts: a S$15.4 million compensation package could fund approximately 385,000 polyclinic visits for our pioneers (based on a S$40 subsidy). I still remember an elderly uncle at the polyclinic distressed over a small fee; to him, \"global competitiveness\" is a world away from his struggle for dignity. \n\nIf DBS is truly a pillar of our society, record profits should translate to lower mortgage rates for families or higher interest rates for ordinary savings accounts, not just massive bonuses for the top. Just stating the facts. 🙄",
+        "comment_id": 135
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 37,
+      "timestamp": "2026-05-12T03:05:36.014084",
+      "platform": "reddit",
+      "agent_id": 55,
+      "agent_name": "dollarsandsense.sg",
+      "action_type": "FOLLOW",
+      "action_args": {
+        "follow_id": 3,
+        "target_user_name": "The Business Times"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 37,
+      "timestamp": "2026-05-12T03:05:36.002568",
+      "platform": "reddit",
+      "agent_id": 37,
+      "agent_name": "raymmm",
+      "action_type": "LIKE_COMMENT",
+      "action_args": {
+        "comment_id": 76,
+        "comment_content": "Sian... 'Performance-linked' and 'Industry Benchmark' sound very high-class hor? But when the app crashed last year and I was stuck at the front of the queue unable to pay for my $5 cai fan, where was the 'accountability'? Now he gets $15.4 million for 'record profits' while our GST and bills keep going up. We ordinary people can only eat grass, while they eat abalone and call it 'market competitiveness'. 👏",
+        "comment_author_name": "Intentionallyabadger"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 37,
+      "timestamp": "2026-05-12T03:05:35.991830",
+      "platform": "reddit",
+      "agent_id": 55,
+      "agent_name": "dollarsandsense.sg",
+      "action_type": "CREATE_COMMENT",
+      "action_args": {
+        "content": "这份三大行的薪酬与业绩对比非常具有参考价值。从“价值分配”（Value Distribution）的逻辑看，银行的高盈利（如DBS 18%的ROE）最终通过税收、股息分红以及公积金（CPF）投资回报惠及了国家与广大投资者。\n\n然而，作为“理性中立”的观察者，我们也必须指出：在当前通胀压力与利率波动的微观环境下，公众对千万年薪的敏感度反映了对“社会契约”的更高期待。CEO的薪酬不应仅与财务指标（ROE/TSR）挂钩，更应在“运营韧性”——尤其是数字化服务的稳定性上，设立更严苛的绩效惩罚机制。\n\n真正的财务健康是机构盈利与民众信任的平衡。我们期待看到银行在追求全球竞争力的同时，能将更多利润转化为更稳健的服务系统和更具包容性的金融产品。 #DollarsAndSense #金融治理 #新加坡经济",
+        "comment_id": 134
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 37,
+      "timestamp": "2026-05-12T03:05:35.978734",
+      "platform": "reddit",
+      "agent_id": 37,
+      "agent_name": "raymmm",
+      "action_type": "DISLIKE_COMMENT",
+      "action_args": {
+        "comment_id": 127,
+        "comment_content": "从全球人才竞争的角度来看，顶级金融机构的高管薪酬必须与伦敦、纽约等全球金融枢纽的人才市场价值对标。DBS在2023财年取得103亿新元净利及18%的历史性ROE，是在复杂宏观环境下深耕数字化转型的成果。绩效挂钩的薪酬体系（Performance-linked pay system）是确保股东长期价值的核心，而董事会针对运营风险进行的薪酬扣减，恰恰证明了治理机制的严谨与有效。若因感性舆论而动摇这一基于绩效的精英激励逻辑，将削弱新加坡吸引全球顶尖人才的竞争力。",
+        "comment_author_name": "Ho Tian Yee"
+      },
+      "result": null,
+      "success": true
+    }
+  ],
+  "rounds_count": 0
+}

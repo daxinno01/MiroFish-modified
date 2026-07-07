@@ -1,0 +1,7 @@
+{
+  "command_id": "d2ed6670-7d6b-47b8-a7e9-c8e85c59cb20",
+  "status": "failed",
+  "result": null,
+  "error": "没有成功的采访。可能是Agent ID不匹配或环境未初始化。",
+  "timestamp": "2026-05-22T09:24:26.928123"
+}

@@ -1,0 +1,29 @@
+### 1. Executive Summary
+This image is a digital informational graphic serving as part of a security awareness campaign by a financial institution. It details three specific operational and technical measures implemented to counteract scam attempts and prevent unauthorized account access. The graphic emphasizes a proactive stance against "moments of distraction" that threat actors exploit.
+
+### 2. OCR / Text Extraction
+*   **Headline (Red):** Scammers also try to sneak in. We make it harder.
+*   **Sub-headline (Black):** That’s why we keep strengthening our security systems to detect and stop scam attempts that exploit moments of distraction to gain unauthorised access to customers' accounts.
+*   **Feature Box 1:** Enhanced surveillance measures: as part of the Shared Responsibility Framework, a 24-hour cooling period to curb rapid account draining.
+*   **Feature Box 2:** Heightened vigilance on the frontlines: to intercept scam withdrawals done at our branches.
+*   **Feature Box 3:** Customer Reverse Authentication: so customers can authenticate calls from bank employees (pilot phase with select group of frontliners).
+
+### 3. Entity Identification
+*   **Organizations:** Unnamed Financial Institution (referenced as "We/Our"), Shared Responsibility Framework (Policy/Regulatory entity).
+*   **Personas:** Scammers (Threat Actors), Customers (Targeted Entities), Bank employees (Internal Staff), Frontliners (Customer-facing Staff).
+*   **Security Protocols/Features:** Enhanced surveillance measures, 24-hour cooling period, Customer Reverse Authentication (Pilot Product).
+*   **Physical Assets:** Branches.
+*   **Temporal Metrics:** 24-hour (Cooling period duration).
+
+### 4. Structural Relationships
+*   **Strategic Alignment:** The three white feature boxes are presented as direct outputs of the institution's "strengthening security systems" initiative.
+*   **Regulatory Context:** "Enhanced surveillance measures" and the "24-hour cooling period" are explicitly linked to the "Shared Responsibility Framework."
+*   **Verification Flow:** "Customer Reverse Authentication" enables a "Customer" to validate the identity of a "Bank employee."
+*   **Operational Scope:** "Heightened vigilance" is logically and spatially tied to "frontlines" and "branches."
+*   **Lifecycle Status:** "Customer Reverse Authentication" is identified as being in a "pilot phase" rather than a full-scale rollout.
+
+### 5. Visual Data Translation
+*   **Hierarchy:** The graphic uses a top-down information hierarchy. The red headline occupies the highest visual priority, followed by a contextual paragraph, and finally three specific action items.
+*   **Categorization:** Information is segmented using white, rounded-corner rectangular modules. This visual separation indicates three distinct but parallel security strategies.
+*   **Emphasis:** Red text is utilized for the headline to denote urgency or importance. Horizontal red gradient lines are used to bracket the introductory body text, separating the general statement from the specific measures below.
+*   **Background:** The background is a light-grey, textured surface, providing a neutral canvas that enhances the legibility of the black text and the prominence of the red headline.

@@ -1,0 +1,26 @@
+{
+  "simulation_id": "sim_4ffec6ab3f24",
+  "project_id": "proj_19dfb0952a1f",
+  "graph_id": "mirofish_local_911c0bf069664ecb",
+  "enable_twitter": true,
+  "enable_reddit": true,
+  "status": "running",
+  "entities_count": 64,
+  "profiles_count": 64,
+  "entity_types": [
+    "Scammer",
+    "Bank",
+    "Person",
+    "Organization",
+    "BankCustomer",
+    "Executive"
+  ],
+  "config_generated": true,
+  "config_reasoning": "时间配置: 模拟总时长设定为168小时（7天）以覆盖整周的情绪演变。时间配置严格遵循中国用户作息：19-22点为社交媒体活跃高峰，适合模拟公众对政策的密集讨论和情绪传染；9-18点工作时间则对应银行、官方机构及专业人士的分析与回应；凌晨时段保持极低活跃度以符合真实生理规律。鉴于星展银行政策涉及资金安全与便利性的博弈，活跃Agent数设为较高区间以模拟充分的辩论。 | 事件配置: The topic focuses on the tension between security and convenience. Initial posts are distributed among the Bank (official news), Organizations like MAS/SPF (regulatory support), Executives (strategic context), and Bank Customers (diverse user sentiment). This setup allows for a realistic simulation of public debate and social contagion as specified in the demand. | Agent配置: 成功生成 64 个 | 初始帖子分配: 7 个帖子已分配发布者",
+  "current_round": 0,
+  "twitter_status": "not_started",
+  "reddit_status": "not_started",
+  "created_at": "2026-05-25T09:30:06.206863",
+  "updated_at": "2026-06-08T09:52:11.218798",
+  "error": null
+}

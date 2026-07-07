@@ -1,0 +1,360 @@
+{
+  "project_id": "proj_8c67a31d70f3",
+  "name": "Unnamed Project",
+  "status": "graph_completed",
+  "created_at": "2026-05-12T01:13:38.995094",
+  "updated_at": "2026-05-12T01:15:06.617451",
+  "files": [
+    {
+      "filename": "mothership_article.md",
+      "size": 2229
+    }
+  ],
+  "total_text_length": 2226,
+  "ontology": {
+    "entity_types": [
+      {
+        "name": "BankExecutive",
+        "description": "High-level leaders of financial institutions responsible for strategic decisions and performance.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The full name of the executive."
+          },
+          {
+            "name": "job_title",
+            "type": "text",
+            "description": "The specific leadership role held."
+          },
+          {
+            "name": "remuneration_package",
+            "type": "text",
+            "description": "Details of salary, bonuses, and non-cash components."
+          }
+        ],
+        "examples": [
+          "Piyush Gupta",
+          "DBS CEO"
+        ]
+      },
+      {
+        "name": "CommercialBank",
+        "description": "Financial institutions providing services to the public and corporations.",
+        "attributes": [
+          {
+            "name": "org_name",
+            "type": "text",
+            "description": "The official name of the bank."
+          },
+          {
+            "name": "annual_profit",
+            "type": "text",
+            "description": "The net profit reported for the fiscal year."
+          },
+          {
+            "name": "market_position",
+            "type": "text",
+            "description": "The bank's ranking or status in the industry."
+          }
+        ],
+        "examples": [
+          "DBS Group",
+          "OCBC Bank"
+        ]
+      },
+      {
+        "name": "FinancialAnalyst",
+        "description": "Professionals who analyze financial data and provide market insights or recommendations.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The name of the analyst."
+          },
+          {
+            "name": "expertise_area",
+            "type": "text",
+            "description": "Specific sector focus, e.g., banking, macroeconomics."
+          }
+        ],
+        "examples": [
+          "Equity Research Lead",
+          "Market Strategist"
+        ]
+      },
+      {
+        "name": "RetailInvestor",
+        "description": "Individual shareholders who invest personal capital in bank stocks for yields or growth.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The name of the investor."
+          },
+          {
+            "name": "investment_strategy",
+            "type": "text",
+            "description": "Focus such as dividend-seeking or long-term growth."
+          }
+        ],
+        "examples": [
+          "Yield-Seeker",
+          "DBS Shareholder"
+        ]
+      },
+      {
+        "name": "BankingCustomer",
+        "description": "Individuals using retail banking services, sensitive to service quality and fees.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The name of the customer."
+          },
+          {
+            "name": "account_type",
+            "type": "text",
+            "description": "Type of relationship, e.g., savings, mortgage, digital user."
+          }
+        ],
+        "examples": [
+          "Sandwich Class Parent",
+          "Critical Tech-User"
+        ]
+      },
+      {
+        "name": "SocialActivist",
+        "description": "Individuals or representatives advocating for social justice, labor rights, or low-income groups.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The name of the activist or representative."
+          },
+          {
+            "name": "advocacy_focus",
+            "type": "text",
+            "description": "The primary cause, e.g., income inequality, labor rights."
+          }
+        ],
+        "examples": [
+          "Trade Union Representative",
+          "Social Advocate"
+        ]
+      },
+      {
+        "name": "MediaOutlet",
+        "description": "Organizations that report news and shape public discourse through articles and social media.",
+        "attributes": [
+          {
+            "name": "org_name",
+            "type": "text",
+            "description": "The name of the media platform."
+          },
+          {
+            "name": "audience_reach",
+            "type": "text",
+            "description": "The scale or demographic of the readership."
+          }
+        ],
+        "examples": [
+          "Mothership",
+          "Global Finance"
+        ]
+      },
+      {
+        "name": "GovernmentOfficial",
+        "description": "Policy makers or regulators who oversee the financial sector and public welfare.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The name of the official."
+          },
+          {
+            "name": "department",
+            "type": "text",
+            "description": "The government body or agency they represent."
+          }
+        ],
+        "examples": [
+          "MAS Regulator",
+          "Minister of Finance"
+        ]
+      },
+      {
+        "name": "Person",
+        "description": "General individuals or social media users not falling into specific professional categories.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The name or handle of the individual."
+          },
+          {
+            "name": "social_sentiment",
+            "type": "text",
+            "description": "General attitude toward current events."
+          }
+        ],
+        "examples": [
+          "Low-income worker",
+          "General Netizen"
+        ]
+      },
+      {
+        "name": "Organization",
+        "description": "Generic entities, NGOs, or groups that interact with the financial system or public opinion.",
+        "attributes": [
+          {
+            "name": "org_name",
+            "type": "text",
+            "description": "The name of the organization."
+          },
+          {
+            "name": "mission_statement",
+            "type": "text",
+            "description": "The primary goal or purpose of the group."
+          }
+        ],
+        "examples": [
+          "DBS Foundation",
+          "Local Community Group"
+        ]
+      }
+    ],
+    "edge_types": [
+      {
+        "name": "WORKS_FOR",
+        "description": "Indicates employment relationship between an individual and a bank or organization.",
+        "source_targets": [
+          {
+            "source": "BankExecutive",
+            "target": "CommercialBank"
+          },
+          {
+            "source": "Person",
+            "target": "Organization"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "REPORTS_ON",
+        "description": "Indicates media coverage of an entity or event.",
+        "source_targets": [
+          {
+            "source": "MediaOutlet",
+            "target": "BankExecutive"
+          },
+          {
+            "source": "MediaOutlet",
+            "target": "CommercialBank"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "CRITICIZES",
+        "description": "Expresses negative sentiment or disapproval toward an entity's actions or pay.",
+        "source_targets": [
+          {
+            "source": "SocialActivist",
+            "target": "BankExecutive"
+          },
+          {
+            "source": "BankingCustomer",
+            "target": "CommercialBank"
+          },
+          {
+            "source": "Person",
+            "target": "BankExecutive"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "SUPPORTS",
+        "description": "Expresses positive sentiment, justification, or backing for an entity.",
+        "source_targets": [
+          {
+            "source": "FinancialAnalyst",
+            "target": "BankExecutive"
+          },
+          {
+            "source": "RetailInvestor",
+            "target": "CommercialBank"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "USES_SERVICE",
+        "description": "Indicates a customer relationship with a bank.",
+        "source_targets": [
+          {
+            "source": "BankingCustomer",
+            "target": "CommercialBank"
+          },
+          {
+            "source": "Person",
+            "target": "CommercialBank"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "INVESTS_IN",
+        "description": "Indicates financial investment in a bank's stock.",
+        "source_targets": [
+          {
+            "source": "RetailInvestor",
+            "target": "CommercialBank"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "REGULATES",
+        "description": "Indicates legal or policy oversight of a bank.",
+        "source_targets": [
+          {
+            "source": "GovernmentOfficial",
+            "target": "CommercialBank"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "AFFILIATED_WITH",
+        "description": "General connection between a person and an organization.",
+        "source_targets": [
+          {
+            "source": "Person",
+            "target": "Organization"
+          },
+          {
+            "source": "SocialActivist",
+            "target": "Organization"
+          }
+        ],
+        "attributes": []
+      }
+    ]
+  },
+  "analysis_summary": "该本体设计旨在模拟星展银行（DBS）高管薪酬引发的舆论波动。重点在于捕捉‘高额利润/高管加薪’与‘普通民众通胀压力’之间的矛盾。通过区分银行高管、金融分析师（支持方）、社会活动家与普通客户（潜在批评方），可以模拟不同利益相关者在社交媒体上的互动。关系类型涵盖了从专业支持到社会批评的完整光谱，能够量化声誉风险并识别舆论爆发点。",
+  "graph_id": "mirofish_local_abf12bac8cf9469e",
+  "graph_build_task_id": "e7f1f91b-6c0c-4a66-990c-014d4bba01bd",
+  "simulation_requirement": "Based on an article on DBS's record profits and the subsequent 13% pay increase for CEO Piyush Gupta (mothership_article.md), and other supporting documents, simulate a swarm of diverse personas (examples but not limited to: a retail banking customer, a trade union representative, a shareholder, a financial analyst, a low-income worker, Institutionalist, Sandwich Class, Social Advocate, Yield-Seeker, Critical Tech-User, others as you see fit). Predict the dominant public sentiment on Singapore social media over the next 7 days. Specifically, forecast whether the reaction will result in a measurable 'reputational risk' score (1-10) and identify the primary 'point of anger' the public will fixate on.",
+  "chunk_size": 500,
+  "chunk_overlap": 50,
+  "error": null,
+  "token_usage": {
+    "prompt_tokens": 5476,
+    "completion_tokens": 4149,
+    "total_tokens": 9625,
+    "call_count": 7,
+    "last_updated": "2026-05-12T01:15:05.980603"
+  }
+}

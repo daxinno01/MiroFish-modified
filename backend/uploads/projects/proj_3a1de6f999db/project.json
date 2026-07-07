@@ -1,0 +1,297 @@
+{
+  "project_id": "proj_3a1de6f999db",
+  "name": "Unnamed Project",
+  "status": "graph_building",
+  "created_at": "2026-04-28T15:16:56.676474",
+  "updated_at": "2026-04-28T15:17:21.057462",
+  "files": [
+    {
+      "filename": "01_scenario_brief.md",
+      "size": 1594
+    },
+    {
+      "filename": "03_prior_sentiment_and_analogues.md",
+      "size": 1176
+    }
+  ],
+  "total_text_length": 2836,
+  "ontology": {
+    "entity_types": [
+      {
+        "name": "Bank",
+        "description": "Financial institutions like DBS that provide banking services and launch tech campaigns.",
+        "attributes": [
+          {
+            "name": "bank_name",
+            "type": "text",
+            "description": "The official name of the banking institution."
+          },
+          {
+            "name": "digital_reliability",
+            "type": "text",
+            "description": "Public perception of the bank's digital service stability."
+          }
+        ],
+        "examples": [
+          "DBS Bank",
+          "OCBC Bank",
+          "UOB"
+        ]
+      },
+      {
+        "name": "GovernmentAgency",
+        "description": "Regulatory or public safety bodies involved in anti-scam and tech regulation.",
+        "attributes": [
+          {
+            "name": "agency_name",
+            "type": "text",
+            "description": "The name of the government department or agency."
+          },
+          {
+            "name": "authority_level",
+            "type": "text",
+            "description": "The scope of the agency's regulatory power."
+          }
+        ],
+        "examples": [
+          "Singapore Police Force",
+          "Monetary Authority of Singapore",
+          "IMDA"
+        ]
+      },
+      {
+        "name": "CreativeProfessional",
+        "description": "Individuals in creative industries such as directors, artists, and designers.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The name of the creative professional."
+          },
+          {
+            "name": "creative_domain",
+            "type": "text",
+            "description": "The specific field of expertise, e.g., filmmaking, digital art."
+          }
+        ],
+        "examples": [
+          "Local Film Director",
+          "Graphic Designer",
+          "Voiceover Artist"
+        ]
+      },
+      {
+        "name": "TechInfluencer",
+        "description": "Social media personalities who comment on technology trends and AI developments.",
+        "attributes": [
+          {
+            "name": "handle_id",
+            "type": "text",
+            "description": "The social media handle or username."
+          },
+          {
+            "name": "tech_focus",
+            "type": "text",
+            "description": "The specific area of tech they cover, e.g., GenAI, Cybersecurity."
+          }
+        ],
+        "examples": [
+          "Tech YouTuber",
+          "AI Researcher on X",
+          "Gadget Reviewer"
+        ]
+      },
+      {
+        "name": "SeniorCitizen",
+        "description": "Elderly individuals who are primary targets for anti-scam education.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The name of the individual."
+          },
+          {
+            "name": "vulnerability_score",
+            "type": "text",
+            "description": "Estimated susceptibility to digital scams."
+          }
+        ],
+        "examples": [
+          "Retiree in Toa Payoh",
+          "Grandparent",
+          "Elderly Digibank User"
+        ]
+      },
+      {
+        "name": "MediaOutlet",
+        "description": "News organizations and digital publishers that report on corporate events.",
+        "attributes": [
+          {
+            "name": "outlet_name",
+            "type": "text",
+            "description": "The name of the news or media organization."
+          },
+          {
+            "name": "audience_type",
+            "type": "text",
+            "description": "The primary demographic reached by the outlet."
+          }
+        ],
+        "examples": [
+          "The Straits Times",
+          "Mothership",
+          "CNA"
+        ]
+      },
+      {
+        "name": "Executive",
+        "description": "High-level corporate leaders who represent the bank's strategic decisions.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The name of the executive."
+          },
+          {
+            "name": "job_title",
+            "type": "text",
+            "description": "The official corporate title, e.g., CEO, CMO."
+          }
+        ],
+        "examples": [
+          "Piyush Gupta",
+          "Chief Marketing Officer",
+          "Head of Digital Banking"
+        ]
+      },
+      {
+        "name": "Customer",
+        "description": "Individuals who hold accounts with the bank and use its digital services.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The name of the customer."
+          },
+          {
+            "name": "loyalty_tier",
+            "type": "text",
+            "description": "The status of the customer's relationship with the bank."
+          }
+        ],
+        "examples": [
+          "DBS Multiplier Account Holder",
+          "Digibank App User",
+          "POSB Customer"
+        ]
+      },
+      {
+        "name": "Person",
+        "description": "A general individual who does not fit into the more specific categories.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The name of the person."
+          },
+          {
+            "name": "biography",
+            "type": "text",
+            "description": "A short description of the individual's background."
+          }
+        ],
+        "examples": [
+          "Netizen",
+          "Passerby",
+          "Social Media User"
+        ]
+      },
+      {
+        "name": "Organization",
+        "description": "A general organization or group not covered by specific types.",
+        "attributes": [
+          {
+            "name": "org_name",
+            "type": "text",
+            "description": "The name of the organization."
+          },
+          {
+            "name": "entity_type_desc",
+            "type": "text",
+            "description": "A description of what the organization does."
+          }
+        ],
+        "examples": [
+          "Local Community Club",
+          "AI Ethics Watchdog",
+          "SME Association"
+        ]
+      }
+    ],
+    "edge_types": [
+      {
+        "name": "CRITICIZES",
+        "description": "Expresses negative feedback or disapproval towards an entity's actions.",
+        "source_targets": [
+          {
+            "source": "CreativeProfessional",
+            "target": "Bank"
+          },
+          {
+            "source": "TechInfluencer",
+            "target": "Bank"
+          },
+          {
+            "source": "Customer",
+            "target": "Bank"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "SUPPORTS",
+        "description": "Expresses approval or provides backing for an entity's campaign.",
+        "source_targets": [
+          {
+            "source": "Executive",
+            "target": "Bank"
+          },
+          {
+            "source": "GovernmentAgency",
+            "target": "Bank"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "REPORTS_ON",
+        "description": "Covers news or events related to the target entity.",
+        "source_targets": [
+          {
+            "source": "MediaOutlet",
+            "target": "Bank"
+          },
+          {
+            "source": "MediaOutlet",
+            "target": "Executive"
+          }
+        ],
+        "attributes": []
+      }
+    ]
+  },
+  "analysis_summary": "",
+  "graph_id": null,
+  "graph_build_task_id": "63bbbfaa-8f1e-4a0b-97db-b6c8b101cac9",
+  "simulation_requirement": "Predict the general reaction to DBS' release of the GenAI video.",
+  "chunk_size": 500,
+  "chunk_overlap": 50,
+  "error": null,
+  "token_usage": {
+    "prompt_tokens": 2125,
+    "completion_tokens": 1695,
+    "total_tokens": 3820,
+    "call_count": 1,
+    "last_updated": "2026-04-28T15:17:20.272538"
+  }
+}

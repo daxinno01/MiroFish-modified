@@ -1,0 +1,27 @@
+{
+  "simulation_id": "sim_cc021a83fe38",
+  "project_id": "proj_a6da80a5a3f4",
+  "graph_id": "mirofish_local_ba40b12706d84539",
+  "enable_twitter": true,
+  "enable_reddit": true,
+  "status": "running",
+  "entities_count": 17,
+  "profiles_count": 17,
+  "entity_types": [
+    "Person",
+    "TechYouth",
+    "CreativeProfessional",
+    "RegulatoryBody",
+    "Bank",
+    "Organization",
+    "ElderlyCitizen"
+  ],
+  "config_generated": true,
+  "config_reasoning": "时间配置: 模拟DBS银行反诈视频发布后的7天舆论演变。新加坡与中国无时差，作息高度一致。12-13点午休及19-22点晚间为社交媒体活跃高峰，是观察'Tech-Savvy Youth'发现技术瑕疵并引发病毒式传播的关键窗口；工作时间则主要反映主流媒体（ST/CNA）及监管机构（MAS）的定调发声；凌晨1-5点设为低活跃期，以模拟舆论热度的自然冷却与次日的信息沉淀。 | 事件配置: The configuration captures the three-way tension between institutional innovation (Bank/RegulatoryBody), technical scrutiny (TechYouth), and socio-economic impact (CreativeProfessional). It sets the stage for the simulation to explore whether the 'medium ruins the message' for the target elderly audience. | Agent配置: 成功生成 17 个 | 初始帖子分配: 7 个帖子已分配发布者",
+  "current_round": 0,
+  "twitter_status": "not_started",
+  "reddit_status": "not_started",
+  "created_at": "2026-04-22T18:09:41.549728",
+  "updated_at": "2026-04-22T18:18:42.542043",
+  "error": null
+}

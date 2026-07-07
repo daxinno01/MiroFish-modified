@@ -1,0 +1,610 @@
+
+
+=== DBS Earnings Prediction Research Plan.pdf ===
+Comprehensive Predictive Intelligence
+Report for DBS Group Holdings (D05.SI)
+Q1 2026 Earnings: Strategic Data
+Inventory and Simulation Background
+for MiroFish Swarm Forecasting
+The imminent release of the first-quarter 2026 financial results for DBS Group Holdings Limited
+(DBS) on April 30, 2026, represents a seminal moment for the Southeast Asian financial
+markets.1 This report serves as a foundational intelligence document for the MiroFish swarm
+prediction engine, consolidating the quantitative data, macroeconomic variables, institutional
+shifts, and operational risks necessary to forecast the bank’s earnings performance and
+subsequent stock price trajectory.1 Entering the second day prior to the official announcement,
+the market is navigating an environment defined by geopolitical volatility, the lingering effects
+of a leadership transition, and a sharp pivot in monetary policy within the Singaporean and
+global contexts.4
+Institutional Evolution and the Leadership Mandate
+DBS Group Holdings transitioned into 2026 following a year of historical valuation milestones. In
+June 2025, the bank achieved a market capitalization exceeding
+(
+), eventually climbing to
+(
+) by the
+close of the 2025 financial year.6 This valuation positioned DBS as one of the top 25 banking
+institutions globally and the first Singapore-listed entity to breach the
+
+threshold, reflecting a robust multi-year structural transformation.6 The strategic focus leading
+into 2026 has been centered on solidifying growth in high-Return on Equity (ROE) businesses,
+particularly wealth management and institutional banking, while navigating the "perfect storm"
+of rate headwinds and geopolitical uncertainty.6
+The transition in leadership from Piyush Gupta to Tan Su Shan on March 28, 2025, remains a
+critical qualitative factor for the prediction engine.5 Tan, formerly the Deputy CEO and Group
+Head of Institutional Banking, is the first female leader of DBS and brought over 35 years of
+experience across consumer banking, wealth management, and digital strategy.7 Her mandate
+for 2026 is defined by the objective to sustain an ROE target of 15% to 17%, announced at the
+2025 Annual General Meeting, while operationalizing a "digital-first" strategy that includes the
+deployment of AI-driven 'Alpha' squads to integrate legal, compliance, and risk roles.5 This
+leadership continuity is intended to maintain the trajectory of digital innovation that
+
+characterized Gupta’s 14-year tenure, during which DBS multiplied its returns and established
+itself as the largest bank in Southeast Asia by assets.8
+Financial Profile and 2025 Benchmark Performance
+The full-year results for 2025 serve as the baseline for constructing the Q1 2026 forecast. DBS
+reported a record profit before tax of
+in 2025, a marginal 1% increase
+from the previous year, supported by record total income of
+.11 However,
+net profit for the year saw a 3% contraction to
+, primarily due to the
+implementation of the global minimum tax and the absence of non-recurring gains from 2024.11
+The table below summarizes the core financial metrics for the 2025 financial year, which inform
+the starting state for the Q1 2026 prediction.
+Financial Metric
+FY 2025 Actual
+Year-on-Year (YoY) Change
+Total Income
+
++3%
+Net Interest Income
+
++1%
+Net Fee & Commission
+Income
+
++18%
+Treasury Customer Sales
+
++14%
+Markets Trading Income
+
++49%
+Total Expenses
+
++4%
+Profit Before Allowances
+
++2%
+
+Net Profit
+
+-3%
+Return on Equity (ROE)
+16.2%
+-
+NPL Ratio
+1.0%
+Stable
+11
+A deeper investigation into these figures reveals that while the commercial book net interest
+income fell 4% to
+due to narrowing margins, the overall group net interest
+income was bolstered by record deposit growth and proactive balance sheet hedging.11 Wealth
+management income remained a standout performer, rising 9% to
+, with
+non-interest income in this segment climbing 27% to
+, outpacing regional
+and global peers.6 This shift toward fee-based revenue is a primary driver of the bank's
+resilience as it enters the 2026 reporting cycle.6
+Quantitative Review of the Q4 2025 Inflection Point
+The fourth quarter of 2025 marked a significant turning point in the bank's earnings
+momentum, providing critical data points for identifying potential surprises in Q1 2026. DBS
+reported a net profit of
+for Q4 2025, representing a 10% decline
+compared to the
+reported in Q4 2024.11 This figure missed the Bloomberg
+consensus forecast of
+by approximately 9%.14
+Drivers of the Quarterly Miss and Strategic Offsets
+The earnings compression in Q4 2025 was driven by a combination of interest rate headwinds,
+increased provisioning, and tax expenses. Group net interest income declined 4% year-on-year
+to
+as the net interest margin (NIM) narrowed by 22 basis points to 1.93%.11 This
+margin compression was a direct result of falling benchmark rates, specifically the Singapore
+Overnight Rate Average (SORA) and the Hong Kong Interbank Offered Rate (HIBOR), alongside
+a stronger Singapore dollar which impacted foreign exchange translation.11
+
+Item
+Q4 2025 (Actual)
+Q4 2024 (Actual)
+YoY % Change
+Net Profit
+
+
+-10%
+Total Income
+
+
+-3%
+Net Interest Income
+
+
+-4%
+Commercial Book
+Fee Income
+
+
++14%
+Markets Trading
+Income
+
+
+-3%
+Specific Allowances
+
+
++192%
+NIM
+1.93%
+2.15%
+-22 bps
+11
+Specific allowances rose sharply to
+in Q4 2025, largely due to a "prudent
+downgrade" of a previously watchlisted real estate exposure in Hong Kong.11 While the NPL
+ratio remained stable at 1.0%, the uptick in specific provisions to 36 basis points of loans—from
+an average of 13 basis points for the rest of the year—highlighted the emerging risks in the
+North Asian property sector.14 Despite these challenges, the bank maintained robust capital
+buffers, with a Common Equity Tier 1 (CET1) ratio of 17.0%, well above the regulatory
+requirements.11
+Wealth Management Momentum and Deposit Surge
+
+A critical counter-narrative to the quarterly profit decline was the continued strength of the
+wealth management and deposit franchise. Commercial book net fee income grew 14%
+year-on-year to
+, driven by investment products and bancassurance.11
+Furthermore, deposit growth in Q4 2025 was the strongest in the bank's history, rising
+or 3% during the quarter to reach
+.11 This surplus
+liquidity was deployed into high-quality liquid assets, which, while modestly reducing NIM, was
+accretive to absolute net interest income and return on equity.11 This trend of robust deposit
+inflows is expected to continue into Q1 2026, bolstered by safe-haven capital relocation.4
+The Macroeconomic Backdrop of Q1 2026: Conflict
+and Contraction
+The operational environment for DBS in the first quarter of 2026 has been dominated by the
+onset of the US-Israel-Iran conflict, which began on February 28, 2026.4 This geopolitical shock
+has introduced significant systemic risk, affecting trade volumes, energy prices, and global
+shipping through the Strait of Hormuz.18
+Geopolitical Risks and the Energy Price Shock
+The escalation of conflict in the Middle East has triggered a sharp repricing of global assets.
+Crude oil prices surged above
+following disruptions to global supplies, fanning
+stagflation concerns across energy-importing economies like Singapore.20 The Monetary
+Authority of Singapore (MAS) noted that higher imported energy and food costs would likely
+push core inflation to average 1.5–2.5% in 2026, an upward revision from the previous 1.0–2.0%
+forecast.22 For DBS, this inflationary environment creates a complex outcome: while it supports
+a "higher-for-longer" interest rate floor, it simultaneously threatens the profitability of
+energy-dependent sectors such as manufacturing and logistics, which could weigh on
+corporate loan demand.18
+Singapore’s Q1 2026 GDP Performance and Sectoral Divergence
+According to advance estimates from the Ministry of Trade and Industry (MTI), Singapore’s
+economy grew by 4.6% year-on-year in Q1 2026, a moderation from the 5.7% expansion
+recorded in Q4 2025.24 The outturn missed the median private-sector expectation of 5.8% as
+reported by Bloomberg.18 On a seasonally adjusted quarter-on-quarter basis, the economy
+contracted by 0.3%, the joint-weakest figure since the 2020 pandemic downturn.18
+Sector
+Q1 2026 YoY Growth
+Change from Q4 2025
+
+Overall GDP
+4.6%
+-1.1%
+Manufacturing
+5.0%
+-6.4%
+Construction
+9.0%
++4.4%
+Services-Producing
+4.7%
+-0.1%
+Finance & Insurance
+3.9%
++0.2%
+Real Estate
+2.3%
+-0.6%
+18
+The manufacturing sector experienced a sharp deceleration, expanding only 5.0% compared to
+11.4% in the previous quarter, largely due to output declines in biomedical manufacturing and
+chemicals, the latter affected by tighter crude supply from Singapore Refining Co..18
+Conversely, the construction sector saw accelerated growth of 9.0%, supported by both public
+and private sector projects.25 The services sector remained resilient, with information and
+communications and finance and insurance expanding by 3.9% year-on-year, driven by
+demand for digital solutions and strong banking activity.25 For a prediction engine, this
+divergence suggests that DBS's consumer and digital segments likely outperformed its trade
+and manufacturing-related corporate portfolios in the quarter.
+Monetary Policy Mechanics and Interest Rate
+Trajectories
+The interest rate environment in Q1 2026 has deviated from late-2025 expectations. Prior to the
+Middle East conflict, markets had priced in a series of rate cuts. However, the surge in fuel
+prices led the US Federal Reserve to back away from expected easing in the first quarter.4
+MAS S$NEER Tightening and Its Implications
+
+On April 14, 2026, the MAS slightly tightened its monetary policy by increasing the rate of
+appreciation of the Singapore Dollar Nominal Effective Exchange Rate (S
+NEER band’s slope was increased to an estimated pace of 1% from 0.5%.27
+For DBS, the implications are two-fold. A stronger Singapore dollar acts as a magnet for global
+capital, reinforcing the bank's role as a safe-haven destination for wealth inflows.28 However, it
+also exerts downward pressure on the net interest margin of the commercial book when the
+currency appreciates against major trading partners.4 Furthermore, benchmark rates in
+Singapore and Hong Kong remained under pressure in Q1; the three-month compounded
+SORA fell 12 basis points, while the three-month HIBOR declined 58 basis points during the
+period.4
+The Interest Rate Resilience Factor
+DBS remains the most resilient among the three local lenders to interest rate volatility.
+Fixed-rate assets account for approximately one-third of its commercial book, reducing the
+immediate sensitivity of its net interest income to benchmark rate fluctuations.15 Management
+has guided that a one-basis-point increase in rates provides an
+to
+
+boost in profit.29 Conversely, the bank’s ability to redeploy surplus current account and savings
+account (CASA) deposits into high-quality liquid assets provides an earnings lift that partially
+offsets NIM dilution.4
+Digital Operational Risk and Innovation in 2026
+DBS’s reputation as the "World's Best Digital Bank" has faced renewed challenges in early 2026,
+which may influence investor perception of its operational risk profile.
+The March 19, 2026 Digital Service Disruption
+On March 19, 2026, DBS and POSB customers experienced a disruption to digital banking
+services during the lunchtime period, with over 2,100 reports recorded on Downdetector.30 The
+outage, which affected app and website access, lasted approximately one hour and was
+attributed to a "system change error".30 While the bank restored services by 1:19 pm and
+assured customers that funds remained secure, the incident follows a history of digital
+disruptions that had previously drawn regulatory action from the MAS.30
+The MAS, which had previously imposed a six-month pause on non-essential IT changes (lifted
+in April 2024), stated it is following up with the bank to address the root cause of the latest
+incident.30 For the prediction engine, this suggests potential for continued regulatory overhead
+and higher operational risk capital requirements, which currently stand at 1.8 times the bank's
+risk-weighted assets for that category.30
+Spark GenAI and the AI Transformation Strategy
+
+To mitigate these risks and drive future efficiency, DBS has accelerated its artificial intelligence
+initiatives. On April 23, 2026, the bank announced an enhanced version of its Spark GenAI
+program in partnership with Enterprise Singapore and IMDA.34 This program aims to help SMEs
+fast-track AI adoption through a tiered support model—Start, Accelerate, and Scale—tailored
+to different business maturity levels.34
+Within the bank itself, Tan Su Shan has emphasized the expansion of trade finance, payments,
+and wealth management through tokenization and generative AI.37 The bank is also in the
+process of adding 1,000 new AI-focused roles while reducing contract and temporary staff by
+50% over three years to streamline operations.5 This strategic shift toward "industrializing" AI is
+a key component of the 2026 outlook, as the bank seeks to improve its cost-to-income ratio,
+which currently stands at a healthy 40%.11
+Comparative Analysis and Consensus Expectations
+DBS is scheduled to kick off the Singapore banking earnings season on April 30, followed by
+UOB on May 7 and OCBC on May 8.4 Analysts are broadly positive on the sector, citing
+safe-haven flows and the resilience of interest margins.
+Q1 2026 Consolidated Estimates
+Consensus estimates suggest that DBS will report a net profit slightly below Q1 2025 levels but
+significantly higher than the seasonally weak Q4 2025. The Bloomberg median forecast for
+DBS’s Q1 2026 net profit is
+, compared to
+a year ago.4
+UOB Kay Hian’s estimate is slightly more conservative at
+, representing a
+2% year-on-year decrease but a 25% surge from the preceding quarter.38
+Metric
+DBS Q1 2026
+Consensus Estimate
+Q1 2025 Actual
+Expected YoY Change
+Net Profit
+
+-1% to -2%
+Revenue
+
+-0.17% to +0.5%
+EPS
+1.00 - 1.03
+1.14 (Q1 24 ref)
+-
+
+Net Interest Margin
+1.93% - 1.95%
+2.15% (ref)
+Compression
+2
+Analysts anticipate that while NIM will face mild compression, it will be offset by seasonally
+stronger net trading income and healthy growth in treasury customer sales.38 Wealth
+management remains the primary year-round driver, with early-2026 momentum described as
+"largely intact" despite the March volatility.4
+Exposure to North Asian Real Estate Risks
+A key differentiator for the Q1 results will be the management of North Asian property
+exposures. Following the
+specific provision in Q4 2025, the market is
+sensitized to potential further NPL formation in the Hong Kong CRE sector.11 However, S&P
+Global Ratings has indicated that many large banks have cut their exposure to CRE over the
+past five years, and DBS's overall asset quality remains sound with an NPL ratio of 1.0%.39 The
+bank's recent
+office purchase in Hong Kong suggests that it views the
+current market weakness as a valuation opportunity rather than a systemic threat to its own
+balance sheet.41
+Technical Analysis and Share Price Dynamics
+DBS’s stock price (D05.SI) has exhibited a pattern of consolidation in the month leading up to
+the earnings release. As of April 27, 2026, the shares closed at
+, down
+approximately 5.35% from the 52-week high of
+reached on January 29, 2026.42
+Technical Indicators and Support Levels
+The technical outlook for DBS is currently assessed as "Neutral" to "Strong Sell" by various
+analytical models, reflecting the recent correction from peak levels.44
+●​ RSI (14): The 14-day Relative Strength Index stands at 41.3%, which is neutral but
+suggests a loss of upward momentum.44
+●​ MACD: The Moving Average Convergence Divergence is reported at -0.100, signaling a
+bearish trend indicator in the immediate short term.44
+●​ Moving Averages: The stock price is currently trading below its 50-day moving average (
+) and its 200-day moving average (
+), indicating that these
+levels have transitioned into overhead resistance.42
+●​ Fibonacci Pivot: The immediate Fibonacci pivot point is calculated at
+,
+
+which the stock is currently testing.45
+●​ Support/Resistance: Key support is identified at
+, with resistance at the
+to
+range.42
+Institutional Flows and Sentiment
+Despite the neutral technicals, institutional sentiment remains constructive. 18 analysts
+currently align on a "Buy" consensus, and top firms like Temasek Holdings continue to maintain
+significant positions in the lender.44 The stock is estimated to be trading at approximately 27.4%
+to 31.8% below its fair value, according to DCF and intrinsic value models.44 The 2026
+price-to-book ratio stands at 2.4, which is above the 10-year historical average of 1.4, but
+analysts argue this is justified by the higher ROE profile of the transformed business.14
+Capital Management and Shareholder Payout Strategy
+DBS’s commitment to shareholder returns is a primary pillar of its market valuation. The bank
+has transitioned into a "high capital return" phase, which is expected to support the share price
+even if earnings growth remains flat in 2026.14
+Dividend Outlook for 2026-2027
+The board has signaled a clear path for dividends through 2027. For Q1 2026, the expected
+payout is
+per share, consisting of a
+ordinary dividend and a
+capital return dividend.14 This annualized payout of
+implies a dividend
+yield of approximately 5.6% based on a
+share price.14
+Dividend Component
+Annualized Forecast (2026)
+Status
+Ordinary Dividend
+
+Target established
+Capital Return Dividend
+
+Committed through 2027
+Total Annual Dividend
+
+Annualized yield ~5.6%
+
+14
+Share Buyback Program Status
+DBS announced a
+share buyback program in November 2024 to enhance
+shareholder returns.14 However, as of April 2026, the bank has only executed approximately
+of this mandate, purchasing around 8.7 million shares.14 Analysts have
+noted that the bank may be waiting for more favorable price points to resume aggressive
+buybacks, given that the share price remains high relative to historical multiples.14 If the
+buyback mandate remains under-utilized, there is significant potential for further special
+dividends in late 2026 or 2027 to return the surplus capital.14
+Simulation Parameters for the MiroFish Prediction
+Engine
+To construct a comprehensive forecast for the Q1 2026 earnings release and the subsequent
+24-hour stock price movement, the MiroFish engine should integrate the following causal
+relationships and data clusters.
+Variables for Earnings Surprise Probability
+●​ Interest Rate Floor: The degree to which the Fed's "no rate cut" stance in Q1 offset the
+12-basis point drop in SORA. A higher-than-expected yield on surplus deposits could
+drive an NII beat.4
+●​ Safe-Haven Deposit Velocity: The absolute volume of "safe-haven" inflows from the
+Middle East conflict. If inflows exceeded the
+seen in Q4 2025, fee
+income and NIM resilience will likely surprise to the upside.4
+●​ Provisioning Normalization: Whether specific allowances return to the 17-20 basis point
+range guided by management, or if the "Hong Kong CRE" risk necessitates another
+one-off provision.14
+●​ Wealth Management Fees: The impact of March volatility on client trading activity. If risk
+appetite remained intact through early Q1, wealth fees may exceed the 29% growth
+recorded in 2025.4
+Stock Price Simulation Factors (Post-Release)
+●​ Historical Pattern: In February 2026, the price fell 2.53% post-earnings despite an EPS
+surprise, suggesting the market is currently "pricing for perfection".49
+●​ Dividend Yield Support: At a 5.6% yield, DBS shares are highly competitive against T-bills
+and Singdollar bonds, creating a price floor during market sell-offs.48
+●​ Leadership Confidence: The market’s assessment of Tan Su Shan's first full quarter of
+
+results and her updated guidance on AI-led efficiency gains and digital resilience.5
+●​ The "Outage" Discount: Whether the March 19 outage is addressed convincingly in the
+analyst call, or if it contributes to a lingering "operational risk premium".31
+The consolidated data indicates that DBS enters the Q1 2026 reporting cycle from a position of
+systemic strength, characterized by record deposit levels and a clear capital return strategy.
+However, the slowing domestic economy and the persistent North Asian property risks provide
+a high hurdle for the bank to deliver a positive earnings surprise. The simulation must balance
+the bank's role as a regional safe haven against the sharpening headwinds of margin
+compression and currency strength.
+Works cited
+1.​ dbs group holdings first-quarter 2026 financial results, accessed April 28, 2026,
+https://links.sgx.com/1.0.0/corporate-announcements/QWHPGBMRP7HMAFZ9/88
+4575_1Q26FinancialResultsnotice.pdf
+2.​ DBS (D05) Earnings Dates, Reports & Conference Call - Moomoo, accessed April
+28, 2026, https://www.moomoo.com/stock/D05-SG/earnings
+3.​ DBS (DBSM) Earnings Date & Report - Investing.com, accessed April 28, 2026,
+https://www.investing.com/equities/dbs-group-holdings-earnings
+4.​ Safe-haven flows, no Q1 Fed cut support positive earnings outlook ..., accessed
+April 28, 2026,
+https://www.businesstimes.com.sg/companies-markets/safe-haven-flows-no-q1-
+fed-cut-support-positive-earnings-outlook-dbs-ocbc-uob-analysts
+5.​ DBS Hong Kong Appoints DBS Group CEO Tan Su Shan as Vice Chair of DBS Hong
+Kong (31/7/25), Appointed as DBS Group CEO in 2025 March, 35 Years Experience
+in Consumer Banking, Wealth Management & Institutional Banking at DBS,
+Morgan Stanley, Citibank & ING Barings | Caproasia, accessed April 28, 2026,
+https://www.caproasia.com/2025/08/01/dbs-hong-kong-appoints-dbs-group-ce
+o-tan-su-shan-as-vice-chair-of-dbs-hong-kong-31-7-25-appointed-as-dbs-gro
+up-ceo-in-2025-march-35-years-experience-in-consumer-banking-wealth-man
+agement-instit/
+6.​ Full Annual Report 2025 - DBS Bank, accessed April 28, 2026,
+https://www.dbs.com/annualreports/2025/i/pdf/dbs-ar-2025.pdf
+7.​ Tan Su Shan appointed as Deputy CEO - Singapore - DBS Bank, accessed April 28,
+2026, https://www.dbs.com/newsroom/Tan_Su_Shan_appointed_as_Deputy_CEO
+8.​ DBS Group Holdings Announces Tan Su Shan as new CEO - C-Suite Insider,
+accessed April 28, 2026,
+https://www.c-suiteinsider.com/news/dbs-group-holdings-announces-tan-su-sha
+n-as-new-ceo/
+9.​ DBS launches enhanced generative AI programme to fast-track SME adoption,
+accessed April 28, 2026,
+https://www.businesstimes.com.sg/companies-markets/dbs-launches-enhanced-
+generative-ai-programme-fast-track-sme-adoption
+10.​DBS' Piyush Gupta to step down in March; insider Tan Su Shan to be bank's first
+
+female CEO - YouTube, accessed April 28, 2026,
+https://www.youtube.com/watch?v=EbrVyVk2fpU
+11.​News Release - DBS Bank, accessed April 28, 2026,
+https://www.dbs.com/iwov-resources/images/investors/quarterly-financials/2025/
+4Q25_press_statement.pdf
+12.​Edited transcript of DBS fourth-quarter 2025 media briefing, 9 February 2026,
+accessed April 28, 2026,
+https://www.dbs.com/iwov-resources/images/investors/quarterly-financials/2025/
+4Q25_media_transcript.pdf
+13.​DBS: A softer quarter, a resilient year, and a solid long-term story | FSMOne,
+accessed April 28, 2026,
+https://www.fsmone.com.my/article/354520/dbs-a-softer-quarter-a-resilient-year
+-and-a-solid-long-term-story
+14.​DBS capital return plans remain bright spot even with weaker earnings ahead:
+analysts, accessed April 28, 2026,
+https://www.businesstimes.com.sg/companies-markets/dbs-capital-return-plans
+-remain-bright-spot-even-weaker-earnings-ahead-analysts
+15.​SG banks: Flat 3Q earnings, but DBS remains our favourite pick | FSMOne,
+accessed April 28, 2026,
+https://www.fsmone.com.my/article/346940/sg-banks-flat-3q-earnings-but-dbs-
+remains-our-favourite-pick
+16.​DBS Reports Record Profit & Strong Growth in 2025 Forecast - Industry Leaders
+Magazine, accessed April 28, 2026,
+https://www.industryleadersmagazine.com/dbs-reports-record-profit-strong-gro
+wth-in-2025-forecast/
+17.​DBS (DBS) Earnings: Q4 Net Income Falls Short of Expectations Despite Strong
+Total Income and Capital Ratios | Smartkarma, accessed April 28, 2026,
+https://www.smartkarma.com/home/newswire/earnings-alerts/dbs-dbs-earnings-
+q4-net-income-falls-short-of-expectations-despite-strong-total-income-and-ca
+pital-ratios/
+18.​Singapore GDP Q1 2026 - FocusEconomics, accessed April 28, 2026,
+https://www.focus-economics.com/countries/singapore/news/gdp/singapore-nati
+onal-accounts-p-14-04-2026-economic-growth-slows-in-the-first-quarter-of-2
+026/
+19.​Singapore GDP grows less than expected in Q1; MAS tightens policy -
+Investing.com Nigeria, accessed April 28, 2026,
+https://ng.investing.com/news/economy-news/singapore-gdp-grows-less-than-e
+xpected-in-q1-mas-tightens-policy-2438362
+20.​Research Monitor (1 April 2026) - OCBC, accessed April 28, 2026,
+https://www.ocbc.com/iwov-resources/sg/ocbc/gbc/pdf/Research%20Monitor/Re
+search%20Monitor%20(1Apr26).pdf
+21.​WMV 20 Apr 2026 - OCBC, accessed April 28, 2026,
+https://www.ocbc.com/iwov-resources/sg/ocbc/gbc/pdf/Weekly%20Macro%20Vi
+ew/WMV%2020%20Apr%202026.pdf
+22.​Macroeconomic Review Volume XXV Issue 2, Apr 2026 - Monetary Authority of
+
+Singapore, accessed April 28, 2026,
+https://www.mas.gov.sg/publications/macroeconomic-review/2026/volume-xxv-is
+sue-2-apr-2026
+23.​MAS Monetary Policy Statement - April 2026, accessed April 28, 2026,
+https://www.mas.gov.sg/news/monetary-policy-statements/2026/mas-monetary-
+policy-statement-14apr26
+24.​Singapore's GDP Grew by 4.6 Per Cent in the First Quarter of 2026, accessed
+April 28, 2026, https://www.singstat.gov.sg/advgdp
+25.​Singapore's GDP up 4.6% in Q1, missing forecasts - The Business Times, accessed
+April 28, 2026,
+https://www.businesstimes.com.sg/singapore/economy-policy/singapores-gdp-4
+-6-q1-missing-forecasts
+26.​Singapore's GDP Grew by 4.6 Per Cent in the First Quarter of 2026, accessed
+April 28, 2026,
+https://www.mti.gov.sg/newsroom/singapore-s-gdp-grew-by-4-6-per-cent-in-th
+e-first-quarter-of-2026/
+27.​Singapore's central bank tightens policy as inflation risks rise | articles | ING
+THINK, accessed April 28, 2026,
+https://think.ing.com/articles/mas-tightens-policy-as-inflation-risks-rise/
+28.​MAS tightens as expected: A stronger SGD reinforces the positive stance for
+Singapore's market | FSMOne, accessed April 28, 2026,
+https://www.fsmone.com.my/article/363560/mas-tightens-as-expected-a-strong
+er-sgd-reinforces-the-positive-stance
+29.​DBS Group Q4 preview: Where next for the D05 share price? - FOREX.com,
+accessed April 28, 2026,
+https://www.forex.com/en-sg/news-and-analysis/where-next-for-the-dbs-share-
+price-ahead-of-q4-earnings/
+30.​DBS Restores Digital Banking Services After First Outage of 2026 - Fintech News
+Singapore, accessed April 28, 2026,
+https://fintechnews.sg/127876/digital-banking-news-singapore/dbs-outage-2026/
+31.​DBS Digital Outage Sparks Investor Concerns: Why Reliability Matters | Bitget
+News, accessed April 28, 2026,
+https://www.bitget.com/asia/news/detail/12560605280415
+32.​DBS, POSB digital banking services restored after one-hour disruption | The
+Straits Times, accessed April 28, 2026,
+https://www.straitstimes.com/singapore/dbs-posb-digital-banking-services-dow
+n-for-some-users
+33.​DBS Digital Services Restored After some Customers Hit by Lunchtime Disruption,
+accessed April 28, 2026,
+https://ground.news/article/dbs-posb-digital-banking-services-down-for-some-u
+sers-customers-urged-to-use-cards-atm
+34.​DBS enhances Spark GenAI programme to fast track SME AI adoption in support
+of Singapore's AI ambitions, accessed April 28, 2026,
+https://www.dbs.com/newsroom/DBS_enhances_Spark_GenAI_programme_to_fa
+st_track_SME_AI_adoption_in_support_of_Singapores_AI_ambitions
+
+35.​DBS expands AI program to boost SME AI adoption - TNGlobal, accessed April 28,
+2026,
+https://technode.global/2026/04/24/dbs-expands-ai-program-to-boost-sme-ai-a
+doption/
+36.​DBS Launches Enhanced GenAI Program - finews.asia, accessed April 28, 2026,
+https://www.finews.asia/finance/44853-dbs-bank-singapore-spark-gen-ai
+37.​Tan Su Shan's 2025 Pay Totals S$9.6 Million in First Year as DBS CEO - Fintech
+Singapore, accessed April 28, 2026,
+https://fintechnews.sg/127414/fintech/dbs-ceo-pay-2025/
+38.​DBS and OCBC face weaker Q1 profits despite wealth gains ..., accessed April 28,
+2026,
+https://sbr.com.sg/news/dbs-and-ocbc-face-weaker-q1-profits-despite-wealth-
+gains
+39.​Scenario Analysis: Hong Kong Banks Could Withstan | S&P Global Ratings,
+accessed April 28, 2026,
+https://www.spglobal.com/ratings/en/regulatory/article/scenario-analysis-hong-k
+ong-banks-could-withstand-deep-haircuts-in-commercial-property-collateral-s
+101664327
+40.​Hong Kong banks 'resilient' despite falling CRE property values, accessed April 28,
+2026,
+https://hongkongbusiness.hk/in-focus/hong-kong-banks-resilient-despite-falling-
+cre-property-values
+41.​DBS Expands Hong Kong Office Presence With "Significant" Deal - Family Wealth
+Report, accessed April 28, 2026,
+https://www.familywealthreport.com/article.php/DBS-Expands-Hong-Kong-Offic
+e-Presence-With-%22Significant%22-Deal-
+42.​DBS Group Holdings Ltd, D05:SES summary - FT.com - Markets data, accessed
+April 28, 2026,
+https://markets.ft.com/data/equities/tearsheet/summary?s=D05:SES
+43.​DBS Group Holdings Ltd ( D05.SI) - Price History - Digrin, accessed April 28, 2026,
+https://www.digrin.com/stocks/detail/D05.SI/price
+44.​DBS Share Price Target & Forecast 2026: Buy or Sell in Singapore? - Moomoo,
+accessed April 28, 2026,
+https://www.moomoo.com/sg/articles/dbs-share-price-target
+45.​DBSM Technical Analysis, RSI and Moving Averages - Investing.com, accessed
+April 28, 2026, https://www.investing.com/equities/dbs-group-holdings-technical
+46.​DBS Group Holdings (SGX:D05) - Stock Analysis - Simply Wall St, accessed April
+28, 2026,
+https://simplywall.st/stocks/sg/banks/sgx-d05/dbs-group-holdings-shares
+47.​DBS at All-Time Highs: Is the Share Price Still a Buy in 2026? - The Smart Investor,
+accessed April 28, 2026,
+https://thesmartinvestor.com.sg/dbs-at-all-time-highs-is-the-share-price-still-a-
+buy-in-2026/
+48.​DBS shares: Is it a good time to buy after pullback? - The Straits Times, accessed
+April 28, 2026,
+
+https://www.straitstimes.com/business/banking/dbs-shares-have-pulled-back-fr
+om-record-highs-is-it-a-good-time-to-buy
+49.​Earnings Forecast & History for DBS Group Holdings Ltd (D05 ..., accessed April
+28, 2026, https://ng.investing.com/pro/SGX:D05/earnings

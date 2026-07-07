@@ -1,0 +1,26 @@
+{
+  "simulation_id": "sim_9b3411999567",
+  "project_id": "proj_3faea2bed84d",
+  "graph_id": "mirofish_local_73725a3bd04c4b59",
+  "enable_twitter": true,
+  "enable_reddit": true,
+  "status": "running",
+  "entities_count": 28,
+  "profiles_count": 28,
+  "entity_types": [
+    "Organization",
+    "Bank",
+    "SeniorCitizen",
+    "Person",
+    "TechEnthusiast",
+    "CreativeProfessional"
+  ],
+  "config_generated": true,
+  "config_reasoning": "时间配置: 模拟覆盖7天完整周期。考虑到新加坡与中国同属东八区，作息高度一致。12-13点午休及19-23点晚间为社交媒体（TikTok/Reddit）活跃高峰，适合观察‘技术青年’对AI瑕疵的挖掘与‘创意人群’的抗议。工作时间10-18点设定为中等活跃，以模拟主流媒体（Straits Times/Mothership）的报道发布及机构（DBS/SPF/MAS）的官方回应。凌晨1-5点设为低谷期，符合普通市民及老年群体的生理作息。 | 事件配置: The initial posts are designed to trigger the specific tensions requested: the Bank's focus on innovation, the Tech-Savvy Youth's eye for glitches and corporate irony, the Senior Citizen's confusion/fear, the Creative Professional's job security concerns, and the Media's role in amplifying the 'Easter Egg' hunt. | Agent配置: 成功生成 28 个 | 初始帖子分配: 7 个帖子已分配发布者",
+  "current_round": 0,
+  "twitter_status": "not_started",
+  "reddit_status": "not_started",
+  "created_at": "2026-04-24T14:55:27.746367",
+  "updated_at": "2026-04-24T15:05:20.999864",
+  "error": null
+}

@@ -1,0 +1,336 @@
+{
+  "project_id": "proj_dd786e45da6a",
+  "name": "Unnamed Project",
+  "status": "graph_building",
+  "created_at": "2026-04-28T15:34:51.684885",
+  "updated_at": "2026-04-28T15:35:13.235537",
+  "files": [
+    {
+      "filename": "01_scenario_brief.md",
+      "size": 1594
+    },
+    {
+      "filename": "03_prior_sentiment_and_analogues.md",
+      "size": 1176
+    }
+  ],
+  "total_text_length": 2836,
+  "ontology": {
+    "entity_types": [
+      {
+        "name": "Bank",
+        "description": "Financial institutions like DBS that initiate campaigns and provide banking services.",
+        "attributes": [
+          {
+            "name": "org_name",
+            "type": "text",
+            "description": "The official name of the bank."
+          },
+          {
+            "name": "tech_reputation",
+            "type": "text",
+            "description": "Public perception of the bank's technological reliability."
+          },
+          {
+            "name": "market_position",
+            "type": "text",
+            "description": "The bank's standing in the local financial market."
+          }
+        ],
+        "examples": [
+          "DBS Bank",
+          "OCBC Bank"
+        ]
+      },
+      {
+        "name": "CreativeProfessional",
+        "description": "Individuals in the creative industry such as directors, actors, and designers concerned about AI.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The name of the professional."
+          },
+          {
+            "name": "specialization",
+            "type": "text",
+            "description": "Field of expertise like cinematography or voice acting."
+          }
+        ],
+        "examples": [
+          "Film Director",
+          "Voiceover Artist"
+        ]
+      },
+      {
+        "name": "TechExpert",
+        "description": "Specialists in AI, cybersecurity, and digital forensics who analyze the technical execution.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The name of the expert."
+          },
+          {
+            "name": "expertise_area",
+            "type": "text",
+            "description": "Specific tech domain like Generative AI or Malware Analysis."
+          }
+        ],
+        "examples": [
+          "AI Researcher",
+          "Cybersecurity Consultant"
+        ]
+      },
+      {
+        "name": "GovernmentAgency",
+        "description": "Regulatory or public service bodies involved in anti-scam efforts or AI ethics.",
+        "attributes": [
+          {
+            "name": "agency_name",
+            "type": "text",
+            "description": "The name of the government body."
+          },
+          {
+            "name": "jurisdiction",
+            "type": "text",
+            "description": "The area of authority, e.g., Public Safety or Finance."
+          }
+        ],
+        "examples": [
+          "Singapore Police Force",
+          "Monetary Authority of Singapore"
+        ]
+      },
+      {
+        "name": "MediaOutlet",
+        "description": "News organizations and digital publishers reporting on the campaign and public reaction.",
+        "attributes": [
+          {
+            "name": "outlet_name",
+            "type": "text",
+            "description": "The name of the media organization."
+          },
+          {
+            "name": "reach_scale",
+            "type": "text",
+            "description": "The size of the audience reached by this outlet."
+          }
+        ],
+        "examples": [
+          "The Straits Times",
+          "CNA"
+        ]
+      },
+      {
+        "name": "SeniorCitizen",
+        "description": "Elderly individuals who are primary targets for anti-scam education but may find AI confusing.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The name of the individual."
+          },
+          {
+            "name": "digital_literacy",
+            "type": "text",
+            "description": "Level of comfort with digital banking and AI technology."
+          }
+        ],
+        "examples": [
+          "Retiree",
+          "Elderly Resident"
+        ]
+      },
+      {
+        "name": "TechYouth",
+        "description": "Young, tech-savvy individuals who are critical of AI ethics and corporate innovation.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The name of the individual."
+          },
+          {
+            "name": "primary_platform",
+            "type": "text",
+            "description": "The social media platform where they are most active."
+          }
+        ],
+        "examples": [
+          "University Student",
+          "Gen Z Tech Enthusiast"
+        ]
+      },
+      {
+        "name": "SocialMediaInfluencer",
+        "description": "Opinion leaders who amplify or criticize the campaign to their followers.",
+        "attributes": [
+          {
+            "name": "handle_name",
+            "type": "text",
+            "description": "The social media username or handle."
+          },
+          {
+            "name": "content_niche",
+            "type": "text",
+            "description": "The specific topic area they cover, e.g., Lifestyle or Tech."
+          }
+        ],
+        "examples": [
+          "Tech Reviewer",
+          "Local Lifestyle Blogger"
+        ]
+      },
+      {
+        "name": "Person",
+        "description": "Any individual participant in the social media discourse not covered by specific types.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The name of the person."
+          },
+          {
+            "name": "role_description",
+            "type": "text",
+            "description": "General description of the person's role in the simulation."
+          }
+        ],
+        "examples": [
+          "General Public Member",
+          "Bank Customer"
+        ]
+      },
+      {
+        "name": "Organization",
+        "description": "Any corporate or non-profit entity not covered by specific categories.",
+        "attributes": [
+          {
+            "name": "org_name",
+            "type": "text",
+            "description": "The name of the organization."
+          },
+          {
+            "name": "industry_sector",
+            "type": "text",
+            "description": "The industry the organization operates in."
+          }
+        ],
+        "examples": [
+          "AI Software Vendor",
+          "Consumer Protection Association"
+        ]
+      }
+    ],
+    "edge_types": [
+      {
+        "name": "CRITICIZES",
+        "description": "Expresses negative feedback or ethical concerns regarding the campaign.",
+        "source_targets": [
+          {
+            "source": "CreativeProfessional",
+            "target": "Bank"
+          },
+          {
+            "source": "TechYouth",
+            "target": "Bank"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "REPORTS_ON",
+        "description": "Covers the event or the resulting public reaction in news or articles.",
+        "source_targets": [
+          {
+            "source": "MediaOutlet",
+            "target": "Bank"
+          },
+          {
+            "source": "MediaOutlet",
+            "target": "GovernmentAgency"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "REGULATES",
+        "description": "Provides oversight or guidelines for banking and AI usage.",
+        "source_targets": [
+          {
+            "source": "GovernmentAgency",
+            "target": "Bank"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "ANALYZES",
+        "description": "Provides technical or expert breakdown of the GenAI tools used.",
+        "source_targets": [
+          {
+            "source": "TechExpert",
+            "target": "Bank"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "COMPARES_TO",
+        "description": "Draws parallels between the current campaign and previous ads or events.",
+        "source_targets": [
+          {
+            "source": "Person",
+            "target": "GovernmentAgency"
+          },
+          {
+            "source": "MediaOutlet",
+            "target": "Organization"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "WARNS_ABOUT",
+        "description": "Issues warnings to the public regarding scams or AI risks.",
+        "source_targets": [
+          {
+            "source": "Bank",
+            "target": "SeniorCitizen"
+          },
+          {
+            "source": "GovernmentAgency",
+            "target": "Person"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "INFLUENCES",
+        "description": "Shapes the opinion of a specific demographic through content.",
+        "source_targets": [
+          {
+            "source": "SocialMediaInfluencer",
+            "target": "TechYouth"
+          }
+        ],
+        "attributes": []
+      }
+    ]
+  },
+  "analysis_summary": "该本体设计旨在模拟星展银行（DBS）发布GenAI防诈骗视频后的舆论动态。核心实体涵盖了发起方（银行）、监管方（政府机构）、受影响的专业群体（创意人士、技术专家）以及关键受众特征（老年人、科技青年）。关系设计侧重于批判、报道、监管和对比，以捕捉公众对于“用AI打击AI诈骗”这一讽刺点的讨论，以及对银行技术可靠性的敏感反应。",
+  "graph_id": null,
+  "graph_build_task_id": "35c25d12-df94-42ea-bb9d-4d9456f0c2e9",
+  "simulation_requirement": "Predict the public reaction to DBS' GenAI video.",
+  "chunk_size": 500,
+  "chunk_overlap": 50,
+  "error": null,
+  "token_usage": {
+    "prompt_tokens": 2122,
+    "completion_tokens": 2243,
+    "total_tokens": 4365,
+    "call_count": 1,
+    "last_updated": "2026-04-28T15:35:12.503223"
+  }
+}

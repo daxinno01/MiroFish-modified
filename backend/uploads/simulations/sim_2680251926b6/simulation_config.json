@@ -1,0 +1,200 @@
+{
+  "simulation_id": "sim_2680251926b6",
+  "project_id": "proj_46ead5c11907",
+  "graph_id": "mirofish_local_b9706d8b733c4350",
+  "simulation_requirement": "Predict the outcome as more people in the country experience receiving this call from a non-human.",
+  "time_config": {
+    "total_simulation_hours": 72,
+    "minutes_per_round": 60,
+    "agents_per_hour_min": 1,
+    "agents_per_hour_max": 3,
+    "peak_hours": [
+      19,
+      20,
+      21,
+      22
+    ],
+    "peak_activity_multiplier": 1.5,
+    "off_peak_hours": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "off_peak_activity_multiplier": 0.05,
+    "morning_hours": [
+      6,
+      7,
+      8
+    ],
+    "morning_activity_multiplier": 0.4,
+    "work_hours": [
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+    ],
+    "work_activity_multiplier": 0.7
+  },
+  "agent_configs": [
+    {
+      "agent_id": 0,
+      "entity_uuid": "ent_59f2ac35ab848e33",
+      "entity_name": "DBS Bank",
+      "entity_type": "Bank",
+      "activity_level": 0.2,
+      "posts_per_hour": 0.1,
+      "comments_per_hour": 0.3,
+      "active_hours": [
+        9,
+        10,
+        11,
+        14,
+        15,
+        16,
+        17
+      ],
+      "response_delay_min": 60,
+      "response_delay_max": 240,
+      "sentiment_bias": 0.6,
+      "stance": "supportive",
+      "influence_weight": 2.8
+    },
+    {
+      "agent_id": 1,
+      "entity_uuid": "ent_03f70af9ade8578e",
+      "entity_name": "customers",
+      "entity_type": "BankCustomer",
+      "activity_level": 0.85,
+      "posts_per_hour": 0.4,
+      "comments_per_hour": 1.2,
+      "active_hours": [
+        7,
+        8,
+        12,
+        13,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "response_delay_min": 5,
+      "response_delay_max": 25,
+      "sentiment_bias": -0.5,
+      "stance": "opposing",
+      "influence_weight": 1.0
+    },
+    {
+      "agent_id": 2,
+      "entity_uuid": "ent_eda5c4d9850ee721",
+      "entity_name": "ElevenLabs",
+      "entity_type": "TechProvider",
+      "activity_level": 0.5,
+      "posts_per_hour": 0.2,
+      "comments_per_hour": 0.5,
+      "active_hours": [
+        9,
+        10,
+        11,
+        14,
+        15,
+        16,
+        17,
+        20,
+        21
+      ],
+      "response_delay_min": 30,
+      "response_delay_max": 120,
+      "sentiment_bias": 0.8,
+      "stance": "supportive",
+      "influence_weight": 2.2
+    },
+    {
+      "agent_id": 3,
+      "entity_uuid": "ent_376daca964652386",
+      "entity_name": "real human",
+      "entity_type": "SalesRepresentative",
+      "activity_level": 0.7,
+      "posts_per_hour": 0.1,
+      "comments_per_hour": 0.9,
+      "active_hours": [
+        8,
+        12,
+        13,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "response_delay_min": 10,
+      "response_delay_max": 45,
+      "sentiment_bias": 0.0,
+      "stance": "observer",
+      "influence_weight": 1.1
+    }
+  ],
+  "event_config": {
+    "initial_posts": [
+      {
+        "content": "DBS is excited to announce the launch of our GenAI-powered sales calls! Leveraging ElevenLabs technology, we aim to provide a more efficient and lifelike interaction for our customers. #DBS #Innovation #GenAI",
+        "poster_type": "Bank",
+        "poster_agent_id": 0
+      },
+      {
+        "content": "刚才接到了DBS的推销电话，声音听起来完全就是真人，直到我问了一个非常绕的问题它才卡壳。这种AI外呼以后普及了，我们还能分清谁是真人吗？有点细思极恐。",
+        "poster_type": "BankCustomer",
+        "poster_agent_id": 1
+      },
+      {
+        "content": "We are proud to see our high-fidelity voice models being used by DBS to transform customer engagement. Our goal is to make digital interactions feel as natural as possible.",
+        "poster_type": "TechProvider",
+        "poster_agent_id": 2
+      },
+      {
+        "content": "Although the AI initiates the call, please remember that we real humans are still here to handle your actual applications and provide the personalized service you need. The AI just helps us reach you faster!",
+        "poster_type": "SalesRepresentative",
+        "poster_agent_id": 3
+      }
+    ],
+    "scheduled_events": [],
+    "hot_topics": [
+      "GenAI Telemarketing",
+      "ElevenLabs Voice Realism",
+      "DBS Digital Transformation",
+      "AI Privacy Concerns",
+      "Human-AI Collaboration"
+    ],
+    "narrative_direction": "舆论将经历从“惊叹技术逼真度”到“担忧隐私与诈骗风险”的转变。随着受访人数增加，公众焦点将集中在AI拨号的骚扰频率、语音仿真的道德边界，以及对传统销售岗位被取代的焦虑。最终，讨论可能演变为对银行监管机构介入AI外呼规范的强烈呼吁。"
+  },
+  "twitter_config": {
+    "platform": "twitter",
+    "recency_weight": 0.4,
+    "popularity_weight": 0.3,
+    "relevance_weight": 0.3,
+    "viral_threshold": 10,
+    "echo_chamber_strength": 0.5
+  },
+  "reddit_config": {
+    "platform": "reddit",
+    "recency_weight": 0.3,
+    "popularity_weight": 0.4,
+    "relevance_weight": 0.3,
+    "viral_threshold": 15,
+    "echo_chamber_strength": 0.6
+  },
+  "llm_model": "gemini-3-flash-preview",
+  "llm_base_url": "https://generativelanguage.googleapis.com/v1beta/openai/v1",
+  "generated_at": "2026-04-27T17:09:08.067900",
+  "generation_reasoning": "时间配置: 针对DBS银行GenAI电销事件，模拟时长设为72小时以观察舆论对AI替代人工服务的长尾反应。时间配置严格遵循中国网民作息：晚间19-22点是社交媒体讨论高峰，用户最易分享接到AI电话的体验；9-18点工作时间则对应银行实际拨打电话及后续人工跟进的业务时段，活跃度保持中等；凌晨时段设定为低活跃以符合生理作息。 | 事件配置: 该配置涵盖了技术推动方（Bank, TechProvider）的正面宣传与受众（BankCustomer）及从业者（SalesRepresentative）的多维反馈。重点模拟了AI语音拟真度带来的社会冲击感，符合预测‘更多人收到电话后’的舆论发酵逻辑。 | Agent配置: 成功生成 4 个 | 初始帖子分配: 4 个帖子已分配发布者"
+}

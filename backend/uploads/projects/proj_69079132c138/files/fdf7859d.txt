@@ -1,0 +1,39 @@
+### 1. Executive Summary
+This image is an informational graphic from a DBS Bank public awareness campaign titled "DBS SCAM DEFENCE." It presents a specific statistic regarding the prevalence of social engineering in financial scams to emphasize the necessity of multi-layered security controls. The graphic cites the Singapore Police Force (SPF) as the data source.
+
+### 2. OCR / Text Extraction
+*   **Header (White on Red):** DBS SCAM DEFENCE
+*   **Sub-headline:** #DidYouKnow:
+*   **Primary Statistic:** 8 in 10
+*   **Contextual Text:** Nearly 8 in 10 scam cases involved people being tricked into transferring their own money* — through fear, trust or urgency.
+*   **Supporting Statement:** Many scams today don’t start with hacking — they start with manipulation.
+*   **Key Conclusion (Red emphasis):** That’s why scam protection **can’t rely on just one control.**
+*   **Footnote/Source:** * SPF Mid-Year Scam and Cybercrime Brief 2025
+
+### 3. Entity Identification
+*   **Organizations:**
+    *   DBS Bank (Identified via logo and "DBS SCAM DEFENCE" branding)
+    *   Singapore Police Force / SPF (Identified in footnote)
+*   **Campaigns/Programs:**
+    *   DBS Scam Defence
+*   **Reports/Documents:**
+    *   SPF Mid-Year Scam and Cybercrime Brief 2025
+*   **Financial Metrics/Statistics:**
+    *   8 in 10 (80% frequency rate of specific scam modality)
+*   **Concepts/Thematic Entities:**
+    *   Scam cases
+    *   Social engineering (Manipulation, Fear, Trust, Urgency)
+    *   Hacking
+    *   Security controls
+
+### 4. Structural Relationships
+*   **Branding Relationship:** The logo and header "DBS SCAM DEFENCE" establish **DBS Bank** as the authoritative source/distributor of the message.
+*   **Data Attribution:** The primary statistic ("8 in 10") is directly linked via an asterisk (*) to the **SPF Mid-Year Scam and Cybercrime Brief 2025**.
+*   **Causal Linkage:** The graphic posits that because the majority of scams (8 in 10) utilize **manipulation** rather than **hacking**, the resulting logical requirement is a multi-layered security approach (**"can’t rely on just one control"**).
+*   **Spatial Hierarchy:** The hashtag "#DidYouKnow:" acts as a topical anchor at the top, followed by the central quantitative data point in a high-contrast red box, concluding with the actionable takeaway at the bottom.
+
+### 5. Visual Data Translation
+*   **Quantitative Representation:** The central data point is a ratio expressed as "8 in 10," occupying the visual center of the image within a solid red rectangular block to indicate high importance.
+*   **Graphic Iconography:** A speech bubble containing a red exclamation mark is positioned to the right of the headline, visually signaling a warning or critical alert.
+*   **Typographic Emphasis:** The phrase "can't rely on just one control" is rendered in bold red text, contrasting with the black body text to highlight the primary call to action or strategic insight.
+*   **Background:** The background features a light grey, textured/mottled pattern, providing a neutral field for the high-contrast red and black elements.

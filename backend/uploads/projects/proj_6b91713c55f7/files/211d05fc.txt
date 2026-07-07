@@ -1,0 +1,31 @@
+**1. Executive Summary**
+This image is an educational infographic produced by DBS Bank as part of its "DBS SCAM DEFENCE" campaign. The graphic communicates a key statistic regarding the nature of modern financial scams, emphasizing that the majority of cases result from psychological manipulation (social engineering) rather than technical hacking, and concludes that multi-layered security controls are necessary for protection.
+
+**2. OCR / Text Extraction**
+*   **Top Banner (Header):** DBS SCAM DEFENCE
+*   **Main Heading:** #DidYouKnow:
+*   **Primary Statistic/Statement:** Nearly **8 in 10** scam cases involved people being tricked into transferring their own money* — through fear, trust or urgency.
+*   **Supporting Statement 1:** Many scams today don’t start with hacking — they start with manipulation.
+*   **Supporting Statement 2 (Conclusion):** That’s why scam protection **can’t rely on just one control.**
+*   **Footnote (Source):** * SPF Mid-Year Scam and Cybercrime Brief 2025
+
+**3. Entity Identification**
+*   **Organizations:** DBS (DBS Bank), SPF (Singapore Police Force).
+*   **Financial Metrics:** 8 in 10 (Ratio/80% frequency of specific scam methodology).
+*   **Temporal Entities:** 2025 (Year of reference brief).
+*   **Concepts/Thematic Entities:** Scam Defence, Scam cases, Hacking, Manipulation, Scam protection, Security Control, Fear, Trust, Urgency.
+*   **Geographic Locations:** Singapore (Contextually implied by "SPF" and "DBS").
+
+**4. Structural Relationships**
+*   **Branding Relationship:** "DBS SCAM DEFENCE" (Program) acts as the overarching framework for the information presented.
+*   **Thematic Introduction:** The hashtag "#DidYouKnow:" (Heading) establishes the informational/educational intent of the following data.
+*   **Visual Emphasis:** The metric "8 in 10" is contained within a red rectangular box, signifying it as the primary data point of the graphic.
+*   **Logical Attribution:** The asterisk following "money*" (Primary Statement) creates a direct link to the footnote identifying the "SPF Mid-Year Scam and Cybercrime Brief 2025" (Source) as the origin of the data.
+*   **Causal Argument:** The graphic posits that because "8 in 10" scams involve "manipulation" (Cause), then "scam protection" must involve more than "just one control" (Effect/Solution).
+*   **Iconographic Association:** A speech bubble icon containing an exclamation mark is positioned adjacent to the "8 in 10" box to denote urgency or high importance.
+
+**5. Visual Data Translation**
+*   **Data Point:** The graphic conveys a frequency of approximately 80% ("8 in 10") for a specific category of financial crime.
+*   **Categorization:** The data distinguishes between "hacking" (technical breach) and "manipulation" (social engineering).
+*   **Qualitative Drivers:** The graphic identifies three psychological drivers of the "8 in 10" statistic: "fear," "trust," and "urgency."
+*   **Strategic Conclusion:** The phrase "can’t rely on just one control" is highlighted in red, indicating the primary actionable takeaway for the viewer regarding multi-factor or multi-layered security.

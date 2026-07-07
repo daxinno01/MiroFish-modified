@@ -1,0 +1,27 @@
+{
+  "simulation_id": "sim_491743eb1075",
+  "project_id": "proj_ffac5230a95c",
+  "graph_id": "mirofish_local_a45a83fc53374658",
+  "enable_twitter": true,
+  "enable_reddit": true,
+  "status": "running",
+  "entities_count": 75,
+  "profiles_count": 75,
+  "entity_types": [
+    "TechAdvocate",
+    "PublicOfficial",
+    "BusinessOwner",
+    "FamilyRepresentative",
+    "BankEntity",
+    "Organization",
+    "Person"
+  ],
+  "config_generated": true,
+  "config_reasoning": "时间配置: 考虑到DBS此项政策涉及SME业主、小贩、中产家庭及科技青年等多重利益相关者，模拟时长设为72小时以覆盖政策发布、深度讨论及反馈周期。高峰期设定在午间（午餐社交）及晚间（家庭社交），早间时段包含通勤高峰。鉴于新加坡与中国无时差，作息完全一致，深夜活跃度设为最低。 | 事件配置: The simulation captures the tension between immediate economic anxiety (inflation/taxes) and long-term strategic goals (AI). By using diverse poster types, we reflect the likely 'Singaporean Swarm' response: pragmatic gratitude for cash, but high skepticism toward corporate altruism and the 'relevance' of AI for traditional businesses. | Agent配置: 成功生成 75 个 | 初始帖子分配: 5 个帖子已分配发布者",
+  "current_round": 0,
+  "twitter_status": "not_started",
+  "reddit_status": "not_started",
+  "created_at": "2026-05-13T03:29:48.688665",
+  "updated_at": "2026-05-13T03:52:19.323575",
+  "error": null
+}

@@ -1,0 +1,56 @@
+### 1. Executive Summary
+This image is an informational infographic from a financial institution outlining a proactive security strategy to combat fraud. It contrasts scammer tactics (urgency and pressure) with the institution's "intentional pauses"—specific security features designed to slow down transactions and allow for customer verification. The graphic details three specific anti-scam mechanisms: digiVault, Mobile wallet setup protocols, and Cooling periods.
+
+### 2. OCR / Text Extraction
+**Main Headlines:**
+*   Scammers rush people.
+*   We take a pause, on purpose.
+
+**Introductory Text:**
+*   Scams often rely on fear, urgency and authority to push victims into acting fast.
+*   That’s why we build in intentional pauses at higher risk moments — giving customers time to stop, think and verify.
+
+**Feature 1: digiVault**
+*   **Heading:** digiVault:
+*   **Body:** lock your savings so they can only be unlocked in person at ATMs, VTMs or branches.
+
+**Feature 2: Mobile wallet setup**
+*   **Heading:** Mobile wallet setup:
+*   **Body:** adding a new card requires permission in digibank and must be completed within 10 minutes — helping prevent misuse.
+
+**Feature 3: Cooling periods**
+*   **Heading:** Cooling periods:
+*   **Body:** the 12-hour waiting period helps deter impulsive decisions, giving customers time to assess the situation calmly and carefully.
+*   **Icon Text:** 12 hours
+
+### 3. Entity Identification
+*   **Organizations:** Unnamed financial institution (referred to as "We").
+*   **Products/Services:**
+    *   digiVault (Security feature for savings)
+    *   digibank (Digital banking application)
+    *   Mobile wallet (Payment service)
+*   **Infrastructure/Touchpoints:**
+    *   ATMs (Automated Teller Machines)
+    *   VTMs (Video Teller Machines)
+    *   Branches (Physical bank locations)
+*   **Stakeholders:**
+    *   Scammers (Threat actors)
+    *   Customers (Users/Target audience)
+    *   Victims (Targets of scams)
+*   **Metrics / Temporal Data:**
+    *   10 minutes (Time limit for mobile wallet card addition)
+    *   12-hour (Duration of the cooling period)
+
+### 4. Structural Relationships
+*   **Counter-Measure Relationship:** The "intentional pauses" (Action) are designed to negate "fear, urgency and authority" (Tactics) used by "Scammers" (Entity).
+*   **Dependency:** "Mobile wallet setup" (Product) requires "permission in digibank" (Platform).
+*   **Physical Constraint:** "digiVault" (Product) assets can only be transitioned from a locked to an unlocked state via "ATMs, VTMs or branches" (Physical Infrastructure).
+*   **Temporal Constraint:** "Mobile wallet setup" (Process) has a expiration threshold of "10 minutes."
+*   **Temporal Constraint:** "Cooling periods" (Process) imposes a mandatory latency of "12-hour" on specific actions.
+
+### 5. Visual Data Translation
+The image utilizes a clean, three-column grid layout for its primary features, supported by symbolic icons:
+*   **Left Column (digiVault):** Accompanied by a line-art icon of a square vault/safe with a red circular dial.
+*   **Center Column (Mobile wallet setup):** Accompanied by a black smartphone icon featuring a red square notification badge with a white "+" symbol.
+*   **Right Column (Cooling periods):** Accompanied by a red circular clock icon with a directional arrow indicating a countdown or elapsed time, containing the text "12 hours."
+*   **Color Palette:** Primarily grayscale background with a textured, parchment-like finish; high-contrast red is used for primary headings and key icon elements to emphasize urgency and security.

@@ -1,0 +1,34 @@
+### 1. Executive Summary
+This image is an informational graphic from a social media awareness campaign regarding financial fraud. It serves as a counterpoint to a preceding message (implied by the word "BUT"), emphasizing that fraudulent activities are often long-term operations involving psychological manipulation ("coaching") rather than brief, isolated incidents. It categorizes specific scam types and advocates for a multi-layered defense strategy.
+
+### 2. OCR / Text Extraction
+*   **Heading 1:** BUT
+*   **Heading 2:** scammers don’t stop at 12 hours.
+*   **Body Text 1:** Many scams, like:
+    *   **List Item 1:** love scams
+    *   **List Item 2:** fake government or bank officials
+    *   **List Item 3:** investment scams
+*   **Body Text 2:** happen over days or weeks, with scammers coaching victims step by step.
+*   **Closing Statement:** That’s why **awareness and multiple protections** still matter.
+
+### 3. Entity Identification
+*   **Actors:** Scammers, Victims, Government Officials (impersonated), Bank Officials (impersonated).
+*   **Threat Categories (Scams):** Love scams, Investment scams, Impersonation scams (Government/Bank).
+*   **Processes:** Coaching (psychological manipulation), Scamming.
+*   **Temporal Metrics:** 12 hours, days, weeks.
+*   **Mitigation Entities:** Awareness, Multiple protections.
+
+### 4. Structural Relationships
+*   **Temporal Duration:** The "Scams" entity is linked to a duration exceeding "12 hours," specifically extending to "days or weeks."
+*   **Action/Methodology:** "Scammers" (Actor) utilize "coaching" (Method) to manipulate "victims" (Target).
+*   **Categorization:** "Love scams," "fake government or bank officials," and "investment scams" are defined as specific instances of the broader "scams" entity.
+*   **Causal Link:** The persistence and complexity of scam methods (Cause) necessitates "awareness" and "multiple protections" (Effect/Response).
+*   **Visual Hierarchy:** The word "BUT" is the primary visual anchor (largest font, red color), establishing a contrast with a prior context.
+
+### 5. Visual Data Translation
+*   **Layout:** Centered vertical stack on a light gray, textured/mottled background.
+*   **Typography:** Sans-serif font used throughout.
+*   **Color Logic:**
+    *   **Red:** Used for high-emphasis elements ("BUT"), bullet points, and critical mitigation concepts ("awareness and multiple protections").
+    *   **Black:** Used for standard descriptive text and the primary assertion regarding scam duration.
+*   **Information Design:** The list of scam types is indented with red circular bullets to differentiate specific examples from the general narrative text.

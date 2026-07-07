@@ -1,0 +1,5 @@
+[09:32:49] INFO: 报告已保存: report_248e5e348848
+[09:32:49] INFO: 开始规划报告大纲...
+[09:32:50] ERROR: 报告生成失败: Couldn't connect to localhost:7687 (resolved to ()):
+Failed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [Errno 111] Connection refused)
+[09:32:50] INFO: 报告已保存: report_248e5e348848

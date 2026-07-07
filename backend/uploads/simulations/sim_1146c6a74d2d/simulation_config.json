@@ -1,0 +1,420 @@
+{
+  "simulation_id": "sim_1146c6a74d2d",
+  "project_id": "proj_690827143c44",
+  "graph_id": "mirofish_local_7fad49e75ec444d6",
+  "simulation_requirement": "Predict what happens to the world if a talking animal is discovered.",
+  "time_config": {
+    "total_simulation_hours": 10,
+    "minutes_per_round": 60,
+    "agents_per_hour_min": 3,
+    "agents_per_hour_max": 9,
+    "peak_hours": [
+      19,
+      20,
+      21,
+      22
+    ],
+    "peak_activity_multiplier": 1.5,
+    "off_peak_hours": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "off_peak_activity_multiplier": 0.05,
+    "morning_hours": [
+      6,
+      7,
+      8
+    ],
+    "morning_activity_multiplier": 0.4,
+    "work_hours": [
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+    ],
+    "work_activity_multiplier": 0.7
+  },
+  "agent_configs": [
+    {
+      "agent_id": 0,
+      "entity_uuid": "ent_ef3a21eb5451ae1c",
+      "entity_name": "TalkingAnimal",
+      "entity_type": "TalkingAnimal",
+      "activity_level": 0.5,
+      "posts_per_hour": 0.2,
+      "comments_per_hour": 0.5,
+      "active_hours": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "response_delay_min": 30,
+      "response_delay_max": 120,
+      "sentiment_bias": 0.1,
+      "stance": "neutral",
+      "influence_weight": 2.0
+    },
+    {
+      "agent_id": 1,
+      "entity_uuid": "ent_9f65d786788efbbb",
+      "entity_name": "The Scientific Community",
+      "entity_type": "Scientist",
+      "activity_level": 0.3,
+      "posts_per_hour": 0.1,
+      "comments_per_hour": 0.3,
+      "active_hours": [
+        9,
+        10,
+        11,
+        14,
+        15,
+        16,
+        17
+      ],
+      "response_delay_min": 60,
+      "response_delay_max": 180,
+      "sentiment_bias": 0.0,
+      "stance": "observer",
+      "influence_weight": 2.6
+    },
+    {
+      "agent_id": 2,
+      "entity_uuid": "ent_af09f3015887c994",
+      "entity_name": "The State",
+      "entity_type": "Organization",
+      "activity_level": 0.1,
+      "posts_per_hour": 0.05,
+      "comments_per_hour": 0.1,
+      "active_hours": [
+        9,
+        10,
+        11,
+        14,
+        15,
+        16,
+        17
+      ],
+      "response_delay_min": 120,
+      "response_delay_max": 240,
+      "sentiment_bias": -0.3,
+      "stance": "opposing",
+      "influence_weight": 3.0
+    },
+    {
+      "agent_id": 3,
+      "entity_uuid": "ent_b60734c65c908a70",
+      "entity_name": "The Market",
+      "entity_type": "Corporation",
+      "activity_level": 0.3,
+      "posts_per_hour": 0.2,
+      "comments_per_hour": 0.4,
+      "active_hours": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "response_delay_min": 45,
+      "response_delay_max": 120,
+      "sentiment_bias": 0.5,
+      "stance": "supportive",
+      "influence_weight": 2.2
+    },
+    {
+      "agent_id": 4,
+      "entity_uuid": "ent_72627ea036922f0b",
+      "entity_name": "The Ethical Front",
+      "entity_type": "Organization",
+      "activity_level": 0.5,
+      "posts_per_hour": 0.5,
+      "comments_per_hour": 1.2,
+      "active_hours": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "response_delay_min": 15,
+      "response_delay_max": 60,
+      "sentiment_bias": -0.4,
+      "stance": "opposing",
+      "influence_weight": 1.8
+    },
+    {
+      "agent_id": 5,
+      "entity_uuid": "ent_d7eb5f483aff4325",
+      "entity_name": "BBC",
+      "entity_type": "Organization",
+      "activity_level": 0.5,
+      "posts_per_hour": 0.8,
+      "comments_per_hour": 0.5,
+      "active_hours": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "response_delay_min": 5,
+      "response_delay_max": 30,
+      "sentiment_bias": 0.0,
+      "stance": "observer",
+      "influence_weight": 2.5
+    },
+    {
+      "agent_id": 6,
+      "entity_uuid": "ent_4b514320999ba19f",
+      "entity_name": "social media giants",
+      "entity_type": "Corporation",
+      "activity_level": 0.2,
+      "posts_per_hour": 0.1,
+      "comments_per_hour": 0.2,
+      "active_hours": [
+        9,
+        10,
+        11,
+        14,
+        15,
+        16,
+        17
+      ],
+      "response_delay_min": 60,
+      "response_delay_max": 240,
+      "sentiment_bias": 0.0,
+      "stance": "neutral",
+      "influence_weight": 2.8
+    },
+    {
+      "agent_id": 7,
+      "entity_uuid": "ent_02296267fe30e60c",
+      "entity_name": "Influencers",
+      "entity_type": "Person",
+      "activity_level": 0.6,
+      "posts_per_hour": 1.5,
+      "comments_per_hour": 3.0,
+      "active_hours": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "response_delay_min": 5,
+      "response_delay_max": 20,
+      "sentiment_bias": 0.4,
+      "stance": "supportive",
+      "influence_weight": 1.7
+    },
+    {
+      "agent_id": 8,
+      "entity_uuid": "ent_298d94eb1f084349",
+      "entity_name": "The Spiritual Front",
+      "entity_type": "Organization",
+      "activity_level": 0.2,
+      "posts_per_hour": 0.1,
+      "comments_per_hour": 0.2,
+      "active_hours": [
+        8,
+        9,
+        10,
+        11,
+        14,
+        15,
+        16,
+        17
+      ],
+      "response_delay_min": 120,
+      "response_delay_max": 360,
+      "sentiment_bias": -0.2,
+      "stance": "opposing",
+      "influence_weight": 1.5
+    },
+    {
+      "agent_id": 9,
+      "entity_uuid": "ent_d241a14243ab97f2",
+      "entity_name": "Media Outlets",
+      "entity_type": "Organization",
+      "activity_level": 0.6,
+      "posts_per_hour": 1.2,
+      "comments_per_hour": 0.8,
+      "active_hours": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "response_delay_min": 5,
+      "response_delay_max": 20,
+      "sentiment_bias": 0.0,
+      "stance": "observer",
+      "influence_weight": 2.1
+    },
+    {
+      "agent_id": 10,
+      "entity_uuid": "ent_97546bdc5cc2b05e",
+      "entity_name": "Everyday people",
+      "entity_type": "Person",
+      "activity_level": 0.8,
+      "posts_per_hour": 0.5,
+      "comments_per_hour": 5.0,
+      "active_hours": [
+        7,
+        8,
+        9,
+        12,
+        13,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "response_delay_min": 1,
+      "response_delay_max": 15,
+      "sentiment_bias": 0.0,
+      "stance": "neutral",
+      "influence_weight": 1.0
+    }
+  ],
+  "event_config": {
+    "initial_posts": [
+      {
+        "content": "Preliminary analysis of the subject's vocal apparatus suggests high-level cognitive synthesis. This is the greatest breakthrough in linguistics and evolutionary biology in human history.",
+        "poster_type": "Scientist",
+        "poster_agent_id": 1
+      },
+      {
+        "content": "The biological entity is currently under secure observation. The State is reviewing existing wildlife and administrative statutes to determine its legal categorization and ensure public order.",
+        "poster_type": "Organization",
+        "poster_agent_id": 2
+      },
+      {
+        "content": "Speech implies consciousness. We demand the immediate recognition of legal personhood and the cessation of all containment and scientific exploitation. #AnimalRights #Personhood",
+        "poster_type": "Organization",
+        "poster_agent_id": 4
+      },
+      {
+        "content": "We are thrilled to explore the market valuation of this phenomenon. From exclusive media rights to genetic branding, this discovery represents a new frontier for global entertainment.",
+        "poster_type": "Corporation",
+        "poster_agent_id": 3
+      },
+      {
+        "content": "GUYS! I just got a leaked clip of the animal actually speaking! This is not a drill! Check the link in bio before it gets taken down! #TalkingAnimal #Viral",
+        "poster_type": "Person",
+        "poster_agent_id": 7
+      },
+      {
+        "content": "The discovery of speech in a non-human entity raises profound metaphysical questions. We must convene to discuss: does a talking animal possess a soul in the eyes of the Creator?",
+        "poster_type": "Organization",
+        "poster_agent_id": 5
+      },
+      {
+        "content": "I honestly don't know what to believe anymore. If it can talk, does it have to follow the law? Can it vote? My head is spinning.",
+        "poster_type": "Person",
+        "poster_agent_id": 10
+      }
+    ],
+    "scheduled_events": [],
+    "hot_topics": [
+      "TalkingAnimal",
+      "Non-human Personhood",
+      "Animal Rights",
+      "Biological Breakthrough",
+      "State Regulation",
+      "Commercialization of Life",
+      "Theological Soul Debate"
+    ],
+    "narrative_direction": "The discovery of a talking animal triggers a global crisis of definition. Public discourse rapidly shifts from initial shock to a fierce battle over whether the entity is a 'person' with rights, a 'subject' for science, a 'commercial asset' for corporations, or a 'security threat' to be regulated by the state."
+  },
+  "twitter_config": {
+    "platform": "twitter",
+    "recency_weight": 0.4,
+    "popularity_weight": 0.3,
+    "relevance_weight": 0.3,
+    "viral_threshold": 10,
+    "echo_chamber_strength": 0.5
+  },
+  "reddit_config": {
+    "platform": "reddit",
+    "recency_weight": 0.3,
+    "popularity_weight": 0.4,
+    "relevance_weight": 0.3,
+    "viral_threshold": 15,
+    "echo_chamber_strength": 0.6
+  },
+  "llm_model": "gemini-3-flash-preview",
+  "llm_base_url": "https://generativelanguage.googleapis.com/v1beta/openai/v1",
+  "generated_at": "2026-05-21T14:33:38.539313",
+  "generation_reasoning": "时间配置: 会说话的动物发现属于世界级重大突发事件，设置96小时（4天）以覆盖从最初曝光、官方介入到全球舆论极化完整周期。时间分配符合中国社交媒体用户习惯：早晨为资讯爆发期，工作时间是政府、科研机构与企业博弈的主战场，晚间21点左右达到公众讨论与网红营销的最高峰。考虑到事件的全球影响力和媒体24小时轮班制，深夜活跃度虽低但仍保留最低激活数以模拟国际资讯倒灌。 | 事件配置: The event configuration captures the friction between five sectors: scientific curiosity, state control, corporate greed, ethical advocacy, and spiritual questioning. Poster types were strictly mapped to the provided entity categories to ensure simulation compatibility. | Agent配置: 成功生成 11 个 | 初始帖子分配: 7 个帖子已分配发布者"
+}

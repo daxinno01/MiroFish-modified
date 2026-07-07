@@ -1,0 +1,26 @@
+{
+  "simulation_id": "sim_6210a2619f2b",
+  "project_id": "proj_3a7e8fcf1da5",
+  "graph_id": "mirofish_local_34aaa63a957345ef",
+  "enable_twitter": true,
+  "enable_reddit": true,
+  "status": "stopped",
+  "entities_count": 12,
+  "profiles_count": 12,
+  "entity_types": [
+    "Organization",
+    "Person",
+    "Scientist",
+    "Activist",
+    "TalkingAnimal",
+    "Corporation"
+  ],
+  "config_generated": true,
+  "config_reasoning": "时间配置: 会说话的动物发现属于改变人类文明定义的重大事件，120小时（5天）足以模拟从最初的病毒式传播到机构介入、法律辩论及宗教冲突的演化过程。活跃度配置符合中国社交媒体用户习惯：晚间19-22点是‘普通人’与‘网红’争论的高峰；9-18点工作时间则是‘政府’、‘科学家’及‘市场机构’进行行政决策、研究及商业估值的主战场；凌晨保留低限度活跃以模拟全球性媒体的持续滚动报道。 | 事件配置: The topics and posts reflect the friction between the five sectors identified in the background. The poster_type values are strictly mapped to the provided categories: Organization (for media and state), Scientist (for researchers), Corporation (for market interests), Person (for influencers, spiritual leaders, and the public), and TalkingAnimal (for the discovery itself). | Agent配置: 成功生成 12 个 | 初始帖子分配: 9 个帖子已分配发布者",
+  "current_round": 0,
+  "twitter_status": "not_started",
+  "reddit_status": "not_started",
+  "created_at": "2026-05-21T16:19:56.178597",
+  "updated_at": "2026-05-21T17:27:58.578577",
+  "error": null
+}

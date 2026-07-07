@@ -1,0 +1,27 @@
+[17:27:14] INFO: 报告已保存: report_c09a34744ae8
+[17:27:14] INFO: 开始规划报告大纲...
+[17:27:26] INFO: 大纲规划完成: 4 个章节
+[17:27:26] INFO: 大纲已保存: report_c09a34744ae8
+[17:27:26] INFO: 大纲已保存: report_c09a34744ae8
+[17:27:26] INFO: 报告已保存: report_c09a34744ae8
+[17:27:26] INFO: 大纲已保存到文件: report_c09a34744ae8/outline.json
+[17:27:26] INFO: ReACT生成章节: 舆论轨迹：从“技术奇观”到“信任危机”的七日演变
+[17:27:38] INFO: 执行工具: panorama_search, 参数: {'query': 'DBS GenAI anti-scam video 7-day sentiment trajectory and key events'}
+[17:27:48] INFO: 执行工具: insight_forge, 参数: {'query': 'Analyze the irony of using GenAI to fight GenAI scams in DBS campaign and its impact on elderly trust', 'report_context': "Deep dive into the 'Irony vs Innovation' debate and its specific impact on the elderly demographic's perception of the anti-scam message."}
+[17:27:48] INFO: 执行工具: interview_agents, 参数: {'interview_topic': 'How do you feel about DBS using a fully AI-generated video to teach you about avoiding AI scams? Does it make you trust the bank more or less?', 'max_agents': 5}
+[17:30:12] WARNING: 章节 舆论轨迹：从“技术奇观”到“信任危机”的七日演变 达到最大迭代次数，强制生成
+[17:30:23] INFO: ReACT生成章节: 平台极化现象：TikTok的视觉狂欢与Reddit的深度解构
+[17:30:29] INFO: 执行工具: insight_forge, 参数: {'query': 'TikTok and Reddit reactions to DBS GenAI campaign, including the 1:14 artifact and local creative sentiment', 'report_context': 'Analyzing platform polarization between short-form viral content and long-form technical/ethical deconstruction.'}
+[17:30:30] INFO: 执行工具: interview_agents, 参数: {'interview_topic': 'What is your opinion on DBS using GenAI instead of local actors for an anti-scam video, and did you notice any technical glitches?', 'max_agents': 5}
+[17:32:23] INFO: 执行工具: panorama_search, 参数: {'query': 'DBS GenAI campaign narrative jump from Reddit to Mothership and social media response'}
+[17:32:24] INFO: 执行工具: quick_search, 参数: {'query': 'DBS GenAI video 1:14 mark artifact description and public reaction'}
+[17:32:24] INFO: 执行工具: insight_forge, 参数: {'query': 'Elderly reaction to DBS GenAI campaign on Facebook and WhatsApp after seeing mainstream media reports', 'report_context': 'Evaluating the efficacy of the scam warning for the target demographic.'}
+[17:33:14] WARNING: 章节 平台极化现象：TikTok的视觉狂欢与Reddit的深度解构 达到最大迭代次数，强制生成
+[17:33:24] INFO: 子章节已生成: 平台极化现象：TikTok的视觉狂欢与Reddit的深度解构
+[17:33:24] INFO: ReACT生成章节: 情感阈值拐点：1:14秒“穿帮镜头”引发的叙事崩塌
+[17:33:29] WARNING: Attempt 1 failed for 情感阈值拐点：1:14秒“穿帮镜头”引发的叙事崩塌. Retrying...
+[17:33:33] WARNING: Attempt 2 failed for 情感阈值拐点：1:14秒“穿帮镜头”引发的叙事崩塌. Retrying...
+[17:33:37] WARNING: Attempt 3 failed for 情感阈值拐点：1:14秒“穿帮镜头”引发的叙事崩塌. Retrying...
+[17:33:37] ERROR: 报告生成失败: API consistently returned 0 tokens for: 情感阈值拐点：1:14秒“穿帮镜头”引发的叙事崩塌
+[17:33:37] INFO: 大纲已保存: report_c09a34744ae8
+[17:33:37] INFO: 报告已保存: report_c09a34744ae8

@@ -1,0 +1,266 @@
+{
+  "project_id": "proj_3a7e8fcf1da5",
+  "name": "Unnamed Project",
+  "status": "graph_completed",
+  "created_at": "2026-05-21T16:15:54.388323",
+  "updated_at": "2026-05-21T16:19:50.155927",
+  "files": [
+    {
+      "filename": "background.txt",
+      "size": 3686
+    }
+  ],
+  "total_text_length": 3571,
+  "ontology": {
+    "entity_types": [
+      {
+        "name": "TalkingAnimal",
+        "description": "A non-human biological entity capable of human-like speech and advanced cognitive reasoning.",
+        "attributes": [
+          {
+            "name": "biological_species",
+            "type": "text",
+            "description": "The biological classification of the animal."
+          },
+          {
+            "name": "cognitive_level",
+            "type": "text",
+            "description": "Assessment of the animal's reasoning and social interaction capabilities."
+          }
+        ],
+        "examples": [
+          "The First Speaking Chimpanzee",
+          "The Talking Dolphin"
+        ]
+      },
+      {
+        "name": "Scientist",
+        "description": "Researchers and academics specializing in evolutionary biology, cognitive science, or linguistics.",
+        "attributes": [
+          {
+            "name": "research_field",
+            "type": "text",
+            "description": "The specific area of scientific expertise."
+          },
+          {
+            "name": "academic_rank",
+            "type": "text",
+            "description": "The professional standing of the scientist."
+          }
+        ],
+        "examples": [
+          "Dr. Jane Smith (Evolutionary Biologist)",
+          "Professor Alan Turing (Cognitive Scientist)"
+        ]
+      },
+      {
+        "name": "GovernmentAgency",
+        "description": "National security and administrative bodies tasked with regulation and public order.",
+        "attributes": [
+          {
+            "name": "official_title",
+            "type": "text",
+            "description": "The formal name of the government department."
+          },
+          {
+            "name": "authority_level",
+            "type": "text",
+            "description": "The scope of the agency's jurisdiction (e.g., National, International)."
+          }
+        ],
+        "examples": [
+          "Department of Wildlife Management",
+          "National Security Council"
+        ]
+      },
+      {
+        "name": "Corporation",
+        "description": "Commercial entities seeking to monetize the discovery through media or biotechnology.",
+        "attributes": [
+          {
+            "name": "industry_type",
+            "type": "text",
+            "description": "The primary business sector of the company."
+          },
+          {
+            "name": "market_valuation",
+            "type": "text",
+            "description": "The estimated financial worth of the entity."
+          }
+        ],
+        "examples": [
+          "Global Entertainment Empire",
+          "BioGenetics Corp"
+        ]
+      },
+      {
+        "name": "MediaOutlet",
+        "description": "Traditional journalism networks that shape the national narrative.",
+        "attributes": [
+          {
+            "name": "outlet_type",
+            "type": "text",
+            "description": "The medium of the outlet (e.g., TV, Newspaper, Digital)."
+          },
+          {
+            "name": "bias_rating",
+            "type": "text",
+            "description": "The perceived editorial stance of the outlet."
+          }
+        ],
+        "examples": [
+          "BBC News",
+          "The New York Times"
+        ]
+      },
+      {
+        "name": "Influencer",
+        "description": "Social media figures who drive viral trends and crowdsource public attention.",
+        "attributes": [
+          {
+            "name": "social_platform",
+            "type": "text",
+            "description": "The primary platform where the influencer is active."
+          },
+          {
+            "name": "follower_count",
+            "type": "text",
+            "description": "The size of the influencer's digital audience."
+          }
+        ],
+        "examples": [
+          "TechReviewerX",
+          "ViralTrendSetter"
+        ]
+      },
+      {
+        "name": "Activist",
+        "description": "Individuals or grassroots groups defending the moral and civil rights of the animal.",
+        "attributes": [
+          {
+            "name": "cause_description",
+            "type": "text",
+            "description": "The specific ethical or legal goal of the activist."
+          },
+          {
+            "name": "advocacy_method",
+            "type": "text",
+            "description": "The primary way the activist takes action (e.g., Protests, Legal suits)."
+          }
+        ],
+        "examples": [
+          "Animal Rights Defender",
+          "Legal Personhood Advocate"
+        ]
+      },
+      {
+        "name": "ReligiousLeader",
+        "description": "Clerical authorities providing theological interpretations of the discovery.",
+        "attributes": [
+          {
+            "name": "faith_tradition",
+            "type": "text",
+            "description": "The religion or belief system represented."
+          },
+          {
+            "name": "theological_view",
+            "type": "text",
+            "description": "The stance on the animal's soul or spiritual status."
+          }
+        ],
+        "examples": [
+          "The Archbishop",
+          "Spiritual Guru"
+        ]
+      },
+      {
+        "name": "Person",
+        "description": "A general individual or citizen not fitting into specific professional categories.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The name of the individual."
+          },
+          {
+            "name": "personal_bio",
+            "type": "text",
+            "description": "A brief description of the person's background."
+          }
+        ],
+        "examples": [
+          "John Doe",
+          "Concerned Citizen"
+        ]
+      },
+      {
+        "name": "Organization",
+        "description": "A general collective or group not fitting into specific institutional categories.",
+        "attributes": [
+          {
+            "name": "org_name",
+            "type": "text",
+            "description": "The name of the organization."
+          },
+          {
+            "name": "legal_type",
+            "type": "text",
+            "description": "The legal status (e.g., NGO, Club, Association)."
+          }
+        ],
+        "examples": [
+          "Local Community Club",
+          "International Ethics Committee"
+        ]
+      }
+    ],
+    "edge_types": [
+      {
+        "name": "STUDIES",
+        "description": "Scientific observation or research conducted on the animal.",
+        "source_targets": [
+          {
+            "source": "Scientist",
+            "target": "TalkingAnimal"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "REGULATES",
+        "description": "Legal or administrative control exercised over an entity.",
+        "source_targets": [
+          {
+            "source": "GovernmentAgency",
+            "target": "TalkingAnimal"
+          },
+          {
+            "source": "GovernmentAgency",
+            "target": "Corporation"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "MONETIZES",
+        "description": "Attempts to derive financial profit from the discovery.",
+        "source_targets": [],
+        "attributes": []
+      }
+    ]
+  },
+  "analysis_summary": "",
+  "graph_id": "mirofish_local_34aaa63a957345ef",
+  "graph_build_task_id": "1476b146-9ccf-4ab2-b81f-ada59a0fe713",
+  "simulation_requirement": "Predict what happens to the world if a talking animal is discovered.",
+  "chunk_size": 500,
+  "chunk_overlap": 50,
+  "error": null,
+  "token_usage": {
+    "prompt_tokens": 7373,
+    "completion_tokens": 3679,
+    "total_tokens": 11052,
+    "call_count": 13,
+    "last_updated": "2026-05-21T16:19:49.185776"
+  }
+}

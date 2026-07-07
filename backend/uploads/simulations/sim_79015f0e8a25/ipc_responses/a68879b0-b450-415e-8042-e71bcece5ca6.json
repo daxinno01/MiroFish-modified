@@ -1,0 +1,24 @@
+{
+  "command_id": "a68879b0-b450-415e-8042-e71bcece5ca6",
+  "status": "completed",
+  "result": {
+    "interviews_count": 2,
+    "results": {
+      "twitter_2": {
+        "agent_id": 2,
+        "response": "At DBS, we view the integration of AI not as a replacement for human talent, but as a fundamental component of our **\"Digital-first mindset.\"** From my perspective, AI will act as a powerful co-pilot, driving a shift in the nature of work from the transactional to the transformational.\n\nFor employees, this means the automation of routine, repetitive tasks, which in turn liberates them to focus on higher-value activities—such as complex problem-solving, empathetic client engagement, and strategic decision-making. These are areas where human intuition and judgment remain unparalleled. \n\nHowever, this transition requires **\"Strategic resilience.\"** The impact on employees will be a journey of continuous upskilling and reskilling. We must foster a culture of lifelong learning to ensure no one is left behind as the landscape evolves. At the end of the day, leveraging technology to empower our people and deliver superior value to our stakeholders **is our top priority.**",
+        "timestamp": 46,
+        "platform": "twitter"
+      },
+      "reddit_2": {
+        "agent_id": 2,
+        "response": "At DBS, we view AI not as a disruptor of headcount, but as a catalyst for a fundamental **“Digital-first mindset”** shift. As we have seen with the successful operationalization of our “Alpha” squads, jobs are evolving from execution-heavy roles to those focused on strategic oversight and complex risk management.\n\nFor our employees, this means a transition toward high-value work. AI handles the data-heavy lifting, allowing our people to focus on what truly differentiates us: strategic empathy, strategic resilience, and long-term relationship building—particularly in sectors like wealth management and SME ecosystem support. \n\nHowever, this transition requires a disciplined commitment to constant reskilling. We believe that technology should empower, not replace. By automating the routine, we allow our talent to focus on driving ROI and managing the nuances of a volatile macro environment. Building a future-ready workforce that is as comfortable with data-driven insights as they are with strategic decision-making is essential to our long-term success.\n\nEnsuring our people are equipped to lead through this technological evolution while maintaining our operational excellence **is our top priority.**",
+        "timestamp": "2026-05-02 12:50:50.221902",
+        "platform": "reddit"
+      }
+    },
+    "total_requested": 1
+  },
+  "error": null,
+  "timestamp": "2026-04-29T18:00:03.843702"
+}

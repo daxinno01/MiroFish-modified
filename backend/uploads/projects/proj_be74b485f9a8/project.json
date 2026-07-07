@@ -1,0 +1,357 @@
+{
+  "project_id": "proj_be74b485f9a8",
+  "name": "Unnamed Project",
+  "status": "graph_completed",
+  "created_at": "2026-04-29T16:29:24.928672",
+  "updated_at": "2026-04-29T16:41:27.842097",
+  "files": [
+    {
+      "filename": "DBS Earnings Prediction Research Plan.pdf",
+      "size": 422064
+    }
+  ],
+  "total_text_length": 30358,
+  "ontology": {
+    "entity_types": [
+      {
+        "name": "Bank",
+        "description": "Major banking institutions that provide financial services and release earnings reports.",
+        "attributes": [
+          {
+            "name": "official_name",
+            "type": "text",
+            "description": "The full legal name of the bank."
+          },
+          {
+            "name": "stock_ticker",
+            "type": "text",
+            "description": "The stock market identifier (e.g., D05.SI)."
+          },
+          {
+            "name": "market_cap_level",
+            "type": "text",
+            "description": "The valuation category of the bank."
+          }
+        ],
+        "examples": [
+          "DBS Group Holdings",
+          "UOB",
+          "OCBC"
+        ]
+      },
+      {
+        "name": "BankExecutive",
+        "description": "High-level leaders within a bank who influence strategy and public perception.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The name of the executive."
+          },
+          {
+            "name": "job_title",
+            "type": "text",
+            "description": "The specific leadership role held."
+          },
+          {
+            "name": "leadership_tenure",
+            "type": "text",
+            "description": "Duration of their leadership or start date."
+          }
+        ],
+        "examples": [
+          "Tan Su Shan",
+          "Piyush Gupta"
+        ]
+      },
+      {
+        "name": "FinancialAnalyst",
+        "description": "Experts or firms that provide market forecasts, ratings, and earnings estimates.",
+        "attributes": [
+          {
+            "name": "expert_name",
+            "type": "text",
+            "description": "The name of the analyst or the research entity."
+          },
+          {
+            "name": "firm_affiliation",
+            "type": "text",
+            "description": "The financial institution they represent."
+          },
+          {
+            "name": "forecast_bias",
+            "type": "text",
+            "description": "General sentiment of their outlook (e.g., Bullish, Bearish)."
+          }
+        ],
+        "examples": [
+          "Bloomberg Analyst",
+          "UOB Kay Hian Research",
+          "S&P Global Ratings"
+        ]
+      },
+      {
+        "name": "NewsAgency",
+        "description": "Media organizations that report financial news and influence public opinion.",
+        "attributes": [
+          {
+            "name": "outlet_name",
+            "type": "text",
+            "description": "The name of the media outlet."
+          },
+          {
+            "name": "media_reach",
+            "type": "text",
+            "description": "The scale of the audience (e.g., Regional, Global)."
+          }
+        ],
+        "examples": [
+          "The Business Times",
+          "The Straits Times",
+          "CNBC"
+        ]
+      },
+      {
+        "name": "Regulator",
+        "description": "Government bodies that oversee financial stability and digital banking standards.",
+        "attributes": [
+          {
+            "name": "agency_name",
+            "type": "text",
+            "description": "The name of the regulatory body."
+          },
+          {
+            "name": "regulatory_focus",
+            "type": "text",
+            "description": "The primary area of oversight (e.g., Monetary Policy, IT Risk)."
+          }
+        ],
+        "examples": [
+          "Monetary Authority of Singapore (MAS)",
+          "HKMA"
+        ]
+      },
+      {
+        "name": "GovernmentMinistry",
+        "description": "State departments that release macroeconomic data affecting the banking sector.",
+        "attributes": [
+          {
+            "name": "ministry_name",
+            "type": "text",
+            "description": "The name of the government department."
+          },
+          {
+            "name": "data_released",
+            "type": "text",
+            "description": "The type of economic indicators they publish (e.g., GDP)."
+          }
+        ],
+        "examples": [
+          "Ministry of Trade and Industry (MTI)",
+          "Enterprise Singapore"
+        ]
+      },
+      {
+        "name": "InvestmentFirm",
+        "description": "Institutional entities that hold significant shares and influence market liquidity.",
+        "attributes": [
+          {
+            "name": "firm_name",
+            "type": "text",
+            "description": "The name of the investment company."
+          },
+          {
+            "name": "holding_type",
+            "type": "text",
+            "description": "The nature of their investment (e.g., Sovereign Wealth Fund)."
+          }
+        ],
+        "examples": [
+          "Temasek Holdings",
+          "Morgan Stanley"
+        ]
+      },
+      {
+        "name": "CorporateClient",
+        "description": "Business entities that use bank services and are affected by bank initiatives.",
+        "attributes": [
+          {
+            "name": "company_name",
+            "type": "text",
+            "description": "The name of the client company."
+          },
+          {
+            "name": "industry_sector",
+            "type": "text",
+            "description": "The business sector (e.g., SME, Manufacturing)."
+          }
+        ],
+        "examples": [
+          "Singapore Refining Co.",
+          "Local SME"
+        ]
+      },
+      {
+        "name": "Person",
+        "description": "Individual retail investors, customers, or netizens participating in social discourse.",
+        "attributes": [
+          {
+            "name": "display_handle",
+            "type": "text",
+            "description": "The social media username or identifier."
+          },
+          {
+            "name": "investor_type",
+            "type": "text",
+            "description": "Category of individual (e.g., Retail Investor, Bank Customer)."
+          }
+        ],
+        "examples": [
+          "Retail Investor A",
+          "Disgruntled Customer",
+          "Financial Influencer"
+        ]
+      },
+      {
+        "name": "Organization",
+        "description": "General groups, associations, or non-specific entities involved in the event.",
+        "attributes": [
+          {
+            "name": "org_title",
+            "type": "text",
+            "description": "The name of the group or collective."
+          },
+          {
+            "name": "group_interest",
+            "type": "text",
+            "description": "The primary concern of the organization."
+          }
+        ],
+        "examples": [
+          "IMDA",
+          "Singapore Alumnae Association"
+        ]
+      }
+    ],
+    "edge_types": [
+      {
+        "name": "REPORTS_ON",
+        "description": "A media outlet reporting news or earnings results about a bank.",
+        "source_targets": [
+          {
+            "source": "NewsAgency",
+            "target": "Bank"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "ANALYZES",
+        "description": "An analyst providing a financial forecast or evaluation of a bank.",
+        "source_targets": [
+          {
+            "source": "FinancialAnalyst",
+            "target": "Bank"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "REGULATES",
+        "description": "A regulatory body overseeing the operations or compliance of a bank.",
+        "source_targets": [
+          {
+            "source": "Regulator",
+            "target": "Bank"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "WORKS_FOR",
+        "description": "An executive holding a leadership position within a bank.",
+        "source_targets": [
+          {
+            "source": "BankExecutive",
+            "target": "Bank"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "INVESTS_IN",
+        "description": "An individual or firm holding equity in a bank.",
+        "source_targets": [
+          {
+            "source": "InvestmentFirm",
+            "target": "Bank"
+          },
+          {
+            "source": "Person",
+            "target": "Bank"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "COMMENTS_ON",
+        "description": "Social media interaction where a person discusses a bank's performance or service.",
+        "source_targets": [
+          {
+            "source": "Person",
+            "target": "Bank"
+          },
+          {
+            "source": "Person",
+            "target": "BankExecutive"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "PARTNERS_WITH",
+        "description": "A bank collaborating with a client or government agency on a program.",
+        "source_targets": [
+          {
+            "source": "Bank",
+            "target": "CorporateClient"
+          },
+          {
+            "source": "Bank",
+            "target": "GovernmentMinistry"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "INFLUENCES",
+        "description": "Macroeconomic data or policy affecting the bank's operational environment.",
+        "source_targets": [
+          {
+            "source": "GovernmentMinistry",
+            "target": "Bank"
+          },
+          {
+            "source": "Regulator",
+            "target": "Bank"
+          }
+        ],
+        "attributes": []
+      }
+    ]
+  },
+  "analysis_summary": "该本体设计围绕星展银行（DBS）2026年第一季度财报发布事件，构建了包括银行主体、高管、分析师、媒体、监管机构及各类投资者在内的社交媒体舆论生态。重点突出了财报预测、高管更迭、数字化风险（如停机事件）以及宏观经济政策对社媒讨论的影响路径。",
+  "graph_id": "mirofish_local_fc32779e96724d57",
+  "graph_build_task_id": "f8e75a5a-d984-4bb8-be11-d08443dfe173",
+  "simulation_requirement": "Predict whether DBS' Q1 2026 will beat analyst estimates and simulate the stock price movement 24 hours post-release.",
+  "chunk_size": 500,
+  "chunk_overlap": 50,
+  "error": null,
+  "token_usage": {
+    "prompt_tokens": 54273,
+    "completion_tokens": 20847,
+    "total_tokens": 75120,
+    "call_count": 83,
+    "last_updated": "2026-04-29T16:41:27.347773"
+  }
+}

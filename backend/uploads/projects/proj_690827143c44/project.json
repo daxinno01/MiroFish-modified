@@ -1,0 +1,150 @@
+{
+  "project_id": "proj_690827143c44",
+  "name": "Unnamed Project",
+  "status": "graph_completed",
+  "created_at": "2026-05-21T14:17:46.493566",
+  "updated_at": "2026-05-21T14:20:33.842920",
+  "files": [
+    {
+      "filename": "background.txt",
+      "size": 3686
+    }
+  ],
+  "total_text_length": 3571,
+  "ontology": {
+    "entity_types": [
+      {
+        "name": "TalkingAnimal",
+        "description": "A non-human biological entity capable of human-like speech and advanced cognitive reasoning.",
+        "attributes": [
+          {
+            "name": "biological_species",
+            "type": "text",
+            "description": "The original species of the animal (e.g., Chimpanzee, Parrot)."
+          },
+          {
+            "name": "intelligence_level",
+            "type": "text",
+            "description": "The assessed cognitive capability compared to human standards."
+          }
+        ],
+        "examples": [
+          "Subject Zero",
+          "The Talking Crow"
+        ]
+      },
+      {
+        "name": "Scientist",
+        "description": "Researchers and academics specializing in biology, linguistics, or cognitive science.",
+        "attributes": [
+          {
+            "name": "research_field",
+            "type": "text",
+            "description": "The specific area of scientific expertise."
+          },
+          {
+            "name": "academic_affiliation",
+            "type": "text",
+            "description": "The university or research institute the scientist belongs to."
+          }
+        ],
+        "examples": [
+          "Dr. Jane Aris",
+          "Professor of Evolutionary Biology"
+        ]
+      },
+      {
+        "name": "GovernmentAgency",
+        "description": "State-run administrative or security bodies responsible for regulation and public order.",
+        "attributes": [
+          {
+            "name": "agency_function",
+            "type": "text",
+            "description": "The primary responsibility (e.g., National Security, Wildlife Management)."
+          },
+          {
+            "name": "jurisdiction_area",
+            "type": "text",
+            "description": "The geographic or legal scope of authority."
+          }
+        ],
+        "examples": [
+          "Department of Wildlife",
+          "National Intelligence Bureau"
+        ]
+      },
+      {
+        "name": "Corporation",
+        "description": "Commercial entities seeking to monetize the discovery through media or biotechnology.",
+        "attributes": [
+          {
+            "name": "market_sector",
+            "type": "text",
+            "description": "The industry the company operates in (e.g., Biotech, Entertainment)."
+          },
+          {
+            "name": "corporate_mission",
+            "type": "text",
+            "description": "The"
+          }
+        ],
+        "examples": []
+      },
+      {
+        "name": "Person",
+        "description": "Any individual person not fitting other specific person types.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "Full name of the person"
+          },
+          {
+            "name": "role",
+            "type": "text",
+            "description": "Role or occupation"
+          }
+        ],
+        "examples": [
+          "ordinary citizen",
+          "anonymous netizen"
+        ]
+      },
+      {
+        "name": "Organization",
+        "description": "Any organization not fitting other specific organization types.",
+        "attributes": [
+          {
+            "name": "org_name",
+            "type": "text",
+            "description": "Name of the organization"
+          },
+          {
+            "name": "org_type",
+            "type": "text",
+            "description": "Type of organization"
+          }
+        ],
+        "examples": [
+          "small business",
+          "community group"
+        ]
+      }
+    ],
+    "edge_types": []
+  },
+  "analysis_summary": "",
+  "graph_id": "mirofish_local_7fad49e75ec444d6",
+  "graph_build_task_id": "72c717a1-6063-43db-838f-26d1d553567b",
+  "simulation_requirement": "Predict what happens to the world if a talking animal is discovered.",
+  "chunk_size": 500,
+  "chunk_overlap": 50,
+  "error": null,
+  "token_usage": {
+    "prompt_tokens": 6797,
+    "completion_tokens": 2477,
+    "total_tokens": 9274,
+    "call_count": 13,
+    "last_updated": "2026-05-21T14:20:31.678920"
+  }
+}

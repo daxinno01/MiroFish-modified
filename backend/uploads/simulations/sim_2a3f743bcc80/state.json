@@ -1,0 +1,24 @@
+{
+  "simulation_id": "sim_2a3f743bcc80",
+  "project_id": "proj_cca0cc83a8c2",
+  "graph_id": "mirofish_local_92a39f0cff8046d0",
+  "enable_twitter": true,
+  "enable_reddit": true,
+  "status": "running",
+  "entities_count": 7,
+  "profiles_count": 7,
+  "entity_types": [
+    "Executive",
+    "Organization",
+    "Person",
+    "CommercialBank"
+  ],
+  "config_generated": true,
+  "config_reasoning": "时间配置: 该事件涉及银行巨额利润与高管巨额加薪的强烈对比，在通胀背景下极具社会敏感性。模拟时长设为7天（168小时）以完整观察从新闻爆发到社会情绪发酵及后续声誉风险演变。活跃度配置符合中国网民习惯：上午9-11点为专业人士（分析师、股东）关注财报的高峰，而晚间19-22点则是普通民众（低收入者、零售客户）在社交媒体表达不满和固定情绪的最高峰。声誉风险预计在48-72小时内达到峰值，主要愤怒点将集中在‘通胀压力下银行利润与平民生活负担的贫富差距’。 | 事件配置: 该配置模拟了从官方媒体报道到各利益相关方（银行、CEO、分析师、普通员工及客户）的多维反应。重点突出了‘业绩成功’与‘社会公平’之间的矛盾。poster_type 严格遵循了提供的实体类型：mothership/Global Finance/DBS Foundation/Union 归类为 Organization；Piyush Gupta 归类为 Executive；DBS Group 归类为 CommercialBank；Winnie Li 及普通民众/分析师归类为 Person。 | Agent配置: 成功生成 7 个 | 初始帖子分配: 10 个帖子已分配发布者",
+  "current_round": 0,
+  "twitter_status": "not_started",
+  "reddit_status": "not_started",
+  "created_at": "2026-05-12T01:23:55.346954",
+  "updated_at": "2026-05-12T01:27:26.823037",
+  "error": null
+}

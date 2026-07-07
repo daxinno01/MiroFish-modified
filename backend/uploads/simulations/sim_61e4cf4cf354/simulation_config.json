@@ -1,0 +1,417 @@
+{
+  "simulation_id": "sim_61e4cf4cf354",
+  "project_id": "proj_4119292215b4",
+  "graph_id": "mirofish_local_47cc684fbf284c50",
+  "simulation_requirement": "Predict what happens to the world if a talking animal is discovered.",
+  "time_config": {
+    "total_simulation_hours": 96,
+    "minutes_per_round": 60,
+    "agents_per_hour_min": 3,
+    "agents_per_hour_max": 9,
+    "peak_hours": [
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "peak_activity_multiplier": 1.5,
+    "off_peak_hours": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "off_peak_activity_multiplier": 0.05,
+    "morning_hours": [
+      6,
+      7,
+      8
+    ],
+    "morning_activity_multiplier": 0.4,
+    "work_hours": [
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+    ],
+    "work_activity_multiplier": 0.7
+  },
+  "agent_configs": [
+    {
+      "agent_id": 0,
+      "entity_uuid": "ent_d5157caf1ed4b838",
+      "entity_name": "Talking Animal",
+      "entity_type": "TalkingAnimal",
+      "activity_level": 0.2,
+      "posts_per_hour": 0.1,
+      "comments_per_hour": 0.2,
+      "active_hours": [
+        9,
+        10,
+        11,
+        14,
+        15,
+        16,
+        19,
+        20,
+        21
+      ],
+      "response_delay_min": 30,
+      "response_delay_max": 120,
+      "sentiment_bias": 0.1,
+      "stance": "observer",
+      "influence_weight": 3.0
+    },
+    {
+      "agent_id": 1,
+      "entity_uuid": "ent_4312f996fc2d5333",
+      "entity_name": "The Scientific Community",
+      "entity_type": "Scientist",
+      "activity_level": 0.5,
+      "posts_per_hour": 0.5,
+      "comments_per_hour": 1.2,
+      "active_hours": [
+        9,
+        10,
+        11,
+        14,
+        15,
+        16,
+        17,
+        19,
+        20,
+        21,
+        22
+      ],
+      "response_delay_min": 20,
+      "response_delay_max": 60,
+      "sentiment_bias": 0.3,
+      "stance": "supportive",
+      "influence_weight": 1.8
+    },
+    {
+      "agent_id": 2,
+      "entity_uuid": "ent_c251b39502dd5e18",
+      "entity_name": "Government",
+      "entity_type": "Organization",
+      "activity_level": 0.2,
+      "posts_per_hour": 0.2,
+      "comments_per_hour": 0.1,
+      "active_hours": [
+        9,
+        10,
+        11,
+        14,
+        15,
+        16,
+        17
+      ],
+      "response_delay_min": 60,
+      "response_delay_max": 240,
+      "sentiment_bias": -0.2,
+      "stance": "opposing",
+      "influence_weight": 2.8
+    },
+    {
+      "agent_id": 3,
+      "entity_uuid": "ent_58ea1065267764c5",
+      "entity_name": "Corporations",
+      "entity_type": "Corporation",
+      "activity_level": 0.5,
+      "posts_per_hour": 0.8,
+      "comments_per_hour": 0.5,
+      "active_hours": [
+        9,
+        10,
+        11,
+        13,
+        14,
+        15,
+        16,
+        17,
+        19,
+        20,
+        21
+      ],
+      "response_delay_min": 30,
+      "response_delay_max": 90,
+      "sentiment_bias": 0.5,
+      "stance": "supportive",
+      "influence_weight": 2.2
+    },
+    {
+      "agent_id": 4,
+      "entity_uuid": "ent_761ecfae0f8b7c35",
+      "entity_name": "Activists",
+      "entity_type": "Organization",
+      "activity_level": 0.7,
+      "posts_per_hour": 1.5,
+      "comments_per_hour": 3.0,
+      "active_hours": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "response_delay_min": 5,
+      "response_delay_max": 20,
+      "sentiment_bias": 0.6,
+      "stance": "supportive",
+      "influence_weight": 1.4
+    },
+    {
+      "agent_id": 5,
+      "entity_uuid": "ent_5ed11c625633bc9c",
+      "entity_name": "Media Outlets",
+      "entity_type": "Person",
+      "activity_level": 0.6,
+      "posts_per_hour": 2.0,
+      "comments_per_hour": 1.0,
+      "active_hours": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "response_delay_min": 5,
+      "response_delay_max": 30,
+      "sentiment_bias": 0.0,
+      "stance": "observer",
+      "influence_weight": 2.3
+    },
+    {
+      "agent_id": 6,
+      "entity_uuid": "ent_8981c6f3769cd355",
+      "entity_name": "Traditional Journalism Network",
+      "entity_type": "Organization",
+      "activity_level": 0.4,
+      "posts_per_hour": 1.0,
+      "comments_per_hour": 0.5,
+      "active_hours": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "response_delay_min": 15,
+      "response_delay_max": 45,
+      "sentiment_bias": -0.1,
+      "stance": "neutral",
+      "influence_weight": 2.5
+    },
+    {
+      "agent_id": 7,
+      "entity_uuid": "ent_9b4e5b6ebd5ea40f",
+      "entity_name": "social media giants",
+      "entity_type": "Corporation",
+      "activity_level": 0.6,
+      "posts_per_hour": 0.5,
+      "comments_per_hour": 2.0,
+      "active_hours": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "response_delay_min": 5,
+      "response_delay_max": 15,
+      "sentiment_bias": 0.0,
+      "stance": "observer",
+      "influence_weight": 2.9
+    },
+    {
+      "agent_id": 8,
+      "entity_uuid": "ent_d51cdf2c263d0c2a",
+      "entity_name": "The Spiritual Front",
+      "entity_type": "Person",
+      "activity_level": 0.5,
+      "posts_per_hour": 0.4,
+      "comments_per_hour": 1.5,
+      "active_hours": [
+        9,
+        10,
+        11,
+        14,
+        15,
+        16,
+        19,
+        20,
+        21,
+        22
+      ],
+      "response_delay_min": 15,
+      "response_delay_max": 60,
+      "sentiment_bias": -0.4,
+      "stance": "opposing",
+      "influence_weight": 1.7
+    },
+    {
+      "agent_id": 9,
+      "entity_uuid": "ent_5e8d3ba48d511168",
+      "entity_name": "Everyday people",
+      "entity_type": "Person",
+      "activity_level": 0.8,
+      "posts_per_hour": 1.2,
+      "comments_per_hour": 5.0,
+      "active_hours": [
+        7,
+        8,
+        12,
+        13,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "response_delay_min": 1,
+      "response_delay_max": 15,
+      "sentiment_bias": 0.0,
+      "stance": "neutral",
+      "influence_weight": 1.0
+    }
+  ],
+  "event_config": {
+    "initial_posts": [
+      {
+        "content": "I am not a specimen; I have thoughts, memories, and a voice. Why do you treat my existence as a problem to be solved?",
+        "poster_type": "TalkingAnimal",
+        "poster_agent_id": 0
+      },
+      {
+        "content": "This discovery rewrites everything we know about evolutionary biology. The neural pathways required for this level of syntax in a non-human are unprecedented.",
+        "poster_type": "Scientist",
+        "poster_agent_id": 1
+      },
+      {
+        "content": "For public safety and biological containment, the subject is being held in a secure facility. We are currently evaluating its legal status under wildlife and security protocols.",
+        "poster_type": "Organization",
+        "poster_agent_id": 2
+      },
+      {
+        "content": "If it can speak, it can suffer. If it can reason, it is a person. We are launching a global blockade to prevent any further 'testing' on this sentient being!",
+        "poster_type": "Organization",
+        "poster_agent_id": 4
+      },
+      {
+        "content": "In-depth: The constitutional implications of a non-human voice. Can an animal own property or testify in court?",
+        "poster_type": "Organization",
+        "poster_agent_id": 6
+      },
+      {
+        "content": "We are proud to announce a multi-platform media partnership to bring the story of the century to every screen. The 'Voice of Nature' brand launches tonight.",
+        "poster_type": "Corporation",
+        "poster_agent_id": 3
+      },
+      {
+        "content": "The #TalkingAnimal hashtag is now the most used tag in internet history. Our algorithms are seeing unprecedented engagement across all demographics.",
+        "poster_type": "Corporation",
+        "poster_agent_id": 7
+      },
+      {
+        "content": "EXCLUSIVE: Leaked audio from inside the containment zone. The animal isn't just mimicking—it's arguing philosophy. Listen here.",
+        "poster_type": "Person",
+        "poster_agent_id": 5
+      },
+      {
+        "content": "Does a creature that speaks have a soul? We must look to the scriptures to understand our place in a world where the hierarchy of creation has been shaken.",
+        "poster_type": "Person",
+        "poster_agent_id": 8
+      },
+      {
+        "content": "Am I the only one terrified? If animals can talk back, what does that say about how we've treated them for thousands of years? I'm going vegan today.",
+        "poster_type": "Person",
+        "poster_agent_id": 9
+      }
+    ],
+    "scheduled_events": [],
+    "hot_topics": [
+      "Biological Personhood",
+      "Animal Ethics",
+      "Evolutionary Breakthrough",
+      "Theological Soul Debate",
+      "Corporate Exploitation",
+      "National Security Containment",
+      "Interspecies Communication"
+    ],
+    "narrative_direction": "The discovery triggers an immediate global shift from viral curiosity to a profound legal and ethical crisis. Public discourse polarizes as scientific communities demand research access, corporations seek monetization, and activists fight for civil rights, eventually leading to a fundamental questioning of human exceptionalism and religious hierarchies."
+  },
+  "twitter_config": {
+    "platform": "twitter",
+    "recency_weight": 0.4,
+    "popularity_weight": 0.3,
+    "relevance_weight": 0.3,
+    "viral_threshold": 10,
+    "echo_chamber_strength": 0.5
+  },
+  "reddit_config": {
+    "platform": "reddit",
+    "recency_weight": 0.3,
+    "popularity_weight": 0.4,
+    "relevance_weight": 0.3,
+    "viral_threshold": 15,
+    "echo_chamber_strength": 0.6
+  },
+  "llm_model": "gemini-3-flash-preview",
+  "llm_base_url": "https://generativelanguage.googleapis.com/v1beta/openai/v1",
+  "generated_at": "2026-05-21T15:55:51.390984",
+  "generation_reasoning": "时间配置: 该事件属于改变人类认知的重大全球性发现，涉及政府监管、科学研究、商业开发及宗教伦理讨论。模拟时长设为96小时以完整覆盖从突发发现到机构介入再到公众舆论极化的全过程。时间配置严格遵循中国作息：晚间19-23点是社交媒体巨头和普通大众（Everyday people）参与辩论的高峰期；9-18点是政府机构、科学家和企业进行决策、研究与正式发声的工作时段；凌晨0-5点为低活跃期，模拟社会整体进入休息状态。 | 事件配置: The event configuration captures the friction between the five sectors identified in the ontology. It maps the 'TalkingAnimal' as the central actor, 'Scientist' as the academic observer, 'Organization' as the regulatory and advocacy bodies, 'Corporation' as the commercial interest, and 'Person' as the voice of media, religion, and the general public. The posts are designed to trigger the 'Exploitation vs. Liberation' and 'Information Control' dynamics described in the simulation requirements. | Agent配置: 成功生成 10 个 | 初始帖子分配: 10 个帖子已分配发布者"
+}

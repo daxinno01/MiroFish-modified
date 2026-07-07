@@ -1,0 +1,16 @@
+[12:21:12] INFO: 报告已保存: report_38b796cbe99a
+[12:21:12] INFO: 开始规划报告大纲...
+[12:21:24] INFO: 大纲规划完成: 4 个章节
+[12:21:24] INFO: 大纲已保存: report_38b796cbe99a
+[12:21:24] INFO: 大纲已保存: report_38b796cbe99a
+[12:21:24] INFO: 报告已保存: report_38b796cbe99a
+[12:21:24] INFO: 大纲已保存到文件: report_38b796cbe99a/outline.json
+[12:21:24] INFO: ReACT生成章节: 情绪轨迹与叙事级联：从技术好奇到伦理质疑的七天演变
+[12:21:36] INFO: 执行工具: insight_forge, 参数: {'query': 'DBS GenAI anti-scam video sentiment trajectory Day 1 to Day 7 and key narrative turning points', 'report_context': "The report focuses on the public and media reception of DBS Bank's fully GenAI-generated anti-scam video. This chapter specifically tracks the 7-day evolution from technical curiosity to ethical questioning."}
+[12:21:47] INFO: 执行工具: panorama_search, 参数: {'query': '7-day timeline of public reaction to DBS GenAI video, sentiment breakdown by day, and the 1:14 artifact discovery narrative'}
+[12:21:48] INFO: 执行工具: interview_agents, 参数: {'interview_topic': 'How do you feel about DBS using GenAI for an anti-scam video? Mention the 1:14 artifact and the impact on local actors.', 'max_agents': 5}
+[12:24:42] WARNING: 章节 情绪轨迹与叙事级联：从技术好奇到伦理质疑的七天演变 达到最大迭代次数，强制生成
+[12:24:51] INFO: ReACT生成章节: “彩蛋猎人”引发的叙事漂移
+[12:25:10] ERROR: 报告生成失败: 'NoneType' object is not subscriptable
+[12:25:10] INFO: 大纲已保存: report_38b796cbe99a
+[12:25:10] INFO: 报告已保存: report_38b796cbe99a

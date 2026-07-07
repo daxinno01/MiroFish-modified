@@ -1,0 +1,8 @@
+{
+  "status": "failed",
+  "progress": -1,
+  "message": "报告生成失败: 'NoneType' object is not subscriptable",
+  "current_section": null,
+  "completed_sections": [],
+  "updated_at": "2026-04-23T12:25:10.239757"
+}

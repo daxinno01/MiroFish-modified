@@ -1,0 +1,29 @@
+### 1. Executive Summary
+This image is an informational graphic serving as the sixth slide in a social media carousel. It outlines a financial institution's dual approach to security: implementing backend safeguards through behavioral study of scams and empowering customers through education. The visual emphasizes a balance between security ("protection") and user experience ("without unnecessary disruption").
+
+### 2. OCR / Text Extraction
+*   **Heading (Red Text):** Customer protection without unnecessary disruption.
+*   **Body Paragraph 1 (Black Text):** We study how scams actually happen and where customers are most at risk.
+*   **Body Paragraph 2 (Black Text):** Alongside these safeguards, we’re committed to helping customers stay informed and vigilant.
+*   **Body Paragraph 3 (Black Text):** When you know the latest scam tactics, you’re better equipped to spot red flags early.
+
+### 3. Entity Identification
+*   **Organizations:** Unspecified financial institution (referred to as "We").
+*   **Stakeholders:** Customers (Target audience).
+*   **Security Concepts:** Customer protection, Safeguards, Scam tactics, Red flags.
+*   **Activities:** Risk assessment ("study how scams actually happen"), Customer education ("stay informed and vigilant").
+
+### 4. Structural Relationships
+*   **Value Proposition:** The heading establishes a core service pillar (Security vs. Friction balance).
+*   **Symbolic Representation:** A red shield icon is positioned centrally, functioning as a visual anchor for the concept of "protection" and "safeguards."
+*   **Logical Flow:**
+    *   **Proactive Action:** The entity ("We") analyzes scam patterns and risk locations.
+    *   **Collaborative Strategy:** The entity combines internal "safeguards" with external "customer vigilance."
+    *   **Outcome:** Knowledge of "scam tactics" directly enables the "spotting of red flags."
+*   **Hierarchical Layout:** The primary message is at the top in red, followed by a central icon, with supporting explanatory text positioned in the lower half of the frame.
+
+### 5. Visual Data Translation
+*   **Graphic Element:** A stylized red shield icon with a nested inner shield outline is located in the center of the image.
+*   **Color Palette:** Red (used for the header and icon to denote importance/security) and black (used for body text) against a light gray, textured/mottled background.
+*   **Formatting:** All text is center-aligned. The font is a sans-serif typeface.
+*   **Quantitative Data:** No numerical financial data, currency symbols, or percentages are present in this specific image.

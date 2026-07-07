@@ -1,0 +1,31 @@
+### 1. Executive Summary
+This image is an informational graphic serving as the fifth slide of a social media carousel for a financial institution. It outlines three specific security initiatives and protocols implemented by the organization to mitigate fraud and unauthorized account access. The content emphasizes a proactive stance against scammers and introduces the "Shared Responsibility Framework" as a governing structure for these measures.
+
+### 2. OCR / Text Extraction
+*   **Headline (Red, Bold):** Scammers also try to sneak in. We make it harder.
+*   **Sub-header (Black, Body):** That’s why we keep strengthening our security systems to detect and stop scam attempts that exploit moments of distraction to gain unauthorised access to customers' accounts.
+*   **Initiative 1 (Text Box):** Enhanced surveillance measures: as part of the Shared Responsibility Framework, a 24-hour cooling period to curb rapid account draining.
+*   **Initiative 2 (Text Box):** Heightened vigilance on the frontlines: to intercept scam withdrawals done at our branches.
+*   **Initiative 3 (Text Box):** Customer Reverse Authentication: so customers can authenticate calls from bank employees (pilot phase with select group of frontliners).
+
+### 3. Entity Identification
+*   **Organizations:** Unspecified Bank (referred to as "We"), Shared Responsibility Framework (Regulatory/Policy Framework).
+*   **Threat Actors:** Scammers.
+*   **Stakeholders:** Customers, Bank employees, Frontliners (specific subset of employees).
+*   **Assets:** Customers' accounts.
+*   **Physical Locations:** Branches.
+*   **Security Protocols/Features:** Enhanced surveillance measures, 24-hour cooling period, Heightened vigilance, Customer Reverse Authentication.
+*   **Events/Risks:** Scam attempts, Unauthorized access, Rapid account draining, Scam withdrawals.
+
+### 4. Structural Relationships
+*   **Organization vs. Threat Actor:** The "Organization" implements "Security systems" to "detect and stop" "Scammers."
+*   **Policy vs. Measure:** The "Shared Responsibility Framework" acts as the parent policy for the "24-hour cooling period."
+*   **Measure vs. Risk:** The "24-hour cooling period" is a direct control intended to mitigate "rapid account draining."
+*   **Action vs. Location:** "Heightened vigilance" is a human-centric protocol executed at "branches" (physical locations).
+*   **Protocol vs. Stakeholder:** "Customer Reverse Authentication" is a tool provided to "Customers" to verify the identity of "bank employees."
+*   **Status vs. Protocol:** "Customer Reverse Authentication" is currently in a "pilot phase" involving "frontliners."
+
+### 5. Visual Data Translation
+*   **Hierarchy:** The image follows a top-down information hierarchy. A large-font red headline establishes the theme (Security/Anti-scam), followed by a contextual paragraph, and concluded by three distinct white call-out boxes containing specific technical or procedural measures.
+*   **Formatting:** Bold text is used within the call-out boxes to emphasize the name of the security measure (e.g., **Enhanced surveillance measures**), followed by a colon and the functional description.
+*   **Graphic Elements:** Two red horizontal lines serve as visual anchors, separating the introductory text from the specific list of initiatives. The background is a light grey with a subtle stone-like texture.

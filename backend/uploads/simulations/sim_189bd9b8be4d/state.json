@@ -1,0 +1,27 @@
+{
+  "simulation_id": "sim_189bd9b8be4d",
+  "project_id": "proj_faa918d86e06",
+  "graph_id": "mirofish_local_789618d6f5ef446e",
+  "enable_twitter": true,
+  "enable_reddit": true,
+  "status": "running",
+  "entities_count": 26,
+  "profiles_count": 26,
+  "entity_types": [
+    "Person",
+    "DigitalNative",
+    "Bank",
+    "Organization",
+    "ElderlyCitizen",
+    "RegulatoryBody",
+    "CreativeProfessional"
+  ],
+  "config_generated": true,
+  "config_reasoning": "时间配置: 模拟时长设定为168小时（7天）以完整覆盖从发布到舆论沉淀的全周期。时间配置兼顾了三类核心群体：主流媒体与机构在工作时间（9-18点）发布新闻；科技青年与创意人在午休（12-13点）及晚间高峰（19-22点）进行社交媒体互动与论坛辩论；老年群体则在早间（6-11点）活跃度相对较高。深夜（0-5点）设为低谷以符合中国人及新加坡华人主流作息。 | 事件配置: The selection of posts covers the three digital environments (TikTok/IG, Reddit, and Mainstream Media) and the specified tensions between elderly, youth, and creatives. The poster_type values are strictly mapped to the provided entity list to ensure compatibility with the simulation agents. | Agent配置: 成功生成 26 个 | 初始帖子分配: 8 个帖子已分配发布者",
+  "current_round": 0,
+  "twitter_status": "not_started",
+  "reddit_status": "not_started",
+  "created_at": "2026-04-24T12:09:57.287724",
+  "updated_at": "2026-04-24T12:17:39.665135",
+  "error": null
+}

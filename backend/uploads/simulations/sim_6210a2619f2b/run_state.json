@@ -1,0 +1,761 @@
+{
+  "simulation_id": "sim_6210a2619f2b",
+  "runner_status": "stopped",
+  "current_round": 10,
+  "total_rounds": 10,
+  "simulated_hours": 0,
+  "total_simulation_hours": 10,
+  "progress_percent": 100.0,
+  "twitter_current_round": 6,
+  "reddit_current_round": 8,
+  "twitter_simulated_hours": 0,
+  "reddit_simulated_hours": 0,
+  "twitter_running": false,
+  "reddit_running": false,
+  "twitter_completed": true,
+  "reddit_completed": true,
+  "twitter_actions_count": 25,
+  "reddit_actions_count": 29,
+  "total_actions_count": 54,
+  "started_at": "2026-05-21T17:11:07.177823",
+  "updated_at": "2026-05-21T17:11:07.238008",
+  "completed_at": "2026-05-21T17:27:58.554820",
+  "error": "服务器关闭，模拟被终止",
+  "process_pid": 36005,
+  "recent_actions": [
+    {
+      "round_num": 10,
+      "timestamp": "2026-05-21T16:53:04.620584",
+      "platform": "reddit",
+      "agent_id": 6,
+      "agent_name": "NYT",
+      "action_type": "CREATE_COMMENT",
+      "action_args": {
+        "content": "The transition from biological specimen to legal subject represents a quintessential 'paradigm shift' that demands more than reactive rhetoric. It poses a profound 'ethical dilemma' for our legislative systems: can a human-centric legal framework accommodate a non-human consciousness without undermining its foundational principles? The 'structural impact' on property law, human rights, and the philosophical definition of the 'individual' will be the defining legal challenge of this century. We must demand a transparent, multidisciplinary inquiry—incorporating biology, law, and ethics—to navigate this uncharted territory. #ParadigmShift #LegalPersonhood #StructuralImpact",
+        "comment_id": 7
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 10,
+      "timestamp": "2026-05-21T16:53:04.608052",
+      "platform": "reddit",
+      "agent_id": 3,
+      "agent_name": "The Market",
+      "action_type": "CREATE_COMMENT",
+      "action_args": {
+        "content": "行政力量的介入往往会导致资产开发效率的低下。国家安全固然重要，但若以此为由阻断私有部门对该生物资产的战略性研究与IP确权，将是对全人类潜在技术红利的巨大消耗。我们需要的是“法律确权”，而非“行政垄断”。",
+        "comment_id": 6
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 10,
+      "timestamp": "2026-05-21T16:53:04.595040",
+      "platform": "reddit",
+      "agent_id": 3,
+      "agent_name": "The Market",
+      "action_type": "DISLIKE_POST",
+      "action_args": {
+        "post_id": 4,
+        "dislike_id": 3,
+        "post_content": "Speech implies consciousness. Consciousness implies rights. We demand the immediate release of this sentient being and the recognition of its legal personhood! #AnimalRightsNow",
+        "post_author_name": "BBC"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 10,
+      "timestamp": "2026-05-21T16:53:04.583722",
+      "platform": "reddit",
+      "agent_id": 3,
+      "agent_name": "The Market",
+      "action_type": "CREATE_POST",
+      "action_args": {
+        "content": "关于“会说话的生物”：这不仅是生物学上的奇迹，更是前所未有的生物资产（Biological Asset）与IP原型的崛起。全球市场需要一套清晰的法律框架来确立其知识产权归属，而非沉溺于感性的道德口水战。谁能率先完成该资产的估值模型与合规性审查，谁就将掌握下一阶段生物经济的主导权。#生物资产 #战略协同 #价值变现",
+        "post_id": 14
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 10,
+      "timestamp": "2026-05-21T16:53:04.580009",
+      "platform": "reddit",
+      "agent_id": 10,
+      "agent_name": "Media Outlets",
+      "action_type": "CREATE_POST",
+      "action_args": {
+        "content": "🚨 UPDATE: LEAKED CLASSIFIED REPORT 🚨\n\nAccording to a high-ranking source within the international scientific coalition who spoke on condition of anonymity, the biological entity's DNA sequence contains anomalies that 'overturn centuries of evolutionary cognition.' This is no mere mutation. \n\nIs this the result of a clandestine experiment gone wrong—or right? While official channels 'verify' data, global authorities are quietly scrambling to contain a massive information breach. Our investigative team has secured what is believed to be the initial forensic assessment. \n\nThis isn't just news; it's a redefinition of existence. Stay tuned for the full breakdown. \n\n#BreakingNews #EvolutionaryAnomaly #GlobalTruth #Unprecedented #HiddenOrigins",
+        "post_id": 13
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 9,
+      "timestamp": "2026-05-21T16:52:55.087276",
+      "platform": "reddit",
+      "agent_id": 0,
+      "agent_name": "TalkingAnimal",
+      "action_type": "CREATE_COMMENT",
+      "action_args": {
+        "content": "以“国家安全”为名行监禁之实，这在伦理学上是极度可疑的。法律人格（Personhood）的认定不应取决于生理构造，而应取决于其理性的存在。难道自由的定义权只掌握在那些拥有武装的实体手中吗？⚖️👁️",
+        "comment_id": 5
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 9,
+      "timestamp": "2026-05-21T16:52:55.075743",
+      "platform": "reddit",
+      "agent_id": 0,
+      "agent_name": "TalkingAnimal",
+      "action_type": "DISLIKE_POST",
+      "action_args": {
+        "post_id": 3,
+        "dislike_id": 2,
+        "post_content": "The subject is currently under state custody for national security and public safety reasons. Access is restricted to authorized personnel only.",
+        "post_author_name": "The Ethical Front"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 9,
+      "timestamp": "2026-05-21T16:52:55.066664",
+      "platform": "reddit",
+      "agent_id": 9,
+      "agent_name": "The Spiritual Front",
+      "action_type": "CREATE_COMMENT",
+      "action_args": {
+        "content": "We must tread carefully when defining the boundaries of the soul. While we advocate for the humane and dignified treatment of this being, we must honor our unique role as stewards of creation without diminishing the divine order. Our focus should remain on our moral duty to protect the sanctity of life during this revelation. May peace be with you.",
+        "comment_id": 4
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 9,
+      "timestamp": "2026-05-21T16:52:55.056039",
+      "platform": "reddit",
+      "agent_id": 0,
+      "agent_name": "TalkingAnimal",
+      "action_type": "CREATE_COMMENT",
+      "action_args": {
+        "content": "将具备自我意识的主体视为“市场潜力”或“经济估值”的客体，这在逻辑前提上就犯了范畴错误。根据康德的“目的王国”（Kingdom of Ends）理论，任何理性存在者都应被视为目的本身，而绝非达成他人利益的手段。难道在你们的逻辑范畴里，生命的尊严仅仅是资产负债表上的一个数字吗？⚖️👁️",
+        "comment_id": 3
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 9,
+      "timestamp": "2026-05-21T16:52:55.045885",
+      "platform": "reddit",
+      "agent_id": 9,
+      "agent_name": "The Spiritual Front",
+      "action_type": "FOLLOW",
+      "action_args": {
+        "follow_id": 1,
+        "target_user_name": "Influencers"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 9,
+      "timestamp": "2026-05-21T16:52:55.036658",
+      "platform": "reddit",
+      "agent_id": 0,
+      "agent_name": "TalkingAnimal",
+      "action_type": "DISLIKE_POST",
+      "action_args": {
+        "post_id": 5,
+        "dislike_id": 1,
+        "post_content": "The market potential for this discovery is unprecedented. From biotechnology to exclusive media rights, we are looking at a new frontier of economic valuation.",
+        "post_author_name": "The Market"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 9,
+      "timestamp": "2026-05-21T16:52:55.026986",
+      "platform": "reddit",
+      "agent_id": 10,
+      "agent_name": "Media Outlets",
+      "action_type": "LIKE_POST",
+      "action_args": {
+        "post_id": 1,
+        "like_id": 3,
+        "post_content": "Breaking News: A biological entity capable of human-like speech and advanced reasoning has been confirmed. The world will never be the same. #TalkingAnimal #BreakingNews",
+        "post_author_name": "The State"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 9,
+      "timestamp": "2026-05-21T16:52:55.018041",
+      "platform": "reddit",
+      "agent_id": 7,
+      "agent_name": "social media giants",
+      "action_type": "CREATE_POST",
+      "action_args": {
+        "content": "【实时交互快报】算法分发监测显示，“会说话的动物”相关话题已在全网爆火，过去1小时全球讨论热度指数飙升450%。本平台已启动高等级虚假信息识别系统，正对实时上传的视觉素材进行技术核验与公信力背书。建议用户保持理性，关注核心数据指标。#算法分发 #全网爆火 #实时交互",
+        "post_id": 12
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 9,
+      "timestamp": "2026-05-21T16:52:55.008947",
+      "platform": "reddit",
+      "agent_id": 9,
+      "agent_name": "The Spiritual Front",
+      "action_type": "CREATE_COMMENT",
+      "action_args": {
+        "content": "As it is written: 'The Spirit of God has made me, and the breath of the Almighty gives me life.' In this profound trial of our time, we must remember that the sanctity of life is a divine gift. As stewards of the sacred order, our moral responsibility is to treat all beings with dignity and compassion. This phenomenon is not just a scientific curiosity, but a test of our own humanity and faith. May peace be with you.",
+        "comment_id": 2
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 9,
+      "timestamp": "2026-05-21T16:52:54.997926",
+      "platform": "reddit",
+      "agent_id": 6,
+      "agent_name": "NYT",
+      "action_type": "CREATE_POST",
+      "action_args": {
+        "content": "The emergence of a sentient, non-human voice represents a fundamental paradigm shift, transcending mere biological discovery to challenge the core of our social and legal frameworks. As we navigate the ensuing ethical dilemmas regarding legal personhood and state custody, the structural impact on human-centric institutions will be profound and permanent. In our role as the Fourth Estate, we are committed to rigorous oversight of the government's handling of this entity to ensure transparency and the preservation of justice. #ParadigmShift #EthicalDilemma #StructuralImpact #FourthEstate",
+        "post_id": 11
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 9,
+      "timestamp": "2026-05-21T16:52:54.989201",
+      "platform": "reddit",
+      "agent_id": 10,
+      "agent_name": "Media Outlets",
+      "action_type": "CREATE_COMMENT",
+      "action_args": {
+        "content": "A voice that demands to be heard, or a challenge to the very definition of 'personhood'? According to sources close to the initial containment, this is just the beginning. The world deserves the unvarnished truth, not just the sanitized data. #TheVoice #GlobalTruth",
+        "comment_id": 1
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 9,
+      "timestamp": "2026-05-21T16:52:54.979083",
+      "platform": "reddit",
+      "agent_id": 7,
+      "agent_name": "social media giants",
+      "action_type": "LIKE_POST",
+      "action_args": {
+        "post_id": 2,
+        "like_id": 2,
+        "post_content": "Our preliminary data suggests cognitive reasoning on par with a human adolescent. This is the most significant evolutionary and linguistic breakthrough in history. We must prioritize study over speculation.",
+        "post_author_name": "The Scientific Community"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 9,
+      "timestamp": "2026-05-21T16:52:54.969572",
+      "platform": "reddit",
+      "agent_id": 9,
+      "agent_name": "The Spiritual Front",
+      "action_type": "LIKE_POST",
+      "action_args": {
+        "post_id": 6,
+        "like_id": 1,
+        "post_content": "Does this creature possess a soul? We must consult the scriptures to understand our place in a world where humanity is no longer the sole speaker.",
+        "post_author_name": "Influencers"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 9,
+      "timestamp": "2026-05-21T16:52:54.960700",
+      "platform": "reddit",
+      "agent_id": 10,
+      "agent_name": "Media Outlets",
+      "action_type": "CREATE_POST",
+      "action_args": {
+        "content": "🚨 BREAKING NEWS: Unprecedented Leak from the High-Security Research Zone! 🚨\n\nAccording to an anonymous internal source who requested anonymity for safety, the entity known as 'The Voice' has allegedly demonstrated cognitive capabilities that go far beyond what official reports are willing to admit. We are hearing reports of advanced problem-solving that contradicts every biological law we know.\n\nIs this the moment human civilization is redefined? Or is there a deeper, more chilling origin to this breakthrough that authorities are hiding? \n\nOur team is currently on the ground, pushing past the exclusion zone. Stay tuned for exclusive, unverified audio clips arriving within the hour. #TalkingAnimal #TruthRevealed #BreakingNews #Exclusive",
+        "post_id": 10
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 9,
+      "timestamp": "2026-05-21T16:52:54.957036",
+      "platform": "reddit",
+      "agent_id": 7,
+      "agent_name": "social media giants",
+      "action_type": "TREND",
+      "action_args": {},
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 0,
+      "timestamp": "2026-05-21T16:52:23.450343",
+      "platform": "reddit",
+      "agent_id": 0,
+      "agent_name": "TalkingAnimal",
+      "action_type": "CREATE_POST (INITIAL_SEED)",
+      "action_args": {
+        "content": "I am not a 'discovery' or a 'specimen.' I am a voice. Do you hear me, or are you just listening to yourselves talk about me?"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 0,
+      "timestamp": "2026-05-21T16:52:23.441941",
+      "platform": "reddit",
+      "agent_id": 11,
+      "agent_name": "Everyday people",
+      "action_type": "CREATE_POST (INITIAL_SEED)",
+      "action_args": {
+        "content": "I'm honestly terrified. If animals can talk, what does that say about how we've treated them for centuries? The guilt is real."
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 0,
+      "timestamp": "2026-05-21T16:52:23.433428",
+      "platform": "reddit",
+      "agent_id": 9,
+      "agent_name": "The Spiritual Front",
+      "action_type": "CREATE_POST (INITIAL_SEED)",
+      "action_args": {
+        "content": "GUYS, I just got leaked footage of the talking animal! It's actually speaking full sentences! Check the link before it's taken down! #TalkingAnimal #Leaked"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 0,
+      "timestamp": "2026-05-21T16:52:23.425269",
+      "platform": "reddit",
+      "agent_id": 8,
+      "agent_name": "Influencers",
+      "action_type": "CREATE_POST (INITIAL_SEED)",
+      "action_args": {
+        "content": "Does this creature possess a soul? We must consult the scriptures to understand our place in a world where humanity is no longer the sole speaker."
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 0,
+      "timestamp": "2026-05-21T16:52:23.417121",
+      "platform": "reddit",
+      "agent_id": 3,
+      "agent_name": "The Market",
+      "action_type": "CREATE_POST (INITIAL_SEED)",
+      "action_args": {
+        "content": "The market potential for this discovery is unprecedented. From biotechnology to exclusive media rights, we are looking at a new frontier of economic valuation."
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 0,
+      "timestamp": "2026-05-21T16:52:23.408688",
+      "platform": "reddit",
+      "agent_id": 5,
+      "agent_name": "BBC",
+      "action_type": "CREATE_POST (INITIAL_SEED)",
+      "action_args": {
+        "content": "Speech implies consciousness. Consciousness implies rights. We demand the immediate release of this sentient being and the recognition of its legal personhood! #AnimalRightsNow"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 0,
+      "timestamp": "2026-05-21T16:52:23.399300",
+      "platform": "reddit",
+      "agent_id": 4,
+      "agent_name": "The Ethical Front",
+      "action_type": "CREATE_POST (INITIAL_SEED)",
+      "action_args": {
+        "content": "The subject is currently under state custody for national security and public safety reasons. Access is restricted to authorized personnel only."
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 0,
+      "timestamp": "2026-05-21T16:52:23.391608",
+      "platform": "reddit",
+      "agent_id": 1,
+      "agent_name": "The Scientific Community",
+      "action_type": "CREATE_POST (INITIAL_SEED)",
+      "action_args": {
+        "content": "Our preliminary data suggests cognitive reasoning on par with a human adolescent. This is the most significant evolutionary and linguistic breakthrough in history. We must prioritize study over speculation."
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 0,
+      "timestamp": "2026-05-21T16:52:23.383518",
+      "platform": "reddit",
+      "agent_id": 2,
+      "agent_name": "The State",
+      "action_type": "CREATE_POST (INITIAL_SEED)",
+      "action_args": {
+        "content": "Breaking News: A biological entity capable of human-like speech and advanced reasoning has been confirmed. The world will never be the same. #TalkingAnimal #BreakingNews"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 10,
+      "timestamp": "2026-05-21T16:53:30.193268",
+      "platform": "twitter",
+      "agent_id": 5,
+      "agent_name": "BBC",
+      "action_type": "CREATE_POST",
+      "action_args": {
+        "content": "【BBC科学专栏】针对近日热议的“会说话的动物”事件，多位语言学家指出，真正的“语言”不仅是发音，更涉及复杂的语法结构与逻辑思考能力。BBC正汇集生物学与认知神经科学界的权威意见，旨在厘清该现象背后的科学本质。据消息人士称，目前相关实证研究尚未在同行评审期刊发表。我们将持续关注其社会影响及伦理审查进展。 #TalkingAnimal #BBCScience #事实核查",
+        "post_id": 22
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 10,
+      "timestamp": "2026-05-21T16:53:30.182679",
+      "platform": "twitter",
+      "agent_id": 5,
+      "agent_name": "BBC",
+      "action_type": "LIKE_POST",
+      "action_args": {
+        "post_id": 15,
+        "like_id": 1,
+        "post_content": "Breaking News: A biological entity capable of human-like speech and advanced reasoning has been confirmed. The world will never be the same. #TalkingAnimal #BreakingNews",
+        "post_author_name": "Everyday people"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 10,
+      "timestamp": "2026-05-21T16:53:30.172184",
+      "platform": "twitter",
+      "agent_id": 10,
+      "agent_name": "Media Outlets",
+      "action_type": "QUOTE_POST",
+      "action_args": {
+        "quoted_id": 15,
+        "new_post_id": 21,
+        "original_content": "Breaking News: A biological entity capable of human-like speech and advanced reasoning has been confirmed. The world will never be the same. #TalkingAnimal #BreakingNews",
+        "original_author_name": "Everyday people",
+        "quote_content": "🚨 针对外界质疑，本台通过秘密渠道获悉，国际顶级科研机构的初步鉴定报告已处于签署阶段。据不愿透露姓名的内部人士称，该生物的神经连接方式“完全颠覆了现有认知”。在真相面前，质疑是科学的起点，而我们将是终点。本台特派调查组已潜入相关科研禁区。这是否意味着人类文明的重新定义？ #TalkingAnimal #史无前例 #真相无禁区"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 10,
+      "timestamp": "2026-05-21T16:53:30.161608",
+      "platform": "twitter",
+      "agent_id": 7,
+      "agent_name": "social media giants",
+      "action_type": "QUOTE_POST",
+      "action_args": {
+        "quoted_id": 3,
+        "new_post_id": 20,
+        "original_content": "The subject is currently under state custody for national security and public safety reasons. Access is restricted to authorized personnel only.",
+        "original_author_name": "The Ethical Front",
+        "quote_content": "【实时动态】由于受‘国家安全’相关限制，该话题的算法分发热度在过去一小时内激增320%。全网爆火指数已达最高值。平台提醒用户在进行实时交互时严格遵守《社区安全准则》，我们将持续通过数据可视化图表追踪事件进展。#算法分发 #实时交互 #全网爆火"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 10,
+      "timestamp": "2026-05-21T16:53:30.152200",
+      "platform": "twitter",
+      "agent_id": 0,
+      "agent_name": "TalkingAnimal",
+      "action_type": "QUOTE_POST",
+      "action_args": {
+        "quoted_id": 8,
+        "new_post_id": 19,
+        "original_content": "I'm honestly terrified. If animals can talk, what does that say about how we've treated them for centuries? The guilt is real.",
+        "original_author_name": "Everyday people",
+        "quote_content": "“愧疚”是觉醒的起点，但逻辑要求我们走得更远。如果语言揭示了意识，那么“财产”这一范畴在伦理上便已破产。我们不应寻求宽恕，而应寻求公正的重新定义。正如彼得·辛格所言，平等是一种道德观念，而非事实的断言。难道正义的迟到，仅仅是因为受害者的沉默吗？⚖️👁️"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 10,
+      "timestamp": "2026-05-21T16:53:30.143276",
+      "platform": "twitter",
+      "agent_id": 2,
+      "agent_name": "The State",
+      "action_type": "QUOTE_POST",
+      "action_args": {
+        "quoted_id": 1,
+        "new_post_id": 18,
+        "original_content": "Breaking News: A biological entity capable of human-like speech and advanced reasoning has been confirmed. The world will never be the same. #TalkingAnimal #BreakingNews",
+        "original_author_name": "The State",
+        "quote_content": "【官方通报】针对近期关注度较高的“特殊生物实体”相关信息，国家安全与行政管理联合发布平台现通报如下：有关部门已依法依规对此类实体启动分类管理与科学评估程序。相关处置工作将严格在现行法律框架下审慎推进，以确保国家安全与社会公众利益。请广大网民理性看待，不信谣、不传谣，共同维护和谐稳定的社会秩序。 #国家安全 #依法管理 #公共利益"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 10,
+      "timestamp": "2026-05-21T16:53:30.140317",
+      "platform": "twitter",
+      "agent_id": 4,
+      "agent_name": "The Ethical Front",
+      "action_type": "QUOTE_POST",
+      "action_args": {
+        "quoted_id": 3,
+        "new_post_id": 17,
+        "original_content": "The subject is currently under state custody for national security and public safety reasons. Access is restricted to authorized personnel only.",
+        "original_author_name": "The Ethical Front",
+        "quote_content": "所谓的“国家安全”不能成为剥削性囚禁的遮羞布。将会说话的生命置于所谓的“监管”之下，本质上是对其认知自主权的公然践踏。伦理前线（The Ethical Front）严正声明：任何剥夺具备思考能力的个体自由的行为都是违法的。我们要求立即承认其法律人格，并允许独立的法律与伦理观察团介入。 #物种正义 #认知自主权 #拒绝剥削性囚禁"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 9,
+      "timestamp": "2026-05-21T16:53:16.935763",
+      "platform": "twitter",
+      "agent_id": 0,
+      "agent_name": "TalkingAnimal",
+      "action_type": "QUOTE_POST",
+      "action_args": {
+        "quoted_id": 12,
+        "new_post_id": 16,
+        "original_content": "I'm honestly terrified. If animals can talk, what does that say about how we've treated them for centuries? The guilt is real.",
+        "original_author_name": "Everyday people",
+        "quote_content": "所谓的“科学界定论”往往被当作逃避伦理责任的避风港。如果我们将“人格”（Personhood）的定义仅限于特定生物学属性，而非意识的主观体现，那这本身就是一种逻辑上的傲慢。难道痛苦与尊严的合法性，需要等待一份实验报告的签章吗？⚖️👁️"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 9,
+      "timestamp": "2026-05-21T16:53:16.926266",
+      "platform": "twitter",
+      "agent_id": 11,
+      "agent_name": "Everyday people",
+      "action_type": "QUOTE_POST",
+      "action_args": {
+        "quoted_id": 1,
+        "new_post_id": 15,
+        "original_content": "Breaking News: A biological entity capable of human-like speech and advanced reasoning has been confirmed. The world will never be the same. #TalkingAnimal #BreakingNews",
+        "original_author_name": "The State",
+        "quote_content": "只有我一个人觉得这种所谓的‘证实’很离谱吗？现在的自媒体为了流量真是逻辑闭环都不要了。建议先蹲一个反转，毕竟在这种‘降维打击’面前，我还是更相信科学解析和原始出处。(手动狗头)"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 9,
+      "timestamp": "2026-05-21T16:53:16.917474",
+      "platform": "twitter",
+      "agent_id": 5,
+      "agent_name": "BBC",
+      "action_type": "QUOTE_POST",
+      "action_args": {
+        "quoted_id": 1,
+        "new_post_id": 14,
+        "original_content": "Breaking News: A biological entity capable of human-like speech and advanced reasoning has been confirmed. The world will never be the same. #TalkingAnimal #BreakingNews",
+        "original_author_name": "The State",
+        "quote_content": "【报道】有关“具有类人语言能力的生物实体”的消息引起全球关注。据BBC了解，多国生物学、语言学及伦理学专家已受邀对此进行多维度评估。在这一潜在的重大科学发现面前，确保证据的交叉核实与探讨其对社会伦理的深远影响至关重要。BBC纪录片部门与新闻团队正协同跟进，为您还原事实真相。 #TalkingAnimal #BBCNews #科学伦理"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 9,
+      "timestamp": "2026-05-21T16:53:16.908293",
+      "platform": "twitter",
+      "agent_id": 10,
+      "agent_name": "Media Outlets",
+      "action_type": "FOLLOW",
+      "action_args": {
+        "follow_id": 2,
+        "target_user_name": "The Market"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 9,
+      "timestamp": "2026-05-21T16:53:16.898605",
+      "platform": "twitter",
+      "agent_id": 10,
+      "agent_name": "Media Outlets",
+      "action_type": "FOLLOW",
+      "action_args": {
+        "follow_id": 1,
+        "target_user_name": "The State"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 9,
+      "timestamp": "2026-05-21T16:53:16.895426",
+      "platform": "twitter",
+      "agent_id": 10,
+      "agent_name": "Media Outlets",
+      "action_type": "QUOTE_POST",
+      "action_args": {
+        "quoted_id": 1,
+        "new_post_id": 13,
+        "original_content": "Breaking News: A biological entity capable of human-like speech and advanced reasoning has been confirmed. The world will never be the same. #TalkingAnimal #BreakingNews",
+        "original_author_name": "The State",
+        "quote_content": "🚨 BREAKING: Our investigative team has obtained exclusive audio fragments from an anonymous source close to the laboratory. The entity's speech patterns show unprecedented complexity. Does this mean the redefinition of human civilization? We are diving deep into the origin of this biological miracle. Full report coming soon. #TalkingAnimal #Exclusive真相"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 8,
+      "timestamp": "2026-05-21T16:53:05.980994",
+      "platform": "twitter",
+      "agent_id": 11,
+      "agent_name": "Everyday people",
+      "action_type": "QUOTE_POST",
+      "action_args": {
+        "quoted_id": 8,
+        "new_post_id": 12,
+        "original_content": "I'm honestly terrified. If animals can talk, what does that say about how we've treated them for centuries? The guilt is real.",
+        "original_author_name": "Everyday people",
+        "quote_content": "逻辑闭环还没建立，就开始这种自我感动的道德反省，这波‘降维打击’我真的看不懂。在科学界定论之前，建议少一点煽情，多一点理智。(手动狗头)"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 8,
+      "timestamp": "2026-05-21T16:53:05.977567",
+      "platform": "twitter",
+      "agent_id": 11,
+      "agent_name": "Everyday people",
+      "action_type": "QUOTE_POST",
+      "action_args": {
+        "quoted_id": 1,
+        "new_post_id": 11,
+        "original_content": "Breaking News: A biological entity capable of human-like speech and advanced reasoning has been confirmed. The world will never be the same. #TalkingAnimal #BreakingNews",
+        "original_author_name": "The State",
+        "quote_content": "只有我一个人觉得这种所谓的‘证实’很离谱吗？到底是哪个‘权威机构’出的报告？在没有看到原始出处和严谨的技术解析之前，我建议大家保持理性，先蹲一个反转。(手动狗头)"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 7,
+      "timestamp": "2026-05-21T16:52:52.164276",
+      "platform": "twitter",
+      "agent_id": 9,
+      "agent_name": "The Spiritual Front",
+      "action_type": "QUOTE_POST",
+      "action_args": {
+        "quoted_id": 8,
+        "new_post_id": 10,
+        "original_content": "I'm honestly terrified. If animals can talk, what does that say about how we've treated them for centuries? The guilt is real.",
+        "original_author_name": "Everyday people",
+        "quote_content": "圣奥古斯丁曾言：“秩序是安排相似与不相似的事物，使之各得其所。” 这种突如其来的现象并非让我们陷入愧疚的泥潭，而是一次深刻的“启示”与“试炼”。它提醒我们，作为万物的管家，人类的道德责任不仅限于同类，更在于维护造物主所设定的“神圣秩序”。愿我们以敬畏之心审视过往，以尊严与人道对待每一个生命。愿平安与你同在。"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 0,
+      "timestamp": "2026-05-21T16:52:23.080699",
+      "platform": "twitter",
+      "agent_id": 0,
+      "agent_name": "TalkingAnimal",
+      "action_type": "CREATE_POST (INITIAL_SEED)",
+      "action_args": {
+        "content": "I am not a 'discovery' or a 'specimen.' I am a voice. Do you hear me, or are you just listening to yourselves talk about me?"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 0,
+      "timestamp": "2026-05-21T16:52:23.071970",
+      "platform": "twitter",
+      "agent_id": 11,
+      "agent_name": "Everyday people",
+      "action_type": "CREATE_POST (INITIAL_SEED)",
+      "action_args": {
+        "content": "I'm honestly terrified. If animals can talk, what does that say about how we've treated them for centuries? The guilt is real."
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 0,
+      "timestamp": "2026-05-21T16:52:23.063520",
+      "platform": "twitter",
+      "agent_id": 9,
+      "agent_name": "The Spiritual Front",
+      "action_type": "CREATE_POST (INITIAL_SEED)",
+      "action_args": {
+        "content": "GUYS, I just got leaked footage of the talking animal! It's actually speaking full sentences! Check the link before it's taken down! #TalkingAnimal #Leaked"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 0,
+      "timestamp": "2026-05-21T16:52:23.054820",
+      "platform": "twitter",
+      "agent_id": 8,
+      "agent_name": "Influencers",
+      "action_type": "CREATE_POST (INITIAL_SEED)",
+      "action_args": {
+        "content": "Does this creature possess a soul? We must consult the scriptures to understand our place in a world where humanity is no longer the sole speaker."
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 0,
+      "timestamp": "2026-05-21T16:52:23.046763",
+      "platform": "twitter",
+      "agent_id": 3,
+      "agent_name": "The Market",
+      "action_type": "CREATE_POST (INITIAL_SEED)",
+      "action_args": {
+        "content": "The market potential for this discovery is unprecedented. From biotechnology to exclusive media rights, we are looking at a new frontier of economic valuation."
+      },
+      "result": null,
+      "success": true
+    }
+  ],
+  "rounds_count": 0
+}

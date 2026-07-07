@@ -1,0 +1,27 @@
+{
+  "simulation_id": "sim_421e2989e784",
+  "project_id": "proj_4c331fcbcf0a",
+  "graph_id": "mirofish_local_f97572418f8848af",
+  "enable_twitter": true,
+  "enable_reddit": true,
+  "status": "running",
+  "entities_count": 24,
+  "profiles_count": 24,
+  "entity_types": [
+    "SeniorCitizen",
+    "GovernmentRegulator",
+    "TechAnalyst",
+    "Person",
+    "CreativeProfessional",
+    "Organization",
+    "FinancialInstitution"
+  ],
+  "config_generated": true,
+  "config_reasoning": "时间配置: 模拟覆盖7天完整周期。工作时间（9-18点）主要模拟主流媒体（Straits Times）、政府监管机构及DBS公关团队的正式响应与报道；晚间高峰（19-22点）模拟科技青年在Reddit和TikTok上的病毒式传播、素材扒皮及创意圈的伦理辩论；早间时段（6-8点）侧重于老年群体通过早报或社群获取资讯。考虑到事件涉及‘AI替代人工’的争议性，模拟在第2-3天（发现视觉瑕疵后）的晚间高峰将达到Agent激活峰值。 | 事件配置: The simulation configuration targets the tension between DBS's technological 'innovation' and the socio-economic reality of local creative displacement. By assigning posts to specific personas like 'Tech-Savvy Youth' for artifact spotting and 'Local Creative Professionals' for labor ethics, we can track how the 'irony' narrative competes with the 'educational' goal across different digital ecosystems (TikTok vs. Reddit vs. Mainstream Media). | Agent配置: 成功生成 24 个 | 初始帖子分配: 8 个帖子已分配发布者",
+  "current_round": 0,
+  "twitter_status": "not_started",
+  "reddit_status": "not_started",
+  "created_at": "2026-04-23T11:39:47.614204",
+  "updated_at": "2026-04-23T11:42:26.407773",
+  "error": null
+}

@@ -1,0 +1,6 @@
+{"timestamp": "2026-05-21T17:58:49.920308", "event_type": "resume_start", "platform": "twitter", "resume_from_round": 41, "total_rounds": 40}
+{"round": 0, "timestamp": "2026-05-21T17:58:49.936558", "event_type": "round_start", "simulated_hour": 0}
+{"timestamp": "2026-05-21T17:58:49.940810", "event_type": "simulation_end", "platform": "twitter", "total_rounds": 40, "total_actions": 0}
+{"timestamp": "2026-05-22T09:17:34.463640", "event_type": "resume_start", "platform": "twitter", "resume_from_round": 41, "total_rounds": 0}
+{"round": 0, "timestamp": "2026-05-22T09:17:34.477038", "event_type": "round_start", "simulated_hour": 0}
+{"timestamp": "2026-05-22T09:17:34.481558", "event_type": "simulation_end", "platform": "twitter", "total_rounds": 40, "total_actions": 0}

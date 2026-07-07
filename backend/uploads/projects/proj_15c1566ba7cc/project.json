@@ -1,0 +1,357 @@
+{
+  "project_id": "proj_15c1566ba7cc",
+  "name": "Unnamed Project",
+  "status": "failed",
+  "created_at": "2026-04-28T16:52:32.378178",
+  "updated_at": "2026-04-28T17:04:33.427613",
+  "files": [
+    {
+      "filename": "DBS Earnings Prediction Research Plan.pdf",
+      "size": 422064
+    }
+  ],
+  "total_text_length": 30358,
+  "ontology": {
+    "entity_types": [
+      {
+        "name": "BankExecutive",
+        "description": "High-level leadership figures within banking institutions who make strategic decisions.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The complete name of the executive."
+          },
+          {
+            "name": "job_title",
+            "type": "text",
+            "description": "The specific role or position held by the executive."
+          },
+          {
+            "name": "strategic_focus",
+            "type": "text",
+            "description": "The primary area of strategic interest, such as AI or wealth management."
+          }
+        ],
+        "examples": [
+          "Tan Su Shan",
+          "Piyush Gupta"
+        ]
+      },
+      {
+        "name": "FinancialAnalyst",
+        "description": "Professionals who provide market forecasts, earnings estimates, and stock ratings.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The name of the analyst."
+          },
+          {
+            "name": "firm_affiliation",
+            "type": "text",
+            "description": "The financial institution or research firm they work for."
+          },
+          {
+            "name": "coverage_sector",
+            "type": "text",
+            "description": "The specific industry sector they analyze."
+          }
+        ],
+        "examples": [
+          "UOB Kay Hian Analyst",
+          "Bloomberg Consensus Analyst"
+        ]
+      },
+      {
+        "name": "GovernmentOfficial",
+        "description": "Individuals representing state departments or monetary authorities.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The name of the official."
+          },
+          {
+            "name": "department_name",
+            "type": "text",
+            "description": "The government body they represent."
+          }
+        ],
+        "examples": [
+          "MAS Representative",
+          "MTI Spokesperson"
+        ]
+      },
+      {
+        "name": "SocialMediaUser",
+        "description": "Individual accounts representing the general public, customers, or retail investors.",
+        "attributes": [
+          {
+            "name": "handle_name",
+            "type": "text",
+            "description": "The social media username or handle."
+          },
+          {
+            "name": "influence_score",
+            "type": "text",
+            "description": "A measure of the user's reach or impact on public opinion."
+          }
+        ],
+        "examples": [
+          "Retail Investor John",
+          "Disgruntled App User"
+        ]
+      },
+      {
+        "name": "CommercialBank",
+        "description": "Major banking corporations providing financial services and reporting earnings.",
+        "attributes": [
+          {
+            "name": "org_name",
+            "type": "text",
+            "description": "The official name of the bank."
+          },
+          {
+            "name": "stock_ticker",
+            "type": "text",
+            "description": "The exchange listing symbol."
+          },
+          {
+            "name": "market_cap_category",
+            "type": "text",
+            "description": "The valuation tier of the bank."
+          }
+        ],
+        "examples": [
+          "DBS Group Holdings",
+          "OCBC Bank"
+        ]
+      },
+      {
+        "name": "RegulatoryBody",
+        "description": "Organizations responsible for financial oversight and policy setting.",
+        "attributes": [
+          {
+            "name": "org_name",
+            "type": "text",
+            "description": "The name of the regulator."
+          },
+          {
+            "name": "jurisdiction",
+            "type": "text",
+            "description": "The geographic or sector-based area of authority."
+          }
+        ],
+        "examples": [
+          "Monetary Authority of Singapore (MAS)",
+          "Federal Reserve"
+        ]
+      },
+      {
+        "name": "MediaOutlet",
+        "description": "News organizations and financial publishers that disseminate information.",
+        "attributes": [
+          {
+            "name": "org_name",
+            "type": "text",
+            "description": "The name of the news agency."
+          },
+          {
+            "name": "media_platform",
+            "type": "text",
+            "description": "The primary medium, e.g., Digital, Print, TV."
+          }
+        ],
+        "examples": [
+          "The Business Times",
+          "Bloomberg News"
+        ]
+      },
+      {
+        "name": "InvestmentFirm",
+        "description": "Institutional entities that manage capital and hold significant stock positions.",
+        "attributes": [
+          {
+            "name": "org_name",
+            "type": "text",
+            "description": "The name of the investment company."
+          },
+          {
+            "name": "investment_strategy",
+            "type": "text",
+            "description": "The primary approach to investing, e.g., Long-term, Hedge."
+          }
+        ],
+        "examples": [
+          "Temasek Holdings",
+          "S&P Global Ratings"
+        ]
+      },
+      {
+        "name": "Person",
+        "description": "A generic individual actor not covered by specific professional roles.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The name of the person."
+          },
+          {
+            "name": "biography_text",
+            "type": "text",
+            "description": "A brief description of the individual."
+          }
+        ],
+        "examples": [
+          "Local Business Owner",
+          "Tech Enthusiast"
+        ]
+      },
+      {
+        "name": "Organization",
+        "description": "A generic entity or group not covered by specific institutional roles.",
+        "attributes": [
+          {
+            "name": "org_name",
+            "type": "text",
+            "description": "The name of the organization."
+          },
+          {
+            "name": "industry_sector",
+            "type": "text",
+            "description": "The field in which the organization operates."
+          }
+        ],
+        "examples": [
+          "Singapore Refining Co",
+          "Enterprise Singapore"
+        ]
+      }
+    ],
+    "edge_types": [
+      {
+        "name": "WORKS_FOR",
+        "description": "Indicates employment or leadership within an organization.",
+        "source_targets": [
+          {
+            "source": "BankExecutive",
+            "target": "CommercialBank"
+          },
+          {
+            "source": "FinancialAnalyst",
+            "target": "InvestmentFirm"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "REGULATES",
+        "description": "Indicates oversight and regulatory authority over an entity.",
+        "source_targets": [
+          {
+            "source": "RegulatoryBody",
+            "target": "CommercialBank"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "REPORTS_ON",
+        "description": "Indicates a media outlet or analyst covering news or performance of an entity.",
+        "source_targets": [
+          {
+            "source": "MediaOutlet",
+            "target": "CommercialBank"
+          },
+          {
+            "source": "FinancialAnalyst",
+            "target": "CommercialBank"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "CRITICIZES",
+        "description": "Indicates public negative feedback or complaints on social media.",
+        "source_targets": [
+          {
+            "source": "SocialMediaUser",
+            "target": "CommercialBank"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "INVESTS_IN",
+        "description": "Indicates a financial stake or shareholding in an entity.",
+        "source_targets": [
+          {
+            "source": "InvestmentFirm",
+            "target": "CommercialBank"
+          },
+          {
+            "source": "SocialMediaUser",
+            "target": "CommercialBank"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "ISSUES_GUIDANCE",
+        "description": "Indicates official statements or policy directions provided to the market.",
+        "source_targets": [
+          {
+            "source": "GovernmentOfficial",
+            "target": "Organization"
+          },
+          {
+            "source": "BankExecutive",
+            "target": "SocialMediaUser"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "COLLABORATES_WITH",
+        "description": "Indicates a partnership or joint initiative between two entities.",
+        "source_targets": [
+          {
+            "source": "CommercialBank",
+            "target": "Organization"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "FOLLOWS",
+        "description": "Indicates a social media connection where one user monitors another's updates.",
+        "source_targets": [
+          {
+            "source": "SocialMediaUser",
+            "target": "MediaOutlet"
+          },
+          {
+            "source": "SocialMediaUser",
+            "target": "FinancialAnalyst"
+          }
+        ],
+        "attributes": []
+      }
+    ]
+  },
+  "analysis_summary": "该本体设计围绕星展银行（DBS）2026年第一季度财报预测事件，提取了银行高管、金融分析师、监管机构和媒体等核心发声主体。通过区分具体的金融从业者与普通社媒用户，系统可以模拟专业研报与大众舆论（如针对系统故障的批评或对股息的反应）之间的互动。关系类型涵盖了从正式的监管和雇佣到非正式的社媒批评和关注，能够有效还原金融事件在社交媒体上的传播路径。",
+  "graph_id": null,
+  "graph_build_task_id": "4a1449d3-2574-4778-949c-90e7e92608e3",
+  "simulation_requirement": "Predict whether DBS's Q1 2026 will beat analyst estimates and simulate the stock price movement 24 hours post-release.",
+  "chunk_size": 500,
+  "chunk_overlap": 50,
+  "error": "list indices must be integers or slices, not str",
+  "token_usage": {
+    "prompt_tokens": 54684,
+    "completion_tokens": 19688,
+    "total_tokens": 74372,
+    "call_count": 83,
+    "last_updated": "2026-04-28T17:04:33.113336"
+  }
+}

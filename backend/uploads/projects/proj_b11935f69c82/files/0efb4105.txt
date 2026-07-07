@@ -1,0 +1,38 @@
+### 1. Executive Summary
+This image is a digital informational graphic, likely from a financial institution's social media communication. It announces the implementation of a security feature termed a "12-hour cooling period." The graphic outlines the specific banking triggers for this safeguard and clarifies which transactions remain unaffected to ensure operational continuity for the user.
+
+### 2. OCR / Text Extraction
+*   **Headline:** We've progressively rolled out an added safeguard: **a 12-hour cooling period.**
+*   **Central Graphic Text:** 12 hours
+*   **Sub-heading:** It applies when you:
+*   **List Items:**
+    *   add a new payee
+    *   increase transfer limits
+    *   change your mobile number or email
+*   **Body Paragraph 1:** By introducing this **carefully and in phases**, it protects customers **without disrupting everyday banking.**
+*   **Body Paragraph 2:** Transfers to existing recipients and within current limits continue as usual.
+
+### 3. Entity Identification
+*   **Financial Product/Feature:** 12-hour cooling period (Safeguard).
+*   **Financial Metrics/Timeframes:** 12 hours.
+*   **Banking Actions (Triggers):**
+    *   Adding a new payee.
+    *   Increasing transfer limits.
+    *   Changing mobile number.
+    *   Changing email address.
+*   **Exemptions:**
+    *   Transfers to existing recipients.
+    *   Transfers within current limits.
+*   **Stakeholders:** Customers (implicitly of the financial institution).
+
+### 4. Structural Relationships
+*   **Trigger-Action Relationship:** The "12-hour cooling period" (Entity) is activated by the "Banking Actions" (Entities: new payee, limit increase, contact info change).
+*   **Exclusion Relationship:** "Transfers to existing recipients" and "current limits" (Entities) are explicitly excluded from the "12-hour cooling period" (Entity) constraints.
+*   **Hierarchical Layout:** The "12-hour cooling period" headline and central icon serve as the primary subject, with the specific triggers listed as secondary supporting details.
+*   **Emphasis/Logic:** Red text is utilized to highlight the specific safeguard duration ("12-hour cooling period"), the method of implementation ("carefully and in phases"), and the intended customer benefit ("without disrupting everyday banking").
+
+### 5. Visual Data Translation
+*   **Iconography:** A central red circular icon depicts a clock face. The top quadrant of the clock is replaced by a right-pointing arrow, indicating the passage of time. The text "12 hours" is centered within the clock graphic.
+*   **Color Palette:** The design utilizes a red, black, and white/grey color scheme. A horizontal header bar at the top consists of a red section (left) and a black section (right).
+*   **Bulleted List:** The three primary triggers are preceded by red double-chevron icons (») pointing to the right.
+*   **Background:** The background is a textured light grey gradient, suggesting a professional or corporate aesthetic.

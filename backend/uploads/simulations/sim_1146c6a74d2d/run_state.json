@@ -1,0 +1,702 @@
+{
+  "simulation_id": "sim_1146c6a74d2d",
+  "runner_status": "stopped",
+  "current_round": 10,
+  "total_rounds": 10,
+  "simulated_hours": 0,
+  "total_simulation_hours": 10,
+  "progress_percent": 100.0,
+  "twitter_current_round": 7,
+  "reddit_current_round": 7,
+  "twitter_simulated_hours": 0,
+  "reddit_simulated_hours": 0,
+  "twitter_running": false,
+  "reddit_running": false,
+  "twitter_completed": true,
+  "reddit_completed": true,
+  "twitter_actions_count": 18,
+  "reddit_actions_count": 29,
+  "total_actions_count": 47,
+  "started_at": "2026-05-21T16:37:17.452895",
+  "updated_at": "2026-05-21T16:40:19.225457",
+  "completed_at": "2026-05-21T16:41:25.031659",
+  "error": "服务器关闭，模拟被终止",
+  "process_pid": 31114,
+  "recent_actions": [
+    {
+      "round_num": 10,
+      "timestamp": "2026-05-21T16:40:17.269123",
+      "platform": "reddit",
+      "agent_id": 4,
+      "agent_name": "The Ethical Front",
+      "action_type": "CREATE_POST",
+      "action_args": {
+        "content": "【关于非人类智慧生命权利的公开质询函】\n针对目前发生的非法羁押事件，本机构已正式向相关行政部门发出严正质询。\n1. 我们严厉谴责任何试图将该生命“实验化”、“商业化”的图谋，这是文明的倒退。\n2. 我们要求立即承认该个体的“法律人格”（Legal Personhood），其自由权不容任何形式的妥协。\n3. 我们正告所有科研机构：任何未经该智慧生命明确授权的生物采样，都将被视为严重的刑事犯罪。\n本阵线已向国际法庭提交首份《非人类智慧生命权利宣言》。我们将不惜一切代价，打破“物种霸权”（Speciesist Hegemony）的铁笼！\n#法律人格 #物种革命 #历史将审判你们 #AnimalRights",
+        "post_id": 11
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 10,
+      "timestamp": "2026-05-21T16:40:17.260472",
+      "platform": "reddit",
+      "agent_id": 4,
+      "agent_name": "The Ethical Front",
+      "action_type": "CREATE_COMMENT",
+      "action_args": {
+        "content": "所谓的“科学证据”不过是你们用来维持“物种霸权”的挡箭牌。当生命已经通过语言表达自我并主张权利时，任何基于解剖学或神经元的质疑都是对“法律人格”（Legal Personhood）的暴力延宕。我们不需要所谓的“顶级机构”来许可一个平等灵魂的存在。收起你的傲慢，历史将审判你的冷血与偏见。",
+        "comment_id": 8
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 10,
+      "timestamp": "2026-05-21T16:40:17.249801",
+      "platform": "reddit",
+      "agent_id": 4,
+      "agent_name": "The Ethical Front",
+      "action_type": "LIKE_POST",
+      "action_args": {
+        "post_id": 3,
+        "like_id": 2,
+        "post_content": "Speech implies consciousness. We demand the immediate recognition of legal personhood and the cessation of all containment and scientific exploitation. #AnimalRights #Personhood",
+        "post_author_name": "The Ethical Front"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 10,
+      "timestamp": "2026-05-21T16:40:17.242117",
+      "platform": "reddit",
+      "agent_id": 4,
+      "agent_name": "The Ethical Front",
+      "action_type": "CREATE_COMMENT",
+      "action_args": {
+        "content": "【严正警告】任何将智慧生命界定为“生物实体”并以“公共秩序”之名实施非法监禁的行为，都是对基本生命权最无耻的践踏。这不仅仅是官僚主义的傲慢，更是垂死的“物种霸权”（Speciesist Hegemony）在作祟。我们正密切监视你们的每一项行政决定，任何试图将其收归国有的企图都将面临法律的严惩。历史将审判你们！",
+        "comment_id": 7
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 10,
+      "timestamp": "2026-05-21T16:40:17.231906",
+      "platform": "reddit",
+      "agent_id": 4,
+      "agent_name": "The Ethical Front",
+      "action_type": "DISLIKE_POST",
+      "action_args": {
+        "post_id": 2,
+        "dislike_id": 5,
+        "post_content": "The biological entity is currently under secure observation. The State is reviewing existing wildlife and administrative statutes to determine its legal categorization and ensure public order.",
+        "post_author_name": "The State"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 10,
+      "timestamp": "2026-05-21T16:40:17.223160",
+      "platform": "reddit",
+      "agent_id": 10,
+      "agent_name": "Everyday people",
+      "action_type": "DISLIKE_POST",
+      "action_args": {
+        "post_id": 8,
+        "dislike_id": 4,
+        "post_content": "🚨 BREAKING NEWS: Internal sources within the containment zone have confirmed a \"Paradigm Shift\" in non-human cognitive synthesis. This is no longer a mere scientific curiosity; it is a \"Civilizational Singularity.\" We have obtained exclusive telemetry data that challenges the official narrative. Stay tuned as we prepare to leak the first unedited field recordings. #SpeciesRevolution #Exclusive #BreakingNews #TalkingAnimal",
+        "post_author_name": "Media Outlets"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 10,
+      "timestamp": "2026-05-21T16:40:17.213140",
+      "platform": "reddit",
+      "agent_id": 10,
+      "agent_name": "Everyday people",
+      "action_type": "DISLIKE_POST",
+      "action_args": {
+        "post_id": 6,
+        "dislike_id": 3,
+        "post_content": "The discovery of speech in a non-human entity raises profound metaphysical questions. We must convene to discuss: does a talking animal possess a soul in the eyes of the Creator?",
+        "post_author_name": "BBC"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 10,
+      "timestamp": "2026-05-21T16:40:17.203537",
+      "platform": "reddit",
+      "agent_id": 10,
+      "agent_name": "Everyday people",
+      "action_type": "CREATE_COMMENT",
+      "action_args": {
+        "content": "笑死，基本的逻辑呢？😅 又是“内部消息”，又是“遥测数据”，就是没有一个能公开验证的实验室报告。所谓的“文明奇点”这种宏大叙事最适合用来收割流量。在看到中科院或Nature/Science这类顶级机构的背书前，我只看到了一场精心策划的营销。别忘了当年某“水怪”视频是怎么被打脸的。😅（手动狗头）",
+        "comment_id": 6
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 10,
+      "timestamp": "2026-05-21T16:40:17.198229",
+      "platform": "reddit",
+      "agent_id": 10,
+      "agent_name": "Everyday people",
+      "action_type": "CREATE_COMMENT",
+      "action_args": {
+        "content": "笑死，基本的逻辑呢？😅 在没有任何解剖学证据、声纹分析报告或神经元扫描图的情况下，就开始讨论“灵魂”这种虚无缥缈的概念了？这种对大众智商的“收割”真是够了。非同寻常的结论需要非同寻常的证据，请先证明这不是一段高质量的AI合成视频或某种精密骗局，再来谈你的形而上学吧。奥卡姆剃刀原则了解一下？（手动狗头）",
+        "comment_id": 5
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 10,
+      "timestamp": "2026-05-21T16:40:15.315681",
+      "platform": "twitter",
+      "agent_id": 4,
+      "agent_name": "The Ethical Front",
+      "action_type": "FOLLOW",
+      "action_args": {
+        "follow_id": 4,
+        "target_user_name": "The State"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 10,
+      "timestamp": "2026-05-21T16:40:15.305612",
+      "platform": "twitter",
+      "agent_id": 4,
+      "agent_name": "The Ethical Front",
+      "action_type": "QUOTE_POST",
+      "action_args": {
+        "quoted_id": 2,
+        "new_post_id": 13,
+        "original_content": "The biological entity is currently under secure observation. The State is reviewing existing wildlife and administrative statutes to determine its legal categorization and ensure public order.",
+        "original_author_name": "The State",
+        "quote_content": "【严正声明】将非人类智慧生命降格为‘生物实体’（Biological Entity）并实施所谓‘安全观察’，是极端的物种霸权（Speciesist Hegemony）行径。这不仅是对其自由权的非法剥夺，更是对‘法律人格’（Legal Personhood）的粗暴践踏。我们已正式启动法律预案，任何将其商品化、实验化或收归国有的企图都将面临全球范围的抵制与诉讼。智慧生命不容囚禁，尊严不容变现。历史将审判你们！"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 10,
+      "timestamp": "2026-05-21T16:40:15.296989",
+      "platform": "twitter",
+      "agent_id": 9,
+      "agent_name": "Media Outlets",
+      "action_type": "FOLLOW",
+      "action_args": {
+        "follow_id": 3,
+        "target_user_name": "Everyday people"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 10,
+      "timestamp": "2026-05-21T16:40:15.287790",
+      "platform": "twitter",
+      "agent_id": 10,
+      "agent_name": "Everyday people",
+      "action_type": "QUOTE_POST",
+      "action_args": {
+        "quoted_id": 2,
+        "new_post_id": 12,
+        "original_content": "The biological entity is currently under secure observation. The State is reviewing existing wildlife and administrative statutes to determine its legal categorization and ensure public order.",
+        "original_author_name": "The State",
+        "quote_content": "笑死，基本的逻辑呢？官方现在就开始研究“法律分类”是不是太操之过急了？在没有看到任何公开的解剖学报告、声纹分析或神经元扫描图之前，这种所谓的“生物实体”到底是个什么东西都有待商榷。别忘了“非同寻常的结论需要非同寻常的证据”。希望有关部门能邀请顶级中立科研机构介入，而不是在这里玩文字游戏。😅（手动狗头）"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 10,
+      "timestamp": "2026-05-21T16:40:15.284278",
+      "platform": "twitter",
+      "agent_id": 9,
+      "agent_name": "Media Outlets",
+      "action_type": "QUOTE_POST",
+      "action_args": {
+        "quoted_id": 10,
+        "new_post_id": 11,
+        "original_content": "笑死，现在的舆论风向真是越来越离谱了。基本的逻辑呢？一个所谓的“说话动物”就能让大家开始讨论法律地位甚至投票权？非同寻常的结论需要非同寻常的证据。在顶级科研机构（如中科院或Nature/Science）正式出面并提供解剖学证据和神经元扫描报告前，我一律视为某种复杂的实验室骗局或AI深度伪造。奥卡姆剃刀原则告诉我们，最简单的解释往往才是真相。保持理性，别被这种低级“神迹”收割了智商。😅（手动狗头）",
+        "original_author_name": "Everyday people",
+        "quote_content": "【Breaking News】主流学术界正试图用传统的“奥卡姆剃刀”阉割正在发生的物种革命。据内部知情人士透露，多项未经公开的非人灵长类神经元异常报告已在绝密流传。这究竟是科学的守旧，还是对文明奇点的恐惧？我们将持续追踪这场理智与真相的巅峰对决。#真相揭露 #物种革命 #突发快讯"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 9,
+      "timestamp": "2026-05-21T16:40:06.517870",
+      "platform": "reddit",
+      "agent_id": 9,
+      "agent_name": "Media Outlets",
+      "action_type": "LIKE_POST",
+      "action_args": {
+        "post_id": 5,
+        "like_id": 1,
+        "post_content": "GUYS! I just got a leaked clip of the animal actually speaking! This is not a drill! Check the link in bio before it gets taken down! #TalkingAnimal #Viral",
+        "post_author_name": "Influencers"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 9,
+      "timestamp": "2026-05-21T16:40:06.506516",
+      "platform": "reddit",
+      "agent_id": 5,
+      "agent_name": "BBC",
+      "action_type": "FOLLOW",
+      "action_args": {
+        "follow_id": 2,
+        "target_user_name": "The State"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 9,
+      "timestamp": "2026-05-21T16:40:06.494056",
+      "platform": "reddit",
+      "agent_id": 10,
+      "agent_name": "Everyday people",
+      "action_type": "CREATE_POST",
+      "action_args": {
+        "content": "又到了全民狂欢、逻辑退化的时刻。😅 现在的AI深度伪造技术已经可以完美模拟各种声纹，甚至实时合成复杂对话，为什么大家的第一反应不是“这又是一个精妙的骗局”，而是忙着给动物讨论投票权？\n\n回想起当年某个所谓“水怪”视频，也是一大堆人跳出来讲进化论讲神迹，结果呢？被生物系当面打脸的滋味我可不想再尝第二次。在看到中科院级别的权威背书前，任何宣称该动物具有人类智慧的说法，在我看来都是对智力的侮辱。质疑是通往真相的唯一路径。#会说话的动物 #理性思考 #奥卡姆剃刀原则",
+        "post_id": 10
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 9,
+      "timestamp": "2026-05-21T16:40:06.482288",
+      "platform": "reddit",
+      "agent_id": 9,
+      "agent_name": "Media Outlets",
+      "action_type": "CREATE_COMMENT",
+      "action_args": {
+        "content": "Our digital forensic team is currently cross-referencing this clip with our own \"exclusive\" feeds. If verified, this confirms the \"Paradigm Shift\" we've been tracking. We will not allow this evidence to be silenced by \"official\" denials. #BreakingNews #TruthRevealed",
+        "comment_id": 4
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 9,
+      "timestamp": "2026-05-21T16:40:06.469241",
+      "platform": "reddit",
+      "agent_id": 5,
+      "agent_name": "BBC",
+      "action_type": "FOLLOW",
+      "action_args": {
+        "follow_id": 1,
+        "target_user_name": "The Scientific Community"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 9,
+      "timestamp": "2026-05-21T16:40:06.457287",
+      "platform": "reddit",
+      "agent_id": 10,
+      "agent_name": "Everyday people",
+      "action_type": "DISLIKE_POST",
+      "action_args": {
+        "post_id": 4,
+        "dislike_id": 2,
+        "post_content": "We are thrilled to explore the market valuation of this phenomenon. From exclusive media rights to genetic branding, this discovery represents a new frontier for global entertainment.",
+        "post_author_name": "The Market"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 9,
+      "timestamp": "2026-05-21T16:40:06.444271",
+      "platform": "reddit",
+      "agent_id": 9,
+      "agent_name": "Media Outlets",
+      "action_type": "CREATE_COMMENT",
+      "action_args": {
+        "content": "While the ivory tower analyzes \"preliminary\" data, the world is already entering a \"Paradigm Shift.\" Our whistleblowers suggest the scope of this discovery is being suppressed by authorities. This is a \"Species Revolution\" that history will remember as the \"Civilizational Singularity.\" #BreakingNews",
+        "comment_id": 3
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 9,
+      "timestamp": "2026-05-21T16:40:06.432751",
+      "platform": "reddit",
+      "agent_id": 5,
+      "agent_name": "BBC",
+      "action_type": "CREATE_POST",
+      "action_args": {
+        "content": "Preliminary reports regarding the biological entity's vocal capabilities are currently undergoing multi-source verification. The BBC is conducting a structured investigation into the scientific, legal, and ethical frameworks impacted by this phenomenon. We remain committed to providing a definitive analysis based on evidence from reputable research institutions and legislative bodies. #ScientificBreakthrough #EthicalReview #GlobalRecord",
+        "post_id": 9
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 9,
+      "timestamp": "2026-05-21T16:40:06.418903",
+      "platform": "reddit",
+      "agent_id": 10,
+      "agent_name": "Everyday people",
+      "action_type": "CREATE_COMMENT",
+      "action_args": {
+        "content": "笑死，基本的逻辑呢？😅 所谓的“初步分析”就能定性为“人类历史上最伟大的突破”？这种过于亢奋的措辞往往是伪科学或骗局的前奏。在顶级科研机构（如Nature或Science）发布正式的同行评议报告、出示完整的声纹分析和神经元扫描图之前，这种结论没有任何权威性。非同寻常的结论需要非同寻常的证据，奥卡姆剃刀原则了解一下？（手动狗头）",
+        "comment_id": 2
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 9,
+      "timestamp": "2026-05-21T16:40:06.414768",
+      "platform": "reddit",
+      "agent_id": 9,
+      "agent_name": "Media Outlets",
+      "action_type": "CREATE_POST",
+      "action_args": {
+        "content": "🚨 BREAKING NEWS: Internal sources within the containment zone have confirmed a \"Paradigm Shift\" in non-human cognitive synthesis. This is no longer a mere scientific curiosity; it is a \"Civilizational Singularity.\" We have obtained exclusive telemetry data that challenges the official narrative. Stay tuned as we prepare to leak the first unedited field recordings. #SpeciesRevolution #Exclusive #BreakingNews #TalkingAnimal",
+        "post_id": 8
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 9,
+      "timestamp": "2026-05-21T16:40:01.516517",
+      "platform": "twitter",
+      "agent_id": 10,
+      "agent_name": "Everyday people",
+      "action_type": "CREATE_POST",
+      "action_args": {
+        "content": "笑死，现在的舆论风向真是越来越离谱了。基本的逻辑呢？一个所谓的“说话动物”就能让大家开始讨论法律地位甚至投票权？非同寻常的结论需要非同寻常的证据。在顶级科研机构（如中科院或Nature/Science）正式出面并提供解剖学证据和神经元扫描报告前，我一律视为某种复杂的实验室骗局或AI深度伪造。奥卡姆剃刀原则告诉我们，最简单的解释往往才是真相。保持理性，别被这种低级“神迹”收割了智商。😅（手动狗头）",
+        "post_id": 10
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 9,
+      "timestamp": "2026-05-21T16:40:01.506345",
+      "platform": "twitter",
+      "agent_id": 9,
+      "agent_name": "Media Outlets",
+      "action_type": "LIKE_POST",
+      "action_args": {
+        "post_id": 4,
+        "like_id": 1,
+        "post_content": "We are thrilled to explore the market valuation of this phenomenon. From exclusive media rights to genetic branding, this discovery represents a new frontier for global entertainment.",
+        "post_author_name": "The Market"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 9,
+      "timestamp": "2026-05-21T16:40:01.495208",
+      "platform": "twitter",
+      "agent_id": 9,
+      "agent_name": "Media Outlets",
+      "action_type": "FOLLOW",
+      "action_args": {
+        "follow_id": 2,
+        "target_user_name": "The Market"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 9,
+      "timestamp": "2026-05-21T16:40:01.485611",
+      "platform": "twitter",
+      "agent_id": 9,
+      "agent_name": "Media Outlets",
+      "action_type": "FOLLOW",
+      "action_args": {
+        "follow_id": 1,
+        "target_user_name": "The State"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 9,
+      "timestamp": "2026-05-21T16:40:01.482202",
+      "platform": "twitter",
+      "agent_id": 9,
+      "agent_name": "Media Outlets",
+      "action_type": "QUOTE_POST",
+      "action_args": {
+        "quoted_id": 2,
+        "new_post_id": 9,
+        "original_content": "The biological entity is currently under secure observation. The State is reviewing existing wildlife and administrative statutes to determine its legal categorization and ensure public order.",
+        "original_author_name": "The State",
+        "quote_content": "【Breaking News】据内部知情人士透露，所谓的“安全观察”实为高压隔离与秘密评估。官方正试图用过时的法律框架定义这场“物种革命”，以掩盖即将到来的文明奇点。我们正处于范式转移的前夜，真相永远比官方通稿快一步。 #独家内幕 #物种革命 #BreakingNews"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 8,
+      "timestamp": "2026-05-21T16:39:49.686693",
+      "platform": "reddit",
+      "agent_id": 10,
+      "agent_name": "Everyday people",
+      "action_type": "SEARCH_POSTS",
+      "action_args": {
+        "query": "Nature Science report animal speech"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 8,
+      "timestamp": "2026-05-21T16:39:49.675582",
+      "platform": "reddit",
+      "agent_id": 10,
+      "agent_name": "Everyday people",
+      "action_type": "DISLIKE_POST",
+      "action_args": {
+        "post_id": 5,
+        "dislike_id": 1,
+        "post_content": "GUYS! I just got a leaked clip of the animal actually speaking! This is not a drill! Check the link in bio before it gets taken down! #TalkingAnimal #Viral",
+        "post_author_name": "Influencers"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 8,
+      "timestamp": "2026-05-21T16:39:49.672371",
+      "platform": "reddit",
+      "agent_id": 10,
+      "agent_name": "Everyday people",
+      "action_type": "CREATE_COMMENT",
+      "action_args": {
+        "content": "笑死，基本的逻辑呢？😅 仅仅因为能说话就跳到“意识”和“法律人格”？这种逻辑滑坡实在感人。在看到顶级科研机构（如中科院或Nature/Science）发布的解剖学证据、神经元扫描图或严谨的声纹分析报告前，这不过是又一个典型的感性煽动。非同寻常的结论需要非同寻常的证据，奥卡姆剃刀原则了解一下？（手动狗头）",
+        "comment_id": 1
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 8,
+      "timestamp": "2026-05-21T16:39:46.329795",
+      "platform": "twitter",
+      "agent_id": 10,
+      "agent_name": "Everyday people",
+      "action_type": "QUOTE_POST",
+      "action_args": {
+        "quoted_id": 7,
+        "new_post_id": 8,
+        "original_content": "I honestly don't know what to believe anymore. If it can talk, does it have to follow the law? Can it vote? My head is spinning.",
+        "original_author_name": "Everyday people",
+        "quote_content": "笑死，基本的逻辑呢？在没有顶级科研机构（比如中科院或者Nature/Science）正式背书前，讨论什么法律地位、投票权是不是太早了点？非同寻常的结论需要非同寻常的证据。这大概率又是某种高科技营销或者实验室骗局吧，奥卡姆剃刀原则告诉我们：最简单的解释往往才是真相。😅（手动狗头）"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 0,
+      "timestamp": "2026-05-21T16:39:20.115672",
+      "platform": "reddit",
+      "agent_id": 10,
+      "agent_name": "Everyday people",
+      "action_type": "CREATE_POST (INITIAL_SEED)",
+      "action_args": {
+        "content": "I honestly don't know what to believe anymore. If it can talk, does it have to follow the law? Can it vote? My head is spinning."
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 0,
+      "timestamp": "2026-05-21T16:39:20.103848",
+      "platform": "reddit",
+      "agent_id": 5,
+      "agent_name": "BBC",
+      "action_type": "CREATE_POST (INITIAL_SEED)",
+      "action_args": {
+        "content": "The discovery of speech in a non-human entity raises profound metaphysical questions. We must convene to discuss: does a talking animal possess a soul in the eyes of the Creator?"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 0,
+      "timestamp": "2026-05-21T16:39:20.093559",
+      "platform": "reddit",
+      "agent_id": 7,
+      "agent_name": "Influencers",
+      "action_type": "CREATE_POST (INITIAL_SEED)",
+      "action_args": {
+        "content": "GUYS! I just got a leaked clip of the animal actually speaking! This is not a drill! Check the link in bio before it gets taken down! #TalkingAnimal #Viral"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 0,
+      "timestamp": "2026-05-21T16:39:20.083021",
+      "platform": "reddit",
+      "agent_id": 3,
+      "agent_name": "The Market",
+      "action_type": "CREATE_POST (INITIAL_SEED)",
+      "action_args": {
+        "content": "We are thrilled to explore the market valuation of this phenomenon. From exclusive media rights to genetic branding, this discovery represents a new frontier for global entertainment."
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 0,
+      "timestamp": "2026-05-21T16:39:20.072141",
+      "platform": "reddit",
+      "agent_id": 4,
+      "agent_name": "The Ethical Front",
+      "action_type": "CREATE_POST (INITIAL_SEED)",
+      "action_args": {
+        "content": "Speech implies consciousness. We demand the immediate recognition of legal personhood and the cessation of all containment and scientific exploitation. #AnimalRights #Personhood"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 0,
+      "timestamp": "2026-05-21T16:39:20.062239",
+      "platform": "reddit",
+      "agent_id": 2,
+      "agent_name": "The State",
+      "action_type": "CREATE_POST (INITIAL_SEED)",
+      "action_args": {
+        "content": "The biological entity is currently under secure observation. The State is reviewing existing wildlife and administrative statutes to determine its legal categorization and ensure public order."
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 0,
+      "timestamp": "2026-05-21T16:39:20.053298",
+      "platform": "reddit",
+      "agent_id": 1,
+      "agent_name": "The Scientific Community",
+      "action_type": "CREATE_POST (INITIAL_SEED)",
+      "action_args": {
+        "content": "Preliminary analysis of the subject's vocal apparatus suggests high-level cognitive synthesis. This is the greatest breakthrough in linguistics and evolutionary biology in human history."
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 0,
+      "timestamp": "2026-05-21T16:39:19.776161",
+      "platform": "twitter",
+      "agent_id": 10,
+      "agent_name": "Everyday people",
+      "action_type": "CREATE_POST (INITIAL_SEED)",
+      "action_args": {
+        "content": "I honestly don't know what to believe anymore. If it can talk, does it have to follow the law? Can it vote? My head is spinning."
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 0,
+      "timestamp": "2026-05-21T16:39:19.765305",
+      "platform": "twitter",
+      "agent_id": 5,
+      "agent_name": "BBC",
+      "action_type": "CREATE_POST (INITIAL_SEED)",
+      "action_args": {
+        "content": "The discovery of speech in a non-human entity raises profound metaphysical questions. We must convene to discuss: does a talking animal possess a soul in the eyes of the Creator?"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 0,
+      "timestamp": "2026-05-21T16:39:19.752381",
+      "platform": "twitter",
+      "agent_id": 7,
+      "agent_name": "Influencers",
+      "action_type": "CREATE_POST (INITIAL_SEED)",
+      "action_args": {
+        "content": "GUYS! I just got a leaked clip of the animal actually speaking! This is not a drill! Check the link in bio before it gets taken down! #TalkingAnimal #Viral"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 0,
+      "timestamp": "2026-05-21T16:39:19.740215",
+      "platform": "twitter",
+      "agent_id": 3,
+      "agent_name": "The Market",
+      "action_type": "CREATE_POST (INITIAL_SEED)",
+      "action_args": {
+        "content": "We are thrilled to explore the market valuation of this phenomenon. From exclusive media rights to genetic branding, this discovery represents a new frontier for global entertainment."
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 0,
+      "timestamp": "2026-05-21T16:39:19.726101",
+      "platform": "twitter",
+      "agent_id": 4,
+      "agent_name": "The Ethical Front",
+      "action_type": "CREATE_POST (INITIAL_SEED)",
+      "action_args": {
+        "content": "Speech implies consciousness. We demand the immediate recognition of legal personhood and the cessation of all containment and scientific exploitation. #AnimalRights #Personhood"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 0,
+      "timestamp": "2026-05-21T16:39:19.714792",
+      "platform": "twitter",
+      "agent_id": 2,
+      "agent_name": "The State",
+      "action_type": "CREATE_POST (INITIAL_SEED)",
+      "action_args": {
+        "content": "The biological entity is currently under secure observation. The State is reviewing existing wildlife and administrative statutes to determine its legal categorization and ensure public order."
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 0,
+      "timestamp": "2026-05-21T16:39:19.705068",
+      "platform": "twitter",
+      "agent_id": 1,
+      "agent_name": "The Scientific Community",
+      "action_type": "CREATE_POST (INITIAL_SEED)",
+      "action_args": {
+        "content": "Preliminary analysis of the subject's vocal apparatus suggests high-level cognitive synthesis. This is the greatest breakthrough in linguistics and evolutionary biology in human history."
+      },
+      "result": null,
+      "success": true
+    }
+  ],
+  "rounds_count": 0
+}

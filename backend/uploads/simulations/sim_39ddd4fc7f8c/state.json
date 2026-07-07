@@ -1,0 +1,25 @@
+{
+  "simulation_id": "sim_39ddd4fc7f8c",
+  "project_id": "proj_dd86ba5c9f6f",
+  "graph_id": "mirofish_local_4b0b36b5272f4325",
+  "enable_twitter": true,
+  "enable_reddit": true,
+  "status": "running",
+  "entities_count": 11,
+  "profiles_count": 11,
+  "entity_types": [
+    "Organization",
+    "Person",
+    "TalkingAnimal",
+    "Corporation",
+    "Scientist"
+  ],
+  "config_generated": true,
+  "config_reasoning": "时间配置: 该事件属于颠覆人类认知的重大科学与伦理发现，影响深远，设置96小时以模拟从最初发现、官方证实到全球性社会大争论的完整周期。由于涉及多方利益博弈，白天工作时段（9-18点）主要由政府、科研机构及传统媒体（BBC/NYT）发布权威信息与监管政策；晚间高峰（19-22点）则由社交媒体网红及普通民众主导，进行伦理辩论与感性传播；凌晨时段设定为低活跃度，符合中国网民作息规律。 | 事件配置: 配置提取了模拟需求中的核心冲突点：科学研究、法律地位、宗教冲击与商业开发。通过指定poster_type，确保了官方机构发布新闻/指令，科学家发布研究观点，而企业与个人负责推动商业化与社会舆论的极化，从而完整复现文档中描述的‘五大部门’博弈逻辑。 | Agent配置: 成功生成 11 个 | 初始帖子分配: 8 个帖子已分配发布者",
+  "current_round": 0,
+  "twitter_status": "not_started",
+  "reddit_status": "not_started",
+  "created_at": "2026-05-21T13:31:23.792669",
+  "updated_at": "2026-05-21T13:37:04.216601",
+  "error": null
+}

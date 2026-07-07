@@ -1,0 +1,343 @@
+{
+  "project_id": "proj_f7b884ab9d0c",
+  "name": "Unnamed Project",
+  "status": "graph_completed",
+  "created_at": "2026-05-21T11:58:10.593864",
+  "updated_at": "2026-05-21T11:58:45.093085",
+  "files": [
+    {
+      "filename": "New Text Document.txt",
+      "size": 37
+    }
+  ],
+  "total_text_length": 69,
+  "ontology": {
+    "entity_types": [
+      {
+        "name": "TalkingAnimal",
+        "description": "The discovered non-human entity capable of speech and social media interaction.",
+        "attributes": [
+          {
+            "name": "species_type",
+            "type": "text",
+            "description": "The biological species of the animal."
+          },
+          {
+            "name": "vocal_ability_description",
+            "type": "text",
+            "description": "Description of how the animal communicates."
+          }
+        ],
+        "examples": [
+          "Leo the Talking Lion",
+          "Koko the Speaking Parrot"
+        ]
+      },
+      {
+        "name": "Scientist",
+        "description": "Researchers and experts analyzing the biological and psychological aspects of the animal.",
+        "attributes": [
+          {
+            "name": "field_of_study",
+            "type": "text",
+            "description": "The specific scientific domain of the expert."
+          },
+          {
+            "name": "academic_credentials",
+            "type": "text",
+            "description": "Degrees or titles held by the scientist."
+          }
+        ],
+        "examples": [
+          "Dr. Jane Smith",
+          "Professor Alan Turing"
+        ]
+      },
+      {
+        "name": "Activist",
+        "description": "Individuals advocating for the rights, protection, or liberation of the talking animal.",
+        "attributes": [
+          {
+            "name": "advocacy_focus",
+            "type": "text",
+            "description": "The specific cause the activist supports (e.g., Animal Rights)."
+          },
+          {
+            "name": "influence_score",
+            "type": "text",
+            "description": "A measure of their reach on social media."
+          }
+        ],
+        "examples": [
+          "Animal Rights Defender",
+          "Eco-Warrior Sam"
+        ]
+      },
+      {
+        "name": "Journalist",
+        "description": "Media professionals reporting on the discovery and subsequent events.",
+        "attributes": [
+          {
+            "name": "press_affiliation",
+            "type": "text",
+            "description": "The media house the journalist works for."
+          },
+          {
+            "name": "reporting_style",
+            "type": "text",
+            "description": "The tone of their reporting (e.g., Investigative, Sensationalist)."
+          }
+        ],
+        "examples": [
+          "Clark Kent",
+          "Sarah News-Reporter"
+        ]
+      },
+      {
+        "name": "ReligiousLeader",
+        "description": "Figures providing spiritual or theological interpretations of the talking animal.",
+        "attributes": [
+          {
+            "name": "faith_tradition",
+            "type": "text",
+            "description": "The religion or belief system represented."
+          },
+          {
+            "name": "clerical_title",
+            "type": "text",
+            "description": "The official title within the religious hierarchy."
+          }
+        ],
+        "examples": [
+          "Bishop John",
+          "Imam Ahmed"
+        ]
+      },
+      {
+        "name": "GovernmentOfficial",
+        "description": "Regulators and policy makers deciding the legal status of the talking animal.",
+        "attributes": [
+          {
+            "name": "department_title",
+            "type": "text",
+            "description": "The government branch or agency they represent."
+          },
+          {
+            "name": "jurisdiction_area",
+            "type": "text",
+            "description": "The geographic or legal area of authority."
+          }
+        ],
+        "examples": [
+          "Secretary of Interior",
+          "Senator Williams"
+        ]
+      },
+      {
+        "name": "ResearchInstitute",
+        "description": "Organizations dedicated to the scientific study and housing of the animal.",
+        "attributes": [
+          {
+            "name": "facility_location",
+            "type": "text",
+            "description": "The physical location of the institute."
+          },
+          {
+            "name": "funding_type",
+            "type": "text",
+            "description": "Source of funding (e.g., Public, Private, Military)."
+          }
+        ],
+        "examples": [
+          "Global Bio-Tech Lab",
+          "National Institute of Zoology"
+        ]
+      },
+      {
+        "name": "MediaOutlet",
+        "description": "News agencies, TV stations, or digital platforms broadcasting information.",
+        "attributes": [
+          {
+            "name": "broadcast_medium",
+            "type": "text",
+            "description": "The primary platform (e.g., TV, Social Media, Print)."
+          },
+          {
+            "name": "editorial_bias",
+            "type": "text",
+            "description": "The general political or social leaning of the outlet."
+          }
+        ],
+        "examples": [
+          "Global News Network",
+          "The Daily Truth"
+        ]
+      },
+      {
+        "name": "Person",
+        "description": "General individuals or members of the public reacting to the discovery.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The full name of the individual."
+          },
+          {
+            "name": "personal_bio",
+            "type": "text",
+            "description": "A short biography or description of the person."
+          }
+        ],
+        "examples": [
+          "John Doe",
+          "Jane Smith"
+        ]
+      },
+      {
+        "name": "Organization",
+        "description": "Any group, club, or association not covered by specific categories.",
+        "attributes": [
+          {
+            "name": "org_name",
+            "type": "text",
+            "description": "The official name of the organization."
+          },
+          {
+            "name": "mission_statement",
+            "type": "text",
+            "description": "The primary goal or purpose of the group."
+          }
+        ],
+        "examples": [
+          "Local Neighborhood Watch",
+          "International Hobbyist Club"
+        ]
+      }
+    ],
+    "edge_types": [
+      {
+        "name": "STUDIES",
+        "description": "Scientific observation or research conducted on the animal.",
+        "source_targets": [
+          {
+            "source": "Scientist",
+            "target": "TalkingAnimal"
+          },
+          {
+            "source": "ResearchInstitute",
+            "target": "TalkingAnimal"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "ADVOCATES_FOR",
+        "description": "Public support or legal defense of the animal's rights.",
+        "source_targets": [
+          {
+            "source": "Activist",
+            "target": "TalkingAnimal"
+          },
+          {
+            "source": "Organization",
+            "target": "TalkingAnimal"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "REPORTS_ON",
+        "description": "The act of covering news related to an entity.",
+        "source_targets": [
+          {
+            "source": "Journalist",
+            "target": "TalkingAnimal"
+          },
+          {
+            "source": "MediaOutlet",
+            "target": "TalkingAnimal"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "GOVERNS",
+        "description": "Legal or regulatory control over an entity.",
+        "source_targets": [
+          {
+            "source": "GovernmentOfficial",
+            "target": "TalkingAnimal"
+          },
+          {
+            "source": "GovernmentOfficial",
+            "target": "ResearchInstitute"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "INTERPRETS",
+        "description": "Providing a spiritual or ideological explanation for the phenomenon.",
+        "source_targets": [
+          {
+            "source": "ReligiousLeader",
+            "target": "TalkingAnimal"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "WORKS_FOR",
+        "description": "Employment or formal affiliation relationship.",
+        "source_targets": [
+          {
+            "source": "Scientist",
+            "target": "ResearchInstitute"
+          },
+          {
+            "source": "Journalist",
+            "target": "MediaOutlet"
+          },
+          {
+            "source": "Person",
+            "target": "Organization"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "INTERACTS_WITH",
+        "description": "Social media engagement, such as replying, mentioning, or debating.",
+        "source_targets": [
+          {
+            "source": "Person",
+            "target": "TalkingAnimal"
+          },
+          {
+            "source": "Person",
+            "target": "Person"
+          },
+          {
+            "source": "TalkingAnimal",
+            "target": "Person"
+          }
+        ],
+        "attributes": []
+      }
+    ]
+  },
+  "analysis_summary": "该设计围绕“会说话的动物”这一核心事件，构建了涵盖科学、法律、宗教、媒体和公众反应的多元舆论场。实体类型既包括了事件的中心（会说话的动物），也包括了对其进行研究、保护、监管和报道的各类专业主体。通过设立Person和Organization两个兜底类型，确保了模拟系统能够容纳任何未分类的社交媒体参与者，从而完整模拟社会各界的复杂互动。",
+  "graph_id": "mirofish_local_6edc07f837ea4f55",
+  "graph_build_task_id": "5710830f-10d2-43b8-b313-217c9ffe379e",
+  "simulation_requirement": "Predict what happens to the world if a talking animal is discovered.",
+  "chunk_size": 500,
+  "chunk_overlap": 50,
+  "error": null,
+  "token_usage": {
+    "prompt_tokens": 1906,
+    "completion_tokens": 2299,
+    "total_tokens": 4205,
+    "call_count": 2,
+    "last_updated": "2026-05-21T11:58:44.332148"
+  }
+}

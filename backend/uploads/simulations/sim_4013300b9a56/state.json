@@ -1,0 +1,28 @@
+{
+  "simulation_id": "sim_4013300b9a56",
+  "project_id": "proj_20c49e7ff892",
+  "graph_id": "mirofish_local_984d8a714a584639",
+  "enable_twitter": true,
+  "enable_reddit": true,
+  "status": "running",
+  "entities_count": 74,
+  "profiles_count": 74,
+  "entity_types": [
+    "RegulatoryBody",
+    "MigrantWorker",
+    "AdvocacyGroup",
+    "BankExecutive",
+    "GovernmentOfficial",
+    "CommercialBank",
+    "Person",
+    "Organization"
+  ],
+  "config_generated": true,
+  "config_reasoning": "时间配置: The simulation is set for 96 hours to capture the full lifecycle of a policy rollout, from initial announcement to the viral tipping point and subsequent institutional response. The time settings align with Singapore (SGT) daily routines: activity peaks during lunch hours (12-2 PM) and late evenings (7-11 PM) when both local residents and Work Permit Holders are most active on social media. Work hours reflect the operational times of regulatory bodies like MAS and MOM, while the agent count is set high (up to 62) to simulate the high-volume discourse typical of a major commercial bank's PR event. | 事件配置: The simulation is structured to capture the tension between 'Security' and 'Equity.' By using the CommercialBank and RegulatoryBody types for the initial rollout, I establish the institutional baseline. The MigrantWorker and AdvocacyGroup types are used to trigger the inflection point of 'institutional discrimination,' which is the core risk identified in the simulation objectives. The narrative evolution follows the transition from an operational update to a broader social justice debate, allowing for the analysis of the bank's reputational impact. | Agent配置: 成功生成 74 个 | 初始帖子分配: 8 个帖子已分配发布者",
+  "current_round": 0,
+  "twitter_status": "not_started",
+  "reddit_status": "not_started",
+  "created_at": "2026-06-11T11:35:35.864623",
+  "updated_at": "2026-06-11T16:52:58.941467",
+  "error": null
+}

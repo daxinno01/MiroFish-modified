@@ -1,0 +1,6 @@
+{"timestamp": "2026-05-21T17:58:49.951181", "event_type": "resume_start", "platform": "reddit", "resume_from_round": 41, "total_rounds": 40}
+{"round": 0, "timestamp": "2026-05-21T17:58:49.967594", "event_type": "round_start", "simulated_hour": 0}
+{"timestamp": "2026-05-21T17:58:49.971859", "event_type": "simulation_end", "platform": "reddit", "total_rounds": 40, "total_actions": 0}
+{"timestamp": "2026-05-22T09:17:34.492402", "event_type": "resume_start", "platform": "reddit", "resume_from_round": 41, "total_rounds": 0}
+{"round": 0, "timestamp": "2026-05-22T09:17:34.505359", "event_type": "round_start", "simulated_hour": 0}
+{"timestamp": "2026-05-22T09:17:34.509560", "event_type": "simulation_end", "platform": "reddit", "total_rounds": 40, "total_actions": 0}

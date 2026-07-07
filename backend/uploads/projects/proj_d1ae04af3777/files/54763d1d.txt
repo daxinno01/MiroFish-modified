@@ -1,0 +1,38 @@
+### 1. The Core Variable: `TalkingAnimal`
+
+The world discovers a non-human biological entity capable of human-like speech, advanced cognitive reasoning, and social interaction. Rather than a passing internet anomaly, this discovery immediately challenges the legal, philosophical, and biological definitions of "personhood."
+
+### 2. The Institutional Reactions
+
+The ontology divides human society into five distinct sectors, each moving to secure its own interests:
+
+* **The Scientific Community (`Scientist`):** Driven by researchers and academics specializing in evolutionary biology, cognitive science, and linguistics. They approach the animal as the ultimate academic breakthrough, prioritizing controlled observation, anatomical studies, and mapping its vocal capabilities.
+* **The State (`GovernmentAgency`):** National security and administrative bodies tasked with containment, legal categorization, and managing public order. Their primary function is regulation—deciding whether the animal falls under wildlife management laws, immigration laws, or entirely new legislative frameworks.
+* **The Market (`Corporation`):** Entertainment empires, biotechnology firms, and mass consumer brands moving aggressively to commercialize the phenomenon. They view the discovery through a lens of market valuation, seeking exclusive sponsorships, media rights, or genetic patents.
+
+### 3. The Public & Media Ecosystem
+
+Because a discovery of this magnitude cannot be hidden, a massive informational and social tug-of-war breaks out:
+
+* **The Amplifiers (`MediaOutlet` & `Influencer`):** Traditional journalism networks (like the BBC or NYT) attempt to shape a structured national narrative based on their editorial stances. Concurrently, viral social media giants and influencers crowdsource public attention, driving massive, unpredictable trends and hyper-accelerating global awareness.
+* **The Ethical Front (`Activist` & `Organization`):** Grassroots groups defending the moral and civil rights of the animal. They aggressively protest corporate monetization and state captivity, pushing heavily for legal personhood, animal liberation, and international protection agreements.
+* **The Spiritual Front (`ReligiousLeader`):** Major faith traditions and clerical authorities scrambling to provide theological interpretations. They address the existential and metaphysical questions: *Does a talking animal possess a soul? What does this mean for the traditional hierarchy of creation?*
+
+### Summary of Inter-Entity Dynamics
+
+Once entities are present, the simulation will immediately begin modeling friction along these primary axes:
+
+```
+[Scientists] ----(STUDIES)----> [TalkingAnimal] <----(REGULATES)---- [Government]
+                                       ^
+                                       |
+    [Activists] --(ADVOCATES FOR)------+------(SEEKS PROFIT FROM)-- [Corporations]
+         |                                                                 ^
+         v                                                                 |
+ (PROTESTS AGAINST) -------------------------------------------------------+
+
+```
+
+* **Exploitation vs. Liberation:** Corporations attempting to monetize the animal vs. Activists launching boycotts and legal blockades to protect it.
+* **Information Control:** Government agencies attempting to securely regulate and restrict access to the discovery vs. Media Outlets and Influencers leaking updates to capture global viewership.
+* **Public Polarization:** Everyday people (`Person`) engaging in volatile social media debates (`DEBATES_WITH`) as they align with scientific, spiritual, or activist viewpoints.

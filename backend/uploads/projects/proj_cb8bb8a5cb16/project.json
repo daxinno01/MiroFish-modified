@@ -1,0 +1,345 @@
+{
+  "project_id": "proj_cb8bb8a5cb16",
+  "name": "Unnamed Project",
+  "status": "graph_completed",
+  "created_at": "2026-05-12T01:39:37.969326",
+  "updated_at": "2026-05-12T02:10:51.775696",
+  "files": [
+    {
+      "filename": "reference_reddit_comments.md",
+      "size": 4403
+    },
+    {
+      "filename": "Singapore Household Income Trends 2022.pdf",
+      "size": 209882
+    },
+    {
+      "filename": "dbs_annual_report_excerpt.pdf",
+      "size": 361013
+    },
+    {
+      "filename": "mothership_article.md",
+      "size": 2229
+    },
+    {
+      "filename": "DBS Dossier_ Context and Benchmarking.pdf",
+      "size": 372029
+    }
+  ],
+  "total_text_length": 71710,
+  "ontology": {
+    "entity_types": [
+      {
+        "name": "Bank",
+        "description": "Financial institutions providing banking services and reporting corporate earnings.",
+        "attributes": [
+          {
+            "name": "bank_name",
+            "type": "text",
+            "description": "The official name of the banking institution."
+          },
+          {
+            "name": "net_profit_2022",
+            "type": "text",
+            "description": "The reported net profit for the 2022 fiscal year."
+          }
+        ],
+        "examples": [
+          "DBS Group Holdings",
+          "OCBC Bank"
+        ]
+      },
+      {
+        "name": "Executive",
+        "description": "High-level corporate leaders whose compensation and decisions are public record.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The full name of the executive."
+          },
+          {
+            "name": "job_title",
+            "type": "text",
+            "description": "The specific leadership role held."
+          },
+          {
+            "name": "annual_remuneration",
+            "type": "text",
+            "description": "The total compensation package including bonuses."
+          }
+        ],
+        "examples": [
+          "Piyush Gupta",
+          "Peter Seah"
+        ]
+      },
+      {
+        "name": "FinancialAnalyst",
+        "description": "Experts who provide professional commentary on bank performance and economic trends.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The name of the analyst."
+          },
+          {
+            "name": "firm_affiliation",
+            "type": "text",
+            "description": "The financial firm or institution they work for."
+          }
+        ],
+        "examples": [
+          "Winnie Li",
+          "The Broke Celeryman"
+        ]
+      },
+      {
+        "name": "Shareholder",
+        "description": "Individuals or entities holding equity and receiving dividends from the bank.",
+        "attributes": [
+          {
+            "name": "investor_type",
+            "type": "text",
+            "description": "Category of investor, e.g., Institutional or Retail."
+          },
+          {
+            "name": "dividend_yield_focus",
+            "type": "text",
+            "description": "Primary interest in specific dividend types like special dividends."
+          }
+        ],
+        "examples": [
+          "Temasek Holdings",
+          "Retail Investor"
+        ]
+      },
+      {
+        "name": "LaborRepresentative",
+        "description": "Individuals representing workers' rights and wage concerns.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The name of the representative."
+          },
+          {
+            "name": "union_name",
+            "type": "text",
+            "description": "The trade union or labor organization name."
+          }
+        ],
+        "examples": [
+          "Trade Union Representative",
+          "NTUC Official"
+        ]
+      },
+      {
+        "name": "RetailCustomer",
+        "description": "Individual users of banking services concerned with fees and interest rates.",
+        "attributes": [
+          {
+            "name": "account_type",
+            "type": "text",
+            "description": "The type of bank account held, e.g., Savings, Multiplier."
+          },
+          {
+            "name": "loyalty_status",
+            "type": "text",
+            "description": "Duration or level of relationship with the bank."
+          }
+        ],
+        "examples": [
+          "DBS Multiplier User",
+          "POSB Savings Account Holder"
+        ]
+      },
+      {
+        "name": "GovernmentOfficial",
+        "description": "Policy makers and regulators overseeing the financial sector and national budget.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The name of the official."
+          },
+          {
+            "name": "department",
+            "type": "text",
+            "description": "The government ministry or agency."
+          }
+        ],
+        "examples": [
+          "Lawrence Wong",
+          "MAS Regulator"
+        ]
+      },
+      {
+        "name": "MediaOutlet",
+        "description": "News organizations and social platforms that disseminate information and host debate.",
+        "attributes": [
+          {
+            "name": "outlet_name",
+            "type": "text",
+            "description": "The name of the news or social media platform."
+          },
+          {
+            "name": "platform_type",
+            "type": "text",
+            "description": "The medium, e.g., Mainstream News, Social Media Forum."
+          }
+        ],
+        "examples": [
+          "The Straits Times",
+          "Reddit r/singapore"
+        ]
+      },
+      {
+        "name": "Person",
+        "description": "General individuals, netizens, or low-income workers not fitting specific roles.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The name or handle of the individual."
+          },
+          {
+            "name": "primary_concern",
+            "type": "text",
+            "description": "The main issue they are vocal about, e.g., Cost of Living."
+          }
+        ],
+        "examples": [
+          "Low-income worker",
+          "Reddit user deangsana"
+        ]
+      },
+      {
+        "name": "Organization",
+        "description": "General groups, NGOs, or community associations involved in the discourse.",
+        "attributes": [
+          {
+            "name": "org_name",
+            "type": "text",
+            "description": "The name of the organization."
+          },
+          {
+            "name": "sector",
+            "type": "text",
+            "description": "The field of operation, e.g., Social Welfare, Research."
+          }
+        ],
+        "examples": [
+          "DBS Foundation",
+          "Minimum Income Standard Research Team"
+        ]
+      }
+    ],
+    "edge_types": [
+      {
+        "name": "WORKS_FOR",
+        "description": "An individual is employed by a bank or organization.",
+        "source_targets": [
+          {
+            "source": "Executive",
+            "target": "Bank"
+          },
+          {
+            "source": "Person",
+            "target": "Organization"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "REPORTS_ON",
+        "description": "A media outlet or analyst provides information about an entity.",
+        "source_targets": [
+          {
+            "source": "MediaOutlet",
+            "target": "Bank"
+          },
+          {
+            "source": "MediaOutlet",
+            "target": "Executive"
+          },
+          {
+            "source": "FinancialAnalyst",
+            "target": "Bank"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "CRITICIZES",
+        "description": "Expressing negative sentiment or disagreement toward an entity.",
+        "source_targets": [
+          {
+            "source": "Person",
+            "target": "Executive"
+          },
+          {
+            "source": "LaborRepresentative",
+            "target": "Bank"
+          },
+          {
+            "source": "RetailCustomer",
+            "target": "Bank"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "INVESTS_IN",
+        "description": "Holding a financial stake in an institution.",
+        "source_targets": [
+          {
+            "source": "Shareholder",
+            "target": "Bank"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "REGULATES",
+        "description": "Exercising legal or policy oversight.",
+        "source_targets": [
+          {
+            "source": "GovernmentOfficial",
+            "target": "Bank"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "ADVOCATES_FOR",
+        "description": "Supporting the interests of a specific group.",
+        "source_targets": [
+          {
+            "source": "LaborRepresentative",
+            "target": "Person"
+          },
+          {
+            "source": "Organization",
+            "target": "Person"
+          }
+        ],
+        "attributes": []
+      }
+    ]
+  },
+  "analysis_summary": "该本体设计旨在捕捉星展银行（DBS）创纪录利润与CEO加薪事件引发的社会舆论动态。实体类型涵盖了从高管、金融分析师到低收入劳工和社交媒体用户的全方位利益相关者。关系类型重点关注社媒互动中的批判、报道和监管行为，以模拟新加坡公众在面对生活成本上涨与企业巨额利润并存时的情绪冲突和声誉风险传播路径。",
+  "graph_id": "mirofish_local_46bef0273a2548b7",
+  "graph_build_task_id": "64811f41-d2ca-45d1-a6df-1962241e761e",
+  "simulation_requirement": "Based on the provided documents regarding DBS's record profits and the subsequent 13% pay increase for CEO Piyush Gupta, simulate a swarm of 10 diverse personas (e.g., a retail banking customer, a trade union representative, a shareholder, a financial analyst, and a low-income worker). Predict the dominant public sentiment on Singapore social media over the next 7 days. Specifically, forecast whether the reaction will result in a measurable 'reputational risk' score (1-10) and identify the primary 'point of anger' the public will fixate on.",
+  "chunk_size": 500,
+  "chunk_overlap": 50,
+  "error": null,
+  "token_usage": {
+    "prompt_tokens": 118293,
+    "completion_tokens": 29910,
+    "total_tokens": 148203,
+    "call_count": 199,
+    "last_updated": "2026-05-12T02:10:51.120030"
+  }
+}

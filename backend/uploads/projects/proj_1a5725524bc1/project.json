@@ -1,0 +1,338 @@
+{
+  "project_id": "proj_1a5725524bc1",
+  "name": "Unnamed Project",
+  "status": "graph_completed",
+  "created_at": "2026-05-21T13:23:55.960965",
+  "updated_at": "2026-05-21T13:24:31.620072",
+  "files": [
+    {
+      "filename": "New Text Document.txt",
+      "size": 37
+    }
+  ],
+  "total_text_length": 69,
+  "ontology": {
+    "entity_types": [
+      {
+        "name": "TalkingAnimal",
+        "description": "A non-human biological entity capable of human-like speech and social interaction.",
+        "attributes": [
+          {
+            "name": "species_type",
+            "type": "text",
+            "description": "The biological species of the animal."
+          },
+          {
+            "name": "vocal_capability",
+            "type": "text",
+            "description": "The complexity and style of the animal's speech."
+          }
+        ],
+        "examples": [
+          "Leo the Talking Lion",
+          "Koko the Speaking Gorilla"
+        ]
+      },
+      {
+        "name": "Scientist",
+        "description": "Researchers and academics studying the biological or psychological aspects of the animal.",
+        "attributes": [
+          {
+            "name": "field_of_expertise",
+            "type": "text",
+            "description": "The scientific discipline such as biology or linguistics."
+          },
+          {
+            "name": "academic_rank",
+            "type": "text",
+            "description": "The professional standing of the researcher."
+          }
+        ],
+        "examples": [
+          "Dr. Jane Smith",
+          "Professor Alan Turing"
+        ]
+      },
+      {
+        "name": "Activist",
+        "description": "Individuals advocating for the rights, protection, or liberation of the talking animal.",
+        "attributes": [
+          {
+            "name": "advocacy_focus",
+            "type": "text",
+            "description": "The specific cause, e.g., animal rights or legal personhood."
+          },
+          {
+            "name": "influence_score",
+            "type": "text",
+            "description": "The reach of their advocacy efforts."
+          }
+        ],
+        "examples": [
+          "Greta Thunberg",
+          "Animal Rights Leader X"
+        ]
+      },
+      {
+        "name": "ReligiousLeader",
+        "description": "Figures providing spiritual or theological interpretations of the talking animal's existence.",
+        "attributes": [
+          {
+            "name": "faith_tradition",
+            "type": "text",
+            "description": "The religion or belief system represented."
+          },
+          {
+            "name": "clerical_title",
+            "type": "text",
+            "description": "The formal title within the religious hierarchy."
+          }
+        ],
+        "examples": [
+          "Pope Francis",
+          "Dalai Lama"
+        ]
+      },
+      {
+        "name": "GovernmentAgency",
+        "description": "State bodies responsible for regulating, securing, or managing the talking animal.",
+        "attributes": [
+          {
+            "name": "jurisdiction_area",
+            "type": "text",
+            "description": "The geographic or legal area of authority."
+          },
+          {
+            "name": "agency_function",
+            "type": "text",
+            "description": "The primary role, e.g., national security or wildlife management."
+          }
+        ],
+        "examples": [
+          "Department of Interior",
+          "Ministry of Science"
+        ]
+      },
+      {
+        "name": "MediaOutlet",
+        "description": "Organizations that report news and shape public narrative regarding the discovery.",
+        "attributes": [
+          {
+            "name": "editorial_stance",
+            "type": "text",
+            "description": "The general bias or perspective of the reporting."
+          },
+          {
+            "name": "audience_reach",
+            "type": "text",
+            "description": "The scale of the outlet's viewership or readership."
+          }
+        ],
+        "examples": [
+          "BBC News",
+          "The New York Times"
+        ]
+      },
+      {
+        "name": "Influencer",
+        "description": "Social media personalities who drive public opinion and viral trends.",
+        "attributes": [
+          {
+            "name": "primary_platform",
+            "type": "text",
+            "description": "The main social media site used."
+          },
+          {
+            "name": "content_niche",
+            "type": "text",
+            "description": "The specific topic area they cover."
+          }
+        ],
+        "examples": [
+          "MrBeast",
+          "PewDiePie"
+        ]
+      },
+      {
+        "name": "Corporation",
+        "description": "Business entities looking to monetize, sponsor, or utilize the talking animal.",
+        "attributes": [
+          {
+            "name": "industry_sector",
+            "type": "text",
+            "description": "The business field, e.g., entertainment or biotech."
+          },
+          {
+            "name": "market_valuation",
+            "type": "text",
+            "description": "The financial size of the company."
+          }
+        ],
+        "examples": [
+          "Disney",
+          "Pfizer"
+        ]
+      },
+      {
+        "name": "Person",
+        "description": "A general individual or member of the public not fitting specific categories.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The legal name of the individual."
+          },
+          {
+            "name": "personal_bio",
+            "type": "text",
+            "description": "A brief description of the person's background."
+          }
+        ],
+        "examples": [
+          "John Doe",
+          "Jane Roe"
+        ]
+      },
+      {
+        "name": "Organization",
+        "description": "A general group, club, or association not fitting specific categories.",
+        "attributes": [
+          {
+            "name": "org_name",
+            "type": "text",
+            "description": "The official name of the organization."
+          },
+          {
+            "name": "mission_statement",
+            "type": "text",
+            "description": "The primary goal or purpose of the group."
+          }
+        ],
+        "examples": [
+          "Local Neighborhood Watch",
+          "Global Hobbyist Club"
+        ]
+      }
+    ],
+    "edge_types": [
+      {
+        "name": "STUDIES",
+        "description": "Scientific investigation or observation of the animal.",
+        "source_targets": [
+          {
+            "source": "Scientist",
+            "target": "TalkingAnimal"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "ADVOCATES_FOR",
+        "description": "Publicly supporting the rights or welfare of the animal.",
+        "source_targets": [
+          {
+            "source": "Activist",
+            "target": "TalkingAnimal"
+          },
+          {
+            "source": "Person",
+            "target": "TalkingAnimal"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "REPORTS_ON",
+        "description": "Disseminating information or news about the animal.",
+        "source_targets": [
+          {
+            "source": "MediaOutlet",
+            "target": "TalkingAnimal"
+          },
+          {
+            "source": "Influencer",
+            "target": "TalkingAnimal"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "REGULATES",
+        "description": "Exercising legal or administrative control over the animal.",
+        "source_targets": [
+          {
+            "source": "GovernmentAgency",
+            "target": "TalkingAnimal"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "SEEKS_PROFIT_FROM",
+        "description": "Attempting to monetize the animal's existence or abilities.",
+        "source_targets": [
+          {
+            "source": "Corporation",
+            "target": "TalkingAnimal"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "INTERPRETS_SPIRITUALLY",
+        "description": "Providing a religious or metaphysical explanation for the animal.",
+        "source_targets": [
+          {
+            "source": "ReligiousLeader",
+            "target": "TalkingAnimal"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "DEBATES_WITH",
+        "description": "Engaging in public or private discourse regarding the animal's impact.",
+        "source_targets": [
+          {
+            "source": "Person",
+            "target": "Person"
+          },
+          {
+            "source": "Influencer",
+            "target": "Scientist"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "PROTESTS_AGAINST",
+        "description": "Publicly opposing the actions of an organization regarding the animal.",
+        "source_targets": [
+          {
+            "source": "Activist",
+            "target": "Corporation"
+          },
+          {
+            "source": "Organization",
+            "target": "GovernmentAgency"
+          }
+        ],
+        "attributes": []
+      }
+    ]
+  },
+  "analysis_summary": "该本体设计围绕“会说话的动物”这一核心发现，构建了科学、法律、宗教、商业和媒体五个维度的社会反应模型。通过定义具体的发声主体（如科学家、活动家、宗教领袖等）以及两个兜底类型，系统可以模拟不同利益相关者在社交媒体上的互动、争论和信息传播路径。",
+  "graph_id": "mirofish_local_45cdc2810c624f7d",
+  "graph_build_task_id": "f8bd1aa6-a257-4f2f-8457-e5adad268490",
+  "simulation_requirement": "Predict what happens to the world if a talking animal is discovered.",
+  "chunk_size": 500,
+  "chunk_overlap": 50,
+  "error": null,
+  "token_usage": {
+    "prompt_tokens": 1925,
+    "completion_tokens": 2100,
+    "total_tokens": 4025,
+    "call_count": 2,
+    "last_updated": "2026-05-21T13:24:30.367452"
+  }
+}

@@ -1,0 +1,27 @@
+### 1. Executive Summary
+This image is the sixth slide in a social media informational series, likely from a financial institution. It articulates the organization's philosophy on security, emphasizing a balance between robust "customer protection" and user experience ("without unnecessary disruption"). The content focuses on the organization's research into scam methodologies and its commitment to customer education as a primary defense mechanism.
+
+### 2. OCR / Text Extraction
+*   **Heading (Red, Bold):** Customer protection without unnecessary disruption.
+*   **Body Paragraph 1 (Black):** We study how scams actually happen and where customers are most at risk.
+*   **Body Paragraph 2 (Black):** Alongside these safeguards, we’re committed to helping customers stay informed and vigilant.
+*   **Body Paragraph 3 (Black):** When you know the latest scam tactics, you’re better equipped to spot red flags early.
+
+### 3. Entity Identification
+*   **Organizations:** Unspecified entity (referred to as "We"), likely a financial services provider.
+*   **Stakeholder Groups:** Customers.
+*   **Security Concepts:** Customer protection, Safeguards, Scam tactics, Red flags.
+*   **Activity Types:** Research (studying scams), Risk Assessment, Customer Education/Information.
+
+### 4. Structural Relationships
+*   **Core Value Proposition:** The heading establishes a dual-objective relationship between "Customer protection" and the avoidance of "unnecessary disruption."
+*   **Operational Input:** Paragraph 1 identifies "studying scams" and "mapping customer risk" as the foundational activities.
+*   **Strategic Alignment:** Paragraph 2 relates "safeguards" (internal measures) to "customer vigilance" (external measures), presenting them as complementary strategies.
+*   **Causal Link:** Paragraph 3 establishes a direct correlation between "knowledge of scam tactics" (input) and the "ability to spot red flags" (output/capability).
+*   **Visual Symbolism:** The central red shield icon serves as a visual anchor representing "protection" and "safeguards."
+
+### 5. Visual Data Translation
+*   **Layout:** Centered vertical alignment.
+*   **Color Palette:** High-contrast red and black text on a textured light-gray background.
+*   **Iconography:** A stylized, double-bordered red shield icon is positioned in the center, separating the heading from the body text.
+*   **Typography:** Modern sans-serif font. The heading is approximately double the weight and size of the body text for hierarchical emphasis.

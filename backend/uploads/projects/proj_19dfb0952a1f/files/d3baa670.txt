@@ -1,0 +1,36 @@
+### 1. Executive Summary
+This image is an informational infographic from the "DBS Scam Defence" campaign. It communicates a key statistic regarding the prevalence of social engineering in financial scams, citing the Singapore Police Force (SPF) as the data source. The primary message is that scam prevention requires multiple layers of control because the majority of scams utilize psychological manipulation rather than technical hacking.
+
+### 2. OCR / Text Extraction
+*   **Header (Top Banner):** DBS SCAM DEFENCE
+*   **Section Heading:** #DidYouKnow:
+*   **Primary Statistic:** Nearly 8 in 10 scam
+*   **Supporting Text:** cases involved people being tricked into transferring their own money* — through fear, trust or urgency.
+*   **Contextual Statement:** Many scams today don’t start with hacking — they start with manipulation.
+*   **Key Conclusion:** That’s why scam protection **can’t rely on just one control.**
+*   **Footnote:** * SPF Mid-Year Scam and Cybercrime Brief 2025
+
+### 3. Entity Identification
+*   **Organizations:**
+    *   DBS (Implicit via logo and "DBS SCAM DEFENCE" header)
+    *   SPF (Singapore Police Force)
+*   **Campaign/Program:** DBS SCAM DEFENCE
+*   **Report/Source:** SPF Mid-Year Scam and Cybercrime Brief 2025
+*   **Financial Metrics/Statistics:** 8 in 10 (80% frequency rate of specific scam type)
+*   **Psychological Drivers (Entities of Influence):** Fear, Trust, Urgency, Manipulation
+*   **Technical Concepts:** Hacking, Scam protection controls
+
+### 4. Structural Relationships
+*   **Attribution:** The statistic "8 in 10" is directly linked to the "SPF Mid-Year Scam and Cybercrime Brief 2025" via an asterisk (*) footnote.
+*   **Categorization:** The content is categorized under the social media-style heading "#DidYouKnow:".
+*   **Causal Linkage:** The image posits that because "8 in 10" scams involve "manipulation" (cause), a single "control" is insufficient for "scam protection" (effect/requirement).
+*   **Contrast Relationship:** "Hacking" (technical breach) is contrasted against "Manipulation" (social engineering) as the starting point for modern scams.
+*   **Hierarchy of Importance:** The ratio "8 in 10" and the phrase "can’t rely on just one control" are visually emphasized using red color blocking and bold text, identifying them as the primary data point and the primary takeaway, respectively.
+
+### 5. Visual Data Translation
+*   **Data Point:** The infographic presents a ratio of 8:10 (80%). This represents the proportion of scam cases where victims were induced to voluntarily transfer funds.
+*   **Visual Emphasis:** 
+    *   The ratio "8 in 10" is rendered in high-contrast white text on a solid red rectangular background.
+    *   A speech bubble icon containing a red exclamation mark serves as a visual "Warning" or "Alert" signifier.
+    *   The red underline beneath "#DidYouKnow:" and the red text for the concluding sentence create a visual anchor for the call to action.
+*   **Branding:** The top-left corner features the DBS "Spark" logo, establishing corporate ownership of the communication.

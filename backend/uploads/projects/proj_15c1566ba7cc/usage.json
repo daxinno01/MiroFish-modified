@@ -1,0 +1,15 @@
+{
+  "prompt_tokens": 54684,
+  "completion_tokens": 19688,
+  "total_tokens": 74372,
+  "call_count": 83,
+  "steps": {
+    "step1": {
+      "prompt_tokens": 54684,
+      "completion_tokens": 19688,
+      "total_tokens": 74372,
+      "call_count": 83
+    }
+  },
+  "last_updated": "2026-04-28T17:04:33.113336"
+}

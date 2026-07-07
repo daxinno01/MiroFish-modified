@@ -1,0 +1,40 @@
+### 1. Executive Summary
+This image is a digital informational graphic from DBS Bank promoting its "DBS Scam Defence" initiative. It utilizes a mnemonic visual (a fist with extended fingers) to outline four proactive security measures—Set, Check, Protect, and Lock—designed to help customers prevent financial fraud. The graphic includes specific references to DBS security features like "Payment Controls" and "digiVault."
+
+### 2. OCR / Text Extraction
+*   **Main Heading:** DBS Scam Defence
+*   **Sub-heading:** ACT to get the upper hand over scammers.
+*   **Actionable Framework (Graphic Labels):**
+    *   **SET** transaction limits and alerts
+    *   **CHECK** for unexpected activities and alerts
+    *   **PROTECT** your cards with Payment Controls
+    *   **LOCK** your money with digiVault
+*   **Call to Action (CTA) Body Text:** Follow us for the latest anti-scam tips, and learn more about DBS Scam Defence here:
+*   **URL:** go.dbs.com/scamdefence
+*   **Iconography:** A right-pointing arrow within a red box.
+
+### 3. Entity Identification
+*   **Organizations:** DBS (DBS Bank).
+*   **Initiative/Program:** DBS Scam Defence.
+*   **Products / Features:** 
+    *   Payment Controls (Digital banking feature).
+    *   digiVault (Digital security feature).
+*   **Financial Metrics / Data Types:** Transaction limits, Transaction alerts.
+*   **Adversarial Entity:** Scammers.
+*   **Digital Resource:** go.dbs.com/scamdefence (URL).
+
+### 4. Structural Relationships
+*   **DBS** is the parent entity providing the **DBS Scam Defence** initiative.
+*   The **DBS Scam Defence** initiative comprises four primary strategic actions: **SET**, **CHECK**, **PROTECT**, and **LOCK**.
+*   **"Payment Controls"** is a tool logically nested under the **PROTECT** action.
+*   **"digiVault"** is a tool logically nested under the **LOCK** action.
+*   The **"upper hand"** (visualized as a fist) is the desired state achieved by the user (Entity) over **"scammers"** (Entity) through the execution of the four actions.
+*   The **URL** serves as the primary informational node linking the user to the full repository of the **DBS Scam Defence** program.
+
+### 5. Visual Data Translation
+*   **Graphic Metaphor:** A stylized red fist with four horizontal fingers extended to the right. This represents a defensive or combative posture against fraud.
+*   **Layout:** 
+    *   The verbs (SET, CHECK, PROTECT, LOCK) are positioned in white, bold, uppercase text inside the red fingers of the fist graphic.
+    *   The corresponding descriptions are placed to the right of each finger, separated by thin horizontal lines that act as a list structure.
+*   **Color Palette:** Primarily Red (DBS brand color), Black, and White on a light gray textured background.
+*   **Navigation Element:** The URL is housed in a white rectangular box with a red border, followed by a red square containing a white directional arrow, indicating a hyperlink or "next step" action.
