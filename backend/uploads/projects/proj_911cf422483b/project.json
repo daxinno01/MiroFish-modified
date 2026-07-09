@@ -1,0 +1,378 @@
+{
+  "project_id": "proj_911cf422483b",
+  "name": "Unnamed Project",
+  "status": "graph_completed",
+  "created_at": "2026-07-08T11:15:08.537764",
+  "updated_at": "2026-07-08T12:00:37.044549",
+  "files": [
+    {
+      "filename": "DBS Digibank Navigation Guide.pdf",
+      "size": 343525
+    },
+    {
+      "filename": "DBS Treasures Info.txt",
+      "size": 4458
+    },
+    {
+      "filename": "personas.txt",
+      "size": 233
+    },
+    {
+      "filename": "Singapore Priority Banking Reference Manual.pdf",
+      "size": 368965
+    }
+  ],
+  "total_text_length": 87281,
+  "ontology": {
+    "entity_types": [
+      {
+        "name": "RetailCustomer",
+        "description": "Standard individual users of DBS/POSB retail banking services and the Digibank mobile app.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The legal name of the customer"
+          },
+          {
+            "name": "app_mode_preference",
+            "type": "text",
+            "description": "Preference between Full Mode or Simple Mode interface"
+          },
+          {
+            "name": "primary_account_type",
+            "type": "text",
+            "description": "The main account held, e.g., Multiplier or My Account"
+          }
+        ],
+        "examples": [
+          "Standard User A",
+          "Digital Banking App User"
+        ]
+      },
+      {
+        "name": "TreasuresClient",
+        "description": "High-net-worth individuals with investible assets of S$350,000 or more using iWealth services.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The legal name of the wealth client"
+          },
+          {
+            "name": "investment_focus",
+            "type": "text",
+            "description": "Primary interest area such as Equities, Crypto, or digiPortfolio"
+          },
+          {
+            "name": "risk_profile",
+            "type": "text",
+            "description": "Risk tolerance level from Conservative to Aggressive"
+          }
+        ],
+        "examples": [
+          "Accredited Investor",
+          "Wealth Management Client"
+        ]
+      },
+      {
+        "name": "RelationshipManager",
+        "description": "Dedicated banking professionals providing advisory services to DBS Treasures clients.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The name of the relationship manager"
+          },
+          {
+            "name": "office_location",
+            "type": "text",
+            "description": "The physical branch or office location, e.g., Marina Bay Financial Centre"
+          },
+          {
+            "name": "service_specialty",
+            "type": "text",
+            "description": "Area of expertise such as global equities or structured products"
+          }
+        ],
+        "examples": [
+          "Sarah Tan",
+          "Senior Wealth Advisor"
+        ]
+      },
+      {
+        "name": "FinancialInfluencer",
+        "description": "Key opinion leaders or experts who discuss banking UX, investment strategies, and fintech.",
+        "attributes": [
+          {
+            "name": "handle_name",
+            "type": "text",
+            "description": "Social media username or public handle"
+          },
+          {
+            "name": "influence_score",
+            "type": "text",
+            "description": "Relative reach or impact on social media platforms"
+          },
+          {
+            "name": "expertise_domain",
+            "type": "text",
+            "description": "Primary topic of discussion, e.g., Personal Finance, Crypto"
+          }
+        ],
+        "examples": [
+          "FinTech Guru",
+          "Wealth Strategy Blogger"
+        ]
+      },
+      {
+        "name": "BankingRegulator",
+        "description": "Government bodies or regulatory agencies overseeing financial compliance and identity services.",
+        "attributes": [
+          {
+            "name": "agency_full_name",
+            "type": "text",
+            "description": "The official name of the regulatory body"
+          },
+          {
+            "name": "regulatory_focus",
+            "type": "text",
+            "description": "The domain of oversight, e.g., AML, KYC, or Digital Identity"
+          }
+        ],
+        "examples": [
+          "Monetary Authority of Singapore",
+          "Singpass Identity Service"
+        ]
+      },
+      {
+        "name": "MediaOutlet",
+        "description": "News organizations, financial journals, or digital media platforms reporting on banking news.",
+        "attributes": [
+          {
+            "name": "publication_title",
+            "type": "text",
+            "description": "The name of the news or media organization"
+          },
+          {
+            "name": "audience_reach",
+            "type": "text",
+            "description": "Scale of the audience, e.g., National, International"
+          }
+        ],
+        "examples": [
+          "The Straits Times",
+          "Financial News Network"
+        ]
+      },
+      {
+        "name": "CommercialMerchant",
+        "description": "Businesses and entities that accept payments via PayNow, SGQR, or card transactions.",
+        "attributes": [
+          {
+            "name": "business_legal_name",
+            "type": "text",
+            "description": "The registered name of the business"
+          },
+          {
+            "name": "industry_category",
+            "type": "text",
+            "description": "The sector the business operates in, e.g., Retail, Utilities"
+          }
+        ],
+        "examples": [
+          "SP Group",
+          "Local Retail Shop"
+        ]
+      },
+      {
+        "name": "CompetitorBank",
+        "description": "Other financial institutions offering priority banking and digital services in the market.",
+        "attributes": [
+          {
+            "name": "institution_title",
+            "type": "text",
+            "description": "The name of the competing bank"
+          },
+          {
+            "name": "service_benchmark",
+            "type": "text",
+            "description": "Key service or feature used for comparison"
+          }
+        ],
+        "examples": [
+          "UOB Privilege Banking",
+          "OCBC Premier Banking"
+        ]
+      },
+      {
+        "name": "Person",
+        "description": "Fallback type for any natural person not fitting specific banking or professional roles.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The name of the individual"
+          },
+          {
+            "name": "role_description",
+            "type": "text",
+            "description": "The general role or context of the person"
+          }
+        ],
+        "examples": [
+          "General Netizen",
+          "Anonymous Commenter"
+        ]
+      },
+      {
+        "name": "Organization",
+        "description": "Fallback type for any organizational entity, group, or institution not otherwise specified.",
+        "attributes": [
+          {
+            "name": "org_full_name",
+            "type": "text",
+            "description": "The name of the organization"
+          },
+          {
+            "name": "org_type",
+            "type": "text",
+            "description": "The nature of the organization, e.g., NGO, Association"
+          }
+        ],
+        "examples": [
+          "Consumer Rights Group",
+          "Alumni Association"
+        ]
+      }
+    ],
+    "edge_types": [
+      {
+        "name": "ADVISES",
+        "description": "The relationship where a professional provides financial guidance to a client.",
+        "source_targets": [
+          {
+            "source": "RelationshipManager",
+            "target": "TreasuresClient"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "REPORTS_ON",
+        "description": "A media entity or individual reporting news or opinions about another subject.",
+        "source_targets": [
+          {
+            "source": "MediaOutlet",
+            "target": "Organization"
+          },
+          {
+            "source": "FinancialInfluencer",
+            "target": "CompetitorBank"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "REGULATES",
+        "description": "A regulatory body exercising oversight or providing infrastructure for an organization.",
+        "source_targets": [
+          {
+            "source": "BankingRegulator",
+            "target": "Organization"
+          },
+          {
+            "source": "BankingRegulator",
+            "target": "CompetitorBank"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "PAYS_TO",
+        "description": "A transaction relationship where a customer sends funds to a merchant or organization.",
+        "source_targets": [
+          {
+            "source": "RetailCustomer",
+            "target": "CommercialMerchant"
+          },
+          {
+            "source": "TreasuresClient",
+            "target": "CommercialMerchant"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "COMPETES_WITH",
+        "description": "Competitive relationship between two financial institutions.",
+        "source_targets": [
+          {
+            "source": "CompetitorBank",
+            "target": "Organization"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "FOLLOWS_ADVICE",
+        "description": "An individual acting upon the recommendations of an influencer or advisor.",
+        "source_targets": [
+          {
+            "source": "RetailCustomer",
+            "target": "FinancialInfluencer"
+          },
+          {
+            "source": "TreasuresClient",
+            "target": "RelationshipManager"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "CRITICIZES",
+        "description": "Expressing negative feedback or public complaints on social media.",
+        "source_targets": [
+          {
+            "source": "Person",
+            "target": "Organization"
+          },
+          {
+            "source": "RetailCustomer",
+            "target": "Organization"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "SUPPORTS",
+        "description": "Expressing positive sentiment or endorsement for a service or entity.",
+        "source_targets": [
+          {
+            "source": "FinancialInfluencer",
+            "target": "Organization"
+          },
+          {
+            "source": "TreasuresClient",
+            "target": "Organization"
+          }
+        ],
+        "attributes": []
+      }
+    ]
+  },
+  "analysis_summary": "该本体设计紧扣DBS Digibank与Treasures财富管理系统的业务逻辑。通过定义零售客户、财富客户及客户经理（RM）三类核心角色，模拟了从基础转账到高净值投资咨询的互动。同时引入监管机构、媒体、金融KOL及竞争对手，能够全面模拟在社交媒体环境下，用户对银行UI/UX变更（如Simple Mode）、投资产品（如Crypto/digiPortfolio）以及跨境汇款服务的舆论反应与信息传播路径。",
+  "graph_id": "mirofish_local_9ddd0b0b0aec4239",
+  "graph_build_task_id": "0e9410e6-9c98-48af-91f7-c7913a0f3c4d",
+  "simulation_requirement": "Input Documents:\r\n\r\n*   **DBS Digibank Navigation Guide.pdf:** Provides the purely structural UI navigation paths, step mechanics, and execution rules for features inside the digibank application.\r\n*   **DBS Treasures Info.txt:** Details on DBS Treasures.\r\n*   **personas.txt:** Contains the list of personas for the simulation\r\n*   **Singapore Priority Banking Reference Manual:** Outlines the offline channel mechanics, human relationship manager workflows, support hotline tier configurations, and competitor benchmarks.\r\n\r\nSimulate the typical use of DBS Treasures and Digibank across the different audiences.",
+  "chunk_size": 500,
+  "chunk_overlap": 50,
+  "error": null,
+  "token_usage": {
+    "prompt_tokens": 145167,
+    "completion_tokens": 39354,
+    "total_tokens": 184521,
+    "call_count": 260,
+    "last_updated": "2026-07-08T12:00:34.487000"
+  }
+}

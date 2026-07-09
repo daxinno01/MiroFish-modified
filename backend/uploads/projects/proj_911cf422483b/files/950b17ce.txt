@@ -1,0 +1,7 @@
+Market: Singapore
+
+Personas:
+- Aged 21 to 70 years old
+- > 6 months tenure and tagged to RM for >= 3 months
+- At least 1 interaction with DBS in the past 1 month 
+- Qualified Treasures customer with AUM >=SGD 350k (average P3M)

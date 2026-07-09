@@ -1,0 +1,13 @@
+{
+  "status": "completed",
+  "progress": 100,
+  "message": "报告生成完成",
+  "current_section": null,
+  "completed_sections": [
+    "1. Macro Sentiment & Quantitative Baseline",
+    "2. Persona Variance: Efficiency Seekers vs. Relationship Traditionalists",
+    "3. Dynamic Inflection Points: The 'Validation Pivot'",
+    "4. Strategic Implications & Actionable Corporate Recommendations"
+  ],
+  "updated_at": "2026-07-08T14:08:29.386685"
+}

@@ -1,0 +1,39 @@
+## 1. Entity Definition & Segment Position
+
+* **Classification:** DBS Treasures is the entry-level affluent and priority banking segment of DBS Bank Ltd.
+* **Hierarchy Location:** It sits above standard retail consumer banking (DBS/POSB) and below the ultra-high-net-worth tiers, which consist of *DBS Treasures Private Client* (S$1.5M+ AUM) and *DBS Private Bank* (US$5M+ AUM).
+
+## 2. Eligibility & Capital Thresholds
+
+* **Minimum Asset Under Management (AUM):** To qualify for and maintain DBS Treasures status, an individual must maintain a minimum Total Relationship Balance (TRB) of **S$350,000** (or its equivalent in foreign currency).
+* **AUM Computation Components:** The TRB is calculated cumulatively across the following assets held with the bank:
+* Cash deposits in current accounts and savings accounts (CASA).
+* Time deposits / Fixed deposit accounts.
+* Equities and listed securities held under the bank's custody.
+* Investment products, including unit trusts, bonds, structured notes, and discretionary portfolios.
+* Net asset value or cash value of eligible insurance policies (e.g., single premium life insurance policies).
+
+
+
+## 3. Account Mechanics & Product Scope
+
+* **Everyday Banking Features:** Includes multi-currency savings accounts, debit cards with zero foreign exchange markup on global transactions, and credit cards (such as the DBS Vantage metal card or dedicated client cards).
+* **Wealth Management Products:** Access to financial instruments including global equities across multiple international markets, unit trusts/mutual funds, fixed income bonds, treasury products, commodity investment accounts, and digital token trading via the DBS Digital Exchange.
+* **Financing Products:** Access to retail financing asset classes including Home Loans, Mortgages, and Auto Loans, alongside specialized asset-backed leverage options such as portfolio financing or premium financing for insurance.
+
+## 4. Human & Physical Service Channels
+
+* **Relationship Management:** Every client meeting the S$350,000 threshold is mapped to a designated human point of contact known as a Treasures Relationship Manager (RM). The RM acts as the orchestrator for offline transactions and coordinates with specialized product experts (Investment, Insurance, Mortgage, and Forex specialists).
+* **Physical Infrastructure (Treasures Centres):** Dedicated private banking lounges separate from general public retail branches. These are located at core financial and geographic nodes in Singapore (e.g., Marina Bay Financial Centre, Raffles Place, Ngee Ann City). They operate on independent priority ticketing streams with private advisory rooms.
+* **Telephony Routing:** Access to a specialized priority support line via the **DBS Wealth Management Hotline (1800 221 1111)**, which utilizes an expedited IVR phone tree compared to the mass retail customer service hotline (1800 111 1111).
+
+## 5. Information & Content Delivery
+
+* **Digital Wealth Integration:** The segment operates natively via the wealth-focused features inside the **digibank mobile app** and **digibank web portal** (historically referred to as the iWealth interface).
+* **Content Types:** Structural delivery of market updates, investment ideas derived from the Chief Investment Office (CIO), financial literacy/education publications, and automated portfolio performance alerts distributed via targeted in-app push notifications, banners, emails, or personal distributions by the assigned RM.
+
+## 6. Fee Architecture & Status Maintenance
+
+* **Maintenance Fees:** There are no monthly account service fees applied to a DBS Treasures relationship provided the total relationship balance stays at or above S$350,000.
+* **Fall-Below Protocols:** If the aggregate AUM falls below the S$350,000 threshold for sustained tracking periods (typically evaluated on a 3-month or 6-month rolling average), the relationship becomes structurally subject to administrative fall-below fees, restriction of priority hotline routing, or automatic account downgrades to standard retail banking status.
+* **Privilege Boundary:** Travel perks such as Changi Airport Private Access lounge allocations and automated airport limousine transfers are *not* a basic feature of the S$350,000 Treasures tier; these perks are strictly bound to higher tiers with an asset threshold of S$2,500,000 or greater within the upgraded *Treasures Private Client* membership.

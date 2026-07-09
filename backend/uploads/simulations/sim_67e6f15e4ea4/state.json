@@ -1,0 +1,28 @@
+{
+  "simulation_id": "sim_67e6f15e4ea4",
+  "project_id": "proj_911cf422483b",
+  "graph_id": "mirofish_local_9ddd0b0b0aec4239",
+  "enable_twitter": true,
+  "enable_reddit": true,
+  "status": "running",
+  "entities_count": 65,
+  "profiles_count": 65,
+  "entity_types": [
+    "RetailCustomer",
+    "Person",
+    "RelationshipManager",
+    "Organization",
+    "BankingRegulator",
+    "CompetitorBank",
+    "CommercialMerchant",
+    "TreasuresClient"
+  ],
+  "config_generated": true,
+  "config_reasoning": "时间配置: The configuration reflects the daily routine of Singaporean banking users. Off-peak hours (0-5) account for minimal activity. Morning hours (6-8) capture commute-based retail banking and eStatement checks. Work hours (9-18) involve Relationship Manager (RM) consultations, institutional investment team operations, and corporate transactions. Peak activity is assigned to the lunch hour (12-13) for retail bill payments (AXS/PayLah!) and the evening period (19-22) when Treasures/HNW clients typically review wealth portfolios, perform equity searches (e.g., AAPL), and manage international remittances via DBS Remit. | 事件配置: The topics were selected to cover the spectrum of the input documents: the technical UI/UX of digibank, the wealth management tiering of DBS Treasures, and the competitive/regulatory landscape. The posters were assigned based on the provided entity types to reflect a realistic simulation of a banking ecosystem involving customers, staff, competitors, and regulators. | Agent配置: 成功生成 65 个 | 初始帖子分配: 7 个帖子已分配发布者",
+  "current_round": 0,
+  "twitter_status": "not_started",
+  "reddit_status": "not_started",
+  "created_at": "2026-07-08T12:09:43.865780",
+  "updated_at": "2026-07-08T12:26:35.545031",
+  "error": null
+}
