@@ -1,0 +1,45 @@
+### 1. Executive Summary
+This image is a promotional graphic for a financial institution, illustrating the synergy between human-centric service and advanced technology. The top half features a photograph of two individuals in an office setting, representing personalized customer support. The bottom half contains a text-based value proposition regarding AI integration and a stylized graphic of a mobile banking interface, highlighting digital self-service tools and an AI chatbot.
+
+### 2. OCR / Text Extraction
+*   **Main Heading:** Today and beyond
+*   **Sub-heading:** An AI-Enabled Bank with a Heart
+*   **Body Text:** Since 2014, we've been using AI and machine learning to better serve customers. Today, we're building on those foundations with generative and agentic AI to create more intuitive, personalised and proactive experiences – helping customers navigate what's next with confidence.
+*   **Mobile Interface Text:**
+    *   **Header:** Help [X icon]
+    *   **Section Title:** Learn more about
+    *   **Button 1:** [Icon: brief case/box with S$] Invest
+    *   **Button 2:** [Icon: arrows with S$] Pay & Transfer
+    *   **Button 3:** [Icon: compass] Plan
+    *   **Button 4:** [Icon: four squares] More
+    *   **Footer Text:** Can't find what you're looking for?
+    *   **Primary Button:** ASK DIGIBOT
+    *   **Secondary Link:** GO TO HELP & SUPPORT
+
+### 3. Detailed Visual Scene Description
+*   **Subject(s):**
+    *   **Standing Subject (Left):** A woman with a medium-to-dark complexion and a broad, friendly smile. She has dark hair pulled back into a neat bun and wears thick-rimmed black rectangular glasses.
+    *   **Seated Subject (Right):** A woman with short, salt-and-pepper (grey and black) hair. She is wearing a white surgical-style face mask. Her eyes are directed toward the left, appearing focused on a screen.
+*   **Pose & Gestures:** The standing subject is leaning forward over the seated subject’s shoulder. Her right arm is extended, with her index finger pointing toward a computer monitor (partially visible on the far left). The seated subject is upright, looking in the direction of the pointing gesture.
+*   **Clothing & Attire:** 
+    *   **Standing Subject:** Wearing a bright orange-red, textured, long-sleeved top with a v-neck. A black lanyard hangs around her neck, holding an ID badge that features a small portrait and a red logo.
+    *   **Seated Subject:** Wearing a light beige or cream-colored zip-up hoodie over a red shirt. 
+*   **Background & Setting:** The scene is a modern office or service center. To the left is a large black computer monitor. The background features a red wall and a dark wall with white cursive text (partially legible as "Excellence in..."). Rectangular fluorescent ceiling lights are visible in the upper right.
+*   **Graphic Elements:** The lower right features a stylized, white-line illustration of a hand. The index finger of this hand is pointing directly at a rounded button labeled "ASK DIGIBOT." The smartphone graphic has a "dynamic island" style notch at the top and a minimalist UI.
+*   **Lighting & Color Palette:** The lighting is bright and even, typical of an indoor office. The color palette is dominated by "Bank Red," white, and black, with the orange-red of the subject's shirt providing a secondary focal point.
+
+### 4. Entity Identification
+*   **People:** Two adult female subjects (one standing staff member/advisor, one seated customer/colleague).
+*   **Products/Services:** "DIGIBOT" (AI agent), Mobile banking app, Investment services, Payment/Transfer services, Financial planning tools.
+*   **Technologies:** AI (Artificial Intelligence), Machine Learning, Generative AI, Agentic AI.
+
+### 5. Structural Relationships
+*   **Spatial Hierarchy:** The photographic "human" element occupies the top half of the frame. The "technological" and "informational" elements occupy the bottom half.
+*   **Visual Flow:** The standing subject points toward the left, while the illustrated hand in the bottom right points toward the center-right "ASK DIGIBOT" button, creating a visual enclosure around the central text.
+*   **Text Placement:** The headline "Today and beyond" acts as a bridge, overlapping both the photograph and the solid red background of the lower section. The descriptive body text is anchored in a dark brown/black rectangular box on the left.
+
+### 6. Visual Data Translation
+*   **Mobile Interface Layout:**
+    *   The "Help" menu is organized into a 2x2 grid of service buttons (Invest, Pay & Transfer, Plan, More).
+    *   Each button contains a red-outlined icon and black sans-serif text.
+    *   The "ASK DIGIBOT" button is the most prominent call-to-action, featuring a red border and larger, capitalized text compared to the "GO TO HELP & SUPPORT" link.

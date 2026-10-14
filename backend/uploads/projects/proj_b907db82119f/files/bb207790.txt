@@ -1,0 +1,47 @@
+### 1. Executive Summary
+This image is a historical infographic titled "DBS HISTORY," illustrating the 1968 founding of the Development Bank of Singapore (DBS). It features a 1967 Economic Development Board (EDB) Annual Report cover and an internal page containing a table of money supply and a text excerpt. The excerpt outlines the formal plan to establish a development bank to take over EDB's financing functions to support Singapore's industrial growth.
+
+### 2. OCR / Text Extraction
+*   **Header:** DBS HISTORY
+*   **Left Image (Cover):** economic development board '67
+*   **Right Image (Document Page):**
+    *   **Page Number:** 26
+    *   **Table Heading:** ESTIMATED MONEY SUPPLY, 1961-1967 ($ million)
+    *   **Table Headers:** End of year | Currency in circulation (net active) | Demand deposits (excluding govt.) | Total
+    *   **Table Data:**
+        *   1961 | 356 | 350 | 706
+        *   1962 | 371 | 393 | 764
+        *   1963 | 386 | 425 | 811
+        *   1964 | 418 | 400 | 818
+        *   1965 | 446 | 421 | 867
+        *   1966 | 479 | 492 | 971
+        *   1967 | 426¹ | 553 | 979
+    *   **Section Heading:** banking
+    *   **Body Text (Partial):** "Loans and advances increased by 10% to $1,607 million over the previous year... Outstanding loans and advances to the manufacturing sector increased steadily from $94 million in 1962 to $236 million in 1967... Over 89% of bank deposits originated from the private sector... 32% was demand deposits, 50% fixed deposits and 18% savings and other deposits."
+*   **Zoomed Excerpt Text:** "With the increasing need for industrial capital, a Development Bank with joint participation by the Government and the private sector, will be organised to take over the financing functions of the Economic Development Board. The Bank (which is expected to be established in 1968) will provide finance to manufacturing and other industries in the form of long and medium term loans, equity participation and guarantees. The Bank will also supplement working capital provided by existing commercial banks and engage in related banking transactions."
+*   **Caption:** An excerpt from EDB's Annual Report in 1967
+*   **Large Year:** 1968
+*   **Footer Banner Heading:** Built a young nation's future
+*   **Footer Banner Body:** Formed to support Singapore's development, DBS helped lay the foundations for new industries, jobs and opportunities.
+
+### 3. Detailed Visual Scene Description
+*   **Subject(s):** The left image features a stylized graphic of a person in the lower center. The figure is a dark silhouette wearing a protective helmet or welder's mask, looking toward the right.
+*   **Clothing & Attire:** The silhouette's attire is not detailed beyond the dark shape of the headgear and shoulders.
+*   **Background & Setting:** The main background is a solid, neutral medium-gray. The left image is a vertical rectangular document cover with an artistic, abstract design in shades of red, orange, and tan, depicting vertical blocks and industrial structures. A red-toned bar chart is overlaid on the lower portion of this cover. The right image is a scan of a printed page with black serif text on an off-white background.
+*   **Lighting & Color Palette:** The color palette is dominated by "DBS Red," white, and gray. The "DBS HISTORY" header and the bottom information banner are solid red. The large "1968" is white with a soft gray drop shadow. The lighting is flat and uniform across the graphic.
+*   **Graphic Elements:** A red four-pointed star logo is located in the top-left corner. A red-bordered callout box with dashed black connector lines highlights a specific paragraph from the right-hand document and enlarges it in the foreground.
+
+### 4. Entity Identification
+*   **Organizations:** DBS (Development Bank of Singapore), Economic Development Board (EDB), Government (Singapore).
+*   **Geographic Locations:** Singapore.
+*   **Financial Metrics:** $ million, $94 million, $236 million, $1,607 million, 10%, 29%, 12%, 21%, 45%, 2%, 89%, 32%, 50%, 18%.
+*   **Temporal Entities:** 1961, 1962, 1963, 1964, 1965, 1966, 1967, 1968.
+
+### 5. Structural Relationships
+*   **Hierarchy:** The "DBS HISTORY" header defines the overall context. The images of the 1967 report serve as the primary evidence/source material.
+*   **Spatial Logic:** The 1967 report (source) is in the midground, while the "1968" date (outcome) and the zoomed-in text box (explanation) are positioned in the foreground to emphasize the transition from planning to establishment.
+*   **Logical Connection:** Dashed lines connect the specific red-boxed paragraph on the document page to the large, legible text box in the center-right, indicating a direct excerpt.
+
+### 6. Visual Data Translation
+*   **Table (Money Supply):** The table "ESTIMATED MONEY SUPPLY, 1961-1967" shows a steady year-over-year increase in the total money supply, growing from $706 million in 1961 to $979 million in 1967.
+*   **Bar Chart (on Cover):** A vertical bar chart is superimposed on the left image cover, showing four bars of increasing height from left to right, colored in shades of orange and red, symbolizing industrial or economic growth.

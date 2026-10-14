@@ -1,0 +1,355 @@
+{
+  "project_id": "proj_8dd70698cd6a",
+  "name": "Unnamed Project",
+  "status": "graph_completed",
+  "created_at": "2026-07-30T14:23:49.689611",
+  "updated_at": "2026-07-30T14:33:12.682859",
+  "files": [],
+  "total_text_length": 20698,
+  "ontology": {
+    "entity_types": [
+      {
+        "name": "CorporateExecutive",
+        "description": "High-level leadership figures within a company, such as CEOs or Managing Directors.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The full name of the executive"
+          },
+          {
+            "name": "job_title",
+            "type": "text",
+            "description": "The specific leadership role held"
+          },
+          {
+            "name": "leadership_style",
+            "type": "text",
+            "description": "The public persona or management approach of the executive"
+          }
+        ],
+        "examples": [
+          "Nelson Neo",
+          "Tan Su Shan"
+        ]
+      },
+      {
+        "name": "BankEmployee",
+        "description": "Staff members working within a financial institution across various departments.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The full name of the employee"
+          },
+          {
+            "name": "department_name",
+            "type": "text",
+            "description": "The specific unit the employee works in, e.g., Collections"
+          },
+          {
+            "name": "years_of_service",
+            "type": "text",
+            "description": "Duration of employment at the organization"
+          }
+        ],
+        "examples": [
+          "Habiba Begum Hajamohidin",
+          "NDP Marching Colleague"
+        ]
+      },
+      {
+        "name": "FinancialCustomer",
+        "description": "Individuals or business entities that utilize banking services or manage debts.",
+        "attributes": [
+          {
+            "name": "customer_segment",
+            "type": "text",
+            "description": "The category of customer, such as retail or corporate"
+          },
+          {
+            "name": "financial_status",
+            "type": "text",
+            "description": "The current economic condition or challenge faced by the customer"
+          }
+        ],
+        "examples": [
+          "Struggling Business Owner",
+          "Individual Debtor"
+        ]
+      },
+      {
+        "name": "GovernmentOfficial",
+        "description": "Representatives of state departments or national event organizing committees.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The name of the official"
+          },
+          {
+            "name": "agency_affiliation",
+            "type": "text",
+            "description": "The government body they represent"
+          }
+        ],
+        "examples": [
+          "NDP Committee Member",
+          "Ministry Representative"
+        ]
+      },
+      {
+        "name": "Journalist",
+        "description": "Media professionals who report on human interest stories or corporate news.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The name of the reporter"
+          },
+          {
+            "name": "media_beat",
+            "type": "text",
+            "description": "The specific area of reporting, e.g., Finance or Lifestyle"
+          }
+        ],
+        "examples": [
+          "Business News Reporter",
+          "Lifestyle Blogger"
+        ]
+      },
+      {
+        "name": "MediaOutlet",
+        "description": "Organizations or specific social media channels that disseminate information and stories.",
+        "attributes": [
+          {
+            "name": "org_name",
+            "type": "text",
+            "description": "The name of the media organization"
+          },
+          {
+            "name": "content_focus",
+            "type": "text",
+            "description": "The primary type of content produced, e.g., Human Interest"
+          }
+        ],
+        "examples": [
+          "Humans of POSB",
+          "The Straits Times"
+        ]
+      },
+      {
+        "name": "ProfessionalBody",
+        "description": "Institutions representing specific professional standards or certifications.",
+        "attributes": [
+          {
+            "name": "org_name",
+            "type": "text",
+            "description": "The name of the professional association"
+          },
+          {
+            "name": "industry_sector",
+            "type": "text",
+            "description": "The industry the body oversees"
+          }
+        ],
+        "examples": [
+          "ISCA",
+          "Association of Banks in Singapore"
+        ]
+      },
+      {
+        "name": "CommunityGroup",
+        "description": "Organized groups of people with shared goals, such as parade contingents or alumni.",
+        "attributes": [
+          {
+            "name": "group_name",
+            "type": "text",
+            "description": "The name of the collective group"
+          },
+          {
+            "name": "purpose",
+            "type": "text",
+            "description": "The reason for the group's formation"
+          }
+        ],
+        "examples": [
+          "NDP Marching Contingent",
+          "DBS Volunteer Group"
+        ]
+      },
+      {
+        "name": "Person",
+        "description": "The fallback type for any natural person individual not covered by specific types.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The name of the individual"
+          },
+          {
+            "name": "social_role",
+            "type": "text",
+            "description": "The general role of the person in the public sphere"
+          }
+        ],
+        "examples": [
+          "General Netizen",
+          "Parade Spectator"
+        ]
+      },
+      {
+        "name": "Organization",
+        "description": "The fallback type for any organizational institution not covered by specific types.",
+        "attributes": [
+          {
+            "name": "org_name",
+            "type": "text",
+            "description": "The name of the organization"
+          },
+          {
+            "name": "sector",
+            "type": "text",
+            "description": "The industry or field of operation"
+          }
+        ],
+        "examples": [
+          "DBS Bank",
+          "POSB Bank"
+        ]
+      }
+    ],
+    "edge_types": [
+      {
+        "name": "WORKS_FOR",
+        "description": "Indicates an employment relationship between an individual and an organization.",
+        "source_targets": [
+          {
+            "source": "BankEmployee",
+            "target": "Organization"
+          },
+          {
+            "source": "CorporateExecutive",
+            "target": "Organization"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "LEADS",
+        "description": "Indicates a leadership or management relationship.",
+        "source_targets": [
+          {
+            "source": "CorporateExecutive",
+            "target": "Organization"
+          },
+          {
+            "source": "CorporateExecutive",
+            "target": "BankEmployee"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "MEMBER_OF",
+        "description": "Indicates participation in a specific group or contingent.",
+        "source_targets": [
+          {
+            "source": "BankEmployee",
+            "target": "CommunityGroup"
+          },
+          {
+            "source": "Person",
+            "target": "CommunityGroup"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "ASSISTS",
+        "description": "Indicates providing support, guidance, or financial recovery services.",
+        "source_targets": [
+          {
+            "source": "BankEmployee",
+            "target": "FinancialCustomer"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "SHARES_STORY_OF",
+        "description": "Indicates a media entity or platform publishing content about a subject.",
+        "source_targets": [
+          {
+            "source": "MediaOutlet",
+            "target": "BankEmployee"
+          },
+          {
+            "source": "MediaOutlet",
+            "target": "CorporateExecutive"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "REPRESENTS",
+        "description": "Indicates an individual acting as the face or representative of an entity.",
+        "source_targets": [
+          {
+            "source": "BankEmployee",
+            "target": "Organization"
+          },
+          {
+            "source": "CorporateExecutive",
+            "target": "Organization"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "COMMENTS_ON",
+        "description": "Indicates social media interaction or public response to a post or event.",
+        "source_targets": [
+          {
+            "source": "Person",
+            "target": "MediaOutlet"
+          },
+          {
+            "source": "Journalist",
+            "target": "Organization"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "COLLABORATES_WITH",
+        "description": "Indicates joint effort between organizations or groups.",
+        "source_targets": [
+          {
+            "source": "Organization",
+            "target": "ProfessionalBody"
+          },
+          {
+            "source": "Organization",
+            "target": "CommunityGroup"
+          }
+        ],
+        "attributes": []
+      }
+    ]
+  },
+  "analysis_summary": "该设计基于Habiba的个人叙事和DBS/POSB的品牌宣传内容。实体类型涵盖了从高管（CorporateExecutive）到基层员工（BankEmployee），以及他们服务的客户（FinancialCustomer）和参与的社会活动组织（CommunityGroup）。通过“Humans of POSB”这一媒介平台（MediaOutlet），模拟了企业如何通过员工的真实故事（如参加国庆阅兵NDP）与公众建立情感连接。关系设计侧重于雇佣、领导、服务支持以及社交媒体上的互动与传播路径。",
+  "graph_id": "mirofish_local_4a2150807bd5496a",
+  "graph_build_task_id": "63adb8a8-0717-4309-a7fa-dd2551e6e6bd",
+  "simulation_requirement": "Post Caption\r\n[Start]\r\n“Boom! Boom! Boom!  \r\n\r\nThe rhythmic beat of drums. The roar of the crowd. The one moment of euphoria when months of hard work shows up in our perfectly synchronised march at the National Day Parade.\r\n\r\nStanding on the main stage in my POSB uniform, I am unbelievably honoured to be part of our nation’s birthday celebration. And that’s why I keep coming back.  \r\n\r\nThis year marks my fourth National Day Parade.   \r\n\r\nIn all honesty, when I first signed up in 2023, it was mostly because I wanted to make new friends. At the time, I was also going through a separation and adjusting to a new chapter in my life.  \r\n\r\nLooking back, I ended up gaining far more than a few new friends. The friendships I formed, the support from fellow marchers and the sense of purpose that came with every rehearsal gave me something positive to focus on.   \r\n\r\n'Habiba, let’s go for dinner after rehearsal! It’s more fun when we are all together,’ a colleague suggested one day.” She soon became a close friend.   \r\n\r\nOne dinner turned into weekly meals and long walks outside of rehearsal days.   \r\n\r\nWeek by week, I found myself moving forward again.  \r\n\r\nBut I took away more than friendships from these experiences. Preparing for the NDP requires patience, discipline and the belief that progress comes one step at a time.  \r\n\r\nThese are values I hold close in my role in Collections Recovery, where I help customers and businesses manage their outstanding debts.   \r\n\r\nI’ve been in this role for eight years. Many of the customers I speak to are navigating difficult periods in their lives. Financial challenges are often just one part of a bigger story. Having gone through my own struggles, I understand how overwhelming it can feel when life suddenly takes an unexpected turn.  \r\n\r\nThat's why I try to listen first, understand their circumstances and work with them to find a way forward. It feels like yesterday when this event became such a core part of my time at DBS.   \r\n\r\nAs I march alongside colleagues on Singapore's birthday, I'm reminded that the spirit of what I do every day isn't so different. Whether it's supporting a customer through a difficult period or moving in step with my fellow marchers, both are about helping people move forward – one step at a time.  \r\n\r\nHappy National Day, Singapore” \r\n\r\n- Habiba Begum Hajamohidin, Collections Officer #HumansofPOSB \r\n[End]\r\n\r\nDetails:\r\n\r\n1) Brief introduction of the Humans of POSB series: Humans of POSB is a first-person, human-interest storytelling series that spotlights the people behind DBS – their journeys, values, challenges and motivations – beyond job titles and functions.   \r\n\r\nTold through the voice of employees, the series uses authentic, personal narratives to bring DBS' brand attributes to life in a relatable, emotionally resonant way. The stories are designed to feel like conversations you'd share over dinner. \r\n\r\n2) Key message of this post: In line with National Day, DBS employee Habiba's experience serving in the NDP marching contingent, the outpouring of her empathy as a Collections Officer at DBS and her pride in representing DBS as a well-known bank in the parade. \r\n\r\n \r\n\r\n3) Intention of this post: To humanise the DBS brand by putting real faces and voices behind the organisation and showing DBS through lived experiences. This post highlights a DBS employee's experience in the NDP marching contingent. \r\n\r\n \r\n\r\n4) Strategic Outcome: The post should help audiences see the prevalence of DBS in the National Day Parade, and also the love and passion that is shone through a DBS employee, who is customer-centric, resilient and empathetic.",
+  "chunk_size": 500,
+  "chunk_overlap": 50,
+  "error": null,
+  "token_usage": {
+    "prompt_tokens": 45654,
+    "completion_tokens": 17392,
+    "total_tokens": 63046,
+    "call_count": 66,
+    "last_updated": "2026-07-30T14:33:10.649282"
+  }
+}

@@ -1,0 +1,26 @@
+### 1. Executive Summary
+Image featuring a woman in a blue corporate uniform seated in a modern lounge. A text overlay and circular inset highlight customized white sneakers gifted by a CEO to employees.
+
+### 2. OCR / Text Extraction
+*   **Overlay Text:** "Fun fact: DBS' CEO Tan Su Shan gave every DBS employee in the NDP contingent a pair of customised 'Live More Bank Less' sneakers!"
+*   **Shirt Logo:** "PSF" with a key icon.
+*   **Shoe Detail:** "Live more. Bank less." accompanied by a red four-pointed star graphic.
+
+### 3. Detailed Visual Scene Description
+*   **Subject:** A woman with glasses and a mustard-yellow hijab, smiling directly at the camera.
+*   **Pose & Gestures:** Seated upright on a light-wood chair with a black seat; hands are clasped in her lap.
+*   **Clothing & Attire:** Blue long-sleeved polo with diagonal white and yellow stripes; black trousers; white low-top sneakers; red wristwatch.
+*   **Background & Setting:** Indoor space with dark grey walls and a grey tiled floor. A wooden planter box with green foliage sits behind the subject. A white circular table edge is visible on the left.
+*   **Lighting & Color Palette:** Bright, diffused indoor lighting. Dominant colors are blue, mustard, black, and neutral greys.
+
+### 4. Entity Identification
+*   **Organizations:** DBS, PSF.
+*   **People:** Tan Su Shan (named in text).
+*   **Products:** Customized sneakers.
+*   **Events:** NDP (National Day Parade).
+
+### 5. Structural Relationships
+*   The subject is positioned center-left in the foreground.
+*   A circular inset at the bottom-right provides a magnified view of the sneakers.
+*   The explanatory text is placed in the top-right quadrant.
+*   A horizontal wooden planter divides the midground from the dark background wall.

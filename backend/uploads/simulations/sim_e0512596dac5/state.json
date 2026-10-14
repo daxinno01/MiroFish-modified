@@ -1,0 +1,25 @@
+{
+  "simulation_id": "sim_e0512596dac5",
+  "project_id": "proj_9c00f192c44f",
+  "graph_id": "mirofish_local_e826ed43550a4a77",
+  "enable_twitter": true,
+  "enable_reddit": true,
+  "status": "running",
+  "entities_count": 21,
+  "profiles_count": 21,
+  "entity_types": [
+    "Person",
+    "Organization",
+    "BankEmployee",
+    "BankExecutive",
+    "FinancialInstitution"
+  ],
+  "config_generated": true,
+  "config_reasoning": "时间配置: The simulation is set for 72 hours to capture the multi-day lifecycle of a human-interest brand story. Activity follows Singapore's typical daily routine: low activity during late-night hours (0-5), a steady climb during the morning commute (6-8), consistent engagement during office hours (9-18) as DBS/POSB customers and employees interact, and a significant peak in the evenings (19-22) when the general public engages with emotional, storytelling content. This timeframe allows for the 'Humans of POSB' narrative to resonate and be shared across different social circles. | 事件配置: The configuration leverages the 'Humans of POSB' campaign to create a multi-faceted public opinion environment. By using the FinancialInstitution type for the main story, BankExecutive for leadership validation, and BankEmployee/Person for ground-level relatability, the simulation covers the full spectrum of brand perception. The keywords focus on the intersection of national pride and professional empathy, which are the core pillars of the provided text. | Agent配置: 成功生成 21 个 | 初始帖子分配: 5 个帖子已分配发布者",
+  "current_round": 0,
+  "twitter_status": "not_started",
+  "reddit_status": "not_started",
+  "created_at": "2026-09-08T09:46:37.133885",
+  "updated_at": "2026-09-08T09:52:51.167774",
+  "error": null
+}

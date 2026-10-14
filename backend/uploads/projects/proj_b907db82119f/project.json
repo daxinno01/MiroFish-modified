@@ -1,0 +1,356 @@
+{
+  "project_id": "proj_b907db82119f",
+  "name": "Unnamed Project",
+  "status": "graph_completed",
+  "created_at": "2026-07-28T11:30:52.114701",
+  "updated_at": "2026-07-28T11:43:00.391491",
+  "files": [],
+  "total_text_length": 22919,
+  "ontology": {
+    "entity_types": [
+      {
+        "name": "CommercialBank",
+        "description": "Financial institutions providing banking services to individuals and businesses.",
+        "attributes": [
+          {
+            "name": "bank_full_name",
+            "type": "text",
+            "description": "The official name of the bank."
+          },
+          {
+            "name": "market_focus",
+            "type": "text",
+            "description": "Primary market or region the bank serves."
+          }
+        ],
+        "examples": [
+          "DBS Bank",
+          "POSB",
+          "DBS China"
+        ]
+      },
+      {
+        "name": "GovernmentBody",
+        "description": "Government departments or regulatory agencies involved in economic development.",
+        "attributes": [
+          {
+            "name": "agency_name",
+            "type": "text",
+            "description": "The name of the government organization."
+          },
+          {
+            "name": "policy_area",
+            "type": "text",
+            "description": "The specific sector the agency regulates or supports."
+          }
+        ],
+        "examples": [
+          "Economic Development Board (EDB)",
+          "Singapore Government"
+        ]
+      },
+      {
+        "name": "Enterprise",
+        "description": "Companies and industrial entities that receive financing or services from banks.",
+        "attributes": [
+          {
+            "name": "company_name",
+            "type": "text",
+            "description": "The name of the business entity."
+          },
+          {
+            "name": "industry_sector",
+            "type": "text",
+            "description": "The industry the company operates in."
+          }
+        ],
+        "examples": [
+          "Rollei",
+          "Manufacturing Firm A",
+          "Tech Startup B"
+        ]
+      },
+      {
+        "name": "TechInfluencer",
+        "description": "Key opinion leaders who speak about AI, digital transformation, and innovation.",
+        "attributes": [
+          {
+            "name": "social_handle",
+            "type": "text",
+            "description": "The username or handle on social media platforms."
+          },
+          {
+            "name": "expertise_domain",
+            "type": "text",
+            "description": "Specific area of tech expertise like AI or Fintech."
+          }
+        ],
+        "examples": [
+          "Fintech Blogger",
+          "AI Strategy Consultant"
+        ]
+      },
+      {
+        "name": "Journalist",
+        "description": "Media professionals who report on financial news and corporate history.",
+        "attributes": [
+          {
+            "name": "reporter_name",
+            "type": "text",
+            "description": "The full name of the journalist."
+          },
+          {
+            "name": "media_outlet",
+            "type": "text",
+            "description": "The news organization they work for."
+          }
+        ],
+        "examples": [
+          "Financial Times Reporter",
+          "Business Times Editor"
+        ]
+      },
+      {
+        "name": "BankExecutive",
+        "description": "High-level officials within a bank responsible for leadership and public statements.",
+        "attributes": [
+          {
+            "name": "executive_name",
+            "type": "text",
+            "description": "The full name of the executive."
+          },
+          {
+            "name": "role_title",
+            "type": "text",
+            "description": "The official job title of the executive."
+          }
+        ],
+        "examples": [
+          "CEO of DBS",
+          "Head of Digital Transformation"
+        ]
+      },
+      {
+        "name": "Academic",
+        "description": "Scholars or researchers who analyze historical records and economic trends.",
+        "attributes": [
+          {
+            "name": "scholar_name",
+            "type": "text",
+            "description": "The full name of the academic."
+          },
+          {
+            "name": "research_focus",
+            "type": "text",
+            "description": "The primary field of study or research."
+          }
+        ],
+        "examples": [
+          "Economic Historian",
+          "Banking Professor"
+        ]
+      },
+      {
+        "name": "RetailCustomer",
+        "description": "Individual users of banking products, including students and digital app users.",
+        "attributes": [
+          {
+            "name": "user_alias",
+            "type": "text",
+            "description": "The display name of the customer on social media."
+          },
+          {
+            "name": "customer_type",
+            "type": "text",
+            "description": "Category of customer such as Student or Long-term Client."
+          }
+        ],
+        "examples": [
+          "Smartwatch User",
+          "Digibot User",
+          "Student Saver"
+        ]
+      },
+      {
+        "name": "Person",
+        "description": "Fallback type for any natural person not fitting specific categories.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The full name of the individual."
+          },
+          {
+            "name": "bio_info",
+            "type": "text",
+            "description": "Brief biographical information."
+          }
+        ],
+        "examples": [
+          "Netizen A",
+          "Passerby B"
+        ]
+      },
+      {
+        "name": "Organization",
+        "description": "Fallback type for any organizational entity not fitting specific categories.",
+        "attributes": [
+          {
+            "name": "org_name",
+            "type": "text",
+            "description": "The name of the organization."
+          },
+          {
+            "name": "org_description",
+            "type": "text",
+            "description": "A brief description of the organization's nature."
+          }
+        ],
+        "examples": [
+          "Alumni Association",
+          "Historical Society"
+        ]
+      }
+    ],
+    "edge_types": [
+      {
+        "name": "WORKS_FOR",
+        "description": "Indicates an individual is employed by an organization.",
+        "source_targets": [
+          {
+            "source": "BankExecutive",
+            "target": "CommercialBank"
+          },
+          {
+            "source": "Person",
+            "target": "Organization"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "REGULATES",
+        "description": "A government body overseeing a bank or industry.",
+        "source_targets": [
+          {
+            "source": "GovernmentBody",
+            "target": "CommercialBank"
+          },
+          {
+            "source": "GovernmentBody",
+            "target": "Enterprise"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "PROVIDES_SERVICES_TO",
+        "description": "A bank providing financial or digital services to a client.",
+        "source_targets": [
+          {
+            "source": "CommercialBank",
+            "target": "Enterprise"
+          },
+          {
+            "source": "CommercialBank",
+            "target": "RetailCustomer"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "REPORTS_ON",
+        "description": "A journalist or media outlet covering news about an entity.",
+        "source_targets": [
+          {
+            "source": "Journalist",
+            "target": "CommercialBank"
+          },
+          {
+            "source": "Journalist",
+            "target": "GovernmentBody"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "COMMENTS_ON",
+        "description": "Social media interaction where an entity reacts to another's post.",
+        "source_targets": [
+          {
+            "source": "TechInfluencer",
+            "target": "CommercialBank"
+          },
+          {
+            "source": "RetailCustomer",
+            "target": "CommercialBank"
+          },
+          {
+            "source": "Academic",
+            "target": "Journalist"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "REPOSTS",
+        "description": "Sharing content from another entity on social media.",
+        "source_targets": [
+          {
+            "source": "RetailCustomer",
+            "target": "CommercialBank"
+          },
+          {
+            "source": "Person",
+            "target": "TechInfluencer"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "COLLABORATES_WITH",
+        "description": "Two entities working together on a project or initiative.",
+        "source_targets": [
+          {
+            "source": "CommercialBank",
+            "target": "GovernmentBody"
+          },
+          {
+            "source": "CommercialBank",
+            "target": "Enterprise"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "ENDORSES",
+        "description": "Publicly supporting the actions or reputation of another entity.",
+        "source_targets": [
+          {
+            "source": "TechInfluencer",
+            "target": "CommercialBank"
+          },
+          {
+            "source": "BankExecutive",
+            "target": "GovernmentBody"
+          }
+        ],
+        "attributes": []
+      }
+    ]
+  },
+  "analysis_summary": "本设计基于星展银行（DBS）58周年庆的历史回顾与未来展望。实体类型涵盖了从历史起源（EDB、政府）到现代转型（AI专家、技术影响者）的关键角色。通过区分银行高管、媒体记者、学术研究者和普通零售客户，系统可以模拟不同群体对DBS从‘支持建国’到‘AI赋能’这一品牌叙事的反应。关系类型旨在捕捉社交媒体上的互动逻辑，如评论、转发和背书，从而有效模拟公众舆论的传播路径。",
+  "graph_id": "mirofish_local_07ad342c18cd4320",
+  "graph_build_task_id": "5a3432f7-3b72-409b-a220-64df66d6c010",
+  "simulation_requirement": "1) Brief introduction of the DBS History series: DBS History is a heritage series built around historical recounts of defining moments in DBS’ journey. It features carefully researched historical moments drawn from archives, employee recollections and institutional records to recount how the bank evolved alongside the communities and nations it serves.\r\n\r\n2) Key message of this post: DBS has always looked ahead to what customers, businesses and communities would need next. From supporting Singapore's industrialisation in its early years to harnessing AI today, the bank has continually evolved to create new opportunities, build capabilities and better serve its customers.\r\n\r\n \r\n\r\n3) Intention of this post: This post commemorates DBS' 58th anniversary by showing how the bank's future-focused mindset has remained consistent across generations. While the post begins with DBS' role in supporting a young nation's development, its primary focus is on how DBS has continually anticipated change and adapted to evolving customer needs. The foundations laid in its early years through investments in industries, talent, technology and innovation have enabled DBS to become the AI-enabled bank with a heart it is today. The post positions AI not as a new direction, but as the latest chapter in a long history of reimagining banking to better serve customers.\r\n\r\n \r\n\r\n4) Strategic Outcome: The post should help audiences see a clear connection between DBS' pioneering spirit in the past and its continued leadership in AI today. Reinforce DBS as a bank that is:\r\n\r\nCustomer-centric\r\nFuture-focused and innovative\r\nWilling to embrace change and new technologies\r\nAn AI-enabled bank with a heart",
+  "chunk_size": 500,
+  "chunk_overlap": 50,
+  "error": null,
+  "token_usage": {
+    "prompt_tokens": 50435,
+    "completion_tokens": 14952,
+    "total_tokens": 65387,
+    "call_count": 74,
+    "last_updated": "2026-07-28T11:42:57.315080"
+  }
+}

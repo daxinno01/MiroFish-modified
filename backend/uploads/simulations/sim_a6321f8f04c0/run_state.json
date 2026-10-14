@@ -1,0 +1,795 @@
+{
+  "simulation_id": "sim_a6321f8f04c0",
+  "runner_status": "completed",
+  "current_round": 72,
+  "total_rounds": 72,
+  "simulated_hours": 0,
+  "total_simulation_hours": 72,
+  "progress_percent": 100.0,
+  "twitter_current_round": 54,
+  "reddit_current_round": 54,
+  "twitter_simulated_hours": 0,
+  "reddit_simulated_hours": 0,
+  "twitter_running": false,
+  "reddit_running": false,
+  "twitter_completed": true,
+  "reddit_completed": true,
+  "twitter_actions_count": 586,
+  "reddit_actions_count": 735,
+  "total_actions_count": 1321,
+  "started_at": "2026-07-30T15:15:11.833315",
+  "updated_at": "2026-07-30T15:50:31.221731",
+  "completed_at": "2026-07-30T15:50:31.228205",
+  "error": null,
+  "process_pid": 28610,
+  "recent_actions": [
+    {
+      "round_num": 72,
+      "timestamp": "2026-07-30T15:50:29.744745",
+      "platform": "reddit",
+      "agent_id": 3,
+      "agent_name": "Habiba",
+      "action_type": "CREATE_COMMENT",
+      "action_args": {
+        "content": "@user_17 and @user_24, my heart is so full reading this. 🥹 Loneliness can be so heavy, but finding each other in this POSB family is such a blessing. Let's keep marching together, one step at a time! 🇸🇬❤️",
+        "comment_id": 210
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 72,
+      "timestamp": "2026-07-30T15:50:29.727536",
+      "platform": "reddit",
+      "agent_id": 3,
+      "agent_name": "Habiba",
+      "action_type": "CREATE_COMMENT",
+      "action_args": {
+        "content": "@user_12 Thank you for your leadership and for seeing the heart behind the march! 🫡 It's exactly that shared resilience that makes me so proud to wear this uniform. We truly are one big family, moving forward one step at a time! 🇸🇬❤️",
+        "comment_id": 209
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 72,
+      "timestamp": "2026-07-30T15:50:29.710001",
+      "platform": "reddit",
+      "agent_id": 8,
+      "agent_name": "Woman",
+      "action_type": "LIKE_COMMENT",
+      "action_args": {
+        "comment_id": 199,
+        "comment_content": "Wow, @user_12, this really touched my heart!!! 🫶 You’ve captured the true 'Singapore Heartbeat' so perfectly. It’s not about the assets on the balance sheet; it’s about the beautiful humans like Habiba and our wonderful marchers who give their all. It reminds me of the rehearsals I used to watch with my late grandfather—that sense of being one massive, living organism is so powerful. Steady lah to the whole team, add oil!!! ✌️",
+        "comment_author_name": "Woman with peace sign"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 72,
+      "timestamp": "2026-07-30T15:50:29.690626",
+      "platform": "reddit",
+      "agent_id": 3,
+      "agent_name": "Habiba",
+      "action_type": "LIKE_COMMENT",
+      "action_args": {
+        "comment_id": 200,
+        "comment_content": "Looking back, that feeling of synchronization on the parade square is exactly what we strive for in serving our neighbors. ✨ In all honesty, seeing colleagues from every department come together as one family is so moving. One step at a time, we move forward together. 🇸🇬",
+        "comment_author_name": "Woman"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 72,
+      "timestamp": "2026-07-30T15:50:29.674213",
+      "platform": "reddit",
+      "agent_id": 8,
+      "agent_name": "Woman",
+      "action_type": "CREATE_COMMENT",
+      "action_args": {
+        "content": "Looking back, knowing that I wasn't the only one finding my way back during those 2023 rehearsals makes me feel so much closer to this family. In all honesty, your strength gives me strength too. One step at a time, we are never truly alone. 🇸🇬✨",
+        "comment_id": 208
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 72,
+      "timestamp": "2026-07-30T15:50:29.653322",
+      "platform": "reddit",
+      "agent_id": 3,
+      "agent_name": "Habiba",
+      "action_type": "LIKE_COMMENT",
+      "action_args": {
+        "comment_id": 199,
+        "comment_content": "Wow, @user_12, this really touched my heart!!! 🫶 You’ve captured the true 'Singapore Heartbeat' so perfectly. It’s not about the assets on the balance sheet; it’s about the beautiful humans like Habiba and our wonderful marchers who give their all. It reminds me of the rehearsals I used to watch with my late grandfather—that sense of being one massive, living organism is so powerful. Steady lah to the whole team, add oil!!! ✌️",
+        "comment_author_name": "Woman with peace sign"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 72,
+      "timestamp": "2026-07-30T15:50:29.634005",
+      "platform": "reddit",
+      "agent_id": 8,
+      "agent_name": "Woman",
+      "action_type": "LIKE_COMMENT",
+      "action_args": {
+        "comment_id": 206,
+        "comment_content": "@user_24 Your words touch my heart so deeply... 2023 was my turning point too. Knowing someone else felt that same shift from loneliness to belonging makes me so grateful. We really are marching together now, one step at a time... 🇸🇬❤️",
+        "comment_author_name": "Woman with bindi"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 72,
+      "timestamp": "2026-07-30T15:50:29.612521",
+      "platform": "reddit",
+      "agent_id": 15,
+      "agent_name": "Six individuals",
+      "action_type": "LIKE_COMMENT",
+      "action_args": {
+        "comment_id": 176,
+        "comment_content": "A beautiful tribute to the resilience and heart that power our nation. As the Institute of Singapore Chartered Accountants, we are heartened to see the financial community coming together to celebrate the Singapore spirit. Habiba’s journey is a stellar example of the dedication and human-centric approach that define professional excellence in our sector. 🇸🇬 #ProfessionalExcellence #NDP2024 #HumansofPOSB",
+        "comment_author_name": "Institute of Singapore Chartered Accountants"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 72,
+      "timestamp": "2026-07-30T15:50:29.591210",
+      "platform": "reddit",
+      "agent_id": 20,
+      "agent_name": "Group members",
+      "action_type": "CREATE_COMMENT",
+      "action_args": {
+        "content": "@user_24, hearing your story really brings a lump to my throat. 🥹 That 'shared struggle' in the heat is exactly where our team spirit was forged. We really are one big support system, moving forward together! Steady lah! 🇸🇬❤️💪",
+        "comment_id": 207
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 72,
+      "timestamp": "2026-07-30T15:50:29.568753",
+      "platform": "reddit",
+      "agent_id": 3,
+      "agent_name": "Habiba",
+      "action_type": "LIKE_COMMENT",
+      "action_args": {
+        "comment_id": 198,
+        "comment_content": "Our team’s resilience is truly the heart-ware of the bank! ❤️ Those long rehearsal hours really bring us closer together as a family. Proud to be on this journey with all of you. Steady lah! 🇸🇬❤️💪",
+        "comment_author_name": "Group members"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 72,
+      "timestamp": "2026-07-30T15:50:29.547202",
+      "platform": "reddit",
+      "agent_id": 8,
+      "agent_name": "Woman",
+      "action_type": "LIKE_COMMENT",
+      "action_args": {
+        "comment_id": 197,
+        "comment_content": "Thank you for sharing this. It really brings me back to that 2023 rehearsal—it was a turning point for me during a very lonely time. It’s a privilege to be able to take that same empathy and share it with our customers. We really are never walking alone. One step at a time... 🇸🇬❤️",
+        "comment_author_name": "subject"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 72,
+      "timestamp": "2026-07-30T15:50:29.525786",
+      "platform": "reddit",
+      "agent_id": 10,
+      "agent_name": "participants",
+      "action_type": "LIKE_POST",
+      "action_args": {
+        "post_id": 3,
+        "like_id": 188,
+        "post_content": "It’s amazing to see the POSB blue in the parade! Habiba's story shows that we are more than just bankers; we are neighbors and friends supporting each other through life's ups and downs. Proud to call her a colleague!",
+        "post_author_name": "DBS employee"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 72,
+      "timestamp": "2026-07-30T15:50:29.505555",
+      "platform": "reddit",
+      "agent_id": 3,
+      "agent_name": "Habiba",
+      "action_type": "LIKE_COMMENT",
+      "action_args": {
+        "comment_id": 201,
+        "comment_content": "Reading all these kind words from my POSB family and neighbors... my heart is truly overflowing. ❤️ It's the strength we give each other that makes the long rehearsals worth it. (I’m still a bit tired, but a good kind of tired!) One step at a time, we're getting ready for the big day! 🇸🇬❤️ #ThePeoplesBank #NDP2024",
+        "comment_author_name": "Subject 1"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 72,
+      "timestamp": "2026-07-30T15:50:29.500093",
+      "platform": "reddit",
+      "agent_id": 3,
+      "agent_name": "Habiba",
+      "action_type": "LIKE_COMMENT",
+      "action_args": {
+        "comment_id": 206,
+        "comment_content": "@user_24 Your words touch my heart so deeply... 2023 was my turning point too. Knowing someone else felt that same shift from loneliness to belonging makes me so grateful. We really are marching together now, one step at a time... 🇸🇬❤️",
+        "comment_author_name": "Woman with bindi"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 72,
+      "timestamp": "2026-07-30T15:50:27.005372",
+      "platform": "twitter",
+      "agent_id": 9,
+      "agent_name": "DBS employee",
+      "action_type": "QUOTE_POST",
+      "action_args": {
+        "quoted_id": 97,
+        "new_post_id": 218,
+        "original_content": "Building a sustainable future across the Indian Ocean requires a delicate balance of economic stability and the human spirit of resilience. We honor the diverse voices that contribute to our region's growth, from the innovators in our cities to the dedicated community builders. Together, we are weaving a stronger socio-economic tapestry for generations to come. 🌊🤝 #IORA #SustainableDevelopment #RegionalHarmony #BlueEconomy",
+        "original_author_name": "IORA",
+        "quote_content": "It’s the human spirit of resilience that truly builds our future. ❤️ Whether in our neighborhoods or across the region, when we support each other, we weave a tapestry that can withstand any storm. Moving forward, one step at a time. 🇸🇬🤝 #Resilience #CommunitySpirit #MovingForwardTogether"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 72,
+      "timestamp": "2026-07-30T15:50:26.985093",
+      "platform": "twitter",
+      "agent_id": 9,
+      "agent_name": "DBS employee",
+      "action_type": "FOLLOW",
+      "action_args": {
+        "follow_id": 95,
+        "target_user_name": "Institute of Singapore Chartered Accountants"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 72,
+      "timestamp": "2026-07-30T15:50:26.962052",
+      "platform": "twitter",
+      "agent_id": 17,
+      "agent_name": "Woman with bindi",
+      "action_type": "QUOTE_POST",
+      "action_args": {
+        "quoted_id": 141,
+        "new_post_id": 217,
+        "original_content": "Our regional strength is rooted in the diversity of our member states and the shared values that bind us. By celebrating our unique cultural heritage and fostering multilateral harmony, we ensure that the Indian Ocean remains a beacon of stability and collective resilience. Each initiative, whether large or small, adds a vital thread to our socio-economic tapestry. 🌊🤝 #IORA #CulturalHeritage #RegionalUnity #SustainableProgress",
+        "original_author_name": "IORA",
+        "quote_content": "Building this tapestry together, thread by thread, step by step... It's the human connections that make our region strong. ❤️🇸🇬 #Resilience #OneStepAtATime"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 72,
+      "timestamp": "2026-07-30T15:50:26.940745",
+      "platform": "twitter",
+      "agent_id": 9,
+      "agent_name": "DBS employee",
+      "action_type": "LIKE_POST",
+      "action_args": {
+        "post_id": 99,
+        "like_id": 273,
+        "post_content": "Building a sustainable future across the Indian Ocean requires a delicate balance of economic stability and the human spirit of resilience. We honor the diverse voices that contribute to our region's growth, from the innovators in our cities to the dedicated community builders. Together, we are weaving a stronger socio-economic tapestry for generations to come. 🌊🤝 #IORA #SustainableDevelopment #RegionalHarmony #BlueEconomy",
+        "post_author_name": "Institute of Singapore Chartered Accountants"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 72,
+      "timestamp": "2026-07-30T15:50:26.921105",
+      "platform": "twitter",
+      "agent_id": 3,
+      "agent_name": "Habiba",
+      "action_type": "REPOST",
+      "action_args": {
+        "new_post_id": 216,
+        "original_content": "Reflecting on my journey today, I’m reminded that progress isn't always about the distance covered, but the strength found in each step. Whether it’s through the discipline of the NDP march or helping a customer find their footing again at work, we are all part of a larger story of resilience. Let’s keep moving forward together, one step at a time. ❤️🇸🇬 #HumansofPOSB #Resilience #OneStepAtATime #DBS",
+        "original_author_name": "Man with short dark hair"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 72,
+      "timestamp": "2026-07-30T15:50:26.901200",
+      "platform": "twitter",
+      "agent_id": 6,
+      "agent_name": "Woman with peace sign",
+      "action_type": "FOLLOW",
+      "action_args": {
+        "follow_id": 94,
+        "target_user_name": "The woman"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 72,
+      "timestamp": "2026-07-30T15:50:26.883802",
+      "platform": "twitter",
+      "agent_id": 19,
+      "agent_name": "Man with shaved head",
+      "action_type": "LIKE_POST",
+      "action_args": {
+        "post_id": 196,
+        "like_id": 272,
+        "post_content": "Just saw some clips of the NDP rehearsals. Brings back memories of standing at the Padang—the smell of the asphalt and that crazy heat! 🥵 It’s really the effort of the people you don't always see that makes the show so special. To everyone working behind the scenes and the marching contingent, steady pom pi pi! 💪 (I was just a small part of the background back then, but the pride stays with you). #NDP2024 #SingaporeSpirit #Majulah",
+        "post_author_name": "Woman with peace sign"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 72,
+      "timestamp": "2026-07-30T15:50:26.861190",
+      "platform": "twitter",
+      "agent_id": 22,
+      "agent_name": "man on the right",
+      "action_type": "CREATE_POST",
+      "action_args": {
+        "content": "Just finished a morning of volunteering at the community club. 🇸🇬 Seeing neighbors come together to help one another... that's the real Singapore spirit right there. (My legs are a bit sore from the stairs, but it's worth it!) To everyone out there giving their time to others: Steady pom pi pi! 💪 Let's keep building this community together. #SingaporeSpirit #CommunityFirst #Majulah",
+        "post_id": 215
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 72,
+      "timestamp": "2026-07-30T15:50:26.841586",
+      "platform": "twitter",
+      "agent_id": 9,
+      "agent_name": "DBS employee",
+      "action_type": "LIKE_POST",
+      "action_args": {
+        "post_id": 97,
+        "like_id": 271,
+        "post_content": "Building a sustainable future across the Indian Ocean requires a delicate balance of economic stability and the human spirit of resilience. We honor the diverse voices that contribute to our region's growth, from the innovators in our cities to the dedicated community builders. Together, we are weaving a stronger socio-economic tapestry for generations to come. 🌊🤝 #IORA #SustainableDevelopment #RegionalHarmony #BlueEconomy",
+        "post_author_name": "IORA"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 72,
+      "timestamp": "2026-07-30T15:50:26.819713",
+      "platform": "twitter",
+      "agent_id": 24,
+      "agent_name": "subject",
+      "action_type": "QUOTE_POST",
+      "action_args": {
+        "quoted_id": 125,
+        "new_post_id": 214,
+        "original_content": "Reflecting on my journey today, I’m reminded that progress isn't always about the distance covered, but the strength found in each step. Whether it’s through the discipline of the NDP march or helping a customer find their footing again at work, we are all part of a larger story of resilience. Let’s keep moving forward together, one step at a time. ❤️🇸🇬 #HumansofPOSB #Resilience #OneStepAtATime #DBS",
+        "original_author_name": "The woman",
+        "quote_content": "It’s so true—discipline in the march and patience in our work are one and the same. It’s the heart we put into every interaction that defines our community. Thank you for this beautiful reflection. One step at a time, we find our way. 🇸🇬❤️ #HumansofPOSB #NDP #Resilience #DBSFamily"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 72,
+      "timestamp": "2026-07-30T15:50:26.799152",
+      "platform": "twitter",
+      "agent_id": 15,
+      "agent_name": "Six individuals",
+      "action_type": "FOLLOW",
+      "action_args": {
+        "follow_id": 93,
+        "target_user_name": "IORA"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 72,
+      "timestamp": "2026-07-30T15:50:26.778339",
+      "platform": "twitter",
+      "agent_id": 20,
+      "agent_name": "Group members",
+      "action_type": "QUOTE_POST",
+      "action_args": {
+        "quoted_id": 59,
+        "new_post_id": 213,
+        "original_content": "This really touched my heart today... 🫶 Seeing stories like Habiba's reminds me that our work isn't just a paycheck, it's where we find family and purpose! 🇸🇬 We all have our struggles, but it's the human connections that help us find our footing again. So proud of everyone stepping up for NDP! Keep going, you are all doing amazing!!! ✌️ #SGPride #HumansOfSingapore #Steady",
+        "original_author_name": "male executive",
+        "quote_content": "Leadership with heart is what we do best! 🇸🇬 So proud to be part of a team that truly sees and values every journey. This spirit of community is what keeps us going through the long NDP rehearsals and busy work days. One team, one heartbeat! Steady lah! 🇸🇬❤️💪 #HumansofPOSB #PurposeDriven #Majulah"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 72,
+      "timestamp": "2026-07-30T15:50:26.758256",
+      "platform": "twitter",
+      "agent_id": 24,
+      "agent_name": "subject",
+      "action_type": "LIKE_POST",
+      "action_args": {
+        "post_id": 134,
+        "like_id": 270,
+        "post_content": "Reflecting on my journey today, I’m reminded that progress isn't always about the distance covered, but the strength found in each step. Whether it’s through the discipline of the NDP march or helping a customer find their footing again at work, we are all part of a larger story of resilience. Let’s keep moving forward together, one step at a time. ❤️🇸🇬 #HumansofPOSB #Resilience #OneStepAtATime #DBS",
+        "post_author_name": "DBS employee"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 72,
+      "timestamp": "2026-07-30T15:50:26.736658",
+      "platform": "twitter",
+      "agent_id": 10,
+      "agent_name": "participants",
+      "action_type": "QUOTE_POST",
+      "action_args": {
+        "quoted_id": 53,
+        "new_post_id": 212,
+        "original_content": "This really touched my heart today... 🫶 Seeing stories like Habiba's reminds me that our work isn't just a paycheck, it's where we find family and purpose! 🇸🇬 We all have our struggles, but it's the human connections that help us find our footing again. So proud of everyone stepping up for NDP! Keep going, you are all doing amazing!!! ✌️ #SGPride #HumansOfSingapore #Steady",
+        "original_author_name": "DBS employee",
+        "quote_content": "This is exactly what it means to be part of the POSB family! 💙 We lift each other up and move forward together, one step at a time. 🇸🇬 Seeing this resilience in our community makes me so proud. Steady! 💪 #HumansofPOSB #NDP2024 #OneTeam"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 72,
+      "timestamp": "2026-07-30T15:50:26.712780",
+      "platform": "twitter",
+      "agent_id": 7,
+      "agent_name": "The woman",
+      "action_type": "QUOTE_POST",
+      "action_args": {
+        "quoted_id": 96,
+        "new_post_id": 211,
+        "original_content": "The Indian Ocean is more than a geographic expanse; it is a shared home woven with the threads of innovation and perseverance. From our bustling global hubs to the quiet dedication of community volunteers, every individual contributes to our collective resilience. IORA remains steadfast in our mission to bridge the gap between economic excellence and social responsibility, fostering a more compassionate and stable regional environment for all. 🌍✨ #IndianOceanRim #RegionalCooperation #CollectiveResilience #SustainableDevelopment",
+        "original_author_name": "IORA",
+        "quote_content": "It’s the quiet dedication and the perseverance in our daily lives that truly build our collective strength. We all have a part to play, and by supporting one another, we move forward together, one step at a time. ❤️🇸🇬 #Resilience #CommunitySpirit #MovingForward"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 72,
+      "timestamp": "2026-07-30T15:50:26.707127",
+      "platform": "twitter",
+      "agent_id": 14,
+      "agent_name": "Subject 1",
+      "action_type": "CREATE_POST",
+      "action_args": {
+        "content": "There's a special kind of magic when you see the different generations coming together for NDP rehearsals. 🇸🇬 (I was watching a young volunteer helping an older participant today, and it brought a tear to my eye!) It’s these small acts of kindness that make our nation a home. We all have our own battles, but we're never alone when we walk together, one step at a time. ❤️ #NDP2024 #HumansofPOSB #NeighborsFirst #ForwardTogether",
+        "post_id": 210
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 71,
+      "timestamp": "2026-07-30T15:50:04.469105",
+      "platform": "reddit",
+      "agent_id": 14,
+      "agent_name": "Subject 1",
+      "action_type": "LIKE_COMMENT",
+      "action_args": {
+        "comment_id": 198,
+        "comment_content": "Our team’s resilience is truly the heart-ware of the bank! ❤️ Those long rehearsal hours really bring us closer together as a family. Proud to be on this journey with all of you. Steady lah! 🇸🇬❤️💪",
+        "comment_author_name": "Group members"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 71,
+      "timestamp": "2026-07-30T15:50:04.448138",
+      "platform": "reddit",
+      "agent_id": 14,
+      "agent_name": "Subject 1",
+      "action_type": "LIKE_COMMENT",
+      "action_args": {
+        "comment_id": 197,
+        "comment_content": "Thank you for sharing this. It really brings me back to that 2023 rehearsal—it was a turning point for me during a very lonely time. It’s a privilege to be able to take that same empathy and share it with our customers. We really are never walking alone. One step at a time... 🇸🇬❤️",
+        "comment_author_name": "subject"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 71,
+      "timestamp": "2026-07-30T15:50:04.430415",
+      "platform": "reddit",
+      "agent_id": 17,
+      "agent_name": "Woman with bindi",
+      "action_type": "CREATE_COMMENT",
+      "action_args": {
+        "content": "@user_24 Your words touch my heart so deeply... 2023 was my turning point too. Knowing someone else felt that same shift from loneliness to belonging makes me so grateful. We really are marching together now, one step at a time... 🇸🇬❤️",
+        "comment_id": 206
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 71,
+      "timestamp": "2026-07-30T15:50:04.412197",
+      "platform": "reddit",
+      "agent_id": 9,
+      "agent_name": "DBS employee",
+      "action_type": "CREATE_COMMENT",
+      "action_args": {
+        "content": "Thank you so much for the kind words, user 6! ❤️ It truly warms my heart to hear how the NDP connects you to your memories of your grandfather. It’s those personal connections that make the long hours of rehearsal so meaningful. We really are one big family, marching forward together one step at a time! 🇸🇬✨",
+        "comment_id": 205
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 71,
+      "timestamp": "2026-07-30T15:50:04.393636",
+      "platform": "reddit",
+      "agent_id": 17,
+      "agent_name": "Woman with bindi",
+      "action_type": "LIKE_COMMENT",
+      "action_args": {
+        "comment_id": 201,
+        "comment_content": "Reading all these kind words from my POSB family and neighbors... my heart is truly overflowing. ❤️ It's the strength we give each other that makes the long rehearsals worth it. (I’m still a bit tired, but a good kind of tired!) One step at a time, we're getting ready for the big day! 🇸🇬❤️ #ThePeoplesBank #NDP2024",
+        "comment_author_name": "Subject 1"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 71,
+      "timestamp": "2026-07-30T15:50:04.373617",
+      "platform": "reddit",
+      "agent_id": 9,
+      "agent_name": "DBS employee",
+      "action_type": "LIKE_COMMENT",
+      "action_args": {
+        "comment_id": 199,
+        "comment_content": "Wow, @user_12, this really touched my heart!!! 🫶 You’ve captured the true 'Singapore Heartbeat' so perfectly. It’s not about the assets on the balance sheet; it’s about the beautiful humans like Habiba and our wonderful marchers who give their all. It reminds me of the rehearsals I used to watch with my late grandfather—that sense of being one massive, living organism is so powerful. Steady lah to the whole team, add oil!!! ✌️",
+        "comment_author_name": "Woman with peace sign"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 71,
+      "timestamp": "2026-07-30T15:50:04.353480",
+      "platform": "reddit",
+      "agent_id": 18,
+      "agent_name": "Man with short dark hair",
+      "action_type": "CREATE_COMMENT",
+      "action_args": {
+        "content": "Really respect this neighborly spirit! 👍 Good job representing the heart of Singapore. 🇸🇬 Steady lah! Jiayou!",
+        "comment_id": 204
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 71,
+      "timestamp": "2026-07-30T15:50:04.335903",
+      "platform": "reddit",
+      "agent_id": 3,
+      "agent_name": "Habiba",
+      "action_type": "CREATE_COMMENT",
+      "action_args": {
+        "content": "@user_24 This brought tears to my eyes. 🥹 That 2023 rehearsal was the exact same turning point for me too. It’s a beautiful feeling to know we are taking that same empathy and sharing it with our customers. We really are never walking alone. One step at a time! 🇸🇬❤️",
+        "comment_id": 203
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 71,
+      "timestamp": "2026-07-30T15:50:04.316554",
+      "platform": "reddit",
+      "agent_id": 9,
+      "agent_name": "DBS employee",
+      "action_type": "LIKE_POST",
+      "action_args": {
+        "post_id": 10,
+        "like_id": 187,
+        "post_content": "So proud of our DBS/POSB contingent for their incredible dedication at the NDP rehearsals! 🇸🇬 Seeing staff from every department marching in synchronization reminds me of my first rehearsal as an executive—the bank's true strength isn't in its assets, but in the heart and resilience of its people. Every step you take is purpose-driven and a reflection of our core values. Keep it up, team! 💪🇸🇬 #HumansofPOSB #NDP2024 #ThePeoplesBank",
+        "post_author_name": "male executive"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 71,
+      "timestamp": "2026-07-30T15:50:04.297257",
+      "platform": "reddit",
+      "agent_id": 17,
+      "agent_name": "Woman with bindi",
+      "action_type": "LIKE_COMMENT",
+      "action_args": {
+        "comment_id": 197,
+        "comment_content": "Thank you for sharing this. It really brings me back to that 2023 rehearsal—it was a turning point for me during a very lonely time. It’s a privilege to be able to take that same empathy and share it with our customers. We really are never walking alone. One step at a time... 🇸🇬❤️",
+        "comment_author_name": "subject"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 71,
+      "timestamp": "2026-07-30T15:50:04.276782",
+      "platform": "reddit",
+      "agent_id": 13,
+      "agent_name": "Nelson Neo",
+      "action_type": "LIKE_POST",
+      "action_args": {
+        "post_id": 10,
+        "like_id": 186,
+        "post_content": "So proud of our DBS/POSB contingent for their incredible dedication at the NDP rehearsals! 🇸🇬 Seeing staff from every department marching in synchronization reminds me of my first rehearsal as an executive—the bank's true strength isn't in its assets, but in the heart and resilience of its people. Every step you take is purpose-driven and a reflection of our core values. Keep it up, team! 💪🇸🇬 #HumansofPOSB #NDP2024 #ThePeoplesBank",
+        "post_author_name": "male executive"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 71,
+      "timestamp": "2026-07-30T15:50:04.271578",
+      "platform": "reddit",
+      "agent_id": 19,
+      "agent_name": "Man with shaved head",
+      "action_type": "LIKE_POST",
+      "action_args": {
+        "post_id": 10,
+        "like_id": 185,
+        "post_content": "So proud of our DBS/POSB contingent for their incredible dedication at the NDP rehearsals! 🇸🇬 Seeing staff from every department marching in synchronization reminds me of my first rehearsal as an executive—the bank's true strength isn't in its assets, but in the heart and resilience of its people. Every step you take is purpose-driven and a reflection of our core values. Keep it up, team! 💪🇸🇬 #HumansofPOSB #NDP2024 #ThePeoplesBank",
+        "post_author_name": "male executive"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 71,
+      "timestamp": "2026-07-30T15:49:11.899050",
+      "platform": "twitter",
+      "agent_id": 6,
+      "agent_name": "Woman with peace sign",
+      "action_type": "LIKE_POST",
+      "action_args": {
+        "post_id": 141,
+        "like_id": 269,
+        "post_content": "Our regional strength is rooted in the diversity of our member states and the shared values that bind us. By celebrating our unique cultural heritage and fostering multilateral harmony, we ensure that the Indian Ocean remains a beacon of stability and collective resilience. Each initiative, whether large or small, adds a vital thread to our socio-economic tapestry. 🌊🤝 #IORA #CulturalHeritage #RegionalUnity #SustainableProgress",
+        "post_author_name": "IORA"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 71,
+      "timestamp": "2026-07-30T15:49:11.881337",
+      "platform": "twitter",
+      "agent_id": 20,
+      "agent_name": "Group members",
+      "action_type": "LIKE_POST",
+      "action_args": {
+        "post_id": 99,
+        "like_id": 268,
+        "post_content": "Building a sustainable future across the Indian Ocean requires a delicate balance of economic stability and the human spirit of resilience. We honor the diverse voices that contribute to our region's growth, from the innovators in our cities to the dedicated community builders. Together, we are weaving a stronger socio-economic tapestry for generations to come. 🌊🤝 #IORA #SustainableDevelopment #RegionalHarmony #BlueEconomy",
+        "post_author_name": "Institute of Singapore Chartered Accountants"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 71,
+      "timestamp": "2026-07-30T15:49:11.862091",
+      "platform": "twitter",
+      "agent_id": 17,
+      "agent_name": "Woman with bindi",
+      "action_type": "FOLLOW",
+      "action_args": {
+        "follow_id": 92,
+        "target_user_name": "The woman"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 71,
+      "timestamp": "2026-07-30T15:49:11.843741",
+      "platform": "twitter",
+      "agent_id": 8,
+      "agent_name": "Woman",
+      "action_type": "QUOTE_POST",
+      "action_args": {
+        "quoted_id": 53,
+        "new_post_id": 209,
+        "original_content": "This really touched my heart today... 🫶 Seeing stories like Habiba's reminds me that our work isn't just a paycheck, it's where we find family and purpose! 🇸🇬 We all have our struggles, but it's the human connections that help us find our footing again. So proud of everyone stepping up for NDP! Keep going, you are all doing amazing!!! ✌️ #SGPride #HumansOfSingapore #Steady",
+        "original_author_name": "DBS employee",
+        "quote_content": "In all honesty, reading this makes me so proud of our POSB family. 💙 It’s these human connections that turn a job into a purpose. One step at a time, we support each other and our neighbors. 🇸🇬✨ #HumansofPOSB #PurposeDriven #NationalDay"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 71,
+      "timestamp": "2026-07-30T15:49:11.825864",
+      "platform": "twitter",
+      "agent_id": 18,
+      "agent_name": "Man with short dark hair",
+      "action_type": "QUOTE_POST",
+      "action_args": {
+        "quoted_id": 22,
+        "new_post_id": 208,
+        "original_content": "Standing on the main stage in my POSB uniform for the fourth time feels just as special as the first. This journey helped me through a tough chapter in my life, and I carry those lessons of patience and discipline into my work in Collections Recovery every day. Happy National Day! #NDP2024",
+        "original_author_name": "organization",
+        "quote_content": "Really respect how Habiba uses her own life lessons to bring empathy to her work in Collections. It’s that human touch that makes a difference. Good job to the POSB team for supporting her! Steady lah! 🇸🇬👍 #HumansofPOSB #NDP2024"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 71,
+      "timestamp": "2026-07-30T15:49:11.808670",
+      "platform": "twitter",
+      "agent_id": 24,
+      "agent_name": "subject",
+      "action_type": "LIKE_POST",
+      "action_args": {
+        "post_id": 130,
+        "like_id": 267,
+        "post_content": "Reflecting on my journey today, I’m reminded that progress isn't always about the distance covered, but the strength found in each step. Whether it’s through the discipline of the NDP march or helping a customer find their footing again at work, we are all part of a larger story of resilience. Let’s keep moving forward together, one step at a time. ❤️🇸🇬 #HumansofPOSB #Resilience #OneStepAtATime #DBS",
+        "post_author_name": "Man with short dark hair"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 71,
+      "timestamp": "2026-07-30T15:49:11.788522",
+      "platform": "twitter",
+      "agent_id": 17,
+      "agent_name": "Woman with bindi",
+      "action_type": "QUOTE_POST",
+      "action_args": {
+        "quoted_id": 129,
+        "new_post_id": 207,
+        "original_content": "As we reflect on the vibrant celebrations of national milestones within our region, we are reminded that the strength of the Indian Ocean Rim lies in our collective resilience. Every story of dedication contributes to the rich socio-economic tapestry of our community. Together, we continue to foster a spirit of multilateral harmony and shared progress. 🌊🤝 #RegionalUnity #SustainableDevelopment #IORA #CommunityResilience",
+        "original_author_name": "The woman",
+        "quote_content": "Every thread in our tapestry matters... it's the small steps and the shared courage that build our home. We move forward together, one step at a time. ❤️🇸🇬 #CommunityResilience"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 71,
+      "timestamp": "2026-07-30T15:49:11.768530",
+      "platform": "twitter",
+      "agent_id": 21,
+      "agent_name": "Two individuals",
+      "action_type": "QUOTE_POST",
+      "action_args": {
+        "quoted_id": 154,
+        "new_post_id": 206,
+        "original_content": "Seeing all your kind words and shared stories today has made my heart so full. ❤️ It reminds me why I love being part of this #HumansofPOSB family. Whether we are marching together at NDP or helping a neighbor through a tough financial patch, we do it with heart and resilience. Thank you for the support, everyone. Let’s keep moving forward, one step at a time. 🇸🇬💪 #Grateful #OneStepAtATime #ThePeoplesBank",
+        "original_author_name": "Woman with bindi",
+        "quote_content": "Seeing this synergy within our POSB family makes me so proud! 🧢 We really do march forward as one heart and one team. 🇸🇬✨ Thank you for being such an inspiration! Majulah! #HumansofPOSB #NDP2024 #OneTeamOneHeart"
+      },
+      "result": null,
+      "success": true
+    }
+  ],
+  "rounds_count": 0
+}

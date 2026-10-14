@@ -1,0 +1,13 @@
+{
+  "status": "completed",
+  "progress": 100,
+  "message": "报告生成完成",
+  "current_section": null,
+  "completed_sections": [
+    "1. Macro Sentiment & Quantitative Baseline",
+    "2. Persona Variance & Target Group Sentiment Divergence",
+    "3. Dynamic Inflection Points & Public Perception Pivots",
+    "4. Strategic Implications & Actionable Corporate Recommendations"
+  ],
+  "updated_at": "2026-09-08T10:50:45.450836"
+}

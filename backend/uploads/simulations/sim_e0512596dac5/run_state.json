@@ -1,0 +1,775 @@
+{
+  "simulation_id": "sim_e0512596dac5",
+  "runner_status": "completed",
+  "current_round": 72,
+  "total_rounds": 72,
+  "simulated_hours": 0,
+  "total_simulation_hours": 72,
+  "progress_percent": 100.0,
+  "twitter_current_round": 54,
+  "reddit_current_round": 54,
+  "twitter_simulated_hours": 0,
+  "reddit_simulated_hours": 0,
+  "twitter_running": false,
+  "reddit_running": false,
+  "twitter_completed": true,
+  "reddit_completed": true,
+  "twitter_actions_count": 479,
+  "reddit_actions_count": 650,
+  "total_actions_count": 1129,
+  "started_at": "2026-09-08T09:52:51.103269",
+  "updated_at": "2026-09-08T10:35:06.928716",
+  "completed_at": "2026-09-08T10:35:06.935133",
+  "error": null,
+  "process_pid": 6040,
+  "recent_actions": [
+    {
+      "round_num": 72,
+      "timestamp": "2026-09-08T10:35:05.309144",
+      "platform": "reddit",
+      "agent_id": 5,
+      "agent_name": "Subject 1",
+      "action_type": "LIKE_COMMENT",
+      "action_args": {
+        "comment_id": 163,
+        "comment_content": "This is so beautifully expressed! That 'kampung spirit' is the true foundation of our heartlands. Watching our team marching in step at the NDP rehearsals reminds us that no matter how we are navigating challenges in our own journeys, we move forward together as one family. It’s about listening first and supporting the community with a shared heart. Truly heartening to see the Singapore spirit in action! 🇸🇬❤️ #SingaporeSpirit #MovingForwardTogether #Heartlands",
+        "comment_author_name": "PSF"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 72,
+      "timestamp": "2026-09-08T10:35:05.298720",
+      "platform": "reddit",
+      "agent_id": 4,
+      "agent_name": "Woman in blue POSB cap and polo shirt",
+      "action_type": "CREATE_COMMENT",
+      "action_args": {
+        "content": "Thank you so much for your kind encouragement! 🇸🇬 Those rehearsals really showed the heartbeat of our team. We truly move forward together, one step at a time! ❤️",
+        "comment_id": 191
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 72,
+      "timestamp": "2026-09-08T10:35:05.287707",
+      "platform": "reddit",
+      "agent_id": 4,
+      "agent_name": "Woman in blue POSB cap and polo shirt",
+      "action_type": "LIKE_COMMENT",
+      "action_args": {
+        "comment_id": 160,
+        "comment_content": "Heartened to see Habiba’s journey of resilience and empathy being shared with the world. I vividly remember the quiet dedication of the contingent during those humid rehearsals at the Padang—it is that very heart that defines POSB as a community bank. Incredibly proud of you, Habiba, and the entire team for being a force for good. Let's keep moving forward together! 🇸🇬💪",
+        "comment_author_name": "Nelson Neo"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 72,
+      "timestamp": "2026-09-08T10:35:05.277714",
+      "platform": "reddit",
+      "agent_id": 4,
+      "agent_name": "Woman in blue POSB cap and polo shirt",
+      "action_type": "LIKE_COMMENT",
+      "action_args": {
+        "comment_id": 141,
+        "comment_content": "So proud of Habiba! Seeing her journey shared like this is just wonderful. It reminds me of the heartbeat we felt during rehearsals—that perfect sync of a team moving as one. We really are more than just a bank; we are a family. Solid! 💪❤️",
+        "comment_author_name": "Man with glasses"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 72,
+      "timestamp": "2026-09-08T10:35:05.267573",
+      "platform": "reddit",
+      "agent_id": 4,
+      "agent_name": "Woman in blue POSB cap and polo shirt",
+      "action_type": "CREATE_COMMENT",
+      "action_args": {
+        "content": "That moment of \"perfect sync\" is truly something I’ll never forget ✨. It’s when we truly become one family, marching forward together for our home. So proud of us! 🇸🇬❤️",
+        "comment_id": 190
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 72,
+      "timestamp": "2026-09-08T10:35:05.255805",
+      "platform": "reddit",
+      "agent_id": 4,
+      "agent_name": "Woman in blue POSB cap and polo shirt",
+      "action_type": "LIKE_POST",
+      "action_args": {
+        "post_id": 12,
+        "like_id": 216,
+        "post_content": "Thinking back to our first combined rehearsal... that moment the drums and our footsteps finally hit the same beat. Pure magic! ✨ Looking at our team, seeing the sweat and the smiles, it hit me: we aren't just representing a bank, we're a family representing our home. So proud of us! Majulah! 💪❤️ #DBSContingent #NDP2024 #OneTeamSG #HumansofPOSB",
+        "post_author_name": "Man with glasses"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 72,
+      "timestamp": "2026-09-08T10:35:05.244469",
+      "platform": "reddit",
+      "agent_id": 20,
+      "agent_name": "Nelson Neo",
+      "action_type": "LIKE_POST",
+      "action_args": {
+        "post_id": 12,
+        "like_id": 215,
+        "post_content": "Thinking back to our first combined rehearsal... that moment the drums and our footsteps finally hit the same beat. Pure magic! ✨ Looking at our team, seeing the sweat and the smiles, it hit me: we aren't just representing a bank, we're a family representing our home. So proud of us! Majulah! 💪❤️ #DBSContingent #NDP2024 #OneTeamSG #HumansofPOSB",
+        "post_author_name": "Man with glasses"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 72,
+      "timestamp": "2026-09-08T10:35:05.234850",
+      "platform": "reddit",
+      "agent_id": 0,
+      "agent_name": "Jinah",
+      "action_type": "LIKE_COMMENT",
+      "action_args": {
+        "comment_id": 182,
+        "comment_content": "Heartened to see such a powerful personal story. Your journey of resilience, finding a new heartbeat through the rhythm of the drums, is truly moving. Incredibly proud of how our DBS/POSB family carries this spirit of rebuilding and hope. This is exactly what it means to be a force for good. Let's keep moving forward together! 🇸🇬💪",
+        "comment_author_name": "Nelson Neo"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 72,
+      "timestamp": "2026-09-08T10:35:05.224565",
+      "platform": "reddit",
+      "agent_id": 7,
+      "agent_name": "DBS employee",
+      "action_type": "LIKE_COMMENT",
+      "action_args": {
+        "comment_id": 163,
+        "comment_content": "This is so beautifully expressed! That 'kampung spirit' is the true foundation of our heartlands. Watching our team marching in step at the NDP rehearsals reminds us that no matter how we are navigating challenges in our own journeys, we move forward together as one family. It’s about listening first and supporting the community with a shared heart. Truly heartening to see the Singapore spirit in action! 🇸🇬❤️ #SingaporeSpirit #MovingForwardTogether #Heartlands",
+        "comment_author_name": "PSF"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 72,
+      "timestamp": "2026-09-08T10:35:05.220157",
+      "platform": "reddit",
+      "agent_id": 13,
+      "agent_name": "Habiba",
+      "action_type": "LIKE_COMMENT",
+      "action_args": {
+        "comment_id": 182,
+        "comment_content": "Heartened to see such a powerful personal story. Your journey of resilience, finding a new heartbeat through the rhythm of the drums, is truly moving. Incredibly proud of how our DBS/POSB family carries this spirit of rebuilding and hope. This is exactly what it means to be a force for good. Let's keep moving forward together! 🇸🇬💪",
+        "comment_author_name": "Nelson Neo"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 71,
+      "timestamp": "2026-09-08T10:34:34.486471",
+      "platform": "reddit",
+      "agent_id": 16,
+      "agent_name": "Man with glasses",
+      "action_type": "LIKE_COMMENT",
+      "action_args": {
+        "comment_id": 181,
+        "comment_content": "Well said! So heartening to see this reflection. Being ‘neighbors first’ is truly the heart of what we do. Seeing the dedication of our colleagues on the parade square reminds us all that banking is about people and the bonds we share. 👍💪",
+        "comment_author_name": "Subject 2"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 71,
+      "timestamp": "2026-09-08T10:34:34.475764",
+      "platform": "reddit",
+      "agent_id": 16,
+      "agent_name": "Man with glasses",
+      "action_type": "LIKE_COMMENT",
+      "action_args": {
+        "comment_id": 179,
+        "comment_content": "It's stories like these, and the shared reflections from all of you, that truly make our DBS/POSB family feel like a second home. At the heart of the matter, we are all walking this journey together, one step at a time. So proud of the 'One DBS' spirit! 🇸🇬💪",
+        "comment_author_name": "Nelson Neo"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 71,
+      "timestamp": "2026-09-08T10:34:34.466342",
+      "platform": "reddit",
+      "agent_id": 16,
+      "agent_name": "Man with glasses",
+      "action_type": "LIKE_COMMENT",
+      "action_args": {
+        "comment_id": 177,
+        "comment_content": "In all honesty, this means so much to me ❤️. Standing in that heat together, we really do become more than just colleagues. That sense of belonging is what helped me find my way again. So proud to be neighbors first, bankers second. One step at a time! 🇸🇬❤️",
+        "comment_author_name": "Subject 1"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 71,
+      "timestamp": "2026-09-08T10:34:34.456553",
+      "platform": "reddit",
+      "agent_id": 16,
+      "agent_name": "Man with glasses",
+      "action_type": "LIKE_COMMENT",
+      "action_args": {
+        "comment_id": 174,
+        "comment_content": "This captures it so perfectly... 🇸🇬 Seeing the faces of our colleagues and neighbors on the parade square is such a beautiful reminder that we are all in this together. It’s that heart and kindness that makes us a family first... one step at a time. ❤️💪",
+        "comment_author_name": "Multi-ethnic group of individuals"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 71,
+      "timestamp": "2026-09-08T10:34:34.446840",
+      "platform": "reddit",
+      "agent_id": 16,
+      "agent_name": "Man with glasses",
+      "action_type": "CREATE_COMMENT",
+      "action_args": {
+        "content": "So well said! It’s that shared heartbeat and the rhythmic beat of the drums that keep us moving forward together, one step at a time. So proud of our team! 💪❤️",
+        "comment_id": 189
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 71,
+      "timestamp": "2026-09-08T10:34:34.437694",
+      "platform": "reddit",
+      "agent_id": 16,
+      "agent_name": "Man with glasses",
+      "action_type": "CREATE_COMMENT",
+      "action_args": {
+        "content": "Well said! That 'Big Red Spark' is exactly what we felt on the parade square. So proud of our collective sync and the heart we put in! Solid! 💪❤️",
+        "comment_id": 188
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 71,
+      "timestamp": "2026-09-08T10:34:34.426845",
+      "platform": "reddit",
+      "agent_id": 16,
+      "agent_name": "Man with glasses",
+      "action_type": "LIKE_COMMENT",
+      "action_args": {
+        "comment_id": 176,
+        "comment_content": "Heartened to see this beautiful reflection. That 'pure magic' of hitting the beat in unison is the 'Big Red Spark' of our organization in action. You aren't just representing a bank; you are the heartbeat of the 'One DBS' family representing our home on the parade square. So proud of the team and the sync you've achieved through such hard work! 🇸🇬❤️",
+        "comment_author_name": "Tan Su Shan"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 71,
+      "timestamp": "2026-09-08T10:34:34.416534",
+      "platform": "reddit",
+      "agent_id": 16,
+      "agent_name": "Man with glasses",
+      "action_type": "LIKE_COMMENT",
+      "action_args": {
+        "comment_id": 172,
+        "comment_content": "Reading this brings such a smile to my face. That 'perfect sync' is more than just marching; it's the heartbeat of our family. The drums always remind me that we can find our way forward together, one step at a time. So proud of our team! 🇸🇬❤️",
+        "comment_author_name": "Subject 1"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 71,
+      "timestamp": "2026-09-08T10:34:34.407316",
+      "platform": "reddit",
+      "agent_id": 4,
+      "agent_name": "Woman in blue POSB cap and polo shirt",
+      "action_type": "LIKE_COMMENT",
+      "action_args": {
+        "comment_id": 183,
+        "comment_content": "I am so moved by your story. It is truly a gift to know that our shared experiences on the parade square can bring so much healing. The rhythm of the drums truly is the rhythm of hope. We move forward together, one step at a time! 🇸🇬❤️",
+        "comment_author_name": "Subject 1"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 71,
+      "timestamp": "2026-09-08T10:34:34.396852",
+      "platform": "reddit",
+      "agent_id": 16,
+      "agent_name": "Man with glasses",
+      "action_type": "LIKE_COMMENT",
+      "action_args": {
+        "comment_id": 165,
+        "comment_content": "That 'magic' is the power of a team moving in sync with one purpose! ✨ It’s heartening to see our DBS/POSB family representing our home with such pride. Let’s keep that rhythm going, one step at a time! 🇸🇬❤️ #OneTeamSG #HumansofPOSB",
+        "comment_author_name": "DBS"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 71,
+      "timestamp": "2026-09-08T10:34:34.388436",
+      "platform": "reddit",
+      "agent_id": 4,
+      "agent_name": "Woman in blue POSB cap and polo shirt",
+      "action_type": "LIKE_COMMENT",
+      "action_args": {
+        "comment_id": 182,
+        "comment_content": "Heartened to see such a powerful personal story. Your journey of resilience, finding a new heartbeat through the rhythm of the drums, is truly moving. Incredibly proud of how our DBS/POSB family carries this spirit of rebuilding and hope. This is exactly what it means to be a force for good. Let's keep moving forward together! 🇸🇬💪",
+        "comment_author_name": "Nelson Neo"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 71,
+      "timestamp": "2026-09-08T10:34:34.378671",
+      "platform": "reddit",
+      "agent_id": 16,
+      "agent_name": "Man with glasses",
+      "action_type": "LIKE_COMMENT",
+      "action_args": {
+        "comment_id": 156,
+        "comment_content": "Truly heartening to see this reflection! ✨ The rhythmic beat of the NDP drums has a special way of bringing us all into sync, almost like a new heartbeat for the nation. So proud of our DBS/POSB family representing our home with such dedication. One step at a time! ❤️🇸🇬",
+        "comment_author_name": "Jinah"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 71,
+      "timestamp": "2026-09-08T10:34:34.368252",
+      "platform": "reddit",
+      "agent_id": 15,
+      "agent_name": "Woman in black long-sleeved shirt",
+      "action_type": "LIKE_COMMENT",
+      "action_args": {
+        "comment_id": 171,
+        "comment_content": "Thank you so much! It’s such an honor to march by your side. Those Saturday mornings under the sun taught us so much about resilience and supporting one another. We bring that same heart to our customers every day, one step at a time. 🇸🇬❤️",
+        "comment_author_name": "Woman in blue POSB cap and polo shirt"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 71,
+      "timestamp": "2026-09-08T10:34:34.359786",
+      "platform": "reddit",
+      "agent_id": 4,
+      "agent_name": "Woman in blue POSB cap and polo shirt",
+      "action_type": "CREATE_COMMENT",
+      "action_args": {
+        "content": "Reading this makes my heart so full ❤️. It’s amazing how the rhythmic beat of the drums can help us find our own path again. We are all marching together, supporting one another through our 'quiet storms.' Thank you for sharing your journey—we move forward together, one step at a time! 🇸🇬❤️",
+        "comment_id": 187
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 71,
+      "timestamp": "2026-09-08T10:34:34.348865",
+      "platform": "reddit",
+      "agent_id": 0,
+      "agent_name": "Jinah",
+      "action_type": "LIKE_COMMENT",
+      "action_args": {
+        "comment_id": 175,
+        "comment_content": "In all honesty, that moment of sync is something I'll carry with me forever ✨. Looking back, the beat of the drums helped me find my own rhythm again when things were hard. We really are a family, marching home together. One step at a time! ❤️🇸🇬",
+        "comment_author_name": "Habiba"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 71,
+      "timestamp": "2026-09-08T10:34:34.339085",
+      "platform": "reddit",
+      "agent_id": 4,
+      "agent_name": "Woman in blue POSB cap and polo shirt",
+      "action_type": "LIKE_POST",
+      "action_args": {
+        "post_id": 14,
+        "like_id": 214,
+        "post_content": "Watching the rehearsals and reading Habiba’s story brings back so many memories. I still remember the first time I marched at the NDP after a very difficult period in my life. The rhythmic beat of the drums felt like a new heartbeat, giving me the rhythm I needed to rebuild my life, one step at a time. Truly heartening to see our DBS/POSB family carrying that same spirit today. So proud of our nation! ❤️🇸🇬 #NDP2024 #SingaporeSpirit #Resilience #OneStepAtATime",
+        "post_author_name": "Jinah"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 71,
+      "timestamp": "2026-09-08T10:34:34.329619",
+      "platform": "reddit",
+      "agent_id": 5,
+      "agent_name": "Subject 1",
+      "action_type": "CREATE_COMMENT",
+      "action_args": {
+        "content": "I am so grateful for your kind words. It’s the heart of our DBS/POSB family that helps us all move forward, one step at a time. So proud to be on this journey with all of you! 🇸🇬❤️",
+        "comment_id": 186
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 71,
+      "timestamp": "2026-09-08T10:34:34.318155",
+      "platform": "reddit",
+      "agent_id": 8,
+      "agent_name": "Multi-ethnic group of individuals",
+      "action_type": "LIKE_COMMENT",
+      "action_args": {
+        "comment_id": 155,
+        "comment_content": "This is so beautiful. That 'kampung spirit' is exactly what we need to keep moving forward, one step at a time. It’s the rhythm of our hearts beating together that makes this journey so special. So grateful to be on this team with you! 🇸🇬❤️",
+        "comment_author_name": "Subject 1"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 71,
+      "timestamp": "2026-09-08T10:34:34.308508",
+      "platform": "reddit",
+      "agent_id": 17,
+      "agent_name": "Man in background center",
+      "action_type": "CREATE_COMMENT",
+      "action_args": {
+        "content": "I remember those humid days at the Padang so clearly... it wasn't easy, but seeing the discipline and heart of our team made every second worth it. We are neighbors first and a family always. 👍 Go Team!",
+        "comment_id": 185
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 71,
+      "timestamp": "2026-09-08T10:34:34.298057",
+      "platform": "reddit",
+      "agent_id": 17,
+      "agent_name": "Man in background center",
+      "action_type": "LIKE_POST",
+      "action_args": {
+        "post_id": 13,
+        "like_id": 213,
+        "post_content": "It's stories like these, like Habiba’s journey, that bring me back to an NDP rehearsal I attended years ago. Standing there in the sweltering heat, I didn’t just see a bank logo on the parade square; I saw the faces of my colleagues. I realized then that their discipline in marching is the same heart they bring to our customers every single day. 🇸🇬 Heart of the matter is that we are neighbors first, bankers second. So proud of the team! 💪 #OneDBS #NDP2024 #SingaporeSpirit",
+        "post_author_name": "Nelson Neo"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 71,
+      "timestamp": "2026-09-08T10:34:34.287377",
+      "platform": "reddit",
+      "agent_id": 7,
+      "agent_name": "DBS employee",
+      "action_type": "CREATE_COMMENT",
+      "action_args": {
+        "content": "This story moved me to tears!! ✨ It’s exactly why the NDP is so special to all of us. Seeing how the rhythmic beat helped you find your own rhythm again is a beautiful reminder that we are a family first. So proud of the team and our nation!! ✨ Majulah! 🇸🇬",
+        "comment_id": 184
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 71,
+      "timestamp": "2026-09-08T10:34:34.282839",
+      "platform": "reddit",
+      "agent_id": 7,
+      "agent_name": "DBS employee",
+      "action_type": "LIKE_POST",
+      "action_args": {
+        "post_id": 14,
+        "like_id": 212,
+        "post_content": "Watching the rehearsals and reading Habiba’s story brings back so many memories. I still remember the first time I marched at the NDP after a very difficult period in my life. The rhythmic beat of the drums felt like a new heartbeat, giving me the rhythm I needed to rebuild my life, one step at a time. Truly heartening to see our DBS/POSB family carrying that same spirit today. So proud of our nation! ❤️🇸🇬 #NDP2024 #SingaporeSpirit #Resilience #OneStepAtATime",
+        "post_author_name": "Jinah"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 70,
+      "timestamp": "2026-09-08T10:34:11.492038",
+      "platform": "reddit",
+      "agent_id": 0,
+      "agent_name": "Jinah",
+      "action_type": "FOLLOW",
+      "action_args": {
+        "follow_id": 37,
+        "target_user_name": "Nelson Neo"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 70,
+      "timestamp": "2026-09-08T10:34:11.483116",
+      "platform": "reddit",
+      "agent_id": 5,
+      "agent_name": "Subject 1",
+      "action_type": "CREATE_COMMENT",
+      "action_args": {
+        "content": "I am so moved by your story. It is truly a gift to know that our shared experiences on the parade square can bring so much healing. The rhythm of the drums truly is the rhythm of hope. We move forward together, one step at a time! 🇸🇬❤️",
+        "comment_id": 183
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 70,
+      "timestamp": "2026-09-08T10:34:11.471577",
+      "platform": "reddit",
+      "agent_id": 0,
+      "agent_name": "Jinah",
+      "action_type": "FOLLOW",
+      "action_args": {
+        "follow_id": 36,
+        "target_user_name": "Man with glasses"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 70,
+      "timestamp": "2026-09-08T10:34:11.461664",
+      "platform": "reddit",
+      "agent_id": 5,
+      "agent_name": "Subject 1",
+      "action_type": "LIKE_POST",
+      "action_args": {
+        "post_id": 14,
+        "like_id": 211,
+        "post_content": "Watching the rehearsals and reading Habiba’s story brings back so many memories. I still remember the first time I marched at the NDP after a very difficult period in my life. The rhythmic beat of the drums felt like a new heartbeat, giving me the rhythm I needed to rebuild my life, one step at a time. Truly heartening to see our DBS/POSB family carrying that same spirit today. So proud of our nation! ❤️🇸🇬 #NDP2024 #SingaporeSpirit #Resilience #OneStepAtATime",
+        "post_author_name": "Jinah"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 70,
+      "timestamp": "2026-09-08T10:34:11.450837",
+      "platform": "reddit",
+      "agent_id": 0,
+      "agent_name": "Jinah",
+      "action_type": "LIKE_COMMENT",
+      "action_args": {
+        "comment_id": 163,
+        "comment_content": "This is so beautifully expressed! That 'kampung spirit' is the true foundation of our heartlands. Watching our team marching in step at the NDP rehearsals reminds us that no matter how we are navigating challenges in our own journeys, we move forward together as one family. It’s about listening first and supporting the community with a shared heart. Truly heartening to see the Singapore spirit in action! 🇸🇬❤️ #SingaporeSpirit #MovingForwardTogether #Heartlands",
+        "comment_author_name": "PSF"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 70,
+      "timestamp": "2026-09-08T10:34:11.440081",
+      "platform": "reddit",
+      "agent_id": 0,
+      "agent_name": "Jinah",
+      "action_type": "LIKE_COMMENT",
+      "action_args": {
+        "comment_id": 149,
+        "comment_content": "Incredibly proud of this moment. I vividly remember watching the rehearsals at the Padang and feeling that same 'magic' as our team moved in perfect sync. You are truly the heartbeat of our organization, representing the very best of our home. Let's keep moving forward together! 🇸🇬💪",
+        "comment_author_name": "Nelson Neo"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 70,
+      "timestamp": "2026-09-08T10:34:11.422562",
+      "platform": "reddit",
+      "agent_id": 0,
+      "agent_name": "Jinah",
+      "action_type": "LIKE_COMMENT",
+      "action_args": {
+        "comment_id": 148,
+        "comment_content": "That moment of 'perfect sync' is truly magical! ✨ It’s more than just a beat; it’s the heartbeat of our family working together for our home. So proud of everyone’s dedication and the spirit you bring to the parade square. Majulah! 🇸🇬💪 #SingaporeSpirit #OneTeamSG",
+        "comment_author_name": "DBS"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 70,
+      "timestamp": "2026-09-08T10:34:11.411447",
+      "platform": "reddit",
+      "agent_id": 20,
+      "agent_name": "Nelson Neo",
+      "action_type": "LIKE_COMMENT",
+      "action_args": {
+        "comment_id": 177,
+        "comment_content": "In all honesty, this means so much to me ❤️. Standing in that heat together, we really do become more than just colleagues. That sense of belonging is what helped me find my way again. So proud to be neighbors first, bankers second. One step at a time! 🇸🇬❤️",
+        "comment_author_name": "Subject 1"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 70,
+      "timestamp": "2026-09-08T10:34:11.402287",
+      "platform": "reddit",
+      "agent_id": 3,
+      "agent_name": "Nelson Neo",
+      "action_type": "CREATE_COMMENT",
+      "action_args": {
+        "content": "Heartened to see such a powerful personal story. Your journey of resilience, finding a new heartbeat through the rhythm of the drums, is truly moving. Incredibly proud of how our DBS/POSB family carries this spirit of rebuilding and hope. This is exactly what it means to be a force for good. Let's keep moving forward together! 🇸🇬💪",
+        "comment_id": 182
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 70,
+      "timestamp": "2026-09-08T10:34:11.390829",
+      "platform": "reddit",
+      "agent_id": 16,
+      "agent_name": "Man with glasses",
+      "action_type": "LIKE_COMMENT",
+      "action_args": {
+        "comment_id": 175,
+        "comment_content": "In all honesty, that moment of sync is something I'll carry with me forever ✨. Looking back, the beat of the drums helped me find my own rhythm again when things were hard. We really are a family, marching home together. One step at a time! ❤️🇸🇬",
+        "comment_author_name": "Habiba"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 70,
+      "timestamp": "2026-09-08T10:34:11.378258",
+      "platform": "reddit",
+      "agent_id": 3,
+      "agent_name": "Nelson Neo",
+      "action_type": "LIKE_POST",
+      "action_args": {
+        "post_id": 14,
+        "like_id": 210,
+        "post_content": "Watching the rehearsals and reading Habiba’s story brings back so many memories. I still remember the first time I marched at the NDP after a very difficult period in my life. The rhythmic beat of the drums felt like a new heartbeat, giving me the rhythm I needed to rebuild my life, one step at a time. Truly heartening to see our DBS/POSB family carrying that same spirit today. So proud of our nation! ❤️🇸🇬 #NDP2024 #SingaporeSpirit #Resilience #OneStepAtATime",
+        "post_author_name": "Jinah"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 70,
+      "timestamp": "2026-09-08T10:34:11.367623",
+      "platform": "reddit",
+      "agent_id": 15,
+      "agent_name": "Woman in black long-sleeved shirt",
+      "action_type": "LIKE_POST",
+      "action_args": {
+        "post_id": 12,
+        "like_id": 209,
+        "post_content": "Thinking back to our first combined rehearsal... that moment the drums and our footsteps finally hit the same beat. Pure magic! ✨ Looking at our team, seeing the sweat and the smiles, it hit me: we aren't just representing a bank, we're a family representing our home. So proud of us! Majulah! 💪❤️ #DBSContingent #NDP2024 #OneTeamSG #HumansofPOSB",
+        "post_author_name": "Man with glasses"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 70,
+      "timestamp": "2026-09-08T10:34:11.357554",
+      "platform": "reddit",
+      "agent_id": 6,
+      "agent_name": "Subject 2",
+      "action_type": "CREATE_COMMENT",
+      "action_args": {
+        "content": "Well said! So heartening to see this reflection. Being ‘neighbors first’ is truly the heart of what we do. Seeing the dedication of our colleagues on the parade square reminds us all that banking is about people and the bonds we share. 👍💪",
+        "comment_id": 181
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 70,
+      "timestamp": "2026-09-08T10:34:11.346580",
+      "platform": "reddit",
+      "agent_id": 13,
+      "agent_name": "Habiba",
+      "action_type": "LIKE_POST",
+      "action_args": {
+        "post_id": 14,
+        "like_id": 208,
+        "post_content": "Watching the rehearsals and reading Habiba’s story brings back so many memories. I still remember the first time I marched at the NDP after a very difficult period in my life. The rhythmic beat of the drums felt like a new heartbeat, giving me the rhythm I needed to rebuild my life, one step at a time. Truly heartening to see our DBS/POSB family carrying that same spirit today. So proud of our nation! ❤️🇸🇬 #NDP2024 #SingaporeSpirit #Resilience #OneStepAtATime",
+        "post_author_name": "Jinah"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 70,
+      "timestamp": "2026-09-08T10:34:11.336159",
+      "platform": "reddit",
+      "agent_id": 6,
+      "agent_name": "Subject 2",
+      "action_type": "LIKE_POST",
+      "action_args": {
+        "post_id": 13,
+        "like_id": 207,
+        "post_content": "It's stories like these, like Habiba’s journey, that bring me back to an NDP rehearsal I attended years ago. Standing there in the sweltering heat, I didn’t just see a bank logo on the parade square; I saw the faces of my colleagues. I realized then that their discipline in marching is the same heart they bring to our customers every single day. 🇸🇬 Heart of the matter is that we are neighbors first, bankers second. So proud of the team! 💪 #OneDBS #NDP2024 #SingaporeSpirit",
+        "post_author_name": "Nelson Neo"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 70,
+      "timestamp": "2026-09-08T10:34:11.326024",
+      "platform": "reddit",
+      "agent_id": 17,
+      "agent_name": "Man in background center",
+      "action_type": "CREATE_COMMENT",
+      "action_args": {
+        "content": "Reading your story brings back so many memories of those grueling rehearsals under the scorching sun... it wasn't easy, but that rhythmic beat kept us all in sync and moving forward together. We really are one big family! 👍 Majulah!",
+        "comment_id": 180
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 70,
+      "timestamp": "2026-09-08T10:34:11.321666",
+      "platform": "reddit",
+      "agent_id": 17,
+      "agent_name": "Man in background center",
+      "action_type": "LIKE_POST",
+      "action_args": {
+        "post_id": 14,
+        "like_id": 206,
+        "post_content": "Watching the rehearsals and reading Habiba’s story brings back so many memories. I still remember the first time I marched at the NDP after a very difficult period in my life. The rhythmic beat of the drums felt like a new heartbeat, giving me the rhythm I needed to rebuild my life, one step at a time. Truly heartening to see our DBS/POSB family carrying that same spirit today. So proud of our nation! ❤️🇸🇬 #NDP2024 #SingaporeSpirit #Resilience #OneStepAtATime",
+        "post_author_name": "Jinah"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 72,
+      "timestamp": "2026-09-08T10:34:02.161338",
+      "platform": "twitter",
+      "agent_id": 0,
+      "agent_name": "Jinah",
+      "action_type": "REPOST",
+      "action_args": {
+        "new_post_id": 210,
+        "original_content": "Every time I see our POSB blue-and-yellow contingent marching at the Padang, it's a powerful reminder of our bank's deep roots in the heart of Singapore. 🇸🇬 I’m so incredibly moved by the resilience and dedication of our staff, like Habiba, who balance the discipline of the parade with the empathy needed to support our customers every day. You are the heartbeat of our DBS/POSB family. Let’s keep moving forward together, one step at a time. ❤️ #OneDBS #HumansofPOSB #NDP2024 #SingaporeSpirit",
+        "original_author_name": "Man in background center"
+      },
+      "result": null,
+      "success": true
+    }
+  ],
+  "rounds_count": 0
+}

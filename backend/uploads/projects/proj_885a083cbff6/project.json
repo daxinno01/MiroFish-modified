@@ -1,0 +1,354 @@
+{
+  "project_id": "proj_885a083cbff6",
+  "name": "Unnamed Project",
+  "status": "graph_completed",
+  "created_at": "2026-07-28T10:54:51.782394",
+  "updated_at": "2026-07-28T11:08:11.532879",
+  "files": [],
+  "total_text_length": 23436,
+  "ontology": {
+    "entity_types": [
+      {
+        "name": "Bank",
+        "description": "Financial institutions like DBS or POSB that provide banking services and drive innovation.",
+        "attributes": [
+          {
+            "name": "bank_full_name",
+            "type": "text",
+            "description": "The full official name of the bank."
+          },
+          {
+            "name": "strategic_focus",
+            "type": "text",
+            "description": "The current strategic priority, e.g., AI-enabled, Industrialization."
+          },
+          {
+            "name": "founding_year",
+            "type": "text",
+            "description": "The year the bank was established."
+          }
+        ],
+        "examples": [
+          "DBS Bank",
+          "POSB"
+        ]
+      },
+      {
+        "name": "GovernmentAgency",
+        "description": "State departments or regulatory bodies involved in economic development and oversight.",
+        "attributes": [
+          {
+            "name": "agency_name",
+            "type": "text",
+            "description": "The name of the government body."
+          },
+          {
+            "name": "policy_area",
+            "type": "text",
+            "description": "The primary area of governance, e.g., Economic Development."
+          }
+        ],
+        "examples": [
+          "Economic Development Board (EDB)",
+          "Singapore Government"
+        ]
+      },
+      {
+        "name": "CorporateClient",
+        "description": "Enterprises and industries that receive financing or services from the bank.",
+        "attributes": [
+          {
+            "name": "company_full_name",
+            "type": "text",
+            "description": "The name of the corporate entity."
+          },
+          {
+            "name": "industry_sector",
+            "type": "text",
+            "description": "The sector the company operates in, e.g., Manufacturing."
+          }
+        ],
+        "examples": [
+          "Manufacturing Firms",
+          "SMEs"
+        ]
+      },
+      {
+        "name": "BankEmployee",
+        "description": "Individuals working within the bank, including advisors, technicians, and executives.",
+        "attributes": [
+          {
+            "name": "employee_name",
+            "type": "text",
+            "description": "The full name of the staff member."
+          },
+          {
+            "name": "job_title",
+            "type": "text",
+            "description": "The specific role or position held."
+          }
+        ],
+        "examples": [
+          "Wealth Management Advisor",
+          "Technical Operator"
+        ]
+      },
+      {
+        "name": "Customer",
+        "description": "Individual users of banking products, ranging from students to retail users.",
+        "attributes": [
+          {
+            "name": "customer_segment",
+            "type": "text",
+            "description": "The demographic category, e.g., Student, Senior, Digital Native."
+          },
+          {
+            "name": "primary_service_used",
+            "type": "text",
+            "description": "The main product used, e.g., Smartwatch Pay, Digibot."
+          }
+        ],
+        "examples": [
+          "Student User",
+          "Retail Investor"
+        ]
+      },
+      {
+        "name": "MediaOutlet",
+        "description": "Organizations that report on financial news and historical milestones.",
+        "attributes": [
+          {
+            "name": "outlet_full_name",
+            "type": "text",
+            "description": "The name of the news or media organization."
+          },
+          {
+            "name": "coverage_type",
+            "type": "text",
+            "description": "The style of reporting, e.g., Financial News, Social Media Influencer."
+          }
+        ],
+        "examples": [
+          "The Straits Times",
+          "Financial Bloggers"
+        ]
+      },
+      {
+        "name": "TechnologyProvider",
+        "description": "Companies providing hardware or software solutions like AI or optical equipment.",
+        "attributes": [
+          {
+            "name": "provider_full_name",
+            "type": "text",
+            "description": "The name of the tech company."
+          },
+          {
+            "name": "technology_type",
+            "type": "text",
+            "description": "The nature of technology provided, e.g., Generative AI, Optical Machinery."
+          }
+        ],
+        "examples": [
+          "Rollei",
+          "AI Tech Partner"
+        ]
+      },
+      {
+        "name": "AcademicExpert",
+        "description": "Scholars or historians who analyze and comment on institutional evolution.",
+        "attributes": [
+          {
+            "name": "expert_full_name",
+            "type": "text",
+            "description": "The name of the scholar."
+          },
+          {
+            "name": "research_field",
+            "type": "text",
+            "description": "The area of expertise, e.g., Economic History."
+          }
+        ],
+        "examples": [
+          "University Professor",
+          "Institutional Archivist"
+        ]
+      },
+      {
+        "name": "Person",
+        "description": "Any natural person individual not covered by specific roles.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The name of the individual."
+          },
+          {
+            "name": "social_role",
+            "type": "text",
+            "description": "The general role in society, e.g., Netizen, Citizen."
+          }
+        ],
+        "examples": [
+          "Passerby A",
+          "Social Media User"
+        ]
+      },
+      {
+        "name": "Organization",
+        "description": "Any organizational institution not covered by specific categories.",
+        "attributes": [
+          {
+            "name": "org_full_name",
+            "type": "text",
+            "description": "The name of the organization."
+          },
+          {
+            "name": "org_category",
+            "type": "text",
+            "description": "The type of organization, e.g., NGO, Community Group."
+          }
+        ],
+        "examples": [
+          "Alumni Association",
+          "Local Community Club"
+        ]
+      }
+    ],
+    "edge_types": [
+      {
+        "name": "FINANCES",
+        "description": "The act of providing capital or loans to another entity.",
+        "source_targets": [
+          {
+            "source": "Bank",
+            "target": "CorporateClient"
+          },
+          {
+            "source": "Bank",
+            "target": "Organization"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "REGULATES",
+        "description": "The exercise of authority or oversight over an entity.",
+        "source_targets": [
+          {
+            "source": "GovernmentAgency",
+            "target": "Bank"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "PROVIDES_SERVICE_TO",
+        "description": "Offering banking or digital products to users.",
+        "source_targets": [
+          {
+            "source": "Bank",
+            "target": "Customer"
+          },
+          {
+            "source": "Bank",
+            "target": "Person"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "WORKS_FOR",
+        "description": "Employment relationship between an individual and an organization.",
+        "source_targets": [
+          {
+            "source": "BankEmployee",
+            "target": "Bank"
+          },
+          {
+            "source": "Person",
+            "target": "Organization"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "REPORTS_ON",
+        "description": "Media coverage or public commentary on an entity's actions.",
+        "source_targets": [
+          {
+            "source": "MediaOutlet",
+            "target": "Bank"
+          },
+          {
+            "source": "MediaOutlet",
+            "target": "GovernmentAgency"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "USES_TECHNOLOGY",
+        "description": "Adopting or integrating tools from a technology provider.",
+        "source_targets": [
+          {
+            "source": "Bank",
+            "target": "TechnologyProvider"
+          },
+          {
+            "source": "Customer",
+            "target": "TechnologyProvider"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "COMMENTS_ON",
+        "description": "Expressing an opinion or reaction on social media.",
+        "source_targets": [
+          {
+            "source": "Customer",
+            "target": "Bank"
+          },
+          {
+            "source": "AcademicExpert",
+            "target": "Bank"
+          },
+          {
+            "source": "Person",
+            "target": "Bank"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "PARTNERS_WITH",
+        "description": "Strategic collaboration between two organizations.",
+        "source_targets": [
+          {
+            "source": "Bank",
+            "target": "GovernmentAgency"
+          },
+          {
+            "source": "Bank",
+            "target": "TechnologyProvider"
+          }
+        ],
+        "attributes": []
+      }
+    ]
+  },
+  "analysis_summary": "本本体设计基于DBS（星展银行）58周年历史回顾内容，旨在模拟其从1968年支持新加坡工业化到现代AI转型的舆论传播。实体类型涵盖了银行、政府机构（如EDB）、企业客户、员工、客户及技术供应商，能够精细化模拟不同利益相关者对“DBS History”系列内容的反应。关系设计重点在于金融支持、技术应用和社交媒体互动（如COMMENTS_ON），以展示银行如何通过历史传承强化其“以客户为中心”和“未来导向”的品牌形象。",
+  "graph_id": "mirofish_local_6b7356806448445e",
+  "graph_build_task_id": "5e531e46-d640-4c47-944b-2a5099aab9ac",
+  "simulation_requirement": "Here are some information you can consider including into the model:\r\n\r\n1) Brief introduction of the DBS History series: DBS History is a heritage series built around historical recounts of defining moments in DBS’ journey. It features carefully researched historical moments drawn from archives, employee recollections and institutional records to recount how the bank evolved alongside the communities and nations it serves.\r\n\r\n2) Key message of this post: DBS has always looked ahead to what customers, businesses and communities would need next. From supporting Singapore's industrialisation in its early years to harnessing AI today, the bank has continually evolved to create new opportunities, build capabilities and better serve its customers.\r\n\r\n \r\n\r\n3) Intention of this post: This post commemorates DBS' 58th anniversary by showing how the bank's future-focused mindset has remained consistent across generations. While the post begins with DBS' role in supporting a young nation's development, its primary focus is on how DBS has continually anticipated change and adapted to evolving customer needs. The foundations laid in its early years through investments in industries, talent, technology and innovation have enabled DBS to become the AI-enabled bank with a heart it is today. The post positions AI not as a new direction, but as the latest chapter in a long history of reimagining banking to better serve customers.\r\n\r\n \r\n\r\n4) Strategic Outcome: The post should help audiences see a clear connection between DBS' pioneering spirit in the past and its continued leadership in AI today. Reinforce DBS as a bank that is:\r\n\r\nCustomer-centric\r\nFuture-focused and innovative\r\nWilling to embrace change and new technologies\r\nAn AI-enabled bank with a heart",
+  "chunk_size": 500,
+  "chunk_overlap": 50,
+  "error": null,
+  "token_usage": {
+    "prompt_tokens": 50839,
+    "completion_tokens": 15134,
+    "total_tokens": 65973,
+    "call_count": 75,
+    "last_updated": "2026-07-28T11:08:08.446022"
+  }
+}

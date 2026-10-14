@@ -1,0 +1,135 @@
+{
+  "project_id": "proj_9c00f192c44f",
+  "name": "Unnamed Project",
+  "status": "graph_completed",
+  "created_at": "2026-09-08T09:37:36.741205",
+  "updated_at": "2026-09-08T09:46:30.505452",
+  "files": [],
+  "total_text_length": 17893,
+  "ontology": {
+    "entity_types": [
+      {
+        "name": "BankEmployee",
+        "description": "Staff members working at a bank who represent the corporate culture and interact with customers.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The full name of the employee"
+          },
+          {
+            "name": "job_title",
+            "type": "text",
+            "description": "The specific role or designation of the employee"
+          },
+          {
+            "name": "years_of_experience",
+            "type": "text",
+            "description": "Duration of time the employee has been with the organization"
+          }
+        ],
+        "examples": [
+          "Habiba Begum Hajamohidin",
+          "Collections Officer"
+        ]
+      },
+      {
+        "name": "BankExecutive",
+        "description": "High-level leadership figures within a financial institution who set vision and strategy.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The full name of the executive"
+          },
+          {
+            "name": "executive_role",
+            "type": "text",
+            "description": "The specific leadership title (e.g., CEO)"
+          },
+          {
+            "name": "corporate_vision",
+            "type": "text",
+            "description": "The core message or value promoted by the executive"
+          }
+        ],
+        "examples": [
+          "Nelson Neo",
+          "Tan Su Shan"
+        ]
+      },
+      {
+        "name": "FinancialInstitution",
+        "description": "Banking organizations that provide financial services and engage in community events.",
+        "attributes": [
+          {
+            "name": "org_name",
+            "type": "text",
+            "description": "The official name of the bank or brand"
+          },
+          {
+            "name": "brand_identity",
+            "type": "text",
+            "description": "The core slogan or brand attribute (e.g., Live More Bank Less)"
+          }
+        ],
+        "examples": []
+      },
+      {
+        "name": "Person",
+        "description": "Any individual person not fitting other specific person types.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "Full name of the person"
+          },
+          {
+            "name": "role",
+            "type": "text",
+            "description": "Role or occupation"
+          }
+        ],
+        "examples": [
+          "ordinary citizen",
+          "anonymous netizen"
+        ]
+      },
+      {
+        "name": "Organization",
+        "description": "Any organization not fitting other specific organization types.",
+        "attributes": [
+          {
+            "name": "org_name",
+            "type": "text",
+            "description": "Name of the organization"
+          },
+          {
+            "name": "org_type",
+            "type": "text",
+            "description": "Type of organization"
+          }
+        ],
+        "examples": [
+          "small business",
+          "community group"
+        ]
+      }
+    ],
+    "edge_types": []
+  },
+  "analysis_summary": "",
+  "graph_id": "mirofish_local_e826ed43550a4a77",
+  "graph_build_task_id": "c5e7b5a2-465b-409d-8b08-9f5dc3797c99",
+  "simulation_requirement": "Post Caption\r\n[Start]\r\n“Boom! Boom! Boom!  \r\n\r\nThe rhythmic beat of drums. The roar of the crowd. The one moment of euphoria when months of hard work shows up in our perfectly synchronised march at the National Day Parade.\r\n\r\nStanding on the main stage in my POSB uniform, I am unbelievably honoured to be part of our nation’s birthday celebration. And that’s why I keep coming back.  \r\n\r\nThis year marks my fourth National Day Parade.  \r\n\r\nIn all honesty, when I first signed up in 2023, it was mostly because I wanted to make new friends. At the time, I was also going through a separation and adjusting to a new chapter in my life.  \r\n\r\nLooking back, I ended up gaining far more than a few new friends. The friendships I formed, the support from fellow marchers and the sense of purpose that came with every rehearsal gave me something positive to focus on.  \r\n\r\n'Habiba, let’s go for dinner after rehearsal! It’s more fun when we are all together,’ a colleague suggested one day.” She soon became a close friend.  \r\n\r\nOne dinner turned into weekly meals and long walks outside of rehearsal days.  \r\n\r\nWeek by week, I found myself moving forward again.  \r\n\r\nBut I took away more than friendships from these experiences. Preparing for the NDP requires patience, discipline and the belief that progress comes one step at a time.  \r\n\r\nThese are values I hold close in my role in Collections Recovery, where I help customers and businesses manage their outstanding debts.  \r\n\r\nI’ve been in this role for eight years. Many of the customers I speak to are navigating difficult periods in their lives. Financial challenges are often just one part of a bigger story. Having gone through my own struggles, I understand how overwhelming it can feel when life suddenly takes an unexpected turn.  \r\n\r\nThat's why I try to listen first, understand their circumstances and work with them to find a way forward. It feels like yesterday when this event became such a core part of my time at DBS.  \r\n\r\nAs I march alongside colleagues on Singapore's birthday, I'm reminded that the spirit of what I do every day isn't so different. Whether it's supporting a customer through a difficult period or moving in step with my fellow marchers, both are about helping people move forward – one step at a time.  \r\n\r\nHappy National Day, Singapore”\r\n\r\n- Habiba Begum Hajamohidin, Collections Officer #HumansofPOSB\r\n[End]\r\n\r\nDetails:\r\n\r\n1) Brief introduction of the Humans of POSB series: Humans of POSB is a first-person, human-interest storytelling series that spotlights the people behind DBS – their journeys, values, challenges and motivations – beyond job titles and functions.  \r\n\r\nTold through the voice of employees, the series uses authentic, personal narratives to bring DBS' brand attributes to life in a relatable, emotionally resonant way. The stories are designed to feel like conversations you'd share over dinner.\r\n\r\n2) Key message of this post: In line with National Day, DBS employee Habiba's experience serving in the NDP marching contingent, the outpouring of her empathy as a Collections Officer at DBS and her pride in representing DBS as a well-known bank in the parade.\r\n\r\n \r\n\r\n3) Intention of this post: To humanise the DBS brand by putting real faces and voices behind the organisation and showing DBS through lived experiences. This post highlights a DBS employee's experience in the NDP marching contingent.\r\n\r\n4) Strategic Outcome: The post should help audiences see the prevalence of DBS in the National Day Parade, and also the love and passion that is shone through a DBS employee, who is customer-centric, resilient and empathetic.",
+  "chunk_size": 500,
+  "chunk_overlap": 50,
+  "error": null,
+  "token_usage": {
+    "prompt_tokens": 35566,
+    "completion_tokens": 12223,
+    "total_tokens": 47789,
+    "call_count": 56,
+    "last_updated": "2026-09-08T09:46:28.191971"
+  }
+}

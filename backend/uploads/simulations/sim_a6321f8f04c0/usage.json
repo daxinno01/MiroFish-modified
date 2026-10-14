@@ -1,0 +1,27 @@
+{
+  "prompt_tokens": 24163683,
+  "completion_tokens": 118653,
+  "total_tokens": 24282336,
+  "call_count": 724,
+  "steps": {
+    "step3": {
+      "prompt_tokens": 20585058,
+      "completion_tokens": 49737,
+      "total_tokens": 20634795,
+      "call_count": 620
+    },
+    "step4": {
+      "prompt_tokens": 147385,
+      "completion_tokens": 20226,
+      "total_tokens": 167611,
+      "call_count": 23
+    },
+    "step5": {
+      "prompt_tokens": 3377710,
+      "completion_tokens": 24317,
+      "total_tokens": 3402027,
+      "call_count": 50
+    }
+  },
+  "last_updated": "2026-07-30T16:04:27.238599"
+}

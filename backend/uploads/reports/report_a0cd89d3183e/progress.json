@@ -1,0 +1,13 @@
+{
+  "status": "completed",
+  "progress": 100,
+  "message": "报告生成完成",
+  "current_section": null,
+  "completed_sections": [
+    "1. Macro Sentiment & Historical Resonance Metrics",
+    "2. Persona Divergence: Nostalgia vs. Tech-Skepticism",
+    "3. Narrative Inflection Point: The 'Human-AI' Bridge",
+    "4. Strategic Recommendations for Narrative Continuity"
+  ],
+  "updated_at": "2026-07-28T13:40:10.732863"
+}

@@ -1,0 +1,48 @@
+### 1. Executive Summary
+This image is a promotional graphic for a financial institution, illustrating the synergy between human-centric service and advanced technology. It contrasts a photographic scene of interpersonal assistance in an office setting with a stylized digital interface mockup for an AI-driven support tool.
+
+### 2. OCR / Text Extraction
+*   **Main Heading:** Today and beyond
+*   **Sub-heading (within black box):** An AI-Enabled Bank with a Heart
+*   **Body Text (within black box):** Since 2014, we've been using AI and machine learning to better serve customers. Today, we're building on those foundations with generative and agentic AI to create more intuitive, personalised and proactive experiences – helping customers navigate what's next with confidence.
+*   **Mobile Interface Text:**
+    *   X (Close icon)
+    *   Help
+    *   Learn more about
+    *   Invest
+    *   Pay & Transfer
+    *   Plan
+    *   More
+    *   Can't find what you're looking for?
+    *   GO TO HELP & SUPPORT
+*   **Call to Action Button:** ASK DIGIBOT
+*   **Background Wall Text (Partial/Blurred):** Excellence in...
+
+### 3. Detailed Visual Scene Description
+*   **Subject(s):**
+    *   **Standing Figure:** A woman with dark hair pulled back into a neat bun. She wears black-framed, rectangular glasses and has a wide, smiling expression. She is oriented toward the left, looking at an off-camera screen.
+    *   **Seated Figure:** A person with short, salt-and-pepper hair. They are wearing a white protective face mask and black over-ear headphones. They are looking toward the left, following the direction of the standing figure's gesture.
+*   **Pose & Gestures:** The standing woman is leaning slightly forward, her right arm extended with the index finger pointing toward a computer monitor in the foreground. The seated figure remains upright, focused on the screen.
+*   **Clothing & Attire:** 
+    *   **Standing Figure:** A vibrant red, textured short-sleeved top. A black lanyard hangs around her neck, featuring a red and white identification badge.
+    *   **Seated Figure:** A two-tone zip-up jacket with tan/beige sleeves and a red torso section.
+*   **Background & Setting:** The upper half depicts an indoor office or branch environment. A solid red wall is visible behind the subjects, featuring blurred white cursive text ("Excellence in..."). To the left, a black computer monitor is partially visible. The ceiling features recessed rectangular fluorescent lighting.
+*   **Lighting & Color Palette:** The lighting is bright and even, typical of an office environment. The dominant color palette is high-contrast, featuring bold red, stark white, and deep black, complemented by the neutral tones of the subjects' skin and hair.
+
+### 4. Entity Identification
+*   **Organizations:** Unnamed Bank (self-identified as "An AI-Enabled Bank").
+*   **People:** Two unidentified individuals (likely a bank employee and a customer/colleague).
+*   **Products/Services:** AI, Machine Learning, Generative AI, Agentic AI, DIGIBOT (Digital Assistant), Investment services, Payment and Transfer services, Financial Planning.
+
+### 5. Structural Relationships
+*   **Spatial Composition:** The image is divided horizontally. The top half contains the photographic scene, while the bottom half uses a solid red background for text and graphics.
+*   **Text Placement:** The headline "Today and beyond" is positioned at the horizontal axis, overlapping both the photo and the red background. The primary explanatory text is housed in a black rectangular box on the left.
+*   **Graphic Integration:** A stylized white smartphone graphic is situated on the right side of the bottom half. An "ASK DIGIBOT" button overlaps the phone and the red background. A line-art illustration of a hand points from the bottom edge toward the phone's interface.
+
+### 6. Visual Data Translation
+*   **Mobile Interface Layout:** The mockup displays a "Help" menu with four primary navigational buttons arranged in a 2x2 grid:
+    1.  **Invest:** Accompanied by a dollar sign icon.
+    2.  **Pay & Transfer:** Accompanied by a circular arrow and dollar sign icon.
+    3.  **Plan:** Accompanied by a compass needle icon.
+    4.  **More:** Accompanied by a four-square grid icon.
+*   **Support Options:** Below the grid, a text prompt "Can't find what you're looking for?" sits above a red-outlined button labeled "GO TO HELP & SUPPORT."

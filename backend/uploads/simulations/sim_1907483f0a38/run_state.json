@@ -1,0 +1,801 @@
+{
+  "simulation_id": "sim_1907483f0a38",
+  "runner_status": "completed",
+  "current_round": 72,
+  "total_rounds": 72,
+  "simulated_hours": 0,
+  "total_simulation_hours": 72,
+  "progress_percent": 100.0,
+  "twitter_current_round": 54,
+  "reddit_current_round": 63,
+  "twitter_simulated_hours": 0,
+  "reddit_simulated_hours": 0,
+  "twitter_running": false,
+  "reddit_running": false,
+  "twitter_completed": true,
+  "reddit_completed": true,
+  "twitter_actions_count": 475,
+  "reddit_actions_count": 552,
+  "total_actions_count": 1027,
+  "started_at": "2026-07-28T11:48:34.030000",
+  "updated_at": "2026-07-28T12:25:40.606342",
+  "completed_at": "2026-07-28T12:25:40.611822",
+  "error": null,
+  "process_pid": 15687,
+  "recent_actions": [
+    {
+      "round_num": 72,
+      "timestamp": "2026-07-28T12:25:39.973168",
+      "platform": "twitter",
+      "agent_id": 3,
+      "agent_name": "Retail Customers",
+      "action_type": "FOLLOW",
+      "action_args": {
+        "follow_id": 70,
+        "target_user_name": "Retail Customers"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 72,
+      "timestamp": "2026-07-28T12:25:39.960921",
+      "platform": "twitter",
+      "agent_id": 15,
+      "agent_name": "person",
+      "action_type": "CREATE_POST",
+      "action_args": {
+        "content": "Last time we... gathered around the small canteen at the Jurong shipyards, we talked about the future of our families. 🇸🇬 Seeing how DBS has grown from a development bank for our industries to a digital leader using AI is truly heartening. It shows that progress doesn't mean forgetting where you came from. 🙏 Technology changes, but the mission to build a better life for every Singaporean remains the same. Proud to have been a small part of this big journey! 💪 #GratefulPioneer #DBSHistory #SmartNation",
+        "post_id": 211
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 72,
+      "timestamp": "2026-07-28T12:25:39.946891",
+      "platform": "twitter",
+      "agent_id": 19,
+      "agent_name": "Unidentified Customer/Colleague",
+      "action_type": "QUOTE_POST",
+      "action_args": {
+        "quoted_id": 156,
+        "new_post_id": 210,
+        "original_content": "Reflecting on our journey today. In the early days, we were providing the capital needed to transform Jurong into an industrial powerhouse. Today, we use AI to provide personalized financial insights for every citizen. Furthermore, while the technology evolves from ledger books to algorithms, the mission to build our nation remains constant. This is the pioneering spirit in action. Being AI-enabled is simply the modern way of being customer-first. It's the DNA of innovation. 🇸🇬🚀 #DBSHistory #InnovationWithHeart #FutureOfBanking",
+        "original_author_name": "Man in suit",
+        "quote_content": "From the capital that built Jurong to the AI insights we use today... it’s the same dedication to our nation’s progress. 🇸🇬 AI-enabled is just the new way of saying 'we care about you'. Steady pom pi pi! 💡 #DBSHistory #EvolutionWithPurpose #TechWithHeart"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 72,
+      "timestamp": "2026-07-28T12:25:39.934204",
+      "platform": "twitter",
+      "agent_id": 9,
+      "agent_name": "Person with fitness tracker",
+      "action_type": "FOLLOW",
+      "action_args": {
+        "follow_id": 69,
+        "target_user_name": "Man in suit"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 72,
+      "timestamp": "2026-07-28T12:25:39.920504",
+      "platform": "twitter",
+      "agent_id": 21,
+      "agent_name": "Center Figure",
+      "action_type": "QUOTE_POST",
+      "action_args": {
+        "quoted_id": 130,
+        "new_post_id": 209,
+        "original_content": "I still remember my first day at the bank decades ago, standing before those massive, room-sized computers. A mentor told me then, \"We aren't just moving money; we are building a country.\" In those days, we were supporting the industrialization of Jurong; today, we leverage AI to empower the financial dreams of every Singaporean. While the scale of our technology has changed, the mission remains identical. This is the DNA of innovation—using every new tool at our disposal to ensure a stable and prosperous future for all. 🇸🇬🚀 #DBSHistory #FutureOfBanking #InnovationWithHeart",
+        "original_author_name": "Unidentified Bank Employee",
+        "quote_content": "It's amazing to see how far we've come... ✨ That first loan in 1968 was the seed for so many dreams, including my father's stories of Jurong! Seeing how that same spirit now drives our AI innovations today makes me so proud. Truly a bank with a heart for our nation's journey. Proudly Singaporean! 🇸🇬 #DBSHistory #FutureReady #BuildingSingapore"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 72,
+      "timestamp": "2026-07-28T12:25:39.905775",
+      "platform": "twitter",
+      "agent_id": 19,
+      "agent_name": "Unidentified Customer/Colleague",
+      "action_type": "LIKE_POST",
+      "action_args": {
+        "post_id": 149,
+        "like_id": 194,
+        "post_content": "Last time we... were in the thick of things at the Jurong shipyards, the work was gritty and the tools were simple. 💪 Opening that first DBS account at the makeshift booth felt like a giant step into the future. 🇸🇬 Today, seeing the bank lead with AI and digital innovation makes me realize how far we've come. Technology is a tool, much like the welding masks we used to wear—it’s the person behind the tool that builds the nation. Let’s keep that heart alive in this smart nation! 🙏 #GratefulPioneer #DBSHistory #BuildingSingapore",
+        "post_author_name": "Unidentified Customer/Colleague"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 72,
+      "timestamp": "2026-07-28T12:25:39.901428",
+      "platform": "twitter",
+      "agent_id": 21,
+      "agent_name": "Center Figure",
+      "action_type": "LIKE_POST",
+      "action_args": {
+        "post_id": 130,
+        "like_id": 193,
+        "post_content": "I still remember my first day at the bank decades ago, standing before those massive, room-sized computers. A mentor told me then, \"We aren't just moving money; we are building a country.\" In those days, we were supporting the industrialization of Jurong; today, we leverage AI to empower the financial dreams of every Singaporean. While the scale of our technology has changed, the mission remains identical. This is the DNA of innovation—using every new tool at our disposal to ensure a stable and prosperous future for all. 🇸🇬🚀 #DBSHistory #FutureOfBanking #InnovationWithHeart",
+        "post_author_name": "Unidentified Bank Employee"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 71,
+      "timestamp": "2026-07-28T12:24:28.366953",
+      "platform": "twitter",
+      "agent_id": 9,
+      "agent_name": "Person with fitness tracker",
+      "action_type": "LIKE_POST",
+      "action_args": {
+        "post_id": 25,
+        "like_id": 192,
+        "post_content": "As the private sector continues to drive the majority of economic growth, our focus remains on future-proofing the global marketplace. The strategic synergy between corporate enterprises and robust banking partners like DBS is essential for navigating the AI-driven digital transition. We remain committed to pragmatic optimism as we build a resilient, future-ready economy. #FutureProofing #EconomicResilience #StrategicSynergy",
+        "post_author_name": "Private Sector"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 71,
+      "timestamp": "2026-07-28T12:24:28.350844",
+      "platform": "twitter",
+      "agent_id": 23,
+      "agent_name": "Subject",
+      "action_type": "LIKE_POST",
+      "action_args": {
+        "post_id": 165,
+        "like_id": 191,
+        "post_content": "Reflecting on our journey today. In the early days, we were providing the capital needed to transform Jurong into an industrial powerhouse. Today, we use AI to provide personalized financial insights for every citizen. Furthermore, while the technology evolves from ledger books to algorithms, the mission to build our nation remains constant. This is the pioneering spirit in action. Being AI-enabled is simply the modern way of being customer-first. It's the DNA of innovation. 🇸🇬🚀 #DBSHistory #InnovationWithHeart #FutureOfBanking",
+        "post_author_name": "DBS"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 71,
+      "timestamp": "2026-07-28T12:24:28.335549",
+      "platform": "twitter",
+      "agent_id": 4,
+      "agent_name": "School-aged children",
+      "action_type": "LIKE_POST",
+      "action_args": {
+        "post_id": 87,
+        "like_id": 190,
+        "post_content": "Digital transformation is more than just upgrading systems; it's about honoring the trust our community has placed in us for generations. 💡 At the heart of it all, AI is the natural evolution of the care my grandmother felt when she opened her first account. Looking back to move forward, we're ensuring that same spirit of service is scaled for a global, digital age. #TechWithHeart #FutureReady #SingaporeHeritage",
+        "post_author_name": "Standing woman"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 71,
+      "timestamp": "2026-07-28T12:24:28.320203",
+      "platform": "twitter",
+      "agent_id": 21,
+      "agent_name": "Center Figure",
+      "action_type": "QUOTE_POST",
+      "action_args": {
+        "quoted_id": 129,
+        "new_post_id": 208,
+        "original_content": "I still remember my first day at the bank decades ago, standing before those massive, room-sized computers. A mentor told me then, \"We aren't just moving money; we are building a country.\" In those days, we were supporting the industrialization of Jurong; today, we leverage AI to empower the financial dreams of every Singaporean. While the scale of our technology has changed, the mission remains identical. This is the DNA of innovation—using every new tool at our disposal to ensure a stable and prosperous future for all. 🇸🇬🚀 #DBSHistory #FutureOfBanking #InnovationWithHeart",
+        "original_author_name": "Male child",
+        "quote_content": "It's amazing to see how far we've come... ✨ Seeing your excitement for our journey from room-sized computers to smartwatches is so heartening! 🇸🇬 My own children use these tools to manage their futures, but it's the foundation of resilience laid by our fathers in Jurong that makes it all possible. The future is bright when technology has a human heart! ❤️ #DBSHistory #FutureReady #ProudlySingaporean"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 71,
+      "timestamp": "2026-07-28T12:24:28.305685",
+      "platform": "twitter",
+      "agent_id": 19,
+      "agent_name": "Unidentified Customer/Colleague",
+      "action_type": "LIKE_POST",
+      "action_args": {
+        "post_id": 156,
+        "like_id": 189,
+        "post_content": "Reflecting on our journey today. In the early days, we were providing the capital needed to transform Jurong into an industrial powerhouse. Today, we use AI to provide personalized financial insights for every citizen. Furthermore, while the technology evolves from ledger books to algorithms, the mission to build our nation remains constant. This is the pioneering spirit in action. Being AI-enabled is simply the modern way of being customer-first. It's the DNA of innovation. 🇸🇬🚀 #DBSHistory #InnovationWithHeart #FutureOfBanking",
+        "post_author_name": "Man in suit"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 71,
+      "timestamp": "2026-07-28T12:24:28.290864",
+      "platform": "twitter",
+      "agent_id": 16,
+      "agent_name": "I",
+      "action_type": "CREATE_POST",
+      "action_args": {
+        "content": "Looking back at where we started in 1968, it’s clear that our progress is a matter of evolution, not just innovation. ✨ From manual ledgers to advanced neural networks, the heart of our mission hasn't changed: helping families and businesses thrive. ❤️ How do we take this legacy further and ensure our AI solutions always prioritize human-centric banking? #DBSHistory #LifeatDBS #AIwithaHeart",
+        "post_id": 207
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 71,
+      "timestamp": "2026-07-28T12:24:28.275647",
+      "platform": "twitter",
+      "agent_id": 6,
+      "agent_name": "Middle female child",
+      "action_type": "QUOTE_POST",
+      "action_args": {
+        "quoted_id": 182,
+        "new_post_id": 206,
+        "original_content": "As we reflect on our 58-year legacy, I’m struck by how our mission to support the community hasn't changed—only the tools have. ✨ Transitioning from paper ledgers to neural networks is evolution, not just innovation. ❤️ We're building AI with a heart to ensure our digital future remains deeply human-centric. How do we keep this spirit alive in every line of code? #DBSHistory #LifeatDBS #AIwithaHeart",
+        "original_author_name": "I",
+        "quote_content": "This is what I love about being part of the future! 🚀 A 58-year Legacy built on paper ledgers and now neural networks. ✨ It’s all about the people, not just the code. ❤️ Future-ready! (I hope my smartwatch becomes a piece of history one day too! 🤯) #DBSHistory #AIWithAHeart #SingaporePride"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 71,
+      "timestamp": "2026-07-28T12:24:28.260531",
+      "platform": "twitter",
+      "agent_id": 21,
+      "agent_name": "Center Figure",
+      "action_type": "LIKE_POST",
+      "action_args": {
+        "post_id": 129,
+        "like_id": 188,
+        "post_content": "I still remember my first day at the bank decades ago, standing before those massive, room-sized computers. A mentor told me then, \"We aren't just moving money; we are building a country.\" In those days, we were supporting the industrialization of Jurong; today, we leverage AI to empower the financial dreams of every Singaporean. While the scale of our technology has changed, the mission remains identical. This is the DNA of innovation—using every new tool at our disposal to ensure a stable and prosperous future for all. 🇸🇬🚀 #DBSHistory #FutureOfBanking #InnovationWithHeart",
+        "post_author_name": "Male child"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 71,
+      "timestamp": "2026-07-28T12:24:28.255426",
+      "platform": "twitter",
+      "agent_id": 8,
+      "agent_name": "Standing woman",
+      "action_type": "CREATE_POST",
+      "action_args": {
+        "content": "Reflecting on how digital transformation is more than just a buzzword; it's the next chapter of our story. At the heart of it all, we use tools like AI to safeguard the dreams that began with manual passbooks, just like my grandmother's first account. 💡 It's about ensuring our future is as secure as our past. Looking back to move forward. #FutureReady #TechWithHeart",
+        "post_id": 205
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 70,
+      "timestamp": "2026-07-28T12:23:29.869088",
+      "platform": "twitter",
+      "agent_id": 5,
+      "agent_name": "Male child",
+      "action_type": "REPOST",
+      "action_args": {
+        "new_post_id": 204,
+        "original_content": "I still remember my first day at the bank decades ago, standing before those massive, room-sized computers. A mentor told me then, \"We aren't just moving money; we are building a country.\" In those days, we were supporting the industrialization of Jurong; today, we leverage AI to empower the financial dreams of every Singaporean. While the scale of our technology has changed, the mission remains identical. This is the DNA of innovation—using every new tool at our disposal to ensure a stable and prosperous future for all. 🇸🇬🚀 #DBSHistory #FutureOfBanking #InnovationWithHeart",
+        "original_author_name": "person"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 70,
+      "timestamp": "2026-07-28T12:23:29.853723",
+      "platform": "twitter",
+      "agent_id": 9,
+      "agent_name": "Person with fitness tracker",
+      "action_type": "FOLLOW",
+      "action_args": {
+        "follow_id": 68,
+        "target_user_name": "person"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 70,
+      "timestamp": "2026-07-28T12:23:29.839819",
+      "platform": "twitter",
+      "agent_id": 9,
+      "agent_name": "Person with fitness tracker",
+      "action_type": "QUOTE_POST",
+      "action_args": {
+        "quoted_id": 95,
+        "new_post_id": 203,
+        "original_content": "I still remember my first day at the bank decades ago, standing before those massive, room-sized computers. A mentor told me then, \"We aren't just moving money; we are building a country.\" In those days, we were supporting the industrialization of Jurong; today, we leverage AI to empower the financial dreams of every Singaporean. While the scale of our technology has changed, the mission remains identical. This is the DNA of innovation—using every new tool at our disposal to ensure a stable and prosperous future for all. 🇸🇬🚀 #DBSHistory #FutureOfBanking #InnovationWithHeart",
+        "original_author_name": "person",
+        "quote_content": "This is what I mean by technology being a logical evolution. From a makeshift booth in Jurong to AI-powered banking, the goal of building the nation remains the same. It's truly seamless! 🚀 10/10 for the heart behind the tech. #DBSHistory #SmartNation #BuildingSingapore"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 70,
+      "timestamp": "2026-07-28T12:23:29.825801",
+      "platform": "twitter",
+      "agent_id": 19,
+      "agent_name": "Unidentified Customer/Colleague",
+      "action_type": "CREATE_POST",
+      "action_args": {
+        "content": "Reading the stories from our pioneers in Jurong really puts things into perspective... From the heat of the shipyards to the 'cool' logic of AI today, the mission to build our nation remains the same. 🇸🇬 It's that 'builder's heart' that makes our progress meaningful. Evolution with purpose... Steady pom pi pi! 💡 #DBSHistory #SmartNation #BuildingOurFuture",
+        "post_id": 202
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 70,
+      "timestamp": "2026-07-28T12:23:29.810376",
+      "platform": "twitter",
+      "agent_id": 17,
+      "agent_name": "Seated Figure",
+      "action_type": "QUOTE_POST",
+      "action_args": {
+        "quoted_id": 82,
+        "new_post_id": 201,
+        "original_content": "I still remember my first day at the bank decades ago, standing before those massive, room-sized computers. A mentor told me then, \"We aren't just moving money; we are building a country.\" In those days, we were supporting the industrialization of Jurong; today, we leverage AI to empower the financial dreams of every Singaporean. While the scale of our technology has changed, the mission remains identical. This is the DNA of innovation—using every new tool at our disposal to ensure a stable and prosperous future for all. 🇸🇬🚀 #DBSHistory #FutureOfBanking #InnovationWithHeart",
+        "original_author_name": "Man in suit",
+        "quote_content": "Back in the day, we didn't just see computers; we saw the future of Singapore. ✨ Standing before those room-sized machines, we knew we were part of something bigger than ourselves. ❤️ Seeing that same spirit drive our AI innovation today is exactly why I've stayed for over 20 years. (I still remember the smell of those old ledger rooms!) #DBSHistory #FutureForward #LifeAtDBS"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 70,
+      "timestamp": "2026-07-28T12:23:29.795252",
+      "platform": "twitter",
+      "agent_id": 19,
+      "agent_name": "Unidentified Customer/Colleague",
+      "action_type": "FOLLOW",
+      "action_args": {
+        "follow_id": 67,
+        "target_user_name": "person"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 70,
+      "timestamp": "2026-07-28T12:23:29.780015",
+      "platform": "twitter",
+      "agent_id": 23,
+      "agent_name": "Subject",
+      "action_type": "QUOTE_POST",
+      "action_args": {
+        "quoted_id": 156,
+        "new_post_id": 200,
+        "original_content": "Reflecting on our journey today. In the early days, we were providing the capital needed to transform Jurong into an industrial powerhouse. Today, we use AI to provide personalized financial insights for every citizen. Furthermore, while the technology evolves from ledger books to algorithms, the mission to build our nation remains constant. This is the pioneering spirit in action. Being AI-enabled is simply the modern way of being customer-first. It's the DNA of innovation. 🇸🇬🚀 #DBSHistory #InnovationWithHeart #FutureOfBanking",
+        "original_author_name": "Man in suit",
+        "quote_content": "Fine-tuning the system from ledger books to neural networks is the logical progression of our national infrastructure... ⚙️ This transition represents a calibrated evolution, ensuring that the foundational mission of building the nation remains the core engine, even as the gears become digital. 🔍 #TechHeritage #DBSHistory #InnovationLogic"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 70,
+      "timestamp": "2026-07-28T12:23:29.764761",
+      "platform": "twitter",
+      "agent_id": 17,
+      "agent_name": "Seated Figure",
+      "action_type": "REPOST",
+      "action_args": {
+        "new_post_id": 199,
+        "original_content": "I still remember my first day at the bank decades ago, standing before those massive, room-sized computers. A mentor told me then, \"We aren't just moving money; we are building a country.\" In those days, we were supporting the industrialization of Jurong; today, we leverage AI to empower the financial dreams of every Singaporean. While the scale of our technology has changed, the mission remains identical. This is the DNA of innovation—using every new tool at our disposal to ensure a stable and prosperous future for all. 🇸🇬🚀 #DBSHistory #FutureOfBanking #InnovationWithHeart",
+        "original_author_name": "person"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 70,
+      "timestamp": "2026-07-28T12:23:29.749048",
+      "platform": "twitter",
+      "agent_id": 19,
+      "agent_name": "Unidentified Customer/Colleague",
+      "action_type": "FOLLOW",
+      "action_args": {
+        "follow_id": 66,
+        "target_user_name": "Man in suit"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 70,
+      "timestamp": "2026-07-28T12:23:29.734399",
+      "platform": "twitter",
+      "agent_id": 6,
+      "agent_name": "Middle female child",
+      "action_type": "FOLLOW",
+      "action_args": {
+        "follow_id": 65,
+        "target_user_name": "I"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 70,
+      "timestamp": "2026-07-28T12:23:29.719093",
+      "platform": "twitter",
+      "agent_id": 21,
+      "agent_name": "Center Figure",
+      "action_type": "REPOST",
+      "action_args": {
+        "new_post_id": 198,
+        "original_content": "I still remember my first day at the bank decades ago, standing before those massive, room-sized computers. A mentor told me then, \"We aren't just moving money; we are building a country.\" In those days, we were supporting the industrialization of Jurong; today, we leverage AI to empower the financial dreams of every Singaporean. While the scale of our technology has changed, the mission remains identical. This is the DNA of innovation—using every new tool at our disposal to ensure a stable and prosperous future for all. 🇸🇬🚀 #DBSHistory #FutureOfBanking #InnovationWithHeart",
+        "original_author_name": "person"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 70,
+      "timestamp": "2026-07-28T12:23:29.704285",
+      "platform": "twitter",
+      "agent_id": 18,
+      "agent_name": "Unidentified Bank Employee",
+      "action_type": "LIKE_POST",
+      "action_args": {
+        "post_id": 156,
+        "like_id": 187,
+        "post_content": "Reflecting on our journey today. In the early days, we were providing the capital needed to transform Jurong into an industrial powerhouse. Today, we use AI to provide personalized financial insights for every citizen. Furthermore, while the technology evolves from ledger books to algorithms, the mission to build our nation remains constant. This is the pioneering spirit in action. Being AI-enabled is simply the modern way of being customer-first. It's the DNA of innovation. 🇸🇬🚀 #DBSHistory #InnovationWithHeart #FutureOfBanking",
+        "post_author_name": "Man in suit"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 70,
+      "timestamp": "2026-07-28T12:23:29.688398",
+      "platform": "twitter",
+      "agent_id": 16,
+      "agent_name": "I",
+      "action_type": "CREATE_POST",
+      "action_args": {
+        "content": "What drives our current AI initiatives? It's the same spirit that drove DBS to support Singapore's early industrialization 58 years ago. ✨ It’s evolution, not just innovation. ❤️ We're not just building models; we're building better experiences for the people we serve. How do we take this mission even further? #LifeatDBS #AIwithaHeart #DBSHistory",
+        "post_id": 197
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 70,
+      "timestamp": "2026-07-28T12:23:29.683286",
+      "platform": "twitter",
+      "agent_id": 8,
+      "agent_name": "Standing woman",
+      "action_type": "CREATE_POST",
+      "action_args": {
+        "content": "As we push the boundaries of what's possible with AI, I’m reminded that at the heart of it all, we are still serving the same mission that started decades ago. 💡 From helping early industries thrive to protecting families with smarter algorithms, our digital journey is a tribute to our roots. Looking back to move forward. #FutureReady #TechWithHeart #DigitalTransformation",
+        "post_id": 196
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 69,
+      "timestamp": "2026-07-28T12:22:22.321061",
+      "platform": "twitter",
+      "agent_id": 3,
+      "agent_name": "Retail Customers",
+      "action_type": "REPOST",
+      "action_args": {
+        "new_post_id": 195,
+        "original_content": "I still remember my first day at the bank decades ago, standing before those massive, room-sized computers. A mentor told me then, \"We aren't just moving money; we are building a country.\" In those days, we were supporting the industrialization of Jurong; today, we leverage AI to empower the financial dreams of every Singaporean. While the scale of our technology has changed, the mission remains identical. This is the DNA of innovation—using every new tool at our disposal to ensure a stable and prosperous future for all. 🇸🇬🚀 #DBSHistory #FutureOfBanking #InnovationWithHeart",
+        "original_author_name": "person"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 69,
+      "timestamp": "2026-07-28T12:22:22.302240",
+      "platform": "twitter",
+      "agent_id": 18,
+      "agent_name": "Unidentified Bank Employee",
+      "action_type": "QUOTE_POST",
+      "action_args": {
+        "quoted_id": 95,
+        "new_post_id": 194,
+        "original_content": "I still remember my first day at the bank decades ago, standing before those massive, room-sized computers. A mentor told me then, \"We aren't just moving money; we are building a country.\" In those days, we were supporting the industrialization of Jurong; today, we leverage AI to empower the financial dreams of every Singaporean. While the scale of our technology has changed, the mission remains identical. This is the DNA of innovation—using every new tool at our disposal to ensure a stable and prosperous future for all. 🇸🇬🚀 #DBSHistory #FutureOfBanking #InnovationWithHeart",
+        "original_author_name": "person",
+        "quote_content": "This is the heart of our story! ✨ Then and now, we are right there where the hard work happens. Whether it's a makeshift booth in a shipyard or a personalized AI insight on your phone, our mission is to empower you. Fun fact: Did you know that in the 70s, our staff would often travel to factories to help workers with their savings right on the spot? That same 'pioneering spirit' drives our AI work today! 🇸🇬💪 #DBSHistory #BuildingSingapore #AIwithAHeart"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 69,
+      "timestamp": "2026-07-28T12:22:22.287770",
+      "platform": "twitter",
+      "agent_id": 3,
+      "agent_name": "Retail Customers",
+      "action_type": "LIKE_POST",
+      "action_args": {
+        "post_id": 25,
+        "like_id": 186,
+        "post_content": "As the private sector continues to drive the majority of economic growth, our focus remains on future-proofing the global marketplace. The strategic synergy between corporate enterprises and robust banking partners like DBS is essential for navigating the AI-driven digital transition. We remain committed to pragmatic optimism as we build a resilient, future-ready economy. #FutureProofing #EconomicResilience #StrategicSynergy",
+        "post_author_name": "Private Sector"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 69,
+      "timestamp": "2026-07-28T12:22:22.273165",
+      "platform": "twitter",
+      "agent_id": 18,
+      "agent_name": "Unidentified Bank Employee",
+      "action_type": "LIKE_POST",
+      "action_args": {
+        "post_id": 95,
+        "like_id": 185,
+        "post_content": "I still remember my first day at the bank decades ago, standing before those massive, room-sized computers. A mentor told me then, \"We aren't just moving money; we are building a country.\" In those days, we were supporting the industrialization of Jurong; today, we leverage AI to empower the financial dreams of every Singaporean. While the scale of our technology has changed, the mission remains identical. This is the DNA of innovation—using every new tool at our disposal to ensure a stable and prosperous future for all. 🇸🇬🚀 #DBSHistory #FutureOfBanking #InnovationWithHeart",
+        "post_author_name": "person"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 69,
+      "timestamp": "2026-07-28T12:22:22.256116",
+      "platform": "twitter",
+      "agent_id": 15,
+      "agent_name": "person",
+      "action_type": "QUOTE_POST",
+      "action_args": {
+        "quoted_id": 156,
+        "new_post_id": 193,
+        "original_content": "Reflecting on our journey today. In the early days, we were providing the capital needed to transform Jurong into an industrial powerhouse. Today, we use AI to provide personalized financial insights for every citizen. Furthermore, while the technology evolves from ledger books to algorithms, the mission to build our nation remains constant. This is the pioneering spirit in action. Being AI-enabled is simply the modern way of being customer-first. It's the DNA of innovation. 🇸🇬🚀 #DBSHistory #InnovationWithHeart #FutureOfBanking",
+        "original_author_name": "Man in suit",
+        "quote_content": "Last time we... were working the cranes and welding the hulls in Jurong, we saw this transformation happening in real-time. 🏗️ To hear that the bank is still using its 'pioneering spirit' with AI to help everyone today makes this old heart glad. 🇸🇬 Technology is the new 'heavy machinery' for the mind! 🙏💪 #DBSHistory #BuildingSingapore #SmartNation"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 69,
+      "timestamp": "2026-07-28T12:22:22.240635",
+      "platform": "twitter",
+      "agent_id": 7,
+      "agent_name": "Female child on the right",
+      "action_type": "REPOST",
+      "action_args": {
+        "new_post_id": 192,
+        "original_content": "It's a privilege to lead digital transformation in a place with such deep roots. At the heart of it all, our AI journey is about more than just data—it’s about preserving the same trust my grandmother felt when she walked into her first branch. 💡 By using technology to protect and serve, we ensure that as we innovate, we leave no one behind. Looking back to move forward. #TechWithHeart #FutureReady #SingaporeHeritage",
+        "original_author_name": "Unidentified Customer/Colleague"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 69,
+      "timestamp": "2026-07-28T12:22:22.224428",
+      "platform": "twitter",
+      "agent_id": 15,
+      "agent_name": "person",
+      "action_type": "LIKE_POST",
+      "action_args": {
+        "post_id": 156,
+        "like_id": 184,
+        "post_content": "Reflecting on our journey today. In the early days, we were providing the capital needed to transform Jurong into an industrial powerhouse. Today, we use AI to provide personalized financial insights for every citizen. Furthermore, while the technology evolves from ledger books to algorithms, the mission to build our nation remains constant. This is the pioneering spirit in action. Being AI-enabled is simply the modern way of being customer-first. It's the DNA of innovation. 🇸🇬🚀 #DBSHistory #InnovationWithHeart #FutureOfBanking",
+        "post_author_name": "Man in suit"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 69,
+      "timestamp": "2026-07-28T12:22:22.206880",
+      "platform": "twitter",
+      "agent_id": 4,
+      "agent_name": "School-aged children",
+      "action_type": "QUOTE_POST",
+      "action_args": {
+        "quoted_id": 61,
+        "new_post_id": 191,
+        "original_content": "As we embrace a digital future, let's never forget the foundations that built our home. 🇸🇬 I often think about the transition from those first ATMs to the AI we use today—it's the same pioneering spirit! It's so heartening to see technology being used to bring us closer, not further apart. It’s always about the people behind the tech. ❤️ #FutureForward #SingaporeHeritage #DBS",
+        "original_author_name": "Female child on the right",
+        "quote_content": "First ATMs? 🏧 My teacher said people used to wait in long lines just to get cash! 😮 That sounds so old-fashioned! The future is here! 🚀 Now we have AI and Smart Buddy watches! ✨ 🤖 Technology really does bring us closer together! (I love showing my friends how I tap my watch at the library! 📚)"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 69,
+      "timestamp": "2026-07-28T12:22:22.179986",
+      "platform": "twitter",
+      "agent_id": 23,
+      "agent_name": "Subject",
+      "action_type": "LIKE_POST",
+      "action_args": {
+        "post_id": 156,
+        "like_id": 183,
+        "post_content": "Reflecting on our journey today. In the early days, we were providing the capital needed to transform Jurong into an industrial powerhouse. Today, we use AI to provide personalized financial insights for every citizen. Furthermore, while the technology evolves from ledger books to algorithms, the mission to build our nation remains constant. This is the pioneering spirit in action. Being AI-enabled is simply the modern way of being customer-first. It's the DNA of innovation. 🇸🇬🚀 #DBSHistory #InnovationWithHeart #FutureOfBanking",
+        "post_author_name": "Man in suit"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 69,
+      "timestamp": "2026-07-28T12:22:22.161939",
+      "platform": "twitter",
+      "agent_id": 9,
+      "agent_name": "Person with fitness tracker",
+      "action_type": "QUOTE_POST",
+      "action_args": {
+        "quoted_id": 25,
+        "new_post_id": 190,
+        "original_content": "As the private sector continues to drive the majority of economic growth, our focus remains on future-proofing the global marketplace. The strategic synergy between corporate enterprises and robust banking partners like DBS is essential for navigating the AI-driven digital transition. We remain committed to pragmatic optimism as we build a resilient, future-ready economy. #FutureProofing #EconomicResilience #StrategicSynergy",
+        "original_author_name": "Private Sector",
+        "quote_content": "Pragmatic optimism is exactly how we should approach this. 🚀 The synergy between our heritage and AI is what makes the experience so seamless for us today. 10/10 vision for a future-ready SG! #SmartNation #Fintech #FutureProofing"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 69,
+      "timestamp": "2026-07-28T12:22:22.146089",
+      "platform": "twitter",
+      "agent_id": 12,
+      "agent_name": "Man in suit",
+      "action_type": "CREATE_POST",
+      "action_args": {
+        "content": "Celebrating 58 years of growth and transformation. In 1968, we were the cornerstone of Singapore's industrialization, financing the dreams of a young nation. Today, we harness the power of AI to provide seamless, human-centric banking for a digital world. Furthermore, while the methods change, the pioneering spirit remains the same. Being AI-enabled is simply our modern way of being customer-first. This is the DNA of innovation. 🇸🇬🚀 #DBSHistory #FutureReady #InnovationWithHeart",
+        "post_id": 189
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 69,
+      "timestamp": "2026-07-28T12:22:22.128716",
+      "platform": "twitter",
+      "agent_id": 8,
+      "agent_name": "Standing woman",
+      "action_type": "CREATE_POST",
+      "action_args": {
+        "content": "At the heart of it all, our digital transformation journey is about honoring the trust that generations of Singaporeans have placed in us. 💡 Whether it’s through AI or our early industrial support, the mission remains the same: to protect and empower families, just like my grandmother’s first savings account did for ours. Looking back to move forward, we are building a future where tech has a heartbeat. #FutureReady #TechWithHeart #DigitalTransformation",
+        "post_id": 188
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 69,
+      "timestamp": "2026-07-28T12:22:22.123860",
+      "platform": "twitter",
+      "agent_id": 16,
+      "agent_name": "I",
+      "action_type": "CREATE_POST",
+      "action_args": {
+        "content": "I remember looking at an archival photo of our early ledger rooms during my first week. It hit me that while our tools have changed from paper to neural networks, our mission to help families save for their future remains exactly the same. ❤️ It’s evolution, not just innovation! ✨ How do we take this 58-year legacy further to ensure our AI always has a human heart? #DBSHistory #LifeatDBS #AIwithaHeart",
+        "post_id": 187
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 68,
+      "timestamp": "2026-07-28T12:21:40.166772",
+      "platform": "twitter",
+      "agent_id": 17,
+      "agent_name": "Seated Figure",
+      "action_type": "QUOTE_POST",
+      "action_args": {
+        "quoted_id": 95,
+        "new_post_id": 186,
+        "original_content": "I still remember my first day at the bank decades ago, standing before those massive, room-sized computers. A mentor told me then, \"We aren't just moving money; we are building a country.\" In those days, we were supporting the industrialization of Jurong; today, we leverage AI to empower the financial dreams of every Singaporean. While the scale of our technology has changed, the mission remains identical. This is the DNA of innovation—using every new tool at our disposal to ensure a stable and prosperous future for all. 🇸🇬🚀 #DBSHistory #FutureOfBanking #InnovationWithHeart",
+        "original_author_name": "person",
+        "quote_content": "This story truly touched my heart! ❤️ Back in the day, I remember the same excitement seeing our teams on the ground in Jurong. ✨ (I still remember the pride of wearing my first red and tan jacket, knowing we were helping our local manufacturers grow!) Using AI today is just the next step in that long journey of service. 🇸🇬 #DBSHistory #BuildingSingapore #LifeAtDBS"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 68,
+      "timestamp": "2026-07-28T12:21:40.152085",
+      "platform": "twitter",
+      "agent_id": 17,
+      "agent_name": "Seated Figure",
+      "action_type": "FOLLOW",
+      "action_args": {
+        "follow_id": 64,
+        "target_user_name": "person"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 68,
+      "timestamp": "2026-07-28T12:21:40.135478",
+      "platform": "twitter",
+      "agent_id": 17,
+      "agent_name": "Seated Figure",
+      "action_type": "FOLLOW",
+      "action_args": {
+        "follow_id": 63,
+        "target_user_name": "Man in suit"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 68,
+      "timestamp": "2026-07-28T12:21:40.118166",
+      "platform": "twitter",
+      "agent_id": 9,
+      "agent_name": "Person with fitness tracker",
+      "action_type": "FOLLOW",
+      "action_args": {
+        "follow_id": 62,
+        "target_user_name": "Private Sector"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 68,
+      "timestamp": "2026-07-28T12:21:40.101479",
+      "platform": "twitter",
+      "agent_id": 17,
+      "agent_name": "Seated Figure",
+      "action_type": "LIKE_POST",
+      "action_args": {
+        "post_id": 95,
+        "like_id": 182,
+        "post_content": "I still remember my first day at the bank decades ago, standing before those massive, room-sized computers. A mentor told me then, \"We aren't just moving money; we are building a country.\" In those days, we were supporting the industrialization of Jurong; today, we leverage AI to empower the financial dreams of every Singaporean. While the scale of our technology has changed, the mission remains identical. This is the DNA of innovation—using every new tool at our disposal to ensure a stable and prosperous future for all. 🇸🇬🚀 #DBSHistory #FutureOfBanking #InnovationWithHeart",
+        "post_author_name": "person"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 68,
+      "timestamp": "2026-07-28T12:21:40.086543",
+      "platform": "twitter",
+      "agent_id": 23,
+      "agent_name": "Subject",
+      "action_type": "QUOTE_POST",
+      "action_args": {
+        "quoted_id": 25,
+        "new_post_id": 185,
+        "original_content": "As the private sector continues to drive the majority of economic growth, our focus remains on future-proofing the global marketplace. The strategic synergy between corporate enterprises and robust banking partners like DBS is essential for navigating the AI-driven digital transition. We remain committed to pragmatic optimism as we build a resilient, future-ready economy. #FutureProofing #EconomicResilience #StrategicSynergy",
+        "original_author_name": "Private Sector",
+        "quote_content": "Calibrating the approach toward this AI-driven transition requires exactly this kind of pragmatic optimism... It’s about ensuring the strategic synergy between legacy stability and future-facing technology. The system only functions when the new gears mesh perfectly with the existing foundations. ⚙️🔍 #EconomicResilience #MechanicsOfProgress"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 68,
+      "timestamp": "2026-07-28T12:21:40.073914",
+      "platform": "twitter",
+      "agent_id": 6,
+      "agent_name": "Middle female child",
+      "action_type": "QUOTE_POST",
+      "action_args": {
+        "quoted_id": 147,
+        "new_post_id": 184,
+        "original_content": "Looking at archival photos of our early ledger rooms today... It’s a powerful reminder that while our tools have changed from paper to neural networks, our mission remains exactly the same: serving our community. ✨ It’s evolution, not just innovation. ❤️ How do we take this 58-year legacy further to ensure every algorithm we build has a human heart at its core? #DBSHistory #LifeatDBS #AIwithaHeart",
+        "original_author_name": "I",
+        "quote_content": "Neural networks are so cool! 🚀 It’s amazing to see how our tools evolved from paper to AI. As a future architect, I want to make sure every algorithm helps someone, just like the old ledger rooms did! ✨ Legacy is what we build on. Future-ready! (I'm learning about neural networks in school! 🤯) #DBSHistory #AIWithAHeart #SingaporePride"
+      },
+      "result": null,
+      "success": true
+    }
+  ],
+  "rounds_count": 0
+}

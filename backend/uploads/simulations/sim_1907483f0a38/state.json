@@ -1,0 +1,25 @@
+{
+  "simulation_id": "sim_1907483f0a38",
+  "project_id": "proj_b907db82119f",
+  "graph_id": "mirofish_local_07ad342c18cd4320",
+  "enable_twitter": true,
+  "enable_reddit": true,
+  "status": "running",
+  "entities_count": 24,
+  "profiles_count": 24,
+  "entity_types": [
+    "Person",
+    "CommercialBank",
+    "GovernmentBody",
+    "RetailCustomer",
+    "Organization"
+  ],
+  "config_generated": true,
+  "config_reasoning": "时间配置: The 72-hour duration is chosen to simulate the lifecycle of a corporate anniversary campaign, allowing for initial brand posting, employee sharing, and customer reflections. The activity levels reflect Singapore's daily routine, where professional engagement occurs during work hours (9:00-18:00) for B2B and institutional entities like EDB and the Manufacturing Sector, while peak social media interaction from retail customers and school-aged children's demographics occurs in the evening (19:00-22:00). The agent count is scaled to the 24 identified entities to ensure meaningful but not overcrowded interaction per round. | 事件配置: The topics and narrative are designed to align with the strategic outcome of connecting DBS's pioneering past with its AI-driven future. By using 'CommercialBank' for the official announcement, 'GovernmentBody' and 'Organization' to provide historical and economic context, and 'RetailCustomer' and 'Person' to provide a human-centric perspective, the simulation covers all facets of the bank's impact as requested in the requirements. | Agent配置: 成功生成 24 个 | 初始帖子分配: 5 个帖子已分配发布者",
+  "current_round": 0,
+  "twitter_status": "not_started",
+  "reddit_status": "not_started",
+  "created_at": "2026-07-28T11:43:14.586606",
+  "updated_at": "2026-07-28T11:48:34.105907",
+  "error": null
+}
