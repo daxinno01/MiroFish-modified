@@ -7,7 +7,7 @@ import os
 import json
 from typing import Dict, Any, List, Optional
 from ..config import Config
-from ..utils.llm_client import LLMClient
+from ..utils.llm_client import LLMClient, InvalidLLMResponse
 from ..utils.file_parser import FileParser
 
 
@@ -25,7 +25,9 @@ class OntologyGenerator:
             api_key=Config.EXTRACT_API_KEY,
             base_url=Config.EXTRACT_BASE_URL,
             model=Config.EXTRACT_MODEL_NAME,
-            project_id=project_id
+            project_id=project_id,
+            timeout=90.0,
+            max_retries=0
         )
         self.llm_client.step = 'step1'
     
@@ -72,7 +74,12 @@ class OntologyGenerator:
         )
         
         # 验证和后处理
-        result = self._validate_and_process(result)
+        try:
+            if any(not isinstance(result.get(key), list) for key in ('entity_types', 'edge_types')):
+                raise ValueError('Ontology must contain entity_types and edge_types lists.')
+            result = self._validate_and_process(result)
+        except (ValueError, TypeError, KeyError, AttributeError) as exc:
+            raise InvalidLLMResponse('Provider returned an invalid ontology structure.') from exc
         
         return result
     

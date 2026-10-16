@@ -1,0 +1,8 @@
+{
+  "status": "failed",
+  "progress": -1,
+  "message": "报告生成失败: Provider returned no text response.",
+  "current_section": null,
+  "completed_sections": [],
+  "updated_at": "2026-10-15T21:08:39.249530"
+}

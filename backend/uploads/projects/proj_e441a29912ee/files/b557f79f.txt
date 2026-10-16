@@ -1,0 +1,1 @@
+Synthetic routing smoke test. A community garden is managed by volunteers. Alice coordinates planting, Bob waters the vegetables, and Carol organizes a monthly meeting. Volunteers share advice and decide which crops to grow.

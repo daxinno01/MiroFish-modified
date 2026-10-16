@@ -1,0 +1,346 @@
+{
+  "project_id": "proj_e441a29912ee",
+  "name": "WSL API routing smoke test 2026-10-15",
+  "status": "ontology_generated",
+  "created_at": "2026-10-15T11:31:42.071687",
+  "updated_at": "2026-10-15T11:32:03.896738",
+  "files": [
+    {
+      "filename": "mirofish-routing-smoke-20261015.txt",
+      "size": 224
+    }
+  ],
+  "total_text_length": 270,
+  "ontology": {
+    "entity_types": [
+      {
+        "name": "GardenCoordinator",
+        "description": "Individuals responsible for managing garden operations, schedules, and meetings.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The full name of the coordinator"
+          },
+          {
+            "name": "management_role",
+            "type": "text",
+            "description": "Specific area of coordination, e.g., planting, meetings"
+          }
+        ],
+        "examples": [
+          "Alice",
+          "Carol"
+        ]
+      },
+      {
+        "name": "VolunteerGardener",
+        "description": "Individuals who perform physical labor and maintenance in the community garden.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The full name of the volunteer"
+          },
+          {
+            "name": "assigned_task",
+            "type": "text",
+            "description": "Specific gardening task, e.g., watering, weeding"
+          }
+        ],
+        "examples": [
+          "Bob"
+        ]
+      },
+      {
+        "name": "CommunityGardenGroup",
+        "description": "The formal or informal organization that manages the community garden project.",
+        "attributes": [
+          {
+            "name": "org_name",
+            "type": "text",
+            "description": "The name of the garden group"
+          },
+          {
+            "name": "garden_location",
+            "type": "text",
+            "description": "Physical location of the garden"
+          }
+        ],
+        "examples": [
+          "Green Thumb Community Garden",
+          "Downtown Urban Farm"
+        ]
+      },
+      {
+        "name": "AgriculturalExpert",
+        "description": "Professionals or experienced individuals who provide advice on crops and soil.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The full name of the expert"
+          },
+          {
+            "name": "specialization",
+            "type": "text",
+            "description": "Area of expertise, e.g., organic farming, pest control"
+          }
+        ],
+        "examples": [
+          "Dr. Green",
+          "Master Gardener Sarah"
+        ]
+      },
+      {
+        "name": "CommunityMember",
+        "description": "Local residents who live near the garden and may interact with it or its members.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The full name of the resident"
+          },
+          {
+            "name": "neighborhood_name",
+            "type": "text",
+            "description": "The neighborhood where they reside"
+          }
+        ],
+        "examples": [
+          "Neighbor John",
+          "Local Resident Mary"
+        ]
+      },
+      {
+        "name": "LocalOfficial",
+        "description": "Government representatives who oversee land use or community grants.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The full name of the official"
+          },
+          {
+            "name": "department_name",
+            "type": "text",
+            "description": "The government department they represent"
+          }
+        ],
+        "examples": [
+          "City Councilor Smith",
+          "Parks Department Director"
+        ]
+      },
+      {
+        "name": "EnvironmentalInfluencer",
+        "description": "Social media personalities who promote sustainable living and community projects.",
+        "attributes": [
+          {
+            "name": "handle_name",
+            "type": "text",
+            "description": "Social media username"
+          },
+          {
+            "name": "platform_primary",
+            "type": "text",
+            "description": "Main social media platform used"
+          }
+        ],
+        "examples": [
+          "EcoWarrior_99",
+          "SustainableSam"
+        ]
+      },
+      {
+        "name": "LocalMediaOutlet",
+        "description": "Newspapers or digital news sites that report on community events.",
+        "attributes": [
+          {
+            "name": "org_name",
+            "type": "text",
+            "description": "The name of the media organization"
+          },
+          {
+            "name": "media_type",
+            "type": "text",
+            "description": "Type of media, e.g., Newspaper, Blog"
+          }
+        ],
+        "examples": [
+          "The Daily Gazette",
+          "Community Voice News"
+        ]
+      },
+      {
+        "name": "Person",
+        "description": "Fallback type for any natural person not fitting specific roles.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The full name of the individual"
+          },
+          {
+            "name": "bio_description",
+            "type": "text",
+            "description": "Brief biography or description"
+          }
+        ],
+        "examples": [
+          "Passerby A",
+          "Netizen X"
+        ]
+      },
+      {
+        "name": "Organization",
+        "description": "Fallback type for any group or institution not fitting specific roles.",
+        "attributes": [
+          {
+            "name": "org_name",
+            "type": "text",
+            "description": "The name of the organization"
+          },
+          {
+            "name": "mission_statement",
+            "type": "text",
+            "description": "The primary goal of the organization"
+          }
+        ],
+        "examples": [
+          "Local Business Association",
+          "Charity Group"
+        ]
+      }
+    ],
+    "edge_types": [
+      {
+        "name": "COORDINATES",
+        "description": "Manages operations or events for the garden group.",
+        "source_targets": [
+          {
+            "source": "GardenCoordinator",
+            "target": "CommunityGardenGroup"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "VOLUNTEERS_AT",
+        "description": "Performs labor or tasks for the garden group.",
+        "source_targets": [
+          {
+            "source": "VolunteerGardener",
+            "target": "CommunityGardenGroup"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "ADVISES",
+        "description": "Provides expert advice on gardening or management.",
+        "source_targets": [
+          {
+            "source": "AgriculturalExpert",
+            "target": "GardenCoordinator"
+          },
+          {
+            "source": "AgriculturalExpert",
+            "target": "VolunteerGardener"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "REPORTS_ON",
+        "description": "Covers news or events related to the garden.",
+        "source_targets": [
+          {
+            "source": "LocalMediaOutlet",
+            "target": "CommunityGardenGroup"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "SUPPORTS",
+        "description": "Expresses public support or provides resources.",
+        "source_targets": [
+          {
+            "source": "CommunityMember",
+            "target": "CommunityGardenGroup"
+          },
+          {
+            "source": "EnvironmentalInfluencer",
+            "target": "CommunityGardenGroup"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "REGULATES",
+        "description": "Oversees legal or administrative compliance.",
+        "source_targets": [
+          {
+            "source": "LocalOfficial",
+            "target": "CommunityGardenGroup"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "COMMENTS_ON",
+        "description": "Social media interaction regarding garden activities.",
+        "source_targets": [
+          {
+            "source": "Person",
+            "target": "Organization"
+          },
+          {
+            "source": "Person",
+            "target": "Person"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "COLLABORATES_WITH",
+        "description": "Works together on specific garden projects.",
+        "source_targets": [
+          {
+            "source": "GardenCoordinator",
+            "target": "GardenCoordinator"
+          },
+          {
+            "source": "VolunteerGardener",
+            "target": "VolunteerGardener"
+          }
+        ],
+        "attributes": []
+      }
+    ]
+  },
+  "analysis_summary": "该设计基于社区花园的志愿者协作场景。核心实体包括协调员（如Alice、Carol）、志愿者（如Bob）以及花园组织。为了模拟舆情，增加了专家、媒体、官员和博主等角色，以体现建议分享、政策监管和信息传播。Person和Organization作为兜底类型，确保所有提及的个体和机构都能被纳入仿真系统。",
+  "graph_id": null,
+  "graph_build_task_id": null,
+  "simulation_requirement": "Describe how volunteers coordinate a community garden.",
+  "chunk_size": 500,
+  "chunk_overlap": 50,
+  "recording_inputs": {
+    "project_name": "WSL API routing smoke test 2026-10-15",
+    "simulation_requirement": "Describe how volunteers coordinate a community garden.",
+    "additional_context": null,
+    "file_metadata": null
+  },
+  "record_run": false,
+  "run_mode": "live",
+  "replay_id": null,
+  "error": null,
+  "token_usage": {
+    "prompt_tokens": 1570,
+    "completion_tokens": 2013,
+    "total_tokens": 3583,
+    "call_count": 1,
+    "last_updated": "2026-10-15T11:32:02.990352"
+  }
+}

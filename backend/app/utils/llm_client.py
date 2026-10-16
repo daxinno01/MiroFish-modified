@@ -3,14 +3,20 @@ import re
 import logging
 import os
 import fcntl
+import time
+from urllib.parse import urlsplit, urlunsplit
 from typing import Optional, Dict, Any, List
 from datetime import datetime
-from openai import OpenAI
+from openai import OpenAI, APIStatusError
 from json_repair import repair_json
 
 from ..config import Config
 
 logger = logging.getLogger('mirofish.llm_client')
+
+
+class InvalidLLMResponse(ValueError):
+    """The provider returned content that cannot be used as a JSON object."""
 
 
 class LLMClient:
@@ -45,7 +51,9 @@ class LLMClient:
         base_url: Optional[str] = None, 
         model: Optional[str] = None,
         simulation_id: Optional[str] = None,
-        project_id: Optional[str] = None
+        project_id: Optional[str] = None,
+        timeout: Optional[float] = None,
+        max_retries: Optional[int] = None
     ):
         """
         初始化LLM客户端
@@ -56,6 +64,8 @@ class LLMClient:
             model: 模型名称
             simulation_id: 模拟ID
             project_id: 项目ID
+            timeout: Optional SDK timeout per call; omitted to use SDK defaults.
+            max_retries: Optional SDK retries; omitted to use SDK defaults.
         """
         self.api_key = api_key or Config.LLM_API_KEY
         self.base_url = self._normalize_base_url(base_url or Config.LLM_BASE_URL)
@@ -64,14 +74,21 @@ class LLMClient:
         self.project_id = project_id or os.environ.get('LLM_PROJECT_ID') or os.environ.get('PROJECT_ID')
         self.step = os.environ.get('LLM_STEP_NAME')  # 从环境读取默认环节标识 (step1-step5)
         
+        client_options = {}
+        if timeout is not None:
+            client_options['timeout'] = timeout
+        if max_retries is not None:
+            client_options['max_retries'] = max_retries
         self.client = OpenAI(
             api_key=self.api_key,
-            base_url=self.base_url
+            base_url=self.base_url,
+            **client_options
         )
         # Embeddings client (使用配置中的 Embedding 专项配置)
         self._embedding_client = OpenAI(
             api_key=Config.EMBEDDING_API_KEY,
             base_url=self._normalize_base_url(Config.EMBEDDING_BASE_URL),
+            **client_options
         )
 
     def _log_token_usage(self, response, caller_hint: str = "", simulation_id: Optional[str] = None, project_id: Optional[str] = None, step: Optional[str] = None):
@@ -218,10 +235,20 @@ class LLMClient:
         """规范化 OpenAI API 基础路径"""
         if not url:
             return url
-        u = url.strip().rstrip("/")
-        if re.search(r"/v1$", u):
-            return u
-        return f"{u}/v1"
+        parts = urlsplit(url.strip())
+        path = parts.path.rstrip('/') or '/v1'
+        return urlunsplit(parts._replace(path=path))
+
+    @staticmethod
+    def sanitized_endpoint(url: str) -> str:
+        """Exclude URL credentials, query parameters and fragments from logs."""
+        parts = urlsplit(url)
+        host = parts.hostname or ''
+        if ':' in host:
+            host = f'[{host}]'
+        if parts.port:
+            host += f':{parts.port}'
+        return urlunsplit((parts.scheme, host, parts.path, '', ''))
 
     @staticmethod
     def _extract_json_object(text: str) -> Optional[str]:
@@ -271,12 +298,26 @@ class LLMClient:
         if response_format:
             kwargs["response_format"] = response_format
         
-        response = self.client.chat.completions.create(**kwargs)
+        started = time.monotonic()
+        endpoint = self.sanitized_endpoint(self.base_url)
+        logger.info("LLM request start model=%s endpoint=%s", self.model, endpoint)
+        try:
+            response = self.client.chat.completions.create(**kwargs)
+            choices = getattr(response, 'choices', None)
+            content = getattr(getattr(choices[0], 'message', None), 'content', None) if choices else None
+            if not isinstance(content, str):
+                raise InvalidLLMResponse('Provider returned no text response.')
+        except Exception as exc:
+            logger.warning("LLM request failed elapsed=%.2fs model=%s endpoint=%s exception=%s",
+                           time.monotonic() - started, self.model, endpoint, type(exc).__name__)
+            raise
+        logger.info("LLM request complete elapsed=%.2fs model=%s endpoint=%s",
+                    time.monotonic() - started, self.model, endpoint)
         # 统一侧重物理快照记录
         sid = simulation_id or getattr(self, 'simulation_id', None)
         pid = project_id or getattr(self, 'project_id', None)
         self._log_token_usage(response, caller_hint, sid, pid)
-        return response.choices[0].message.content
+        return content
 
     def chat_json(
         self,
@@ -287,91 +328,71 @@ class LLMClient:
         simulation_id: Optional[str] = None,
         project_id: Optional[str] = None
     ) -> Dict[str, Any]:
-        """发送聊天请求并返回 JSON 对象，包含自动修复逻辑"""
-        
-        # --- Stage 1: Standard JSON Mode Attempt ---
+        """Request JSON with at most one fallback for output/format problems."""
         try:
             response = self.chat(
-                messages=messages,
-                temperature=temperature,
-                max_tokens=max_tokens,
-                response_format={"type": "json_object"},
-                caller_hint=caller_hint,
-                simulation_id=simulation_id,
-                project_id=project_id
+                messages=messages, temperature=temperature, max_tokens=max_tokens,
+                response_format={"type": "json_object"}, caller_hint=caller_hint,
+                simulation_id=simulation_id, project_id=project_id
             )
-            maybe = self._extract_json_object(response)
-            if maybe:
-                try:
-                    from json_repair import repair_json
-                    repaired = repair_json(maybe)
-                    parsed = json.loads(repaired)
-                    
-                    # --- ADD THIS TYPE GUARD ---
-                    if isinstance(parsed, dict):
-                        for key in ['entities', 'relationships']:
-                            if key in parsed and isinstance(parsed[key], list):
-                                # Only keep items that are actually dictionaries
-                                # This removes the "strings" that cause the store to crash
-                                parsed[key] = [item for item in parsed[key] if isinstance(item, dict)]
-                            elif key in parsed and isinstance(parsed[key], dict):
-                                # If json_repair turned the list into a dict, convert it back
-                                parsed[key] = list(parsed[key].values())
-                    # ---------------------------
-                    
-                    return parsed
-                except Exception as e:
-                    logger.error(f"Failed to process repaired JSON: {e}")
-                    raise
-        except Exception as e:
-            # Silently move to fallback if Stage 1 fails (common with some API versions)
-            print(f"Extractor failed for {caller_hint}: No JSON found in output: \n{response}")
+        except APIStatusError as exc:
+            if not self._unsupported_json_format(exc):
+                raise
+        except InvalidLLMResponse:
             pass
+        else:
+            try:
+                return self._parse_json_response(response)
+            except InvalidLLMResponse:
+                pass
 
-        # --- Stage 2: Fallback Mode with Hardened System Prompt ---
+        logger.info("LLM JSON fallback: invalid output or unsupported JSON format")
         fallback_messages = [
-            {
-                "role": "system", 
-                "content": "You are a specialized JSON generator. Output ONLY the JSON object. "
-                        "Ensure all strings are properly escaped. No markdown, no prose."
-            },
+            {"role": "system", "content": "You are a specialized JSON generator. Output ONLY the JSON object. "
+             "Ensure all strings are properly escaped. No markdown, no prose."},
             *messages,
         ]
-        
-        response2 = self.chat(
-            messages=fallback_messages,
-            temperature=0.0, # Zero temperature is better for strict extraction
-            max_tokens=max_tokens,
-            caller_hint=f"{caller_hint}_fallback",
-            simulation_id=simulation_id,
+        response = self.chat(
+            messages=fallback_messages, temperature=0.0, max_tokens=max_tokens,
+            caller_hint=f"{caller_hint}_fallback", simulation_id=simulation_id,
             project_id=project_id
         )
-        
-        maybe = self._extract_json_object(response2)
-        if not maybe:
-            raise ValueError(f"Extractor failed for {caller_hint}: No JSON found in output: \n{response2}")
+        return self._parse_json_response(response)
 
+    @staticmethod
+    def _unsupported_json_format(exc: APIStatusError) -> bool:
+        # Generic 400s, moderation rejections and unrelated unsupported options
+        # must not cause another billable request.
+        if exc.status_code not in (400, 422):
+            return False
+        body = exc.body if isinstance(exc.body, dict) else {}
+        error = body.get('error', body)
+        if not isinstance(error, dict):
+            return False
+        message = str(error.get('message', '')).lower()
+        mentions_format = (error.get('param') == 'response_format' or
+                           any(term in message for term in ('response_format', 'json_object', 'json mode')))
+        rejects_format = any(term in message for term in ('not supported', 'unsupported', 'does not support', 'not available'))
+        return mentions_format and rejects_format
+
+    @classmethod
+    def _parse_json_response(cls, response: str) -> Dict[str, Any]:
+        maybe = cls._extract_json_object(response)
+        if not maybe:
+            raise InvalidLLMResponse('Provider returned no JSON object.')
         try:
-            from json_repair import repair_json
-            repaired = repair_json(maybe)
-            parsed = json.loads(repaired)
-            
-            # --- ADD THIS TYPE GUARD ---
-            if isinstance(parsed, dict):
-                for key in ['entities', 'relationships']:
-                    if key in parsed and isinstance(parsed[key], list):
-                        # Only keep items that are actually dictionaries
-                        # This removes the "strings" that cause the store to crash
-                        parsed[key] = [item for item in parsed[key] if isinstance(item, dict)]
-                    elif key in parsed and isinstance(parsed[key], dict):
-                        # If json_repair turned the list into a dict, convert it back
-                        parsed[key] = list(parsed[key].values())
-            # ---------------------------
-            
-            return parsed
-        except Exception as e:
-            logger.error(f"Failed to process repaired JSON: {e}")
-            raise
+            parsed = json.loads(repair_json(maybe))
+        except (ValueError, TypeError, IndexError, RecursionError) as exc:
+            raise InvalidLLMResponse('Provider returned invalid JSON.') from exc
+        if not isinstance(parsed, dict):
+            raise InvalidLLMResponse('Provider returned JSON that is not an object.')
+        # Preserve the existing cleanup used by graph extraction workflows.
+        for key in ('entities', 'relationships'):
+            if isinstance(parsed.get(key), list):
+                parsed[key] = [item for item in parsed[key] if isinstance(item, dict)]
+            elif isinstance(parsed.get(key), dict):
+                parsed[key] = list(parsed[key].values())
+        return parsed
 
     def embed_texts(self, texts: List[str], model: Optional[str] = None) -> List[List[float]]:
         """生成 embeddings"""

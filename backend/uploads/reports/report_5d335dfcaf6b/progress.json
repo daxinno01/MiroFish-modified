@@ -1,0 +1,13 @@
+{
+  "status": "completed",
+  "progress": 100,
+  "message": "报告生成完成",
+  "current_section": null,
+  "completed_sections": [
+    "1. Executive Summary & Macro Sentiment Baseline",
+    "2. Temporal Sentiment Trends & Inflection Points",
+    "3. Granular Cluster Analysis & Persona Divergence",
+    "4. Strategic Implications & Actionable Corporate Recommendations"
+  ],
+  "updated_at": "2026-10-16T01:42:52.513149"
+}
