@@ -6,16 +6,20 @@ import service, { requestWithRetry } from './index'
  * @returns {Promise}
  */
 export function generateOntology(formData) {
-  return requestWithRetry(() => 
-    service({
-      url: '/api/graph/ontology/generate',
-      method: 'post',
-      data: formData,
-      headers: {
-        'Content-Type': 'multipart/form-data'
+  return service({
+    url: '/api/graph/ontology/generate',
+    method: 'post',
+    data: formData,
+    headers: {
+      'Content-Type': 'multipart/form-data'
+    }
+  })
+    .catch(error => {
+      if (['ECONNABORTED', 'ETIMEDOUT'].includes(error.code)) {
+        throw new Error('Ontology request timed out in the browser. The backend may still be processing. Check your projects before submitting again.')
       }
+      throw error
     })
-  )
 }
 
 /**
@@ -23,9 +27,10 @@ export function generateOntology(formData) {
  * @param {Object} data - 包含project_id, graph_name等
  * @returns {Promise}
  */
-export function buildGraph(data) {
+export function buildGraph(data, config = {}) {
   return requestWithRetry(() =>
     service({
+      ...config,
       url: '/api/graph/build',
       method: 'post',
       data
@@ -38,8 +43,9 @@ export function buildGraph(data) {
  * @param {String} taskId - 任务ID
  * @returns {Promise}
  */
-export function getTaskStatus(taskId) {
+export function getTaskStatus(taskId, config = {}) {
   return service({
+    ...config,
     url: `/api/graph/task/${taskId}`,
     method: 'get'
   })
@@ -50,8 +56,9 @@ export function getTaskStatus(taskId) {
  * @param {String} graphId - 图谱ID
  * @returns {Promise}
  */
-export function getGraphData(graphId) {
+export function getGraphData(graphId, config = {}) {
   return service({
+    ...config,
     url: `/api/graph/data/${graphId}`,
     method: 'get'
   })
@@ -62,8 +69,9 @@ export function getGraphData(graphId) {
  * @param {String} projectId - 项目ID
  * @returns {Promise}
  */
-export function getProject(projectId) {
+export function getProject(projectId, config = {}) {
   return service({
+    ...config,
     url: `/api/graph/project/${projectId}`,
     method: 'get'
   })
@@ -73,9 +81,9 @@ export function getProject(projectId) {
  * 获取项目 Token 消耗统计 (Step 1)
  * @param {String} projectId
  */
-export const getProjectUsage = (projectId, step = null) => {
+export const getProjectUsage = (projectId, step = null, config = {}) => {
   const params = step ? { step } : {}
-  return service.get(`/api/graph/project/${projectId}/usage`, { params })
+  return service.get(`/api/graph/project/${projectId}/usage`, { ...config, params })
 }
 
 /**

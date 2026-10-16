@@ -1,8 +1,14 @@
 <template>
-  <router-view />
+  <router-view :key="workflowKey" />
+  <SavedSimulationIndicator />
 </template>
 
 <script setup>
+import SavedSimulationIndicator from "./components/SavedSimulationIndicator.vue"
+import { computed } from 'vue'
+import { useRoute } from 'vue-router'
+const route = useRoute()
+const workflowKey = computed(() => Object.values(route.params).some(value => /^(rproj_|rsim_|rreport_)/.test(String(value))) ? route.path : undefined)
 // 使用 Vue Router 来管理页面
 </script>
 

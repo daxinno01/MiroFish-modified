@@ -1,8 +1,11 @@
 import axios from 'axios'
+import { API_BASE_URL } from './baseUrl'
+import { observeReplayResponse } from '../store/replay'
+import { BACKEND_UNAVAILABLE } from '../utils/polling'
 
 // 创建axios实例
 const service = axios.create({
-  baseURL: import.meta.env.VITE_API_BASE_URL || 'http://localhost:5001',
+  baseURL: API_BASE_URL,
   timeout: 300000, // 5分钟超时（本体生成可能需要较长时间）
   headers: {
     'Content-Type': 'application/json'
@@ -24,6 +27,7 @@ service.interceptors.request.use(
 service.interceptors.response.use(
   response => {
     const res = response.data
+    observeReplayResponse(res)
     
     // 如果返回的状态码不是success，则抛出错误
     if (!res.success && res.success !== undefined) {
@@ -34,6 +38,12 @@ service.interceptors.response.use(
     return res
   },
   error => {
+    if (axios.isCancel(error)) return Promise.reject(error)
+    if (!error.response || error.response.status === 503) {
+      error.backendUnavailable = true
+      error.message = BACKEND_UNAVAILABLE
+      return Promise.reject(error)
+    }
     console.error('Response error:', error)
 
     // Prefer backend-provided error message for non-2xx responses.
@@ -67,6 +77,7 @@ export const requestWithRetry = async (requestFn, maxRetries = 3, delay = 1000) 
     try {
       return await requestFn()
     } catch (error) {
+      if (axios.isCancel(error)) throw error
       if (i === maxRetries - 1) throw error
       
       console.warn(`Request failed, retrying (${i + 1}/${maxRetries})...`)

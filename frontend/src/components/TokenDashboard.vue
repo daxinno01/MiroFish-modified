@@ -74,6 +74,7 @@
 import { ref, onMounted, onUnmounted, watch, computed } from 'vue'
 import { getSimulationUsage } from '../api/simulation'
 import { getProjectUsage } from '../api/graph'
+import { completionPoll } from '../utils/polling'
 
 const props = defineProps({
   simulationId: {
@@ -136,20 +137,22 @@ const formattedTokens = (val) => {
 }
 
 // 改进：增加对 new 项目的处理和更鲁棒的显示逻辑
-const fetchStats = async () => {
+const fetchStats = async (signal) => {
   if (!props.projectId && !props.simulationId) return;
   if (props.projectId === 'new') return;
   
   try {
     // 物理对齐：始终拉取一次项目级的全量数据作为“底座”
-    const projectRes = await getProjectUsage(props.projectId)
+    const projectRes = await getProjectUsage(props.projectId, null, { signal })
+    if (signal.aborted) return
     if (projectRes && projectRes.success) {
       totalStats.value = projectRes.total || projectRes.data || totalStats.value
     }
 
     if (props.simulationId) {
       // 模拟级统计 (Step 3, 4, 5)
-      const res = await getSimulationUsage(props.simulationId, props.step)
+      const res = await getSimulationUsage(props.simulationId, props.step, { signal })
+      if (signal.aborted) return
       if (res && res.success) {
         const newData = res.data || {}
         if (newData.total_tokens !== stats.value.total_tokens) {
@@ -165,9 +168,7 @@ const fetchStats = async () => {
       stats.value = projectRes.data || stats.value
     }
     } catch (err) {
-    if (err.response?.status !== 404) {
-      console.warn('TokenDashboard 物理同步尝试中...', err.message)
-    }
+      throw err
   }
 }
 
@@ -182,12 +183,11 @@ const triggerPulse = () => {
 }
 
 onMounted(() => {
-  fetchStats()
-  timer = setInterval(fetchStats, PULSE_INTERVAL) // 2s 物理轮询
+  timer = completionPoll(fetchStats, { interval: PULSE_INTERVAL })
 })
 
 onUnmounted(() => {
-  if (timer) clearInterval(timer)
+  timer?.()
 })
 
 watch(() => [props.simulationId, props.projectId], ([newSim, newProj], [oldSim, oldProj]) => {
@@ -196,7 +196,8 @@ watch(() => [props.simulationId, props.projectId], ([newSim, newProj], [oldSim, 
        stats.value = { prompt_tokens: 0, completion_tokens: 0, total_tokens: 0, call_count: 0 }
        totalStats.value = { prompt_tokens: 0, completion_tokens: 0, total_tokens: 0, call_count: 0 }
     }
-    fetchStats()
+    timer?.()
+    timer = completionPoll(fetchStats, { interval: PULSE_INTERVAL })
   }
 })
 </script>

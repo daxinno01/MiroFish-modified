@@ -83,6 +83,8 @@ import Step1GraphBuild from '../components/Step1GraphBuild.vue'
 import Step2EnvSetup from '../components/Step2EnvSetup.vue'
 import TokenDashboard from '../components/TokenDashboard.vue'
 import { generateOntology, getProject, buildGraph, getTaskStatus, getGraphData } from '../api/graph'
+import { subscribeReplay } from '../store/replayStatus'
+import { completionPoll, isConnectionFailure } from '../utils/polling'
 import { getPendingUpload, clearPendingUpload } from '../store/pendingUpload'
 
 const route = useRoute()
@@ -108,8 +110,12 @@ const buildProgress = ref(null)
 const systemLogs = ref([])
 
 // Polling timers
+let ontologyPollTimer = null
 let pollTimer = null
 let graphPollTimer = null
+let initialPoll = null
+let disposed = false
+const viewController = new AbortController()
 
 // --- Computed Layout Styles ---
 const leftPanelStyle = computed(() => {
@@ -132,7 +138,7 @@ const statusClass = computed(() => {
 })
 
 const statusText = computed(() => {
-  if (error.value) return 'Error'
+  if (error.value) return error.value
   if (currentPhase.value >= 2) return 'Ready'
   if (currentPhase.value === 1) return 'Building Graph'
   if (currentPhase.value === 0) return 'Generating Ontology'
@@ -221,6 +227,7 @@ const handleNewProject = async () => {
     // FIX 2: Ensure simulation requirement isn't undefined
     const requirement = pending.simulationRequirement || " "
     formData.append('simulation_requirement', requirement)
+    formData.append('record_run', String(pending.recordRun))
     
     // If your backend expects the metadata map:
     formData.append('file_metadata', JSON.stringify(fileMetadata))
@@ -248,17 +255,33 @@ const handleNewProject = async () => {
   }
 }
 
-const loadProject = async () => {
+const loadProject = async (signal = viewController.signal) => {
   try {
     loading.value = true
     addLog(`Loading project ${currentProjectId.value}...`)
-    const res = await getProject(currentProjectId.value)
+    const res = await getProject(currentProjectId.value, { signal })
+    if (disposed || signal?.aborted) return
     if (res.success) {
+      error.value = ''
       projectData.value = res.data
       updatePhaseByStatus(res.data.status)
       addLog(`Project loaded. Status: ${res.data.status}`)
       
-      if (res.data.status === 'ontology_generated' && !res.data.graph_id) {
+      if (res.data.run_mode === 'saved' && res.data.status === 'created') {
+        currentPhase.value = 0
+        ontologyProgress.value = { message: 'Replaying saved ontology...' }
+        if (!ontologyPollTimer) ontologyPollTimer = subscribeReplay(res.data.replay_id, async replay => {
+          if (disposed) return
+          error.value = ''
+          ontologyProgress.value = { message: `Saved ontology: ${Math.round(replay.stages.ontology.position * 100)}%` }
+          if (replay.stages.ontology.position === 1) {
+            await loadProject()
+            ontologyPollTimer?.()
+            ontologyPollTimer = null
+            ontologyProgress.value = null
+          }
+        }, err => { if (!disposed) error.value = err.message })
+      } else if (res.data.status === 'ontology_generated' && !res.data.graph_id) {
         await startBuildGraph()
       } else if (res.data.status === 'graph_building' && res.data.graph_build_task_id) {
         currentPhase.value = 1
@@ -273,8 +296,10 @@ const loadProject = async () => {
       addLog(`Error loading project: ${res.error}`)
     }
   } catch (err) {
+    if (disposed || signal?.aborted) return
     error.value = err.message
     addLog(`Exception in loadProject: ${err.message}`)
+    if (isConnectionFailure(err)) throw err
   } finally {
     loading.value = false
   }
@@ -296,7 +321,8 @@ const startBuildGraph = async () => {
     buildProgress.value = { progress: 0, message: 'Starting build...' }
     addLog('Initiating graph build...')
     
-    const res = await buildGraph({ project_id: currentProjectId.value })
+    const res = await buildGraph({ project_id: currentProjectId.value }, { signal: viewController.signal })
+    if (disposed) return
     if (res.success) {
       addLog(`Graph build task started. Task ID: ${res.data.task_id}`)
       startGraphPolling()
@@ -308,22 +334,27 @@ const startBuildGraph = async () => {
   } catch (err) {
     error.value = err.message
     addLog(`Exception in startBuildGraph: ${err.message}`)
+    if (isConnectionFailure(err)) throw err
   }
 }
 
 const startGraphPolling = () => {
+  if (disposed) return
+  stopGraphPolling()
   addLog('Started polling for graph data...')
-  fetchGraphData()
-  graphPollTimer = setInterval(fetchGraphData, 10000)
+  graphPollTimer = completionPoll(fetchGraphData, { interval: 10000, onError: err => { error.value = err.message } })
 }
 
-const fetchGraphData = async () => {
+const fetchGraphData = async (signal) => {
   try {
     // Refresh project info to check for graph_id
-    const projRes = await getProject(currentProjectId.value)
+    const projRes = await getProject(currentProjectId.value, { signal })
+    if (disposed || signal?.aborted) return
     if (projRes.success && projRes.data.graph_id) {
-      const gRes = await getGraphData(projRes.data.graph_id)
+      const gRes = await getGraphData(projRes.data.graph_id, { signal })
+      if (disposed || signal?.aborted) return
       if (gRes.success) {
+        error.value = ''
         graphData.value = gRes.data
         const nodeCount = gRes.data.node_count || gRes.data.nodes?.length || 0
         const edgeCount = gRes.data.edge_count || gRes.data.edges?.length || 0
@@ -331,19 +362,24 @@ const fetchGraphData = async () => {
       }
     }
   } catch (err) {
-    console.warn('Graph fetch error:', err)
+    throw err
   }
 }
 
 const startPollingTask = (taskId) => {
-  pollTaskStatus(taskId)
-  pollTimer = setInterval(() => pollTaskStatus(taskId), 2000)
+  if (disposed) return
+  stopPolling()
+  pollTimer = completionPoll(signal => pollTaskStatus(taskId, signal), {
+    interval: 2000, onError: err => { error.value = err.message }
+  })
 }
 
-const pollTaskStatus = async (taskId) => {
+const pollTaskStatus = async (taskId, signal) => {
   try {
-    const res = await getTaskStatus(taskId)
+    const res = await getTaskStatus(taskId, { signal })
+    if (disposed || signal?.aborted) return
     if (res.success) {
+      error.value = ''
       const task = res.data
       
       // Log progress message if it changed
@@ -355,16 +391,17 @@ const pollTaskStatus = async (taskId) => {
       
       if (task.status === 'completed') {
         addLog('Graph build task completed.')
-        stopPolling()
         stopGraphPolling() // Stop polling, do final load
         currentPhase.value = 2
         
         // Final load
-        const projRes = await getProject(currentProjectId.value)
+        const projRes = await getProject(currentProjectId.value, { signal })
+        if (disposed || signal?.aborted) return
         if (projRes.success && projRes.data.graph_id) {
             projectData.value = projRes.data
             await loadGraph(projRes.data.graph_id)
         }
+        stopPolling()
       } else if (task.status === 'failed') {
         stopPolling()
         error.value = task.error
@@ -372,7 +409,7 @@ const pollTaskStatus = async (taskId) => {
       }
     }
   } catch (e) {
-    console.error(e)
+    throw e
   }
 }
 
@@ -380,7 +417,8 @@ const loadGraph = async (graphId) => {
   graphLoading.value = true
   addLog(`Loading full graph data: ${graphId}`)
   try {
-    const res = await getGraphData(graphId)
+    const res = await getGraphData(graphId, { signal: viewController.signal })
+    if (disposed) return
     if (res.success) {
       graphData.value = res.data
       addLog('Graph data loaded successfully.')
@@ -388,7 +426,9 @@ const loadGraph = async (graphId) => {
       addLog(`Failed to load graph data: ${res.error}`)
     }
   } catch (e) {
+    if (disposed) return
     addLog(`Exception loading graph: ${e.message}`)
+    if (isConnectionFailure(e)) throw e
   } finally {
     graphLoading.value = false
   }
@@ -403,24 +443,32 @@ const refreshGraph = () => {
 
 const stopPolling = () => {
   if (pollTimer) {
-    clearInterval(pollTimer)
+    pollTimer()
     pollTimer = null
   }
 }
 
 const stopGraphPolling = () => {
   if (graphPollTimer) {
-    clearInterval(graphPollTimer)
+    graphPollTimer()
     graphPollTimer = null
     addLog('Graph polling stopped.')
   }
 }
 
 onMounted(() => {
-  initProject()
+  if (currentProjectId.value === 'new') initProject()
+  else initialPoll = completionPoll(async signal => {
+    await loadProject(signal)
+    initialPoll?.()
+  }, { onError: err => { error.value = err.message } })
 })
 
 onUnmounted(() => {
+  disposed = true
+  viewController.abort()
+  initialPoll?.()
+  ontologyPollTimer?.()
   stopPolling()
   stopGraphPolling()
 })

@@ -1,4 +1,5 @@
 import service, { requestWithRetry } from './index'
+import { API_BASE_URL } from './baseUrl'
 
 /**
  * 开始报告生成
@@ -82,8 +83,7 @@ export const checkReportStatus = (simulationId) => {
  * @param {string} reportId
  */
 export const getReportDownloadUrl = (reportId) => {
-  const base = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5001'
-  return `${base}/api/report/${reportId}/download`
+  return `${API_BASE_URL}/api/report/${reportId}/download`
 }
 
 /**
@@ -91,21 +91,21 @@ export const getReportDownloadUrl = (reportId) => {
  * @param {string} reportId
  */
 export const translateReport = (reportId) => {
-  return requestWithRetry(() => service.post(`/api/report/${reportId}/translate`, reportId), 3, 1000)
+  return requestWithRetry(() => service.post(`/api/report/${reportId}/translate`), 3, 1000)
 }
+
+export const getTranslatedReport = (reportId) => service.get(`/api/report/${reportId}/translate`)
 
 /**
  * Get report translate and export link
  * @param {string} reportId
  */
 export const getTranslatedExportUrl = (reportId) => {
-  const base = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5001'
-  return `${base}/api/report/${reportId}/translated-export`
+  return `${API_BASE_URL}/api/report/${reportId}/translated-export`
 }
 
 export const getExportUrl = (reportId) => {
-  const base = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5001'
-  return `${base}/api/report/${reportId}/pdf-export`
+  return `${API_BASE_URL}/api/report/${reportId}/pdf-export`
 }
 
 // /**

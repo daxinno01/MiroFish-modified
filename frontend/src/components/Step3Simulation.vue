@@ -122,6 +122,7 @@
             继续模拟 (从第{{ interruptedState.current_round }}轮)
           </button>
           <button
+            v-if="!isSaved"
             class="action-btn warning"
             :disabled="isStarting"
             @click="doStartSimulation"
@@ -395,10 +396,12 @@ const route = useRoute()
 // State
 const isGeneratingReport = ref(false)
 const existingReportStatus = ref(null) // null, 'failed', 'completed'
+const existingReportId = ref(null)
 const phase = ref(0) // 0: 未开始, 1: 运行中, 2: 已完成
 const isStarting = ref(false)
 const isStopping = ref(false)
 const startError = ref(null)
+const isSaved = computed(() => props.simulationId?.startsWith("rsim_"))
 const runStatus = ref({})
 const allActions = ref([]) // 所有动作（增量累积）
 const actionIds = ref(new Set()) // 用于去重的动作ID集合
@@ -433,8 +436,7 @@ const ensureSimulationPrepared = async () => {
 
   const prep = await prepareSimulation({
     simulation_id: props.simulationId,
-    use_llm_for_profiles: true,
-    parallel_profile_count: 5
+    ...(isSaved.value ? {} : { use_llm_for_profiles: true, parallel_profile_count: 5 })
   })
 
   if (prep?.data?.already_prepared) {
@@ -542,12 +544,12 @@ const doStartSimulation = async () => {
 
     const params = {
       simulation_id: props.simulationId,
-      platform: 'parallel',
-      force: true,  // 强制重新开始
-      enable_graph_memory_update: true  // 开启动态图谱更新
+      ...(isSaved.value ? {} : { platform: 'parallel' }),
+      force: !isSaved.value,  // 强制重新开始
+      enable_graph_memory_update: !isSaved.value  // 开启动态图谱更新
     }
     
-    if (props.maxRounds) {
+    if (props.maxRounds && !isSaved.value) {
       params.max_rounds = props.maxRounds
       addLog(`设置最大模拟轮数: ${props.maxRounds}`)
     }
@@ -607,12 +609,12 @@ const doResumeSimulation = async () => {
 
     const params = {
       simulation_id: props.simulationId,
-      platform: 'parallel',
+      ...(isSaved.value ? {} : { platform: 'parallel' }),
       resume: true,  // 续跑模式
-      enable_graph_memory_update: true
+      enable_graph_memory_update: !isSaved.value
     }
     
-    if (props.maxRounds) {
+    if (props.maxRounds && !isSaved.value) {
       params.max_rounds = props.maxRounds
     }
 
@@ -709,8 +711,8 @@ const handleStopSimulation = async () => {
     
     if (res.success) {
       addLog('✓ 模拟已停止')
-      phase.value = 2
-      stopPolling()
+      phase.value = isSaved.value ? 0 : 2
+      if (!isSaved.value) stopPolling()
       emit('update-status', 'completed')
     } else {
       addLog(`停止失败: ${res.error || '未知错误'}`)
@@ -908,7 +910,7 @@ const handleNextStep = async () => {
 
   // 如果已经完成，直接跳转不调接口
   if (existingReportStatus.value === 'completed') {
-    goToReportView(props.simulationId)
+    goToReportView(existingReportId.value || props.simulationId)
     return
   }
   
@@ -918,7 +920,7 @@ const handleNextStep = async () => {
   try {
     const res = await generateReport({
       simulation_id: props.simulationId,
-      force_regenerate: true
+      force_regenerate: !isSaved.value
     })
     
     if (res.success && res.data) {
@@ -972,6 +974,7 @@ const fetchReportAvailability = async () => {
     const res = await checkReportStatus(props.simulationId)
     if (res.success && res.data && res.data.has_report) {
       existingReportStatus.value = res.data.report_status
+      existingReportId.value = res.data.report_id
     }
   } catch (e) {
     console.warn("无法获取报告状态", e)

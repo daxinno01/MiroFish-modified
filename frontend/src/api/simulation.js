@@ -104,9 +104,9 @@ export const getRunStatus = (simulationId) => {
  * 获取模拟 Token 消耗统计
  * @param {string} simulationId
  */
-export const getSimulationUsage = (simulationId, step = null) => {
+export const getSimulationUsage = (simulationId, step = null, config = {}) => {
   const params = step ? { step } : {}
-  return service.get(`/api/simulation/${simulationId}/usage`, { params })
+  return service.get(`/api/simulation/${simulationId}/usage`, { ...config, params })
 }
 
 /**

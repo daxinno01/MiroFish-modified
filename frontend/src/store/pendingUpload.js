@@ -14,13 +14,15 @@ import { reactive } from 'vue'
 const state = reactive({
   files: [],
   simulationRequirement: '',
+  recordRun: false,
   isPending: false
 })
 
-export function setPendingUpload(fileObjects, requirement) {
+export function setPendingUpload(fileObjects, requirement, recordRun = false) {
   // 这里的 fileObjects 是我们在 Home.vue 中构建的包含 description 的对象数组
   state.files = fileObjects
   state.simulationRequirement = requirement
+  state.recordRun = recordRun
   state.isPending = true
 }
 
@@ -29,6 +31,7 @@ export function getPendingUpload() {
   return {
     files: [...state.files], 
     simulationRequirement: state.simulationRequirement,
+    recordRun: state.recordRun,
     isPending: state.isPending
   }
 }
@@ -36,6 +39,7 @@ export function getPendingUpload() {
 export function clearPendingUpload() {
   state.files = []
   state.simulationRequirement = ''
+  state.recordRun = false
   state.isPending = false
 }
 

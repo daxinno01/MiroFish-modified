@@ -8,6 +8,7 @@ import ReportView from '../views/ReportView.vue'
 import InteractionView from '../views/InteractionView.vue'
 
 const routes = [
+  { path: "/saved-simulations", name: "SavedSimulations", component: () => import("../views/SavedSimulations.vue") },
   {
     path: '/',
     name: 'Home',

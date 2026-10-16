@@ -196,7 +196,7 @@
             </svg>
           </button>
 
-          <button v-if="isComplete" class="regenerate-btn" @click="regenerateReport">
+          <button v-if="isComplete && !reportId?.startsWith('rreport_')" class="regenerate-btn" @click="regenerateReport">
             <span>Regenerate Report</span>
             <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
               <line x1="5" y1="12" x2="19" y2="12"></line>
@@ -467,6 +467,7 @@ import {
   getConsoleLog,
   getExportUrl,
   translateReport,
+  getTranslatedReport,
   getTranslatedExportUrl,
   generateReport
 } from '../api/report'
@@ -519,6 +520,14 @@ const showRawResult = reactive({})
 const translatedHTML = ref('')
 const activeVersion = ref('original');
 const isTranslating = ref(false);
+watch(isComplete, async (completed) => {
+  if (!completed || !props.reportId?.startsWith('rreport_') || translatedHTML.value) return
+  try {
+    translatedHTML.value = (await getTranslatedReport(props.reportId)).data
+  } catch (_) {
+    // A recording can complete without a saved translation.
+  }
+})
 
 
 const resetReportingState = () => {

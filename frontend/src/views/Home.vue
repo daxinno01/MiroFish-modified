@@ -4,6 +4,7 @@
     <nav class="navbar">
       <div class="nav-brand">MIROFISH</div>
       <div class="nav-links">
+        <a href="/saved-simulations" class="nav-link" @click.prevent="router.push({ name: 'SavedSimulations' })">Saved simulations</a>
         <a href="#" class="nav-link" @click.prevent="router.push({ name: 'Projects' })">
           历史项目
         </a>
@@ -205,6 +206,10 @@
             </div>
 
             <!-- 启动按钮 -->
+            <label style="display: flex; gap: 8px; padding: 16px 24px; align-items: center;">
+              <input type="checkbox" v-model="recordRun" :disabled="loading">
+              Record for saved simulation
+            </label>
             <div class="console-section btn-section">
               <button 
                 class="start-engine-btn"
@@ -230,6 +235,7 @@ import { setPendingUpload } from '../store/pendingUpload.js'
 import PromptSettings from "../components/PromptSettings.vue"
 
 const router = useRouter()
+const recordRun = ref(false)
 
 // 表单数据
 const formData = ref({
@@ -329,7 +335,7 @@ const startSimulation = () => {
   if (!canSubmit.value || loading.value) return
   
   // 2. Set the data synchronously 
-  setPendingUpload(files.value, formData.value.simulationRequirement)
+  setPendingUpload(files.value, formData.value.simulationRequirement, recordRun.value)
   
   // 3. Navigate AFTER the data is set
   router.push({
