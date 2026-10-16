@@ -226,6 +226,8 @@ class SimulationManager:
         self._save_simulation_state(state)
         logger.info(f"创建模拟: {simulation_id}, project={project_id}, graph={graph_id}")
         
+        from .recording import RecordingStore
+        RecordingStore.create(state)
         return state
     
     def prepare_simulation(
@@ -286,6 +288,8 @@ class SimulationManager:
                 enrich_with_edges=True
             )
             
+            from .recording import RecordingStore
+            RecordingStore.preparation(simulation_id, "entities_filtered", filtered.to_dict())
             state.entities_count = filtered.filtered_count
             state.entity_types = list(filtered.entity_types)
             
@@ -309,6 +313,7 @@ class SimulationManager:
             
             deduplicator = EntityDeduplicator(simulation_id=simulation_id, project_id=state.project_id)
             deduplicated_entities = deduplicator.process(filtered.entities)
+            RecordingStore.preparation(simulation_id, "entities_deduplicated", {"entities": [e.to_dict() for e in deduplicated_entities]})
             
             # 更新状态中的实体数量为去重后的数量
             filtered.entities = deduplicated_entities
@@ -359,6 +364,7 @@ class SimulationManager:
                 deduplicated_entities = active_entities
             
             # 保存当前模拟目标到生成器环境
+            RecordingStore.preparation(simulation_id, "entities_active", {"entities": [e.to_dict() for e in deduplicated_entities]})
             generator.simulation_goal = simulation_requirement
             
             total_entities = len(deduplicated_entities)
@@ -534,6 +540,7 @@ class SimulationManager:
             # 更新状态
             state.status = SimulationStatus.READY
             self._save_simulation_state(state)
+            RecordingStore.preparation(simulation_id, "completed")
             
             logger.info(f"模拟准备完成: {simulation_id}, "
                        f"entities={state.entities_count}, profiles={state.profiles_count}")

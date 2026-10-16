@@ -1982,8 +1982,39 @@ async def run_reddit_simulation(
     return result
 
 
+async def load_saved_interaction_platform(config, simulation_dir, platform):
+    """Restore profiles and committed posts, then return directly to the IPC loop."""
+    result = PlatformSimulation()
+    profile_name = "twitter_profiles.csv" if platform == "twitter" else "reddit_profiles.json"
+    profile_path = os.path.join(simulation_dir, profile_name)
+    db_path = os.path.join(simulation_dir, platform + "_simulation.db")
+    if not os.path.isfile(profile_path) or not os.path.isfile(db_path):
+        raise ValueError("Saved interaction profiles or database are missing: " + platform)
+    model = create_model(config, use_boost=platform == "reddit")
+    generate_graph = generate_twitter_agent_graph if platform == "twitter" else generate_reddit_agent_graph
+    result.agent_graph = await generate_graph(
+        profile_path=profile_path, model=model,
+        available_actions=TWITTER_ACTIONS if platform == "twitter" else REDDIT_ACTIONS)
+    _apply_oasis_patches()
+    result.env = oasis.make(
+        agent_graph=result.agent_graph,
+        platform=oasis.DefaultPlatformType.TWITTER if platform == "twitter" else oasis.DefaultPlatformType.REDDIT,
+        database_path=db_path, semaphore=30)
+    # reset starts the platform and reattaches existing users. The idempotent
+    # database/sign-up patches above preserve all saved rows.
+    await result.env.reset()
+    state_path = os.path.join(simulation_dir, "run_state.json")
+    with open(state_path, encoding="utf-8") as stream:
+        saved_state = json.load(stream)
+    if platform == "twitter":
+        result.env.platform.sandbox_clock.time_step = saved_state.get("twitter_current_round", saved_state.get("current_round", 0))
+    return result
+
+
 async def main():
     parser = argparse.ArgumentParser(description='OASIS双平台并行模拟')
+    parser.add_argument('--interaction-only', action='store_true',
+                        help='Load saved databases and profiles directly into the interview IPC loop')
     parser.add_argument(
         '--config', 
         type=str, 
@@ -2039,7 +2070,8 @@ async def main():
     wait_for_commands = not args.no_wait
     
     # 初始化日志配置（禁用 OASIS 日志，清理旧文件）
-    init_logging_for_simulation(simulation_dir)
+    if not args.interaction_only:
+        init_logging_for_simulation(simulation_dir)
     
     # 创建日志管理器
     log_manager = SimulationLogManager(simulation_dir)
@@ -2087,7 +2119,13 @@ async def main():
     twitter_result: Optional[PlatformSimulation] = None
     reddit_result: Optional[PlatformSimulation] = None
     
-    if args.twitter_only:
+    if args.interaction_only:
+        os.environ['LLM_STEP_NAME'] = 'step5'
+        if not args.reddit_only:
+            twitter_result = await load_saved_interaction_platform(config, simulation_dir, "twitter")
+        if not args.twitter_only:
+            reddit_result = await load_saved_interaction_platform(config, simulation_dir, "reddit")
+    elif args.twitter_only:
         twitter_result = await run_twitter_simulation(config, simulation_dir, twitter_logger, log_manager, args.max_rounds, start_round=args.start_round)
     elif args.reddit_only:
         reddit_result = await run_reddit_simulation(config, simulation_dir, reddit_logger, log_manager, args.max_rounds, start_round=args.start_round)

@@ -69,6 +69,12 @@ def create_app(config_class=Config):
         return response
     
     # 注册蓝图
+    from .services.replay import dispatch_replay, decorate_replay_response
+    from .api.recordings import recordings_bp
+    app.before_request(dispatch_replay)
+    app.after_request(decorate_replay_response)
+    app.register_blueprint(recordings_bp, url_prefix="/api")
+
     from .api import graph_bp, simulation_bp, report_bp, settings_bp
     app.register_blueprint(graph_bp, url_prefix='/api/graph')
     app.register_blueprint(simulation_bp, url_prefix='/api/simulation')

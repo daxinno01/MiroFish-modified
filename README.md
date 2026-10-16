@@ -81,4 +81,24 @@ To spin up both frontend and backend systems simultaneously, run:
 npm run dev
 ```
 
+For local WSL development, run Vite (port 3000) and Flask (port 5001) together
+inside WSL, then open `http://localhost:3000` from Windows. API requests and report
+download/export links use the browser's current origin by default. Vite proxies
+`/api` requests to `http://127.0.0.1:5001` inside WSL.
+
+To call an API directly, set `VITE_API_BASE_URL` in `frontend/.env.local` (or the
+environment used to start Vite) and restart Vite. A nonempty value overrides the
+default in both development and production and bypasses the local proxy when it
+points to another server. Use the backend base URL, for example
+`VITE_API_BASE_URL=http://localhost:5001`, without appending `/api`; endpoint paths
+already include it. Production builds default to `http://localhost:5001` when no
+override is set. The browser startup console logs the effective API base URL.
+
+Run the frontend request checks and production build using installed packages in WSL:
+
+```bash
+node frontend/tests/ontology-request.mjs
+npm run build
+```
+
 > 💡 **Important:** The startup process automatically checks for missing dependencies. You must wait until the terminal explicitly outputs **`Debugger is active`**—this log confirms the Python backend has successfully initialized and is ready to intercept actions.

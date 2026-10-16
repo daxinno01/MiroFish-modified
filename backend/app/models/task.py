@@ -142,6 +142,10 @@ class TaskManager:
                 if progress_detail is not None:
                     task.progress_detail = progress_detail
     
+        if task:
+            from ..services.recording import RecordingStore
+            RecordingStore.task(task)
+
     def complete_task(self, task_id: str, result: Dict):
         """标记任务完成"""
         self.update_task(

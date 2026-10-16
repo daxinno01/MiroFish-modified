@@ -158,6 +158,12 @@ class LocalGraphBuilderService:
                 )
 
             self.store.upsert_relations(relations)
+            from .recording import RecordingStore
+            try:
+                if RecordingStore.draft(project_id) is not None:
+                    RecordingStore.graph(project_id, self.get_graph_data(graph_id))
+            except Exception as capture_error:
+                RecordingStore.failure(project_id, str(capture_error))
 
         if progress_callback:
             progress_callback("读取图谱数据...", 0.95)

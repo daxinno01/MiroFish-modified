@@ -396,6 +396,8 @@ class SimulationRunner:
         os.replace(tmp_file, state_file)
         
         cls._run_states[state.simulation_id] = state
+        from .recording import RecordingStore
+        RecordingStore.simulation(state)
     
     @classmethod
     def start_simulation(
@@ -771,6 +773,8 @@ class SimulationRunner:
                             # 处理事件类型的条目
                             if "event_type" in action_data:
                                 event_type = action_data.get("event_type")
+                                from .recording import RecordingStore
+                                RecordingStore.simulation(state, "round_event", {**action_data, "platform": platform})
                                 
                                 # 检测 simulation_end 事件，标记平台已完成
                                 if event_type == "simulation_end":
@@ -833,6 +837,8 @@ class SimulationRunner:
                                 success=action_data.get("success", True),
                             )
                             state.add_action(action)
+                            from .recording import RecordingStore
+                            RecordingStore.simulation(state, "action", action.to_dict())
                             
                             # 更新轮次
                             if action.round_num and action.round_num > state.current_round:
@@ -1343,6 +1349,16 @@ class SimulationRunner:
         
         for simulation_id, process in processes:
             try:
+                if simulation_id in cls._interaction_processes:
+                    if process.poll() is None:
+                        process.terminate()
+                        try:
+                            process.wait(timeout=5)
+                        except subprocess.TimeoutExpired:
+                            process.kill()
+                    # Playback status belongs to the session clock; closing
+                    # its live interview process must not alter saved rounds.
+                    continue
                 if process.poll() is None:  # 进程仍在运行
                     logger.info(f"终止模拟进程: {simulation_id}, pid={process.pid}")
                     
@@ -1492,6 +1508,58 @@ class SimulationRunner:
     # ============== Interview 功能 ==============
     
     @classmethod
+    def ensure_interaction_runner(cls, simulation_id: str):
+        """Open copied OASIS state for IPC interviews, without running any rounds."""
+        from .replay import ReplayStore, _lock as replay_lock
+        session = ReplayStore.lookup(simulation_id)
+        if session is None:
+            return
+        if ReplayStore.position(session, "report") < 1:
+            raise ValueError("Complete saved report playback before interviewing agents")
+        with replay_lock:
+            process = cls._processes.get(simulation_id)
+            if process is None or process.poll() is not None:
+                sim_dir = os.path.join(cls.RUN_STATE_DIR, simulation_id)
+                from .recording import atomic_json, read_json
+                atomic_json(os.path.join(sim_dir, "env_status.json"), {"status": "starting"})
+                config = read_json(os.path.join(sim_dir, "state.json"))
+                cmd = [sys.executable, os.path.join(cls.SCRIPTS_DIR, "run_parallel_simulation.py"),
+                       "--config", os.path.join(sim_dir, "simulation_config.json"), "--interaction-only"]
+                if not config.get("enable_twitter", True):
+                    cmd.append("--reddit-only")
+                elif not config.get("enable_reddit", True):
+                    cmd.append("--twitter-only")
+                env = os.environ.copy()
+                env.update(PYTHONUTF8="1", PYTHONIOENCODING="utf-8", SIMULATION_ID=simulation_id,
+                           LLM_PROJECT_ID=session["project_id"], LLM_STEP_NAME="step5")
+                if Config.USE_MOCK_LLM:
+                    env.update(LLM_API_KEY=Config.LLM_API_KEY, LLM_BASE_URL=Config.LLM_BASE_URL,
+                               OPENAI_API_KEY=Config.LLM_API_KEY, OPENAI_API_BASE_URL=Config.LLM_BASE_URL)
+                log_file = open(os.path.join(sim_dir, "interaction.log"), "a", encoding="utf-8")
+                try:
+                    process = subprocess.Popen(cmd, cwd=sim_dir, env=env, stdout=log_file,
+                                               stderr=subprocess.STDOUT, start_new_session=True)
+                except Exception:
+                    log_file.close()
+                    raise
+                old_log = cls._stdout_files.get(simulation_id)
+                if old_log:
+                    old_log.close()
+                cls._stdout_files[simulation_id] = log_file
+                cls._processes[simulation_id] = process
+                cls._interaction_processes.add(simulation_id)
+        deadline = time.time() + 45
+        while time.time() < deadline:
+            if process.poll() is not None:
+                raise ValueError("Saved interaction runner failed to start; see interaction.log")
+            if cls.check_env_alive(simulation_id):
+                return
+            time.sleep(0.2)
+        raise TimeoutError("Saved interaction runner is still starting; retry the request")
+
+    _interaction_processes = set()
+
+    @classmethod
     def check_env_alive(cls, simulation_id: str) -> bool:
         """
         检查模拟环境是否存活（可以接收Interview命令）
@@ -1502,6 +1570,10 @@ class SimulationRunner:
         Returns:
             True 表示环境存活，False 表示环境已关闭
         """
+        if simulation_id.startswith("rsim_"):
+            process = cls._processes.get(simulation_id)
+            if process is None or process.poll() is not None:
+                return False
         sim_dir = os.path.join(cls.RUN_STATE_DIR, simulation_id)
         if not os.path.exists(sim_dir):
             return False

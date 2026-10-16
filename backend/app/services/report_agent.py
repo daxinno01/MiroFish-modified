@@ -96,6 +96,8 @@ class ReportLogger:
         # 追加写入 JSONL 文件
         with open(self.log_file_path, 'a', encoding='utf-8') as f:
             f.write(json.dumps(log_entry, ensure_ascii=False) + '\n')
+        from .recording import RecordingStore
+        RecordingStore.report_progress(self.report_id, 'agent_log', log_entry)
     
     def log_start(self, simulation_id: str, graph_id: str, simulation_requirement: str):
         """记录报告生成开始"""
@@ -342,7 +344,13 @@ class ReportConsoleLogger:
         import logging
         
         # 创建文件处理器
-        self._file_handler = logging.FileHandler(
+        from .recording import RecordingStore
+        report_id = self.report_id
+        class RecordingFileHandler(logging.FileHandler):
+            def emit(handler, record):
+                super().emit(record)
+                RecordingStore.report_progress(report_id, "console_log", handler.format(record))
+        self._file_handler = RecordingFileHandler(
             self.log_file_path,
             mode='a',
             encoding='utf-8'
@@ -538,6 +546,11 @@ class ReportAgent:
             )
         # 默认计费标签设为 step4 (报告生成)
         self.llm.step = 'step4'
+        from .replay import ReplayStore
+        replay_session = ReplayStore.lookup(simulation_id)
+        if replay_session and zep_tools is None:
+            from .replay_tools import SavedToolsService
+            zep_tools = SavedToolsService(replay_session)
         self.zep_tools = zep_tools or get_tools_service()
         
         # 工具定义
@@ -2155,6 +2168,8 @@ class ReportManager:
         
         with open(cls._get_outline_path(report_id), 'w', encoding='utf-8') as f:
             json.dump(outline.to_dict(), f, ensure_ascii=False, indent=2)
+        from .recording import RecordingStore
+        RecordingStore.report_progress(report_id, "outline", outline.to_dict())
         
         logger.info(f"大纲已保存: {report_id}")
 
@@ -2261,6 +2276,8 @@ class ReportManager:
             f.write(md_content)
         
         logger.info(f"章节已保存: {report_id}/{file_suffix}")
+        from .recording import RecordingStore
+        RecordingStore.report_progress(report_id, "sections", cls.get_generated_sections(report_id))
         return file_path
     
     @classmethod
@@ -2305,6 +2322,8 @@ class ReportManager:
             f.write(md_content)
         
         logger.info(f"章节已保存（含{len(subsection_contents)}个子章节）: {report_id}/{file_suffix}")
+        from .recording import RecordingStore
+        RecordingStore.report_progress(report_id, "sections", cls.get_generated_sections(report_id))
         return file_path
     
     @classmethod
@@ -2403,6 +2422,9 @@ class ReportManager:
         
         with open(cls._get_progress_path(report_id), 'w', encoding='utf-8') as f:
             json.dump(progress_data, f, ensure_ascii=False, indent=2)
+        from .recording import RecordingStore
+        RecordingStore.report_progress(report_id, "progress", progress_data)
+        RecordingStore.report_progress(report_id, "sections", cls.get_generated_sections(report_id))
     
     @classmethod
     def get_progress(cls, report_id: str) -> Optional[Dict[str, Any]]:
@@ -2630,6 +2652,9 @@ class ReportManager:
         
         logger.info(f"报告已保存: {report.report_id}")
     
+        from .recording import RecordingStore
+        RecordingStore.finish(report)
+
     @classmethod
     def save_translated_report(cls, report_id: str, translated_html: str) -> None:
         """保存报告元信息和完整报告"""

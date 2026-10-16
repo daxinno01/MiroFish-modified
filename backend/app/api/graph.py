@@ -2,14 +2,13 @@
 图谱相关API路由
 采用项目上下文机制，服务端持久化状态
 """
-import sys
-import platform
-from datetime import datetime
+import time
 import json
 import os
 import traceback
 import threading
 from flask import request, jsonify
+from openai import APIError, APITimeoutError, APIConnectionError, AuthenticationError, RateLimitError
 import base64
 
 from . import graph_bp
@@ -20,6 +19,7 @@ from ..services.text_processor import TextProcessor
 from ..utils.file_parser import FileParser
 from ..utils.multimodal_processor import MultimodalProcessor
 from ..utils.logger import get_logger
+from ..utils.llm_client import InvalidLLMResponse, LLMClient
 from ..models.task import TaskManager, TaskStatus
 from ..models.project import ProjectManager, ProjectStatus
 
@@ -201,8 +201,10 @@ def generate_ontology():
             }
         }
     """
-    print("--- FORM DATA RECEIVED ---")
-    print(request.form) # This will show all non-file fields
+    project = None
+    started = time.monotonic()
+    endpoint = LLMClient.sanitized_endpoint(LLMClient._normalize_base_url(Config.EXTRACT_BASE_URL))
+    logger.info("Ontology request start model=%s endpoint=%s", Config.EXTRACT_MODEL_NAME, endpoint)
     try:
         logger.info("=== 开始生成本体定义 ===")
 
@@ -221,8 +223,6 @@ def generate_ontology():
         except Exception as e:
             logger.warning(f"解析 file_metadata 失败: {e}")
 
-        logger.debug(f"项目名称: {project_name}")
-        logger.debug(f"模拟需求: {simulation_requirement[:100]}...")
 
         if not simulation_requirement:
             return jsonify({
@@ -260,7 +260,10 @@ def generate_ontology():
         
         # 创建项目
         project = ProjectManager.create_project(name=project_name)
+        project.recording_inputs = {key: request.form.get(key) for key in ("project_name", "simulation_requirement", "additional_context", "file_metadata")}
+        project.record_run = request.form.get("record_run", "false").lower() == "true"
         project.simulation_requirement = simulation_requirement
+        ProjectManager.save_project(project)
         image_parser = MultimodalProcessor(project_id=project.project_id)
         logger.info(f"创建项目: {project.project_id}")
         
@@ -283,6 +286,10 @@ def generate_ontology():
                 logger.info(f"Analyzing {file.filename}...")
 
                 file_bytes = file.read()
+                if project.record_run:
+                    file.stream.seek(0)
+                    original_image = ProjectManager.save_file_to_project(project.project_id, file, file.filename)
+                    project.recording_inputs.setdefault("image_files", []).append(original_image)
                 base64_image = base64.b64encode(file_bytes).decode('utf-8')
 
                 text = image_parser.describe_image(
@@ -290,7 +297,6 @@ def generate_ontology():
                     short_tag=file_metadata.get('description', '')
                 )
 
-                print(text)
 
                 file_info = ProjectManager.save_text_to_project(
                     project.project_id, 
@@ -321,7 +327,9 @@ def generate_ontology():
             all_text += f"\n\n=== {file_info['original_filename']} ===\n{text}"
         
         if not document_texts:
-            ProjectManager.delete_project(project.project_id)
+            project.status = ProjectStatus.FAILED
+            project.error = "No documents could be processed. Check the file formats."
+            ProjectManager.save_project(project)
             return jsonify({
                 "success": False,
                 "error": "没有成功处理任何文档，请检查文件格式"
@@ -330,6 +338,7 @@ def generate_ontology():
         # 保存提取的文本
         project.total_text_length = len(all_text)
         ProjectManager.save_extracted_text(project.project_id, all_text)
+        ProjectManager.save_project(project)
         logger.info(f"文本提取完成，共 {len(all_text)} 字符")
         
         # 生成本体
@@ -367,47 +376,48 @@ def generate_ontology():
             }
         })
         
-    except Exception as e:
-            # 获取完整异常信息
-        exc_type = type(e).__name__
-        exc_msg = str(e)
-        exc_tb = traceback.format_exc()
-        
-        # 记录详细日志到服务器
-        logger.error(f"=== 生成本体失败 ===")
-        logger.error(f"时间: {datetime.now().isoformat()}")
-        logger.error(f"异常类型: {exc_type}")
-        logger.error(f"异常消息: {exc_msg}")
-        logger.error(f"堆栈跟踪:\n{exc_tb}")
-        logger.error(f"Python版本: {sys.version}")
-        logger.error(f"平台: {platform.platform()}")
-        
-        # 获取请求信息（脱敏）
-        req_info = {
-            "method": request.method,
-            "path": request.path,
-            "content_type": request.content_type,
-            "form_keys": list(request.form.keys()) if request.form else [],
-            "files_count": len(request.files) if request.files else 0,
-            # 注意：不要记录敏感信息如 API key
-        }
-        logger.error(f"请求信息: {req_info}")
-        
+    except Exception as exc:
+        status = 500
+        if isinstance(exc, APITimeoutError):
+            status = 504
+            message = "Ontology provider timed out (90-second timeout per call). Check your projects before trying again."
+        elif isinstance(exc, AuthenticationError):
+            status = 502
+            message = "Ontology provider authentication failed. Check the configured API credentials."
+        elif isinstance(exc, RateLimitError):
+            status = 502
+            message = "Ontology provider rate limit or quota exceeded. Check the provider quota before trying again."
+        elif isinstance(exc, APIConnectionError):
+            status = 502
+            message = "Could not connect to the ontology provider. Check the configured endpoint and network connection."
+        elif isinstance(exc, APIError):
+            status = 502
+            upstream_status = getattr(exc, 'status_code', None)
+            detail = f" (HTTP {upstream_status})" if upstream_status else ""
+            message = f"Ontology provider request failed{detail}. Check the provider configuration and availability."
+        elif isinstance(exc, InvalidLLMResponse):
+            status = 502
+            message = "Ontology provider returned an unusable response. Try again or check the configured model."
+        else:
+            message = "Ontology generation failed while processing the project. Check the backend configuration and files."
+
+        logger.error("Ontology request failed elapsed=%.2fs model=%s endpoint=%s exception=%s",
+                     time.monotonic() - started, Config.EXTRACT_MODEL_NAME, endpoint, type(exc).__name__)
+        if project is not None:
+            project.status = ProjectStatus.FAILED
+            project.error = message
+            try:
+                ProjectManager.save_project(project)
+            except Exception as save_exc:
+                logger.error("Could not persist failed project exception=%s", type(save_exc).__name__)
         return jsonify({
             "success": False,
-            "error": f"{exc_type}: {exc_msg}",
-            "traceback": exc_tb,  # 开发环境保留，生产环境建议移除
-            "debug": {
-                "python_version": sys.version,
-                "platform": platform.platform(),
-                "timestamp": datetime.now().isoformat(),
-                # 可选：记录请求参数摘要（脱敏）
-                "request_summary": {
-                  "has_simulation_requirement":bool(request.form.get('simulation_requirement')),
-                  "files_uploaded": len(request.files) if request.files else 0,
-                }
-            }
-        }), 500
+            "data": {"project_id": project.project_id} if project else None,
+            "error": message
+        }), status
+    finally:
+        logger.info("Ontology request finished elapsed=%.2fs model=%s endpoint=%s",
+                    time.monotonic() - started, Config.EXTRACT_MODEL_NAME, endpoint)
 
 
 # ============== 接口2：构建图谱 ==============
@@ -520,7 +530,7 @@ def build_graph():
         
         # 创建异步任务
         task_manager = TaskManager()
-        task_id = task_manager.create_task(f"构建图谱: {graph_name}")
+        task_id = task_manager.create_task(f"构建图谱: {graph_name}", metadata={"project_id": project_id, "recording_stage": "graph"})
         logger.info(f"创建图谱构建任务: task_id={task_id}, project_id={project_id}")
         
         # 更新项目状态
@@ -584,6 +594,12 @@ def build_graph():
                     task_manager.update_task(task_id, message="等待Zep处理数据...", progress=55)
 
                     def wait_progress_callback(msg, progress_ratio):
+                        from ..services.recording import RecordingStore
+                        if project.record_run:
+                            try:
+                                RecordingStore.graph(project_id, builder.get_graph_data(graph_id))
+                            except Exception as capture_error:
+                                RecordingStore.failure(project_id, str(capture_error))
                         progress = 55 + int(progress_ratio * 35)  # 55% - 90%
                         task_manager.update_task(task_id, message=msg, progress=progress)
 
@@ -593,6 +609,8 @@ def build_graph():
                     graph_data = builder.get_graph_data(graph_id)
 
                 # 更新项目的graph_id
+                from ..services.recording import RecordingStore
+                RecordingStore.graph(project_id, graph_data)
                 project.graph_id = graph_id
                 ProjectManager.save_project(project)
                 

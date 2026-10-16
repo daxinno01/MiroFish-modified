@@ -125,7 +125,9 @@ def main():
     
     # 验证配置
     errors = Config.validate()
-    if errors:
+    from app.services.recording import RecordingStore
+    replay_available = any(item.get("ready") for item in RecordingStore.list()["recordings"]) if errors else False
+    if errors and not replay_available:
         print("配置错误:")
         for err in errors:
             print(f"  - {err}")
@@ -133,7 +135,10 @@ def main():
         sys.exit(1)
     
     # 自动启动 Mock 服务器
-    start_mock_server()
+    if not errors:
+        start_mock_server()
+    else:
+        logger.warning("Live analysis configuration is unavailable; saved simulations remain usable")
 
     
     # 创建应用

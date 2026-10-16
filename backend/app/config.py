@@ -4,6 +4,7 @@
 """
 
 import os
+import math
 from dotenv import load_dotenv
 
 # 加载项目根目录的 .env 文件
@@ -25,6 +26,10 @@ class Config:
     # - local: Neo4j + Qdrant（本地化存储）
     GRAPH_BACKEND = os.environ.get('GRAPH_BACKEND', 'local').lower()
     VECTOR_BACKEND = os.environ.get('VECTOR_BACKEND', 'qdrant').lower()  # qdrant | none
+
+    SAVED_SIMULATION_STAGE_SECONDS = float(os.environ.get("SAVED_SIMULATION_STAGE_SECONDS", "10"))
+    if not math.isfinite(SAVED_SIMULATION_STAGE_SECONDS) or SAVED_SIMULATION_STAGE_SECONDS < 0:
+        raise ValueError("SAVED_SIMULATION_STAGE_SECONDS must be finite and nonnegative")
 
     # Flask配置
     SECRET_KEY = os.environ.get('SECRET_KEY', 'mirofish-secret-key')

@@ -50,6 +50,10 @@ class Project:
     chunk_overlap: int = 50
     
     # 错误信息
+    recording_inputs: Dict[str, Any] = field(default_factory=dict)
+    record_run: bool = False
+    run_mode: str = "live"
+    replay_id: Optional[str] = None
     error: Optional[str] = None
     
     def to_dict(self) -> Dict[str, Any]:
@@ -72,6 +76,10 @@ class Project:
             "simulation_requirement": self.simulation_requirement,
             "chunk_size": self.chunk_size,
             "chunk_overlap": self.chunk_overlap,
+            "recording_inputs": self.recording_inputs,
+            "record_run": self.record_run,
+            "run_mode": self.run_mode,
+            "replay_id": self.replay_id,
             "error": self.error,
             "token_usage": aggregated_usage  # 现在返回的是聚合后的数据
         }
@@ -98,6 +106,10 @@ class Project:
             simulation_requirement=data.get('simulation_requirement'),
             chunk_size=data.get('chunk_size', 500),
             chunk_overlap=data.get('chunk_overlap', 50),
+            recording_inputs=data.get('recording_inputs', {}),
+            record_run=data.get('record_run', False),
+            run_mode=data.get('run_mode', 'live'),
+            replay_id=data.get('replay_id'),
             error=data.get('error')
         )
 
@@ -176,6 +188,9 @@ class ProjectManager:
         
         with open(meta_path, 'w', encoding='utf-8') as f:
             json.dump(project.to_dict(), f, ensure_ascii=False, indent=2)
+        if project.record_run and project.run_mode != 'saved':
+            from ..services.recording import RecordingStore
+            RecordingStore.project(project)
     
     @classmethod
     def get_project(cls, project_id: str) -> Optional[Project]:

@@ -401,6 +401,8 @@ class ZepGraphMemoryUpdater:
                     data=combined_text
                 )
                 
+                from .recording import RecordingStore
+                RecordingStore.memory_graph(self.graph_id)
                 self._total_sent += 1
                 self._total_items_sent += len(activities)
                 logger.info(f"成功批量发送 {len(activities)} 条{platform}活动到图谱 {self.graph_id}")

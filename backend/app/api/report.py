@@ -104,6 +104,8 @@ def generate_report():
         )
         
         # 【核心改动 1】显式捕获当前的全局 Flask 实例对象，用于穿透线程隔离
+        from ..services.recording import RecordingStore
+        RecordingStore.report_event(simulation_id, report_id, "started", {"report_id": report_id})
         flask_app = current_app._get_current_object()
         
         # 定义后台任务
