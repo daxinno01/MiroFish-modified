@@ -1,0 +1,19 @@
+{
+  "simulation_id": "sim_ab4462a127b8",
+  "project_id": "proj_054ad62322aa",
+  "graph_id": "mirofish_local_17c7ce1487674c54",
+  "enable_twitter": true,
+  "enable_reddit": true,
+  "status": "created",
+  "entities_count": 0,
+  "profiles_count": 0,
+  "entity_types": [],
+  "config_generated": false,
+  "config_reasoning": "",
+  "current_round": 0,
+  "twitter_status": "not_started",
+  "reddit_status": "not_started",
+  "created_at": "2026-10-15T12:30:47.774721",
+  "updated_at": "2026-10-15T12:30:47.781128",
+  "error": null
+}

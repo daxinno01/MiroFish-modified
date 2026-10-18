@@ -54,11 +54,11 @@ backend/logs/
 
 # 上传文件
 #backend/uploads/
-backend/uploads/recordings/
-backend/uploads/replays/
-backend/uploads/projects/rproj_*/
-backend/uploads/simulations/rsim_*/
-backend/uploads/reports/rreport_*/
+# backend/uploads/recordings/
+# backend/uploads/replays/
+# backend/uploads/projects/rproj_*/
+# backend/uploads/simulations/rsim_*/
+# backend/uploads/reports/rreport_*/
 
 # Docker 数据
 data/

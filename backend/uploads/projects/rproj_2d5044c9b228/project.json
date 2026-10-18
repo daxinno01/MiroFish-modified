@@ -1,0 +1,366 @@
+{
+  "project_id": "rproj_2d5044c9b228",
+  "name": "Unnamed Project",
+  "status": "graph_completed",
+  "created_at": "2026-10-15T23:25:29.444069",
+  "updated_at": "2026-10-15T23:32:41.336369",
+  "files": [
+    {
+      "filename": "DBS Background & Context.pdf",
+      "size": 278790
+    },
+    {
+      "filename": "LinkedIn Post.txt",
+      "size": 1130
+    },
+    {
+      "filename": "personas.md",
+      "size": 22310
+    }
+  ],
+  "total_text_length": 48302,
+  "ontology": {
+    "entity_types": [
+      {
+        "name": "BankExecutive",
+        "description": "Senior corporate officers and C-suite executives of financial institutions",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "Full name of the executive"
+          },
+          {
+            "name": "position",
+            "type": "text",
+            "description": "Job title or corporate position"
+          }
+        ],
+        "examples": [
+          "Tan Su Shan",
+          "Eugene Huang",
+          "Mallya Ramesh"
+        ]
+      },
+      {
+        "name": "CorporateClient",
+        "description": "Business owners, corporate leaders, and commercial enterprise representatives",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "Name of the business owner or representative"
+          },
+          {
+            "name": "business_type",
+            "type": "text",
+            "description": "Industry or operational domain of the enterprise"
+          }
+        ],
+        "examples": [
+          "Hyper-Local F&B Owner",
+          "Mid-Market Manufacturing CFO"
+        ]
+      },
+      {
+        "name": "WealthClient",
+        "description": "High-net-worth individuals, private banking clients, and asset managers",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "Name of the private wealth client"
+          },
+          {
+            "name": "portfolio_tier",
+            "type": "text",
+            "description": "Level of wealth management tier"
+          }
+        ],
+        "examples": [
+          "Treasures Private Client",
+          "Family Office Asset Manager"
+        ]
+      },
+      {
+        "name": "RetailCustomer",
+        "description": "Standard retail banking users, everyday consumers, and gig economy workers",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "Name of the retail account holder"
+          },
+          {
+            "name": "occupation",
+            "type": "text",
+            "description": "Profession or daily occupation"
+          }
+        ],
+        "examples": [
+          "Primary School Teacher",
+          "Ride-Hailing Driver"
+        ]
+      },
+      {
+        "name": "TechProfessional",
+        "description": "Software engineers, tech product managers, cybersecurity analysts, and IT experts",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "Name of the technology professional"
+          },
+          {
+            "name": "expertise_domain",
+            "type": "text",
+            "description": "Specialized technical field"
+          }
+        ],
+        "examples": [
+          "Neelkamal Semwal",
+          "FinTech Product Manager"
+        ]
+      },
+      {
+        "name": "MediaCommentator",
+        "description": "Journalists, thought leaders, content creators, and public social media influencers",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "Name or pseudonym of the commentator"
+          },
+          {
+            "name": "platform_role",
+            "type": "text",
+            "description": "Primary role in public opinion dissemination"
+          }
+        ],
+        "examples": [
+          "Professional LinkedIn Thought Leader",
+          "Viral Meme Page Administrator"
+        ]
+      },
+      {
+        "name": "BankEmployee",
+        "description": "Internal staff, customer service representatives, compliance officers, and engineers working at t...",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "Name of the bank employee"
+          },
+          {
+            "name": "department",
+            "type": "text",
+            "description": "Internal department or operational unit"
+          }
+        ],
+        "examples": [
+          "Customer Contact Center Operations Lead",
+          "Core Banking Site Reliability Engineer"
+        ]
+      },
+      {
+        "name": "RegulatoryObserver",
+        "description": "Financial regulators, equity research analysts, market observers, and competitor executives",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "Name of the observer or analyst"
+          },
+          {
+            "name": "institution_type",
+            "type": "text",
+            "description": "Regulatory or analytical organization represented"
+          }
+        ],
+        "examples": [
+          "Institutional Equity Research Analyst",
+          "Financial Journalist"
+        ]
+      },
+      {
+        "name": "Person",
+        "description": "Fallback entity type for any natural person individual not matching specific roles",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "Full name of the individual"
+          },
+          {
+            "name": "description",
+            "type": "text",
+            "description": "Brief description of the person"
+          }
+        ],
+        "examples": [
+          "Passerby A",
+          "General Netizen"
+        ]
+      },
+      {
+        "name": "Organization",
+        "description": "Fallback entity type for any corporate or institutional organization not matching specific types",
+        "attributes": [
+          {
+            "name": "org_name",
+            "type": "text",
+            "description": "Official name of the organization"
+          },
+          {
+            "name": "industry",
+            "type": "text",
+            "description": "Industry sector of the organization"
+          }
+        ],
+        "examples": [
+          "DBS Bank",
+          "AMD Singapore"
+        ]
+      }
+    ],
+    "edge_types": [
+      {
+        "name": "WORKS_FOR",
+        "description": "Represents employment relationship between an individual and an organization",
+        "source_targets": [
+          {
+            "source": "BankExecutive",
+            "target": "Organization"
+          },
+          {
+            "source": "TechProfessional",
+            "target": "Organization"
+          },
+          {
+            "source": "BankEmployee",
+            "target": "Organization"
+          },
+          {
+            "source": "Person",
+            "target": "Organization"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "COMMENTS_ON",
+        "description": "Represents a public commentary or reply made by an entity toward a post, event, or another entity",
+        "source_targets": [
+          {
+            "source": "BankExecutive",
+            "target": "TechProfessional"
+          },
+          {
+            "source": "TechProfessional",
+            "target": "BankExecutive"
+          },
+          {
+            "source": "MediaCommentator",
+            "target": "Organization"
+          },
+          {
+            "source": "Person",
+            "target": "Organization"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "RESPONDS_TO",
+        "description": "Represents direct communication or customer service engagement addressing an issue",
+        "source_targets": [
+          {
+            "source": "BankExecutive",
+            "target": "CorporateClient"
+          },
+          {
+            "source": "BankEmployee",
+            "target": "RetailCustomer"
+          },
+          {
+            "source": "BankExecutive",
+            "target": "TechProfessional"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "CRITICIZES",
+        "description": "Represents public expressions of dissatisfaction, complaint, or critique against an institution",
+        "source_targets": [
+          {
+            "source": "CorporateClient",
+            "target": "Organization"
+          },
+          {
+            "source": "RetailCustomer",
+            "target": "Organization"
+          },
+          {
+            "source": "TechProfessional",
+            "target": "Organization"
+          },
+          {
+            "source": "MediaCommentator",
+            "target": "Organization"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "REGULATES",
+        "description": "Represents regulatory oversight or auditing authority over financial institutions",
+        "source_targets": [
+          {
+            "source": "RegulatoryObserver",
+            "target": "Organization"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "COLLABORATES_WITH",
+        "description": "Represents professional partnerships or business collaborations between entities",
+        "source_targets": [
+          {
+            "source": "CorporateClient",
+            "target": "Organization"
+          },
+          {
+            "source": "WealthClient",
+            "target": "Organization"
+          }
+        ],
+        "attributes": []
+      }
+    ]
+  },
+  "analysis_summary": "本图谱本体设计针对DBS银行LinkedIn高管互动及数字化故障事件的舆情模拟系统构建。设计严格满足10个实体类型（包含8个特定角色类型与2个兜底类型Person、Organization）及6个核心社交媒体互动关系类型，能够全面支撑企业高管、企业客户、财富客户、散户、技术人员、媒体评论员、内部员工及监管观察员等多方主体的行为模拟与信息传播路径分析。",
+  "graph_id": "rgraph_b64c0f31f73f",
+  "graph_build_task_id": "rtask_3f9b98604efd",
+  "simulation_requirement": "Predict the public sentiment and perception trajectory resulting from the high-stakes LinkedIn interaction detailed in the attached files.\r\n\r\n### Input Context Files:\r\n1. **DBS Background & Context.pdf**: Provides critical background information on DBS Bank, including its institutional footprint, regional market position, and operational baseline.\r\n2. **LinkedIn Post.txt**: Contains the raw text and thread data of the core event—detailing the unresolved customer complaint and CEO Tan Su Shan’s direct response.\r\n3. **personas.md**: A baseline initialization file containing a diversified list of personas. Use these profiles for structural inspiration, but do NOT limit the simulation to this set. Dynamically generate and scale out additional relevant personas (e.g., macro-regulators, regional fintech competitors, secondary network nodes) as the interaction evolves to ensure a highly organic, non-monoculture swarm.\r\n\r\n### Simulation Requirements:\r\n* \\\"personas.md\\\" should serve only as a guide and the personas generated should not be limited to this list. Try to create multiple indidividuals within each group representing different ways of thinking and looking at things.\r\n\r\n### Simulation Report Output Schema:\r\nThe final report generated from this prediction must be structured exactly as follows:\r\n\r\n1. **EXECUTIVE SUMMARY OF THE PREDICTION** (Place this at the absolute beginning for instant visibility):\r\n   - **Majority Perception**: The overarching, dominant consensus that crystallizes among the public swarm.\r\n   - **Major Events & Inflection Points**: Highlight the critical remarks, viral spin-offs, or specific agent interactions that shifted sentiment momentum during the simulation.\r\n   - **Simulation Conclusion**: A definitive binary/ternary verdict stating whether the final net outcome is structurally Positive, Neutral, or Negative for the bank's brand equity and leadership perception.\r\n\r\n2. **TEMPORAL SENTIMENT TRENDS**\r\n   - A chronological breakdown tracking how waves of opinions shift from the initial post deployment to peak virality and eventual cooling-off periods.\r\n\r\n3. **GRANULAR CLUSTER ANALYSIS**\r\n   - Detailed observations on how specific segments (e.g., SME Owners vs. Wealth Clients vs. Netizen Critics vs. Internal Employees) diverged or formed coalitions.\r\n\r\n4. **STRATEGIC NEXT STEPS & ACTION ITEMS**\r\n   - A definitive list of data-driven recommendations, risk-mitigation tactics, and communication adjustments for executive leadership based on the specific operational and PR pain points exposed during the simulation run.",
+  "chunk_size": 500,
+  "chunk_overlap": 50,
+  "recording_inputs": {
+    "project_name": null,
+    "simulation_requirement": "Predict the public sentiment and perception trajectory resulting from the high-stakes LinkedIn interaction detailed in the attached files.\r\n\r\n### Input Context Files:\r\n1. **DBS Background & Context.pdf**: Provides critical background information on DBS Bank, including its institutional footprint, regional market position, and operational baseline.\r\n2. **LinkedIn Post.txt**: Contains the raw text and thread data of the core event—detailing the unresolved customer complaint and CEO Tan Su Shan’s direct response.\r\n3. **personas.md**: A baseline initialization file containing a diversified list of personas. Use these profiles for structural inspiration, but do NOT limit the simulation to this set. Dynamically generate and scale out additional relevant personas (e.g., macro-regulators, regional fintech competitors, secondary network nodes) as the interaction evolves to ensure a highly organic, non-monoculture swarm.\r\n\r\n### Simulation Requirements:\r\n* \\\"personas.md\\\" should serve only as a guide and the personas generated should not be limited to this list. Try to create multiple indidividuals within each group representing different ways of thinking and looking at things.\r\n\r\n### Simulation Report Output Schema:\r\nThe final report generated from this prediction must be structured exactly as follows:\r\n\r\n1. **EXECUTIVE SUMMARY OF THE PREDICTION** (Place this at the absolute beginning for instant visibility):\r\n   - **Majority Perception**: The overarching, dominant consensus that crystallizes among the public swarm.\r\n   - **Major Events & Inflection Points**: Highlight the critical remarks, viral spin-offs, or specific agent interactions that shifted sentiment momentum during the simulation.\r\n   - **Simulation Conclusion**: A definitive binary/ternary verdict stating whether the final net outcome is structurally Positive, Neutral, or Negative for the bank's brand equity and leadership perception.\r\n\r\n2. **TEMPORAL SENTIMENT TRENDS**\r\n   - A chronological breakdown tracking how waves of opinions shift from the initial post deployment to peak virality and eventual cooling-off periods.\r\n\r\n3. **GRANULAR CLUSTER ANALYSIS**\r\n   - Detailed observations on how specific segments (e.g., SME Owners vs. Wealth Clients vs. Netizen Critics vs. Internal Employees) diverged or formed coalitions.\r\n\r\n4. **STRATEGIC NEXT STEPS & ACTION ITEMS**\r\n   - A definitive list of data-driven recommendations, risk-mitigation tactics, and communication adjustments for executive leadership based on the specific operational and PR pain points exposed during the simulation run.",
+    "additional_context": null,
+    "file_metadata": "[{\"name\":\"DBS Background & Context.pdf\",\"isImage\":false,\"description\":\"\"},{\"name\":\"LinkedIn Post.txt\",\"isImage\":false,\"description\":\"\"},{\"name\":\"personas.md\",\"isImage\":false,\"description\":\"\"}]"
+  },
+  "record_run": false,
+  "run_mode": "saved",
+  "replay_id": "replay_d4ac890a5bd7",
+  "error": null,
+  "token_usage": {
+    "prompt_tokens": 78161,
+    "completion_tokens": 16571,
+    "total_tokens": 94732,
+    "call_count": 132,
+    "last_updated": "2026-10-15T23:32:37.780729"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "simulation_id": "sim_ab4462a127b8",
+  "project_id": "proj_054ad62322aa",
+  "graph_id": "mirofish_local_17c7ce1487674c54",
+  "enable_twitter": true,
+  "enable_reddit": true,
+  "status": "ready",
+  "entities_count": 149,
+  "profiles_count": 149,
+  "entity_types": [
+    "Organization",
+    "BusinessOwner",
+    "Executive",
+    "WealthClient",
+    "BankEmployee",
+    "ProfessionalCustomer",
+    "Person"
+  ],
+  "config_generated": true,
+  "config_reasoning": "时间配置: The 72-hour window captures the immediate viral response to the CEO's LinkedIn interaction, the secondary wave of professional 'thought leader' analysis, and the institutional/regulatory cooling period. As this involves a mix of high-level executives (LinkedIn's core user base) and retail banking customers (POSB/PayLah! users), peak hours include the start of the Singapore business day (9 AM), lunch breaks (12-1 PM), and the evening peak (7-10 PM) where retail sentiment and netizen critiques typically surge. The agent count is scaled to allow for significant interaction among the 149 entities, ensuring that regulators and SME owners engage during work hours while retail personas dominate the evening discourse. | 事件配置: The selected posts represent a cross-section of the ecosystem: the CEO's direct response (Executive), the frustrated complainant (Person), the impacted business community (BusinessOwner), the internal perspective (BankEmployee), and the high-value client base (WealthClient). This setup ensures the simulation captures the 'non-monoculture swarm' requested, allowing the narrative to evolve through the tension between individual service recovery and systemic institutional reliability. | Agent配置: 成功生成 149 个 | 初始帖子分配: 7 个帖子已分配发布者",
+  "current_round": 0,
+  "twitter_status": "not_started",
+  "reddit_status": "not_started",
+  "created_at": "2026-10-15T12:30:47.774721",
+  "updated_at": "2026-10-15T12:49:01.737003",
+  "error": null
+}

@@ -1,0 +1,2315 @@
+{
+  "graph_id": "mirofish_local_a9e96a29e52341d9",
+  "nodes": [
+    {
+      "uuid": "ent_21d27833d0e86001",
+      "name": "DBS Group Holdings Ltd",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "Financial services group and banking organization.",
+      "attributes": {
+        "headquarters": "Singapore",
+        "source_entity_types": [
+          "Organization"
+        ]
+      },
+      "created_at": "2026-10-15T23:26:08.070251"
+    },
+    {
+      "uuid": "ent_00968d16a78ffd99",
+      "name": "Oversea-Chinese Banking Corporation (OCBC)",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "One of the Big Three local banks in Singapore",
+      "attributes": {
+        "source_entity_types": [
+          "Organization"
+        ]
+      },
+      "created_at": "2026-10-15T23:26:12.584117"
+    },
+    {
+      "uuid": "ent_047e1f426a2d1b9a",
+      "name": "United Overseas Bank (UOB)",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "One of the Big Three local banks in Singapore",
+      "attributes": {
+        "source_entity_types": [
+          "Organization"
+        ]
+      },
+      "created_at": "2026-10-15T23:26:12.584135"
+    },
+    {
+      "uuid": "ent_7778aa4575985334",
+      "name": "Temasek Holdings",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "Singapore's sovereign wealth fund and controlling shareholder of DBS",
+      "attributes": {
+        "source_entity_types": [
+          "Organization"
+        ]
+      },
+      "created_at": "2026-10-15T23:26:12.584140"
+    },
+    {
+      "uuid": "ent_ea145ee4d3b35b50",
+      "name": "The Development Bank of Singapore Limited (DBS)",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "Established on 16 July 1968 by the Government of Singapore.",
+      "attributes": {
+        "source_entity_types": [
+          "Organization"
+        ]
+      },
+      "created_at": "2026-10-15T23:26:18.714446"
+    },
+    {
+      "uuid": "ent_472e2c75fea31d5d",
+      "name": "Government of Singapore",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "Established The Development Bank of Singapore Limited on 16 July 1968.",
+      "attributes": {
+        "source_entity_types": [
+          "Organization"
+        ]
+      },
+      "created_at": "2026-10-15T23:26:18.714460"
+    },
+    {
+      "uuid": "ent_cba8a7e2fbfa79fc",
+      "name": "Dr. Goh Keng Swee",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "Finance Minister who directed the formation of the bank.",
+      "attributes": {
+        "source_entity_types": [
+          "Person"
+        ]
+      },
+      "created_at": "2026-10-15T23:26:22.395559"
+    },
+    {
+      "uuid": "ent_c60504615cee7bda",
+      "name": "Hon Sui Sen",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "First president and chairman of the bank.",
+      "attributes": {
+        "source_entity_types": [
+          "Person"
+        ]
+      },
+      "created_at": "2026-10-15T23:26:22.395578"
+    },
+    {
+      "uuid": "ent_4ba29e7ad81b1965",
+      "name": "Economic Development Board (EDB)",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "Board whose industrial financing responsibilities were taken over by the bank.",
+      "attributes": {
+        "source_entity_types": [
+          "Organization"
+        ]
+      },
+      "created_at": "2026-10-15T23:26:22.395584"
+    },
+    {
+      "uuid": "ent_b1333b399c1faf6c",
+      "name": "Jurong Shipyard",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "Foundational national project supported by the bank.",
+      "attributes": {
+        "source_entity_types": [
+          "Organization"
+        ]
+      },
+      "created_at": "2026-10-15T23:26:22.395588"
+    },
+    {
+      "uuid": "ent_b4cf2b22a2835c7e",
+      "name": "National Iron and Steel Mills",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "Foundational national project supported by the bank.",
+      "attributes": {
+        "source_entity_types": [
+          "Organization"
+        ]
+      },
+      "created_at": "2026-10-15T23:26:22.395592"
+    },
+    {
+      "uuid": "ent_07c4fef0eb4b8957",
+      "name": "DBS",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "Financial institution mentioned in the text.",
+      "attributes": {
+        "source_entity_types": [
+          "Organization"
+        ]
+      },
+      "created_at": "2026-10-15T23:26:25.590014"
+    },
+    {
+      "uuid": "ent_16cd5f751aee331a",
+      "name": "Post Office Savings Bank (POSB)",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "Singapore's financial institution established in 1877",
+      "attributes": {
+        "source_entity_types": [
+          "Organization"
+        ]
+      },
+      "created_at": "2026-10-15T23:26:25.590033"
+    },
+    {
+      "uuid": "ent_7d61ac845b59a6e6",
+      "name": "British colonial government",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "Government that established POSB in 1877",
+      "attributes": {
+        "source_entity_types": [
+          "Organization"
+        ]
+      },
+      "created_at": "2026-10-15T23:26:29.401688"
+    },
+    {
+      "uuid": "ent_b8403aeff8abe75a",
+      "name": "Development Bank of Singapore",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "Bank officially incorporated in 1968",
+      "attributes": {
+        "source_entity_types": [
+          "Organization"
+        ]
+      },
+      "created_at": "2026-10-15T23:26:29.401693"
+    },
+    {
+      "uuid": "ent_faa9a8e86881e822",
+      "name": "Singapore",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "Jurisdiction where capital flows have shifted and home to AAA jurisdiction rating.",
+      "attributes": {
+        "source_entity_types": [
+          "Organization"
+        ]
+      },
+      "created_at": "2026-10-15T23:26:32.592381"
+    },
+    {
+      "uuid": "ent_a53b0a24970c4b5f",
+      "name": "Tokyo",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "Location in Japan where the first international branch was opened.",
+      "attributes": {
+        "source_entity_types": [
+          "Organization"
+        ]
+      },
+      "created_at": "2026-10-15T23:26:32.592397"
+    },
+    {
+      "uuid": "ent_abbd4f89f06993d8",
+      "name": "Japan",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "Country where the first international branch was opened in Tokyo.",
+      "attributes": {
+        "source_entity_types": [
+          "Organization"
+        ]
+      },
+      "created_at": "2026-10-15T23:26:32.592400"
+    },
+    {
+      "uuid": "ent_f26cb8320304f1d1",
+      "name": "DBS Autosave",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "Interest-bearing current account introduced in 1980.",
+      "attributes": {
+        "source_entity_types": [
+          "Organization"
+        ]
+      },
+      "created_at": "2026-10-15T23:26:32.592404"
+    },
+    {
+      "uuid": "ent_2379b48159330e48",
+      "name": "DBS Building",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "A 50-storey building on Shenton Way that served as the relocated headquarters in 1983.",
+      "attributes": {
+        "source_entity_types": [
+          "Organization"
+        ]
+      },
+      "created_at": "2026-10-15T23:26:35.777142"
+    },
+    {
+      "uuid": "ent_4a1cfddc1f619bb0",
+      "name": "POSB",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "A bank or financial institution associated with DBS Bank.",
+      "attributes": {
+        "source_entity_types": [
+          "Organization"
+        ]
+      },
+      "created_at": "2026-10-15T23:26:35.777156"
+    },
+    {
+      "uuid": "ent_94addaaf557d31e0",
+      "name": "Dao Heng Bank",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "Bank acquired to establish a gateway into North East Asia.",
+      "attributes": {
+        "source_entity_types": [
+          "Organization"
+        ]
+      },
+      "created_at": "2026-10-15T23:26:35.777160"
+    },
+    {
+      "uuid": "ent_d170ba8b71d96337",
+      "name": "DBS Bank Ltd.",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "A global pan-Asian bank formerly known as a domestic development agency.",
+      "attributes": {
+        "source_entity_types": [
+          "Organization"
+        ]
+      },
+      "created_at": "2026-10-15T23:26:35.777163"
+    },
+    {
+      "uuid": "ent_95604ecb1d3d7425",
+      "name": "ANZ",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "An institution whose retail and wealth assets in ASEAN were acquired by DBS.",
+      "attributes": {
+        "source_entity_types": [
+          "Organization"
+        ]
+      },
+      "created_at": "2026-10-15T23:26:38.951215"
+    },
+    {
+      "uuid": "ent_6adf06e7361c5457",
+      "name": "Lakshmi Vilas Bank",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "A bank in India involved in a combination.",
+      "attributes": {
+        "source_entity_types": [
+          "Organization"
+        ]
+      },
+      "created_at": "2026-10-15T23:26:38.951221"
+    },
+    {
+      "uuid": "ent_ff2c661f7a8e1726",
+      "name": "Citigroup",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "A financial institution whose consumer banking business in Taiwan was acquired.",
+      "attributes": {
+        "source_entity_types": [
+          "Organization"
+        ]
+      },
+      "created_at": "2026-10-15T23:26:42.323529"
+    },
+    {
+      "uuid": "ent_6ec3f3df72b522c3",
+      "name": "Singaporeans",
+      "labels": [
+        "Entity",
+        "RetailCustomer"
+      ],
+      "summary": "Citizens of Singapore, including lower-income and elderly demographics served by POSB.",
+      "attributes": {
+        "source_entity_types": [
+          "RetailCustomer"
+        ]
+      },
+      "created_at": "2026-10-15T23:26:48.935280"
+    },
+    {
+      "uuid": "ent_573414c4b1cdfb63",
+      "name": "DBS Group",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "Broader financial group insulated during technological disruptions due to POSB's approach.",
+      "attributes": {
+        "source_entity_types": [
+          "Organization"
+        ]
+      },
+      "created_at": "2026-10-15T23:26:48.935300"
+    },
+    {
+      "uuid": "ent_3b904bc022275c77",
+      "name": "Philippe Paillart",
+      "labels": [
+        "Entity",
+        "BankExecutive"
+      ],
+      "summary": "CEO who led the acquisition of Dao Heng Bank.",
+      "attributes": {
+        "tenure": "Jan 2001 – Jun 2002",
+        "source_entity_types": [
+          "BankExecutive"
+        ]
+      },
+      "created_at": "2026-10-15T23:26:55.220296"
+    },
+    {
+      "uuid": "ent_82ef44da42ba572d",
+      "name": "Jackson Tai",
+      "labels": [
+        "Entity",
+        "BankExecutive"
+      ],
+      "summary": "Expanded the bank's geographic footprint, building a resilient pan-Asian franchise from Jun 2002 to Dec 2007.",
+      "attributes": {
+        "term": "Jun 2002 – Dec 2007",
+        "source_entity_types": [
+          "BankExecutive"
+        ]
+      },
+      "created_at": "2026-10-15T23:26:58.555468"
+    },
+    {
+      "uuid": "ent_670a3cde357c22c7",
+      "name": "Richard Daniel Stanley",
+      "labels": [
+        "Entity",
+        "BankExecutive"
+      ],
+      "summary": "Diversified revenue lines and expanded regional operations from May 2008 to Apr 2009.",
+      "attributes": {
+        "term": "May 2008 – Apr 2009",
+        "source_entity_types": [
+          "BankExecutive"
+        ]
+      },
+      "created_at": "2026-10-15T23:26:58.555503"
+    },
+    {
+      "uuid": "ent_15186fc511668acf",
+      "name": "Piyush Gupta",
+      "labels": [
+        "Entity",
+        "BankExecutive"
+      ],
+      "summary": "Predecessor CEO of DBS",
+      "attributes": {
+        "tenure_end": "28 March 2025",
+        "source_entity_types": [
+          "BankExecutive"
+        ]
+      },
+      "created_at": "2026-10-15T23:26:58.555518"
+    },
+    {
+      "uuid": "ent_ac5ecc5e1aae48b7",
+      "name": "Tan Su Shan",
+      "labels": [
+        "Entity",
+        "BankExecutive"
+      ],
+      "summary": "CEO and Director of DBS who replied to and was tagged in the LinkedIn complaint.",
+      "attributes": {
+        "title": "CEO and Director",
+        "source_entity_types": [
+          "BankExecutive"
+        ]
+      },
+      "created_at": "2026-10-15T23:26:58.555527"
+    },
+    {
+      "uuid": "ent_aa3cd58266fbc85e",
+      "name": "Piyush Gupta",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "Former CEO who retired on 28 March 2025 and led the bank's digital overhaul.",
+      "attributes": {
+        "retirement_date": "28 March 2025",
+        "source_entity_types": [
+          "Person"
+        ]
+      },
+      "created_at": "2026-10-15T23:27:04.056716"
+    },
+    {
+      "uuid": "ent_9f66d46bdc7177d3",
+      "name": "Tan Su Shan",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "Appointed as Deputy CEO in August 2024 and assumed the role of CEO on 28 March 2025.",
+      "attributes": {
+        "role": "CEO",
+        "source_entity_types": [
+          "Person"
+        ]
+      },
+      "created_at": "2026-10-15T23:27:04.056749"
+    },
+    {
+      "uuid": "ent_513b9b2562529652",
+      "name": "Tan",
+      "labels": [
+        "Entity",
+        "BankExecutive"
+      ],
+      "summary": "CEO of DBS",
+      "attributes": {
+        "source_entity_types": [
+          "BankExecutive"
+        ]
+      },
+      "created_at": "2026-10-15T23:27:07.367420"
+    },
+    {
+      "uuid": "ent_d2ae34bd621b6dfd",
+      "name": "Tan",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "An individual ranked in Fortune's lists and who sold shares of a bank.",
+      "attributes": {
+        "source_entity_types": [
+          "Person"
+        ]
+      },
+      "created_at": "2026-10-15T23:27:13.819530"
+    },
+    {
+      "uuid": "ent_9a731022b637c184",
+      "name": "Fortune",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "A global media organization that publishes power women lists.",
+      "attributes": {
+        "source_entity_types": [
+          "Organization"
+        ]
+      },
+      "created_at": "2026-10-15T23:27:13.819546"
+    },
+    {
+      "uuid": "ent_c93dc0006b3c7841",
+      "name": "Chng Sok Hui",
+      "labels": [
+        "Entity",
+        "BankExecutive"
+      ],
+      "summary": "Chief Financial Officer of DBS",
+      "attributes": {
+        "title": "Chief Financial Officer",
+        "source_entity_types": [
+          "BankExecutive"
+        ]
+      },
+      "created_at": "2026-10-15T23:27:40.763084"
+    },
+    {
+      "uuid": "ent_bb2185528f6b8d27",
+      "name": "Monetary Authority of Singapore (MAS)",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "Financial regulator in Singapore that imposed penalties on the bank.",
+      "attributes": {
+        "source_entity_types": [
+          "Organization"
+        ]
+      },
+      "created_at": "2026-10-15T23:27:51.697163"
+    },
+    {
+      "uuid": "ent_f8906d2e98c2bd15",
+      "name": "Downdetector",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "Service monitoring platform that tracked widespread service reports",
+      "attributes": {
+        "source_entity_types": [
+          "Organization"
+        ]
+      },
+      "created_at": "2026-10-15T23:28:00.670856"
+    },
+    {
+      "uuid": "ent_c8114062e1b57118",
+      "name": "MAS",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "Monetary Authority of Singapore, acting as a financial regulator.",
+      "attributes": {
+        "source_entity_types": [
+          "Organization"
+        ]
+      },
+      "created_at": "2026-10-15T23:28:07.143178"
+    },
+    {
+      "uuid": "ent_1eef500e4ec8ae14",
+      "name": "Euromoney",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "A publication or organization that named DBS as the World's Best Bank for Corporate Responsibility.",
+      "attributes": {
+        "source_entity_types": [
+          "Organization"
+        ]
+      },
+      "created_at": "2026-10-15T23:28:10.478966"
+    },
+    {
+      "uuid": "ent_b6ba4bb72bc42468",
+      "name": "City Developments Limited (CDL)",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "City Developments Limited (CDL) is a corporate entity partnered for nature-based urban development solutions.",
+      "attributes": {
+        "source_entity_types": [
+          "Organization"
+        ]
+      },
+      "created_at": "2026-10-15T23:28:24.755368"
+    },
+    {
+      "uuid": "ent_223eee2876dcc555",
+      "name": "IHH Healthcare",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "IHH Healthcare is an organization that signed a sustainability-linked loan.",
+      "attributes": {
+        "source_entity_types": [
+          "Organization"
+        ]
+      },
+      "created_at": "2026-10-15T23:28:28.419165"
+    },
+    {
+      "uuid": "ent_0211c5bcbdad075a",
+      "name": "India",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "Country where the sustainability-linked dealer financing program was launched.",
+      "attributes": {
+        "source_entity_types": [
+          "Organization"
+        ]
+      },
+      "created_at": "2026-10-15T23:28:31.304635"
+    },
+    {
+      "uuid": "ent_ea7b2570b54623bd",
+      "name": "Mahindra & Mahindra",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "Partner in India’s first sustainability-linked dealer financing program.",
+      "attributes": {
+        "source_entity_types": [
+          "Organization"
+        ]
+      },
+      "created_at": "2026-10-15T23:28:31.304675"
+    },
+    {
+      "uuid": "ent_0998885c02dc0e94",
+      "name": "DBS Foundation",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "An organization that announced grant funding to its 2025 cohort in March 2026.",
+      "attributes": {
+        "source_entity_types": [
+          "Organization"
+        ]
+      },
+      "created_at": "2026-10-15T23:28:33.936153"
+    },
+    {
+      "uuid": "ent_d86c8fd1da5c6700",
+      "name": "Straits Eye Centre",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "Providing affordable specialist eye care in Singapore",
+      "attributes": {
+        "source_entity_types": [
+          "Organization"
+        ]
+      },
+      "created_at": "2026-10-15T23:28:36.672551"
+    },
+    {
+      "uuid": "ent_b51deb88f960d1ac",
+      "name": "Neurowyzr",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "Deploys clinically validated, gamified digital platforms to screen and slow cognitive decline in elderly groups in Singapore",
+      "attributes": {
+        "source_entity_types": [
+          "Organization"
+        ]
+      },
+      "created_at": "2026-10-15T23:28:36.672567"
+    },
+    {
+      "uuid": "ent_2312b90894726a35",
+      "name": "Medmind",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "Deploys clinically validated, gamified digital platforms to screen and slow cognitive decline in elderly groups in Hong Kong",
+      "attributes": {
+        "source_entity_types": [
+          "Organization"
+        ]
+      },
+      "created_at": "2026-10-15T23:28:36.672570"
+    },
+    {
+      "uuid": "ent_422aa6ad9be22417",
+      "name": "Ikure Techsoft",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "Expanding rural healthcare access in India",
+      "attributes": {
+        "source_entity_types": [
+          "Organization"
+        ]
+      },
+      "created_at": "2026-10-15T23:28:39.680583"
+    },
+    {
+      "uuid": "ent_b9879fbf184487dc",
+      "name": "Nazava Water Filters",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "Delivering affordable clean drinking water to low-income Indonesian households",
+      "attributes": {
+        "source_entity_types": [
+          "Organization"
+        ]
+      },
+      "created_at": "2026-10-15T23:28:39.680596"
+    },
+    {
+      "uuid": "ent_0cbd24044b18a1ee",
+      "name": "SG Enable",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "Partnering in a flagship disability inclusion initiative",
+      "attributes": {
+        "source_entity_types": [
+          "Organization"
+        ]
+      },
+      "created_at": "2026-10-15T23:28:39.680599"
+    },
+    {
+      "uuid": "ent_b31df7a00f6f2311",
+      "name": "Personnel",
+      "labels": [
+        "Entity",
+        "BankEmployee"
+      ],
+      "summary": "Bank personnel who provide feedback on compensation and benefits.",
+      "attributes": {
+        "source_entity_types": [
+          "BankEmployee"
+        ]
+      },
+      "created_at": "2026-10-15T23:28:47.892532"
+    },
+    {
+      "uuid": "ent_2a33e492b9e57437",
+      "name": "Employees",
+      "labels": [
+        "Entity",
+        "BankEmployee"
+      ],
+      "summary": "Employees working at DBS",
+      "attributes": {
+        "source_entity_types": [
+          "BankEmployee"
+        ]
+      },
+      "created_at": "2026-10-15T23:28:50.655309"
+    },
+    {
+      "uuid": "ent_3a7e2b0735175ff2",
+      "name": "Wealth Planning Managers",
+      "labels": [
+        "Entity",
+        "BankEmployee"
+      ],
+      "summary": "Client-facing sales representatives reporting work pressure and rigid KPI targets",
+      "attributes": {
+        "source_entity_types": [
+          "BankEmployee"
+        ]
+      },
+      "created_at": "2026-10-15T23:28:53.644489"
+    },
+    {
+      "uuid": "ent_7fd1999115dec33f",
+      "name": "tech engineers",
+      "labels": [
+        "Entity",
+        "TechProfessional"
+      ],
+      "summary": "Engineers including SRE and system maintenance teams facing work pressure",
+      "attributes": {
+        "source_entity_types": [
+          "TechProfessional"
+        ]
+      },
+      "created_at": "2026-10-15T23:28:53.644520"
+    },
+    {
+      "uuid": "ent_de48e70381a4ffea",
+      "name": "THE GLOBAL WEALTH GIANT & TRUSTED SAFE HAVEN",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "An organization mentioned in the text representing a global wealth and safe haven institution.",
+      "attributes": {
+        "source_entity_types": [
+          "Organization"
+        ]
+      },
+      "created_at": "2026-10-15T23:28:59.545753"
+    },
+    {
+      "uuid": "ent_e3e60f187b68cdec",
+      "name": "THE HEARTLAND \"PEOPLE'S\" COMMUNITY BANK",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "A community bank organization mentioned in the text.",
+      "attributes": {
+        "source_entity_types": [
+          "Organization"
+        ]
+      },
+      "created_at": "2026-10-15T23:28:59.545769"
+    },
+    {
+      "uuid": "ent_1ea56b69ba4ef25a",
+      "name": "Euromoney Private Banking Awards 2026",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "Awards event where DBS won the 'World's Best Private Bank' award.",
+      "attributes": {
+        "source_entity_types": [
+          "Organization"
+        ]
+      },
+      "created_at": "2026-10-15T23:29:08.231322"
+    },
+    {
+      "uuid": "ent_caa6f1356f09cdaa",
+      "name": "McKinsey",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "Publisher/Consulting firm",
+      "attributes": {
+        "source_entity_types": [
+          "Organization"
+        ]
+      },
+      "created_at": "2026-10-15T23:29:20.835059"
+    },
+    {
+      "uuid": "ent_2d4f811f5282858e",
+      "name": "DBS Bank",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "Largest and primary bank",
+      "attributes": {
+        "source_entity_types": [
+          "Organization"
+        ]
+      },
+      "created_at": "2026-10-15T23:29:20.835067"
+    },
+    {
+      "uuid": "ent_7d2a6c7278724024",
+      "name": "Monetary Authority of Singapore",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "The regulatory authority that imposed a pause on DBS Bank's non-essential activities.",
+      "attributes": {
+        "source_entity_types": [
+          "Organization"
+        ]
+      },
+      "created_at": "2026-10-15T23:29:24.375311"
+    },
+    {
+      "uuid": "ent_95a1bbc02c1e261e",
+      "name": "DBS Group Holdings",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "Financial holding company",
+      "attributes": {
+        "source_entity_types": [
+          "Organization"
+        ]
+      },
+      "created_at": "2026-10-15T23:29:32.011322"
+    },
+    {
+      "uuid": "ent_08d94d8c4316edf2",
+      "name": "CNA",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "Media organization accessed for the report.",
+      "attributes": {
+        "source_entity_types": [
+          "Organization"
+        ]
+      },
+      "created_at": "2026-10-15T23:29:38.115429"
+    },
+    {
+      "uuid": "ent_a3c099da32d943c8",
+      "name": "Neelkamal Semwal",
+      "labels": [
+        "Entity",
+        "TechProfessional"
+      ],
+      "summary": "IC Design Engineer at AMD Singapore who posted the complaint on LinkedIn.",
+      "attributes": {
+        "title": "IC Design Engineer",
+        "source_entity_types": [
+          "TechProfessional"
+        ]
+      },
+      "created_at": "2026-10-15T23:29:44.463320"
+    },
+    {
+      "uuid": "ent_b63bcfd81093c6d9",
+      "name": "AMD Singapore",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "Technology company.",
+      "attributes": {
+        "source_entity_types": [
+          "Organization"
+        ]
+      },
+      "created_at": "2026-10-15T23:29:44.463332"
+    },
+    {
+      "uuid": "ent_1bc696df7c01a4af",
+      "name": "National University of Singapore",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "An educational institution mentioned in the text header.",
+      "attributes": {
+        "source_entity_types": [
+          "Organization"
+        ]
+      },
+      "created_at": "2026-10-15T23:29:44.463341"
+    },
+    {
+      "uuid": "ent_be720f2d87330047",
+      "name": "DBS Bank Singapore",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "The largest and primary bank in Singapore, criticized for poor customer service and unresolved technical issues.",
+      "attributes": {
+        "source_entity_types": [
+          "Organization"
+        ]
+      },
+      "created_at": "2026-10-15T23:29:48.065150"
+    },
+    {
+      "uuid": "ent_42d6b95a6a802167",
+      "name": "Customer",
+      "labels": [
+        "Entity",
+        "RetailCustomer"
+      ],
+      "summary": "A retail customer complaining about DBS Bank Singapore's unresolved NRIC registration issue and poor customer support.",
+      "attributes": {
+        "source_entity_types": [
+          "RetailCustomer"
+        ]
+      },
+      "created_at": "2026-10-15T23:29:48.065200"
+    },
+    {
+      "uuid": "ent_b33c4e01cd7d280f",
+      "name": "Eugene Huang",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "Mentioned individual in the text",
+      "attributes": {
+        "source_entity_types": [
+          "Person"
+        ]
+      },
+      "created_at": "2026-10-15T23:29:51.653813"
+    },
+    {
+      "uuid": "ent_8537cb609a03b059",
+      "name": "Mallya Ramesh",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "Mentioned individual in the text",
+      "attributes": {
+        "source_entity_types": [
+          "Person"
+        ]
+      },
+      "created_at": "2026-10-15T23:29:51.653817"
+    },
+    {
+      "uuid": "ent_0b4cf9dd0fe906fe",
+      "name": "Ittiam Systems",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "A company mentioned in the text header.",
+      "attributes": {
+        "source_entity_types": [
+          "Organization"
+        ]
+      },
+      "created_at": "2026-10-15T23:29:51.653844"
+    },
+    {
+      "uuid": "ent_7d5764aa2f84fc52",
+      "name": "Tan u Shan",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "A person who took the initiative regarding the issue.",
+      "attributes": {
+        "source_entity_types": [
+          "Person"
+        ]
+      },
+      "created_at": "2026-10-15T23:29:54.949193"
+    },
+    {
+      "uuid": "ent_dd9fafc3d8481016",
+      "name": "Eugene Huang",
+      "labels": [
+        "Entity",
+        "BankExecutive"
+      ],
+      "summary": "Chief Information Officer of DBS who was tagged in the LinkedIn complaint.",
+      "attributes": {
+        "title": "Chief Information Officer",
+        "source_entity_types": [
+          "BankExecutive"
+        ]
+      },
+      "created_at": "2026-10-15T23:29:58.634514"
+    },
+    {
+      "uuid": "ent_364bd1e7cbad6100",
+      "name": "DBS India",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "Indian branch of DBS.",
+      "attributes": {
+        "source_entity_types": [
+          "Organization"
+        ]
+      },
+      "created_at": "2026-10-15T23:30:02.124050"
+    },
+    {
+      "uuid": "ent_28994ded13c094de",
+      "name": "Mallya Ramesh",
+      "labels": [
+        "Entity",
+        "BankExecutive"
+      ],
+      "summary": "Chief Technology Officer of DBS India.",
+      "attributes": {
+        "title": "Chief Technology Officer",
+        "source_entity_types": [
+          "BankExecutive"
+        ]
+      },
+      "created_at": "2026-10-15T23:30:02.124080"
+    },
+    {
+      "uuid": "ent_b05e16291d0c8ec5",
+      "name": "Hyper-Local F&B Owner",
+      "labels": [
+        "Entity",
+        "CorporateClient"
+      ],
+      "summary": "Runs a busy cluster of central Singapore coffee shops.",
+      "attributes": {
+        "source_entity_types": [
+          "CorporateClient"
+        ]
+      },
+      "created_at": "2026-10-15T23:30:02.124119"
+    },
+    {
+      "uuid": "ent_d215067f4b242132",
+      "name": "regional trucking and customs clearance agency",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "A regional trucking and customs clearance agency handling large, time-critical bulk transactions.",
+      "attributes": {
+        "source_entity_types": [
+          "Organization"
+        ]
+      },
+      "created_at": "2026-10-15T23:30:07.791341"
+    },
+    {
+      "uuid": "ent_fcfd0d9e8066bbf9",
+      "name": "Traditional Wholesale Merchant",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "A legacy importer in Serangoon slowly adapting from paper-based invoicing to corporate apps.",
+      "attributes": {
+        "location": "Serangoon",
+        "source_entity_types": [
+          "Organization"
+        ]
+      },
+      "created_at": "2026-10-15T23:30:07.791363"
+    },
+    {
+      "uuid": "ent_5a21797dc5a2727b",
+      "name": "Family Office Asset Manager",
+      "labels": [
+        "Entity",
+        "WealthClient"
+      ],
+      "summary": "Overseas multi-generational wealth preservation structures",
+      "attributes": {
+        "source_entity_types": [
+          "WealthClient"
+        ]
+      },
+      "created_at": "2026-10-15T23:30:13.403568"
+    },
+    {
+      "uuid": "ent_2f8ea3fe424db3df",
+      "name": "Mid-Market Manufacturing CFO",
+      "labels": [
+        "Entity",
+        "CorporateClient"
+      ],
+      "summary": "Financial lead for a precision engineering firm in Tuas.",
+      "attributes": {
+        "source_entity_types": [
+          "CorporateClient"
+        ]
+      },
+      "created_at": "2026-10-15T23:30:18.765137"
+    },
+    {
+      "uuid": "ent_2dbf7949a0f513d6",
+      "name": "Treasures Private Client",
+      "labels": [
+        "Entity",
+        "WealthClient"
+      ],
+      "summary": "Ultra-high-net-worth individual with diversified global equities and property investments managed by the bank.",
+      "attributes": {
+        "source_entity_types": [
+          "WealthClient"
+        ]
+      },
+      "created_at": "2026-10-15T23:30:24.006832"
+    },
+    {
+      "uuid": "ent_050c513f0914cdec",
+      "name": "Multi-Generational Wealth Heir",
+      "labels": [
+        "Entity",
+        "WealthClient"
+      ],
+      "summary": "An heir who inherited substantial family trust accounts held with established local banks.",
+      "attributes": {
+        "profile": "Inherited substantial family trust accounts held with established local banks",
+        "baseline_perspective": "Detached from daily retail friction but highly protective of long-term institutional prestige and legacy brand value",
+        "source_entity_types": [
+          "WealthClient"
+        ]
+      },
+      "created_at": "2026-10-15T23:30:26.665684"
+    },
+    {
+      "uuid": "ent_038fea3e6f30db32",
+      "name": "Expat C-Suite Executive",
+      "labels": [
+        "Entity",
+        "BankExecutive"
+      ],
+      "summary": "European multinational regional managing director based in Singapore.",
+      "attributes": {
+        "location": "Singapore",
+        "background": "European multinational regional managing director",
+        "source_entity_types": [
+          "BankExecutive"
+        ]
+      },
+      "created_at": "2026-10-15T23:30:29.674953"
+    },
+    {
+      "uuid": "ent_def453eeefe9dbd6",
+      "name": "Retired Managing Director",
+      "labels": [
+        "Entity",
+        "WealthClient"
+      ],
+      "summary": "Former corporate executive with significant personal savings and private wealth accounts.",
+      "attributes": {
+        "background": "Former corporate executive",
+        "source_entity_types": [
+          "WealthClient"
+        ]
+      },
+      "created_at": "2026-10-15T23:30:29.674976"
+    },
+    {
+      "uuid": "ent_682742fb2be6b5ad",
+      "name": "High-Earning Technology Executive",
+      "labels": [
+        "Entity",
+        "TechProfessional"
+      ],
+      "summary": "Director of Engineering at a global big-tech firm's APAC headquarters who analyzes banking services from a software scalability and architectural efficiency standpoint.",
+      "attributes": {
+        "role": "Director of Engineering",
+        "region": "APAC",
+        "source_entity_types": [
+          "TechProfessional"
+        ]
+      },
+      "created_at": "2026-10-15T23:30:38.212056"
+    },
+    {
+      "uuid": "ent_88deddef8c137c75",
+      "name": "Luxury Brand Retail Partner",
+      "labels": [
+        "Entity",
+        "CorporateClient"
+      ],
+      "summary": "Manages high-end boutique franchises catering to affluent shoppers and relies on premium credit card authorizations.",
+      "attributes": {
+        "source_entity_types": [
+          "CorporateClient"
+        ]
+      },
+      "created_at": "2026-10-15T23:30:41.190817"
+    },
+    {
+      "uuid": "ent_ebc4645e5e5953d0",
+      "name": "Independent Asset Management Consultant",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "Advises affluent families on third-party banking risks and liquid capital distribution.",
+      "attributes": {
+        "source_entity_types": [
+          "Person"
+        ]
+      },
+      "created_at": "2026-10-15T23:30:41.190833"
+    },
+    {
+      "uuid": "ent_51f9cf8fc67f8db2",
+      "name": "Corporate MNC Administrator",
+      "labels": [
+        "Entity",
+        "CorporateClient"
+      ],
+      "summary": "Mid-level office administrator handling payroll coordination and petty cash claims in a retail segment context.",
+      "attributes": {
+        "role": "Mid-level office administrator",
+        "responsibilities": "payroll coordination and petty cash claims",
+        "source_entity_types": [
+          "CorporateClient"
+        ]
+      },
+      "created_at": "2026-10-15T23:30:44.035964"
+    },
+    {
+      "uuid": "ent_55125129b4c00e05",
+      "name": "Primary School Teacher",
+      "labels": [
+        "Entity",
+        "RetailCustomer"
+      ],
+      "summary": "Standard retail account holder utilizing banking services for mortgage deductions and everyday bills.",
+      "attributes": {
+        "baseline_perspective": "Pragmatic, community-minded, and expects simple, stress-free reliability from national institutions.",
+        "source_entity_types": [
+          "RetailCustomer"
+        ]
+      },
+      "created_at": "2026-10-15T23:30:47.031732"
+    },
+    {
+      "uuid": "ent_9f051903724f424a",
+      "name": "Acute Care Hospital Nurse",
+      "labels": [
+        "Entity",
+        "RetailCustomer"
+      ],
+      "summary": "Shifts-based healthcare professional relying on 24/7 mobile banking access during unconventional hours.",
+      "attributes": {
+        "source_entity_types": [
+          "RetailCustomer"
+        ]
+      },
+      "created_at": "2026-10-15T23:30:47.031765"
+    },
+    {
+      "uuid": "ent_05658c86a1fbea81",
+      "name": "local retail chain",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "A local retail chain with 150 employees.",
+      "attributes": {
+        "employees": "150",
+        "source_entity_types": [
+          "Organization"
+        ]
+      },
+      "created_at": "2026-10-15T23:31:01.406441"
+    },
+    {
+      "uuid": "ent_63bf35eb5500cda6",
+      "name": "Corporate Accountant",
+      "labels": [
+        "Entity",
+        "BankEmployee"
+      ],
+      "summary": "Reconciles daily corporate ledgers against digital bank statements with a pragmatic and systematic perspective.",
+      "attributes": {
+        "source_entity_types": [
+          "BankEmployee"
+        ]
+      },
+      "created_at": "2026-10-15T23:31:01.406481"
+    },
+    {
+      "uuid": "ent_86396406bdcd555a",
+      "name": "Bus Captain / Public Transit Worker",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "Shift worker using automated card top-ups and standard savings accounts, preferring uninterrupted basic services.",
+      "attributes": {
+        "source_entity_types": [
+          "Person"
+        ]
+      },
+      "created_at": "2026-10-15T23:31:04.185560"
+    },
+    {
+      "uuid": "ent_5b4469623704bb6a",
+      "name": "Retail Store Assistant",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "Frontline worker facing retail customers paying via card or QR code.",
+      "attributes": {
+        "source_entity_types": [
+          "Person"
+        ]
+      },
+      "created_at": "2026-10-15T23:31:04.185581"
+    },
+    {
+      "uuid": "ent_dcdb8507cf719d8c",
+      "name": "Stay-at-Home Parent",
+      "labels": [
+        "Entity",
+        "RetailCustomer"
+      ],
+      "summary": "Coordinates tight household budgets, school fees, and daily groceries using app tracking, depending on real-time balance tracking.",
+      "attributes": {
+        "source_entity_types": [
+          "RetailCustomer"
+        ]
+      },
+      "created_at": "2026-10-15T23:31:07.684968"
+    },
+    {
+      "uuid": "ent_988fec319e29a312",
+      "name": "Digital Banking Nomad",
+      "labels": [
+        "Entity",
+        "RetailCustomer"
+      ],
+      "summary": "Remote tech worker holding multi-currency accounts across various regional providers.",
+      "attributes": {
+        "source_entity_types": [
+          "RetailCustomer"
+        ]
+      },
+      "created_at": "2026-10-15T23:31:13.519156"
+    },
+    {
+      "uuid": "ent_3dd92eedf7ec3923",
+      "name": "FinTech Product Manager",
+      "labels": [
+        "Entity",
+        "TechProfessional"
+      ],
+      "summary": "Builds consumer-facing digital wallets for a tech startup.",
+      "attributes": {
+        "source_entity_types": [
+          "TechProfessional"
+        ]
+      },
+      "created_at": "2026-10-15T23:31:16.496295"
+    },
+    {
+      "uuid": "ent_76c237eb8a831563",
+      "name": "University Student Union Representative",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "Socially active undergraduate heavily integrated into peer-to-peer payment ecosystems.",
+      "attributes": {
+        "source_entity_types": [
+          "Person"
+        ]
+      },
+      "created_at": "2026-10-15T23:31:16.496318"
+    },
+    {
+      "uuid": "ent_dc02a50c29ff4786",
+      "name": "Polytechnic Student",
+      "labels": [
+        "Entity",
+        "RetailCustomer"
+      ],
+      "summary": "Heavy user of PayLah! for daily campus dining, entertainment, and peer splitting.",
+      "attributes": {
+        "source_entity_types": [
+          "RetailCustomer"
+        ]
+      },
+      "created_at": "2026-10-15T23:31:19.529307"
+    },
+    {
+      "uuid": "ent_1a6441e2314cd1c0",
+      "name": "Junior Software Engineer",
+      "labels": [
+        "Entity",
+        "TechProfessional"
+      ],
+      "summary": "Early-career backend developer working at a local tech company.",
+      "attributes": {
+        "role": "backend developer",
+        "experience": "Early-career",
+        "source_entity_types": [
+          "TechProfessional"
+        ]
+      },
+      "created_at": "2026-10-15T23:31:22.167660"
+    },
+    {
+      "uuid": "ent_9f33f1d981b2b25c",
+      "name": "Cybersecurity Analyst",
+      "labels": [
+        "Entity",
+        "TechProfessional"
+      ],
+      "summary": "Penetration tester monitoring public vulnerability patterns and incident disclosures.",
+      "attributes": {
+        "role": "Penetration tester",
+        "source_entity_types": [
+          "TechProfessional"
+        ]
+      },
+      "created_at": "2026-10-15T23:31:22.167680"
+    },
+    {
+      "uuid": "ent_6db50c6d9fe0ab18",
+      "name": "Data Infrastructure Analyst",
+      "labels": [
+        "Entity",
+        "TechProfessional"
+      ],
+      "summary": "Monitors cloud architecture and performance analytics for a media company.",
+      "attributes": {
+        "source_entity_types": [
+          "TechProfessional"
+        ]
+      },
+      "created_at": "2026-10-15T23:31:30.077662"
+    },
+    {
+      "uuid": "ent_1bdc0e1fe84b8ea3",
+      "name": "Digital Growth Specialist",
+      "labels": [
+        "Entity",
+        "TechProfessional"
+      ],
+      "summary": "Runs conversion-rate optimization campaigns for mobile applications.",
+      "attributes": {
+        "source_entity_types": [
+          "TechProfessional"
+        ]
+      },
+      "created_at": "2026-10-15T23:31:33.817724"
+    },
+    {
+      "uuid": "ent_e0e6957e199c4d3a",
+      "name": "Gen Z UI/UX Designer",
+      "labels": [
+        "Entity",
+        "TechProfessional"
+      ],
+      "summary": "Designs mobile interfaces for e-commerce platforms.",
+      "attributes": {
+        "source_entity_types": [
+          "TechProfessional"
+        ]
+      },
+      "created_at": "2026-10-15T23:31:33.817750"
+    },
+    {
+      "uuid": "ent_f1cd045094e238e0",
+      "name": "Pioneer Generation Retiree",
+      "labels": [
+        "Entity",
+        "RetailCustomer"
+      ],
+      "summary": "Older citizen who prefers branch counters and physical passbooks over smartphone apps.",
+      "attributes": {
+        "source_entity_types": [
+          "RetailCustomer"
+        ]
+      },
+      "created_at": "2026-10-15T23:31:37.262262"
+    },
+    {
+      "uuid": "ent_2cf88b677f55e356",
+      "name": "Merdeka Generation Pensioner",
+      "labels": [
+        "Entity",
+        "RetailCustomer"
+      ],
+      "summary": "A pensioner who relies on consistent, predictable monthly pension fund payouts via direct deposit and prioritizes stability and institutional trust.",
+      "attributes": {
+        "source_entity_types": [
+          "RetailCustomer"
+        ]
+      },
+      "created_at": "2026-10-15T23:31:40.167298"
+    },
+    {
+      "uuid": "ent_6120675992884a50",
+      "name": "Long-Term Institutional Saver",
+      "labels": [
+        "Entity",
+        "RetailCustomer"
+      ],
+      "summary": "Has maintained all personal savings within the same local bank for over 45 years and expects unshakeable institutional stability.",
+      "attributes": {
+        "savings_duration": "over 45 years",
+        "source_entity_types": [
+          "RetailCustomer"
+        ]
+      },
+      "created_at": "2026-10-15T23:31:48.035108"
+    },
+    {
+      "uuid": "ent_5821416187ebc97a",
+      "name": "Retired Former Civil Servant",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "Career dedicated to national administrative frameworks and public infrastructure.",
+      "attributes": {
+        "profession": "Retired Former Civil Servant",
+        "source_entity_types": [
+          "Person"
+        ]
+      },
+      "created_at": "2026-10-15T23:31:48.035125"
+    },
+    {
+      "uuid": "ent_4bead879fde2a456",
+      "name": "Professional LinkedIn Thought Leader",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "Active industry networker who publishes regular analytical articles on corporate strategy.",
+      "attributes": {
+        "source_entity_types": [
+          "MediaCommentator"
+        ]
+      },
+      "created_at": "2026-10-15T23:31:53.965414"
+    },
+    {
+      "uuid": "ent_141c334b421a412a",
+      "name": "HardwareZone Forum Regular",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "Active member of local online discussion forums known for sharp, cynical humor and critiquing executive actions.",
+      "attributes": {
+        "source_entity_types": [
+          "MediaCommentator"
+        ]
+      },
+      "created_at": "2026-10-15T23:31:56.696944"
+    },
+    {
+      "uuid": "ent_bb7ea202bad3d6d6",
+      "name": "System Optimization Enthusiast",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "Comments widely on corporate operational efficiency and organizational design.",
+      "attributes": {
+        "source_entity_types": [
+          "MediaCommentator"
+        ]
+      },
+      "created_at": "2026-10-15T23:32:11.800140"
+    },
+    {
+      "uuid": "ent_eb11e4d772ae9cfb",
+      "name": "Customer Contact Center Operations Lead",
+      "labels": [
+        "Entity",
+        "BankEmployee"
+      ],
+      "summary": "Manages frontline call center response teams and escalation queues.",
+      "attributes": {
+        "source_entity_types": [
+          "BankEmployee"
+        ]
+      },
+      "created_at": "2026-10-15T23:32:17.009906"
+    },
+    {
+      "uuid": "ent_90b79af2ff5a2724",
+      "name": "Junior Public Relations Specialist",
+      "labels": [
+        "Entity",
+        "BankEmployee"
+      ],
+      "summary": "Assists in monitoring social media sentiment and compiling real-time incident reports, bound by pre-approved brand risk mitigation playbooks.",
+      "attributes": {
+        "source_entity_types": [
+          "BankEmployee"
+        ]
+      },
+      "created_at": "2026-10-15T23:32:19.889287"
+    },
+    {
+      "uuid": "ent_f4bc65b11a7ac777",
+      "name": "Core Banking Site Reliability Engineer",
+      "labels": [
+        "Entity",
+        "TechProfessional"
+      ],
+      "summary": "Senior developer tasked with maintaining database integrity and incident patch deployments.",
+      "attributes": {
+        "source_entity_types": [
+          "TechProfessional"
+        ]
+      },
+      "created_at": "2026-10-15T23:32:22.402810"
+    },
+    {
+      "uuid": "ent_fbe8bf1acd46fab3",
+      "name": "Busy Branch Operations Manager",
+      "labels": [
+        "Entity",
+        "BankEmployee"
+      ],
+      "summary": "Coordinates physical staff and in-person customer traffic at a prominent retail branch.",
+      "attributes": {
+        "source_entity_types": [
+          "BankEmployee"
+        ]
+      },
+      "created_at": "2026-10-15T23:32:22.402843"
+    },
+    {
+      "uuid": "ent_019947e7ddf32f94",
+      "name": "Compliance & Regulatory Risk Officer",
+      "labels": [
+        "Entity",
+        "BankEmployee"
+      ],
+      "summary": "Monitors institutional adherence to central banking guidelines and market conduct codes.",
+      "attributes": {
+        "source_entity_types": [
+          "BankEmployee"
+        ]
+      },
+      "created_at": "2026-10-15T23:32:25.717418"
+    },
+    {
+      "uuid": "ent_4af70bf83f50c56c",
+      "name": "walk-in customers",
+      "labels": [
+        "Entity",
+        "RetailCustomer"
+      ],
+      "summary": "Customers visiting retail branches who may be confused or angry.",
+      "attributes": {
+        "source_entity_types": [
+          "RetailCustomer"
+        ]
+      },
+      "created_at": "2026-10-15T23:32:25.717443"
+    },
+    {
+      "uuid": "ent_974d9d8e10d7cae2",
+      "name": "Institutional Equity Research Analyst",
+      "labels": [
+        "Entity",
+        "RegulatoryObserver"
+      ],
+      "summary": "Tracks banking sector equities for major asset management firms.",
+      "attributes": {
+        "source_entity_types": [
+          "RegulatoryObserver"
+        ]
+      },
+      "created_at": "2026-10-15T23:32:28.320713"
+    },
+    {
+      "uuid": "ent_fa6a50f6dd198db4",
+      "name": "Retail Dividend Investor",
+      "labels": [
+        "Entity",
+        "WealthClient"
+      ],
+      "summary": "Local investor holding stock positions primarily for long-term dividend yield and stable performance.",
+      "attributes": {
+        "source_entity_types": [
+          "WealthClient"
+        ]
+      },
+      "created_at": "2026-10-15T23:32:33.664830"
+    },
+    {
+      "uuid": "ent_f506bb13f62a3cc6",
+      "name": "Strategy Executive at a Competitor Bank",
+      "labels": [
+        "Entity",
+        "BankExecutive"
+      ],
+      "summary": "Monitors the digital and corporate retail market space for alternative local institutions.",
+      "attributes": {
+        "source_entity_types": [
+          "BankExecutive"
+        ]
+      },
+      "created_at": "2026-10-15T23:32:36.326163"
+    }
+  ],
+  "edges": [
+    {
+      "uuid": "rel_2606e45460874f2b",
+      "name": "REGULATES",
+      "fact": "MAS will not extend six-month pause on DBS' non-essential activities.",
+      "fact_type": "REGULATES",
+      "source_node_uuid": "ent_c8114062e1b57118",
+      "target_node_uuid": "ent_21d27833d0e86001",
+      "source_node_name": "MAS",
+      "target_node_name": "DBS Group Holdings Ltd",
+      "attributes": {},
+      "created_at": "2026-10-15T23:29:35.553771",
+      "valid_at": null,
+      "invalid_at": null,
+      "expired_at": null,
+      "episodes": []
+    },
+    {
+      "uuid": "rel_d08738cdc16e4870",
+      "name": "WORKS_FOR",
+      "fact": "Eugene Huang is the Chief Information Officer of DBS.",
+      "fact_type": "WORKS_FOR",
+      "source_node_uuid": "ent_dd9fafc3d8481016",
+      "target_node_uuid": "ent_07c4fef0eb4b8957",
+      "source_node_name": "Eugene Huang",
+      "target_node_name": "DBS",
+      "attributes": {},
+      "created_at": "2026-10-15T23:29:58.713984",
+      "valid_at": null,
+      "invalid_at": null,
+      "expired_at": null,
+      "episodes": []
+    },
+    {
+      "uuid": "rel_50b14b3085914a90",
+      "name": "WORKS_FOR",
+      "fact": "Tan Su Shan is the CEO and Director of DBS.",
+      "fact_type": "WORKS_FOR",
+      "source_node_uuid": "ent_ac5ecc5e1aae48b7",
+      "target_node_uuid": "ent_07c4fef0eb4b8957",
+      "source_node_name": "Tan Su Shan",
+      "target_node_name": "DBS",
+      "attributes": {},
+      "created_at": "2026-10-15T23:29:58.713914",
+      "valid_at": null,
+      "invalid_at": null,
+      "expired_at": null,
+      "episodes": []
+    },
+    {
+      "uuid": "rel_15ae3c99bbdb4184",
+      "name": "WORKS_FOR",
+      "fact": "Tan Su Shan serves as CEO of DBS",
+      "fact_type": "WORKS_FOR",
+      "source_node_uuid": "ent_ac5ecc5e1aae48b7",
+      "target_node_uuid": "ent_07c4fef0eb4b8957",
+      "source_node_name": "Tan Su Shan",
+      "target_node_name": "DBS",
+      "attributes": {},
+      "created_at": "2026-10-15T23:29:32.066106",
+      "valid_at": null,
+      "invalid_at": null,
+      "expired_at": null,
+      "episodes": []
+    },
+    {
+      "uuid": "rel_1bd456f3068f42b4",
+      "name": "WORKS_FOR",
+      "fact": "Tan Su Shan is the CEO of DBS",
+      "fact_type": "WORKS_FOR",
+      "source_node_uuid": "ent_ac5ecc5e1aae48b7",
+      "target_node_uuid": "ent_07c4fef0eb4b8957",
+      "source_node_name": "Tan Su Shan",
+      "target_node_name": "DBS",
+      "attributes": {},
+      "created_at": "2026-10-15T23:29:20.939903",
+      "valid_at": null,
+      "invalid_at": null,
+      "expired_at": null,
+      "episodes": []
+    },
+    {
+      "uuid": "rel_55d07feee94e4232",
+      "name": "REGULATES",
+      "fact": "MAS keeps the bank under close regulatory scrutiny.",
+      "fact_type": "REGULATES",
+      "source_node_uuid": "ent_c8114062e1b57118",
+      "target_node_uuid": "ent_07c4fef0eb4b8957",
+      "source_node_name": "MAS",
+      "target_node_name": "DBS",
+      "attributes": {},
+      "created_at": "2026-10-15T23:29:14.989700",
+      "valid_at": null,
+      "invalid_at": null,
+      "expired_at": null,
+      "episodes": []
+    },
+    {
+      "uuid": "rel_1262a924595e48d1",
+      "name": "WORKS_FOR",
+      "fact": "Employees view DBS as an excellent incubator for professional development.",
+      "fact_type": "WORKS_FOR",
+      "source_node_uuid": "ent_2a33e492b9e57437",
+      "target_node_uuid": "ent_07c4fef0eb4b8957",
+      "source_node_name": "Employees",
+      "target_node_name": "DBS",
+      "attributes": {},
+      "created_at": "2026-10-15T23:28:50.688925",
+      "valid_at": null,
+      "invalid_at": null,
+      "expired_at": null,
+      "episodes": []
+    },
+    {
+      "uuid": "rel_5dab46fc23e24fb5",
+      "name": "WORKS_FOR",
+      "fact": "Tan Su Shan is associated with DBS and made statements regarding its AI adoption and workforce strategies.",
+      "fact_type": "WORKS_FOR",
+      "source_node_uuid": "ent_ac5ecc5e1aae48b7",
+      "target_node_uuid": "ent_07c4fef0eb4b8957",
+      "source_node_name": "Tan Su Shan",
+      "target_node_name": "DBS",
+      "attributes": {},
+      "created_at": "2026-10-15T23:28:45.294465",
+      "valid_at": null,
+      "invalid_at": null,
+      "expired_at": null,
+      "episodes": []
+    },
+    {
+      "uuid": "rel_6c97d5b9bb5b4cf7",
+      "name": "REGULATES",
+      "fact": "MAS was actively monitoring the bank and coordinating to ensure that DBS identifies and resolves the root cause of the incident.",
+      "fact_type": "REGULATES",
+      "source_node_uuid": "ent_c8114062e1b57118",
+      "target_node_uuid": "ent_07c4fef0eb4b8957",
+      "source_node_name": "MAS",
+      "target_node_name": "DBS",
+      "attributes": {},
+      "created_at": "2026-10-15T23:28:07.171700",
+      "valid_at": null,
+      "invalid_at": null,
+      "expired_at": null,
+      "episodes": []
+    },
+    {
+      "uuid": "rel_41f6680c72c646be",
+      "name": "WORKS_FOR",
+      "fact": "Chng Sok Hui is the Chief Financial Officer of DBS.",
+      "fact_type": "WORKS_FOR",
+      "source_node_uuid": "ent_c93dc0006b3c7841",
+      "target_node_uuid": "ent_07c4fef0eb4b8957",
+      "source_node_name": "Chng Sok Hui",
+      "target_node_name": "DBS",
+      "attributes": {},
+      "created_at": "2026-10-15T23:27:40.809041",
+      "valid_at": null,
+      "invalid_at": null,
+      "expired_at": null,
+      "episodes": []
+    },
+    {
+      "uuid": "rel_e95fa94d6529439a",
+      "name": "WORKS_FOR",
+      "fact": "Piyush Gupta was the predecessor CEO of DBS.",
+      "fact_type": "WORKS_FOR",
+      "source_node_uuid": "ent_15186fc511668acf",
+      "target_node_uuid": "ent_07c4fef0eb4b8957",
+      "source_node_name": "Piyush Gupta",
+      "target_node_name": "DBS",
+      "attributes": {},
+      "created_at": "2026-10-15T23:27:21.322945",
+      "valid_at": null,
+      "invalid_at": null,
+      "expired_at": null,
+      "episodes": []
+    },
+    {
+      "uuid": "rel_913d31f4fb0e4f61",
+      "name": "WORKS_FOR",
+      "fact": "Tan serves as the CEO of DBS.",
+      "fact_type": "WORKS_FOR",
+      "source_node_uuid": "ent_513b9b2562529652",
+      "target_node_uuid": "ent_07c4fef0eb4b8957",
+      "source_node_name": "Tan",
+      "target_node_name": "DBS",
+      "attributes": {},
+      "created_at": "2026-10-15T23:27:21.322905",
+      "valid_at": null,
+      "invalid_at": null,
+      "expired_at": null,
+      "episodes": []
+    },
+    {
+      "uuid": "rel_080f0db5815d4d6f",
+      "name": "WORKS_FOR",
+      "fact": "Tan spent over a decade at DBS building its Wealth Management franchise and running divisions.",
+      "fact_type": "WORKS_FOR",
+      "source_node_uuid": "ent_513b9b2562529652",
+      "target_node_uuid": "ent_07c4fef0eb4b8957",
+      "source_node_name": "Tan",
+      "target_node_name": "DBS",
+      "attributes": {},
+      "created_at": "2026-10-15T23:27:07.428761",
+      "valid_at": null,
+      "invalid_at": null,
+      "expired_at": null,
+      "episodes": []
+    },
+    {
+      "uuid": "rel_bedb8aad7cc646d1",
+      "name": "COLLABORATES_WITH",
+      "fact": "DBS acquired the Post Office Savings Bank (POSB) for S$1.6 billion on 16 November 1998.",
+      "fact_type": "COLLABORATES_WITH",
+      "source_node_uuid": "ent_07c4fef0eb4b8957",
+      "target_node_uuid": "ent_16cd5f751aee331a",
+      "source_node_name": "DBS",
+      "target_node_name": "Post Office Savings Bank (POSB)",
+      "attributes": {},
+      "created_at": "2026-10-15T23:26:25.787737",
+      "valid_at": null,
+      "invalid_at": null,
+      "expired_at": null,
+      "episodes": []
+    },
+    {
+      "uuid": "rel_835ea6a984bc48eb",
+      "name": "COLLABORATES_WITH",
+      "fact": "DBS partnered with City Developments Limited (CDL) for a S$300 million multi-currency sustainability-linked loan.",
+      "fact_type": "COLLABORATES_WITH",
+      "source_node_uuid": "ent_07c4fef0eb4b8957",
+      "target_node_uuid": "ent_b6ba4bb72bc42468",
+      "source_node_name": "DBS",
+      "target_node_name": "City Developments Limited (CDL)",
+      "attributes": {},
+      "created_at": "2026-10-15T23:28:24.793721",
+      "valid_at": null,
+      "invalid_at": null,
+      "expired_at": null,
+      "episodes": []
+    },
+    {
+      "uuid": "rel_88478fe992424d13",
+      "name": "COLLABORATES_WITH",
+      "fact": "India launched a sustainability-linked dealer financing program in partnership with Mahindra & Mahindra.",
+      "fact_type": "COLLABORATES_WITH",
+      "source_node_uuid": "ent_0211c5bcbdad075a",
+      "target_node_uuid": "ent_ea7b2570b54623bd",
+      "source_node_name": "India",
+      "target_node_name": "Mahindra & Mahindra",
+      "attributes": {},
+      "created_at": "2026-10-15T23:28:31.342262",
+      "valid_at": null,
+      "invalid_at": null,
+      "expired_at": null,
+      "episodes": []
+    },
+    {
+      "uuid": "rel_3949c22626ee4873",
+      "name": "WORKS_FOR",
+      "fact": "Tan Su Shan is the CEO of DBS Bank",
+      "fact_type": "WORKS_FOR",
+      "source_node_uuid": "ent_ac5ecc5e1aae48b7",
+      "target_node_uuid": "ent_2d4f811f5282858e",
+      "source_node_name": "Tan Su Shan",
+      "target_node_name": "DBS Bank",
+      "attributes": {},
+      "created_at": "2026-10-15T23:29:51.728280",
+      "valid_at": null,
+      "invalid_at": null,
+      "expired_at": null,
+      "episodes": []
+    },
+    {
+      "uuid": "rel_ce45fe414e7f450c",
+      "name": "WORKS_FOR",
+      "fact": "Tan Su Shan appointed as Deputy CEO - Singapore - DBS Bank",
+      "fact_type": "WORKS_FOR",
+      "source_node_uuid": "ent_ac5ecc5e1aae48b7",
+      "target_node_uuid": "ent_2d4f811f5282858e",
+      "source_node_name": "Tan Su Shan",
+      "target_node_name": "DBS Bank",
+      "attributes": {},
+      "created_at": "2026-10-15T23:29:27.753904",
+      "valid_at": null,
+      "invalid_at": null,
+      "expired_at": null,
+      "episodes": []
+    },
+    {
+      "uuid": "rel_493ee9bce4544126",
+      "name": "REGULATES",
+      "fact": "Monetary Authority of Singapore imposed a six-month pause on DBS Bank's non-essential activities.",
+      "fact_type": "REGULATES",
+      "source_node_uuid": "ent_7d2a6c7278724024",
+      "target_node_uuid": "ent_2d4f811f5282858e",
+      "source_node_name": "Monetary Authority of Singapore",
+      "target_node_name": "DBS Bank",
+      "attributes": {},
+      "created_at": "2026-10-15T23:29:24.412095",
+      "valid_at": null,
+      "invalid_at": null,
+      "expired_at": null,
+      "episodes": []
+    },
+    {
+      "uuid": "rel_2bdb81fd524c4838",
+      "name": "REGULATES",
+      "fact": "MAS imposes six-month pause on DBS Bank's non-essential activities",
+      "fact_type": "REGULATES",
+      "source_node_uuid": "ent_c8114062e1b57118",
+      "target_node_uuid": "ent_2d4f811f5282858e",
+      "source_node_name": "MAS",
+      "target_node_name": "DBS Bank",
+      "attributes": {},
+      "created_at": "2026-10-15T23:29:20.939924",
+      "valid_at": null,
+      "invalid_at": null,
+      "expired_at": null,
+      "episodes": []
+    },
+    {
+      "uuid": "rel_880f127546814316",
+      "name": "RESPONDS_TO",
+      "fact": "Tan Su Shan replied to the LinkedIn complaint posted by Neelkamal Semwal.",
+      "fact_type": "RESPONDS_TO",
+      "source_node_uuid": "ent_ac5ecc5e1aae48b7",
+      "target_node_uuid": "ent_a3c099da32d943c8",
+      "source_node_name": "Tan Su Shan",
+      "target_node_name": "Neelkamal Semwal",
+      "attributes": {},
+      "created_at": "2026-10-15T23:29:58.713956",
+      "valid_at": null,
+      "invalid_at": null,
+      "expired_at": null,
+      "episodes": []
+    },
+    {
+      "uuid": "rel_710fa91bd4c7489e",
+      "name": "WORKS_FOR",
+      "fact": "Neelkamal Semwal is an IC Design Engineer at AMD Singapore.",
+      "fact_type": "WORKS_FOR",
+      "source_node_uuid": "ent_a3c099da32d943c8",
+      "target_node_uuid": "ent_b63bcfd81093c6d9",
+      "source_node_name": "Neelkamal Semwal",
+      "target_node_name": "AMD Singapore",
+      "attributes": {},
+      "created_at": "2026-10-15T23:29:58.713970",
+      "valid_at": null,
+      "invalid_at": null,
+      "expired_at": null,
+      "episodes": []
+    },
+    {
+      "uuid": "rel_f2865898d41f48bc",
+      "name": "WORKS_FOR",
+      "fact": "Neelkamal Semwal works in IC Design at AMD Singapore",
+      "fact_type": "WORKS_FOR",
+      "source_node_uuid": "ent_a3c099da32d943c8",
+      "target_node_uuid": "ent_b63bcfd81093c6d9",
+      "source_node_name": "Neelkamal Semwal",
+      "target_node_name": "AMD Singapore",
+      "attributes": {},
+      "created_at": "2026-10-15T23:29:51.728313",
+      "valid_at": null,
+      "invalid_at": null,
+      "expired_at": null,
+      "episodes": []
+    },
+    {
+      "uuid": "rel_70b4ac9902664ad3",
+      "name": "WORKS_FOR",
+      "fact": "Neelkamal Semwal works at AMD Singapore",
+      "fact_type": "WORKS_FOR",
+      "source_node_uuid": "ent_a3c099da32d943c8",
+      "target_node_uuid": "ent_b63bcfd81093c6d9",
+      "source_node_name": "Neelkamal Semwal",
+      "target_node_name": "AMD Singapore",
+      "attributes": {},
+      "created_at": "2026-10-15T23:29:44.512624",
+      "valid_at": null,
+      "invalid_at": null,
+      "expired_at": null,
+      "episodes": []
+    },
+    {
+      "uuid": "rel_3c8b078ccbb94722",
+      "name": "CRITICIZES",
+      "fact": "The customer criticizes DBS Bank Singapore for failing to fix an NRIC registration issue for over 15 days and for having insincere customer care.",
+      "fact_type": "CRITICIZES",
+      "source_node_uuid": "ent_42d6b95a6a802167",
+      "target_node_uuid": "ent_be720f2d87330047",
+      "source_node_name": "Customer",
+      "target_node_name": "DBS Bank Singapore",
+      "attributes": {},
+      "created_at": "2026-10-15T23:29:48.085892",
+      "valid_at": null,
+      "invalid_at": null,
+      "expired_at": null,
+      "episodes": []
+    },
+    {
+      "uuid": "rel_5fda19fbeceb4351",
+      "name": "WORKS_FOR",
+      "fact": "Mallya Ramesh is the Chief Technology Officer of DBS India.",
+      "fact_type": "WORKS_FOR",
+      "source_node_uuid": "ent_28994ded13c094de",
+      "target_node_uuid": "ent_364bd1e7cbad6100",
+      "source_node_name": "Mallya Ramesh",
+      "target_node_name": "DBS India",
+      "attributes": {},
+      "created_at": "2026-10-15T23:30:02.184106",
+      "valid_at": null,
+      "invalid_at": null,
+      "expired_at": null,
+      "episodes": []
+    },
+    {
+      "uuid": "rel_9564d744f2cf4a52",
+      "name": "RESPONDS_TO",
+      "fact": "The compliance and regulatory risk officer deals with situations involving confused or angry walk-in customers.",
+      "fact_type": "RESPONDS_TO",
+      "source_node_uuid": "ent_019947e7ddf32f94",
+      "target_node_uuid": "ent_4af70bf83f50c56c",
+      "source_node_name": "Compliance & Regulatory Risk Officer",
+      "target_node_name": "walk-in customers",
+      "attributes": {},
+      "created_at": "2026-10-15T23:32:25.749778",
+      "valid_at": null,
+      "invalid_at": null,
+      "expired_at": null,
+      "episodes": []
+    }
+  ],
+  "node_count": 123,
+  "edge_count": 27
+}

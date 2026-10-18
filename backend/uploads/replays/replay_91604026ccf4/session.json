@@ -1,0 +1,61 @@
+{
+  "replay_id": "replay_91604026ccf4",
+  "recording_id": "rec_94ce926269c4",
+  "project_id": "rproj_71a2838c8429",
+  "graph_id": "rgraph_f77a29669495",
+  "simulation_id": "rsim_bed1d326244a",
+  "report_id": "rreport_54bfde237d9f",
+  "task_ids": {
+    "ontology": "rtask_abdea9bd5c1c",
+    "graph": "rtask_1921feada061",
+    "preparation": "rtask_b85e09e16442",
+    "simulation": "rtask_1d239ce21cd4",
+    "report": "rtask_d29f560ae807"
+  },
+  "source": {
+    "project_id": "proj_b942aa1f5545",
+    "graph_id": "mirofish_local_a9e96a29e52341d9",
+    "simulation_id": "sim_0505103c681b",
+    "report_id": "report_5d335dfcaf6b"
+  },
+  "mapping": {
+    "proj_b942aa1f5545": "rproj_71a2838c8429",
+    "mirofish_local_a9e96a29e52341d9": "rgraph_f77a29669495",
+    "sim_0505103c681b": "rsim_bed1d326244a",
+    "report_5d335dfcaf6b": "rreport_54bfde237d9f",
+    "33231b40-80c0-407e-a9b7-064102ba646d": "rtask_1921feada061",
+    "b2aae0b1-c8f0-46d4-9ad9-f9389bed545f": "rtask_b85e09e16442",
+    "a6ca75a4-d40f-4aac-9150-e321880d2c31": "rtask_d29f560ae807"
+  },
+  "run_mode": "saved",
+  "stage_seconds": 15.0,
+  "created_at": 1792134468.4623947,
+  "current_stage": "report",
+  "stages": {
+    "ontology": {
+      "started_at": 1792134468.4623992,
+      "elapsed": 0,
+      "paused": false
+    },
+    "graph": {
+      "started_at": 1792134485.1168876,
+      "elapsed": 0,
+      "paused": false
+    },
+    "preparation": {
+      "started_at": 1792134506.1363213,
+      "elapsed": 0,
+      "paused": false
+    },
+    "simulation": {
+      "started_at": 1792136319.794251,
+      "elapsed": 0,
+      "paused": false
+    },
+    "report": {
+      "started_at": 1792136469.8060644,
+      "elapsed": 0,
+      "paused": false
+    }
+  }
+}

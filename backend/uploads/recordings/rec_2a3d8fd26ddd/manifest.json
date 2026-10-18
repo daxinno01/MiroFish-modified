@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "recording_id": "rec_2a3d8fd26ddd",
+  "name": "Unnamed Project",
+  "created_at": 1792038648.462346,
+  "frozen": false,
+  "stages": {
+    "ontology": true,
+    "graph": true,
+    "preparation": true,
+    "simulation": false,
+    "report": false
+  },
+  "missing_stages": [
+    "simulation",
+    "report"
+  ],
+  "source": {
+    "project_id": "proj_054ad62322aa",
+    "graph_id": "mirofish_local_17c7ce1487674c54",
+    "simulation_id": "sim_ab4462a127b8",
+    "report_id": "report_a1dd133b197f"
+  }
+}
