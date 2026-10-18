@@ -1,1 +1,2 @@
 *.db filter=lfs diff=lfs merge=lfs -text
+backend/uploads/recordings/rec_2a3d8fd26ddd/events.jsonl filter=lfs diff=lfs merge=lfs -text
